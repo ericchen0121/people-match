@@ -4,8 +4,9 @@
 
 <body>
   <h1>Match</h1>
-
+	{{> add_person_form}}	
   {{> people}}
+
 </body>
 
 <template name="people">
@@ -18,4 +19,14 @@
 
 <template name="person">
   <li>{{name}} - {{department}} - {{title}} - {{client}}</li>
+</template>
+
+<template name="add_person_form">
+	<form class="new-person">
+		<input name='name' placeholder='name' type='text'/>
+		<input name='department' placeholder='department' type='text'/>
+		<input name='title' placeholder='title' type='text'/>
+		<input name='client' placeholder='client' type='text'/>
+		<input type="submit" value="Add Person">
+	</form>
 </template>
