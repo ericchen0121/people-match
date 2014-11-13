@@ -5,8 +5,8 @@ if Meteor.isClient
   # Helpers pass Data into Templates
   Template.people.helpers({
     people: ->
-      return People.find({})
-  });
+      return People.find({}, {sort: {name: 1}})
+  })
 
   # Event listeners
   Template.add_person_form.events({
@@ -35,6 +35,10 @@ if Meteor.isClient
       return false
   })
 
+  Template.person.events({
+    'click .delete': ->
+      People.remove @_id
+  })
 
 if Meteor.isServer
   Meteor.startup( ->
