@@ -1,0 +1,21 @@
+<head>
+  <title>Match</title>
+</head>
+
+<body>
+  <h1>Match</h1>
+
+  {{> people}}
+</body>
+
+<template name="people">
+  <ul>
+    {{#each people}}
+      {{>person}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="person">
+  <li>{{name}} - {{department}} - {{title}} - {{client}}</li>
+</template>
