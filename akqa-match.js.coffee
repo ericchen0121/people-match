@@ -5,12 +5,24 @@ if Meteor.isClient
   # Helpers pass Data into Templates
   Template.people.helpers({
     people: ->
-      return People.find({}, {sort: {name: 1}})
+      if Session.get 'showTech'
+        return People.find({department: 'tech'}, {sort: {name: 1}})
+      else
+        return People.find({}, {sort: {name: 1}})
+
+    showTech: ->
+      Session.get 'showTech'
   })
 
   # Event listeners
+  Template.body.events({
+    'change .show-tech input': (event) ->
+      # set boolean if checked
+      Session.set 'showTech', event.target.checked
+  })
+
   Template.add_person_form.events({
-    'submit .new-person': (event) -> 
+    'submit .new-person': (event) ->
       # Store values via form
       name = event.target.name.value
       department = event.target.department.value
@@ -24,7 +36,7 @@ if Meteor.isClient
         title: title,
         client: client
       })
-      
+
       # Clear form
       event.target.name.value = ''
       event.target.department.value = ''

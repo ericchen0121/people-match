@@ -4,7 +4,11 @@
 
 <body>
   <h1>Match</h1>
-	{{> add_person_form}}	
+  <label class='show-tech'>
+    <input type='checkbox' checked="{{showTech}}"/>
+    Show Only Tech Workers
+  </label>
+	{{> add_person_form}}
   {{> people}}
 
 </body>
@@ -18,8 +22,8 @@
 </template>
 
 <template name="person">
-  <li>{{name}} - {{department}} - {{title}} - {{client}} 
-    <button class='delete'>remove</button>
+  <li>{{name}} - {{department}} - {{title}} - {{client}}
+    <span class='delete'>[remove]</span>
   </li>
 </template>
 
@@ -29,6 +33,6 @@
 		<input name='department' placeholder='department' type='text'/>
 		<input name='title' placeholder='title' type='text'/>
 		<input name='client' placeholder='client' type='text'/>
-		<input type="submit" value="Add Person">
+		<input type="submit" value="Add">
 	</form>
 </template>
