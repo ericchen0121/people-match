@@ -10,8 +10,17 @@ if Meteor.isClient
       else
         return People.find({}, {sort: {name: 1}})
 
+  })
+
+  Template.body.helpers({
     showTech: ->
       Session.get 'showTech'
+
+    techPeopleCount: ->
+      People.find({department: 'tech'}).count()
+
+    totalPeopleCount: ->
+      People.find({}).count()
   })
 
   # Event listeners

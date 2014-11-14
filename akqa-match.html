@@ -3,10 +3,11 @@
 </head>
 
 <body>
-  <h1>Match</h1>
+  <h1>Match {{totalPeopleCount}} </h1>
+
   <label class='show-tech'>
     <input type='checkbox' checked="{{showTech}}"/>
-    Show Only Tech Workers
+    Show only Tech workers: all {{techPeopleCount}} of them
   </label>
 	{{> add_person_form}}
   {{> people}}
