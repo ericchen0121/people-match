@@ -21,7 +21,7 @@
 </body>
 
 <template name='login'>
-  {{#if userExists}}
+  {{#if user}}
     <span>{{profileName}}</span>
   {{/if}}
   <span class='login'>{{> loginButtons}}</span>

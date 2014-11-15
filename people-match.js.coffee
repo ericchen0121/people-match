@@ -29,8 +29,8 @@ if Meteor.isClient
   })
 
   Template.login.helpers({
-    userExists: ->
-      Meteor.user() ? true : false
+    user: ->
+      Meteor.user()
 
     profileName: ->
       Meteor.user().profile.name
