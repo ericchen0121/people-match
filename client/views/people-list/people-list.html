@@ -1,33 +1,22 @@
-<head>
-  <title>Match</title>
-</head>
+<template name='login'>
+  <span class='login'>{{> loginButtons}}</span>
+</template>
 
-<body>
-  <h1>Match {{totalPeopleCount}} </h1>
-
-  {{>login}}
-
+<template name='userAvatar'>
   {{#if user}}
     <span>{{> avatar user=user type='circle'}}</span>
+    <span>{{profileName}}</span>
   {{/if}}
+</template>
 
+<template name="people">
+  <!-- Filters -->
   <label class='show-tech'>
     <input type='checkbox' checked="{{showTech}}"/>
     Show only Tech workers: all {{techPeopleCount}} of them
   </label>
-	{{> add_person_form}}
-  {{> people}}
-
-</body>
-
-<template name='login'>
-  {{#if userExists}}
-    <span>{{profileName}}</span>
-  {{/if}}
-  <span class='login'>{{> loginButtons}}</span>
-</template>
-
-<template name="people">
+  <!-- List all people -->
+  <h4>{{totalPeopleCount}} Total</h4>
   <ul>
     {{#each people}}
       {{>person}}

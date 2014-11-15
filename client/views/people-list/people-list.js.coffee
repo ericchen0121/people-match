@@ -1,7 +1,4 @@
-People = new Mongo.Collection("people")
-
 if Meteor.isClient
-
   # Helpers
   # Helpers pass Data into Templates
   Template.people.helpers({
@@ -11,13 +8,6 @@ if Meteor.isClient
       else
         return People.find({}, {sort: {name: 1}})
 
-  })
-
-  Template.body.helpers({
-
-    user: ->
-      Meteor.user()
-
     showTech: ->
       Session.get 'showTech'
 
@@ -26,9 +16,18 @@ if Meteor.isClient
 
     totalPeopleCount: ->
       People.find({}).count()
+
   })
 
-  Template.login.helpers({
+  Template.body.helpers({
+
+    user: ->
+      Meteor.user()
+
+  })
+
+  Template.userAvatar.helpers({
+    # PUT THESE IN A GLOBAL FILE
     user: ->
       Meteor.user()
 
