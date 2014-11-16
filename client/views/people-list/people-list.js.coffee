@@ -1,6 +1,7 @@
 if Meteor.isClient
   # Helpers
   # Helpers pass Data into Templates
+
   Template.people.helpers({
     people: ->
       if Session.get 'showTech'
@@ -16,9 +17,9 @@ if Meteor.isClient
 
     totalPeopleCount: ->
       People.find({}).count()
-
   })
 
+ 
   Template.body.helpers({
 
     user: ->
@@ -51,8 +52,7 @@ if Meteor.isClient
       title = event.target.title.value
       client = event.target.client.value
 
-      # Add to db
-      People.insert({
+      Meteor.call('insertPerson', {
         name: name,
         department: department,
         title: title,
@@ -71,7 +71,7 @@ if Meteor.isClient
 
   Template.person.events({
     'click .delete': ->
-      People.remove @_id
+      Meteor.call 'removePerson', @_id
   })
 
 if Meteor.isServer
