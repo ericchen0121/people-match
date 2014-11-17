@@ -1,0 +1,8 @@
+<template name='home'>
+	{{> login}}
+  {{#if user}}
+    {{> avatarImage}}
+  	{{> addPersonForm}}
+  {{/if}}
+  {{> people}}
+</template>

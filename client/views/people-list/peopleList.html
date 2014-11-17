@@ -1,19 +1,8 @@
-<template name='login'>
-  <span class='login'>{{> loginButtons}}</span>
-</template>
-
-<template name='userAvatar'>
-  {{#if user}}
-    <span>{{> avatar user=user type='circle'}}</span>
-    <span>{{profileName}}</span>
-  {{/if}}
-</template>
-
 <template name="people">
   <!-- Filters -->
   <label class='show-tech'>
     <input type='checkbox' checked="{{showTech}}"/>
-    Show only Tech workers: all {{techPeopleCount}} of them
+    Tech: {{techPeopleCount}}
   </label>
   <!-- List all people -->
   <h4>{{totalPeopleCount}} Total</h4>
@@ -30,7 +19,7 @@
   </li>
 </template>
 
-<template name="add_person_form">
+<template name="addPersonForm">
 	<form class="new-person">
 		<input name='name' placeholder='name' type='text'/>
 		<input name='department' placeholder='department' type='text'/>

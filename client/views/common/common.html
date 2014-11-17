@@ -1,0 +1,9 @@
+<template name='login'>
+  <span class='login'>{{> loginButtons}}</span>
+</template>
+
+<template name='avatarImage'>
+  {{#if user}}
+    <span>{{> avatar user=user type='circle'}}</span>
+  {{/if}}
+</template>
