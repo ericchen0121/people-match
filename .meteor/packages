@@ -6,12 +6,9 @@
 meteor-platform
 coffeescript
 jquery
-fourseven:scss
 accounts-ui
 accounts-password
 accounts-facebook
 insecure
 bengott:avatar
 iron:router
-reywood:bootstrap3-sass
-
