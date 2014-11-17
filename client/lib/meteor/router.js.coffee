@@ -1,4 +1,8 @@
-Router.map ->
+Router.configure
 
-	@route 'home', path: '/'
-	@route 'people'
+  layoutTemplate: 'layout'
+
+Router.route '/', ->
+  @render 'home'
+
+Router.route '/people'
