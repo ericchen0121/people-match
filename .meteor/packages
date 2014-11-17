@@ -10,8 +10,6 @@ fourseven:scss
 accounts-ui
 accounts-password
 accounts-facebook
-autopublish
 insecure
 bengott:avatar
 iron:router
-

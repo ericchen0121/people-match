@@ -5,4 +5,4 @@ Meteor.methods
 
   removePerson: (id) ->
   	People.remove id
-
+  	
