@@ -18,6 +18,12 @@ Template.people.helpers
     People.find({}).count()
 
 
+Template.peopleList.helpers
+
+  user: ->
+    Meteor.user()
+
+
 # Event listeners
 
 Template.people.events

@@ -1,8 +1,11 @@
-Router.configure
+Router.configure({
 
   layoutTemplate: 'layout'
 
-Router.route '/', ->
-  @render 'home'
+  # TODO: waitOn: ->
+  	# Meteor.
+})
+
+Router.route '/', {name: 'peopleList'}
 
 Router.route '/people'
