@@ -1,4 +1,10 @@
 /* CSS declarations go here */
+// Color Variables
+$purple: purple
+$red: red
+
+// Location Variables
+$progressbar-color: $red
 
 .delete:hover
   color: red
@@ -8,3 +14,17 @@
 .login
  	float: right
  	margin-right: 200px
+
+// Progress bar overrides
+// https://github.com/Multiply/iron-router-progress
+#iron-router-progress
+  background-color : $progressbar-color
+  box-shadow       : 0 0 3px $progressbar-color
+
+#iron-router-progress.spinner:before
+  border-color: $progressbar-color
+  width: 10px
+  height: 10px
+
+.login-block
+  display: inline-block
