@@ -28,7 +28,7 @@ Template.peopleList.helpers
 
 Template.people.events
 
-   'change .show-tech input': (event) ->
+  'change .show-tech input': (event) ->
     # Set boolean if checked
     Session.set 'showTech', event.target.checked
 

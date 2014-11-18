@@ -15,3 +15,8 @@ Template.nflPlayersList.helpers
 
   totalNflPlayersCount: ->
     NflPlayers.find({}).count()
+
+Template.nflPlayersList.events
+
+  'change .show-qb input': (event) ->
+    Session.set 'showQB', event.target.checked
