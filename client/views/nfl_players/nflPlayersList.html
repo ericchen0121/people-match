@@ -1,0 +1,18 @@
+<template name="nflPlayersList">
+  <!-- Filters -->
+  <label class='show-qb'>
+    <input type='checkbox' checked="{{showQB}}"/>
+    QBs: {{filterQBCount}}
+  </label>
+  <!-- List all people -->
+  <h4>{{totalNflPlayersCount}} Total</h4>
+  <ul>
+    {{#each nflPlayers}}
+      {{>playerDescription}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="playerDescription">
+  <li>{{full_name}} - {{position}} - {{team}} - {{last_name}}</li>
+</template>

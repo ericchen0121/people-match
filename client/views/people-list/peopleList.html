@@ -8,12 +8,12 @@
   <h4>{{totalPeopleCount}} Total</h4>
   <ul>
     {{#each people}}
-      {{>person}}
+      {{>personDescription}}
     {{/each}}
   </ul>
 </template>
 
-<template name="person">
+<template name="personDescription">
   <li>{{name}} - {{department}} - {{title}} - {{client}}
     <span class='delete'>[remove]</span>
   </li>
