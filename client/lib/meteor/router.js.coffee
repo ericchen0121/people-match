@@ -6,4 +6,5 @@ Router.route '/', {name: 'peopleList'}
 
 Router.route '/people'
 
-Router.route '/nflPlayersList'
+Router.route '/nfl', {name: 'nflPlayersList'}, ->
+	@render 'nflPlayersList'
