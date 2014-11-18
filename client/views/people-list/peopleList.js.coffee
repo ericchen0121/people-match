@@ -32,7 +32,7 @@ Template.people.events
     # Set boolean if checked
     Session.set 'showTech', event.target.checked
 
-Template.person.events
+Template.personDescription.events
 
   'click .delete': ->
     Meteor.call 'removePerson', @_id
