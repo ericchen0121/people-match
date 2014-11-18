@@ -1,4 +1,1003 @@
 espn_id,full_name,first_name,last_name,jersey_number,position,team,kimono_hash,kimono_api
+15803,EJ Manuel,EJ,Manuel,3,QB,Buffalo Bills,f7ec3fc5b0e87da8e2785807c705dab1,7gtzc33a
+16237,Jeff Tuel,Jeff,Tuel,7,QB,Buffalo Bills,f35ae8f9a740e9e4bad6f9513e7159c1,7gtzc33a
+15092,Bryce Brown,Bryce,Brown,35,RB,Buffalo Bills,068e3898f199de1ab717f86f9e2d5811,7gtzc33a
+13212,Anthony Dixon,Anthony,Dixon,26,RB,Buffalo Bills,31996e8319075559f0c67c8c32cb6f7a,7gtzc33a
+10195,Fred Jackson,Fred,Jackson,22,RB,Buffalo Bills,a736c786817a46ea25578bf0a5e45138,7gtzc33a
+13203,C.J. Spiller,C.J.,Spiller,28,RB,Buffalo Bills,74b76091098b3dd3e4b15606d62368c8,7gtzc33a
+12733,Frank Summers,Frank,Summers,38,FB,Buffalo Bills,5e96d0add24b482cf3ca9f5ff49f1d0a,7gtzc33a
+13224,Marcus Easley,Marcus,Easley,81,WR,Buffalo Bills,fe6aa6d4fc9674e15bbcce2c115ffcda,7gtzc33a
+15839,Marquise Goodwin,Marquise,Goodwin,88,WR,Buffalo Bills,85b5eb07d71db02c346247520e4ee4f4,7gtzc33a
+14920,T.J. Graham,T.J.,Graham,11,WR,Buffalo Bills,084dbf9f4ede0aaa67587573d30f3340,7gtzc33a
+14402,Chris Hogan,Chris,Hogan,15,WR,Buffalo Bills,1157eb94859afc42cd42cf3a0cc9a82c,7gtzc33a
+17448,Caleb Holley,Caleb,Holley,86,WR,Buffalo Bills,02261ba3249b113753ed192afc5a258d,7gtzc33a
+13489,Mike Williams,Mike,Williams,19,WR,Buffalo Bills,84578e8b4ab9d66a8fb0821f1270467d,7gtzc33a
+15880,Robert Woods,Robert,Woods,10,WR,Buffalo Bills,1e86b168d1b1647ebba334154a0a54a0,7gtzc33a
+16725,Sammy Watkins,Sammy,Watkins,14,WR,Buffalo Bills,d83a6a409adcaa96a042e56ad696c025,7gtzc33a
+10572,Scott Chandler,Scott,Chandler,84,TE,Buffalo Bills,65cdb3977d505e42c04d9fefe44c8c03,7gtzc33a
+13335,Mike Caussin,Mike,Caussin,40,TE,Washington Redskins,4d32053fee4e9cd43c25f1e6387ad6e0,7gtzc33a
+15940,Chris Gragg,Chris,Gragg,89,TE,Buffalo Bills,cc65d960ed36f6d675ffc4e221b0b440,7gtzc33a
+13289,Tony Moeaki,Tony,Moeaki,82,TE,Buffalo Bills,c3ad48498b6696a06313dd1d58c0500d,7gtzc33a
+14215,Lee Smith,Lee,Smith,85,TE,Buffalo Bills,d20e907ae2933d23f0c442c18a70fae5,7gtzc33a
+13078,Garrison Sanborn,Garrison,Sanborn,65,C,Buffalo Bills,3fc0a3b1375a2e4ed315e8a5bc0302ef,7gtzc33a
+12627,Eric Wood,Eric,Wood,70,C,Buffalo Bills,50b4e309f14e23291bca23c37d294cd3,7gtzc33a
+14971,Cordy Glenn,Cordy,Glenn,77,OT,Buffalo Bills,6ccff6d7296dbe369539995698299217,7gtzc33a
+14134,Chris Hairston,Chris,Hairston,75,OT,Buffalo Bills,ed6dcf5641f2dc9b7613edb626dceeac,7gtzc33a
+16892,Seantrel Henderson,Seantrel,Henderson,66,OT,Buffalo Bills,2a367b8f338196c3a39926f8b201d2a8,7gtzc33a
+16796,Cyrus Kouandjio,Cyrus,Kouandjio,71,OT,Buffalo Bills,fad8d47759a7553f7c394fd58b62d455,7gtzc33a
+9399,Erik Pears,Erik,Pears,79,OT,Buffalo Bills,ea396f7a121c05193f5af79524b76ba7,7gtzc33a
+11556,Doug Legursky,Doug,Legursky,59,OG,Buffalo Bills,2e1340716c58d7df5b232ee4b323a365,7gtzc33a
+15533,Antoine McClain,Antoine,McClain,73,OG,Buffalo Bills,237fba90c39e897117aefd6bc6a2da88,7gtzc33a
+16825,Cyril Richardson,Cyril,Richardson,68,OG,Buffalo Bills,ddd657252fdbb10622ba7b33327fd69a,7gtzc33a
+12742,Kraig Urbik,Kraig,Urbik,60,OG,Buffalo Bills,5c3900d63cf4721cde83143a80ab7b23,7gtzc33a
+11248,Chris Williams,Chris,Williams,74,OG,Buffalo Bills,f5a4ea166c699d95c61905fa08c766dc,7gtzc33a
+13245,Jerry Hughes,Jerry,Hughes,55,DE,Buffalo Bills,ef99e4dec73c42973c41319eb19334c2,7gtzc33a
+15740,Ikponmwosa Igbinosun,Ikponmwosa,Igbinosun,98,DE,Buffalo Bills,81c98a90287575f0c86c73e495b1de49,7gtzc33a
+17338,Bryan Johnson,Bryan,Johnson,67,DE,Buffalo Bills,e6ae0190f3eadb50e2b4622b1fc9ed7f,7gtzc33a
+9608,Manny Lawson,Manny,Lawson,91,DE,Buffalo Bills,0bc9cc2d4b008ec8d62dbba9adcbc797,7gtzc33a
+9587,Mario Williams,Mario,Williams,94,DE,Buffalo Bills,176d9cbedd47802eae6516a19559373f,7gtzc33a
+12752,Jarius Wynn,Jarius,Wynn,92,DE,Buffalo Bills,0d147d00969949f57cff8d33b6883fdf,7gtzc33a
+16568,Stefan Charles,Stefan,Charles,96,DT,Buffalo Bills,22cfc59d669c27988f2a283306e96c16,7gtzc33a
+14231,Corbin Bryant,Corbin,Bryant,97,DT,Buffalo Bills,8d2aa80ce4eeca8d03137df1fe919589,7gtzc33a
+9720,Kyle Williams,Kyle,Williams,95,DT,Buffalo Bills,3435badcd3a6fba435634afe3c96fdc6,7gtzc33a
+13992,Marcell Dareus,Marcell,Dareus,99,DT,Buffalo Bills,9e6934501110b7331362f9205c895270,7gtzc33a
+15075,Nigel Bradham,Nigel,Bradham,53,LB,Buffalo Bills,3e078b6e0f04f5d730ff2caa8edcbfc9,7gtzc33a
+16762,Preston Brown,Preston,Brown,52,LB,Buffalo Bills,f8f5776354521563004777e60ef0f020,7gtzc33a
+16816,Randell Johnson,Randell,Johnson,93,LB,Buffalo Bills,67c9901f675da3d2e230d1297134b61d,7gtzc33a
+16036,Ty Powell,Ty,Powell,57,LB,Buffalo Bills,d02bee4b1f999d6bf4e4f974e5dca5c5,7gtzc33a
+11243,Keith Rivers,Keith,Rivers,56,LB,Buffalo Bills,aefae1671b5da7d58cb736c2de88da9a,7gtzc33a
+15356,Jacquies Smith,Jacquies,Smith,54,LB,Buffalo Bills,c58b5e5751647a29bf1383b92a8202db,7gtzc33a
+13298,Brandon Spikes,Brandon,Spikes,51,LB,Buffalo Bills,f156cba5b2e055d64ea7d3cce6b2e7c4,7gtzc33a
+13466,Stevenson Sylvester,Stevenson,Sylvester,58,LB,Buffalo Bills,98af37a11d50a9d168be57193b761383,7gtzc33a
+15008,Ron Brooks,Ron,Brooks,33,CB,Buffalo Bills,12f046f265dd9f84ad5022de079a7793,7gtzc33a
+16843,Ross Cockrell,Ross,Cockrell,29,CB,Buffalo Bills,b9eab1667cbf9204548d4ba95342213c,7gtzc33a
+14942,Stephon Gilmore,Stephon,Gilmore,24,CB,Buffalo Bills,b6ded2660d64268f5539f44d848f6269,7gtzc33a
+10611,Corey Graham,Corey,Graham,20,CB,Buffalo Bills,eb76d01b37f66547bebcce14c21d963b,7gtzc33a
+11245,Leodis McKelvin,Leodis,McKelvin,21,CB,Buffalo Bills,038a9511cab904c6d7a22407266e9a23,7gtzc33a
+17305,Deon Broomfield,Deon,Broomfield,46,DB,Buffalo Bills,9031aa1533a486a75fd0e99db1820861,7gtzc33a
+14671,Mario Butler,Mario,Butler,30,DB,Buffalo Bills,078049913c00e693be8226b2f254cc0e,7gtzc33a
+15376,Bobby Felder,Bobby,Felder,39,DB,Buffalo Bills,9146f5dc3bb57be9b71c64dec114dfce,7gtzc33a
+16217,Nickell Robey,Nickell,Robey,37,DB,Buffalo Bills,3896af7460d60ffe122439cb8f04cf44,7gtzc33a
+14143,Da'Norris Searcy,Da'Norris,Searcy,25,SS,Buffalo Bills,43d5b8f6c6f01dd62006122acdd20bcb,7gtzc33a
+17317,Kenny Ladler,Kenny,Ladler,31,FS,Buffalo Bills,9277d417091129f7fcd196a7c4c09122,7gtzc33a
+14045,Aaron Williams,Aaron,Williams,23,FS,Buffalo Bills,8cc5c3cb7d9529a3a91a567bfd1ff9f7,7gtzc33a
+15884,Duke Williams,Duke,Williams,27,FS,Buffalo Bills,6ae0dc477e6a7b495f298a27d4d99d9e,7gtzc33a
+11688,Dan Carpenter,Dan,Carpenter,2,PK,Buffalo Bills,dae57c837c3caf225546a1e244c0f341,7gtzc33a
+16591,Jordan Gay,Jordan,Gay,,P,Buffalo Bills,c79fc49d4d6eb3cb71d08c52c4d36970,7gtzc33a
+11128,Matt Moore,Matt,Moore,8,QB,Miami Dolphins,24c295554485d3e5a44f97173b6cc5f2,7gtzc33a
+14876,Ryan Tannehill,Ryan,Tannehill,17,QB,Miami Dolphins,a3b16246095e7c4722fc7a2609a4804c,7gtzc33a
+17331,Orleans Darkwa,Orleans,Darkwa,3,RB,Miami Dolphins,19c2f100576378084bb53c945b0bfc70,7gtzc33a
+15952,Mike Gillislee,Mike,Gillislee,23,RB,Miami Dolphins,db60b4e0a1e72cf709dfa2b8d46473b2,7gtzc33a
+14886,Lamar Miller,Lamar,Miller,26,RB,Miami Dolphins,94f85c781944eeaa2bbc35b60af85a3f,7gtzc33a
+12516,Knowshon Moreno,Knowshon,Moreno,28,RB,Miami Dolphins,301f58bffd2fd388ad9197b37e12e9e8,7gtzc33a
+12524,Marcus Thigpen,Marcus,Thigpen,34,RB,Miami Dolphins,c5553b3607d1039d7419c85d40faec8d,7gtzc33a
+14056,Daniel Thomas,Daniel,Thomas,33,RB,Miami Dolphins,39c219ee6df39049b0346c68799b6250,7gtzc33a
+17359,Damien Williams,Damien,Williams,5,RB,Miami Dolphins,fbfb029a8f76c03f7668be4ba3619f27,7gtzc33a
+14818,Kevin Cone,Kevin,Cone,15,WR,Miami Dolphins,b004bccb736f53d8e9d1927d7bc1d76b,7gtzc33a
+12567,Brandon Gibson,Brandon,Gibson,10,WR,Miami Dolphins,af6b8f96d92c4d292cf89109e8e93899,7gtzc33a
+12568,Brian Hartline,Brian,Hartline,82,WR,Miami Dolphins,ac32d739e7fe06a60d5e667bd8625a57,7gtzc33a
+16870,Matt Hazel,Matt,Hazel,83,WR,Miami Dolphins,34f9321285cfcd80694e88aff7fc3b43,7gtzc33a
+16790,Jarvis Landry,Jarvis,Landry,14,WR,Miami Dolphins,46c8b7edcf1d869e28a70d11553a94dc,7gtzc33a
+15102,Rishard Matthews,Rishard,Matthews,18,WR,Miami Dolphins,f975d5672857f17d46e96a82585317e0,7gtzc33a
+12601,Mike Wallace,Mike,Wallace,11,WR,Miami Dolphins,0cd38a92b220c725d6c6e16302624751,7gtzc33a
+13219,Damian Williams,Damian,Williams,1,WR,Miami Dolphins,61c645c1e470d7ca37d865a165784e06,7gtzc33a
+14145,Charles Clay,Charles,Clay,42,TE,Miami Dolphins,10bb17355583c74b4f02228c4cc067ce,7gtzc33a
+16844,Arthur Lynch,Arthur,Lynch,88,TE,Miami Dolphins,5df272cab3b096bce2dc9da0ebeb110d,7gtzc33a
+17173,Harold Hoskins,Harold,Hoskins,89,TE,Miami Dolphins,69000a4e34da62eb4df371d650969c4c,7gtzc33a
+14289,Kyle Miller,Kyle,Miller,86,TE,Miami Dolphins,59c5b7d9f93336d820645f90d2d19d5d,7gtzc33a
+15974,Dion Sims,Dion,Sims,80,TE,Miami Dolphins,18f7d4f4b38ec7c17812b47caf2901da,7gtzc33a
+16375,Sam Brenner,Sam,Brenner,65,C,Miami Dolphins,5a41021efa628701f7726c132f0184a6,7gtzc33a
+9287,John Denney,John,Denney,92,C,Miami Dolphins,96d6fee247549ae46c56c0cec29a1005,7gtzc33a
+13974,Mike Pouncey,Mike,Pouncey,51,C,Miami Dolphins,c538636813aabb96365117e230654a56,7gtzc33a
+13364,Jason Fox,Jason,Fox,74,OT,Miami Dolphins,19a50f4b41cf20fe16b07c9cbc441c57,7gtzc33a
+11249,Branden Albert,Branden,Albert,71,OT,Miami Dolphins,b95b049ae38a56346ceef64d88113891,7gtzc33a
+11377,Tony Hills,Tony,Hills,60,OT,Miami Dolphins,a47d8021f28e321d71b4197af7361214,7gtzc33a
+16722,Ja'Wuan James,Ja'Wuan,James,72,OT,Miami Dolphins,4c18f67e350376b13e6dce8508bf68d7,7gtzc33a
+16759,Billy Turner,Billy,Turner,77,OT,Miami Dolphins,556dcbff930135ea900062adace91362,7gtzc33a
+14119,David Arkin,David,Arkin,66,OG,Miami Dolphins,be1281c3890f51ce413a00e9efb14520,7gtzc33a
+9633,Daryn Colledge,Daryn,Colledge,67,OG,Miami Dolphins,19307add143dd16568ad6d82b1d40bce,7gtzc33a
+11445,Nate Garner,Nate,Garner,75,OG,Miami Dolphins,d3743ebbfe8a0cdb3142ee2b6ffbfad2,7gtzc33a
+17148,Evan Finkenberg,Evan,Finkenberg,62,OG,Miami Dolphins,fa0d009cbdaf4a01f3aca5c105caef70,7gtzc33a
+13460,Shelley Smith,Shelley,Smith,64,OG,Miami Dolphins,378e622bbb619f41cd8fbc5132e67c10,7gtzc33a
+15868,Dallas Thomas,Dallas,Thomas,70,OG,Miami Dolphins,93a7ce3c9e64a39e5c539247f188c693,7gtzc33a
+17276,Davonte Wallace,Davonte,Wallace,,OG,Miami Dolphins,087b481deff9f98cb75be444524610a4,7gtzc33a
+16860,Terrence Fede,Terrence,Fede,78,DE,Miami Dolphins,032464a9da5993d61717f01dee1e8f08,7gtzc33a
+15800,Dion Jordan,Dion,Jordan,95,DE,Miami Dolphins,60d0dbfcbb07501544306540631bd4a6,7gtzc33a
+17217,Tevin Mims,Tevin,Mims,46,DE,Miami Dolphins,d178eea0c4dd15cecc557b2b7b0e7e59,7gtzc33a
+14075,D'Aundre Reed,D'Aundre,Reed,,?,Jacksonville Jaguars,576901f884efd50fc7b4c90308134e77,7gtzc33a
+15278,Derrick Shelby,Derrick,Shelby,79,DE,Miami Dolphins,3342ac136ce8c13480f09ccf64b6eec7,7gtzc33a
+14982,Olivier Vernon,Olivier,Vernon,50,DE,Miami Dolphins,c8831c049eba712a3f9b73a33069435d,7gtzc33a
+12417,Cameron Wake,Cameron,Wake,91,DE,Miami Dolphins,ad8a6510461dc7350416d728c80831ab,7gtzc33a
+14856,Isaako Aaitui,Isaako,Aaitui,97,DT,Miami Dolphins,8ee0ee7987b11d2a71c0451a3aaad249,7gtzc33a
+16398,A.J. Francis,A.J.,Francis,96,DT,Miami Dolphins,833acdd010a6481cc639836f83412250,7gtzc33a
+17184,Anthony Johnson,Anthony,Johnson,76,DT,Miami Dolphins,16888a21ca89bd8668a0a6700c56feb7,7gtzc33a
+17187,Kamal Johnson,Kamal,Johnson,73,DT,Miami Dolphins,553888caa2049346d61784df1e3ad442,7gtzc33a
+13288,Earl Mitchell,Earl,Mitchell,90,DT,Miami Dolphins,08845b33db335e4c9f290641f8045b42,7gtzc33a
+13244,Jared Odrick,Jared,Odrick,98,DT,Miami Dolphins,2cdf6a1f6fec317dff0fafd2e39fb007,7gtzc33a
+17253,Garrison Smith,Garrison,Smith,68,DT,Miami Dolphins,6b6d9e79f5ae1754ba46b834fabec1a2,7gtzc33a
+5596,Randy Starks,Randy,Starks,94,DT,Miami Dolphins,956abcb07745ed3b7da0e55d97d576ed,7gtzc33a
+13103,Dannell Ellerbe,Dannell,Ellerbe,59,LB,Miami Dolphins,86ed2339d4166926a4e25aaa626f6ddd,7gtzc33a
+14387,Jonathan Freeny,Jonathan,Freeny,56,LB,Miami Dolphins,b44b79822bac682aa5a4605949458d08,7gtzc33a
+15985,Jelani Jenkins,Jelani,Jenkins,53,LB,Miami Dolphins,da85ba116b99beac303cefa88163296f,7gtzc33a
+17430,Chris McCain,Chris,McCain,47,LB,Miami Dolphins,7fc04185bf3c98b37d4bde9e4b4a6814,7gtzc33a
+13287,Koa Misi,Koa,Misi,55,LB,Miami Dolphins,4ecb57d1c5e8694c530edcd020375aa0,7gtzc33a
+10504,Samson Satele,Samson,Satele,69,C,Miami Dolphins,7aaa7e2efb29683e2f594df979da8af9,7gtzc33a
+16862,Jordan Tripp,Jordan,Tripp,57,LB,Miami Dolphins,f10e6d2939c139d4c377bfab9d708d11,7gtzc33a
+10927,Jason Trusnik,Jason,Trusnik,93,LB,Miami Dolphins,e0d6554bef908e129900cbc0f3245dbe,7gtzc33a
+11327,Philip Wheeler,Philip,Wheeler,52,LB,Miami Dolphins,b5b1ec4e968e3efaba2672a05d661293,7gtzc33a
+17291,Andrew Wilson,Andrew,Wilson,45,LB,Miami Dolphins,fd508f4209d816d61678843712bdf8bb,7gtzc33a
+16819,Walt Aikens,Walt,Aikens,35,CB,Miami Dolphins,672ba2a18e23bdf2eb299613c3db1aa5,7gtzc33a
+15833,Will Davis,Will,Davis,29,CB,Miami Dolphins,afe4500e854cf39520fce6c9bf0723d6,7gtzc33a
+9801,Cortland Finnegan,Cortland,Finnegan,24,CB,Miami Dolphins,ff92ac52759ca56283308644ec9224ce,7gtzc33a
+10913,Brent Grimes,Brent,Grimes,21,CB,Miami Dolphins,930ab5a3ff95223791c3621cf6d4e122,7gtzc33a
+15866,Jamar Taylor,Jamar,Taylor,22,CB,Miami Dolphins,095ee1a6a7349615b6c7b21b0225f9ae,7gtzc33a
+17491,Kevin Fogg,Kevin,Fogg,37,DB,Miami Dolphins,d29357cdc01711effbbaf87ea72b756a,7gtzc33a
+15943,Don Jones,Don,Jones,36,SS,Miami Dolphins,5cc91e80fdb3e96866607d6d2e63e519,7gtzc33a
+16363,Jordan Kovacs,Jordan,Kovacs,44,SS,Miami Dolphins,fd6697968186d0e1c9d57df1c9072ab3,7gtzc33a
+12528,Louis Delmas,Louis,Delmas,25,FS,Miami Dolphins,147f37afbd98322973e6617b557d8821,7gtzc33a
+13395,Reshad Jones,Reshad,Jones,20,FS,Miami Dolphins,4d4e8526c824094a53fc9dd20e235b4f,7gtzc33a
+14565,Jake Rogers,Jake,Rogers,6,PK,Miami Dolphins,70371449ec3d1234ec26a1c3885b9c45,7gtzc33a
+15918,Caleb Sturgis,Caleb,Sturgis,9,PK,Miami Dolphins,cf64fe486b46e073c5544388970e90b0,7gtzc33a
+10668,Brandon Fields,Brandon,Fields,2,P,Miami Dolphins,c4c7993efbe801af2ed0262c22f3ef16,7gtzc33a
+16812,Tajh Boyd,Tajh,Boyd,3,QB,New York Jets,ee67d4a62c3c890c038c253fe00db0eb,7gtzc33a
+15407,Matt Simms,Matt,Simms,5,QB,New York Jets,b3cd71ca9a546c0a18dff4d81ec4552a,7gtzc33a
+15864,Geno Smith,Geno,Smith,7,QB,New York Jets,8b962dde5ff84891007af58d1addfdbb,7gtzc33a
+2549,Michael Vick,Michael,Vick,1,QB,New York Jets,509b87be13c04c49f756379dc13fa570,7gtzc33a
+14055,Alex Green,Alex,Green,25,RB,New York Jets,a744fe84afd5658aba6131db8fb3ce5d,7gtzc33a
+13587,Chris Ivory,Chris,Ivory,33,RB,New York Jets,2f6d301cc68a2b9917aefc57ebeccade,7gtzc33a
+11258,Chris Johnson,Chris,Johnson,21,RB,New York Jets,59aa5380ba92aac076f2a5eabcd115fc,7gtzc33a
+14129,Bilal Powell,Bilal,Powell,29,RB,New York Jets,1ace5ab9b66d6d079ab7c7bca3cb83de,7gtzc33a
+15111,Daryl Richardson,Daryl,Richardson,35,RB,New York Jets,08bac6be8b7672f23afb043a23a67a39,7gtzc33a
+15973,Tommy Bohanon,Tommy,Bohanon,40,FB,New York Jets,ff83c86a24014fa588f437a2707a7fce,7gtzc33a
+13271,Eric Decker,Eric,Decker,87,WR,New York Jets,ee0e0b9aa707d5ebd6d0d7f060b64314,7gtzc33a
+16899,Quincy Enunwa,Quincy,Enunwa,82,WR,New York Jets,5f2835aeeee6a001f3ecb735029ba82d,7gtzc33a
+16811,Shaquelle Evans,Shaquelle,Evans,81,WR,New York Jets,20031b5e4d17116e32cc2696a3a69c25,7gtzc33a
+14209,Clyde Gates,Clyde,Gates,10,WR,New York Jets,32121a65a5233190e5222cf5842d44f1,7gtzc33a
+14910,Stephen Hill,Stephen,Hill,84,WR,New York Jets,72b417365d408b007ab9b538ea5f85fb,7gtzc33a
+14151,Jeremy Kerley,Jeremy,Kerley,11,WR,New York Jets,70c6c671d07b9ae00efd4871cf2b3532,7gtzc33a
+15397,Saalim Hakim,Saalim,Hakim,15,WR,New York Jets,afe01506a37aec2ce90cec39594e0566,7gtzc33a
+13621,David Nelson,David,Nelson,86,WR,New York Jets,cfec46c0a5d06fa484a45e2e34a2bf05,7gtzc33a
+14106,Greg Salas,Greg,Salas,17,WR,New York Jets,56410786ed3152da25f99d2c00d9f2da,7gtzc33a
+16928,Jalen Saunders,Jalen,Saunders,16,WR,New York Jets,f12eb211f4376cd56710ac075c478531,7gtzc33a
+16792,Jace Amaro,Jace,Amaro,88,TE,New York Jets,7cba4238a5f74f462bd591b304b6361f,7gtzc33a
+13555,Jeff Cumberland,Jeff,Cumberland,85,TE,New York Jets,bad8d526abd02f52bdb99b1f6dc6e213,7gtzc33a
+16210,Chris Pantale,Chris,Pantale,83,TE,New York Jets,b1937aeb8a8f3c429e615946d08d3120,7gtzc33a
+16418,Zach Sudfeld,Zach,Sudfeld,44,TE,New York Jets,8d6345b2fdeefb6897069cb7cdf3e4a6,7gtzc33a
+9615,Nick Mangold,Nick,Mangold,74,C,New York Jets,d07e8851674eb03f2c7a4e21ecae1e3e,7gtzc33a
+12605,Tanner Purdum,Tanner,Purdum,46,C,New York Jets,4fe6eca1b2bf89d815fbb0b23a0c3eb0,7gtzc33a
+15972,Oday Aboushi,Oday,Aboushi,75,OT,New York Jets,edc0980404d2bb0cb2035fb6f85ffb95,7gtzc33a
+9590,D'Brickashaw Ferguson,D'Brickashaw,Ferguson,60,OT,New York Jets,b80188b330b4905021588ad0e59bbb97,7gtzc33a
+11384,Breno Giacomini,Breno,Giacomini,68,OT,New York Jets,84c76838677499afa056367dabba978f,7gtzc33a
+16861,Dakota Dozier,Dakota,Dozier,70,OT,New York Jets,d46ba0f04fbe8d4af05a2edb90d2a299,7gtzc33a
+14041,Ben Ijalana,Ben,Ijalana,71,OT,New York Jets,0cd2622ce32a80163e58c00d63071a57,7gtzc33a
+17087,Brent Qvale,Brent,Qvale,79,OT,New York Jets,32c68a4bd02f23b74853f4d8c2b1f68a,7gtzc33a
+15969,William Campbell,William,Campbell,65,OG,New York Jets,edf34a4cce48b84d784bcef8f81e0f8e,7gtzc33a
+9717,Willie Colon,Willie,Colon,66,OG,New York Jets,d5558ea0745dbdcf187c9bd32c5c420a,7gtzc33a
+14069,Caleb Schlauderaff,Caleb,Schlauderaff,72,OG,New York Jets,714599622d14985057f4d144e34d3f4b,7gtzc33a
+15879,Brian Winters,Brian,Winters,67,OG,New York Jets,84c446ba7c611d74731dd9575c76a820,7gtzc33a
+5552,Jason Babin,Jason,Babin,58,DE,New York Jets,c0cae2f272e8db7ce73b4c6f050fb181,7gtzc33a
+14057,Kenrick Ellis,Kenrick,Ellis,93,DE,New York Jets,752ed27769612231aef76a0a95508979,7gtzc33a
+15811,Sheldon Richardson,Sheldon,Richardson,91,DE,New York Jets,38f38adf633125f7940f1b84161fccd9,7gtzc33a
+17093,Zach Thompson,Zach,Thompson,77,DE,New York Jets,8f49f95c12d89f138a513ca818b94506,7gtzc33a
+13985,Muhammad Wilkerson,Muhammad,Wilkerson,96,DE,New York Jets,8ed56beece04aade6dd161cb8954b0ce,7gtzc33a
+11920,Leger Douzable,Leger,Douzable,78,DT,New York Jets,eb1739dbccc9ffd128cdfed5488499d1,7gtzc33a
+16127,T.J. Barnes,T.J.,Barnes,99,DT,New York Jets,74d2b26f232344adb56f72828629fbf5,7gtzc33a
+15704,Tevita Finau,Tevita,Finau,92,DT,New York Jets,8acad44fba6bde6925dec7b8e34c5b3f,7gtzc33a
+15380,Damon Harrison,Damon,Harrison,94,DT,New York Jets,a038f2ea832255ffc7ba59312bf0ab39,7gtzc33a
+10577,Antwan Barnes,Antwan,Barnes,95,LB,New York Jets,fd9e68dc03c77c21a3c6eca60f27ec2c,7gtzc33a
+14471,Nick Bellore,Nick,Bellore,54,LB,New York Jets,978f0390e214985e4caaaa8fb728a860,7gtzc33a
+14934,Quinton Coples,Quinton,Coples,98,LB,New York Jets,6b0bdeb5a95a8246634bc9f6d3792d75,7gtzc33a
+13269,Jermaine Cunningham,Jermaine,Cunningham,55,LB,New York Jets,efcf9cc6d9b1308ece3cc72a0d00a946,7gtzc33a
+14958,Demario Davis,Demario,Davis,56,LB,New York Jets,999b8a49603ee0344c3acdf6b4ec49b3,7gtzc33a
+16180,Troy Davis,Troy,Davis,58,LB,New York Jets,7dfb649c970c64764878d5271b0a507e,7gtzc33a
+13358,A.J. Edds,A.J.,Edds,59,LB,New York Jets,cd3152f6da1ee10f6a6294e6d7375f4e,7gtzc33a
+16858,IK Enemkpali,IK,Enemkpali,51,LB,New York Jets,38c41f25c6293d70c6d44e170b8ccca5,7gtzc33a
+16897,Jeremiah George,Jeremiah,George,53,LB,New York Jets,0c513e9e29540387159a9e40901e89d9,7gtzc33a
+10491,David Harris,David,Harris,52,LB,New York Jets,26c6c7fab045789e34d5d5c186116580,7gtzc33a
+13165,Josh Mauga,Josh,Mauga,53,LB,Kansas City Chiefs,459d08a7e7b43cdf94c2cdd9d1be3438,7gtzc33a
+12105,Garrett McIntyre,Garrett,McIntyre,50,LB,New York Jets,7d756066d572e06e35496bfb2695e20a,7gtzc33a
+4476,Calvin Pace,Calvin,Pace,97,LB,New York Jets,fbb968ec2c50cd92da36edae4c1d07fc,7gtzc33a
+16834,Trevor Reilly,Trevor,Reilly,49,LB,New York Jets,e0706b734be14597684fd7157dfcb200,7gtzc33a
+16957,Brandon Dixon,Brandon,Dixon,42,CB,New York Jets,94ad0c09f738b8bab55a9fd6bb4b18a0,7gtzc33a
+16805,Dex McDougle,Dex,McDougle,43,CB,New York Jets,46c64a7f771d4ee8b2222c20038f8a53,7gtzc33a
+15804,Dee Milliner,Dee,Milliner,27,CB,New York Jets,cc7f99c9613ada2a88f9a380c84cf3ee,7gtzc33a
+15117,Tim Fugger,Tim,Fugger,57,LB,New York Jets,fb8c8899d1bbcc15a5fee52240218f88,7gtzc33a
+9351,Dimitri Patterson,Dimitri,Patterson,24,CB,New York Jets,d0026f2414d37ec51cbe7d24e21d5ae8,7gtzc33a
+14510,Darrin Walls,Darrin,Walls,30,CB,New York Jets,48ff6a41695fbd51fafaf609725e7b36,7gtzc33a
+13237,Kyle Wilson,Kyle,Wilson,20,CB,New York Jets,fa62517ac3dcefdaf06910ac6c9d4dd1,7gtzc33a
+15113,Josh Bush,Josh,Bush,32,DB,New York Jets,7f38ae75c2e1fd05fad437bef1d02aa0,7gtzc33a
+14011,Johnny Patrick,Johnny,Patrick,22,CB,New York Jets,92c9f183fc8b05ef574c38479394af04,7gtzc33a
+14714,LeQuan Lewis,LeQuan,Lewis,30,,New England Patriots,1c6a2989793c9cfc9b06096206a794cb,7gtzc33a
+16206,Rontez Miles,Rontez,Miles,45,DB,New York Jets,cba669c1e4870c21515e69a13c728728,7gtzc33a
+12681,Ellis Lankster,Ellis,Lankster,31,DB,New York Jets,43c36be3803f99952c4766be610eb15a,7gtzc33a
+9732,Dawan Landry,Dawan,Landry,26,SS,New York Jets,77ff91d4d35fbede7537c4e014b84a67,7gtzc33a
+15061,Antonio Allen,Antonio,Allen,39,FS,New York Jets,4da153bf89052308d9519540fddbef85,7gtzc33a
+14043,Jaiquawn Jarrett,Jaiquawn,Jarrett,37,FS,New York Jets,ed91a09fa38f83592763970119ef469d,7gtzc33a
+16697,Jeremy Reeves,Jeremy,Reeves,41,DB,New York Jets,1f74db9f66b5d8b4d0bd5281202877c7,7gtzc33a
+16729,Calvin Pryor,Calvin,Pryor,25,FS,New York Jets,3d81f4ab879e32234ea5cd5dbc39e762,7gtzc33a
+10621,Nick Folk,Nick,Folk,2,PK,New York Jets,de0d105f575862ebfbe3969d68d03ca3,7gtzc33a
+15616,Ryan Quigley,Ryan,Quigley,4,P,New York Jets,a4072533474ee4038f6110eeb5dab4c0,7gtzc33a
+2330,Tom Brady,Tom,Brady,12,QB,New England Patriots,5566367991c435ec1d9ce8cb30d7fffe,7gtzc33a
+16760,Jimmy Garoppolo,Jimmy,Garoppolo,10,QB,New England Patriots,876f3e2ce989b053e753b6796fc793b7,7gtzc33a
+14037,Ryan Mallett,Ryan,Mallett,15,QB,New England Patriots,f7f8bb14d4b4e310a6bc325573ebd9f2,7gtzc33a
+15478,Brandon Bolden,Brandon,Bolden,38,RB,New England Patriots,4c3a65c788ca2bd17228866873591062,7gtzc33a
+17147,Roy Finch,Roy,Finch,29,RB,New England Patriots,46180ac207c587a8d46e8ad926ec7382,7gtzc33a
+16838,Tyler Gaffney,Tyler,Gaffney,31,RB,New England Patriots,5cda7b1cf9448c907fec109755e27660,7gtzc33a
+15364,Jonas Gray,Jonas,Gray,35,RB,New England Patriots,3f848b15031e849cf4c9e319cb64a255,7gtzc33a
+14028,Stevan Ridley,Stevan,Ridley,22,RB,New England Patriots,9927ea1f63b1e0b231ab7a7418b7bcb4,7gtzc33a
+14017,Shane Vereen,Shane,Vereen,34,RB,New England Patriots,d42363e6c416bce2ef9ee501a8de72d4,7gtzc33a
+16913,James White,James,White,28,RB,New England Patriots,d26009c8616c58142b488b8b38a6844c,7gtzc33a
+13940,James Develin,James,Develin,46,FB,New England Patriots,46eb619fa4cbb3fea61bfc95ca6dcc6d,7gtzc33a
+11674,Danny Amendola,Danny,Amendola,80,WR,New England Patriots,995f15058cfb028c1388b57b8f0bfb94,7gtzc33a
+15998,Josh Boyce,Josh,Boyce,82,WR,New England Patriots,b8ad5e875a0671ea06d15257c5792c4b,7gtzc33a
+15834,Aaron Dobson,Aaron,Dobson,17,WR,New England Patriots,4013a3d57e2789b546101a12ffbd369e,7gtzc33a
+12649,Julian Edelman,Julian,Edelman,11,WR,New England Patriots,81676bc87010551f37462b04c2b94a94,7gtzc33a
+16828,Jeremy Gallon,Jeremy,Gallon,83,WR,New England Patriots,1270dd078cc53b67d3f2c4010d8951a6,7gtzc33a
+12576,Brandon LaFell,Brandon,LaFell,19,WR,New England Patriots,b287dcbd10b2123868fbd947f69c8034,7gtzc33a
+12589,Greg Orton,Greg,Orton,89,WR,New England Patriots,edf7cd948dd4da714595896db556e389,7gtzc33a
+11387,Matthew Slater,Matthew,Slater,18,WR,New England Patriots,add09b4b60798e2ecd1d68911682bb7f,7gtzc33a
+16381,Kenbrell Thompkins,Kenbrell,Thompkins,85,WR,New England Patriots,a2544df0b76410b67e3cbed973c375ec,7gtzc33a
+13387,Michael Hoomanawanui,Michael,Hoomanawanui,47,TE,New England Patriots,a3716ececd5e55bafb4fd69ac95d08f1,7gtzc33a
+16285,Tim Wright,Tim,Wright,,TE,New England Patriots,e72c593505eefeeade745208177b8c28,7gtzc33a
+15252,Brian Tyms,Brian,Tyms,84,WR,New England Patriots,84419f446e2b99997f27525586fdc236,7gtzc33a
+13229,Rob Gronkowski,Rob,Gronkowski,87,TE,New England Patriots,30bfb8c2fbed257466857b6ab8397e12,7gtzc33a
+14581,Danny Aiken,Danny,Aiken,48,C,New England Patriots,9438ad8df831cc4dc9697e16ffee3a11,7gtzc33a
+16295,Braxston Cave,Braxston,Cave,68,C,New England Patriots,be2739a090e15c286498971529aa63f9,7gtzc33a
+11786,Ryan Wendell,Ryan,Wendell,62,C,New England Patriots,776f6a5450c5d4f2da33134c8f9dd36a,7gtzc33a
+14116,Marcus Cannon,Marcus,Cannon,61,OT,New England Patriots,443c6e52d07fde021f4e0b208aab2d2a,7gtzc33a
+16385,Jordan Devey,Jordan,Devey,65,OT,New England Patriots,81bd60215123a45233245aabc94e666e,7gtzc33a
+16932,Cameron Fleming,Cameron,Fleming,71,OT,New England Patriots,2b91f22dd64063e410ee0d6cbff9e333,7gtzc33a
+13863,Steve Maneri,Steve,Maneri,87,OT,New England Patriots,20709734255ca1f6b292e88150e963f7,7gtzc33a
+17362,Chris Martin,Chris,Martin,72,OT,New England Patriots,7ee6abee3343b0247a722c666dd33e09,7gtzc33a
+13964,Nate Solder,Nate,Solder,77,OT,New England Patriots,61d7911e7d4660e47c4b713a1052875b,7gtzc33a
+12626,Sebastian Vollmer,Sebastian,Vollmer,76,OT,New England Patriots,0b80b30eeb4f6f536f808111bd7f42fd,7gtzc33a
+9298,Dan Connolly,Dan,Connolly,63,OG,New England Patriots,b6009153a74a91aa81016fde71158c62,7gtzc33a
+16842,Jon Halapio,Jon,Halapio,69,OG,New England Patriots,1b60584b700c224bb63184cbac83a96f,7gtzc33a
+16403,Josh Kline,Josh,Kline,67,OG,New England Patriots,95e1b052c32ccb82b325297c65acf3ed,7gtzc33a
+15607,Ben Bass,Ben,Bass,,DE,New England Patriots,151b5457f52c11b78f78911b539572fb,7gtzc33a
+14960,Jake Bequette,Jake,Bequette,92,DE,New England Patriots,16f46a0e304fd8a1b242dd274230d447,7gtzc33a
+15959,Michael Buchanan,Michael,Buchanan,99,DE,New England Patriots,504d1e9deb2711fd491a6b3ffc1d10bd,7gtzc33a
+14927,Chandler Jones,Chandler,Jones,95,DE,New England Patriots,f7272bfe3e494b5f076d9bd90c81cf6c,7gtzc33a
+16959,Zach Moore,Zach,Moore,71,DE,New England Patriots,ddd4831eeac93f7e347ca12391e9ccf8,7gtzc33a
+9721,Rob Ninkovich,Rob,Ninkovich,50,DE,New England Patriots,5db8ef7ae1356f36a9787df5be408f94,7gtzc33a
+16721,Dominique Easley,Dominique,Easley,74,DT,New England Patriots,a46f2ad85dd2d0a14b3a18fe8b53f973,7gtzc33a
+15955,Chris Jones,Chris,Jones,94,DT,New England Patriots,f93cbc4832662d7fc87f72fd735fdaf6,7gtzc33a
+17204,Eathyn Manumaleuna,Eathyn,Manumaleuna,64,DT,New England Patriots,a01486df1f5a6f7032aa290336bfef70,7gtzc33a
+14441,Sealver Siliga,Sealver,Siliga,96,DT,New England Patriots,c78118c25eba56369627edbf02260e4f,7gtzc33a
+17455,LT Tuipulotu,LT,Tuipulotu,68,DT,New England Patriots,1a3c84b9ec29d624230a002c3fddf6f8,7gtzc33a
+16421,Joe Vellano,Joe,Vellano,72,DT,New England Patriots,c6d25ba1951eb48452bc5f807da5dad2,7gtzc33a
+5546,Vince Wilfork,Vince,Wilfork,75,DT,New England Patriots,f2f9fb295a828c0b65b11f69368352e4,7gtzc33a
+14967,Jerel Worthy,Jerel,Worthy,97,DT,New England Patriots,2cf304d32265d6ad8d1131a4bc7fc4d9,7gtzc33a
+15988,Steve Beauharnais,Steve,Beauharnais,58,LB,New England Patriots,e1b664eba69a0040fbcb0bfb2b9d303c,7gtzc33a
+15830,Jamie Collins,Jamie,Collins,91,LB,New England Patriots,c8163dc26f9cd23bb5626f5764b8c5b7,7gtzc33a
+16559,Ja'Gared Davis,Ja'Gared,Davis,53,LB,New England Patriots,e1d1c315a3a06878d72af32e98df6c0c,7gtzc33a
+15080,Darius Fleming,Darius,Fleming,44,LB,New England Patriots,b346668669cbdcd42107f9b576289cda,7gtzc33a
+17159,Cameron Gordon,Cameron,Gordon,45,LB,New England Patriots,fa5f4153d9684e4b31ce9891a7ebc72e,7gtzc33a
+14933,Dont'a Hightower,Dont'a,Hightower,54,LB,New England Patriots,6dca309461a4a875b268cb0fb117b6da,7gtzc33a
+11244,Jerod Mayo,Jerod,Mayo,51,LB,New England Patriots,3c0bfcdc27f62ff99723253f05432938,7gtzc33a
+17436,Taylor McCuller,Taylor,McCuller,48,LB,New England Patriots,19fff8c8b19f937ab0a8310b9defbcf5,7gtzc33a
+14201,Chris White,Chris,White,59,LB,New England Patriots,f5f827e72c04944e40bd24c4c14e3c29,7gtzc33a
+11494,Kyle Arrington,Kyle,Arrington,25,CB,New England Patriots,52365501d90a7816e1a52e73e0c2f0e3,7gtzc33a
+9250,Brandon Browner,Brandon,Browner,39,CB,New England Patriots,eb033482ad1898a022395b4c8f42d5af,7gtzc33a
+15053,Alfonzo Dennard,Alfonzo,Dennard,37,CB,New England Patriots,fe5cef5d6aca8746a858f5e5ca16b61f,7gtzc33a
+10458,Darrelle Revis,Darrelle,Revis,24,CB,New England Patriots,1a8a6fbeec7526f59965b096b8b1155c,7gtzc33a
+15861,Logan Ryan,Logan,Ryan,26,CB,New England Patriots,d0e4d2d7b27454e89c1eed8b52605626,7gtzc33a
+17435,Malcolm Butler,Malcolm,Butler,29,DB,New England Patriots,955abf6742410c7ad99b981d42ec3275,7gtzc33a
+16394,Kanorris Davis,Kanorris,Davis,36,DB,New England Patriots,c38802d09e249782c13eab0aebfe0b58,7gtzc33a
+15125,Nate Ebner,Nate,Ebner,43,DB,New England Patriots,547ca1fe6867f55dee5ca2ec01e4778f,7gtzc33a
+17154,Shamiel Gary,Shamiel,Gary,31,DB,New England Patriots,dda9e9b3d7be25bc8058accc76e7c9cb,7gtzc33a
+16304,Daxton Swanson,Daxton,Swanson,35,DB,New England Patriots,820474d10709f556176595201e148075,7gtzc33a
+15842,Duron Harmon,Duron,Harmon,30,SS,New England Patriots,b9543482365ec7fdcb8421793c39caa5,7gtzc33a
+14977,Tavon Wilson,Tavon,Wilson,27,SS,New England Patriots,19e4da1973b0c5101ed9246fb03ccaab,7gtzc33a
+12527,Patrick Chung,Patrick,Chung,23,FS,New England Patriots,424ca6e996e8d582e312bf0b155841ba,7gtzc33a
+13236,Devin McCourty,Devin,McCourty,32,FS,New England Patriots,59b81e03e0afc37cbad54dec1673aaef,7gtzc33a
+9704,Stephen Gostkowski,Stephen,Gostkowski,3,PK,New England Patriots,2c33276b35d2bfac9163f56513ed72d8,7gtzc33a
+16382,Ryan Allen,Ryan,Allen,6,P,New England Patriots,a88d829f122a923e7131d17302884cb8,7gtzc33a
+8520,Kyle Orton,Kyle,Orton,18,QB,Buffalo Bills,f7959232effeb2b6d679c590f4a139a9,7gtzc33a
+5209,Tony Romo,Tony,Romo,9,QB,Dallas Cowboys,8d462592f824332dce760934b884f138,7gtzc33a
+17337,Dustin Vaughan,Dustin,Vaughan,10,QB,Dallas Cowboys,4fa03422ef00efdeb216b2904de63b0d,7gtzc33a
+14878,Brandon Weeden,Brandon,Weeden,3,QB,Dallas Cowboys,eae6bc14ea1f6b55e04d499af22eee28,7gtzc33a
+15369,Lance Dunbar,Lance,Dunbar,25,RB,Dallas Cowboys,3849b6e2abfac3454782116c8b00c79a,7gtzc33a
+14005,DeMarco Murray,DeMarco,Murray,29,RB,Dallas Cowboys,fc3b7404e4e22628e390fed98934c408,7gtzc33a
+14625,Phillip Tanner,Phillip,Tanner,,RB,Dallas Cowboys,4687d5f684b6241fb9bf7c30a41cdc47,7gtzc33a
+14051,Ryan Williams,Ryan,Williams,34,RB,Dallas Cowboys,fde85eae4b1da0195616b1105a420029,7gtzc33a
+15349,Cole Beasley,Cole,Beasley,11,WR,Dallas Cowboys,1253af1a6eec8b5a92898978a61ba310,7gtzc33a
+13227,Dezmon Briscoe,Dezmon,Briscoe,81,WR,Dallas Cowboys,0c6d4cbbab57c8b8fde1b9f0360e8263,7gtzc33a
+13215,Dez Bryant,Dez,Bryant,88,WR,Dallas Cowboys,e78f98d24f233564e063e59f85494adb,7gtzc33a
+15536,LaRon Byrd,LaRon,Byrd,80,WR,Dallas Cowboys,681188430e3160c338206e2f569739b9,7gtzc33a
+14100,Dwayne Harris,Dwayne,Harris,17,WR,Dallas Cowboys,ab754d14f79c6dc54b08e8d01d8ececb,7gtzc33a
+13945,Tyler Clutts,Tyler,Clutts,44,FB,Dallas Cowboys,de7fe6d590e3f1df94c515c3f025dd3b,7gtzc33a
+14295,Jamar Newsome,Jamar,Newsome,85,WR,Dallas Cowboys,750c7842400f66dc1c4a4763ff812f0e,7gtzc33a
+15878,Terrance Williams,Terrance,Williams,83,WR,Dallas Cowboys,8fb9fd74bdcf867955d64c0fb15e821a,7gtzc33a
+15836,Gavin Escobar,Gavin,Escobar,89,TE,Dallas Cowboys,c5947e25e81865da079c1f20409dbef9,7gtzc33a
+14906,James Hanna,James,Hanna,84,TE,Dallas Cowboys,bbb537e97e46722a42693b97aaceb818,7gtzc33a
+17281,Asa Watson,Asa,Watson,86,,New England Patriots,58d401a656836630258456b8add58b9e,7gtzc33a
+4527,Jason Witten,Jason,Witten,82,TE,Dallas Cowboys,37640952d6c38ed57a4179a4db556cdc,7gtzc33a
+15793,Travis Frederick,Travis,Frederick,72,C,Dallas Cowboys,3310211fd7f0f8911457540badf44b2a,7gtzc33a
+9349,L.P. Ladouceur,L.P.,Ladouceur,91,C,Dallas Cowboys,6c4ff6fddbf824a70f65d2bb9a7ef877,7gtzc33a
+17308,Josh Aladenoye,Josh,Aladenoye,62,OT,Dallas Cowboys,43c6e9f0726cad29e36e767a73f8aebc,7gtzc33a
+10565,Doug Free,Doug,Free,68,OT,Dallas Cowboys,313ae942224aa6758b254268edcefaae,7gtzc33a
+13066,Jermey Parnell,Jermey,Parnell,78,OT,Dallas Cowboys,d352861f318b17ff48afb43f8e521b77,7gtzc33a
+13978,Tyron Smith,Tyron,Smith,77,OT,Dallas Cowboys,89be0dc019b126be217388aeb6dc1ca7,7gtzc33a
+15332,Darrion Weems,Darrion,Weems,75,OT,Dallas Cowboys,a27c8f262b7af4c18da6af08be0a71b9,7gtzc33a
+16247,John Wetzel,John,Wetzel,61,OT,Dallas Cowboys,ddc877ac9bf6feec4ad079a3bebfb0ac,7gtzc33a
+11484,Mackenzy Bernadeau,Mackenzy,Bernadeau,73,OG,Dallas Cowboys,c60d63613e9a3961c7429d780e42253a,7gtzc33a
+17339,Brian Clarke,Brian,Clarke,63,OG,Dallas Cowboys,d533f28ea380d850dfabeac45c671021,7gtzc33a
+15276,Ronald Leary,Ronald,Leary,65,OG,Dallas Cowboys,e6b08624b98bae514234f644909565d3,7gtzc33a
+16709,Zack Martin,Zack,Martin,70,OG,Dallas Cowboys,135fd980bddfb11889b109f3714460b1,7gtzc33a
+10592,Uche Nwaneri,Uche,Nwaneri,74,OG,Dallas Cowboys,435c60020b249b185b231124caae432b,7gtzc33a
+17327,Ronald Patrick,Ronald,Patrick,67,OG,Dallas Cowboys,a35ffdd99e75da4a7411d6c4b3084f67,7gtzc33a
+16049,Kenneth Boatright,Kenneth,Boatright,91,DE,Dallas Cowboys,ae41a780fd3ad88a8b71ccae3e5f785a,7gtzc33a
+14987,Tyrone Crawford,Tyrone,Crawford,98,DE,Dallas Cowboys,c2a8a7f81eda32c594d3142ac492fc9d,7gtzc33a
+16839,Ben Gardner,Ben,Gardner,71,DE,Dallas Cowboys,5c59249733ae2e47eca7ade2604dae14,7gtzc33a
+16802,DeMarcus Lawrence,DeMarcus,Lawrence,90,DE,Dallas Cowboys,e9c95a2c4694a54cb67e4b6b92edcf91,7gtzc33a
+9777,Jeremy Mincey,Jeremy,Mincey,92,DE,Dallas Cowboys,06947ac627bb66eb61468d12344049fa,7gtzc33a
+16606,Caesar Rayford,Caesar,Rayford,95,DE,Dallas Cowboys,fbf2f1905a68598885d84dabebae68c2,7gtzc33a
+10470,Anthony Spencer,Anthony,Spencer,93,DE,Dallas Cowboys,e50085fb33e5e34e46c988788d7ce855,7gtzc33a
+13452,George Selvie,George,Selvie,99,DE,Dallas Cowboys,1d67681e16ba212db806e59b9eb6b36d,7gtzc33a
+16953,Ken Bishop,Ken,Bishop,66,DT,Dallas Cowboys,e4dfbe8d41a406800b6455598fd9ca02,7gtzc33a
+17334,Davon Coleman,Davon,Coleman,60,DT,Dallas Cowboys,c5a9f065c264cddc704d6f84848792ef,7gtzc33a
+11415,Nick Hayden,Nick,Hayden,96,DT,Dallas Cowboys,c491114cf6766d6a9aad5479cc4be01f,7gtzc33a
+17479,Dartwan Bush,Dartwan,Bush,70,DT,Dallas Cowboys,fe3b143951b7bf4d6d2225127f4e4804,7gtzc33a
+14014,Terrell McClain,Terrell,McClain,97,DT,Dallas Cowboys,6f3a8b671fee62a2e9e23492dfc95b14,7gtzc33a
+16153,Zach Minter,Zach,Minter,79,DT,Dallas Cowboys,f6dd843e4d50abafd2664e54698416c0,7gtzc33a
+12695,Henry Melton,Henry,Melton,69,DT,Dallas Cowboys,2f41d17c22c24e01d44c0ec82e06f036,7gtzc33a
+14026,Bruce Carter,Bruce,Carter,54,LB,Dallas Cowboys,42cd42cf3a18d7461ecdb73f1a4e6f91,7gtzc33a
+10492,Justin Durant,Justin,Durant,52,LB,Dallas Cowboys,bae570b1d58b62d2cc1ff16e166c63cb,7gtzc33a
+16883,Anthony Hitchens,Anthony,Hitchens,59,LB,Dallas Cowboys,7ef67156c85426e1bcc6657163efa37c,7gtzc33a
+16476,Cameron Lawrence,Cameron,Lawrence,53,LB,Dallas Cowboys,1e18b2643d8dd770a74d15877e723018,7gtzc33a
+15990,DeVonte Holloman,DeVonte,Holloman,57,LB,Dallas Cowboys,123a576a0359b2e7843716e833ab490d,7gtzc33a
+13284,Sean Lee,Sean,Lee,50,LB,Dallas Cowboys,6036889a2700cae68a72bc805cc0e623,7gtzc33a
+14343,Orie Lemon,Orie,Lemon,58,LB,Dallas Cowboys,a58a52cf78e60e1491a9840a273d58f2,7gtzc33a
+13255,Rolando McClain,Rolando,McClain,55,LB,Dallas Cowboys,bdd753c81029b590691154aa5186c4e1,7gtzc33a
+17315,Keith Smith,Keith,Smith,43,LB,Dallas Cowboys,878517f3db65712e7850dd64e70d135d,7gtzc33a
+17328,Dontavis Sapp,Dontavis,Sapp,45,LB,Dallas Cowboys,e4b9785e1349457e93db702971b9237d,7gtzc33a
+16951,Will Smith,Will,Smith,40,LB,Dallas Cowboys,ea544f59415911444704bde105695ad2,7gtzc33a
+11363,Brandon Carr,Brandon,Carr,39,CB,Dallas Cowboys,6587cb567c813114580ca6dc66149be1,7gtzc33a
+14943,Morris Claiborne,Morris,Claiborne,24,CB,Dallas Cowboys,84d6c881d40ea3604f904d79d73db22c,7gtzc33a
+15038,Kyle Wilber,Kyle,Wilber,51,LB,Dallas Cowboys,687d85dfc7354d586381f92e0209ce79,7gtzc33a
+11366,Orlando Scandrick,Orlando,Scandrick,32,CB,Dallas Cowboys,8fb98cd09abd126b9b836f582cd011c4,7gtzc33a
+16927,Terrance Mitchell,Terrance,Mitchell,30,CB,Dallas Cowboys,0a07627636fd281a3621c905b0d3737d,7gtzc33a
+16626,Justin Green,Justin,Green,,DB,Dallas Cowboys,f35911f7d8351acb4c0a319352c2ae3d,7gtzc33a
+16471,Jakar Hamilton,Jakar,Hamilton,23,DB,Dallas Cowboys,3754e3d79491d23ccbfd876140f59e1b,7gtzc33a
+14802,Sterling Moore,Sterling,Moore,26,DB,Dallas Cowboys,4f70d064feafa6c01d1242a3adae07bb,7gtzc33a
+17450,Tyler Patmon,Tyler,Patmon,35,DB,Dallas Cowboys,3e71966930aa61fe750e25c8638b2032,7gtzc33a
+17324,Ryan Smith,Ryan,Smith,33,DB,Dallas Cowboys,122d0776d25c17589d54c4b47de57d5b,7gtzc33a
+16817,Jemea Thomas,Jemea,Thomas,21,,New England Patriots,45519072d674f9b78c3540e305703cd1,7gtzc33a
+16895,Ahmad Dixon,Ahmad,Dixon,36,S,Dallas Cowboys,76ac15b138cf24d15443594e485a5a5e,7gtzc33a
+16473,Jeff Heath,Jeff,Heath,38,SS,Dallas Cowboys,2dd634e9dafd198abccc23f55a15b904,7gtzc33a
+15119,Matt Johnson,Matt,Johnson,37,SS,Dallas Cowboys,6f9ac32851d42b76fdab77c73bf9243b,7gtzc33a
+15874,J.J. Wilcox,J.J.,Wilcox,27,SS,Dallas Cowboys,19d10f0137032246276b248b53a08597,7gtzc33a
+13338,Barry Church,Barry,Church,42,FS,Dallas Cowboys,35d3fde49970959926fe338246c0692b,7gtzc33a
+14322,Dan Bailey,Dan,Bailey,5,PK,Dallas Cowboys,40a342ed1a5e9b54be4914aa16433fe4,7gtzc33a
+14723,Chris Jones,Chris,Jones,6,P,Dallas Cowboys,ba762fac19ceea7678ea34ae2fb229bc,7gtzc33a
+5526,Eli Manning,Eli,Manning,10,QB,New York Giants,64f989fc4245b9453196a22dc06c3b09,7gtzc33a
+15891,Ryan Nassib,Ryan,Nassib,9,QB,New York Giants,8d8a28a447867e9e8fd328eb32e33b7f,7gtzc33a
+12479,Curtis Painter,Curtis,Painter,17,QB,New York Giants,ccc411392d4ee7bf545689c96840a62a,7gtzc33a
+15929,Michael Cox,Michael,Cox,29,RB,New York Giants,cc2d0dcf111c5e4ffe699a344d097f3a,7gtzc33a
+16066,Kendall Gaskins,Kendall,Gaskins,46,RB,New York Giants,12e00978488392b98e7af6438af7ca89,7gtzc33a
+11461,Peyton Hillis,Peyton,Hillis,33,RB,New York Giants,7b08afc6e4e8148a460b396b70867f94,7gtzc33a
+12503,Rashad Jennings,Rashad,Jennings,23,RB,New York Giants,3c6da98ddc559017d3afb2949be2d498,7gtzc33a
+14887,David Wilson,David,Wilson,22,RB,New York Giants,998f84c6203585701b42d45767979f95,7gtzc33a
+13341,John Conner,John,Conner,39,FB,New York Giants,bc18b9bc3d93c42499a0d5874bf874e5,7gtzc33a
+16889,Andre Williams,Andre,Williams,44,RB,New York Giants,0ef2574e3ae7cadfb233d145341f84d1,7gtzc33a
+14608,Henry Hynoski,Henry,Hynoski,45,FB,New York Giants,1c681ea123627257237a3f2f3095b6cf,7gtzc33a
+16733,Odell Beckham Jr.,Odell,Beckham Jr.,13,WR,New York Giants,92ce639cf26527bb65f1db3b72947101,7gtzc33a
+13553,Victor Cruz,Victor,Cruz,80,WR,New York Giants,37f58f8a67dbe939971eae1807dbdb18,7gtzc33a
+14688,Marcus Harris,Marcus,Harris,18,WR,New York Giants,15da95d14a662d4a2d097b7e1ec2acce,7gtzc33a
+14040,Jerrel Jernigan,Jerrel,Jernigan,12,WR,New York Giants,e3d0d5a3fa72218f40687ee1fef10aa4,7gtzc33a
+11329,Mario Manningham,Mario,Manningham,86,WR,New York Giants,5f8049b8bd38e6e0b1caf69fcc0f4cf4,7gtzc33a
+13703,Preston Parker,Preston,Parker,83,WR,New York Giants,ef32fc61fbf34c668f13003d3c3f3b95,7gtzc33a
+14911,Rueben Randle,Rueben,Randle,82,WR,New York Giants,910299c31ad974c1d15c4cc75863ceb1,7gtzc33a
+13386,Trindon Holliday,Trindon,Holliday,15,WR,New York Giants,40cb741712fbb7c481bbca3660d4f075,7gtzc33a
+15518,Julian Talley,Julian,Talley,19,WR,New York Giants,8dc45d7ac1a2ff29018d5ae92a0d36a9,7gtzc33a
+17279,Corey Washington,Corey,Washington,6,WR,New York Giants,12d8f47d7359c5e8a5cb46174af4bee3,7gtzc33a
+11392,Kellen Davis,Kellen,Davis,87,TE,New York Giants,eaa264f3577f3ff68410cee6f914c333,7gtzc33a
+15707,Larry Donnell,Larry,Donnell,84,TE,New York Giants,978fca669e679669649d20422b0d34d9,7gtzc33a
+10287,Daniel Fells,Daniel,Fells,85,TE,New York Giants,b762f577efd20ff92f4e4dba362d0961,7gtzc33a
+14905,Adrien Robinson,Adrien,Robinson,81,TE,New York Giants,dd30eab52e370693ad385e15b6095893,7gtzc33a
+10560,Zak DeOssie,Zak,DeOssie,51,C,New York Giants,994fe3b0eaf92f0c3f30c9248a3d1097,7gtzc33a
+16746,Weston Richburg,Weston,Richburg,60,C,New York Giants,2a8fbcdc66c7bb5db5e12c5f88c59e52,7gtzc33a
+13303,J.D. Walton,J.D.,Walton,55,C,New York Giants,bb95b4ad24243d49570aa9c1735eb587,7gtzc33a
+13263,Charles Brown,Charles,Brown,71,OT,New York Giants,ea01df70b5c0531f659ce853559b360d,7gtzc33a
+16138,Rogers Gaines,Rogers,Gaines,79,OT,New York Giants,59f9027eaa12951ff3fae8f6a9efde04,7gtzc33a
+2477989,Adam Gress,Adam,Gress,68,OT,New York Giants,b81a26b575f5f9be21eeb8802b4d63f4,7gtzc33a
+12679,Troy Kropog,Troy,Kropog,70,OT,New York Giants,888df0d9133ffaa3b1e7928e3832d242,7gtzc33a
+15808,Justin Pugh,Justin,Pugh,67,OT,New York Giants,a80129485d7d2613fd5dcdbc667d2c8c,7gtzc33a
+15026,Mark Asper,Mark,Asper,64,OG,New York Giants,d88a3cee35369024edba7be11ccf844f,7gtzc33a
+14098,James Brewer,James,Brewer,73,OG,New York Giants,fe90cdc74b1a41abfa864ceee4240792,7gtzc33a
+15945,Eric Herman,Eric,Herman,62,OG,New York Giants,074cdf84b58f948514d552d7ac4e4033,7gtzc33a
+13278,John Jerry,John,Jerry,77,OG,New York Giants,8e84538eb7cce600018d5f02430076ef,7gtzc33a
+15105,Brandon Mosley,Brandon,Mosley,75,OG,New York Giants,c88ba26d9af7aa2282c003a4254c3ca7,7gtzc33a
+12610,Will Beatty,Will,Beatty,65,OT,New York Giants,5a2b78470173ea542f9234f3eaaaba9c,7gtzc33a
+12839,Dallas Reynolds,Dallas,Reynolds,61,OG,New York Giants,252f77836f6d006fd9e63d44614c91f9,7gtzc33a
+11475,Geoff Schwartz,Geoff,Schwartz,74,OG,New York Giants,c0db878bd42620d4f57bdd61e897f137,7gtzc33a
+12432,Robert Ayers,Robert,Ayers,91,DE,New York Giants,1ec1cf968c706fea01b0dd0128c7b706,7gtzc33a
+4996,Israel Idonije,Israel,Idonije,72,DE,New York Giants,2bd76cd758dc3291613cd9d204fe5fbb,7gtzc33a
+9618,Mathias Kiwanuka,Mathias,Kiwanuka,94,DE,New York Giants,2d777a19e52b7b765b46796c65d9d5a0,7gtzc33a
+15858,Damontre Moore,Damontre,Moore,98,DE,New York Giants,31d87ccab2f2a474f4046d904e1d2f6c,7gtzc33a
+13256,Jason Pierre-Paul,Jason,Pierre-Paul,90,DE,New York Giants,65885b39b0c7186710aa2e91b688e484,7gtzc33a
+17313,Jordan Stanton,Jordan,Stanton,66,DE,New York Giants,98ad8b1356a7995712c5c7c8cca2acc3,7gtzc33a
+17296,Kerry Wynn,Kerry,Wynn,69,DE,New York Giants,5df091eb70897871008687126c783da2,7gtzc33a
+16776,Jay Bromley,Jay,Bromley,96,DT,New York Giants,8837c85b05ef2a8a0c03a397d22ac596,7gtzc33a
+15841,Johnathan Hankins,Johnathan,Hankins,95,DT,New York Giants,134948570e22632f4c65a4b89292147d,7gtzc33a
+5009,Cullen Jenkins,Cullen,Jenkins,99,DT,New York Giants,7770844e67ad14df68deaf54608de5a9,7gtzc33a
+8445,Mike Patterson,Mike,Patterson,93,DT,New York Giants,9f86536b99942f39e93511bfdd74728a,7gtzc33a
+15024,Markus Kuhn,Markus,Kuhn,78,DT,New York Giants,bf328e1e30dc3316f7cd7c71eff6ec3c,7gtzc33a
+17235,Kelcy Quarles,Kelcy,Quarles,97,DT,New York Giants,7ce8bb29c5bac15f87d666ae62ba720d,7gtzc33a
+17103,Justin Anderson,Justin,Anderson,46,LB,New York Giants,b524a1df05d67ceddedd1b7aa184066a,7gtzc33a
+10469,Jon Beason,Jon,Beason,52,LB,New York Giants,d806f0a5a2560da3af9b27b611848b65,7gtzc33a
+14262,Mark Herzlich,Mark,Herzlich,58,LB,New York Giants,3271efc13ba3c4a9d2a744edd91bea19,7gtzc33a
+16820,Devon Kennard,Devon,Kennard,59,LB,New York Giants,68477a4a961b73d28e7e1886895e9f95,7gtzc33a
+15110,Terrell Manning,Terrell,Manning,63,LB,New York Giants,d6c4c842cb2a58dfa3f73237bc03706e,7gtzc33a
+17311,Dan Fox,Dan,Fox,47,LB,New York Giants,db1b26f2fbbfd6ba341890266008568c,7gtzc33a
+11841,Jameel McClain,Jameel,McClain,53,LB,New York Giants,7837000b2c3adad24fd233adc2132a31,7gtzc33a
+14648,Spencer Paysinger,Spencer,Paysinger,54,LB,New York Giants,9f79362a5c966191fee509889cd57641,7gtzc33a
+14199,Jacquian Williams,Jacquian,Williams,57,LB,New York Giants,cce7271b5f07f7de1229358bf009b0fa,7gtzc33a
+13975,Prince Amukamara,Prince,Amukamara,20,CB,New York Giants,60bd2db3bccb169c82c967841b966864,7gtzc33a
+11365,Zack Bowman,Zack,Bowman,31,CB,New York Giants,d7d9c2abbd5724173f27c945fe531fe7,7gtzc33a
+15549,Chandler Fenner,Chandler,Fenner,48,CB,New York Giants,23688b7c292cfb60219e85de856d9a7c,7gtzc33a
+14983,Jayron Hosley,Jayron,Hosley,28,CB,New York Giants,712e5bdbf17efff8f1b2748b15c1925a,7gtzc33a
+16490,Travis Howard,Travis,Howard,48,CB,New York Giants,d3d8e08e334bcfc874a90fe65939eb1c,7gtzc33a
+16879,Bennett Jackson,Bennett,Jackson,36,CB,New York Giants,123b3a160c1cf56e3fb7625eb1521f33,7gtzc33a
+10664,Trumaine McBride,Trumaine,McBride,38,CB,New York Giants,d73f13770fb1ca642928c74c08c9d1f7,7gtzc33a
+11250,Dominique Rodgers-Cromartie,Dominique,Rodgers-Cromartie,21,CB,New York Giants,9d904f9e13a2fb43735f8769ccd2e029,7gtzc33a
+13473,Walter Thurmond III,Walter,Thurmond III,24,CB,New York Giants,a743343d2ca519ba2b4bf54e93656aa4,7gtzc33a
+17160,Thomas Gordon,Thomas,Gordon,29,DB,New York Giants,dfe8a031f686a43cea9f7d7cd8309124,7gtzc33a
+15621,Will Hill,Will,Hill,48,DB,Baltimore Ravens,0060c40109c83f888f1496e54267f125,7gtzc33a
+13321,Stevie Brown,Stevie,Brown,27,SS,New York Giants,9554b99642950041a85a7e4f9fda5a34,7gtzc33a
+8423,Antrel Rolle,Antrel,Rolle,26,SS,New York Giants,bbfbddfab6568f27a2a57e4295ad4350,7gtzc33a
+11351,Quintin Demps,Quintin,Demps,35,FS,New York Giants,1857c5a1db493067b894a35ead9100e5,7gtzc33a
+16850,Nat Berhe,Nat,Berhe,34,SS,New York Giants,29caf1b2fb4005876d71b024cc681a07,7gtzc33a
+10127,Steve Weatherford,Steve,Weatherford,5,P,New York Giants,52779a736d833eb97be36bd57cf75d5f,7gtzc33a
+15948,Matt Barkley,Matt,Barkley,2,QB,Philadelphia Eagles,293223630d8b790077bc7af6ce6b9f90,7gtzc33a
+14877,Nick Foles,Nick,Foles,9,QB,Philadelphia Eagles,5c9de918f357418f1dcff62cd0840609,7gtzc33a
+15299,G.J. Kinne,G.J.,Kinne,4,QB,Philadelphia Eagles,dc64e3928a4afaeb396c37b55a80f3aa,7gtzc33a
+12482,Mark Sanchez,Mark,Sanchez,3,QB,Philadelphia Eagles,b22f0ed4437b4b507c18911e89851e39,7gtzc33a
+15921,Kenjon Barner,Kenjon,Barner,41,RB,Philadelphia Eagles,7a4f1b990dc5dfce5e3df3ffebd84194,7gtzc33a
+17010,Henry Josey,Henry,Josey,34,RB,Philadelphia Eagles,f828227237c2ecb365fe841ae6e19762,7gtzc33a
+12514,LeSean McCoy,LeSean,McCoy,25,RB,Philadelphia Eagles,449868b9984c34eda79398029e332412,7gtzc33a
+8544,Darren Sproles,Darren,Sproles,43,RB,Philadelphia Eagles,9ab1c263fe8ddc36fea4c9b48febf37f,7gtzc33a
+16236,Matthew Tucker,Matthew,Tucker,39,RB,Philadelphia Eagles,87236031bf7f09cd65aa724af29bff43,7gtzc33a
+13218,Arrelious Benn,Arrelious,Benn,17,WR,Philadelphia Eagles,9c136cea44ade1d71b1df24bc56f26eb,7gtzc33a
+16779,Josh Huff,Josh,Huff,11,WR,Philadelphia Eagles,c24b61ae8ccada4634d06bc2071d8579,7gtzc33a
+15624,Damaris Johnson,Damaris,Johnson,13,WR,Philadelphia Eagles,d5628f09fd38e9a1ecb55f49103ce2c0,7gtzc33a
+13225,Riley Cooper,Riley,Cooper,14,WR,Philadelphia Eagles,91ece824e0ebababe58364de0812863d,7gtzc33a
+12579,Jeremy Maclin,Jeremy,Maclin,18,WR,Philadelphia Eagles,f57d439c189dde85a24cd917e67f3b66,7gtzc33a
+14590,Jeff Maehl,Jeff,Maehl,88,WR,Philadelphia Eagles,464394dac9d903b8ac2b4c5517c7827e,7gtzc33a
+16763,Jordan Matthews,Jordan,Matthews,81,WR,Philadelphia Eagles,f69d3e735973acd05dfd144f99660de0,7gtzc33a
+15775,Ifeanyi Momah,Ifeanyi,Momah,80,WR,Philadelphia Eagles,e7aa3f0b44ebb74a91e69cabb0dfff94,7gtzc33a
+16565,Will Murphy,Will,Murphy,84,WR,Philadelphia Eagles,d0fdec82f7be8fc569e5a10831ea4d76,7gtzc33a
+17029,Quron Pratt,Quron,Pratt,10,WR,Philadelphia Eagles,1dde2ec0903797cb346aa63d69d85272,7gtzc33a
+12535,James Casey,James,Casey,85,TE,Philadelphia Eagles,56d49cbba5dcf8e398566fa4aa002e68,7gtzc33a
+10605,Brent Celek,Brent,Celek,87,TE,Philadelphia Eagles,4d20e1848a318a9743bd81c5b2aa793b,7gtzc33a
+16974,Trey Burton,Trey,Burton,47,TE,Philadelphia Eagles,a766b4b39c12fd65ca49c38f54d5330a,7gtzc33a
+15835,Zach Ertz,Zach,Ertz,86,TE,Philadelphia Eagles,d0afdeda9cb33c6db4eb17dec67f52ff,7gtzc33a
+4902,Jon Dorenbos,Jon,Dorenbos,46,C,Philadelphia Eagles,ef2e1301d264da53083fd75e7227c908,7gtzc33a
+14124,Jason Kelce,Jason,Kelce,62,C,Philadelphia Eagles,fe340cf70256a4327e3543a8ec82264d,7gtzc33a
+15030,David Molk,David,Molk,63,C,Philadelphia Eagles,1c99cfbcf4873315b087a3cfb5d97f3a,7gtzc33a
+10563,Allen Barbre,Allen,Barbre,76,OT,Philadelphia Eagles,0495af5cfbc5d53a7d13cae76e999772,7gtzc33a
+12659,Andrew Gardner,Andrew,Gardner,66,OT,Philadelphia Eagles,805fa2ac06c14f2d4b3d269812b73422,7gtzc33a
+16999,Kevin Graf,Kevin,Graf,77,OT,Philadelphia Eagles,d463c103db8a3ea1ffe34f61c5140fca,7gtzc33a
+15797,Lane Johnson,Lane,Johnson,65,OT,Philadelphia Eagles,f3d164b73303a00108c6e6d46c3ba748,7gtzc33a
+15054,Dennis Kelly,Dennis,Kelly,67,OT,Philadelphia Eagles,bd6b9af0bd124b7dd788a57e20a0a9f5,7gtzc33a
+6012,Jason Peters,Jason,Peters,71,OT,Philadelphia Eagles,ebe5ee19543f57602f75bf2b478ff7b8,7gtzc33a
+16235,Matt Tobin,Matt,Tobin,64,OT,Philadelphia Eagles,716f01986b53752e9afcceca40159c98,7gtzc33a
+8540,Todd Herremans,Todd,Herremans,79,OG,Philadelphia Eagles,2fdd9c928a785466a1dcfdf972b5742e,7gtzc33a
+8493,Evan Mathis,Evan,Mathis,69,OG,Philadelphia Eagles,3917db5ecacfdce4db86fdce41cf88fb,7gtzc33a
+14941,Fletcher Cox,Fletcher,Cox,91,DE,Philadelphia Eagles,de58f9d59e5a66d305575c42aaf0a7b2,7gtzc33a
+14361,Brandon Bair,Brandon,Bair,93,DE,Philadelphia Eagles,a5d1414b76c91926bdb4035b31a9b551,7gtzc33a
+14959,Vinny Curry,Vinny,Curry,75,DE,Philadelphia Eagles,66d020895cfad75d0d821dceb8142491,7gtzc33a
+16865,Taylor Hart,Taylor,Hart,97,DE,Philadelphia Eagles,34441280a267876578d2c27358acfe10,7gtzc33a
+16231,Damion Square,Damion,Square,77,DE,Philadelphia Eagles,9e890232dd1e637aa4ec752afabc57a2,7gtzc33a
+14310,Cedric Thornton,Cedric,Thornton,72,DE,Philadelphia Eagles,2994851d52fb091bd3ae67c73d58340e,7gtzc33a
+16912,Beau Allen,Beau,Allen,94,DT,Philadelphia Eagles,aae3d28801c5c51879770993f12404eb,7gtzc33a
+17012,Wade Keliikipi,Wade,Keliikipi,74,DT,Philadelphia Eagles,8b7784c1f14e1a8dd540e64942fb5346,7gtzc33a
+15850,Bennie Logan,Bennie,Logan,96,DT,Philadelphia Eagles,e268882a0972ba1e23c29dc4c2671d5d,7gtzc33a
+15045,Emmanuel Acho,Emmanuel,Acho,51,LB,Philadelphia Eagles,4bc8d71f4dc01266478bb868c1a7501b,7gtzc33a
+8560,Trent Cole,Trent,Cole,58,LB,Philadelphia Eagles,a700afe7a8f4fd7052af037d130fbcbd,7gtzc33a
+14524,Bryan Braman,Bryan,Braman,56,LB,Philadelphia Eagles,f5d053bb63e021aee61f9a1b05677345,7gtzc33a
+15068,Najee Goode,Najee,Goode,53,LB,Philadelphia Eagles,009e47a60c03cd7715f8c6dcb412a430,7gtzc33a
+13239,Brandon Graham,Brandon,Graham,55,LB,Philadelphia Eagles,5f053a0e4224806f0fbff4be0e4c55de,7gtzc33a
+15069,Josh Kaddu,Josh,Kaddu,49,LB,Philadelphia Eagles,ebee668b17a9e62938f6a1392776af07,7gtzc33a
+14978,Mychal Kendricks,Mychal,Kendricks,95,LB,Philadelphia Eagles,6661127f8fce2851886834402860ccbb,7gtzc33a
+14181,Casey Matthews,Casey,Matthews,50,LB,Philadelphia Eagles,9ff31bf51edf3cd50efdfd4089927db1,7gtzc33a
+9619,DeMeco Ryans,DeMeco,Ryans,59,LB,Philadelphia Eagles,a316d58efbfc39f5f0a3895c338e639f,7gtzc33a
+15057,Brandon Boykin,Brandon,Boykin,22,CB,Philadelphia Eagles,902d89d1997531069143b8e983959b66,7gtzc33a
+16712,Marcus Smith,Marcus,Smith,90,LB,Philadelphia Eagles,bf12d9932dc3f99583a5b8ba7f761241,7gtzc33a
+14118,Roc Carmichael,Roc,Carmichael,21,CB,Philadelphia Eagles,aa8a586a872278ced006d8b7e64e3ebc,7gtzc33a
+13333,Nolan Carroll,Nolan,Carroll,23,CB,Philadelphia Eagles,c021eec9ff58fd15e1205dc35c73c361,7gtzc33a
+12652,Bradley Fletcher,Bradley,Fletcher,24,CB,Philadelphia Eagles,cf562928c60c6b15a8ff1eb54e313d00,7gtzc33a
+16919,Jaylen Watkins,Jaylen,Watkins,37,CB,Philadelphia Eagles,29d740eacb72147baad75509bbca1b63,7gtzc33a
+11463,Cary Williams,Cary,Williams,26,CB,Philadelphia Eagles,557132a2171b35f68f8e06bedaa18152,7gtzc33a
+16354,Keelan Johnson,Keelan,Johnson,38,DB,Philadelphia Eagles,da355b27de14acdf79b8234ab3cdcf8b,7gtzc33a
+14031,Curtis Marsh,Curtis,Marsh,31,DB,Philadelphia Eagles,f4d8ea746fb46d95446ff9bfe71f8ccf,7gtzc33a
+16933,Ed Reynolds,Ed,Reynolds,30,S,Philadelphia Eagles,53f557216dec00188f404f3cc96601e0,7gtzc33a
+13257,Nate Allen,Nate,Allen,29,SS,Philadelphia Eagles,e84d5ab216b0de6a1a7f5ce0f4403e38,7gtzc33a
+12426,Malcolm Jenkins,Malcolm,Jenkins,27,FS,Philadelphia Eagles,a94a9bffd1fe7be5f533d5b94183e3ac,7gtzc33a
+13697,Chris Maragos,Chris,Maragos,42,FS,Philadelphia Eagles,4cc453e25835080a8c55bcfcbeb313e4,7gtzc33a
+14123,Alex Henery,Alex,Henery,6,PK,Philadelphia Eagles,8f7678036d127d7569fcca5526f5fe04,7gtzc33a
+15917,Earl Wolff,Earl,Wolff,28,FS,Philadelphia Eagles,5c580b011b537b867158b204ddb54b7d,7gtzc33a
+17082,Cody Parkey,Cody,Parkey,1,PK,Philadelphia Eagles,10e6e67b22f31bd5623feafbe962e527,7gtzc33a
+14880,Kirk Cousins,Kirk,Cousins,8,QB,Washington Redskins,e6b3fa2a3aa09fd717fbdd58970287ef,7gtzc33a
+14875,Robert Griffin,Robert,Griffin,10,QB,Washington Redskins,2cee7d75212e395818d451b3f7b2b034,7gtzc33a
+5749,Donnie Jones,Donnie,Jones,8,P,Philadelphia Eagles,87158be378a78961ca3c1842f1859567,7gtzc33a
+13199,Colt McCoy,Colt,McCoy,16,QB,Washington Redskins,84fc8c640d16c8611264d5df7c2c9b18,7gtzc33a
+14192,Roy Helu,Roy,Helu,29,RB,Washington Redskins,5fd8aa77a802292921379eefccb833b6,7gtzc33a
+15009,Alfred Morris,Alfred,Morris,46,RB,Washington Redskins,ca153309e2b99ffbd5ca97cb23520314,7gtzc33a
+17352,Silas Redd,Silas,Redd,24,RB,Washington Redskins,029e9aee43ff529271e5130d03262196,7gtzc33a
+14105,Evan Royster,Evan,Royster,26,RB,Washington Redskins,d559863cff0075fdd7578cc3e231621a,7gtzc33a
+16885,Lache Seastrunk,Lache,Seastrunk,35,RB,Washington Redskins,4525002dc7e8bc2af7825711c59a7332,7gtzc33a
+13097,Darrel Young,Darrel,Young,36,FB,Washington Redskins,ad2d96c9ad9d50e9b5e31502db97c079,7gtzc33a
+15966,Chris Thompson,Chris,Thompson,25,RB,Washington Redskins,050e52b72e6f7b8abd118cf6bf614215,7gtzc33a
+11439,Pierre Garcon,Pierre,Garcon,88,WR,Washington Redskins,e49faf31c853bbd83f3f02a8793c162c,7gtzc33a
+16845,Ryan Grant,Ryan,Grant,14,WR,Washington Redskins,da7a39212ba1d0e9486341a88bbe359d,7gtzc33a
+14021,Leonard Hankerson,Leonard,Hankerson,85,WR,Washington Redskins,39e9a60a3f49a8372759751a3c16570e,7gtzc33a
+11283,DeSean Jackson,DeSean,Jackson,11,WR,Washington Redskins,59273d8e430e8fa243ac47e268168ca1,7gtzc33a
+2564,Santana Moss,Santana,Moss,89,WR,Washington Redskins,30e372a89c816d8acc137cbc4322e7f7,7gtzc33a
+14164,Aldrick Robinson,Aldrick,Robinson,15,WR,Washington Redskins,a00f8ad64c6ef4fcb08be1ec57280722,7gtzc33a
+16345,Nick Williams,Nick,Williams,13,WR,Washington Redskins,fc9129766f460936619901f1c5eb3642,7gtzc33a
+14156,Niles Paul,Niles,Paul,84,TE,Washington Redskins,e6e394b7e04fb4665f0c74cd674e7dab,7gtzc33a
+13726,Logan Paulsen,Logan,Paulsen,82,TE,Washington Redskins,e459a31d723524e2c8d660e5a3f7d776,7gtzc33a
+15860,Jordan Reed,Jordan,Reed,86,TE,Washington Redskins,5faf6bcd839a75fc104e99aa04d77912,7gtzc33a
+12904,Nick Sundberg,Nick,Sundberg,57,C,Washington Redskins,cea59ef6ca0ee22c564c3edd80623d96,7gtzc33a
+16771,Morgan Moses,Morgan,Moses,76,OT,Washington Redskins,983ad0223df2e51afd173bc38d592795,7gtzc33a
+11572,Tyler Polumbus,Tyler,Polumbus,74,OT,Washington Redskins,62af1d341cd248bb026e9e1ce6771532,7gtzc33a
+13241,Trent Williams,Trent,Williams,71,OT,Washington Redskins,b15d230322ece4ad8de44824dd29fef5,7gtzc33a
+9642,Chris Chester,Chris,Chester,66,OG,Washington Redskins,a534b74241dd1fe471a56531e2fbb67a,7gtzc33a
+15082,Tom Compton,Tom,Compton,68,OT,Washington Redskins,45618c24fb68076b4f76dfebbb748e7b,7gtzc33a
+14078,Maurice Hurt,Maurice,Hurt,79,OG,Washington Redskins,aa2e35ac45bb2b98f095e3fb09a28ef1,7gtzc33a
+13283,Shawn Lauvao,Shawn,Lauvao,77,OG,Washington Redskins,0838a235d727eccbd130caf1c248e3e0,7gtzc33a
+14961,Josh LeRibeus,Josh,LeRibeus,67,OG,Washington Redskins,922ff70e58dabf7cff4a160c2d877aef,7gtzc33a
+11342,Kory Lichtensteiger,Kory,Lichtensteiger,78,OG,Washington Redskins,8df668a6bbb30142acc6f4312e14d785,7gtzc33a
+16743,Spencer Long,Spencer,Long,60,OG,Washington Redskins,3ab6d05ec7c8778b59e8e845194edfcf,7gtzc33a
+12760,Chris Baker,Chris,Baker,92,DE,Washington Redskins,4d5fed4ddebac48449e9c87d6f5df06b,7gtzc33a
+10361,Stephen Bowen,Stephen,Bowen,72,DE,Washington Redskins,66c9dab10bd3b16c1c3400167626bb00,7gtzc33a
+9678,Jason Hatcher,Jason,Hatcher,97,DE,Washington Redskins,c3a29e81b9b1dc15010f2b7ccfa8e8cb,7gtzc33a
+14019,Jarvis Jenkins,Jarvis,Jenkins,99,DE,Washington Redskins,d79ec971ccc7a950c6b0e16942b07112,7gtzc33a
+9782,Kedric Golston,Kedric,Golston,64,DE,Washington Redskins,83021cd9d4865db3333bd04b0ff0b46b,7gtzc33a
+9710,Barry Cofield,Barry,Cofield,96,DT,Washington Redskins,65f082219cbae590a426c4e156399338,7gtzc33a
+13366,Clifton Geathers,Clifton,Geathers,94,DT,Washington Redskins,6e40ece43d245473384e14a1491c87dc,7gtzc33a
+14176,Frank Kearse,Frank,Kearse,73,DT,Washington Redskins,b15865e6366a141d646eaa7ff08d6f28,7gtzc33a
+14067,Chris Neild,Chris,Neild,95,DT,Washington Redskins,93cf6e3cd9a9af83aa13af5bc5d54213,7gtzc33a
+12433,Everette Brown,Everette,Brown,51,LB,Washington Redskins,8767ae66388727a2358fb7cc6d8f5f2c,7gtzc33a
+16324,Will Compton,Will,Compton,46,LB,Washington Redskins,f6877a203371e0b77cf1d68aa863f0d0,7gtzc33a
+10625,Adam Hayward,Adam,Hayward,55,LB,Washington Redskins,ad55c2e292b8bd19d78526c4442a471c,7gtzc33a
+10883,Akeem Jordan,Akeem,Jordan,54,LB,Washington Redskins,264a24cff0374daa184183537ef3f4e6,7gtzc33a
+13973,Ryan Kerrigan,Ryan,Kerrigan,91,LB,Washington Redskins,6b16e1021864f6f1546f329fbd286cff,7gtzc33a
+16751,Trent Murphy,Trent,Murphy,93,LB,Washington Redskins,389d5bc5e1f5ed1c194e6a1cdd9edfad,7gtzc33a
+12439,Brian Orakpo,Brian,Orakpo,98,LB,Washington Redskins,6bb371666d3574a415d4346796ca7c6e,7gtzc33a
+14068,Gabe Miller,Gabe,Miller,45,LB,Washington Redskins,e4140b871aafb29a0d8d435fb8144125,7gtzc33a
+13443,Perry Riley,Perry,Riley,56,LB,Washington Redskins,6b80b21da9aa86da481a758bd28b8330,7gtzc33a
+13453,Darryl Sharpton,Darryl,Sharpton,53,LB,Washington Redskins,ab74233ebd795d570a3108dc00806974,7gtzc33a
+16890,Bashaud Breeland,Bashaud,Breeland,26,CB,Washington Redskins,a541a3bf532dbac1eb7a9b98813fd7c6,7gtzc33a
+5533,DeAngelo Hall,DeAngelo,Hall,23,CB,Washington Redskins,986d9ae961ebd7462fbcae0b77e6d926,7gtzc33a
+11274,Tracy Porter,Tracy,Porter,22,CB,Washington Redskins,cf229095313ee501aa3dd1a1b8a7b050,7gtzc33a
+17417,Courtney Bridget,Courtney,Bridget,,DB,Washington Redskins,c548d6f6d370cca50cc6f94d0aa55b00,7gtzc33a
+16702,Akeem Davis,Akeem,Davis,35,DB,Washington Redskins,dc03a7dbd0d61734eb72014e4b4b0865,7gtzc33a
+10550,Tanard Jackson,Tanard,Jackson,36,DB,Washington Redskins,89c37c0098ae8e9329197631cbdd8d2a,7gtzc33a
+16446,Chase Minnifield,Chase,Minnifield,38,DB,Washington Redskins,61281919553367cfb29e95c735629ec0,7gtzc33a
+15049,Trenton Robinson,Trenton,Robinson,34,DB,Washington Redskins,96671738847d6fc2be2d6606b36447ff,7gtzc33a
+10468,Brandon Meriweather,Brandon,Meriweather,31,SS,Washington Redskins,e8cdc85a6af2fb8cf81667f6ac269ee8,7gtzc33a
+15912,Bacarri Rambo,Bacarri,Rambo,24,SS,Washington Redskins,edef5a57adfd980c5a738986f34ccd44,7gtzc33a
+15886,Phillip Thomas,Phillip,Thomas,41,SS,Washington Redskins,955f93c99568208e2bf3782949c51dfa,7gtzc33a
+15820,David Amerson,David,Amerson,39,FS,Washington Redskins,75d1e9191b545857cd79a6ffb3e18874,7gtzc33a
+12633,E.J. Biggers,E.J.,Biggers,30,FS,Washington Redskins,decb11003f90b59784875ff753210c2c,7gtzc33a
+4301,Ryan Clark,Ryan,Clark,25,FS,Washington Redskins,3a4959be9bef12cb0d5996b3089cd681,7gtzc33a
+14816,Kai Forbath,Kai,Forbath,2,PK,Washington Redskins,bf5c52a9b440c6cc3989b30a6b91bb0b,7gtzc33a
+16916,Zach Hocker,Zach,Hocker,4,PK,Washington Redskins,3f6f8a5f9f9701166ac439ce8fa30b89,7gtzc33a
+16166,Tress Way,Tress,Way,5,P,Washington Redskins,f75f8445dcc6797e13a01b461bc50c44,7gtzc33a
+15935,Zac Dysert,Zac,Dysert,2,QB,Denver Broncos,b81bbc736f0ddb39e5eeb0953d61c413,7gtzc33a
+1428,Peyton Manning,Peyton,Manning,18,QB,Denver Broncos,c6a936f0211d01d069f005977e2975db,7gtzc33a
+14879,Brock Osweiler,Brock,Osweiler,17,QB,Denver Broncos,24b973fc2279e15e58b059df34036f61,7gtzc33a
+16040,C.J. Anderson,C.J.,Anderson,22,RB,Denver Broncos,743c6bb5aa022133518d8f4dbd4fd3ee,7gtzc33a
+15823,Montee Ball,Montee,Ball,28,RB,Denver Broncos,fb57e72e7fc5fcec01e70e598ef3751f,7gtzc33a
+16969,Kapri Bibbs,Kapri,Bibbs,35,RB,Denver Broncos,da8024fb8bf86e268efa7144c1e3c68e,7gtzc33a
+14895,Ronnie Hillman,Ronnie,Hillman,23,RB,Denver Broncos,e1d5d4e011df2f468c9d0e70d4e0ff2d,7gtzc33a
+17045,Juwan Thompson,Juwan,Thompson,40,RB,Denver Broncos,12cf674174839cd088e8c6f2dce2422a,7gtzc33a
+16972,Isaiah Burse,Isaiah,Burse,19,WR,Denver Broncos,f4e45f7bb423709c13ae90831dc80c90,7gtzc33a
+11331,Andre Caldwell,Andre,Caldwell,12,WR,Denver Broncos,c49791991a060fe28b97eed7a370f867,7gtzc33a
+16995,Bennie Fowler,Bennie,Fowler,16,WR,Denver Broncos,dc6aa7900f99c7c828243b48eba58d3f,7gtzc33a
+16793,Cody Latimer,Cody,Latimer,14,WR,Denver Broncos,ff0db16bfc6f2032c140cacffe091844,7gtzc33a
+12587,Jordan Norwood,Jordan,Norwood,11,WR,Denver Broncos,3330d114950cb8af0d9906636915ca57,7gtzc33a
+15189,Nathan Palmer,Nathan,Palmer,13,WR,Denver Broncos,9baf8916694816afb7f68782667eda34,7gtzc33a
+13295,Emmanuel Sanders,Emmanuel,Sanders,10,WR,Denver Broncos,9e9a66686a4346e536c15837473d94c1,7gtzc33a
+13216,Demaryius Thomas,Demaryius,Thomas,88,WR,Denver Broncos,11dc5070f7415a2896e5d48312124b51,7gtzc33a
+5941,Wes Welker,Wes,Welker,83,WR,Denver Broncos,d8829e6b14f527ae5e5382fc48659edf,7gtzc33a
+13401,Jameson Konz,Jameson,Konz,82,TE,Denver Broncos,7bfc4258f2096251fbde151fd11d5870,7gtzc33a
+12545,Cameron Morrah,Cameron,Morrah,86,TE,Denver Broncos,df13704e4e1e7e60eba8a5812af44396,7gtzc33a
+15214,Gerell Robinson,Gerell,Robinson,89,TE,Denver Broncos,0cb0b921519e3951e28e1df055c566b9,7gtzc33a
+14085,Virgil Green,Virgil,Green,85,TE,Denver Broncos,784af23d03570d438a62175f623016ba,7gtzc33a
+11373,Jacob Tamme,Jacob,Tamme,84,TE,Denver Broncos,974024b281b7ae1d25e924b465551726,7gtzc33a
+14204,Julius Thomas,Julius,Thomas,80,TE,Denver Broncos,2fe56f67f7ab8213ef863989524ad583,7gtzc33a
+16847,Matt Paradis,Matt,Paradis,61,C,Denver Broncos,a0ada2bd5fdfb385f7f96ddca469a00a,7gtzc33a
+10561,Manny Ramirez,Manny,Ramirez,66,C,Denver Broncos,7b1231431f6d3ccc8c8001f4e0520c4a,7gtzc33a
+11246,Ryan Clady,Ryan,Clady,78,OT,Denver Broncos,b8a906d24a2c26a80af7979322902e41,7gtzc33a
+15241,Aaron Brewer,Aaron,Brewer,46,C,Denver Broncos,b986a3bd60a4954972fac8a3ec1c74e4,7gtzc33a
+11689,Chris Clark,Chris,Clark,75,OT,Denver Broncos,7c92ad39a2d28f6f931411c57e77dda0,7gtzc33a
+15706,Paul Cornick,Paul,Cornick,71,OT,Denver Broncos,63caa89a9b1e5194b1c7bdebb31d55d5,7gtzc33a
+13996,Orlando Franklin,Orlando,Franklin,74,OT,Denver Broncos,2676cd90cc34e0a46ba0f5d4aad78f18,7gtzc33a
+15927,Vinston Painter,Vinston,Painter,70,OT,Denver Broncos,f0cad0f3746559a7fae16f30369e0629,7gtzc33a
+13802,Ben Garland,Ben,Garland,63,OG,Denver Broncos,97f7327106f37e9968d0e9c545f378c9,7gtzc33a
+15031,Ryan Miller,Ryan,Miller,73,OG,Denver Broncos,ca1f0d3430cae860b2f9411c8aa580ec,7gtzc33a
+16741,Michael Schofield,Michael,Schofield,79,OT,Denver Broncos,f86c0e1dd7c57d22285ae874a13f759a,7gtzc33a
+16965,Kenny Anunike,Kenny,Anunike,68,DE,Denver Broncos,6e8d219ee78a73930322d6ce4208485a,7gtzc33a
+15047,Malik Jackson,Malik,Jackson,97,DE,Denver Broncos,3312e0b6868ea3337facf352c0e02e03,7gtzc33a
+17014,Greg Latta,Greg,Latta,62,DE,Denver Broncos,a53df3e7bad31f52afecca5e819ddc8b,7gtzc33a
+13886,Brian Sanford,Brian,Sanford,72,DE,Denver Broncos,b9e17804cbf75b0003bb451f3017b3e7,7gtzc33a
+12744,Louis Vasquez,Louis,Vasquez,65,OG,Denver Broncos,137f3319b3e7fbbe6d06f069f031b6bd,7gtzc33a
+15997,Quanterus Smith,Quanterus,Smith,93,DE,Denver Broncos,633ab08bf866750a0b4261acf9a3dfc5,7gtzc33a
+9820,Will Montgomery,Will,Montgomery,64,C,Denver Broncos,ea7ec8066e2f7a85fcf780e3ad1ffc56,7gtzc33a
+8426,DeMarcus Ware,DeMarcus,Ware,94,DE,Denver Broncos,58a2b5a2471218da82d0bec4922a8d13,7gtzc33a
+16124,John Youboty,John,Youboty,79,DE,Denver Broncos,80ada9a0887054a820bfa9df7ddf2276,7gtzc33a
+14025,Marvin Austin,Marvin,Austin,76,DT,Denver Broncos,e7b11a5e92a611496ef67249742f1607,7gtzc33a
+14003,Sione Fua,Sione,Fua,91,DT,Denver Broncos,5c6fef8d76c5bec3a2c48034fdb21074,7gtzc33a
+14964,Derek Wolfe,Derek,Wolfe,95,DE,Denver Broncos,223cc0ec6210a0946721c534a245ad8a,7gtzc33a
+12677,Terrance Knighton,Terrance,Knighton,98,DT,Denver Broncos,0fceee72acfb110133be303df53afba7,7gtzc33a
+13860,Mitch Unrein,Mitch,Unrein,96,DT,Denver Broncos,05e50b28ea6bc32aa8e2dc51c0431ac1,7gtzc33a
+8630,Kevin Vickerson,Kevin,Vickerson,99,DT,Denver Broncos,3a2d33dfb921227ad2a6da2255e06c07,7gtzc33a
+15816,Sylvester Williams,Sylvester,Williams,92,DT,Denver Broncos,7e9c52b30b3bf5882428efb69b3cf7a5,7gtzc33a
+16967,Shaquil Barrett,Shaquil,Barrett,48,LB,Denver Broncos,92f477ab6a306d4782ee8c4f1bd35121,7gtzc33a
+13337,Jamar Chaney,Jamar,Chaney,51,LB,Denver Broncos,fd9d226ab52b988a1283a0eab3f08a38,7gtzc33a
+15264,L.J. Fort,L.J.,Fort,50,LB,Denver Broncos,af528652cb50233e7c5ad391dff260a0,7gtzc33a
+14004,Nate Irving,Nate,Irving,56,LB,Denver Broncos,fcdeaf6afe4bb3c3ca992bb29e1f1885,7gtzc33a
+15733,Steven Johnson,Steven,Johnson,53,LB,Denver Broncos,a072a33ad3632715542f5f5ee156bd1b,7gtzc33a
+15002,Brandon Marshall,Brandon,Marshall,54,LB,Denver Broncos,289f4bb83b1bb9c1b60e69474c046956,7gtzc33a
+16090,Lerentee McCray,Lerentee,McCray,55,LB,Denver Broncos,7b6f6b8fe06843bdc0888dbccb21958b,7gtzc33a
+13976,Von Miller,Von,Miller,58,LB,Denver Broncos,46f2f157996af315f686845030dae459,7gtzc33a
+16902,Corey Nelson,Corey,Nelson,47,LB,Denver Broncos,0c809fcf94a4ffc07cdec6087929918e,7gtzc33a
+15074,Danny Trevathan,Danny,Trevathan,59,LB,Denver Broncos,56047b1f855c8557a936e0278e395481,7gtzc33a
+17438,Chase Vaughn,Chase,Vaughn,49,LB,Denver Broncos,d01bf8a4acc8b8272c2091ba87a632c4,7gtzc33a
+12771,Tony Carter,Tony,Carter,32,CB,Denver Broncos,697b75960c40ddafdb871b18b923036a,7gtzc33a
+14398,Chris Harris,Chris,Harris,25,CB,Denver Broncos,d44b2dbd93246cd85d8cbb7e5783db9b,7gtzc33a
+16719,Bradley Roby,Bradley,Roby,29,CB,Denver Broncos,5b365b3fcd740138bd99a6a9eff1f100,7gtzc33a
+11254,Aqib Talib,Aqib,Talib,21,CB,Denver Broncos,44d900b0e853ecb2282cdeb598a2adac,7gtzc33a
+15872,Kayvon Webster,Kayvon,Webster,36,CB,Denver Broncos,74213a4be99a7d6290477dffdb72097b,7gtzc33a
+13290,Jerome Murphy,Jerome,Murphy,45,DB,Denver Broncos,accf811f6b18af5ac32af202e3f18155,7gtzc33a
+17043,Jordan Sullen,Jordan,Sullen,42,DB,Denver Broncos,cef8830b0e9cbd5a24f18f587a727c6c,7gtzc33a
+17052,Lou Young,Lou,Young,39,DB,Denver Broncos,b7608e5219ee5ef7f28185ec5e763354,7gtzc33a
+14997,Omar Bolden,Omar,Bolden,31,SS,Denver Broncos,99a8ca3a437adb3f447a76a0b99043fc,7gtzc33a
+12638,David Bruton,David,Bruton,30,SS,Denver Broncos,3d50a9002be9c0c6718d94080628df5c,7gtzc33a
+14091,Quinton Carter,Quinton,Carter,38,SS,Denver Broncos,a46334da6b84d18b1dfecd8dc5852710,7gtzc33a
+15190,Duke Ihenacho,Duke,Ihenacho,27,SS,Denver Broncos,058562a58be46b679e4cd1705db9f371,7gtzc33a
+14050,Rahim Moore,Rahim,Moore,26,FS,Denver Broncos,ca100865a4f3dc3edcdf9a7a38da7ef1,7gtzc33a
+13304,T.J. Ward,T.J.,Ward,43,SS,Denver Broncos,b86652b0e89bfb5664247037a5690e48,7gtzc33a
+11122,Matt Prater,Matt,Prater,5,PK,Denver Broncos,c692d109dc90c25903a41bd104fa1883,7gtzc33a
+16339,Brandon McManus,Brandon,McManus,8,PK,Denver Broncos,b709def5a98a204efd792d706acf3d82,7gtzc33a
+12773,Britton Colquitt,Britton,Colquitt,4,P,Denver Broncos,a7331caee3d854a9c2ac0ff9ca9164a9,7gtzc33a
+16252,Tyler Bray,Tyler,Bray,9,QB,Kansas City Chiefs,b5a86cdfac5ce1841acd21812dcf490a,7gtzc33a
+12471,Chase Daniel,Chase,Daniel,10,QB,Kansas City Chiefs,e3e4b0f4787b2d202226f1e80d019a11,7gtzc33a
+17021,Aaron Murray,Aaron,Murray,7,QB,Kansas City Chiefs,ab3b3d1e3d0fb429003e375b83de3c17,7gtzc33a
+8416,Alex Smith,Alex,Smith,11,QB,Kansas City Chiefs,14c78d2c740a1f02c391c7ff3c545bff,7gtzc33a
+11307,Jamaal Charles,Jamaal,Charles,25,RB,Kansas City Chiefs,ca9761387c3920970796a2277f143fdb,7gtzc33a
+15832,Knile Davis,Knile,Davis,34,RB,Kansas City Chiefs,f5801e27f3597cf549378cc372fb8973,7gtzc33a
+14897,Cyrus Gray,Cyrus,Gray,32,RB,Kansas City Chiefs,da1dd752da7c24147806d5c8906547d7,7gtzc33a
+13209,Joe McKnight,Joe,McKnight,30,RB,Kansas City Chiefs,e7d1893c064d9594a19ffb42f961bdfc,7gtzc33a
+16945,De'Anthony Thomas,De'Anthony,Thomas,1,RB,Kansas City Chiefs,a09d0ab35f2bb8fe96349f73b3283f99,7gtzc33a
+14135,Anthony Sherman,Anthony,Sherman,42,FB,Kansas City Chiefs,4926aa906720b995e0384ccc9232c4f9,7gtzc33a
+11267,Donnie Avery,Donnie,Avery,17,WR,Kansas City Chiefs,d075b171c325048b9eca0b9ec1bc5560,7gtzc33a
+10467,Dwayne Bowe,Dwayne,Bowe,82,WR,Kansas City Chiefs,3a5e1844553fbf85f3c1030e1eccc147,7gtzc33a
+17284,Charcandrick West,Charcandrick,West,35,RB,Kansas City Chiefs,7fda5c9f33c8250383b02d0d2d665229,7gtzc33a
+16260,Frankie Hammond Jr.,Frankie,Hammond Jr.,85,WR,Kansas City Chiefs,63f76d786914d797f37cee544f0381f9,7gtzc33a
+15029,Junior Hemingway,Junior,Hemingway,88,WR,Kansas City Chiefs,481005c6e65da32c475bb9878a833954,7gtzc33a
+14947,A.J. Jenkins,A.J.,Jenkins,15,WR,Kansas City Chiefs,a8224dfe46918fb941ac4825c9c863a7,7gtzc33a
+16683,Fred Williams,Fred,Williams,83,WR,Kansas City Chiefs,311abb7f5d793388b3b3fe6de400a852,7gtzc33a
+13488,Kyle Williams,Kyle,Williams,19,WR,Kansas City Chiefs,232b9278d0a9b139bebd77553944024e,7gtzc33a
+9639,Anthony Fasano,Anthony,Fasano,80,TE,Kansas City Chiefs,0fa87159fc0467e03638a1f3a482b94e,7gtzc33a
+14211,Richard Gordon,Richard,Gordon,81,TE,Kansas City Chiefs,17a4a235f3d7fe8bb827cae9e396e421,7gtzc33a
+16141,Mark Harrison,Mark,Harrison,22,WR,Kansas City Chiefs,a6dcaa839c28608b1403cb50d3e22fae,7gtzc33a
+16318,Demetrius Harris,Demetrius,Harris,47,TE,Kansas City Chiefs,d7673e746d8eec6b8cceba1e858012cb,7gtzc33a
+15847,Travis Kelce,Travis,Kelce,87,TE,Kansas City Chiefs,cebbc411bb47a36825297478bf1a54f7,7gtzc33a
+10183,Thomas Gafford,Thomas,Gafford,43,C,Kansas City Chiefs,fa8e2fbd773bb7cc0554ed231b8ac1ae,7gtzc33a
+14013,Rodney Hudson,Rodney,Hudson,61,C,Kansas City Chiefs,d6dc51154550dcde2afe4bf04c7192f9,7gtzc33a
+16035,Eric Kush,Eric,Kush,64,C,Kansas City Chiefs,c7659c7dc3ac76ba49161f45e1529b76,7gtzc33a
+16958,Laurent Duvernay-Tardif,Laurent,Duvernay-Tardif,76,OT,Kansas City Chiefs,b4865e54088159068df01fb8fa8f8c35,7gtzc33a
+15790,Eric Fisher,Eric,Fisher,72,OT,Kansas City Chiefs,644bf650ad64eecc75e7566419bfa85b,7gtzc33a
+10514,Ryan Harris,Ryan,Harris,68,OT,Kansas City Chiefs,258728136625829d6b48f5ef0d16fa65,7gtzc33a
+11343,Mike McGlynn,Mike,McGlynn,67,OT,Kansas City Chiefs,1c1b663d5aa99ff9a368f3ee49c1b388,7gtzc33a
+13003,Ryan McKee,Ryan,McKee,66,OT,Kansas City Chiefs,a625ebd5a4ef937a8826ad923d762946,7gtzc33a
+14956,Donald Stephenson,Donald,Stephenson,79,OT,Kansas City Chiefs,3d5b54fde6feebbef17b130fcfe5d438,7gtzc33a
+13483,J'Marcus Webb,J'Marcus,Webb,68,OT,Kansas City Chiefs,aeb15bc1c9e0b8df6a0443a2ec52497d,7gtzc33a
+14990,Jeff Allen,Jeff,Allen,71,OG,Kansas City Chiefs,301c4e1d1630cf16e40236d809316b1b,7gtzc33a
+16923,Zach Fulton,Zach,Fulton,73,OG,Kansas City Chiefs,902df4a8e04087537b9c48d347e70106,7gtzc33a
+14261,Ricky Henry,Ricky,Henry,65,OG,Kansas City Chiefs,2aa620f8b71e866e8394da7a1bda3277,7gtzc33a
+13751,Jeffrey Linkenbach,Jeffrey,Linkenbach,74,OG,Kansas City Chiefs,e9cdc9724e70b8c8b83271d9484c62bc,7gtzc33a
+14020,Allen Bailey,Allen,Bailey,97,DE,Kansas City Chiefs,f94f462d64782c9d732f6a8089a20d6d,7gtzc33a
+15944,Mike Catapano,Mike,Catapano,77,DE,Kansas City Chiefs,a525ea67151304b24a65b108c66a696b,7gtzc33a
+10763,Mike DeVito,Mike,DeVito,70,DE,Kansas City Chiefs,6842f4503ba24cbbdc15596aa7a4080f,7gtzc33a
+15005,Jaye Howard,Jaye,Howard,96,DT,Kansas City Chiefs,e6b433141eb435eefd9a67dfe9e01d4d,7gtzc33a
+15286,Dominique Hamilton,Dominique,Hamilton,75,DT,Kansas City Chiefs,ebd91a1a59b4eb6d3509b4016b155171,7gtzc33a
+13608,Kyle Love,Kyle,Love,94,DT,Kansas City Chiefs,f9b2a2f95476f38a60a04e216997c084,7gtzc33a
+14939,Dontari Poe,Dontari,Poe,92,DT,Kansas City Chiefs,e5785916d3063e0ae920e2c1eac726c6,7gtzc33a
+17422,Kona Schwenke,Kona,Schwenke,93,DT,Kansas City Chiefs,9cd317e17351915283de73375349966d,7gtzc33a
+12448,Vance Walker,Vance,Walker,99,DT,Kansas City Chiefs,10fa94b75895b0f5b3d56aca13db0586,7gtzc33a
+9606,Tamba Hali,Tamba,Hali,91,LB,Kansas City Chiefs,ef6e0323590cfdce9c613711a8ba8963,7gtzc33a
+14048,Justin Houston,Justin,Houston,50,LB,Kansas City Chiefs,9f2558b882efde21fae714abdd1749fd,7gtzc33a
+8430,Derrick Johnson,Derrick,Johnson,56,LB,Kansas City Chiefs,c81ad15f764c391bb11ff5bc78763c49,7gtzc33a
+16384,Alonzo Highsmith,Alonzo,Highsmith,45,LB,Kansas City Chiefs,61aa9f1c4f25800e04441eda3bdaf11c,7gtzc33a
+15032,James-Michael Johnson,James-Michael,Johnson,52,LB,Kansas City Chiefs,0daf358cfe1672aaf3bf8d67d75ba7d5,7gtzc33a
+16707,Dee Ford,Dee,Ford,55,LB,Kansas City Chiefs,6c1d464f03782267062047b5ad317627,7gtzc33a
+15982,Nico Johnson,Nico,Johnson,57,LB,Kansas City Chiefs,f596524a4a2b4f0970b9b4458246b8d9,7gtzc33a
+16268,Josh Martin,Josh,Martin,95,LB,Kansas City Chiefs,ad35dc3e7594ac8f95f1bb8d5988ee49,7gtzc33a
+11434,Joe Mays,Joe,Mays,53,LB,Kansas City Chiefs,3f18ee197d4111f399a36e04564174bb,7gtzc33a
+15272,Dezman Moses,Dezman,Moses,54,LB,Kansas City Chiefs,674c146fd4ecfa8c51dd48801db17063,7gtzc33a
+13779,Frank Zombo,Frank,Zombo,51,LB,Kansas City Chiefs,819b02c890d46cf7cfe5608eedd5aef7,7gtzc33a
+15913,Sanders Commings,Sanders,Commings,26,CB,Kansas City Chiefs,e33fdb2fb6ecf007adff2b04f0651b9d,7gtzc33a
+15888,Marcus Cooper,Marcus,Cooper,31,CB,Kansas City Chiefs,ebaaaddd4a9cfe47ac3d2c6735f44416,7gtzc33a
+16750,Phillip Gaines,Phillip,Gaines,23,CB,Kansas City Chiefs,121564472a1c4046169148e21d7aeeca,7gtzc33a
+14297,Ron Parker,Ron,Parker,38,CB,Kansas City Chiefs,3e8ce0892119a97aaf9dc9762b8549d4,7gtzc33a
+12713,Chris Owens,Chris,Owens,20,CB,Kansas City Chiefs,9a7c433e753a73c529107948e13397cd,7gtzc33a
+12430,Sean Smith,Sean,Smith,21,CB,Kansas City Chiefs,2f209a59225cc930df52949e041c2b49,7gtzc33a
+13527,Jonathon Amaya,Jonathon,Amaya,27,DB,Kansas City Chiefs,de6ddcb9ca6220e1b410dfbd48bedc50,7gtzc33a
+16604,Malcolm Bronson,Malcolm,Bronson,41,DB,Kansas City Chiefs,cf3ce33d7a3deba1203fce03f76c8d49,7gtzc33a
+15305,Kelcie McCray,Kelcie,McCray,35,,Tampa Bay Buccaneers,71d6769b9d65faea8967fdddae34324c,7gtzc33a
+14071,Justin Rogers,Justin,Rogers,44,DB,Kansas City Chiefs,dcced63cc5dcc1b19b0dbba600694eb8,7gtzc33a
+17259,Daniel Sorensen,Daniel,Sorensen,49,DB,Kansas City Chiefs,77b91da5e01bb099abc17e42e952cacb,7gtzc33a
+14022,DeMarcus Van Dyke,DeMarcus,Van Dyke,40,DB,Kansas City Chiefs,b0bbce1dc54d46afdebfd1595739a45a,7gtzc33a
+11910,Husain Abdullah,Husain,Abdullah,39,SS,Kansas City Chiefs,e18a62f2f6b4521c5ab51ca701d778b9,7gtzc33a
+13252,Eric Berry,Eric,Berry,29,SS,Kansas City Chiefs,272047c61e7232f34318f6875fa5a95d,7gtzc33a
+12731,Ryan Succop,Ryan,Succop,6,PK,Kansas City Chiefs,7f1942728930ac520a4873740523db97,7gtzc33a
+17427,Cairo Santos,Cairo,Santos,5,PK,Kansas City Chiefs,08f2d6ce6cc199641f3264f21d1b55f1,7gtzc33a
+8513,Dustin Colquitt,Dustin,Colquitt,2,P,Kansas City Chiefs,68766f08cf90cdf2fb0e7cf5bb6467a4,7gtzc33a
+16757,Derek Carr,Derek,Carr,4,QB,Oakland Raiders,5aa1c5fe433f9304cf13ee284eb11dbb,7gtzc33a
+16593,Matt McGloin,Matt,McGloin,14,QB,Oakland Raiders,3b34606ccaef102c5a27f96dfd242b5d,7gtzc33a
+5615,Matt Schaub,Matt,Schaub,8,QB,Oakland Raiders,3e6c4dd2c5185559df0fdedd05ba27b1,7gtzc33a
+17396,George Atkinson III,George,Atkinson-III,34,RB,Oakland Raiders,e04dd4ebf72dfcb7a5061d51fbb73106,7gtzc33a
+9646,Maurice Jones-Drew,Maurice,Jones-Drew,21,RB,Oakland Raiders,2ec22c47e85c9001457320d06927db62,7gtzc33a
+11238,Darren McFadden,Darren,McFadden,20,RB,Oakland Raiders,29ddf74e9b68de9448bd1f0a136f2e6f,7gtzc33a
+15920,Latavius Murray,Latavius,Murray,28,RB,Oakland Raiders,d925ec267b6f64278034c6e7eb7d7d8a,7gtzc33a
+15653,Jamize Olawale,Jamize,Olawale,49,RB,Oakland Raiders,25ec8188e23eebed0a1f9c1c8c0e1c77,7gtzc33a
+12521,Kory Sheets,Kory,Sheets,30,RB,Oakland Raiders,44c7758be9302623a8c87dd9fd7273e7,7gtzc33a
+17376,Karl Williams,Karl,Williams,40,RB,Oakland Raiders,355dd3110ac7fa72c99757d039c7e8f8,7gtzc33a
+11717,Marcel Reece,Marcel,Reece,45,FB,Oakland Raiders,41e817e56e7dfc08ed2b2c991adb1b95,7gtzc33a
+15572,Jeremy Stewart,Jeremy,Stewart,32,FB,Oakland Raiders,98645b7f5a692276a76e8617b0d71066,7gtzc33a
+15896,Brice Butler,Brice,Butler,12,WR,Oakland Raiders,f83c7daefedd89cc1856ddcd455d27e7,7gtzc33a
+14403,Andre Holmes,Andre,Holmes,18,WR,Oakland Raiders,507b1f515de4893eaec58843390ae51c,7gtzc33a
+16520,Greg Jenkins,Greg,Jenkins,10,WR,Oakland Raiders,9f2c46667fd5722b900a71c706c9102e,7gtzc33a
+10522,James Jones,James,Jones,89,WR,Oakland Raiders,15c19ef35888d513bab27978478c3655,7gtzc33a
+14024,Greg Little,Greg,Little,15,WR,Oakland Raiders,45aaab6db5ea932657adc86e4e74af0f,7gtzc33a
+14153,Denarius Moore,Denarius,Moore,17,WR,Oakland Raiders,c813d222c8a11fa622d62847e10cc94e,7gtzc33a
+15391,Rod Streater,Rod,Streater,80,WR,Oakland Raiders,bfce5276e64b4b1028341789bd0e20f6,7gtzc33a
+17402,Seth Roberts,Seth,Roberts,85,WR,Oakland Raiders,6450f7833877389a83490158528bea83,7gtzc33a
+14102,David Ausberry,David,Ausberry,86,TE,Oakland Raiders,e2a3747fc4bbc8d6ad0d6e457bb1d26a,7gtzc33a
+15962,Nick Kasa,Nick,Kasa,88,TE,Oakland Raiders,d2f861300f4ab26279ff52a57bba173e,7gtzc33a
+16265,Brian Leonhardt,Brian,Leonhardt,87,TE,Oakland Raiders,f5c3b59669e2e2f12413f3833f6c0e51,7gtzc33a
+17393,Jake Murphy,Jake,Murphy,,TE,,beabffcf979585f01ef4e5fc8514c33d,7gtzc33a
+17391,Scott Simonson,Scott,Simonson,,TE,,01b2024b730d58e141f078a04d7fb313,7gtzc33a
+9276,Jon Condo,Jon,Condo,59,C,Oakland Raiders,48968c8f224b7dba3eb8fb86a5b158e8,7gtzc33a
+169,Stefen Wisniewski,Stefen,Wisniewski,61,C,Oakland Raiders,0869f3d3485d2d5fe89c85409210ea61,7gtzc33a
+8466,Khalif Barnes,Khalif,Barnes,69,OT,Oakland Raiders,3490587078d1382940f8989a31c66272,7gtzc33a
+13585,Austin Howard,Austin,Howard,77,OT,Oakland Raiders,9ec45b23f374b879d99a417a28dfc347,7gtzc33a
+15519,Jack Cornell,Jack,Cornell,,OT,,a986bfe8a1af3d18392c7dd19237b203,7gtzc33a
+17383,Danny Kistler,Danny,Kistler,,OT,,8d779ff841792d09ea9ab8403766441f,7gtzc33a
+17375,Erle Ladson,Erle,Ladson,,OT,,7bbcab054dc807c6fc484b4551bb3277,7gtzc33a
+15923,Mychal Rivera,Mychal,Rivera,81,TE,Oakland Raiders,090a363bdcc53aa99843803bf48d9b87,7gtzc33a
+15013,Matt McCants,Matt,McCants,73,OT,Oakland Raiders,075eb745d1fba0c3d3132cf36aa22b45,7gtzc33a
+10062,Donald Penn,Donald,Penn,72,OT,Oakland Raiders,e53bce755a8e792877d7cad5dbe0feea,7gtzc33a
+14976,Tony Bergstrom,Tony,Bergstrom,70,OG,Oakland Raiders,a0843099cf2080c85ceffbc77d38006a,7gtzc33a
+9762,Kevin Boothe,Kevin,Boothe,67,OG,Oakland Raiders,25978ed14496390e27f424a0da704c94,7gtzc33a
+16753,Gabe Jackson,Gabe,Jackson,66,OG,Oakland Raiders,d4202608c832c4dadc5fbc3a32865bb3,7gtzc33a
+14738,Jarrod Shaw,Jarrod,Shaw,,OG,,42e0af3d7a5fb046a733af643bec2ad2,7gtzc33a
+17447,Denico Autry,Denico,Autry,,DE,,b64fd9a26404c7e74fb24c63053f74d6,7gtzc33a
+15090,Jack Crawford,Jack,Crawford,,DE,,a55279414487671763668d194ec6d29c,7gtzc33a
+16837,Shelby Harris,Shelby,Harris,75,DE,Oakland Raiders,0817444b2e33ff878122549a22a2a1cd,7gtzc33a
+16531,Ryan Robinson,Ryan,Robinson,,DE,,31daa2a984679cfa595256c4d7116210,7gtzc33a
+5660,Antonio Smith,Antonio,Smith,97,DE,Oakland Raiders,e092ef37256a09cdaa3440035ae03aca,7gtzc33a
+13491,C.J. Wilson,C.J.,Wilson,98,DE,Oakland Raiders,b6528ceb77db3def2d1bcd8d6606cb27,7gtzc33a
+10490,LaMarr Woodley,LaMarr,Woodley,57,DE,Oakland Raiders,559c0bfeb1995e2f46ae469e7c877c49,7gtzc33a
+16857,Justin Ellis,Justin,Ellis,78,DT,Oakland Raiders,f7da26e4bb7ab60f2381ec5968acabdf,7gtzc33a
+14282,Ricky Lumpkin,Ricky,Lumpkin,,DT,,b898c312a229ce6f43ae1989c729d6fb,7gtzc33a
+15906,Stacy McGee,Stacy,McGee,92,DT,Oakland Raiders,858fb84827f5c6e8f5c5a3fc00faf250,7gtzc33a
+8488,Justin Tuck,Justin,Tuck,91,DE,Oakland Raiders,18ef7eb3c48c907bd2fcfd66280e9970,7gtzc33a
+11311,Pat Sims,Pat,Sims,90,DT,Oakland Raiders,568dd6b14880960d7ae54d32f0ca8ade,7gtzc33a
+15324,Kaelin Burnett,Kaelin,Burnett,95,LB,Oakland Raiders,884f05731a89c29e943cd259591b5f66,7gtzc33a
+15006,Miles Burris,Miles,Burris,56,LB,Oakland Raiders,a0148dad8132c754998a58bc8f8b141e,7gtzc33a
+17389,Carlos Fields,Carlos,Fields,,LB,,7dc8c8b068238b0bfdd754a492f54571,7gtzc33a
+16710,Khalil Mack,Khalil,Mack,52,LB,Oakland Raiders,2e32cd7ffe0611e875a8e473da1de9ff,7gtzc33a
+12687,Kaluka Maiava,Kaluka,Maiava,50,LB,Oakland Raiders,4d1f9cadaaacbf664b5706137751b4c7,7gtzc33a
+15859,Sio Moore,Sio,Moore,55,LB,Oakland Raiders,a25619174e24860b1f40190ca9bdfddc,7gtzc33a
+10856,Nick Roach,Nick,Roach,53,LB,Oakland Raiders,0bfd1c29134b961dc01a5ae7a8d5ef1a,7gtzc33a
+16808,T.J. Carrie,T.J.,Carrie,38,CB,Oakland Raiders,f0f4c1b02bcc8bcaee6f30e722a3cc5c,7gtzc33a
+15794,D.J. Hayden,D.J.,Hayden,25,CB,Oakland Raiders,6620fe669749beb80e8528cab25c77cc,7gtzc33a
+16940,Keith McGill,Keith,McGill,39,CB,Oakland Raiders,2e1c0f62a003fd868ae321c657e5c326,7gtzc33a
+8424,Carlos Rogers,Carlos,Rogers,27,CB,Oakland Raiders,5f37479c66926cdfbb88d66fddc69f46,7gtzc33a
+13310,Larry Asante,Larry,Asante,48,DB,Oakland Raiders,accfb68396bb4879669dc8199b305a52,7gtzc33a
+10590,Tarell Brown,Tarell,Brown,23,CB,Oakland Raiders,11269e015caa3d2a582a7f3f1b08899c,7gtzc33a
+16513,Chance Casey,Chance,Casey,,DB,,76bca7b39969824c16482b9f1b3d5202,7gtzc33a
+14107,Chimdi Chekwa,Chimdi,Chekwa,35,DB,Oakland Raiders,236e7a88667751e857cd8bfbe16aecdf,7gtzc33a
+14167,Taiwan Jones,Taiwan,Jones,22,DB,Oakland Raiders,8f47b174c94601d113e7d717b845149c,7gtzc33a
+15535,Neiko Thorpe,Neiko,Thorpe,31,DB,Oakland Raiders,484cdf6b66d650f8727c932e95066fca,7gtzc33a
+16918,Jonathan Dowling,Jonathan,Dowling,41,S,Oakland Raiders,94b05355fdc6020f2669318e8a5a5d78,7gtzc33a
+11334,Tyvon Branch,Tyvon,Branch,33,SS,Oakland Raiders,d4e90905358e80aad605846f1c346aae,7gtzc33a
+14697,Brandian Ross,Brandian,Ross,,SS,,b83b2bbc8e382c3d08e610e51fe337aa,7gtzc33a
+10510,Usama Young,Usama,Young,26,SS,Oakland Raiders,c953e808419f773f1e4d426cd0e43445,7gtzc33a
+1442,Charles Woodson,Charles,Woodson,24,FS,Oakland Raiders,849d687b589e6d60fd5caf7401bb40b6,7gtzc33a
+2148,Sebastian Janikowski,Sebastian,Janikowski,11,PK,Oakland Raiders,f18c018e248c5c0a68ddfe11d6fcfd20,7gtzc33a
+15245,Giorgio Tavecchio,Giorgio,Tavecchio,,PK,,5b2c9e368453d68ac2989d6960c5baa7,7gtzc33a
+15389,Marquette King,Marquette,King,7,P,Oakland Raiders,ee6b6a41294aa997d0d7a1b93864e008,7gtzc33a
+9635,Kellen Clemens,Kellen,Clemens,10,QB,San Diego Chargers,3ed17ff3bc5724b9078c9d43618348d6,7gtzc33a
+5529,Philip Rivers,Philip,Rivers,17,QB,San Diego Chargers,2b794a6426036700e0f84efe52ef4624,7gtzc33a
+16015,Brad Sorensen,Brad,Sorensen,,QB,,74b6945062b91b6e690656fd0be6d7da,7gtzc33a
+12489,Donald Brown,Donald,Brown,34,RB,San Diego Chargers,3bd2af8a1f6c18d136bc907d5d0d0fc7,7gtzc33a
+13204,Ryan Mathews,Ryan,Mathews,24,RB,San Diego Chargers,e5e4c03e763311d7f906788db5000e5a,7gtzc33a
+11788,Danny Woodhead,Danny,Woodhead,39,RB,San Diego Chargers,93d5d1b25623766f9fe1b257a79eaf26,7gtzc33a
+13524,Seyi Ajirotutu,Seyi,Ajirotutu,16,WR,San Diego Chargers,08b8d26bce006060aa8f7d10d1c05dc9,7gtzc33a
+15818,Keenan Allen,Keenan,Allen,13,WR,San Diego Chargers,e44cfd272fca9247fdb709684edd3cea,7gtzc33a
+16962,Torrence Allen,Torrence,Allen,,WR,,967c68a642de37ea42cf13ad51bae4f6,7gtzc33a
+14027,Vincent Brown,Vincent,Brown,,WR,,ef3c7f9ad537be83d7b797813d8a9288,7gtzc33a
+6016,Malcom Floyd,Malcom,Floyd,80,WR,San Diego Chargers,52ab2dc5d2517d4fdb8ab869de903316,7gtzc33a
+17005,Javontee Herndon,Javontee,Herndon,,WR,,2cb18be60666333d082f9146f4ee8c07,7gtzc33a
+14269,Dontrelle Inman,Dontrelle,Inman,15,WR,San Diego Chargers,aa41068264d989c5ef2d1a655bcc60ff,7gtzc33a
+16824,Tevin Reese,Tevin,Reese,,WR,,3449bba3d0503c25b5c5284c45b611c5,7gtzc33a
+11276,Eddie Royal,Eddie,Royal,11,WR,San Diego Chargers,7ee972098e45f45293fbc413a2535ffa,7gtzc33a
+5362,Antonio Gates,Antonio,Gates,85,TE,San Diego Chargers,3aeb612784779792c93db86083a8d4f1,7gtzc33a
+14904,Ladarius Green,Ladarius,Green,89,TE,San Diego Chargers,307621c2d940498f1bd293eb67ff00dd,7gtzc33a
+12506,David Johnson,David,Johnson,88,TE,San Diego Chargers,23d2429932f4a0a5dc00b8a7810890f6,7gtzc33a
+12550,John Phillips,John,Phillips,83,TE,San Diego Chargers,9c683b7ce801e38abbc7892bcc5e81f2,7gtzc33a
+5591,Nick Hardwick,Nick,Hardwick,61,C,San Diego Chargers,5a239b6761ea57fd885966a103abafcd,7gtzc33a
+13777,Mike Windt,Mike,Windt,47,C,San Diego Chargers,4cfdea879ee742742ca2fa229ef27084,7gtzc33a
+11464,King Dunlap,King,Dunlap,77,OT,San Diego Chargers,162d0f00f2c0f22ae61971e89fe1a407,7gtzc33a
+15792,D.J. Fluker,D.J.,Fluker,76,OT,San Diego Chargers,91a174d07e82c424926a403da811169b,7gtzc33a
+15573,Mike Harris,Mike,Harris,,OT,,43433df45bf81feab009f86fce396e9b,7gtzc33a
+14447,Willie Smith,Willie,Smith,69,OT,San Diego Chargers,934b2fe1f879c82a69be8b7fbd60b6e6,7gtzc33a
+9773,Jeromey Clary,Jeromey,Clary,66,OG,San Diego Chargers,5d2f57c9b3be7762cea8132ac963f721,7gtzc33a
+12711,Rich Ohrnberger,Rich,Ohrnberger,74,OG,San Diego Chargers,674117d52f3661e98460bec5601b2b2f,7gtzc33a
+17040,Jeremiah Sirles,Jeremiah,Sirles,,OT,,96116d50d9db46ab35466b5cad59d21c,7gtzc33a
+14460,Kenny Wiggins,Kenny,Wiggins,,OT,,6c02744a5604a9bf0a76e212e46576c5,7gtzc33a
+11330,Chad Rinehart,Chad,Rinehart,78,OG,San Diego Chargers,e0df2bb630faba3be4a48d49a1d8245f,7gtzc33a
+15027,Johnnie Troutman,Johnnie,Troutman,63,OG,San Diego Chargers,2e5b88b8afb8dccc61b0841c6dc46dc1,7gtzc33a
+16754,Chris Watt,Chris,Watt,65,OG,San Diego Chargers,b4fb286a62b026caa2725cfb6a9bdeaa,7gtzc33a
+16017,Joe Kruger,Joe,Kruger,,DE,,54e477764a81623d7ac479592ed23d37,7gtzc33a
+15580,Cordarro Law,Cordarro,Law,,DE,,bffce606115b304817e4e3893095bb70,7gtzc33a
+13989,Corey Liuget,Corey,Liuget,94,DE,San Diego Chargers,d33d0e9094184e35e63ab26bfe11816b,7gtzc33a
+17024,Tenny Palepoi,Tenny,Palepoi,68,DE,San Diego Chargers,79979932b09044edbb2931ff209fc837,7gtzc33a
+14953,Kendall Reyes,Kendall,Reyes,91,DE,San Diego Chargers,acb47fa03f674958dfabbdc8383e4565,7gtzc33a
+14348,Damik Scafe,Damik,Scafe,75,DE,San Diego Chargers,bd1944d34a3b2b8718b6e8ca5061782c,7gtzc33a
+16851,Ryan Carrethers,Ryan,Carrethers,92,DT,San Diego Chargers,9c9173c6d2d9aac96dc7303e20ebe930,7gtzc33a
+14185,Lawrence Guy,Lawrence,Guy,71,DT,San Diego Chargers,7f7cfa2af695fa3c075110aed5bfc2d7,7gtzc33a
+16067,Kwame Geathers,Kwame,Geathers,95,DT,San Diego Chargers,930b4d1fa198c0b56772727d552c56c4,7gtzc33a
+13406,Sean Lissemore,Sean,Lissemore,98,DT,San Diego Chargers,66f052437ddaa47c6c06bee12c1aa791,7gtzc33a
+17046,Ricky Tjong-A-Tjoe,Ricky,Tjong-A-Tjoe,73,DT,San Diego Chargers,32b1af45a6e2c5dc1c0c8a23de263b9d,7gtzc33a
+13495,Doug Worthington,Doug,Worthington,,DT,,347253a94620c3966c986dca0ff7be86,7gtzc33a
+14672,Victor Aiyewa,Victor,Aiyewa,,LB,,8c7ec3f89c1cc8afaa723e5c0514450c,7gtzc33a
+16761,Jeremiah Attaochu,Jeremiah,Attaochu,97,LB,San Diego Chargers,b3186103a1598686caecbd4856ee7f85,7gtzc33a
+13342,Kavell Conner,Kavell,Conner,53,LB,San Diego Chargers,df4b176879382a97e0f74cebf743d5a9,7gtzc33a
+3539,Dwight Freeney,Dwight,Freeney,93,LB,San Diego Chargers,a9faf20908e4b87f4914165e31b92e87,7gtzc33a
+14141,Andrew Gachkar,Andrew,Gachkar,59,LB,San Diego Chargers,0103db96077b70e9f802828e66dd7914,7gtzc33a
+14926,Melvin Ingram,Melvin,Ingram,54,LB,San Diego Chargers,e56148edd9cdaef2d7234421ce296302,7gtzc33a
+4567,Jarret Johnson,Jarret,Johnson,96,LB,San Diego Chargers,bbb01abd1fbe0b8c1f8881cd514cc968,7gtzc33a
+14796,Thomas Keiser,Thomas,Keiser,,LB,,56b31bc874edfee98cb1eb269814d751,7gtzc33a
+17035,Alvin Scioneaux,Alvin,Scioneaux,48,LB,San Diego Chargers,85e78f804bba23044381c6f08c6bd2b4,7gtzc33a
+15867,Manti Te'o,Manti,Te'o,50,LB,San Diego Chargers,c3184406272ce0541554fb7a5457dbd2,7gtzc33a
+17047,Colton Underwood,Colton,Underwood,,LB,,e526792e60c4157eededcb30bbcf843b,7gtzc33a
+12905,Reggie Walker,Reggie,Walker,52,LB,San Diego Chargers,74dd1ce72a27f1cd5d29ab9b5874b9e2,7gtzc33a
+16000,Tourek Williams,Tourek,Williams,58,LB,San Diego Chargers,702757a8c9a3e808be61f327e4fd75a2,7gtzc33a
+13324,Crezdon Butler,Crezdon,Butler,,CB,,62c0dd16ec062e4e51f9ed942e337ce6,7gtzc33a
+9644,Richard Marshall,Richard,Marshall,31,CB,San Diego Chargers,55ca067b2798ef7fe343d3107d9afd37,7gtzc33a
+16726,Jason Verrett,Jason,Verrett,22,CB,San Diego Chargers,e26cefe4594b946d023194e71276aec2,7gtzc33a
+15883,Steve Williams,Steve,Williams,23,CB,San Diego Chargers,d8640ecbfc9c5f46ef6ed2cbf69c2191,7gtzc33a
+14010,Shareece Wright,Shareece,Wright,29,CB,San Diego Chargers,852fe72541128bab8def3bd399ea6039,7gtzc33a
+16039,Jahleel Addae,Jahleel,Addae,37,DB,San Diego Chargers,33d33c7124f5cd0662997bf0b1791981,7gtzc33a
+16054,Marcus Cromartie,Marcus,Cromartie,35,DB,San Diego Chargers,7263dad7e59bf9011166fc261a4e368e,7gtzc33a
+16985,Alden Darby,Alden,Darby,,DB,,bb8c5071b2987b4fc9a880d3c6ba27db,7gtzc33a
+11269,Brandon Flowers,Brandon,Flowers,26,DB,San Diego Chargers,0f526c48b889e5a4674c22fba191c91e,7gtzc33a
+13465,Darrell Stuckey,Darrell,Stuckey,25,DB,San Diego Chargers,6b9e17a58042f657bb3f6a2f4f3f0b06,7gtzc33a
+14018,Marcus Gilchrist,Marcus,Gilchrist,38,SS,San Diego Chargers,4a81311e42d480ef657870744915bb43,7gtzc33a
+10481,Eric Weddle,Eric,Weddle,32,FS,San Diego Chargers,e499cd16afd1c542f940c454d4e7b9c1,7gtzc33a
+9329,Nick Novak,Nick,Novak,9,PK,San Diego Chargers,1cdd96c8002c5b27f4d101e7908b2b73,7gtzc33a
+4607,Mike Scifres,Mike,Scifres,5,P,San Diego Chargers,8ac377a8f0a794accfe472b143a6eb12,7gtzc33a
+4459,Carson Palmer,Carson,Palmer,3,QB,Arizona Cardinals,d0d678d124cf56cadc1b4157a8a6b34d,7gtzc33a
+10487,Drew Stanton,Drew,Stanton,5,QB,Arizona Cardinals,3cec482266dd859315bba329421e46f7,7gtzc33a
+16813,Logan Thomas,Logan,Thomas,6,QB,Arizona Cardinals,23cb714448d4831a296c7e53930ecdc2,7gtzc33a
+13206,Jonathan Dwyer,Jonathan,Dwyer,20,RB,Arizona Cardinals,cfa6df45431492d9beb8dd13847b8636,7gtzc33a
+15893,Andre Ellington,Andre,Ellington,38,RB,Arizona Cardinals,0bd67622c34fe77dc8931f67e0b88126,7gtzc33a
+14266,Robert Hughes,Robert,Hughes,39,RB,Arizona Cardinals,a7d9354a1c7ebaf24494e0af313746b1,7gtzc33a
+11410,Jalen Parmele,Jalen,Parmele,,RB,,7c2abe0f0e825e0334e225813e990256,7gtzc33a
+17109,Zach Bauman,Zach,Bauman,,RB,,4e68fda3a78fa52e0a6e733b159c01d5,7gtzc33a
+15981,Stepfan Taylor,Stepfan,Taylor,30,RB,Arizona Cardinals,f1f818a167c53c3a0df5fa3e9a3937b4,7gtzc33a
+16172,Jaron Brown,Jaron,Brown,13,WR,Arizona Cardinals,3d8de22347c6950d2b9f6cabdfee9277,7gtzc33a
+16804,John Brown,John,Brown,12,WR,Arizona Cardinals,6f9ad344516e94e3ce14b285d8db1d2c,7gtzc33a
+16173,Dan Buckner,Dan,Buckner,,WR,,0bb57573489b72702a5b86939050afe3,7gtzc33a
+5528,Larry Fitzgerald,Larry,Fitzgerald,11,WR,Arizona Cardinals,9b7bcb71cef51e520c812008c7ea0863,7gtzc33a
+14908,Michael Floyd,Michael,Floyd,15,WR,Arizona Cardinals,36e8f1b1bd54488f72b04ed3c14cd70b,7gtzc33a
+15564,Brittan Golden,Brittan,Golden,,WR,,9a207c00c9879d41c8d3bd89ac1ef7bc,7gtzc33a
+16871,Walt Powell,Walt,Powell,83,WR,Arizona Cardinals,a058dea470eba9b19946515ed653fc17,7gtzc33a
+13922,Teddy Williams,Teddy,Williams,,WR,,f0975b3ffed586435ca24db2bcb8a987,7gtzc33a
+11272,John Carlson,John,Carlson,89,TE,Arizona Cardinals,78e101df471a986a434c13cffea6af52,7gtzc33a
+15773,Darren Fells,Darren,Fells,85,TE,Arizona Cardinals,af10cd2c40998e2b3e44ca5a823f43bf,7gtzc33a
+14872,Andre Hardy,Andre,Hardy,,TE,,0cbf49bc9e14cebda89646de86ca8fa0,7gtzc33a
+14009,Rob Housler,Rob,Housler,84,TE,Arizona Cardinals,ea8783a8e17d46e9cc809a74de35d683,7gtzc33a
+16797,Troy Niklas,Troy,Niklas,87,TE,Arizona Cardinals,732a9a190c70a042c8ede70bc054f110,7gtzc33a
+15093,Philip Blake,Philip,Blake,,C,,14ad376ffa1cf66b6295a1aba3e39c41,7gtzc33a
+13361,John Estes,John,Estes,,C,,fbb5ef7dcd36e9d9d1c43af48ad0b402,7gtzc33a
+10453,Ted Ginn Jr.,Ted,Ginn Jr.,19,WR,Arizona Cardinals,b29c6d668ae6f91fc58e7ded838190ca,7gtzc33a
+11075,Lyle Sendlein,Lyle,Sendlein,63,C,Arizona Cardinals,db9559e581926507586a03a467a4a7a9,7gtzc33a
+17225,Kelvin Palmer,Kelvin,Palmer,,OT,,306f459ab5a08345f7ab166c60a921dc,7gtzc33a
+15020,Nate Potter,Nate,Potter,,OT,,94dc3539fc7370b7fef440a9904d17e0,7gtzc33a
+15096,Bobby Massie,Bobby,Massie,70,OT,Arizona Cardinals,82bb9c001850a52a38ff68816f5fa07e,7gtzc33a
+15284,Bradley Sowell,Bradley,Sowell,79,OT,Arizona Cardinals,cef1943f95cd2b193a8119f50254359d,7gtzc33a
+15787,Jonathan Cooper,Jonathan,Cooper,61,OG,Arizona Cardinals,fe6eac2ea31487bfdabee02f7dd77de8,7gtzc33a
+12651,Paul Fanaika,Paul,Fanaika,74,OG,Arizona Cardinals,3c334bebdf753a6a967a821edfdc274b,7gtzc33a
+13403,Ted Larsen,Ted,Larsen,62,OG,Arizona Cardinals,f336c794c7e2184ca1ea113b2eb99a0f,7gtzc33a
+17260,Anthony Steen,Anthony,Steen,,OG,,2b2144a524f648bfb29172018db4f0be,7gtzc33a
+15901,Earl Watford,Earl,Watford,78,OG,Arizona Cardinals,922ce406e0f258d4f8986710686ff9d5,7gtzc33a
+11284,Calais Campbell,Calais,Campbell,93,DE,Arizona Cardinals,9d40caea38f8135aa560c7cdf6ce6943,7gtzc33a
+5589,Darnell Dockett,Darnell,Dockett,90,DE,Arizona Cardinals,143976c25a9ca58fdb672c0fc3e4bd9e,7gtzc33a
+5968,Tommy Kelly,Tommy,Kelly,73,DE,Arizona Cardinals,8a0a6cf911260ed0d97cb8e106f67027,7gtzc33a
+16764,Kareem Martin,Kareem,Martin,96,DE,Arizona Cardinals,965dbda01033ceb794607caec82ba33e,7gtzc33a
+9677,Frostee Rucker,Frostee,Rucker,98,DE,Arizona Cardinals,507f7357a12a6658fd9ecb32fc3bcfc3,7gtzc33a
+16840,Ed Stinson,Ed,Stinson,72,DE,Arizona Cardinals,a9f30a7b37c9791481f1caea38de0126,7gtzc33a
+17155,Bruce Gaston,Bruce,Gaston,,DT,,a39db142054e5ac02091c11d6912f35d,7gtzc33a
+5629,Isaac Sopoaga,Isaac,Sopoaga,,DT,,8141db4f214083da38d5e02fc12d353d,7gtzc33a
+15101,Alameda Ta'amu,Alameda,Ta'amu,66,DT,Arizona Cardinals,6316e54539cb572e00af30f4df29d379,7gtzc33a
+16537,Christian Tupou,Christian,Tupou,,DT,,9691416052ad0186cf74d19ebcd1f0eb,7gtzc33a
+13235,Dan Williams,Dan,Williams,92,DT,Arizona Cardinals,33c799e7e2484a1ec9db4a2c9a9a3834,7gtzc33a
+2144,John Abraham,John,Abraham,55,LB,Arizona Cardinals,646570e62ff566d2973f0cb6d81c48f7,7gtzc33a
+14152,Sam Acho,Sam,Acho,94,LB,Arizona Cardinals,3a99b237d72706c2bf8f853c1a0f0121,7gtzc33a
+9424,Lorenzo Alexander,Lorenzo,Alexander,97,LB,Arizona Cardinals,255f3437d0e8fb4c906f1280beda4a26,7gtzc33a
+12956,Marcus Benard,Marcus,Benard,,LB,,b5b41e718c818eb7752c5e1359e215fb,7gtzc33a
+10635,Desmond Bishop,Desmond,Bishop,59,LB,Arizona Cardinals,f87cc25580650fef88c6c1adcd6b5e4e,7gtzc33a
+17123,Glenn Carson,Glenn,Carson,56,LB,Arizona Cardinals,0984a28fcbd1368ad5804ae8955308ba,7gtzc33a
+16181,Kenny Demens,Kenny,Demens,54,LB,Arizona Cardinals,7b36a8c934eaef9272c89904e48cf1f8,7gtzc33a
+15856,Kevin Minter,Kevin,Minter,51,LB,Arizona Cardinals,88fbe5badcee9e4564dddcba7692ea8c,7gtzc33a
+15976,Alex Okafor,Alex,Okafor,57,LB,Arizona Cardinals,a1ef67e82e04a389fb2200ad08137961,7gtzc33a
+12440,Matt Shaughnessy,Matt,Shaughnessy,91,LB,Arizona Cardinals,7abfb0a019d7938c808fb30da096ca23,7gtzc33a
+13475,Adrian Tracy,Adrian,Tracy,,LB,,2bcca24a5ce0d5f470ab80b6bbc4d604,7gtzc33a
+13305,Daryl Washington,Daryl,Washington,58,LB,Arizona Cardinals,8e0a9a2e42650f82e8ed73a6f070cccf,7gtzc33a
+15089,Justin Bethel,Justin,Bethel,28,CB,Arizona Cardinals,67ae89569dac9116734bbe153c279c67,7gtzc33a
+9605,Antonio Cromartie,Antonio,Cromartie,31,CB,Arizona Cardinals,736ffaca2c7aab2a07f67c94415f0c08,7gtzc33a
+12714,Jerraud Powers,Jerraud,Powers,25,CB,Arizona Cardinals,419e610be91218d8098c011dde81e3ad,7gtzc33a
+17015,Jimmy Legree,Jimmy,Legree,,DB,,c37acd9a8365b9e0b8594997102752d3,7gtzc33a
+3656,Larry Foote,Larry,Foote,50,LB,Arizona Cardinals,53aba47681448f031d9545342a2645c8,7gtzc33a
+13980,Patrick Peterson,Patrick,Peterson,21,CB,Arizona Cardinals,ee19d9d0b1ddbc1f4036b59875f2eb73,7gtzc33a
+13609,Bryan McCann,Bryan,McCann,,DB,,30d8e8d4ecd684ce630cdf16a21a9b31,7gtzc33a
+12734,Curtis Taylor,Curtis,Taylor,,DB,,c3d24b792a93da07efc38da68e1e6159,7gtzc33a
+16723,Deone Bucannon,Deone,Bucannon,36,SS,Arizona Cardinals,4f5621f15748c4a963b682502df8846a,7gtzc33a
+16195,Tony Jefferson,Tony,Jefferson,22,FS,Arizona Cardinals,26f835af5d7eacf902bcd2caea3892b1,7gtzc33a
+12674,Rashad Johnson,Rashad,Johnson,26,FS,Arizona Cardinals,392059d77aa64f330b8946bdda363e23,7gtzc33a
+15851,Tyrann Mathieu,Tyrann,Mathieu,32,FS,Arizona Cardinals,f091e4f8aca5724d23c3287031926ad3,7gtzc33a
+14315,Anthony Walters,Anthony,Walters,,FS,,3061239fb689b2719836dfc6c24da910,7gtzc33a
+16976,Chandler Catanzaro,Chandler,Catanzaro,7,PK,Arizona Cardinals,c3229e165ee18c0b9502cf93c4533bef,7gtzc33a
+3640,Dave Zastudil,Dave,Zastudil,9,P,Arizona Cardinals,bc56d74f50f14fc18fa12d3dff9adbf5,7gtzc33a
+13987,Blaine Gabbert,Blaine,Gabbert,2,QB,San Francisco 49ers,8edf246ccc0a411b180e973f51033615,7gtzc33a
+11394,Josh Johnson,Josh,Johnson,1,QB,San Francisco 49ers,444cb1ffe7af69eb472469addd09e2f2,7gtzc33a
+14001,Colin Kaepernick,Colin,Kaepernick,7,QB,San Francisco 49ers,cff8054b8ed5594029268211d58744c7,7gtzc33a
+8479,Frank Gore,Frank,Gore,21,RB,San Francisco 49ers,758018ddaf1b5954033c0775fba0e627,7gtzc33a
+14159,Kendall Hunter,Kendall,Hunter,32,RB,San Francisco 49ers,5b9d9ee91977338dbe9d1efb9d9a5e64,7gtzc33a
+16777,Carlos Hyde,Carlos,Hyde,28,RB,San Francisco 49ers,8f21604663f4a271b62bf68bb0115f09,7gtzc33a
+14890,LaMichael James,LaMichael,James,23,RB,San Francisco 49ers,16cb75a794131e46b3eafcbe37e1f1d5,7gtzc33a
+13642,Alfonso Smith,Alfonso,Smith,,RB,,bdedc93e54b3bd7c853e91b1fad50b62,7gtzc33a
+14083,Bruce Miller,Bruce,Miller,49,FB,San Francisco 49ers,c4c60d63f5528ee69788dc592713556e,7gtzc33a
+13913,Will Tukuafu,Will,Tukuafu,48,FB,San Francisco 49ers,e6032af30af6a72795dc402f7502656f,7gtzc33a
+4512,Anquan Boldin,Anquan,Boldin,81,WR,San Francisco 49ers,df55c8e5435e8f8f6b32d899147100bd,7gtzc33a
+12563,Michael Crabtree,Michael,Crabtree,15,WR,San Francisco 49ers,1330acd0cde8e4af237fd794dc7ff1d6,7gtzc33a
+16946,Bruce Ellington,Bruce,Ellington,3,WR,San Francisco 49ers,96168bd7d044529bddee3a50a6c3803d,7gtzc33a
+16462,Chuck Jacobs,Chuck,Jacobs,17,WR,San Francisco 49ers,9fa0081dbece6cf896e7c2636baf8884,7gtzc33a
+11458,Stevie Johnson,Stevie,Johnson,13,WR,San Francisco 49ers,d4c04c57eb95487e0677b1718c0e7707,7gtzc33a
+4582,Brandon Lloyd,Brandon,Lloyd,84,WR,San Francisco 49ers,294f2029fbb3ab68a60488b881309c2e,7gtzc33a
+5437,Kassim Osgood,Kassim,Osgood,,WR,,656fc7c320a3b3e176974f2c85824ff7,7gtzc33a
+16026,Quinton Patton,Quinton,Patton,11,WR,San Francisco 49ers,f495adefe102509480d11c43986805f1,7gtzc33a
+17307,L'Damian Washington,L'Damian,Washington,,WR,,19c0b9b92b8ad36adc47960503ce5cbe,7gtzc33a
+15403,Derek Carrier,Derek,Carrier,46,TE,San Francisco 49ers,32390de5631132298462daa6ede882cb,7gtzc33a
+15204,Garrett Celek,Garrett,Celek,88,TE,San Francisco 49ers,49302f78afafbd1a1b824905d49cd029,7gtzc33a
+17125,Asante Cleveland,Asante,Cleveland,,TE,,50c6cf980586fd20466739a130045711,7gtzc33a
+9592,Vernon Davis,Vernon,Davis,85,TE,San Francisco 49ers,e78a9a8e2b83141b6f8b29c6e40e1935,7gtzc33a
+14377,Demarcus Dobbs,Demarcus,Dobbs,83,TE,San Francisco 49ers,3ab58e4a83099dd0ad70e51468917d2b,7gtzc33a
+15853,Vance McDonald,Vance,McDonald,89,TE,San Francisco 49ers,a395858c4c06ffb7557a9301ef29b115,7gtzc33a
+17144,Dillon Farrell,Dillon,Farrell,63,C,San Francisco 49ers,7ead29a9774e7257c43376298503c769,7gtzc33a
+16788,Marcus Martin,Marcus,Martin,66,C,San Francisco 49ers,fa9adcf829a8db61ebcd89b8100bac9c,7gtzc33a
+16361,Kevin McDermott,Kevin,McDermott,,C,,039b7258449b41073d5dd85e47e746e7,7gtzc33a
+15892,Carter Bykowski,Carter,Bykowski,,OT,,9a39d6813933dd4ed782e57a03d13121,7gtzc33a
+13253,Anthony Davis,Anthony,Davis,76,OT,San Francisco 49ers,f94a30a9a782df8742bfd875fb546ad4,7gtzc33a
+17150,Fou Fonoti,Fou,Fonoti,64,OT,San Francisco 49ers,b0699cd218e3f0ff6e05b11ccf1e0425,7gtzc33a
+17233,Michael Philipp,Michael,Philipp,,OT,,f753a4bcf34a696b806794c11b866292,7gtzc33a
+14975,Jonathan Martin,Jonathan,Martin,71,OT,San Francisco 49ers,5912999ebdbaae07c8d358c66ba83f6d,7gtzc33a
+10472,Joe Staley,Joe,Staley,74,OT,San Francisco 49ers,c7ccf45c8c46cee837d18abe25d119f5,7gtzc33a
+13246,Mike Iupati,Mike,Iupati,77,OG,San Francisco 49ers,e67c9c7fef0cafbb2842f42bae7be4db,7gtzc33a
+14110,Daniel Kilgore,Daniel,Kilgore,67,OG,San Francisco 49ers,043935fd10d1460ae06421d84bd0446a,7gtzc33a
+15171,Al Netter,Al,Netter,,OG,,aa78169cc9c504a66cf36967a4cd1675,7gtzc33a
+15898,Ryan Seymour,Ryan,Seymour,,OG,,28931e5cf3f9d09cbedabc50d087bc41,7gtzc33a
+8508,Adam Snyder,Adam,Snyder,,OG,,2bd429e980d4733e02815be8b77c2135,7gtzc33a
 15829,Tank Carradine,Tank,Carradine,95,DE,San Francisco 49ers,af9c11380ffad3a7888dccf2b0f508f7,7gtzc33a
 16028,Quinton Dial,Quinton,Dial,92,DE,San Francisco 49ers,1f02e554d0e62239bb50f8df753f6e78,7gtzc33a
 15430,Tony Jerod-Eddie,Tony,Jerod-Eddie,63,DE,San Francisco 49ers,7c50455e036e6b89fe138763497e14f2,7gtzc33a
