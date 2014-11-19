@@ -1,18 +1,36 @@
 <template name="nflPlayersList">
-  <!-- Filters -->
+  <!-- Checkbox Filters -->
   <label class='show-qb'>
-    <input type='checkbox' checked="{{showQB}}"/>
+    <input type='checkbox' checked="{{checkBoxShowQB}}"/>
     QBs: {{filterQBCount}}
   </label>
-  <!-- List all people -->
+
+  <!-- Dropdown -->
+  {{> positionDropdown}}
+
+  <!-- List -->
   <h4>{{totalNflPlayersCount}} Total</h4>
+  <h4>{{nflPositionCount}} Total</h4>
   <ul>
     {{#each nflPlayers}}
-      {{>playerDescription}}
+      {{>playerDescriptionSimple}}
     {{/each}}
   </ul>
 </template>
 
-<template name="playerDescription">
+<template name='positionDropdown'>
+  <select id='positionDropdown'>
+    {{#each positions}}
+      <option value={{this}}>{{this}}</option>
+    {{/each}}
+  </select>
+</template>
+
+<template name="playerDescriptionSimple">
   <li>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
 </template>
+
+<template name="playerDescriptionVisual">
+  <li><img class='player-img' src='http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/{{espn_id}}.png&w=274&h=200'>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
+</template>
+

@@ -8,10 +8,10 @@
   "grid":                 false,
   "tables":               false,
   "forms":                false,
-  "buttons":              false,
+  "buttons":              true,
 
   "glyphicons":           false,
-  "button-groups":        false,
+  "button-groups":        true,
   "input-groups":         false,
   "navs":                 true,
   "navbar":               true,
