@@ -13,7 +13,7 @@
   <h4>{{nflPositionCount}} Total</h4>
   <ul>
     {{#each nflPlayers}}
-      {{>playerDescriptionSimple}}
+      {{>playerDescriptionVisual}}
     {{/each}}
   </ul>
 </template>
@@ -26,11 +26,12 @@
   </select>
 </template>
 
+<!--  -->
 <template name="playerDescriptionSimple">
   <li>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
 </template>
 
 <template name="playerDescriptionVisual">
-  <li><img class='player-img' src='http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/{{espn_id}}.png&w=274&h=200'>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
+  <li><img class='player-img' src={{ playerImageSrc espn_id = this.espn_id espn_size = 'medium'}}>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
 </template>
 
