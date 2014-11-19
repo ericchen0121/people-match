@@ -1,17 +1,32 @@
 Template.nflPlayersList.helpers
 
   nflPlayers: ->
-    positionValue = Session.get 'nflPosition'
 
-    if positionValue
-      NflPlayers.find({position: positionValue}, {sort: {last_name: 1}})
+    # create query options
+    options = {}
+    sortOptions = {sort: {last_name: 1}}
+
+    if Session.get 'nflPosition'
+      if Session.get 'nflPosition' == 'All' and options[position]
+        # do not include the key in the filter
+        delete options[position]
+      else
+        options.position = Session.get 'nflPosition'
+    else # default
+      options.position = 'QB'
+
+    if Session.get 'nflTeam'
+      if Session.get 'nflTeam' == 'All' and options[team]
+        # do not include the key in the filter
+        delete options[team]
+      else
+        options.team = Session.get 'nflTeam'
     else
-      # temporarily choosing a small number of players
-      NflPlayers.find({position: 'S'}, {sort: {last_name: 1}})
-      # find all
-      # NflPlayers.find({}, {sort: {name: 1}})
+      options.team = 'Baltimore Ravens'
 
-# TODO: refactor this to be based on the other helper value
+    NflPlayers.find(options, sortOptions)
+
+  # TODO: refactor this to be based on the other helper value
   nflPositionCount: ->
     positionValue = Session.get 'nflPosition'
 
@@ -27,7 +42,7 @@ Template.nflPlayersList.helpers
   checkBoxShowQB: ->
     Session.get 'showQB'
 
-# TODO: make this filter generic and accept an argument
+  # TODO: make this filter generic and accept an argument
   filterQBCount: ->
     NflPlayers.find({position: 'QB'}).count()
 
@@ -36,10 +51,51 @@ Template.nflPlayersList.events
   'change #positionDropdown': (event) ->
     Session.set 'nflPosition', event.target.value
 
+  'change #teamDropdown': (event) ->
+    Session.set 'nflTeam', event.target.value
+
 Template.positionDropdown.helpers
 
   positions: ->
-    ['QB', 'RB', 'WR', 'TE', 'FB',  'C', 'OG', 'OT', 'LB', 'CB', 'SS',  'S', 'DT', 'DE', 'PK']
+    ['All', 'QB', 'RB', 'WR', 'TE', 'FB',  'C', 'OG', 'OT', 'LB', 'CB', 'SS',  'S', 'DT', 'DE', 'PK']
+
+Template.teamDropdown.helpers
+  
+  nflTeams: ->
+    [ 'All'
+      'Buffalo Bills',
+      'Washington Redskins',
+      'Miami Dolphins',
+      'Jacksonville Jaguars',
+      'New York Jets',
+      'Kansas City Chiefs',
+      'New England Patriots',
+      'Dallas Cowboys',
+      'New York Giants',
+      'Baltimore Ravens',
+      'Philadelphia Eagles',
+      'Denver Broncos',
+      'Tampa Bay Buccaneers',
+      'Oakland Raiders',
+      'San Diego Chargers',
+      'Arizona Cardinals',
+      'San Francisco 49ers',
+      'Seattle Seahawks',
+      'St. Louis Rams',
+      'Cincinnati Bengals',
+      'Detroit Lions',
+      'Cleveland Browns',
+      'Pittsburgh Steelers',
+      'Chicago Bears',
+      'Green Bay Packers',
+      'Minnesota Vikings',
+      'Houston Texans',
+      'Indianapolis Colts',
+      'Tennessee Titans',
+      'Atlanta Falcons',
+      'Carolina Panthers'
+    ]
+
 
 Template.playerDescriptionVisual.helpers
   
@@ -48,7 +104,7 @@ Template.playerDescriptionVisual.helpers
   # `espn_id`: the id of the player's url page on espn.com
   # `espn_size` String: the size to fetch from espn's cdn 
   # 
-  playerImageSrc: (obj) ->
+  playerImageESPNSrc: (obj) ->
 
     if obj.hash.espn_size
       size = switch obj.hash.espn_size
