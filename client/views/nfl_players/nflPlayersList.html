@@ -12,9 +12,9 @@
   <!-- List -->
   <h4>{{totalNflPlayersCount}} Total</h4>
   <h4>{{nflPositionCount}} Total</h4>
-  <ul>
+  <ul class='nflPlayersList'>
     {{#each nflPlayers}}
-      {{>playerDescriptionVisual}}
+      {{>playerDescriptionImage}}
     {{/each}}
   </ul>
 </template>
@@ -29,11 +29,19 @@
 
 <!--  -->
 <template name="playerDescriptionSimple">
-  <li>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
+  <li class='nflPlayer'>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
 </template>
 
-<template name="playerDescriptionVisual">
-  <li><img class='player-img' src={{ playerImageESPNSrc espn_id = this.espn_id espn_size = 'medium'}}>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
+<template name="playerDescriptionImage">
+  <li class='nflPlayer'>
+    <a href={{pathFor 'playerDescriptionImagePage' }}>
+      <img class='player-img' src={{ playerImageESPN espn_id = this.espn_id espn_size = 'medium'}}>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}
+    </a>
+  </li>
+</template>
+
+<template name="playerDescriptionImagePage">
+{{> playerDescriptionImage}}
 </template>
 
 <template name='teamDropdown'>
