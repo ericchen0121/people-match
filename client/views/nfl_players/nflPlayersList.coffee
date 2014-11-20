@@ -5,20 +5,22 @@ Template.nflPlayersList.helpers
     # create query options
     options = {}
     sortOptions = {sort: {last_name: 1}}
+    position = Session.get 'nflPosition'
+    team = Session.get 'nflTeam'
 
-    if Session.get 'nflPosition'
-      if Session.get 'nflPosition' == 'All' and options[position]
+    if position
+      if position == 'All'
         # do not include the key in the filter
-        delete options[position]
+        delete options['position'] if options.position
       else
         options.position = Session.get 'nflPosition'
     else # default
       options.position = 'QB'
 
-    if Session.get 'nflTeam'
-      if Session.get 'nflTeam' == 'All' and options[team]
+    if team
+      if team == 'All'
         # do not include the key in the filter
-        delete options[team]
+        delete options[team] if options.team
       else
         options.team = Session.get 'nflTeam'
     else
