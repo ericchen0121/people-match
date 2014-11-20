@@ -59,10 +59,10 @@ Template.nflPlayersList.events
 Template.positionDropdown.helpers
 
   positions: ->
-    ['All', 'QB', 'RB', 'WR', 'TE', 'FB',  'C', 'OG', 'OT', 'LB', 'CB', 'SS',  'S', 'DT', 'DE', 'PK']
+    ['All', 'QB', 'RB', 'WR', 'TE', 'FB',  'C', 'OG', 'OT', 'LB', 'CB', 'SS', 'FS', 'S', 'DT', 'DE', 'PK']
 
 Template.teamDropdown.helpers
-  
+
   nflTeams: ->
     [ 'All'
       'Buffalo Bills',
@@ -100,12 +100,12 @@ Template.teamDropdown.helpers
 
 
 Template.playerDescriptionVisual.helpers
-  
-  # obj is passed in as an argument in the template helper. 
-  # The two attributes of this object are 
+
+  # obj is passed in as an argument in the template helper.
+  # The two attributes of this object are
   # `espn_id`: the id of the player's url page on espn.com
-  # `espn_size` String: the size to fetch from espn's cdn 
-  # 
+  # `espn_size` String: the size to fetch from espn's cdn
+  #
   playerImageESPNSrc: (obj) ->
 
     if obj.hash.espn_size
