@@ -1,9 +1,4 @@
 <template name="nflPlayersList">
-  <!-- Checkbox Filters -->
-  <label class='show-qb'>
-    <input type='checkbox' checked="{{checkBoxShowQB}}"/>
-    QBs: {{filterQBCount}}
-  </label>
 
   <!-- Dropdown -->
   {{> positionDropdown}}
@@ -14,7 +9,7 @@
   <h4>{{nflPositionCount}} Total</h4>
   <ul class='nflPlayersList'>
     {{#each nflPlayers}}
-      {{>playerDescriptionImage}}
+      {{>playerCard}}
     {{/each}}
   </ul>
 </template>
@@ -32,16 +27,21 @@
   <li class='nflPlayer'>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
 </template>
 
-<template name="playerDescriptionImage">
+<template name="playerCardPage">
+{{> playerCard}}
+</template>
+
+<template name="playerCard">
   <li class='nflPlayer'>
-    <a href={{pathFor 'playerDescriptionImagePage' }}>
-      <img class='player-img' src={{ playerImageESPN espn_id = this.espn_id espn_size = 'medium'}}>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}
+    <a href={{pathFor 'playerCardPage' }}>
+      <img class='player-img' src={{ playerImageESPN espn_id = this.espn_id espn_size = 'medium'}}>
+      {{> playerCardInfo}}
     </a>
   </li>
 </template>
 
-<template name="playerDescriptionImagePage">
-{{> playerDescriptionImage}}
+<template name='playerCardInfo'>
+  {{full_name}} - {{position}} - {{team}} - {{jersey_number}}
 </template>
 
 <template name='teamDropdown'>
