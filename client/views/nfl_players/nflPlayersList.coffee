@@ -99,14 +99,14 @@ Template.teamDropdown.helpers
     ]
 
 
-Template.playerDescriptionVisual.helpers
+Template.playerDescriptionImage.helpers
 
   # obj is passed in as an argument in the template helper.
   # The two attributes of this object are
   # `espn_id`: the id of the player's url page on espn.com
   # `espn_size` String: the size to fetch from espn's cdn
   #
-  playerImageESPNSrc: (obj) ->
+  playerImageESPN: (obj) ->
 
     if obj.hash.espn_size
       size = switch obj.hash.espn_size
