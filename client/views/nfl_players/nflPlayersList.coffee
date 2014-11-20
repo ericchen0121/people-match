@@ -10,7 +10,7 @@ Template.nflPlayersList.helpers
 
     if position
       if position == 'All'
-        # do not include the key in the filter
+        # if 'All', then remove the filter from the query!
         delete options['position'] if options.position
       else
         options.position = Session.get 'nflPosition'
@@ -19,7 +19,7 @@ Template.nflPlayersList.helpers
 
     if team
       if team == 'All'
-        # do not include the key in the filter
+                # if 'All', then remove the filter from the query!
         delete options[team] if options.team
       else
         options.team = Session.get 'nflTeam'
