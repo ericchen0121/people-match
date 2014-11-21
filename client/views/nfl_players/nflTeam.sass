@@ -1,0 +1,134 @@
+$ari-red: #870619
+$atl-red: #BD0D18
+$atl-gray: #DCE0E5
+$bal-purple: #280353
+$bal-gold: #D0B240
+$buf-blue: #00338D
+$buf-red: #C60C30
+$car-blue: #0088CE
+$car-gray: #A5ACAF
+$chi-blue: #03202F
+$chi-orange: #DD4814
+$cin-orange: #FB4F14
+$cle-brown: #26201E
+$cle-orange: #E34912
+$dal-blue: #002244
+$dal-gray: #8C8B8A
+$den-orange: #FB4F14
+$den-blue: #002244
+$det-blue: #006DB0
+$det-gray: #C5C7CF
+$gb-green: #213D30
+$gb-yellow: #FFCC00
+$hou-blue: #02253A
+$hou-red: #B31B34
+$ind-blue: #003B7B
+$jac-gold: #D0B239
+$jac-teal: #007198
+$kc-red: #B20032
+$kc-gold: #F2C800
+$mia-teal-light: #008D97
+$mia-teal-dark: #015679
+$mia-orange: #F5811F
+$min-purple: #4F2682
+$min-yellow: #FFC52F
+$ne-blue: #0D254C
+$ne-gray: #D6D6D6
+$ne-red: #C80815
+$no-gold: #D2B887
+$nyg-blue: #192F6B
+$nyg-red: #CA001A 
+$nyg-gray: #808080
+$nyj-green: #0C371D
+$oak-gray: #C4C8CB
+$phi-green: #003B48
+$phi-gray: #708090
+$pit-yellow: #F2C800
+$sd-blue-dark: #08214A
+$sd-blue-light: #5B92E5
+$sd-yellow: #EEC607
+$sf-red: #AF1E2C
+$sf-gold: #E6BE8A
+$sea-blue: #06192E
+$sea-green: #4EAE47
+$sea-gray: #ACB6BC
+$stl-blue: #13264B
+$stl-gold: #C9AF74
+$tb-red: #D60A0B
+$tb-copper: #89765F
+$ten-blue-light: #648FCC
+$ten-blue-dark: #000080
+$ten-red: #FF0000
+$was-red: #773141
+$was-gold: #FFB612
+
+=jersey($inner, $outer, $outer-width: 3px)
+	color: $inner
+	-webkit-text-stroke: $outer-width $outer
+
+
+li.nflPlayer
+	.cardJerseyNumber, .cardLastName
+		&.Bills
+			+jersey($buf-blue, $buf-red)
+		&.Redskins
+			+jersey($was-red, $was-gold)
+		&.Dolphins
+			+jersey($mia-teal-light, $mia-orange, 2px)
+		&.Jaguars
+			+jersey(white, $jac-teal)
+		&.Jets
+			+jersey(white, $nyj-green, 4.5px)
+		&.Chiefs
+			+jersey($kc-red, $kc-gold, 2px)
+		&.Patriots
+			+jersey($ne-gray, $ne-blue)
+		&.Cowboys
+			+jersey($dal-blue, $dal-gray)
+		&.Giants
+			+jersey(white, $nyg-blue)
+		&.Ravens
+			+jersey(white, $bal-purple)
+		&.Eagles
+			+jersey($phi-green, black)
+		&.Broncos
+			+jersey($den-blue, $den-orange)
+		&.Buccaneers
+			+jersey($tb-red, black)
+		&.Raiders
+			+jersey($oak-gray, black, 3.5px)
+		&.Chargers
+			+jersey($sd-blue-dark, $sd-yellow, 1.9px)
+		&.Cardinals
+			+jersey($ari-red, black)
+		&.Francisco
+			+jersey(white, $sf-red)
+		&.Seahawks
+			+jersey($sea-blue, $sea-green)
+		&.Rams
+			+jersey($stl-gold, $stl-blue)
+		&.Bengals
+			+jersey(black, $cin-orange, 2.5px)
+		&.Lions
+			+jersey($det-blue, $det-gray)
+		&.Browns
+			+jersey($cle-brown, $cle-orange, 2px)
+		&.Steelers
+			+jersey(black, $pit-yellow, 2px)
+		&.Bears
+			+jersey($chi-blue, $chi-orange)
+		&.Packers
+			+jersey($gb-green, $gb-yellow, 2px)
+		&.Vikings
+			+jersey(white, $min-purple)
+		&.Texans
+			+jersey($hou-red, white)
+		&.Colts
+			+jersey(white, $ind-blue)
+		&.Titans
+			+jersey($ten-blue-dark, $ten-blue-light, 2.5px)
+		&.Falcons
+			+jersey($atl-red, black)
+		&.Panthers
+			+jersey($car-gray, $car-blue)
+			

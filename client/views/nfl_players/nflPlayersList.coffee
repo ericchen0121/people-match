@@ -41,13 +41,6 @@ Template.nflPlayersList.helpers
   totalNflPlayersCount: ->
     NflPlayers.find({}).count()
 
-  checkBoxShowQB: ->
-    Session.get 'showQB'
-
-  # TODO: make this filter generic and accept an argument
-  filterQBCount: ->
-    NflPlayers.find({position: 'QB'}).count()
-
 Template.nflPlayersList.events
 
   'change #positionDropdown': (event) ->
@@ -99,7 +92,7 @@ Template.teamDropdown.helpers
     ]
 
 
-Template.playerDescriptionImage.helpers
+Template.playerCardPhoto.helpers
 
   # obj is passed in as an argument in the template helper.
   # The two attributes of this object are
