@@ -48,8 +48,7 @@ $sd-blue-dark: #08214A
 $sd-blue-light: #5B92E5
 $sd-yellow: #EEC607
 $sf-red: #AF1E2C
-// TODO: get the right gold color!
-$sf-gold: #AF1E2C
+$sf-gold: #E6BE8A
 $sea-blue: #06192E
 $sea-green: #4EAE47
 $sea-gray: #ACB6BC
@@ -69,7 +68,7 @@ $was-gold: #FFB612
 
 
 li.nflPlayer
-	.cardJerseyNumber
+	.cardJerseyNumber, .cardLastName
 		&.Bills
 			+jersey($buf-blue, $buf-red)
 		&.Redskins
@@ -109,7 +108,7 @@ li.nflPlayer
 		&.Rams
 			+jersey($stl-gold, $stl-blue)
 		&.Bengals
-			+jersey(black, $cin-orange)
+			+jersey(black, $cin-orange, 2.5px)
 		&.Lions
 			+jersey($det-blue, $det-gray)
 		&.Browns
@@ -127,7 +126,7 @@ li.nflPlayer
 		&.Colts
 			+jersey(white, $ind-blue)
 		&.Titans
-			+jersey($ten-blue-dark, $ten-blue-light)
+			+jersey($ten-blue-dark, $ten-blue-light, 2.5px)
 		&.Falcons
 			+jersey($atl-red, black)
 		&.Panthers
