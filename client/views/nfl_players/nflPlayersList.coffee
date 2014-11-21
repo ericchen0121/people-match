@@ -92,7 +92,7 @@ Template.teamDropdown.helpers
     ]
 
 
-Template.playerCard.helpers
+Template.playerCardPhoto.helpers
 
   # obj is passed in as an argument in the template helper.
   # The two attributes of this object are
