@@ -4,12 +4,17 @@
   {{> positionDropdown}}
   {{> teamDropdown}}
 
+  <!-- Search -->
+  {{> nflPlayerSearch}}
+
   <!-- List -->
   <h4>{{totalNflPlayersCount}} Total</h4>
   <h4>{{nflPositionCount}} Total</h4>
   <ul class='nflPlayersList'>
+    {{> nflPlayerSearchResults}}
+
     {{#each nflPlayers}}
-      {{>playerCard}}
+      {{> playerCard}}
     {{/each}}
   </ul>
 </template>
@@ -63,4 +68,22 @@
       <option value={{this}}>{{this}}</option>
     {{/each}}
   </select>
+</template>
+
+<template name="nflPlayerSearch">
+    {{> esInput index="nflPlayersSearch" placeholder="Search Player" class='nflPlayerSearchBar' type='Search'}}
+
+    {{#ifEsHasNoResults index="nflPlayersSearch"}}
+      <span class="searchNoResultsAlert">Whoops. This is not fantasy search.</span>
+    {{/ifEsHasNoResults}}
+</template>
+
+<template name='nflPlayerSearchResults'>
+  {{#esEach index="nflPlayersSearch"}}
+    {{> playerCard}}
+  {{/esEach}}
+
+  {{#if searchResultsExist}}
+    <div class='listDivider'></div>
+  {{/if}}
 </template>

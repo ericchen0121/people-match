@@ -113,4 +113,10 @@ Template.playerCardPhoto.helpers
 
     'http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/' + obj.hash.espn_id + '.png' + size
 
+Template.nflPlayerSearchResults.helpers
+
+  # potentially should be global helper function
+  searchResultsExist: ->
+    searchInstance = EasySearch.getComponentInstance {index: 'nflPlayersSearch'}
+    return searchInstance.get('total') != 0
 
