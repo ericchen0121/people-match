@@ -1,0 +1,15 @@
+<template name='positionDropdown'>
+  <select id='positionDropdown'>
+    {{#each positions}}
+      <option value={{this}}>{{this}}</option>
+    {{/each}}
+  </select>
+</template>
+
+<template name='teamDropdown'>
+  <select id='teamDropdown'>
+    {{#each nflTeams}}
+      <option value={{this}}>{{this}}</option>
+    {{/each}}
+  </select>
+</template>
