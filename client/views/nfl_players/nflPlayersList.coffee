@@ -19,11 +19,11 @@ Template.nflPlayersList.helpers
 
     if team
       if team == 'All'
-                # if 'All', then remove the filter from the query!
+        # if 'All', then remove the filter from the query!
         delete options[team] if options.team
       else
         options.team = Session.get 'nflTeam'
-    else
+    else # default option
       options.team = 'Baltimore Ravens'
 
     NflPlayers.find(options, sortOptions)
