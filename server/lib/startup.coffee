@@ -1,5 +1,8 @@
 FastRender.route '/nfl/players', ->
+  # Fast load these subscriptions to collections
+  # This passes the collection data over html for fast rendering of the page
   @subscribe 'nflPlayers'
+  @subscribe 'nflTeams'
 
 
 # Import nflTeams data to collection
