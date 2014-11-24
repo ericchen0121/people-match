@@ -1,0 +1,17 @@
+<template name="nflPlayerSearch">
+    {{> esInput index="nflPlayersSearch" placeholder="Search Player" class='nflPlayerSearchBar' type='Search'}}
+
+    {{#ifEsHasNoResults index="nflPlayersSearch"}}
+      <span class="searchNoResultsAlert">Whoops. This is not fantasy search.</span>
+    {{/ifEsHasNoResults}}
+</template>
+
+<template name='nflPlayerSearchResults'>
+  {{#esEach index="nflPlayersSearch"}}
+    {{> playerCard}}
+  {{/esEach}}
+
+  {{#if searchResultsExist}}
+    <div class='listDivider'></div>
+  {{/if}}
+</template>

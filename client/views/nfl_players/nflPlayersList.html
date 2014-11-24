@@ -7,12 +7,15 @@
   <!-- Search -->
   {{> nflPlayerSearch}}
 
+  <!-- Team Rollover -->
   <div class='listDivider'></div>
   {{> teamRollover}}
 
+  <!-- Counts -->
+  <!-- <h4>{{totalNflPlayersCount}} Total</h4> -->
+  <!-- <h4>{{nflPositionCount}} Total</h4> -->
+
   <!-- List -->
-  <h4>{{totalNflPlayersCount}} Total</h4>
-  <h4>{{nflPositionCount}} Total</h4>
   <ul class='nflPlayersList'>
     {{> nflPlayerSearchResults}}
 
@@ -20,85 +23,4 @@
       {{> playerCard}}
     {{/each}}
   </ul>
-</template>
-
-<template name='positionDropdown'>
-  <select id='positionDropdown'>
-    {{#each positions}}
-      <option value={{this}}>{{this}}</option>
-    {{/each}}
-  </select>
-</template>
-
-<!--  -->
-<template name="playerDescriptionSimple">
-  <li class='nflPlayer'>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
-</template>
-
-<template name="playerCardPage">
-{{> playerCard}}
-</template>
-
-<template name="playerCard">
-  <li class='nflPlayer'>
-    {{> playerCardPhoto}}
-    {{> playerCardInfoStyled}}
-  </li>
-</template>
-
-<template name='playerCardInfo'>
-  {{full_name}} - {{position}} - {{team}} - {{jersey_number}}
-</template>
-
-<template name='playerCardPhoto'>
-  <div class='photoCol'>
-    <a href={{pathFor 'playerCardPage' }}>
-      <img class='playerPhoto' src={{ playerImageESPN espn_id = this.espn_id espn_size = 'medium'}}>
-    </a>
-  </div>
-</template>
-
-<template name='playerCardInfoStyled'>
-  <div class='infoCol'>
-    <div><span class='cardLastName'>{{last_name}}</span>  <span class='cardFirstName'>{{first_name}}</span></div>
-    <div><span class='cardJerseyNumber {{team}}'>{{jersey_number}}</span>  <span class='cardPosition'>{{position}}</span></div>
-  </div>
-</template>
-
-<template name='teamDropdown'>
-  <select id='teamDropdown'>
-    {{#each nflTeams}}
-      <option value={{this}}>{{this}}</option>
-    {{/each}}
-  </select>
-</template>
-
-<template name='teamRollover'>
-  {{#each nflTeams}}
-    <img class={{this.abbr}} data-team={{this.team}} src='http://i.nflcdn.com/static/site/6.7/img/logos/45x30/{{this.abbr}}.png'>
-  {{/each}}
-</template>
-
-<template name='teamRolloverMedium'>
-  {{#each nflTeams}}
-    <img class={{this.abbr}} data-team={{this.team}} src='http://i.nflcdn.com/static/site/6.7/img/logos/teams-matte-80x53/{{this.abbr}}.png'>
-  {{/each}}
-</template>
-
-<template name="nflPlayerSearch">
-    {{> esInput index="nflPlayersSearch" placeholder="Search Player" class='nflPlayerSearchBar' type='Search'}}
-
-    {{#ifEsHasNoResults index="nflPlayersSearch"}}
-      <span class="searchNoResultsAlert">Whoops. This is not fantasy search.</span>
-    {{/ifEsHasNoResults}}
-</template>
-
-<template name='nflPlayerSearchResults'>
-  {{#esEach index="nflPlayersSearch"}}
-    {{> playerCard}}
-  {{/esEach}}
-
-  {{#if searchResultsExist}}
-    <div class='listDivider'></div>
-  {{/if}}
 </template>
