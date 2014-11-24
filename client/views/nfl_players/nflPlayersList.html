@@ -1,11 +1,14 @@
 <template name="nflPlayersList">
 
-  <!-- Dropdown -->
+  <!-- Filtering -->
   {{> positionDropdown}}
   {{> teamDropdown}}
 
   <!-- Search -->
   {{> nflPlayerSearch}}
+
+  <div class='listDivider'></div>
+  {{> teamRollover}}
 
   <!-- List -->
   <h4>{{totalNflPlayersCount}} Total</h4>
@@ -68,6 +71,18 @@
       <option value={{this}}>{{this}}</option>
     {{/each}}
   </select>
+</template>
+
+<template name='teamRollover'>
+  {{#each nflTeams}}
+    <img class={{this.abbr}} data-team={{this.team}} src='http://i.nflcdn.com/static/site/6.7/img/logos/45x30/{{this.abbr}}.png'>
+  {{/each}}
+</template>
+
+<template name='teamRolloverMedium'>
+  {{#each nflTeams}}
+    <img class={{this.abbr}} data-team={{this.team}} src='http://i.nflcdn.com/static/site/6.7/img/logos/teams-matte-80x53/{{this.abbr}}.png'>
+  {{/each}}
 </template>
 
 <template name="nflPlayerSearch">
