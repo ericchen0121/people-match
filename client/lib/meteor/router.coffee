@@ -1,6 +1,9 @@
 Router.configure
 
-  layoutTemplate: 'layout'
+  layoutTemplate: 'layout',
+  loadingTemplate: 'loading', 
+  notFoundTemplate: 'fourOhFour'
+
 
 Router.route '/', {name: 'peopleList'}
 
