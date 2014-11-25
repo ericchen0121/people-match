@@ -1,42 +1,10 @@
 Template.teamRollover.helpers
 
   nflTeams: ->
-    [
-      {team: 'Buffalo Bills', abbr: 'BUF'},
-      {team: 'Washington Redskins', abbr: 'WAS'},
-      {team: 'Miami Dolphins', abbr: 'MIA'},
-      {team: 'Jacksonville Jaguars', abbr: 'JAC'},
-      {team: 'New York Jets', abbr: 'NYJ'},
-      {team: 'Kansas City Chiefs', abbr: 'KC'},
-      {team: 'New England Patriots', abbr: 'NE'},
-      {team: 'Dallas Cowboys', abbr: 'DAL'},
-      {team: 'New York Giants', abbr: 'NYG'},
-      {team: 'Baltimore Ravens', abbr: 'BAL'},
-      {team: 'Philadelphia Eagles', abbr: 'PHI'},
-      {team: 'Denver Broncos', abbr: 'DEN'},
-      {team: 'Tampa Bay Buccaneers', abbr: 'TB'},
-      {team: 'Oakland Raiders', abbr: 'OAK'},
-      {team: 'San Diego Chargers', abbr: 'SD'},
-      {team: 'Arizona Cardinals', abbr: 'ARI'},
-      {team: 'San Francisco 49ers', abbr: 'SF'},
-      {team: 'Seattle Seahawks', abbr: 'SEA'},
-      {team: 'St. Louis Rams', abbr: 'STL'},
-      {team: 'Cincinnati Bengals', abbr: 'CIN'},
-      {team: 'Detroit Lions', abbr: 'DET'},
-      {team: 'Cleveland Browns', abbr: 'CLE'},
-      {team: 'Pittsburgh Steelers', abbr: 'PIT'},
-      {team: 'Chicago Bears', abbr: 'CHI'},
-      {team: 'Green Bay Packers', abbr: 'GB'},
-      {team: 'Minnesota Vikings', abbr: 'MIN'},
-      {team: 'Houston Texans', abbr: 'HOU'},
-      {team: 'Indianapolis Colts', abbr: 'IND'},
-      {team: 'Tennessee Titans', abbr: 'TEN'},
-      {team: 'Atlanta Falcons', abbr: 'ATL'},
-      {team: 'Carolina Panthers', abbr: 'CAR'}
-    ]
+    NflTeams.find()
 
 Template.teamRollover.events
-
+# TODO: match to the nflTeam helper
   'click .BUF, mouseenter .BUF': (event) ->
     Session.set 'nflTeam', 'Buffalo Bills'
 
@@ -129,3 +97,7 @@ Template.teamRollover.events
 
   'click .CAR, mouseenter .CAR': (event) ->
     Session.set 'nflTeam', 'Carolina Panthers'
+
+  'click .NO, mouseenter .NO': (event) ->
+    Session.set 'nflTeam', 'New Orleans Saints'
+

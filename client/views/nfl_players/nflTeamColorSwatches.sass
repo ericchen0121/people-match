@@ -37,7 +37,7 @@ $ne-gray: #D6D6D6
 $ne-red: #C80815
 $no-gold: #D2B887
 $nyg-blue: #192F6B
-$nyg-red: #CA001A 
+$nyg-red: #CA001A
 $nyg-gray: #808080
 $nyj-green: #0C371D
 $oak-gray: #C4C8CB
@@ -61,6 +61,7 @@ $ten-blue-dark: #000080
 $ten-red: #FF0000
 $was-red: #773141
 $was-gold: #FFB612
+$no-gold: #D2B887
 
 =jersey($inner, $outer, $outer-width: 3px)
 	color: $inner
@@ -131,4 +132,6 @@ li.nflPlayer
 			+jersey($atl-red, black)
 		&.Panthers
 			+jersey($car-gray, $car-blue)
-			
+		&.Saints
+			+jersey($no-gold, black)
+
