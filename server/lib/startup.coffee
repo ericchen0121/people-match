@@ -12,7 +12,7 @@ FastRender.route '/nfl/players', ->
 
 # import only when NflTeams data is empty
 if @NflTeams.find().count() == 0
-  console.log('Importing NflTeams to db!')
+  console.log('Importing NflTeams to db!!')
 
   data = EJSON.parse(Assets.getText('assets/nflTeams.json'))
 

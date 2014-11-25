@@ -4,7 +4,7 @@ Template.teamRollover.helpers
     NflTeams.find()
 
 Template.teamRollover.events
-
+# TODO: match to the nflTeam helper
   'click .BUF, mouseenter .BUF': (event) ->
     Session.set 'nflTeam', 'Buffalo Bills'
 
@@ -97,3 +97,7 @@ Template.teamRollover.events
 
   'click .CAR, mouseenter .CAR': (event) ->
     Session.set 'nflTeam', 'Carolina Panthers'
+
+  'click .NO, mouseenter .NO': (event) ->
+    Session.set 'nflTeam', 'New Orleans Saints'
+
