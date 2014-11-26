@@ -16,6 +16,7 @@ callback-hook@1.0.1
 check@1.0.2
 chuangbo:cookie@1.1.0
 coffeescript@1.0.4
+copleykj:livestamp@1.1.5
 ctl-helper@1.0.4
 ctl@1.0.2
 ddp@1.0.11
@@ -59,6 +60,7 @@ minimongo@1.0.5
 mobile-status-bar@1.0.1
 mongo-livedata@1.0.6
 mongo@1.0.8
+mrt:moment@2.8.1
 multiply:iron-router-progress@1.0.0
 natestrauser:animate-css@3.1.2
 nemo64:bootstrap-data@3.3.0_1
