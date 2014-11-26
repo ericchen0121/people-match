@@ -70,7 +70,7 @@ $no-gold: #D2B887
 
 
 li.nflPlayer
-	.cardJerseyNumber, .cardLastName
+	.cardJerseyNumber
 		&.Bills
 			+jersey($buf-blue, $buf-red)
 		&.Redskins
@@ -135,4 +135,70 @@ li.nflPlayer
 			+jersey($car-gray, $car-blue)
 		&.Saints
 			+jersey($no-gold, black)
+
+	.cardLastName
+		&.Bills
+			+jersey($buf-blue, $buf-red, 1px)
+		&.Redskins
+			+jersey($was-red, $was-gold, 1px)
+		&.Dolphins
+			+jersey($mia-teal-light, $mia-orange, 1px)
+		&.Jaguars
+			+jersey(black, $jac-teal, 1px)
+		&.Jets
+			+jersey(black, $nyj-green, 1px)
+		&.Chiefs
+			+jersey($kc-red, $kc-gold, 1px)
+		&.Patriots
+			+jersey(black, $ne-blue, 1px)
+		&.Cowboys
+			+jersey($dal-blue, $dal-gray, 1px)
+		&.Giants
+			+jersey(black, $nyg-blue, 1px)
+		&.Ravens
+			+jersey(black, $bal-purple, 1px)
+		&.Eagles
+			+jersey($phi-green, black, 1px)
+		&.Broncos
+			+jersey($den-blue, $den-orange, 1px)
+		&.Buccaneers
+			+jersey($tb-red, $tb-orange, 1px)
+		&.Raiders
+			+jersey(black, $oak-gray, 1px)
+		&.Chargers
+			+jersey($sd-blue-dark, $sd-yellow, 1px)
+		&.Cardinals
+			+jersey($ari-red, black, 1px)
+		&.Francisco
+			+jersey(black, $sf-red, 1px)
+		&.Seahawks
+			+jersey($sea-blue, $sea-green, 1px)
+		&.Rams
+			+jersey($stl-blue, $stl-gold, 1px)
+		&.Bengals
+			+jersey(black, $cin-orange, 1px)
+		&.Lions
+			+jersey($det-blue, $det-gray, 1px)
+		&.Browns
+			+jersey($cle-brown, $cle-orange, 1px)
+		&.Steelers
+			+jersey(black, $pit-yellow, 1px)
+		&.Bears
+			+jersey($chi-blue, $chi-orange, 1px)
+		&.Packers
+			+jersey($gb-green, $gb-yellow, 1px)
+		&.Vikings
+			+jersey(black, $min-purple, 1px)
+		&.Texans
+			+jersey($hou-blue, $hou-red, 1px)
+		&.Colts
+			+jersey(black, $ind-blue, 1px)
+		&.Titans
+			+jersey($ten-blue-dark, $ten-blue-light, 1px)
+		&.Falcons
+			+jersey($atl-red, black, 1px)
+		&.Panthers
+			+jersey(black, $car-blue, 1px)
+		&.Saints
+			+jersey($no-gold, black, 1px)
 

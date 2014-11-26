@@ -29,12 +29,12 @@
 <template name='playerCardInfoStyled'>
   <div class='infoCol'>
     <div>
-      <span class='cardLastName'>{{last_name}}</span>
+      <span class='cardLastName {{team}}'>{{last_name}}</span>
       <span class='cardFirstName'>{{first_name}}</span>
     </div>
     <div>
       <span class='cardJerseyNumber {{team}}'>{{jersey_number}}</span>
-      <span class='cardPosition'>{{position}}</span>
+      <span class='cardPosition {{team}}'>{{position}}</span>
     </div>
   </div>
 </template>
