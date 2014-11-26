@@ -12,3 +12,5 @@ EasySearch.createSearchIndex('nflPlayersSearch', {
 })
 
 @NflTeams = new Mongo.Collection('nflTeams')
+
+@NflSuperstars = new Mongo.Collection('nflSuperstars')

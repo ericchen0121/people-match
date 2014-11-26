@@ -18,3 +18,15 @@ Template.playerCardPhoto.helpers
     else size = ''
 
     'http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/' + obj.hash.espn_id + '.png' + size
+
+Template.playerSuperstar.events
+
+  'click .superstar': (e) ->
+    superstar = {
+      nflPlayerId: @._id
+    }
+
+    console.log "You're a Superstar."
+
+    Meteor.call 'superstarInsert', superstar, (error, result) ->
+      return alert(error.reason) if error

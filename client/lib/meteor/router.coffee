@@ -1,7 +1,7 @@
 Router.configure
 
   layoutTemplate: 'layout',
-  loadingTemplate: 'loading', 
+  loadingTemplate: 'loading',
   notFoundTemplate: 'fourOhFour'
 
 
@@ -15,5 +15,8 @@ Router.route '/nfl/players', {name: 'nflPlayersList'}, ->
 Router.route '/nfl/players/:espn_id', {
   name: 'playerCardPage',
   data: ->
+    # render data with route's parameters
     NflPlayers.findOne({espn_id: parseInt(@params.espn_id)})
 }
+
+Router.route '/nfl/myteam'
