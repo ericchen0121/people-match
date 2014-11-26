@@ -5,5 +5,8 @@
 </template>
 
 <template name='nflPlayersSuperstarCard'>
-  <li><span>{{superstarPlayer.full_name}}</span><span>{{createdAt}}</span></li>
+  <li>
+    <span>{{superstarPlayer.full_name}}</span>
+    <span><i>{{livestamp createdAt}}</i></span>
+  </li>
 </template>
