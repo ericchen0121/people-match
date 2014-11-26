@@ -1,5 +1,6 @@
 Meteor.methods
-
+  
+  # This server method is called from the client to add players to your "favorites" list
   # A superstar is an nflPlayer starred by a user
   # Technically, a superstar is a 'join table' of a nflPlayerId and userId
   #
