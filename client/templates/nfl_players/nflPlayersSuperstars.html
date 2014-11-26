@@ -16,16 +16,14 @@
 <template name='superstarFeedCardPhoto'>
   <div class='photoCol'>
     <a href={{pathFor 'playerCardPage' superstarPlayer._id}}>
-      <img class='playerPhoto' src={{ playerImageESPN espn_id = superstarPlayer.espn_id espn_size = 'micro'}}>
+      <img class='playerPhoto' src={{ playerImageESPN espn_id = superstarPlayer.espn_id espn_size = 'medium'}}>
     </a>
   </div>
 </template>
 
 <template name='superstarFeedCardInfo'>
   <div class='infoCol'>
-    <div>
-      <span class='cardLastName'>{{superstarPlayer.last_name}}</span>
-      <span class='timeAgo'>{{livestamp createdAt}}</span>
-    </div>
+    <div class='cardLastName'>{{superstarPlayer.last_name}}</div>
+    <div class='timeAgo'>{{livestamp createdAt}}</div>
   </div>
 </template>
