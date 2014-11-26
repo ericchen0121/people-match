@@ -1,9 +1,9 @@
 <template name='superstarsFeed'>
-	<li class='superstarsFeed'>
+	<div class='superstarsFeed'>
 	  {{#each superstars}}
 	    {{> superstarFeedCard}}
 	  {{/each}}
-  </li>
+  </div>
 </template>
 
 <template name="superstarFeedCard">
@@ -15,7 +15,7 @@
 
 <template name='superstarFeedCardPhoto'>
   <div class='photoCol'>
-    <a href={{pathFor 'playerCardPage' }}>
+    <a href={{pathFor 'playerCardPage' superstarPlayer._id}}>
       <img class='playerPhoto' src={{ playerImageESPN espn_id = superstarPlayer.espn_id espn_size = 'micro'}}>
     </a>
   </div>
@@ -25,7 +25,6 @@
   <div class='infoCol'>
     <div>
       <span class='cardLastName'>{{superstarPlayer.last_name}}</span>
-      <span class='cardPosition'>{{superstarPlayer.position}}</span>
       <span class='timeAgo'>{{livestamp createdAt}}</span>
     </div>
   </div>

@@ -1,28 +1,26 @@
 <template name="nflPlayersListLayout">
-  <div id='mainContainer'>
-    <div id='leftCol'>
+  <div class='row'>
+    <div class='col-md-2'>
       <div>USER HERE</div>      
     </div>
-    <div id='contentCol'>
-      <div id='rightCol'>
-        <!-- Superstars -->
-        {{> superstarsFeed}}
-      </div>
-      <div id='contentArea'>
-        <!-- Filtering -->
-        {{> positionDropdown}}
-        {{> teamDropdown}}
+    <div class='col-md-7'>
+      <!-- Filtering -->
+      {{> positionDropdown}}
+      {{> teamDropdown}}
 
-        <!-- Search -->
-        {{> nflPlayerSearch}}
+      <!-- Search -->
+      {{> nflPlayerSearch}}
 
-        <!-- Team Rollover -->
-        <div class='listDivider'></div>
-        {{> teamRollover}}
+      <!-- Team Rollover -->
+      <div class='listDivider'></div>
+      {{> teamRollover}}
 
-        <!-- List -->
-        {{> nflPlayersList}}
-      </div>
+      <!-- List -->
+      {{> nflPlayersList}}
+    </div>
+    <div class='col-md-3'>
+      <!-- Superstars -->
+      {{> superstarsFeed}}
     </div>
   </div>
 </template>
