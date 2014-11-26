@@ -1,12 +1,32 @@
-<template name='nflPlayersSuperstars'>
-  {{#each superstars}}
-    {{> nflPlayersSuperstarCard}}
-  {{/each}}
+<template name='superstarsFeed'>
+	<li class='superstarsFeed'>
+	  {{#each superstars}}
+	    {{> superstarFeedCard}}
+	  {{/each}}
+  </li>
 </template>
 
-<template name='nflPlayersSuperstarCard'>
-  <li class='nflSuperstar'>
-    <span><img class='playerPhoto' src={{ playerImageESPN espn_id = superstarPlayer.espn_id espn_size = 'micro' }}>{{superstarPlayer.last_name}}{{superstarPlayer.first_name}}</span>
-    <span class='timeAgo'>{{livestamp createdAt}}</span>
+<template name="superstarFeedCard">
+  <li class='nflPlayer superstarFeedCard'>
+    {{> superstarFeedCardPhoto}}
+    {{> superstarFeedCardInfo}}
   </li>
+</template>
+
+<template name='superstarFeedCardPhoto'>
+  <div class='photoCol'>
+    <a href={{pathFor 'playerCardPage' }}>
+      <img class='playerPhoto' src={{ playerImageESPN espn_id = superstarPlayer.espn_id espn_size = 'micro'}}>
+    </a>
+  </div>
+</template>
+
+<template name='superstarFeedCardInfo'>
+  <div class='infoCol'>
+    <div>
+      <span class='cardLastName'>{{superstarPlayer.last_name}}</span>
+      <span class='cardPosition'>{{superstarPlayer.position}}</span>
+      <span class='timeAgo'>{{livestamp createdAt}}</span>
+    </div>
+  </div>
 </template>

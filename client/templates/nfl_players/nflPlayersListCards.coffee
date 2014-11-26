@@ -19,7 +19,7 @@ Template.playerCardPhoto.helpers
 
     'http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/' + obj.hash.espn_id + '.png' + size
 
-Template.playerSuperstar.events
+Template.playerSuperstarMe.events
 
   'click .superstar': (e) ->
     superstar = {

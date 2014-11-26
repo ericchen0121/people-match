@@ -9,9 +9,9 @@ Router.route '/', {name: 'peopleList'}
 
 Router.route '/people'
 
-Router.route '/nfl/players', {name: 'nflPlayersList'}, ->
+Router.route '/nfl/players', {name: 'nflPlayersListLayout'}, ->
 	# render this template in the yield block of the main template
-	@render 'nflPlayersList'
+	@render 'nflPlayersListLayout'
 
 Router.route '/nfl/players/:espn_id', {
   name: 'playerCardPage',
