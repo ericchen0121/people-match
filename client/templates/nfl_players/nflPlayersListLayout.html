@@ -1,0 +1,26 @@
+<template name="nflPlayersListLayout">
+  <div class='row'>
+    <div class='col-lg-2'>
+      <div>USER HERE</div>      
+    </div>
+    <div class='col-lg-6'>
+      <!-- Filtering -->
+      {{> positionDropdown}}
+      {{> teamDropdown}}
+
+      <!-- Search -->
+      {{> nflPlayerSearch}}
+
+      <!-- Team Rollover -->
+      <div class='listDivider'></div>
+      {{> teamRollover}}
+
+      <!-- List -->
+      {{> nflPlayersList}}
+    </div>
+    <div class='col-lg-3'>
+      <!-- Superstars -->
+      {{> superstarsFeed}}
+    </div>
+  </div>
+</template>

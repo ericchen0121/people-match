@@ -1,0 +1,9 @@
+<template name="nflPlayersList">
+  <ul class='nflPlayersList'>
+    {{> nflPlayerSearchResults}}
+
+    {{#each nflPlayers}}
+      {{> playerCard}}
+    {{/each}}
+  </ul>
+</template>
