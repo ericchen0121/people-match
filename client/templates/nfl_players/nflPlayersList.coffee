@@ -41,10 +41,12 @@ Template.nflPlayersList.helpers
   totalNflPlayersCount: ->
     NflPlayers.find({}).count()
 
-Template.nflPlayersList.events
+Template.nflPlayersListLayout.events
 
   'change #positionDropdown': (event) ->
+    console.log event.target.value
     Session.set 'nflPosition', event.target.value
+    console.log Session.get 'nflPosition'
 
   'change #teamDropdown': (event) ->
     Session.set 'nflTeam', event.target.value

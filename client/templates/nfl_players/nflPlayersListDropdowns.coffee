@@ -7,7 +7,7 @@ Template.positionDropdown.helpers
 Template.teamDropdown.helpers
 
   nflTeams: ->
-    # using Fetch over Find
+    # using fetch() vs just find()
     # http://stackoverflow.com/questions/16601957/meteor-use-fetch-or-find-in-template-helper-functions
     #
     NflTeams.find().fetch()
