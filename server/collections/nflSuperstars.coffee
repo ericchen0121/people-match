@@ -4,7 +4,7 @@ Meteor.methods
   # A superstar is an nflPlayer starred by a user
   # Technically, a superstar is a 'join table' of a nflPlayerId and userId
   #
-  superstarInsert: (superstarAttributes)->
+  superstarInsert: (superstarAttributes) ->
     console.log 'superstarInsert method...'
 
     # get the logged in user
@@ -16,7 +16,7 @@ Meteor.methods
       createdAt: new Date()
     })
 
-    # check if already exists with same nflPlayer and user
+    # check if the superstar object already exists with same nflPlayer and user
     superstarOriginal = NflSuperstars.findOne({
       nflPlayerId: superstar.nflPlayerId,
       userId: superstar.userId
