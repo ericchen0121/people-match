@@ -1,3 +1,8 @@
 <template name='commentaryCard'>
-	<li>{{ commentary }}</li>
+	<li class='commentaryCard'>
+		<span>{{> avatarImage }}</span>
+		<span>{{ commentary }}</span>
+		<span>{{ livestamp createdAt }} </span>
+		<span>{{ createdUser.profile.name }}</span>
+	</li>
 </template>

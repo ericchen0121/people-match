@@ -6,6 +6,7 @@ Template.superstarsFeed.helpers
 Template.superstarFeedCardPhoto.helpers
   superstarPlayer: ->
     # This helper is used inside of the {{#each superstars}} block of nflPlayersSuperstars template.
+    # Therefore, this/@ referes to each superstar object
     # thus @nflPlayerId refers to the attr on the superstar object.
     # sort by latest first
     NflPlayers.findOne @nflPlayerId 

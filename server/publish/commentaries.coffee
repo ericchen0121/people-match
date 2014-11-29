@@ -5,7 +5,7 @@ Meteor.publishComposite('commentaries', {
   # This is the top level collection, finding all the commentaries
   find: ->
     # or could sort on 'lastActionTime' if that exists ;)
-    return Commentaries.find({}, {sort: {createdAt: 1 } })
+    return Commentaries.find({})
 
   # children is an array of object literals with more finds
   # argument is the first top level collection, must return a cursor

@@ -4,7 +4,8 @@
 Meteor.publishComposite('nflSuperstars', {
   # This is the top level collection, find these first, then create the join...
   find: ->
-    # @userId will find the current user's id on the server 
+    # This finds all "superstars" connected or created by the current logged in user
+    # Notes: @userId will find the current user's id on the server 
     # http://stackoverflow.com/questions/16532316/how-to-get-meteor-user-to-return-on-the-server-side
     # 
     return NflSuperstars.find({ userId: @userId })
