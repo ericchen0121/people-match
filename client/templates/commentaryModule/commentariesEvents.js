@@ -1,3 +1,5 @@
+// Written in JS since CS wasn't compiling properly with the preventDefault
+
 Template.commentaryArea.events({ 
 	'submit form': function(e) {
     e.preventDefault();

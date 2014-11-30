@@ -1,7 +1,8 @@
 <template name='commentaryList'>
-	<ul class='commentaryList'>
+	<div class='commentaryList'>
 		{{#each commentaries }}
 			{{> commentaryCard }}
+			<div class='listDivider'></div>
 		{{/each}}
-	</ul>
+	</div>
 </template>

@@ -1,8 +1,14 @@
 <template name='commentaryCard'>
-	<li class='commentaryCard'>
-		<span>{{> avatarImage }}</span>
-		<span>{{ commentary }}</span>
-		<span>{{ livestamp createdAt }} </span>
-		<span>{{ createdUser.profile.name }}</span>
-	</li>
+	<div class='commentaryCard'>
+		<div class='commentaryCardCol commentaryCardAvatar'>
+			{{> avatarImage userId = createdUser._id }}
+		</div>
+		<div class='commentaryCardCol commentaryCardContent'>
+			<div class='header'>
+				<span class='userName'>{{ createdUser.profile.name }}</span>
+				<span class='time'>{{ livestamp createdAt }}</span>
+			</div>
+			<div class='commentary'>{{ commentary }}</div>
+		</div>
+	</div>
 </template>
