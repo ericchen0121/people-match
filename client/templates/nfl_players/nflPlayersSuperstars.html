@@ -1,15 +1,15 @@
 <template name='superstarsFeed'>
 	<div class='superstarsFeed'>
-	  {{#each superstars}}
-	    {{> superstarFeedCard}}
+	  {{#each superstars }}
+	    {{> superstarFeedCard }}
 	  {{/each}}
   </div>
 </template>
 
 <template name="superstarFeedCard">
   <li class='nflPlayer superstarFeedCard'>
-    {{> superstarFeedCardPhoto}}
-    {{> superstarFeedCardInfo}}
+    {{> superstarFeedCardPhoto }}
+    {{> superstarFeedCardInfo }}
   </li>
 </template>
 
@@ -23,7 +23,7 @@
 
 <template name='superstarFeedCardInfo'>
   <div class='infoCol'>
-    <div class='cardLastName'>{{superstarPlayer.last_name}}</div>
-    <div class='timeAgo'>{{livestamp createdAt}}</div>
+    <div class='cardLastName'>{{ superstarPlayer.last_name }}</div>
+    <div class='timeAgo'>{{ livestamp createdAt }}</div>
   </div>
 </template>

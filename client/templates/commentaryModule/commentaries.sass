@@ -1,0 +1,31 @@
+$space-gray: #8899a6
+
+#commentary
+	width: 80%
+
+.commentaryCard
+	display: flex
+	flex-direction: row
+	height: 100px
+
+	.commentaryCardCol
+		display: inline-block
+
+		&.commentaryCardAvatar
+			width: 40px
+			margin: 5px
+
+		&.commentaryCardContent
+			width: 100%
+			margin: 5px
+
+			.userName
+				font-weight: bold
+
+			.time		
+				font-style: italic
+				font-size: .75em
+				color: $space-gray
+
+			.commentary
+				margin-top: 6px
