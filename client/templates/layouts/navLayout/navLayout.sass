@@ -55,11 +55,17 @@ $progressbar-color: $red
   padding: 0 15px
 
 .navbar-nav li
+  border-bottom: 4px solid light-gray // for transitioning the border, it needs to exist first!
+
   &.active
-    border-bottom: 2px solid red
+    border-bottom: 4px solid red
+
+  &:hover
+    transition: all .15s ease-in-out
+    border-bottom: 4px solid red
+
   a
     text-decoration: none
-
 
 .nav .open
   > a,
