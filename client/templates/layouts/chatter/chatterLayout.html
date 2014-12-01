@@ -1,0 +1,25 @@
+<template name="chatterLayout">
+  <div class='row'>
+
+    <div class='col-lg-2'>
+      {{> avatarImage }}
+    </div>
+
+    <div class='col-lg-6'>
+
+      <!-- Commentary -->
+      {{> commentaryArea}}
+      <div class='listDivider'></div>
+
+      {{> commentaryList}}
+
+    </div>
+
+    <div class='col-lg-3'>
+
+      <!-- Superstars -->
+      {{> superstarsFeed}}
+
+    </div>
+  </div>
+</template>
