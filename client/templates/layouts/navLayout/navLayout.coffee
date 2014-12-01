@@ -1,4 +1,4 @@
- Template.layout.helpers
+ Template.navLayout.helpers
 
   user: ->
     Meteor.user()

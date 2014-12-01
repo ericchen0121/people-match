@@ -1,9 +1,13 @@
-FastRender.route '/nfl/players', ->
+FastRender.route '/players', ->
   # Fast load these subscriptions to collections
   # This passes the collection data over html for fast rendering of the page
   @subscribe 'nflPlayers'
   @subscribe 'nflTeams'
+  @subscribe 'nflSuperstars'
 
+FastRender.route '/chatter', ->
+  @subscribe 'commentaries'
+  @subscribe 'nflSuperstars'
 
 # Import nflTeams data to collection
 # http://stackoverflow.com/questions/25370332/import-json-file-into-collection-in-server-code-on-startup

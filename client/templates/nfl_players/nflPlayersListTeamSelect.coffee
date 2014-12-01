@@ -1,103 +1,110 @@
-Template.teamRollover.helpers
+Template.teamSelect.helpers
 
   nflTeams: ->
     NflTeams.find()
 
-Template.teamRollover.events
+  # Returns 'active' as a class if the team is active
+  nflTeamActive: (team) ->
+    if team == Session.get 'nflTeam'
+      return 'active'
+    else
+      ''
+
+Template.teamSelect.events
 # TODO: match to the nflTeam helper
-  'click .BUF, mouseenter .BUF': (event) ->
+  'click .BUF': (event) ->
     Session.set 'nflTeam', 'Buffalo Bills'
 
-  'click .WAS, mouseenter .WAS': (event) ->
+  'click .WAS': (event) ->
     Session.set 'nflTeam', 'Washington Redskins'
 
-  'click .MIA, mouseenter .MIA': (event) ->
+  'click .MIA': (event) ->
     Session.set 'nflTeam', 'Miami Dolphins'
 
-  'click .JAC, mouseenter .JAC': (event) ->
+  'click .JAC': (event) ->
     Session.set 'nflTeam', 'Jacksonville Jaguars'
 
-  'click .NYJ, mouseenter .NYJ': (event) ->
+  'click .NYJ': (event) ->
     Session.set 'nflTeam', 'New York Jets'
 
-  'click .KC, mouseenter .KC': (event) ->
+  'click .KC': (event) ->
     Session.set 'nflTeam', 'Kansas City Chiefs'
 
-  'click .NE, mouseenter .NE': (event) ->
+  'click .NE': (event) ->
     Session.set 'nflTeam', 'New England Patriots'
 
-  'click .DAL, mouseenter .DAL': (event) ->
+  'click .DAL': (event) ->
     Session.set 'nflTeam', 'Dallas Cowboys'
 
-  'click .NYG, mouseenter .NYG': (event) ->
+  'click .NYG': (event) ->
     Session.set 'nflTeam', 'New York Giants'
 
-  'click .BAL, mouseenter .BAL': (event) ->
+  'click .BAL': (event) ->
     Session.set 'nflTeam', 'Baltimore Ravens'
 
-  'click .PHI, mouseenter .PHI': (event) ->
+  'click .PHI': (event) ->
     Session.set 'nflTeam', 'Philadelphia Eagles'
 
-  'click .DEN, mouseenter .DEN': (event) ->
+  'click .DEN': (event) ->
     Session.set 'nflTeam', 'Denver Broncos'
 
-  'click .TB, mouseenter .TB': (event) ->
+  'click .TB': (event) ->
     Session.set 'nflTeam', 'Tampa Bay Buccaneers'
 
-  'click .OAK, mouseenter .OAK': (event) ->
+  'click .OAK': (event) ->
     Session.set 'nflTeam', 'Oakland Raiders'
 
-  'click .SD, mouseenter .SD': (event) ->
+  'click .SD': (event) ->
     Session.set 'nflTeam', 'San Diego Chargers'
 
-  'click .ARI, mouseenter .ARI': (event) ->
+  'click .ARI': (event) ->
     Session.set 'nflTeam', 'Arizona Cardinals'
 
-  'click .SF, mouseenter .SF': (event) ->
+  'click .SF': (event) ->
     Session.set 'nflTeam', 'San Francisco 49ers'
 
-  'click .SEA, mouseenter .SEA': (event) ->
+  'click .SEA': (event) ->
     Session.set 'nflTeam', 'Seattle Seahawks'
 
-  'click .STL, mouseenter .STL': (event) ->
+  'click .STL': (event) ->
     Session.set 'nflTeam', 'St. Louis Rams'
 
-  'click .CIN, mouseenter .CIN': (event) ->
+  'click .CIN': (event) ->
     Session.set 'nflTeam', 'Cincinnati Bengals'
 
-  'click .DET, mouseenter .DET': (event) ->
+  'click .DET': (event) ->
     Session.set 'nflTeam', 'Detroit Lions'
 
-  'click .CLE, mouseenter .CLE': (event) ->
+  'click .CLE': (event) ->
     Session.set 'nflTeam', 'Cleveland Browns'
 
-  'click .PIT, mouseenter .PIT': (event) ->
+  'click .PIT': (event) ->
     Session.set 'nflTeam', 'Pittsburgh Steelers'
 
-  'click .CHI, mouseenter .CHI': (event) ->
+  'click .CHI': (event) ->
     Session.set 'nflTeam', 'Chicago Bears'
 
-  'click .GB, mouseenter .GB': (event) ->
+  'click .GB': (event) ->
     Session.set 'nflTeam', 'Green Bay Packers'
 
-  'click .MIN, mouseenter .MIN': (event) ->
+  'click .MIN': (event) ->
     Session.set 'nflTeam', 'Minnesota Vikings'
 
-  'click .HOU, mouseenter .HOU': (event) ->
+  'click .HOU': (event) ->
     Session.set 'nflTeam', 'Houston Texans'
 
-  'click .IND, mouseenter .IND': (event) ->
+  'click .IND': (event) ->
     Session.set 'nflTeam', 'Indianapolis Colts'
 
-  'click .TEN, mouseenter .TEN': (event) ->
+  'click .TEN': (event) ->
     Session.set 'nflTeam', 'Tennessee Titans'
 
-  'click .ATL, mouseenter .ATL': (event) ->
+  'click .ATL': (event) ->
     Session.set 'nflTeam', 'Atlanta Falcons'
 
-  'click .CAR, mouseenter .CAR': (event) ->
+  'click .CAR': (event) ->
     Session.set 'nflTeam', 'Carolina Panthers'
 
-  'click .NO, mouseenter .NO': (event) ->
+  'click .NO': (event) ->
     Session.set 'nflTeam', 'New Orleans Saints'
 
