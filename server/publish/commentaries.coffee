@@ -15,3 +15,11 @@ Meteor.publishComposite('commentaries', {
       return Meteor.users.find( commentary.createdUserId )
   }]
 })
+
+Meteor.publish 'commentariesUsers', ->
+  Meteor.users.find {},
+    fields:
+      profile: 1
+  # this publishes all users, but only their profile...
+  # TODO: only publish users of the commentaries that are shown
+  # http://stackoverflow.com/questions/20825758/meteor-how-to-publish-cursor-that-is-depending-on-cursor-of-other-collection

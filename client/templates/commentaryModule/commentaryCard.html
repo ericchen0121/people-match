@@ -1,7 +1,8 @@
 <template name='commentaryCard'>
 	<div class='commentaryCard'>
 		<div class='commentaryCardCol commentaryCardAvatar'>
-			{{> avatarImage userId = createdUser._id }}
+			<!-- Could potentially user <img src='createdUser.profile.picture'> -->
+			<img class='commentaryAvatar' src="{{ userImage createdUser._id }}">
 		</div>
 		<div class='commentaryCardCol commentaryCardContent'>
 			<div class='header'>
