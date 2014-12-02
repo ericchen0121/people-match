@@ -8,6 +8,7 @@ FastRender.route '/players', ->
 FastRender.route '/chatter', ->
   @subscribe 'commentaries'
   @subscribe 'nflSuperstars'
+  @subscribe 'commentariesUsers' # this will slow down when there are many users
 
 # Import nflTeams data to collection
 # http://stackoverflow.com/questions/25370332/import-json-file-into-collection-in-server-code-on-startup

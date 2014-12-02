@@ -7,14 +7,23 @@
 
 Template.registerHelper 'playerImageESPN', (obj) ->
 
-    if obj.hash.espn_size
-      size = switch obj.hash.espn_size
-        when 'small' then '&w=137&h=100'
-        when 'medium' then '&w=274&h=200'
-        when 'large' then '&w=350&h=255'
-        when 'original' then ''
-        when 'micro' then '&w=68&h=50'
-        else ''
-    else size = ''
+  if obj.hash.espn_size
+    size = switch obj.hash.espn_size
+      when 'small' then '&w=137&h=100'
+      when 'medium' then '&w=274&h=200'
+      when 'large' then '&w=350&h=255'
+      when 'original' then ''
+      when 'micro' then '&w=68&h=50'
+      else ''
+  else size = ''
 
-    'http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/' + obj.hash.espn_id + '.png' + size
+  'http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/' + obj.hash.espn_id + '.png' + size
+
+# http://stackoverflow.com/questions/15018552/how-to-query-a-facebook-user-picture-via-meteors-accounts-facebook
+Template.registerHelper "userImage", (userId) ->
+  user = Meteor.users.findOne({ _id: userId })
+  if user.profile.picture
+    return user.profile.picture
+  else
+    # TO CHANGE or Add
+    return "images/withOutPhoto.png"

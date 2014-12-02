@@ -6,7 +6,7 @@ $space-gray: #8899a6
 #commentaryArea
 	#commentarySubmit
 		margin-top: 4px
-		
+
 .commentaryCard
 	display: flex
 	flex-direction: row
@@ -18,6 +18,11 @@ $space-gray: #8899a6
 		&.commentaryCardAvatar
 			width: 40px
 			margin: 5px
+			border-radius: 5px
+
+			.commentaryAvatar
+				width: 40px
+				height: 40px
 
 		&.commentaryCardContent
 			width: 100%
@@ -26,7 +31,7 @@ $space-gray: #8899a6
 			.userName
 				font-weight: bold
 
-			.time		
+			.time
 				font-style: italic
 				font-size: .75em
 				color: $space-gray
