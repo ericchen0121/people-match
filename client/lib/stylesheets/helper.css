@@ -1,0 +1,50 @@
+.pointer {
+    cursor: pointer
+}
+
+/*BORDERS*/
+.fullBorder {
+    border: 1px
+}
+
+.topBottomBorder {
+    border-top: 1px;
+    border-bottom: 1px;
+    border-right: 0;
+    border-left: 0
+}
+
+.rightLeftBorder {
+    border-right: 1px;
+    border-left: 1px;
+    border-top: 0;
+    border-bottom: 0
+}
+
+.topBorder {
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0
+}
+
+.bottomBorder {
+    border-bottom: 1px;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0
+}
+
+.rightBorder {
+    border-right: 1px;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0
+}
+
+.leftBorder {
+    border-left: 1px;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0
+}
