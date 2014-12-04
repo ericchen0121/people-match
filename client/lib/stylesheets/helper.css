@@ -1,50 +1,100 @@
+/* Pointers */
 .pointer {
     cursor: pointer
 }
+
+/* BG COlORS */
+.defaultBg, .greyBg {
+    background-color: #343434
+}
+
+/* Text Align */
+.center {
+    text-align: center
+}
+
+.left {
+    text-align: left
+}
+
+.right {
+    text-align: right
+}
+
+/* Text Colors */
+
+.whiteText {
+    color: #FFF
+}
+
 
 /*BORDERS*/
 .fullBorder {
     border: 1px
 }
 
-.topBottomBorder {
+.tbBorder {
     border-top: 1px;
     border-bottom: 1px;
     border-right: 0;
     border-left: 0
 }
 
-.rightLeftBorder {
+.rlBorder {
     border-right: 1px;
     border-left: 1px;
     border-top: 0;
     border-bottom: 0
 }
 
-.topBorder {
+.tBorder {
     border-top: 1px;
     border-left: 0;
     border-right: 0;
     border-bottom: 0
 }
 
-.bottomBorder {
+.bBorder {
     border-bottom: 1px;
     border-right: 0;
     border-left: 0;
     border-top: 0
 }
 
-.rightBorder {
+.rBorder {
     border-right: 1px;
     border-left: 0;
     border-top: 0;
     border-bottom: 0
 }
 
-.leftBorder {
+.lBorder {
     border-left: 1px;
     border-right: 0;
     border-top: 0;
     border-bottom: 0
+}
+
+.dashedBorder {
+    border-style: dashed
+}
+
+.solidBorder {
+    border-style: solid
+}
+
+.defaultBorderColor {
+    border-color: #CCC
+}
+
+.primaryBorderColor {
+    border-color: #5a5a5a
+}
+
+.secondaryBorderColor {
+    border-color: #e4e4e4
+}
+
+.sysDefaultBorder {
+    border: 1px solid #CCC
 }
