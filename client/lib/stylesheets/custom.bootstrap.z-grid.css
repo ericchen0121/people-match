@@ -1,3 +1,6 @@
+/* Filename named with `z-grid` in order to control this as the last
+load order in Meteor's wonky name-preference system*/
+
 /*24 Column Grid*/
 /* http://css-tricks.com/dont-overthink-it-grids */
 *, *:after, *:before {
