@@ -1,0 +1,151 @@
+/* Pointers */
+.pointer {
+    cursor: pointer
+}
+
+/* BG COlORS */
+.defaultBg, .greyBg {
+    background-color: #343434
+}
+
+/* Text Align */
+.center {
+    text-align: center
+}
+
+.left {
+    text-align: left
+}
+
+.right {
+    text-align: right
+}
+
+/* Text Colors */
+
+.whiteText {
+    color: #FFF
+}
+
+.sysDefaultText {
+    color: #000
+}
+
+.sysSecondaryText {
+    color: #999
+}
+
+.sysTableText {
+    color: #515151
+}
+
+.sysSuccessText {
+    color: #7CDFA4
+}
+
+.sysErrorText {
+    color: #ff8593
+}
+
+.sysLabelText {
+    color: black
+}
+
+.sysGreenText {
+    color: #7CDFA4
+}
+
+.sysRedText {
+    color: #ff8593
+}
+
+.size-9 {
+    font-size: 9px;
+    letter-spacing: .5px;
+    font-weight: 400
+}
+
+.size-10 {
+    font-size: 10px;
+    letter-spacing: .5px
+}
+
+.size-12 {
+    font-size: 12px;
+    letter-spacing: .5px
+}
+
+.size-16 {
+    font-size: 16px
+}
+
+/*BORDERS*/
+.fullBorder {
+    border: 1px
+}
+
+.tbBorder {
+    border-top: 1px;
+    border-bottom: 1px;
+    border-right: 0;
+    border-left: 0
+}
+
+.rlBorder {
+    border-right: 1px;
+    border-left: 1px;
+    border-top: 0;
+    border-bottom: 0
+}
+
+.tBorder {
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0
+}
+
+.bBorder {
+    border-bottom: 1px;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0
+}
+
+.rBorder {
+    border-right: 1px;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0
+}
+
+.lBorder {
+    border-left: 1px;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0
+}
+
+.dashedBorder {
+    border-style: dashed
+}
+
+.solidBorder {
+    border-style: solid
+}
+
+.defaultBorderColor {
+    border-color: #CCC
+}
+
+.primaryBorderColor {
+    border-color: #5a5a5a
+}
+
+.secondaryBorderColor {
+    border-color: #e4e4e4
+}
+
+.sysDefaultBorder {
+    border: 1px solid #CCC
+}
