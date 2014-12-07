@@ -1,0 +1,21 @@
+template(name="contestResultsItem")
+  div(class='row contestResultItem size-12 vAlign')
+    div(class='col-xs-7 paddingTB-10' data-toggle='modal' data-target='#contestDetailsModal' data-name='#{contestName}') #{contestName}
+    div(class='col-xs-2 paddingTB-10' id='entriesBootbox') #{entries}
+    div(class='col-xs-2 paddingTB-10') #{size}
+    div(class='col-xs-2 paddingTB-10') $#{entryFee}
+    div(class='col-xs-2 paddingTB-10') $#{prizes}
+    div(class='col-xs-3 paddingTB-10') {{momentify starts}}
+    +if guaranteedPrizes
+      div(class='col-xs-1 contestIcons')
+        span(class='contestGuaranteedPayIcon') G
+    +else
+      div(class='col-xs-1')
+    +if multipleEntries
+      div(class='col-xs-1 contestIcons')
+        span(class='contestMultiEntryIcon') M
+    +else
+      div(class='col-xs-1')
+    div(class='col-xs-2')
+    div(class='col-xs-2 paddingTB-5')
+      button(class='btn btn-default btn-sm') ENTER

@@ -3,12 +3,19 @@ template(name="contestDetailsModal")
     div(class="modal-dialog")
     div(class="modal-content")
       div(class="modal-header")
-        button( type="button" class="close" data-dismiss="modal")
-          span( aria-hidden="true" )&times;
-          span( class="sr-only") Close
-        h4( class="modal-title" id="exampleModalLabel") Contest - $1 Million Prize
+        h2(class="modal-title" id="exampleModalLabel") Contest Name
+        h5 Entry Fee
       div(class="modal-body")
-        h2 Contest
+        ul(class="nav nav-tabs")
+          li(role="presentation")
+            a(data-target='#info' class='active') Info
+          li(role="presentation")
+            a(data-target='#prizes') Prizes
+        div(class='tab-content')
+          div(role="tabpanel" class='tab-pane active' id='info')
+            +each slate
+              div #{gameName}
+          div(role="tabpanel" class='tab-pane' id='prizes') #{readablePrizePayouts}
       div(class="modal-footer")
         button(type="button" class="btn btn-default" data-dismiss="modal") Close
         button(type="button" class="btn btn-primary") Enter New Lineup

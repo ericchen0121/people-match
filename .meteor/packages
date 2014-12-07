@@ -16,7 +16,6 @@ multiply:iron-router-progress
 fourseven:scss
 nemo64:bootstrap
 less
-natestrauser:animate-css
 matteodem:easy-search
 meteorhacks:fast-render@2.0.0-rc4
 reywood:publish-composite
@@ -27,4 +26,3 @@ zimme:iron-router-active
 mquandalle:jade
 maazalik:malihu-jquery-custom-scrollbar
 momentjs:moment
-
