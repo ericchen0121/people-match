@@ -4,7 +4,11 @@ template(name="contestDetailsModal")
     div(class="modal-content")
       div(class="modal-header")
         h2(class="modal-title" id="exampleModalLabel") Contest Name
-        h5 Entry Fee
+        h6
+          span Entry Fee: #{entryFee}  |
+          span Entries: #{entries}  |
+          span Prizes: $#{prizes}  |
+          span {{#if guaranteedPrizes}}Guaranteed Payouts{{/if}}
       div(class="modal-body")
         ul(class="nav nav-tabs")
           li(role="presentation")
