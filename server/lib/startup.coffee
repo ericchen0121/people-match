@@ -10,6 +10,9 @@ FastRender.route '/chatter', ->
   @subscribe 'nflSuperstars'
   @subscribe 'commentariesUsers' # this will slow down when there are many users
 
+FastRender.route '/lobby', ->
+  @subscribe 'contests'
+
 # Import nflTeams data to collection
 # http://stackoverflow.com/questions/25370332/import-json-file-into-collection-in-server-code-on-startup
 # http://stackoverflow.com/questions/12941915/how-to-iterate-through-json-hash-with-coffeescript
