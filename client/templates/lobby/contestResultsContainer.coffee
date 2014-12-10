@@ -46,95 +46,95 @@ Template.contestResultsContainer.helpers
       guaranteedPrizes: true
       multipleEntries: true
       multipleEntriesAllowed: 25
-      entries: 0
+      entries: 7
       size: 50
       entryFee: 100
       prizes: 100
       starts: new Date()
       slate: [
         {
-          event_id: 1,
+          eventId: 1,
           gameName: 'PIT @ CIN',
           startsAt: new Date(),
           teams: [
             {
-              team_id: 100
+              teamId: 100
             },
             {
-              team_id: 101
+              teamId: 101
             }
           ],
           teams: [
             {
-              team_id: 100
+              teamId: 100
             },
             {
-              team_id: 101
+              teamId: 101
             }
           ]
         },
         {
-          event_id: 2,
+          eventId: 2,
           gameName: 'IND @ CLE',
           startsAt: new Date(),
           teams: [
             {
-              team_id: 100
+              teamId: 100
             },
             {
-              team_id: 101
+              teamId: 101
             }
           ]
         },
         {
-          event_id: 3,
+          eventId: 3,
           gameName: 'CAR @ NO',
           startsAt: new Date(),
           teams: [
             {
-              team_id: 100
+              teamId: 100
             },
             {
-              team_id: 101
+              teamId: 101
             }
           ]
         },
         {
-          event_id: 4,
+          eventId: 4,
           gameName: 'BUF @ DEN',
           startsAt: new Date(),
           teams: [
             {
-              team_id: 100
+              teamId: 100
             },
             {
-              team_id: 101
+              teamId: 101
             }
           ]
         },
         {
-          event_id: 5,
+          eventId: 5,
           gameName: 'SF @ OAK',
           startsAt: new Date(),
           teams: [
             {
-              team_id: 100
+              teamId: 100
             },
             {
-              team_id: 101
+              teamId: 101
             }
           ]
         },
         {
-          event_id: 6,
+          eventId: 6,
           gameName: 'STL @ WAS',
           startsAt: new Date(),
           teams: [
             {
-              team_id: 100
+              teamId: 100
             },
             {
-              team_id: 101
+              teamId: 101
             }
           ]
         }
@@ -162,10 +162,3 @@ Template.contestResultsContainer.rendered = ->
     theme: 'minimal-dark'
     autoHideScrollbar: true
     scrollInertia: 300
-
-Template.contestResultsItem.helpers
-  # Presents a human readable moment.js time
-  #
-  momentify: (time) ->
-    moment(time).format('ddd, h:mmA')
-

@@ -27,3 +27,8 @@ Template.registerHelper "userImage", (userId) ->
   else
     # TO CHANGE or Add
     return "images/withOutPhoto.png"
+
+# Presents a human readable moment.js time
+#
+Template.registerHelper 'momentify', (time) ->
+    moment(time).format('ddd, h:mmA')
