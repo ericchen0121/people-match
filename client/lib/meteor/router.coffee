@@ -43,6 +43,7 @@ Router.route '/contest/1234', {
       size: 50
       entryFee: 100
       prizes: 100
+      prizeFormat: 'Winner Takes All'
       starts: new Date()
       slate: [
         {

@@ -1,0 +1,34 @@
+template(name='contestTitle')
+  div(class='col-xs-24')
+    div(class='row')
+      h1(id='contest-title' class='col-xs-16') #{contestName}
+      h3(id='contest-date' class='col-xs-8') Contest Starts this {{momentify starts}}
+    div(class='row')
+      h6(id='contest-information') Entries: #{entries} / #{size}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
+
+template(name='contestSlateContainer')
+  div(class='col-xs-24')
+    div(class='row')
+      each slate
+        div(class='col-xs-2') #{gameName} {{momentify starts 'shortTime'}}
+
+template(name='contestLineupContainer')
+  div(class='col-xs-24')
+    div(class='row')
+      div(class='col-xs-12')
+        h2 Available Players
+        div(class='row')
+          div(class='col-xs-1') All
+          div(class='col-xs-1') QB
+          div(class='col-xs-1') RB
+          div(class='col-xs-1') WR
+          div(class='col-xs-1') TE
+          div(class='col-xs-1') K
+          div(class='col-xs-1') D
+          div(class='col-xs-3-offset-2') SEARCH HERE
+        each availablePlayers
+          +playerListTextSimple
+          +playerSuperstarMe
+      div(class='col-xs-12')
+        h2 Your Lineup (Placeholder)
+        +superstarsFeed
