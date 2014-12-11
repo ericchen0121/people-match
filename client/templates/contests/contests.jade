@@ -4,7 +4,7 @@ template(name='contestTitle')
       h1(id='contest-title' class='col-xs-16') #{contestName}
       h3(id='contest-date' class='col-xs-8') Contest Starts this {{momentify starts}}
     div(class='row')
-      h6(id='contest-information') Entries: #{entries} / #{size}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
+      h4(id='contest-information') Entries: #{entries} / #{size}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
 
 template(name='contestSlateContainer')
   div(class='col-xs-24')
@@ -53,7 +53,50 @@ template(name='contestLineupContainer')
             h2 $#{salaryRemaining}
           div(class='col-xs-6')
             h2 $#{salaryRemainingAvg}
-        +superstarsFeed
+        //- +superstarsFeed
+        div(class='row lineup-table')
+          div(class='col-xs-24')
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') QB
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') WR
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') WR
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') WR
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') RB
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') RB
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') TE
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') FLEX
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') K
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-selection')
+              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
+              div(class='col-xs-2 player-position-lineup vAlign') DEF
+              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
+
 
 template(name='lineupCard')
   div(class='row')
