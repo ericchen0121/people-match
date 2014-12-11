@@ -45,6 +45,7 @@ Router.route '/contest/1234', {
       prizes: 100
       prizeFormat: 'Winner Takes All'
       starts: new Date()
+      salaryCap: 60000
       slate: [
         {
           eventId: 1,
