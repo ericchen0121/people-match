@@ -1,3 +1,6 @@
+# Fast Render APIs, available only on the server
+# https://github.com/meteorhacks/fast-render#using-fast-renders-route-apis
+
 FastRender.route '/players', ->
   # Fast load these subscriptions to collections
   # This passes the collection data over html for fast rendering of the page
@@ -12,6 +15,11 @@ FastRender.route '/chatter', ->
 
 FastRender.route '/lobby', ->
   @subscribe 'contests'
+
+FastRender.route '/contest/:contestId', (params) ->
+  @subscribe 'nflPlayers'#params.contestId
+  @subscribe 'nflSuperstars'
+  @subscribe 'contests'#params.contestId
 
 # Import nflTeams data to collection
 # http://stackoverflow.com/questions/25370332/import-json-file-into-collection-in-server-code-on-startup
