@@ -1,3 +1,10 @@
+# The Contest Page adding Player to lineups/Rosters Functionality
+# Currently the implementation stores a NflPlayer object in a Session json variable
+# This variable looks like: { QB: [obj], RB1: [obj], WR1: [obj], WR2: 'open'} // 'open' if roster spot is open.
+# All are reset to 'open' on hot code pushes.
+#
+# NOTE: We should persist this roster somehow and/or do checks if a user leaves a contest page
+# or submits after a contest is filled up, and wants to remember his lineup.
 addPlayerToRoster = (player) ->
   currentRoster = Session.getJSON 'currentLineup.roster'
 
@@ -9,6 +16,10 @@ addPlayerToRoster = (player) ->
         Session.setJSON 'currentLineup.roster.RB1', player
       else if currentRoster['RB2'] is 'open'
         Session.setJSON 'currentLineup.roster.RB2', player
+      else if currentRoster['FLEX1'] is 'open'
+        Session.setJSON 'currentLineup.roster.FLEX1', player
+      else if currentRoster['FLEX2'] is 'open'
+        Session.setJSON 'currentLineup.roster.FLEX2', player
       else alert 'RBs are Full'
     when 'WR'
       if currentRoster['WR1'] is 'open'
@@ -17,10 +28,20 @@ addPlayerToRoster = (player) ->
         Session.setJSON 'currentLineup.roster.WR2', player
       else if currentRoster['WR3'] is 'open'
         Session.setJSON 'currentLineup.roster.WR3', player
+      else if currentRoster['FLEX1'] is 'open'
+        Session.setJSON 'currentLineup.roster.FLEX1', player
+      else if currentRoster['FLEX2'] is 'open'
+        Session.setJSON 'currentLineup.roster.FLEX2', player
       else alert 'WRs are Full'
     when 'TE'
-      if currentRoster['TE'] is 'open' then Session.setJSON 'currentLineup.roster.TE', player else alert 'TEs are Full'
-    when 'K'
+      if currentRoster['TE'] is 'open'
+        Session.setJSON 'currentLineup.roster.TE', player
+      else if currentRoster['FLEX1'] is 'open'
+        Session.setJSON 'currentLineup.roster.FLEX1', player
+      else if currentRoster['FLEX2'] is 'open'
+        Session.setJSON 'currentLineup.roster.FLEX2', player
+      else alert 'TEs are Full'
+    when 'PK'
       if currentRoster['K'] is 'open' then Session.setJSON 'currentLineup.roster.K', player else alert 'Ks are Full'
     when 'DEF'
       if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else alert 'DEFs are Full'
@@ -30,7 +51,7 @@ addPlayerToRoster = (player) ->
 Template.contestLineupContainer.helpers
 
   availablePlayers: ->
-    NflPlayers.find({})
+    NflPlayers.find({ position: {$in: ['QB', 'RB', 'WR', 'TE', 'PK']} })
 
   salaryRemaining: ->
     60000
@@ -82,20 +103,6 @@ Template.contestLineupContainer.rendered = ->
     theme: 'minimal-dark'
     autoHideScrollbar: true
 
-  lineupPositions = {
-    'QB': 1
-    'RB': 1
-    'WR': 3
-    'TE': 1
-    'K': 1
-    'DEF': 1
-  }
-
-  Session.setJSON('currentLineup.positions', lineupPositions)
-
-  # this uses the Contests.lineupPositions
-  # Session.setJSON('currentLineup.positions', @.lineupPositions)
-
   roster = {
     'QB': 'open'
     'RB1': 'open'
@@ -103,9 +110,11 @@ Template.contestLineupContainer.rendered = ->
     'WR1': 'open'
     'WR2': 'open'
     'WR3': 'open'
+    'FLEX1': 'open'
+    'FLEX2': 'open'
     'TE': 'open'
     'K': 'open'
-    'DEF': 'open'
+    # 'DEF': 'open'
   }
 
   Session.setJSON('currentLineup.roster', roster)
