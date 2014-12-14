@@ -83,11 +83,13 @@ Template.contestLineupContainer.events
     # @ is the data context of the template, ie. the player
     addPlayerToRoster(@)
 
+  # I don't love that we are adding/removing classes. Is there a better reactive solution?
   'click .player-list-item .player-add': (e) ->
     $addRemoveButton = $(e.target)
     $addRemoveButton.removeClass 'player-add'
     $addRemoveButton.addClass 'lineup-player-remove'
 
+  # I don't love that we are adding/removing classes. Is there a better reactive solution?
   'click .player-list-item .lineup-player-remove': (e) ->
     $addRemoveButton = $(e.target)
     $addRemoveButton.removeClass 'lineup-player-remove'
@@ -103,8 +105,8 @@ Template.contestLineupContainer.events
         # reset spot to open
         rosterJSON[k] = 'open'
 
-      # save
-      Session.setJSON 'currentLineup.roster', rosterJSON
+    # save
+    Session.setJSON 'currentLineup.roster', rosterJSON
 
 Template.contestLineupContainer.rendered = ->
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
