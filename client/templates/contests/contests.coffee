@@ -41,25 +41,39 @@ Template.contestLineupContainer.helpers
   # Generates the Lineup View based on Session Data.
   # returns: [Array] of Athlete Objects
   currentLineup: ->
-    rosterJSON = Session.getJSON("currentLineup.roster")
+    rosterJSON = Session.getJSON 'currentLineup.roster'
 
     # convert the JSON form into an array for template iteration
     rosterArray = []
-    $.each(rosterJSON, (k, v) ->
+    $.each rosterJSON, (k, v) ->
       # if player isn't yet in the roster position, push the position
       # this is helpful because the template iterates over this array, and we can have a placeholder of position
-      if v == null
+      if v == 'open'
         # add position
         rosterArray.push k
       else
         # else add the player selected
-        rosterArray.push v)
+        rosterArray.push v
 
     return rosterArray
 
 Template.contestLineupContainer.events
   'click .player-add': (e) ->
+    # @ is the data context of the template, ie. the player
     addPlayerToRoster(@)
+
+  'click .lineup-player-remove': (e) ->
+    rosterJSON = Session.getJSON 'currentLineup.roster'
+
+    $.each rosterJSON, (k, v) =>
+      # compare player removed to roster session variable
+      # shortcircuit if there is no player object (v._id)
+      if v._id and @._id._str == v._id._str
+        # reset spot to open
+        rosterJSON[k] = 'open'
+
+    # save
+    Session.setJSON 'currentLineup.roster', rosterJSON
 
 Template.contestLineupContainer.rendered = ->
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html

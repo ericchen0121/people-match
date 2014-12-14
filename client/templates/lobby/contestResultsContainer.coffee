@@ -51,6 +51,15 @@ Template.contestResultsContainer.helpers
       entryFee: 100
       prizes: 100
       starts: new Date()
+      lineupPositions: {
+        'QB': 1
+        'RB': 1
+        'WR': 3
+        'TE': 1
+        'K': 1
+        'DEF': 1
+      },
+      salaryCap: 60000
       slate: [
         {
           eventId: 1,
@@ -139,7 +148,6 @@ Template.contestResultsContainer.helpers
           ]
         }
       ],
-
       prizePayouts:
         [
           {1: 1000}, {2: 500}, {3: 200}, {4: 100}, {5: 50}, {'6-10', 10}
@@ -148,6 +156,7 @@ Template.contestResultsContainer.helpers
     contestSet = (contestFake for i in [1..10])
     return contestSet
 
+  # When the contests are in the DB, flip this switch to turn it on!
   contestsReal: ->
     Contests.find()
 

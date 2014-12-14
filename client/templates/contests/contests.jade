@@ -42,7 +42,7 @@ template(name='contestLineupContainer')
                 div(class='col-xs-3 player-fppg vAlign') 12.3
                 div(class='col-xs-3 player-played vAlign') 13
                 div(class='col-xs-5 player-slate vAlign') CIN @ PIT
-                div(class='col-xs-3 player-salary vAlign') $8,900
+                div(class='col-xs-3 player-salary vAlign') $4,500
                 div(class='col-xs-2 player-add vAlign') (+)
       div(class='col-xs-12')
         div(class='row')
@@ -53,25 +53,27 @@ template(name='contestLineupContainer')
             h2 $#{salaryRemaining}
           div(class='col-xs-6')
             h2 $#{salaryRemainingAvg}
-        //- +superstarsFeed
         div(class='row lineup-table')
           div(class='col-xs-24')
             each currentLineup
               if espn_id
                 div(class='row lineup-player-selection')
-                  div(class='col-xs-4 player-image-lineup vAlign')
+                  div(class='col-xs-4 lineup-player-image vAlign')
                     img(class='playerPhoto' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-                  div(class='col-xs-2 player-position-lineup vAlign') #{position}
-                  div(class='col-xs-12 player-name-lineup vAlign') #{full_name}
+                  div(class='col-xs-2 lineup-player-position vAlign') #{position}
+                  div(class='col-xs-6 lineup-player-name vAlign') #{full_name}
+                  div(class='col-xs-2 lineup-player-salary vAlign') $4,500
+                  div(class='col-xs-2 col-xs-push-2 lineup-player-remove vAlign') (x)
+
               else
                 div(class='row lineup-player-selection')
-                  div(class='col-xs-4 player-image-lineup vAlign')
+                  div(class='col-xs-4 lineup-player-image vAlign')
                     img(class='playerPhoto' src='/images/anonymous_player.png')
-                  div(class='col-xs-2 player-position-lineup vAlign') ADD PLAYER
+                  div(class='col-xs-8 lineup-player-position vAlign') ADD #{this}
             div(class='row lineup-player-clear-all-selections')
-              div(class='col-xs-6-pull-right-18') (x) Clear All
+              div(class='col-xs-6 col-xs-push-18 ') (x) Clear All
             div(class='row lineup-player-clear-all-selections')
-              div(class='btn col-xs-6-pull-right-18') Enter
+              div(class='btn col-xs-6 col-xs-push-18') Enter
 
 template(name='lineupCard')
   div(class='row')
