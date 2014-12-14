@@ -1,3 +1,8 @@
+# http://www.neo.com/2014/05/23/reactive-forms-in-meteor-js
+Events.handleNaturally = (e) ->
+  e.preventDefault()
+  e.stopPropagation()
+
 # This file defines global helpers which can be used across templates.
 # https://docs.meteor.com/#/full/template_registerhelper
 

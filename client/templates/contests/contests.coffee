@@ -51,7 +51,7 @@ addPlayerToRoster = (player) ->
 Template.contestLineupContainer.helpers
 
   availablePlayers: ->
-    NflPlayers.find({ position: {$in: ['QB', 'RB', 'WR', 'TE', 'PK']} })
+    NflPlayers.find({ position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
 
   salaryRemaining: ->
     60000
@@ -83,6 +83,16 @@ Template.contestLineupContainer.events
     # @ is the data context of the template, ie. the player
     addPlayerToRoster(@)
 
+  'click .player-list-item .player-add': (e) ->
+    $addRemoveButton = $(e.target)
+    $addRemoveButton.removeClass 'player-add'
+    $addRemoveButton.addClass 'lineup-player-remove'
+
+  'click .player-list-item .lineup-player-remove': (e) ->
+    $addRemoveButton = $(e.target)
+    $addRemoveButton.removeClass 'lineup-player-remove'
+    $addRemoveButton.addClass 'player-add'
+
   'click .lineup-player-remove': (e) ->
     rosterJSON = Session.getJSON 'currentLineup.roster'
 
@@ -93,8 +103,8 @@ Template.contestLineupContainer.events
         # reset spot to open
         rosterJSON[k] = 'open'
 
-    # save
-    Session.setJSON 'currentLineup.roster', rosterJSON
+      # save
+      Session.setJSON 'currentLineup.roster', rosterJSON
 
 Template.contestLineupContainer.rendered = ->
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
