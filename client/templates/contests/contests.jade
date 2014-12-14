@@ -56,47 +56,22 @@ template(name='contestLineupContainer')
         //- +superstarsFeed
         div(class='row lineup-table')
           div(class='col-xs-24')
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') QB
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') WR
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') WR
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') WR
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') RB
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') RB
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') TE
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') FLEX
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') K
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-            div(class='row lineup-player-selection')
-              div(class='col-xs-4 player-image-lineup vAlign') IMAGE
-              div(class='col-xs-2 player-position-lineup vAlign') DEF
-              div(class='col-xs-12 player-name-lineup vAlign') ADD PLAYER
-
+            each currentLineup
+              if espn_id
+                div(class='row lineup-player-selection')
+                  div(class='col-xs-4 player-image-lineup vAlign')
+                    img(class='playerPhoto' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+                  div(class='col-xs-2 player-position-lineup vAlign') #{position}
+                  div(class='col-xs-12 player-name-lineup vAlign') #{full_name}
+              else
+                div(class='row lineup-player-selection')
+                  div(class='col-xs-4 player-image-lineup vAlign')
+                    img(class='playerPhoto' src='/images/anonymous_player.png')
+                  div(class='col-xs-2 player-position-lineup vAlign') ADD PLAYER
+            div(class='row lineup-player-clear-all-selections')
+              div(class='col-xs-6-pull-right-18') (x) Clear All
+            div(class='row lineup-player-clear-all-selections')
+              div(class='btn col-xs-6-pull-right-18') Enter
 
 template(name='lineupCard')
   div(class='row')

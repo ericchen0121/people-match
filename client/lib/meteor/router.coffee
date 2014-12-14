@@ -27,10 +27,10 @@ Router.route '/players/:espn_id/:first_name-:last_name', {
 Router.route '/lobby', {name: 'lobbyLayout'}, ->
   @render 'lobbyLayout'
 
-Router.route '/contest/1234', {
+Router.route '/contest/1234/draftteam', {
   name: 'contestLayout',
   data: ->
-    # Contests.findOne({_id: parseInt @params.contestId})
+    # Contests.findOne({_id: @params.contestId})
     {
       contestId: 'abcd123'
       sport: 'NFL'

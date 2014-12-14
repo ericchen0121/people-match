@@ -16,7 +16,7 @@ FastRender.route '/chatter', ->
 FastRender.route '/lobby', ->
   @subscribe 'contests'
 
-FastRender.route '/contest/:contestId', (params) ->
+FastRender.route '/contest/:contestId/draftteam', (params) ->
   @subscribe 'nflPlayers'#params.contestId
   @subscribe 'nflSuperstars'
   @subscribe 'contests'#params.contestId
