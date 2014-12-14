@@ -25,16 +25,18 @@ Template.registerHelper "userImage", (userId) ->
   if user.profile.picture
     return user.profile.picture
   else
-    # TO CHANGE or Add
+    # TO CHANGE or Add default photo url
     return "images/withOutPhoto.png"
 
 # Presents a human readable moment.js time
 #
 Template.registerHelper 'momentify', (time, formatName) ->
-    # Medium DateTime
-    # e.g. Sun, 1:00PM
+    # mediumDateTime: e.g. Sun, 1:00PM
+    #
     if formatName == 'mediumDateTime'
       moment(time).format('ddd, h:mmA')
+    # shortTime: e.g. 1:00PM
+    #
     else if formatName == 'shortTime'
       moment(time).format('h:mmA')
     else  # default to MediumDateTime
