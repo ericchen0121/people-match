@@ -125,17 +125,6 @@ Template.contestLineupContainer.events
   # TODO: Consolidate naming - Roster or Lineup
   'click .contest-entry': (e) ->
 
-    # test if all positions are filled
-    # rosterJSON = Session.getJSON 'currentLineup.roster'
-    # valid = false
-
-    # $.each rosterJSON, (k, v) =>
-    #   if v == 'open' || v._id == undefined
-    #     valid = false
-    #     return false
-    #   valid = true
-
-    # if valid
     if validateEntry()
       # @ is a Contest object
       entry = {
@@ -154,14 +143,10 @@ Template.contestLineupContainer.events
       console.log 'we will enter this contest entry', entry
 
       Meteor.call 'entryCreate', entry, (error, result) ->
-        return alert(error.reason) if error
+        return console.log error.reason if error
 
     else
-      alert('fill in all positions')
-
-    # entry creation, linked to lineup/roster creation
-    # validation check
-    # submission
+      alert('Please fill in all roster spots to submit!')
 
 Template.contestLineupContainer.rendered = ->
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
