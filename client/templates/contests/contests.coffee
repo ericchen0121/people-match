@@ -48,6 +48,17 @@ addPlayerToRoster = (player) ->
 
   console.log Session.getJSON("currentLineup.roster")
 
+validateEntry = () ->
+  rosterJSON = Session.getJSON 'currentLineup.roster'
+  valid = true # assume contest entry is true until proven false ;)
+
+  $.each rosterJSON, (k, v) =>
+    if v == 'open' || v._id == undefined
+      valid = false
+      return false # break out of $.each loop
+
+  return valid
+
 Template.contestLineupContainer.helpers
 
   availablePlayers: ->
@@ -80,10 +91,12 @@ Template.contestLineupContainer.helpers
 
 Template.contestLineupContainer.events
   'click .player-add': (e) ->
-    # @ is the data context of the template, ie. the player
+    # @ is the data context of the template for the click handler, ie. the player
     addPlayerToRoster(@)
 
   # I don't love that we are adding/removing classes. Is there a better reactive solution?
+  #  possible way forward is to put a class in a variable that gets the state: <input type="checkbox" checked="{{hideCompleted}}" />
+  #  https://www.meteor.com/try/8
   'click .player-list-item .player-add': (e) ->
     $addRemoveButton = $(e.target)
     $addRemoveButton.removeClass 'player-add'
@@ -107,6 +120,48 @@ Template.contestLineupContainer.events
 
     # save
     Session.setJSON 'currentLineup.roster', rosterJSON
+
+  # The lineup will be in the Session.getJSON 'currentLineup.roster'
+  # TODO: Consolidate naming - Roster or Lineup
+  'click .contest-entry': (e) ->
+
+    # test if all positions are filled
+    # rosterJSON = Session.getJSON 'currentLineup.roster'
+    # valid = false
+
+    # $.each rosterJSON, (k, v) =>
+    #   if v == 'open' || v._id == undefined
+    #     valid = false
+    #     return false
+    #   valid = true
+
+    # if valid
+    if validateEntry()
+      # @ is a Contest object
+      entry = {
+        userId: Meteor.userId()
+        contestId: @.contestId # eventually when we have real contests, make @._id
+        slate: @.slate
+        contestStarts: @.starts
+        contestName: @.contestName
+        contestSport: @.sport
+        contestType: @.contestType
+        entryFee: @.entryFee
+        status: 'upcoming'
+        roster: Session.getJSON 'currentLineup.roster'
+      }
+
+      console.log 'we will enter this contest entry', entry
+
+      Meteor.call 'entryCreate', entry, (error, result) ->
+        return alert(error.reason) if error
+
+    else
+      alert('fill in all positions')
+
+    # entry creation, linked to lineup/roster creation
+    # validation check
+    # submission
 
 Template.contestLineupContainer.rendered = ->
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html

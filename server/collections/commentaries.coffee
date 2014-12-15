@@ -12,7 +12,8 @@ Meteor.methods
     # extend it with a few properties
     commentary = _.extend(commentaryAttributes, {
       userId: user._id
-      createdAt: new Date()
+      createdAt: Date.now()
+      updatedAt: Date.now()
     })
 
     # insert the comment in the db!!!

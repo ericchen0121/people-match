@@ -59,7 +59,7 @@ template(name='contestLineupContainer')
               if espn_id
                 div(class='row lineup-player-selection')
                   div(class='col-xs-4 lineup-player-image vAlign')
-                    img(class='playerPhoto' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+                    img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
                   div(class='col-xs-2 lineup-player-position vAlign') #{position}
                   div(class='col-xs-6 lineup-player-name vAlign') #{full_name}
                   div(class='col-xs-2 lineup-player-salary vAlign') $4,500
@@ -67,12 +67,13 @@ template(name='contestLineupContainer')
               else
                 div(class='row lineup-player-selection')
                   div(class='col-xs-4 lineup-player-image vAlign')
-                    img(class='playerPhoto' src='/images/anonymous_player.png')
+                    img(class='player-photo-anonymous' src='/images/anonymous_player.png')
                   div(class='col-xs-8 lineup-player-position vAlign') ADD #{this}
             div(class='row lineup-player-clear-all-selections')
               div(class='col-xs-6 col-xs-push-18 ') (x) Clear All
             div(class='row lineup-player-clear-all-selections')
-              div(class='btn col-xs-6 col-xs-push-18') Enter
+              div(class='col-xs-6 col-xs-push-18')
+                div(class='btn btn-default btn-sm contest-entry') Enter
 
 template(name='lineupCard')
   div(class='row')

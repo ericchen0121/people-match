@@ -50,7 +50,7 @@ Template.contestResultsContainer.helpers
       size: 50
       entryFee: 100
       prizes: 100
-      starts: new Date()
+      starts: Date.now()
       lineupPositions: {
         'QB': 1
         'RB': 1
