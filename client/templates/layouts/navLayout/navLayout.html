@@ -13,7 +13,9 @@
           <li class="{{ isActiveRoute regex='lobbyLayout' }}"><a href="{{ pathFor 'lobbyLayout' }}">Lobby</a></li>
           <li class="{{ isActiveRoute regex='chatterLayout' }}"><a href="{{ pathFor 'chatterLayout' }}">Chatter</a></li>
           <li class="{{ isActiveRoute regex='nflPlayersListLayout' }}"><a href="{{ pathFor 'nflPlayersListLayout' }}">Players</a></li>
-          <li><a href="#">Schedule</a></li>
+          <li class="{{ isActiveRoute regex='upcomingContestListLayout' }}"><a href="{{ pathFor 'upcomingContestListLayout' }}">Upcoming</a></li>
+          <li class="{{ isActiveRoute regex='liveContestListLayout' }}"><a href="{{ pathFor 'liveContestListLayout' }}">Live</a></li>
+          <li class="{{ isActiveRoute regex='historyContestListLayout' }}"><a href="{{ pathFor 'historyContestListLayout' }}">History</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">

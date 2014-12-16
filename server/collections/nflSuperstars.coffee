@@ -9,7 +9,6 @@ Meteor.methods
   # Technically, a superstar is a 'join table' of a nflPlayerId and userId
   #
   superstarInsert: (superstar) ->
-    console.log 'superstarInsert ...'
 
     # check if the superstar object already exists with same nflPlayer and user
     superstarAlreadyInDB = NflSuperstars.findOne({
@@ -19,7 +18,10 @@ Meteor.methods
 
     # if Original copy exists, short circuit return before inserting to db
     # client can check if superstarExists and we also return the id of the original one if necessary
-    return { superstarExists: true, _id: superstarOriginal._id } if superstarAlreadyInDB
+    return { superstarExists: true, superstarId: superstar._id } if superstarAlreadyInDB
+    # this error is not caught properly on the client side code right now. in nflPlayersListCards.coffee
+
+    console.log 'superstarInsert ...'
 
     # else create a new superstar in the db!!!
     NflSuperstars.insert(superstar)
