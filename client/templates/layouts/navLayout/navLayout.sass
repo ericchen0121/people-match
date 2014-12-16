@@ -3,13 +3,14 @@
 $purple: purple
 $red: red
 $green: green
+$highlightGreen: #7ab800
 $lightGray : #d3d3d3
 
 
 // Progress Bar
 // https://github.com/Multiply/iron-router-progress
 //
-$progressbar-color: $red
+$progressbar-color: $highlightGreen
 
 #iron-router-progress
   background-color : $progressbar-color
@@ -61,11 +62,11 @@ $progressbar-color: $red
   border-bottom: 4px solid light-gray // for transitioning the border, it needs to exist first!
 
   &.active
-    border-bottom: 4px solid red
+    border-bottom: 4px solid $highlightGreen
 
   &:hover
-    transition: all .15s ease-in-out
-    border-bottom: 4px solid red
+    transition: all .25s ease-in-out
+    border-bottom: 4px solid $highlightGreen
 
   a
     text-decoration: none
@@ -74,7 +75,7 @@ $progressbar-color: $red
   > a,
   > a:hover,
   > a:focus
-    border-color: $red
+    border-color: $highlightGreen
 
 .dropdown-menu
   padding: 5px 0 0

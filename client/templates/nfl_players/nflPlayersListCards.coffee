@@ -28,8 +28,11 @@ Template.playerSuperstarMe.events
 
     console.log "You're a Superstar."
 
-    # Call the server-side method to insert into Db
+    # Call the server-side method to insert into DB
     # This also adds some properties before addition
-    # 
+    #
     Meteor.call 'superstarInsert', superstar, (error, result) ->
-      return alert(error.reason) if error
+      # if result # this will be the inserted ID
+      #   console.log result
+      # if error # if it errors, it will be a 500 database error
+      #   console.log error

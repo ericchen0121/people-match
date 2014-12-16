@@ -2,11 +2,11 @@
   height: 90px
   font-size: 12px
 
+.contestDetailsModal
+  cursor: pointer
+
 #contestResultsTable
   height: 500px // set a fixed height so the custom scrollbar takes effect
-
-.contestIcons
-  padding-top: 9px
 
 .contestGuaranteedPayIcon
   color: white
@@ -19,4 +19,13 @@
   padding: 2px 5px
 
 .contestResultItem
-  height: 38px
+  height: 50px
+
+// currently used to compensate for table header over contestResultItem
+// this pushed the first resultItem down 20px so it can be seen
+.contestResultsBlankItem
+  height: 20px
+
+.contestEnterButton
+  a
+    text-decoration: none

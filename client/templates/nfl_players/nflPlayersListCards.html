@@ -1,10 +1,11 @@
-<template name="playerDescriptionSimple">
-  <li class='nflPlayer'>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</li>
-</template>
+<!-- PAGE TEMPLATE -->
 
 <template name="playerCardPage">
-{{> playerCard}}
+  {{> playerCard}}
 </template>
+
+
+<!-- COMPOSITE TEMPLATES -->
 
 <template name="playerCard">
   <li class='nflPlayer'>
@@ -14,9 +15,13 @@
   </li>
 </template>
 
-<template name='playerCardInfo'>
-  {{full_name}} - {{position}} - {{team}} - {{jersey_number}}
+<template name='playerListTextSimple'>
+  <li class='nflPlayerList'>
+    {{> playerDescriptionSimple}}
+  </li>
 </template>
+
+<!-- TEMPLATES FOR GRAPHICAL LIST VIEW -->
 
 <template name='playerCardPhoto'>
   <div class='photoCol'>
@@ -41,4 +46,14 @@
 
 <template name='playerSuperstarMe'>
   <div class ='superstar'>Superstar</div>
+</template>
+
+<!-- TEMPLATES FOR SIMPLIFIED VIEWS -->
+
+<template name="playerDescriptionSimple">
+  <div class='infoCol'>{{full_name}} - {{position}} - {{team}} - {{jersey_number}}</div>
+</template>
+
+<template name='playerCardInfo'>
+  {{full_name}} - {{position}} - {{team}} - {{jersey_number}}
 </template>

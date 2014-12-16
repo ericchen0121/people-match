@@ -1,0 +1,16 @@
+template(name='upcomingContestListContainer')
+  div(class='upcoming-contest-list')
+    div(class='col-xs-24')
+      div(class='row')
+        h1(id='upcoming-contest-title' class='col-xs-16') Upcoming Contests
+      div(class='row')
+        h4(class='col-xs-8') You have #{ upcomingEntriesCount } contest entries upcoming.
+      div(class='row')
+        h3(class='col-xs-3') Contest ID
+        h3(class='col-xs-6') Name
+        h3(class='col-xs-6') Entry
+      +each upcomingContests
+        div(class='row')
+          div(class='col-xs-3') #{contestId}
+          div(class='col-xs-6') #{contestName}
+          div(class='col-xs-6') $#{entryFee}

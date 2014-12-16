@@ -4,15 +4,23 @@
 # For the People page
 @People = new Mongo.Collection("people")
 
-# NFL Players
+# NFL Players // Make this generic Players
 @NflPlayers = new Mongo.Collection('nflPlayers')
 @NflTeams = new Mongo.Collection('nflTeams')
 
-# Bookmarked Players
+# Bookmarked Players / WatchList
 @NflSuperstars = new Mongo.Collection('nflSuperstars')
 
 @Commentaries = new Mongo.Collection('commentaries')
 @CommentariesUsers = new Mongo.Collection('commentariesUsers') # necessary to see all users' Names and Pictures
+
+@Contests = new Mongo.Collection('contests')
+@Slates = new Mongo.Collection('slates')
+@Events = new Mongo.Collection('events')
+
+@Entries = new Mongo.Collection('entries')
+@Lineups = new Mongo.Collection('lineups')
+
 
 # Implement a Search across Nfl Players
 # https://github.com/matteodem/meteor-easy-search/wiki/Getting-started

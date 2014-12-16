@@ -1,0 +1,25 @@
+template(name="contestDetailsModal")
+  div(class='modal fade' id='contestDetailsModal')
+    div(class="modal-dialog")
+    div(class="modal-content")
+      div(class="modal-header")
+        h2(class="modal-title" id="exampleModalLabel") Contest Name
+        h6
+          span Entry Fee: #{entryFee}  |
+          span Entries: #{entries}  |
+          span Prizes: $#{prizes}  |
+          span {{#if guaranteedPrizes}}Guaranteed Payouts{{/if}}
+      div(class="modal-body")
+        ul(class="nav nav-tabs")
+          li(role="presentation")
+            a(data-target='#info' class='active') Info
+          li(role="presentation")
+            a(data-target='#prizes') Prizes
+        div(class='tab-content')
+          div(role="tabpanel" class='tab-pane active' id='info')
+            +each slate
+              div #{gameName}
+          div(role="tabpanel" class='tab-pane' id='prizes') #{readablePrizePayouts}
+      div(class="modal-footer")
+        button(type="button" class="btn btn-default" data-dismiss="modal") Close
+        button(type="button" class="btn btn-primary" href='contest/1234/draftteam') Enter New Lineup

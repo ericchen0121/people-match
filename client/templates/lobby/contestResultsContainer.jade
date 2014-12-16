@@ -11,24 +11,8 @@ template(name="contestResultsContainer")
           div(class='col-xs-4') Starts (ET)
         div(class='row')
           div(id='contestResultsTable' class='col-xs-24')
-            +each contests
-              div(class='row contestResultItem size-12 vAlign')
-                div(class='col-xs-7 paddingTB-10') #{contestName}
-                div(class='col-xs-2 paddingTB-10') #{entries}
-                div(class='col-xs-2 paddingTB-10') #{size}
-                div(class='col-xs-2 paddingTB-10') $#{entryFee}
-                div(class='col-xs-2 paddingTB-10') $#{prizes}
-                div(class='col-xs-3 paddingTB-10') {{momentify starts}}
-                +if guaranteedPrizes
-                  div(class='col-xs-1 contestIcons')
-                    span(class='contestGuaranteedPayIcon') G
-                +else
-                  div(class='col-xs-1')
-                +if multipleEntries
-                  div(class='col-xs-1 contestIcons')
-                    span(class='contestMultiEntryIcon') M
-                +else
-                  div(class='col-xs-1')
-                div(class='col-xs-2')
-                div(class='col-xs-2 paddingTB-5')
-                  button(class='btn btn-default btn-sm') ENTER
+            div(class='row contestResultsBlankItem')
+            +each contestsFake
+              +contestResultsItem
+              +contestDetailsModal
+              //- TODO: Refactor out this modal duplication

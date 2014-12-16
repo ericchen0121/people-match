@@ -22,7 +22,7 @@
   "badges":               false,
   "jumbotron":            false,
   "thumbnails":           false,
-  "alerts":               false,
+  "alerts":               true,
   "progress-bars":        false,
   "media":                false,
   "list-group":           false,
@@ -32,7 +32,7 @@
 
   "component-animations": false,
   "dropdowns":            true,
-  "modals":               false,
+  "modals":               true,
   "tooltip":              false,
   "popovers":             false,
   "carousel":             false,
@@ -42,7 +42,7 @@
   "button":               false,
   "collapse":             true,
   "scrollspy":            false,
-  "tab":                  false,
+  "tab":                  true,
   "transition":           false,
 
   "utilities":            false,

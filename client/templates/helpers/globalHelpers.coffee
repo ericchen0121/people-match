@@ -1,3 +1,10 @@
+# http://www.neo.com/2014/05/23/reactive-forms-in-meteor-js
+window.Events = {}
+
+Events.handleNaturally = (e) ->
+  e.preventDefault()
+  e.stopPropagation()
+
 # This file defines global helpers which can be used across templates.
 # https://docs.meteor.com/#/full/template_registerhelper
 
@@ -25,5 +32,19 @@ Template.registerHelper "userImage", (userId) ->
   if user.profile.picture
     return user.profile.picture
   else
-    # TO CHANGE or Add
+    # TO CHANGE or Add default photo url
     return "images/withOutPhoto.png"
+
+# Presents a human readable moment.js time
+#
+Template.registerHelper 'momentify', (time, formatName) ->
+    # mediumDateTime: e.g. Sun, 1:00PM
+    #
+    if formatName == 'mediumDateTime'
+      moment(time).format('ddd, h:mmA')
+    # shortTime: e.g. 1:00PM
+    #
+    else if formatName == 'shortTime'
+      moment(time).format('h:mmA')
+    else  # default to MediumDateTime
+      moment(time).format('ddd, h:mmA')
