@@ -1,13 +1,16 @@
 template(name='historyContestListContainer')
-  div(class='col-xs-24')
-    div(class='row')
-      h4 You have #{ historyEntriesCount } contest entries completed.
-    div(class='row')
-      h3(class='col-xs-3') Contest ID
-      h3(class='col-xs-6') Name
-      h3(class='col-xs-6') Entry
-    +each historyContests
+  div(class='history-contest-list')
+    div(class='col-xs-24')
       div(class='row')
-        div(class='col-xs-3') #{contestId}
-        div(class='col-xs-6') #{contestName}
-        div(class='col-xs-6') $#{entryFee}
+        h1(id='history-contest-title' class='col-xs-16') Entry History
+      div(class='row')
+        h4(class='col-xs-8') You have #{ historyEntriesCount } contest entries in your history.
+      div(class='row')
+        h3(class='col-xs-3') Contest ID
+        h3(class='col-xs-6') Name
+        h3(class='col-xs-6') Entry
+      +each historyContests
+        div(class='row')
+          div(class='col-xs-3') #{contestId}
+          div(class='col-xs-6') #{contestName}
+          div(class='col-xs-6') $#{entryFee}

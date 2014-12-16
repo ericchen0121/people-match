@@ -27,14 +27,23 @@ Router.route '/players/:espn_id/:first_name-:last_name', {
 Router.route '/lobby', {name: 'lobbyLayout'}, ->
   @render 'lobbyLayout'
 
-Router.route '/upcoming', {name: 'upcomingContestListLayout'}, ->
-  @render 'upcomingContestListLayout'
+Router.route '/upcoming', {
+    name: 'upcomingContestListLayout'
+    waitOn: ->
+      Meteor.subscribe 'entries'
+  }
 
-Router.route '/live', {name: 'liveContestListLayout'}, ->
-  @render 'liveContestListLayout'
+Router.route '/live', {
+    name: 'liveContestListLayout'
+    waitOn: ->
+      Meteor.subscribe 'entries'
+  }
 
-Router.route '/history', {name: 'historyContestListLayout'}, ->
-  @render 'historyContestListLayout'
+Router.route '/history', {
+    name: 'historyContestListLayout'
+    waitOn: ->
+      Meteor.subscribe 'entries'
+  }
 
 Router.route '/contest/1234/draftteam', {
   name: 'contestLayout',
