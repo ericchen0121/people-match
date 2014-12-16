@@ -1,7 +1,11 @@
 template(name='upcomingContestListContainer')
   div(class='col-xs-24')
+    div(class='row')
+        h3(class='col-xs-3') Contest ID
+        h3(class='col-xs-6') Name
+        h3(class='col-xs-6') Entry
     +each upcomingContests
       div(class='row')
+        div(class='col-xs-3') #{contestId}
         div(class='col-xs-6') #{contestName}
-        div(class='col-xs-6') #{contestName}
-        div(class='col-xs-6') #{contestName}
+        div(class='col-xs-6') $#{entryFee}
