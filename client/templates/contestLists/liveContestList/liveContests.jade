@@ -1,0 +1,13 @@
+template(name='liveContestListContainer')
+  div(class='col-xs-24')
+    div(class='row')
+      h4 You have #{ liveEntriesCount } contest entries currently live.
+    div(class='row')
+      h3(class='col-xs-3') Contest ID
+      h3(class='col-xs-6') Name
+      h3(class='col-xs-6') Entry
+    +each liveContests
+      div(class='row')
+        div(class='col-xs-3') #{contestId}
+        div(class='col-xs-6') #{contestName}
+        div(class='col-xs-6') $#{entryFee}

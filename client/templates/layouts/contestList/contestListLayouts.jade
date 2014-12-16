@@ -7,5 +7,17 @@ template(name='upcomingContestListLayout')
         +upcomingContestListContainer
 
 template(name='liveContestListLayout')
+  div(class='live-contest-list')
+    div(class='col-xs-24')
+      div(class='row')
+        h1(id='live-contest-title' class='col-xs-16') Live Contests
+      div(class='row')
+        +liveContestListContainer
 
 template(name='historyContestListLayout')
+  div(class='history-contest-list')
+    div(class='col-xs-24')
+      div(class='row')
+        h1(id='history-contest-title' class='col-xs-16') History
+      div(class='row')
+        +historyContestListContainer
