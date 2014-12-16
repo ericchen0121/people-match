@@ -21,15 +21,6 @@ FastRender.route '/contest/:contestId/draftteam', (params) ->
   @subscribe 'nflSuperstars'
   @subscribe 'contests' #params.contestId
 
-FastRender.route '/upcoming', ->
-  @subscribe 'entries'
-
-FastRender.route '/live', ->
-  @subscribe 'entries'
-
-FastRender.route '/history', ->
-  @subscribe 'entries'
-
 # Import nflTeams data to collection
 # http://stackoverflow.com/questions/25370332/import-json-file-into-collection-in-server-code-on-startup
 # http://stackoverflow.com/questions/12941915/how-to-iterate-through-json-hash-with-coffeescript
