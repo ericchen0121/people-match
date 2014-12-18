@@ -1,15 +1,36 @@
-.player-list-item
-  height: 45px
+$highlightGreen: #7ab800
+$highlightRed: #e22b00
+$lightGrey: #d6d6d6
+$mediumGrey: #9b9c9d
+$lightBlue: #3f96cb
 
-#player-list-table
+.contestLineupContainer
+  .player-list-item
+    height: 45px
+
+    &.selected-player
+      background-color: #f2fbe9
+
+  .position-filter
+    color: $lightBlue
+    cursor: pointer
+
+.fa-plus-circle
+    color: $highlightGreen
+    cursor: pointer
+    font-size: 22px
+
+.fa-minus-circle
+  color: $highlightRed
+  cursor: pointer
+  font-size: 22px
+
+#player-list-table-container
   height: 600px
 
-.lineup-player-selection
-  height: 60px
-
 .lineup-table
-  border: 1px solid grey
-  border-radius: 15px
+  border: 1px solid $lightGrey
+  border-radius: 5px
 
   .player-photo
     height: 50px
@@ -18,3 +39,21 @@
   .player-photo-anonymous
     height: 50px
     width: 50px
+
+  .lineup-player-selection,
+  .lineup-player-enter
+    height: 60px
+
+  .lineup-empty-spot
+    color: $lightGrey
+
+  .lineup-player-position
+    color: $mediumGrey
+
+  .lineup-clear-all-selections
+    height: 45px
+    color: $highlightRed
+
+  .btn.btn-default.btn-lg.contest-entry
+    padding: 12px 30px
+

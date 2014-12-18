@@ -46,7 +46,7 @@ addPlayerToRoster = (player) ->
     when 'DEF'
       if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else alert 'DEFs are Full'
 
-  console.log Session.getJSON("currentLineup.roster")
+  # console.log Session.getJSON("currentLineup.roster")
 
 validateEntry = () ->
   rosterJSON = Session.getJSON 'currentLineup.roster'
@@ -61,8 +61,19 @@ validateEntry = () ->
 
 Template.contestLineupContainer.helpers
 
+  # Returns a list of all players in positions that can score
   availablePlayers: ->
-    NflPlayers.find({ position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
+    filter = Session.get 'playerListFilter'
+    console.log 'this is the available player filter', filter
+    switch filter
+      when 'All'
+        NflPlayers.find({ position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
+      when 'K' # edge case when filter won't match position name
+        NflPlayers.find({ position: 'PK' })
+      # when 'D'
+         # NflPlayers.find({ position: 'DEF' })
+      else
+        NflPlayers.find({ position: filter })
 
   salaryRemaining: ->
     60000
@@ -73,6 +84,8 @@ Template.contestLineupContainer.helpers
   # Generates the Lineup View based on Session Data.
   # returns: [Array] of Athlete Objects
   currentLineup: ->
+
+    # { 'QB': 'open', 'RB': object }
     rosterJSON = Session.getJSON 'currentLineup.roster'
 
     # convert the JSON form into an array for template iteration
@@ -89,37 +102,54 @@ Template.contestLineupContainer.helpers
 
     return rosterArray
 
+  inCurrentLineup: ->
+    rosterJSON = Session.getJSON 'currentLineup.roster'
+    result = false # assume player is not in lineup, until proven true
+    $.each rosterJSON, (k, v) =>
+      if v._id and v._id._str == @._id._str
+        result = true # return true if the player is in the current lineup
+        return false # to break out of $.each loop
+
+    return result
+
 Template.contestLineupContainer.events
-  'click .player-add': (e) ->
+  'click .player-list-table-position-filters': (e) ->
+    filterText = $(e.target).text()
+
+    Session.set 'playerListFilter', filterText
+
+    # TESTING THIS TO RE-RENDER SCROLLBAR
+    # $('#player-list-table').mCustomScrollbar
+    #   theme: 'minimal-dark'
+    #   autoHideScrollbar: true
+
+  'click .lineup-player-add': (e) ->
     # @ is the data context of the template for the click handler, ie. the player
     addPlayerToRoster(@)
-
-  # I don't love that we are adding/removing classes. Is there a better reactive solution?
-  #  possible way forward is to put a class in a variable that gets the state: <input type="checkbox" checked="{{hideCompleted}}" />
-  #  https://www.meteor.com/try/8
-  'click .player-list-item .player-add': (e) ->
-    $addRemoveButton = $(e.target)
-    $addRemoveButton.removeClass 'player-add'
-    $addRemoveButton.addClass 'lineup-player-remove'
-
-  # I don't love that we are adding/removing classes. Is there a better reactive solution?
-  'click .player-list-item .lineup-player-remove': (e) ->
-    $addRemoveButton = $(e.target)
-    $addRemoveButton.removeClass 'lineup-player-remove'
-    $addRemoveButton.addClass 'player-add'
 
   'click .lineup-player-remove': (e) ->
     rosterJSON = Session.getJSON 'currentLineup.roster'
 
     $.each rosterJSON, (k, v) =>
       # compare player removed to roster session variable
-      # shortcircuit if there is no player object (v._id)
+      # shortcircuit if there is no player object (e.g. v._id)
       if v._id and @._id._str == v._id._str
-        # reset spot to open
+        rosterJSON[k] = 'open' # reset spot to open
+
+    # save to Session object
+    Session.setJSON 'currentLineup.roster', rosterJSON
+
+  'click .lineup-clear-all-selections': (e) ->
+    confirmation = confirm('Are you sure you want to clear your lineup?')
+
+    # clear
+    if confirmation
+      rosterJSON = Session.getJSON 'currentLineup.roster'
+
+      $.each rosterJSON, (k, v) =>
         rosterJSON[k] = 'open'
 
-    # save
-    Session.setJSON 'currentLineup.roster', rosterJSON
+      Session.setJSON 'currentLineup.roster', rosterJSON
 
   # The lineup will be in the Session.getJSON 'currentLineup.roster'
   # TODO: Consolidate naming - Roster or Lineup
@@ -146,12 +176,14 @@ Template.contestLineupContainer.events
         return console.log error.reason if error
 
     else
-      alert('Please fill in all roster spots to submit!')
+      alert('Please select a player for each position!')
 
 Template.contestLineupContainer.rendered = ->
+  Session.set 'playerListFilter', 'All'
+
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
   #
-  @$('#player-list-table').mCustomScrollbar
+  @$('#player-list-table-container').mCustomScrollbar
     theme: 'minimal-dark'
     autoHideScrollbar: true
 
