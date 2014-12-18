@@ -90,15 +90,17 @@ Template.contestLineupContainer.helpers
 
     # convert the JSON form into an array for template iteration
     rosterArray = []
-    $.each rosterJSON, (k, v) ->
-      # if player isn't yet in the roster position, push the position
-      # this is helpful because the template iterates over this array, and we can have a placeholder of position
-      if v == 'open'
-        # add position
-        rosterArray.push k
-      else
-        # else add the player selected
-        rosterArray.push v
+
+    if rosterJSON
+      $.each rosterJSON, (k, v) ->
+        # if player isn't yet in the roster position, push the position
+        # this is helpful because the template iterates over this array, and we can have a placeholder of position
+        if v == 'open'
+          # add position
+          rosterArray.push k
+        else
+          # else add the player selected
+          rosterArray.push v
 
     return rosterArray
 

@@ -3,6 +3,7 @@ $highlightRed: #e22b00
 $lightGrey: #d6d6d6
 $mediumGrey: #9b9c9d
 $lightBlue: #3f96cb
+$lightestGrey: #fafafa
 
 .contestLineupContainer
   .player-list-item
@@ -13,16 +14,13 @@ $lightBlue: #3f96cb
 
   .position-filter
     color: $lightBlue
-    cursor: pointer
 
 .fa-plus-circle
     color: $highlightGreen
-    cursor: pointer
     font-size: 22px
 
 .fa-minus-circle
   color: $highlightRed
-  cursor: pointer
   font-size: 22px
 
 #player-list-table-container
@@ -44,7 +42,10 @@ $lightBlue: #3f96cb
   .lineup-player-enter
     height: 60px
 
-  .lineup-empty-spot
+  .lineup-player-selection.player-empty
+    background-color: $lightestGrey
+
+  .lineup-empty-name
     color: $lightGrey
 
   .lineup-player-position
