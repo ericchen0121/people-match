@@ -115,15 +115,9 @@ Template.contestLineupContainer.helpers
     return result
 
 Template.contestLineupContainer.events
-  'click .player-list-table-position-filters': (e) ->
+  'click .position-filter': (e) ->
     filterText = $(e.target).text()
-
     Session.set 'playerListFilter', filterText
-
-    # TESTING THIS TO RE-RENDER SCROLLBAR
-    # $('#player-list-table').mCustomScrollbar
-    #   theme: 'minimal-dark'
-    #   autoHideScrollbar: true
 
   'click .lineup-player-add': (e) ->
     # @ is the data context of the template for the click handler, ie. the player
@@ -141,7 +135,7 @@ Template.contestLineupContainer.events
     # save to Session object
     Session.setJSON 'currentLineup.roster', rosterJSON
 
-  'click .lineup-clear-all-selections': (e) ->
+  'click .lineup-clear-all': (e) ->
     confirmation = confirm('Are you sure you want to clear your lineup?')
 
     # clear

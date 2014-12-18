@@ -26,11 +26,6 @@ Template.playerSuperstarMe.events
       nflPlayerId: @._id
     }
 
-    console.log "You're a Superstar."
-
-    # Call the server-side method to insert into DB
-    # This also adds some properties before addition
-    #
     Meteor.call 'superstarInsert', superstar, (error, result) ->
       # if result # this will be the inserted ID
       #   console.log result
