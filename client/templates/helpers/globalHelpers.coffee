@@ -1,7 +1,7 @@
 # http://www.neo.com/2014/05/23/reactive-forms-in-meteor-js
-window.Events = {}
+window.AllEvents = {}
 
-Events.handleNaturally = (e) ->
+AllEvents.handleNaturally = (e) ->
   e.preventDefault()
   e.stopPropagation()
 

@@ -45,6 +45,12 @@ Router.route '/history', {
       Meteor.subscribe 'entries'
   }
 
+Router.route '/contest/create', {
+  name: 'contestCreateLayout'
+  waitOn: ->
+    Meteor.subscribe 'events'
+}
+
 Router.route '/contest/1234/draftteam', {
   name: 'contestLayout',
   data: ->

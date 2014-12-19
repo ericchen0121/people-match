@@ -1,0 +1,7 @@
+template(name='contestCreate')
+  div(class='col-xs-24')
+    div(class='row')
+      h1(id='contest-title' class='col-xs-16') Create Contest
+    div(class='row')
+      +each events
+        div {{momentify scheduled}} #{home} #{away}
