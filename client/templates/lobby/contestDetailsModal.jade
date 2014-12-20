@@ -22,4 +22,5 @@ template(name="contestDetailsModal")
           div(role="tabpanel" class='tab-pane' id='prizes') #{readablePrizePayouts}
       div(class="modal-footer")
         button(type="button" class="btn btn-default" data-dismiss="modal") Close
-        button(type="button" class="btn btn-primary" href='contest/1234/draftteam') Enter New Lineup
+        button(type="button" class="btn btn-primary")
+          a(href='contest/1234/draftteam') Enter New Lineup

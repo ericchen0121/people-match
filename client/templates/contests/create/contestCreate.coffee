@@ -6,6 +6,10 @@ Template.contestCreate.helpers
   fixtures: ->
     Fixtures.find()
 
+  # for use within fixture data context
+  fixturesEventCount: ->
+    @.events.length
+
 Template.contestCreate.events
   'click .event-options': (e) ->
     fixture = Session.getJSON 'currentFixture' || []
@@ -16,7 +20,11 @@ Template.contestCreate.events
   'click .create-fixture': (e) ->
     fixture = Session.getJSON 'currentFixture'
     Meteor.call 'createFixture', { events: fixture }, (error, result) ->
-      return console.log error.reason if error
+      if error
+        return console.log error.reason
+      else
+        # reset fixture to empty
+        Session.setJSON 'currentFixture', []
 
 Template.contestCreate.rendered = ->
   # Reset to empty

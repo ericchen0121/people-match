@@ -3,9 +3,13 @@ template(name='contestCreate')
     div(class='row')
       h1(id='contest-title' class='col-xs-16') Create Contest
     div(class='row col-xs-8')
+      h3 Events
       +each events
         div(class='event-options') {{momentify scheduled}} #{home} #{away}
       div(class='btn btn-lg btn-default create-fixture') Create Fixture
     div(class='row col-xs-8')
+      h3 Fixtures
       +each fixtures
-        div {{_id}}
+        div
+          span {{ _id }}
+          span {{ fixturesEventCount }} Events
