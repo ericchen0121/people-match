@@ -1,9 +1,14 @@
 Events.before.insert (userId, doc) ->
   # BASED ON SPORTS DATA API, USE BRIDGE OR ADAPER PATTERN HERE
-  # add keys
+  # add
   doc.createdAt = Date.now()
 
-  # rename obj keys
+  # transform
+  # convert time
+  # http://stackoverflow.com/questions/18896470/mongodb-converting-isodate-to-numerical-value
+  doc.startsAt = new Date(doc.scheduled).getTime() # get numeric from ISODate
+
+  # rename
   doc.api = doc.api || {} # API namespace
   doc.api.SDGameId = doc.id
   delete doc.id
@@ -35,4 +40,4 @@ Meteor.methods
         Events.insert(newGame)
 
 # POTENTIALLY MAKE THIS WEB UI OR CRON JOB
-Meteor.call 'fetchGames', 'nfl'
+# Meteor.call 'fetchGames', 'nfl'
