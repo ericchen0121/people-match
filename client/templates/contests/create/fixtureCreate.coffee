@@ -1,4 +1,4 @@
-Template.contestCreate.helpers
+Template.fixtureCreate.helpers
 
   allEvents: ->
     Events.find()
@@ -17,7 +17,7 @@ Template.contestCreate.helpers
   fixturesEvents: ->
     @.events
 
-Template.contestCreate.events
+Template.fixtureCreate.events
   'click .event-options': (e) ->
     fixture = Session.getJSON 'currentFixture' || []
     fixture.push(@)
@@ -33,6 +33,6 @@ Template.contestCreate.events
         # reset fixture to empty
         Session.setJSON 'currentFixture', []
 
-Template.contestCreate.rendered = ->
+Template.fixtureCreate.rendered = ->
   # Reset to empty
   Session.setJSON 'currentFixture', []

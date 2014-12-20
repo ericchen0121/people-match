@@ -45,8 +45,8 @@ Router.route '/history', {
       Meteor.subscribe 'entries'
   }
 
-Router.route '/contest/create', {
-  name: 'contestCreateLayout'
+Router.route '/fixture/create', {
+  name: 'fixtureCreateLayout'
   waitOn: ->
     Meteor.subscribe 'events'
 }
