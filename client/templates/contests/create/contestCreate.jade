@@ -11,7 +11,8 @@ template(name='contestCreate')
       h3 Fixtures
       +each fixtures
         div
-          span {{ momentify startsAt }}
+          span
+            h4 {{ momentify startsAt }}
           span {{ fixturesEventCount }} Events
         +each fixturesEvents
           div {{momentify startsAt}} #{home} #{away}
