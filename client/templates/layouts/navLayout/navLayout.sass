@@ -62,15 +62,16 @@ $progressbar-color: $highlightGreen
 .navbar-nav li
   border-bottom: 4px solid light-gray // for transitioning the border, it needs to exist first!
 
-  &.active
-    border-bottom: 4px solid $highlightGreen
-
-  &:hover
-    transition: all .25s ease-in-out
-    border-bottom: 4px solid $highlightGreen
-
   a
     text-decoration: none
+    padding-bottom: 11px // overwrites the 15px for a -4px to accomodate the hover/active states
+
+    &.active
+      border-bottom: 4px solid $highlightGreen
+
+    &:hover
+      transition: all .25s ease-in-out
+      border-bottom: 4px solid $highlightGreen
 
 .nav .open
   > a,
