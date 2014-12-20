@@ -1,0 +1,14 @@
+template(name='contestCreate')
+  div(class='col-xs-24')
+    div(class='row')
+      div(class='col-xs-8')
+        h3 Fixtures
+        +each fixtures
+          div
+            span
+              h4 {{ momentify startsAt }}: {{ fixturesEventCount }} Events
+          +each fixturesEvents
+            div {{momentify startsAt}} #{away} @ #{home}
+      div(class='col-xs-8')
+        h3 Events
+

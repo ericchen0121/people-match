@@ -51,6 +51,12 @@ Router.route '/fixture/create', {
     Meteor.subscribe 'events'
 }
 
+Router.route '/contest/create', {
+  name: 'contestCreateLayout'
+  waitOn: ->
+    Meteor.subscribe 'fixtures'
+}
+
 Router.route '/contest/1234/draftteam', {
   name: 'contestLayout',
   data: ->
