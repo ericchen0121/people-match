@@ -3,7 +3,7 @@
 $highlightGreen: #7ab800
 $lightGray: #d3d3d3
 
-
+$navHighlightHeight: 4px
 // Progress Bar
 // https://github.com/Multiply/iron-router-progress
 //
@@ -60,27 +60,32 @@ $progressbar-color: $highlightGreen
     height: 50px
 
 .navbar-nav li
-  border-bottom: 4px solid light-gray // for transitioning the border, it needs to exist first!
+  border-bottom: $navHighlightHeight solid light-gray // for transitioning the border, it needs to exist first!
 
   a
     text-decoration: none
-    padding-bottom: 11px // overwrites the 15px for a -4px to accomodate the hover/active states
+    padding-bottom: 15px - $navHighlightHeight // overwrites the 15px for a -4px to accomodate the hover/active states
 
     &.active
-      border-bottom: 4px solid $highlightGreen
+      border-bottom: $navHighlightHeight solid $highlightGreen
 
     &:hover
       transition: all .25s ease-in-out
-      border-bottom: 4px solid $highlightGreen
+      border-bottom: $navHighlightHeight solid $highlightGreen
+
+  .dropdown-menu
+    padding: 5px 0 0
+    margin-top: $navHighlightHeight
+    border-top-width: $navHighlightHeight
+
+    li
+      height: 38px
 
 .nav .open
   > a,
   > a:hover,
   > a:focus
     border-color: $highlightGreen
-
-.dropdown-menu
-  padding: 5px 0 0
 
 #globalContainer
   width: 1170px
