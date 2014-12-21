@@ -5,3 +5,9 @@ Template.contestCreate.helpers
 
   fixturesEventCount: ->
     @.events.length
+
+  fixturesEvents: ->
+    @.events
+
+# Template.contestCreate.rendered = ->
+#   Session.set('')
