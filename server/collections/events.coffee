@@ -22,10 +22,11 @@ Meteor.methods
   getEventsNFL: (week) ->
     games = []
 
-    sched = sd.NFL.nflGetWeeklySchedule week
+    sched = sd.NFLApi.getWeeklySchedule week
     games = sched.games.game
 
     for game in games
+      console.log game
       # check for duplicate
       unless Events.findOne({"api.SDGameId": game.$.id})
         # add sport
