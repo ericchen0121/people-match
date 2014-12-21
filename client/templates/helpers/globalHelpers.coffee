@@ -38,13 +38,19 @@ Template.registerHelper "userImage", (userId) ->
 # Presents a human readable moment.js time
 #
 Template.registerHelper 'momentify', (time, formatName) ->
+    formatted = moment(time)
     # mediumDateTime: e.g. Sun, 1:00PM
+    # naming of: http://msdn.microsoft.com/en-us/library/362btx8f%28v=vs.90%29.aspx
     #
     if formatName == 'mediumDateTime'
-      moment(time).format('ddd, h:mmA')
+      formatted.format('ddd, h:mmA')
     # shortTime: e.g. 1:00PM
     #
     else if formatName == 'shortTime'
-      moment(time).format('h:mmA')
+      formatted.format('h:mmA')
+
+    else if formatName == 'longDateTime'
+      formatted.tz('America/New_York').format('ddd, MMM Do h:mmA z ')
+
     else  # default to MediumDateTime
-      moment(time).format('ddd, h:mmA')
+      formatted.format('ddd, h:mmA')

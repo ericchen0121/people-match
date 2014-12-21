@@ -1,14 +1,25 @@
 template(name='contestCreate')
   div(class='col-xs-24')
-    div(class='row')
-      div(class='col-xs-8')
-        h3 Fixtures
+    div(class='row') Sport
+      div(class='col-xs-24')
+        div(class='col-xs-3') NFL
+        div(class='col-xs-3') CFB
+        div(class='col-xs-3') CBB
+        div(class='col-xs-3') NBA
+        div(class='col-xs-3') NHL
+    div(class='row') Date
+      select(name='fixture-select')
         +each fixtures
-          div
-            span
-              h4 {{ momentify startsAt }}: {{ fixturesEventCount }} Events
-          +each fixturesEvents
-            div {{momentify startsAt}} #{away} @ #{home}
-      div(class='col-xs-8')
-        h3 Events
+          option(value='#{_id}') {{momentify startsAt "longDateTime"}}
+    //- div(class='row')
+    //-   div(class='col-xs-8')
+    //-     h3 Fixtures
+    //-     +each fixtures
+    //-       div
+    //-         span
+    //-           h4 {{ momentify startsAt }}: {{ fixturesEventCount }} Events
+    //-       +each fixturesEvents
+    //-         div {{momentify startsAt}} #{away} @ #{home}
+    //-   div(class='col-xs-8')
+    //-     h3 Events
 

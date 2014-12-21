@@ -68,6 +68,7 @@ mongo@1.0.10-rc.1
 mongo-livedata@1.0.7-rc.1
 mquandalle:jade@0.4.1
 mrt:moment@2.8.1
+mrt:moment-timezone@0.2.1
 msavin:sessioninspector@1.1.0
 multiply:iron-router-progress@1.0.0
 natestrauser:font-awesome@4.2.0
