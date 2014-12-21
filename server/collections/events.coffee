@@ -19,39 +19,11 @@ Events.before.insert (userId, doc) ->
 
 Meteor.methods
 
-#   fetchGames: (sport) ->
-#     url = "http://api.sportsdatallc.org/#{sport}-t1/2014/REG/16/schedule.xml?api_key=u5jw8rhnqtqvr5k8zwgnjm3k"
-#     APIresponse = HTTP.get url, { timeout: 10000 }
-
-#     games = []
-
-#     if APIresponse.statusCode == 200
-#       parser = new xml2js.Parser()
-#       parser.parseString APIresponse.content, (err, result) ->
-#         games = result.games.game
-
-#     for game in games
-#       # ensure its not a duplicate before inserting
-#       unless Events.findOne({"api.SDGameId": game.$.id})
-#         # add sport
-#         newGame = _.extend(game.$, { sport: sport })
-
-#         # insert
-#         Events.insert(newGame)
-
-# # POTENTIALLY MAKE THIS WEB UI OR CRON JOB
-# Meteor.call 'fetchGames', 'nfl'
-
-  getGamesNFL: ->
-    sdNFL = Meteor.npmRequire('sportsdata').NFL
-    sdNFL.init('t', 1, 'u5jw8rhnqtqvr5k8zwgnjm3k', '2014', 'REG')
-
+  getEventsNFL: (week) ->
     games = []
-    sched = Async.runSync (done) ->
-      sdNFL.getWeeklySchedule 16, (error, sched) ->
-        done(null, sched)
 
-    games = sched.result.games.game
+    sched = sd.NFL.nflGetWeeklySchedule week
+    games = sched.games.game
 
     for game in games
       # check for duplicate
@@ -60,5 +32,4 @@ Meteor.methods
         newGame = _.extend(game.$, { sport: 'nfl' })
         Events.insert(newGame)
 
-Meteor.call 'getGamesNFL'
-
+# Meteor.call 'getEventsNFL', 16
