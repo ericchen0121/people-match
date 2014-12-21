@@ -9,11 +9,11 @@ template(name='contestCreate')
         div(class='col-xs-3') NHL
     div(class='row') Date
       div(class='form-section')
-        select(name='contest-fixture-select')
+        select(id='contest-fixture-select')
           +each fixtures
             option(value='#{_id}') {{momentify startsAt "longDateTime"}}
         +each fixtures
-          div(class='contest-fixtures expandable is-expanded')
+          div(class='contest-fixtures expandable #{fixtureSelected}')
             h3
               a Includes #{ fixturesEventCount } #{ sport } Games
             +each fixturesEvents
