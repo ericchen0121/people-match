@@ -74,7 +74,7 @@ Router.route '/contest/1234/draftteam', {
       entryFee: 100
       prizes: 100
       prizeFormat: 'Winner Takes All'
-      starts: new Date()
+      startsAt: new Date()
       salaryCap: 60000
       slate: [
         {

@@ -25,14 +25,14 @@ template(name='navLayout')
               span(class="caret")
             ul(class="dropdown-menu" role="menu")
               li
-                a(href="{{ pathFor 'createFixturesLayout' }} ") Create Fixtures
+                a(href="{{ pathFor 'fixtureCreateLayout' }} ") Create Fixtures
               li
-                a(href="{{pathFor 'createContestsLayout' }}") Create Contests
+                a(href="{{pathFor 'contestCreateLayout' }}") Create Contests
         ul(class="nav navbar-nav navbar-right")
           div(class="login-block")
             if user
-              {{> avatarImage}}
+              +avatarImage
           div(class="login-block")
-            {{> login}}
+            +login
     div(id='globalContainer' class='row')
-      {{> yield}}
+      +yield

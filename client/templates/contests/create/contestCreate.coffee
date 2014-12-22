@@ -23,6 +23,7 @@ Template.contestCreate.helpers
     [{name: 'Free', value: 0}, {name:'$2', value: 2}, {name:'$5', value: 5}, {name:'$10', value: 10}, {name:'$25', value: 25}, {name:'$50', value: 50}, {name:'$100', value: 100}]
 
   availablePrizeStructures: ->
+    # can make this an object like availableEntryFees
     ['Winner takes all', 'Top 3 get prizes', 'Top third gets prizes']
 
 Template.contestCreate.rendered = ->

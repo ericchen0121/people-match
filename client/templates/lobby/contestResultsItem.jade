@@ -5,7 +5,7 @@ template(name="contestResultsItem")
     div(class='col-xs-2 vAlign contestDetailsModal' data-toggle='modal' data-target='#contestDetailsModal' data-name='#{contestName}') #{size}
     div(class='col-xs-2 vAlign contestDetailsModal' data-toggle='modal' data-target='#contestDetailsModal' data-name='#{contestName}') $#{entryFee}
     div(class='col-xs-2 vAlign contestDetailsModal' data-toggle='modal' data-target='#contestDetailsModal' data-name='#{contestName}') $#{prizes}
-    div(class='col-xs-3 vAlign contestDetailsModal' data-toggle='modal' data-target='#contestDetailsModal' data-name='#{contestName}') {{momentify starts}}
+    div(class='col-xs-3 vAlign contestDetailsModal' data-toggle='modal' data-target='#contestDetailsModal' data-name='#{contestName}') {{momentify startsAt}}
     +if guaranteedPrizes
       div(class='col-xs-1 contestIcons vAlign')
         span(class='contestGuaranteedPayIcon') G

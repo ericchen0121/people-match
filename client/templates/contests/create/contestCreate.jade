@@ -55,3 +55,17 @@ template(name='contestCreate')
               select(id='contest-size-select')
                 +each availablePrizeStructures
                   option(value='{{this}}') {{this}}
+    div(class='row')
+      div(class='col-xs-12') Name Your League (optional)
+        div(class='form-section footspace-25')
+          div(class='row')
+            div(class='col-xs-12')
+              form
+                input(type='text' name='leagueName')
+    div(class='row')
+      div(class='col-xs-24')
+        div(class='row')
+            div(class='col-xs-12 col-xs-push-18')
+              div(class='btn btn-lg btn-default create-contest')
+                a(href='#') Create Contest
+
