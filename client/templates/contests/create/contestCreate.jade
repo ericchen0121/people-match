@@ -1,34 +1,57 @@
 template(name='contestCreate')
   div(class='col-xs-24')
-    div(class='row') Sport
-      div(class='form-section')
-        div(class='col-xs-3') NFL
-        div(class='col-xs-3') CFB
-        div(class='col-xs-3') CBB
-        div(class='col-xs-3') NBA
-        div(class='col-xs-3') NHL
-    div(class='row') Date
-      div(class='form-section')
-        select(id='contest-fixture-select')
-          +each fixtures
-            option(value='#{_id}') {{momentify startsAt "longDateTime"}}
-        +each fixtures
-          div(class='contest-fixtures expandable #{fixtureSelected}')
-            h3
-              a Includes #{ fixturesEventCount } #{ sport } Games
-            +each fixturesEvents
-              ul
-                li {{momentify startsAt}} #{away} @ #{home}
-
-    //- div(class='row')
-    //-   div(class='col-xs-8')
-    //-     h3 Fixtures
-    //-     +each fixtures
-    //-       div
-    //-         span
-    //-           h4 {{ momentify startsAt }}: {{ fixturesEventCount }} Events
-    //-       +each fixturesEvents
-    //-         div {{momentify startsAt}} #{away} @ #{home}
-    //-   div(class='col-xs-8')
-    //-     h3 Events
-
+    div(class='row')
+      div(class='col-xs-24') Sport
+        div(class='form-section footspace-25')
+          div(class='row')
+            div(class='col-xs-3') NFL
+            div(class='col-xs-3') CFB
+            div(class='col-xs-3') CBB
+            div(class='col-xs-3') NBA
+            div(class='col-xs-3') NHL
+    div(class='row')
+      div(class='col-xs-24') Date
+        div(class='form-section footspace-25')
+          div(class='row')
+            div(class='col-xs-24')
+              select(id='contest-fixture-select')
+                +each availableFixtures
+                  option(value='#{_id}') {{momentify startsAt "longDateTime"}}
+              +each availableFixtures
+                div(class='contest-fixtures expandable #{fixtureSelected}')
+                  h3
+                    a Includes #{ fixtureEventCount } #{ sport } Games
+                  ul(class='row')
+                    +each fixtureEvents
+                      li(class='col-xs-6') #{away} @ #{home} {{momentify startsAt}}
+    div(class='row')
+      div(class='col-xs-12') Contest Type
+        div(class='form-section footspace-25')
+          div(class='row')
+            span(class='col-xs-12') League
+            span(class='col-xs-12') Head 2 Head
+      div(class='col-xs-12') Opponent
+        div(class='form-section footspace-25')
+          div(class='row')
+              span(class='col-xs-12') Public
+              span(class='col-xs-12') Private - Invites Only
+    div(class='row')
+      div(class='col-xs-12') Size
+        div(class='form-section footspace-25')
+          div(class='row')
+            div(class='col-xs-24')
+              select(id='contest-size-select')
+                +each availableLeagueSizes
+                  option(value='{{this}}') {{this}}
+    div(class='row')
+      div(class='col-xs-12') Entry Fee & Prize Structure
+        div(class='form-section footspace-25')
+          div(class='row')
+            div(class='col-xs-12')
+              select(id='contest-size-select')
+                +each availableEntryFees
+                  option(value='#{ value }') #{ name }
+            div(class='col-xs-12')
+              select(id='contest-size-select')
+                +each availablePrizeStructures
+                  option(value='{{this}}') {{this}}
