@@ -10,7 +10,7 @@ template(name='contestFixtureContainer')
   div(class='col-xs-24')
     div(class='row')
       each fixture.events
-        div(class='col-xs-2') #{away} @ #{home} {{momentify starts 'shortTime'}}
+        div(class='col-xs-2') #{away} @ #{home} {{momentify startsAt 'shortTime'}}
 
 template(name='contestLineupContainer')
   div(class='contestLineupContainer col-xs-24')
