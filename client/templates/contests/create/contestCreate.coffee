@@ -20,7 +20,13 @@ Template.contestCreate.helpers
     [3..20]
 
   availableEntryFees: ->
-    [{name: 'Free', value: 0}, {name:'$2', value: 2}, {name:'$5', value: 5}, {name:'$10', value: 10}, {name:'$25', value: 25}, {name:'$50', value: 50}, {name:'$100', value: 100}]
+    [{name: 'Free', value: 0},
+     {name:'$2', value: 2},
+     {name:'$5', value: 5},
+     {name:'$10', value: 10},
+     {name:'$25', value: 25},
+     {name:'$50', value: 50},
+     {name:'$100', value: 100}]
 
   availablePrizeStructures: ->
     # can make this an object like availableEntryFees
@@ -36,6 +42,7 @@ Template.contestCreate.events
   'click .create-contest': (e) ->
     # TODO: server-side: prize payouts
     # Standardize naming
+    #TODO: should this be using [name=xx] as BP?
     size = +$('select#contest-size-select').val()
     entryFee = +$('select#entry-fee-select').val()
     prizes = (size * entryFee) * .9 # TODO: can do this on server-side
@@ -48,7 +55,7 @@ Template.contestCreate.events
       multipleEntries: true
       multipleEntriesAllowed: 25
       publicStatus: $('input:radio[name=public-status-select]:checked').val()
-      entries: 0
+      entryCount: 0
       entrySize: size
       entryFee: entryFee
       prizes: prizes

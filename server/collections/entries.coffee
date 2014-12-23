@@ -5,7 +5,7 @@ Entries.before.insert (userId, doc) ->
   doc.userId = userId
 
 Meteor.methods
-  # This server method adds a contest entry
-  #
   entryCreate: (entry) ->
+    # update the contest with the number of entries
+    Contests.update(entry.contestId, {$inc: {entryCount: 1 }})
     Entries.insert(entry)

@@ -51,7 +51,7 @@ Template.contestResultsContainer.helpers
   #     guaranteedPrizes: true
   #     multipleEntries: true
   #     multipleEntriesAllowed: 25
-  #     entries: 7
+  #     entryCount: 7
   #     size: 50
   #     entryFee: 100
   #     prizes: 100

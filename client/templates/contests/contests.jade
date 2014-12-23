@@ -4,7 +4,7 @@ template(name='contestTitle')
       h1(id='contest-title' class='col-xs-16') #{contestName}
       h3(id='contest-date' class='col-xs-8') Contest Starts this {{momentify startsAt}}
     div(class='row')
-      h4(id='contest-information') Entries: #{entries} / #{entrySize}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
+      h4(id='contest-information') Entries: #{entryCount} / #{entrySize}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
 
 template(name='contestFixtureContainer')
   div(class='col-xs-24')
