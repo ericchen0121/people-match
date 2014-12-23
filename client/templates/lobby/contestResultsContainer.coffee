@@ -28,137 +28,140 @@ Template.contestResultsContainer.events
 
 Template.contestDetailsModal.helpers
 
+  # TODO: CHANGE this to be pulling from the contest
   readablePrizePayouts: ->
     '1st: $500'
 
 Template.contestResultsContainer.helpers
 
+  # When the contests are in the DB, flip this switch to turn it on!
+  contests: ->
+    Contests.find() # TODO: filter these down to contests in the next few days
+
   # Powers the contest list view of the lobby
   # Returns an Array of contest objects
   #
-  contestsMock: ->
-    contestFake =
-    {
-      contestId: 'abcd123'
-      sport: 'NFL'
-      contestType: 'h2h'
-      contestName: 'NFL - Sweet Sweet Nectar Freeroll'
-      guaranteedPrizes: true
-      multipleEntries: true
-      multipleEntriesAllowed: 25
-      entries: 7
-      size: 50
-      entryFee: 100
-      prizes: 100
-      starts: Date.now()
-      lineupPositions: {
-        'QB': 1
-        'RB': 1
-        'WR': 3
-        'TE': 1
-        'K': 1
-        'DEF': 1
-      },
-      salaryCap: 60000
-      fixture: [
-        {
-          eventId: 1,
-          gameName: 'PIT @ CIN',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ],
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 2,
-          gameName: 'IND @ CLE',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 3,
-          gameName: 'CAR @ NO',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 4,
-          gameName: 'BUF @ DEN',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 5,
-          gameName: 'SF @ OAK',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 6,
-          gameName: 'STL @ WAS',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        }
-      ],
-      prizePayouts:
-        [
-          {1: 1000}, {2: 500}, {3: 200}, {4: 100}, {5: 50}, {'6-10', 10}
-        ]
-    }
-    contestSet = (contestFake for i in [1..10])
-    return contestSet
-
-  # When the contests are in the DB, flip this switch to turn it on!
-  contests: ->
-    Contests.find()
+  # contestsMock: ->
+  #   contestMock =
+  #   {
+  #     contestId: 'abcd123'
+  #     sport: 'NFL'
+  #     contestType: 'h2h'
+  #     contestName: 'NFL - Sweet Sweet Nectar Freeroll'
+  #     guaranteedPrizes: true
+  #     multipleEntries: true
+  #     multipleEntriesAllowed: 25
+  #     entries: 7
+  #     size: 50
+  #     entryFee: 100
+  #     prizes: 100
+  #     starts: Date.now()
+  #     lineupPositions: {
+  #       'QB': 1
+  #       'RB': 1
+  #       'WR': 3
+  #       'TE': 1
+  #       'K': 1
+  #       'DEF': 1
+  #     },
+  #     salaryCap: 60000
+  #     fixture:
+  #       id:
+  #       events: [
+  #       {
+  #         eventId: 1,
+  #         gameName: 'PIT @ CIN',
+  #         startsAt: new Date(),
+  #         teams: [
+  #           {
+  #             teamId: 100
+  #           },
+  #           {
+  #             teamId: 101
+  #           }
+  #         ],
+  #         teams: [
+  #           {
+  #             teamId: 100
+  #           },
+  #           {
+  #             teamId: 101
+  #           }
+  #         ]
+  #       },
+  #       {
+  #         eventId: 2,
+  #         gameName: 'IND @ CLE',
+  #         startsAt: new Date(),
+  #         teams: [
+  #           {
+  #             teamId: 100
+  #           },
+  #           {
+  #             teamId: 101
+  #           }
+  #         ]
+  #       },
+  #       {
+  #         eventId: 3,
+  #         gameName: 'CAR @ NO',
+  #         startsAt: new Date(),
+  #         teams: [
+  #           {
+  #             teamId: 100
+  #           },
+  #           {
+  #             teamId: 101
+  #           }
+  #         ]
+  #       },
+  #       {
+  #         eventId: 4,
+  #         gameName: 'BUF @ DEN',
+  #         startsAt: new Date(),
+  #         teams: [
+  #           {
+  #             teamId: 100
+  #           },
+  #           {
+  #             teamId: 101
+  #           }
+  #         ]
+  #       },
+  #       {
+  #         eventId: 5,
+  #         gameName: 'SF @ OAK',
+  #         startsAt: new Date(),
+  #         teams: [
+  #           {
+  #             teamId: 100
+  #           },
+  #           {
+  #             teamId: 101
+  #           }
+  #         ]
+  #       },
+  #       {
+  #         eventId: 6,
+  #         gameName: 'STL @ WAS',
+  #         startsAt: new Date(),
+  #         teams: [
+  #           {
+  #             teamId: 100
+  #           },
+  #           {
+  #             teamId: 101
+  #           }
+  #         ]
+  #       }
+  #     ],
+  #     prizePayouts:
+  #       [
+  #         {1: 1000}, {2: 500}, {3: 200}, {4: 100}, {5: 50}, {'6-10', 10}
+  #       ]
+  #   }
+  #   contestSet = (contestMock for i in [1..10])
+  #   return contestSet
 
 
 Template.contestResultsContainer.rendered = ->

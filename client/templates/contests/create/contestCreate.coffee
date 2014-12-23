@@ -55,7 +55,7 @@ Template.contestCreate.events
       prizeFormat: $('select#prize-structure-select').val()
       salaryCap: 60000
       fixture:
-        id: $('select#contest-fixture-select').val()
+        _id: $('select#contest-fixture-select').val()
       # prizePayouts: 'test'
     }
 

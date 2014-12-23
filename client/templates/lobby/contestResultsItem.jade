@@ -17,4 +17,5 @@ template(name="contestResultsItem")
     +else
       div(class='col-xs-1')
     div(class='col-xs-2 col-xs-push-2 vAlign')
-      a(class='btn btn-default btn-sm contestEnterButton' href='/contest/1234/draftteam') ENTER
+      button(class='btn btn-default btn-sm contestEnterButton')
+        a(href='/contest/#{_id}/draftteam') ENTER

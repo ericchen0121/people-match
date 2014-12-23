@@ -155,14 +155,14 @@ Template.contestLineupContainer.events
       # @ is a Contest object
       entry = {
         userId: Meteor.userId()
-        contestId: @.contestId # eventually when we have real contests, make @._id
-        fixture: @.fixture
-        contestStarts: @.starts
+        contestId: @._id
+        fixtureId: @.fixture.id
+        contestStarts: @.startsAt
         contestName: @.contestName
         contestSport: @.sport
         contestType: @.contestType
         entryFee: @.entryFee
-        status: 'upcoming'
+        # status: @.status # TODO: Update this value when contest is live
         roster: Session.getJSON 'currentLineup.roster'
       }
 

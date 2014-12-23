@@ -5,8 +5,10 @@ Contests.before.insert (userId, doc) ->
   doc.updateAt = Date.now()
   doc.userId = userId
 
+  # TODO: Consider embed the entire fixture into the Contest Obj
+  # copy over the startsAt time from the fixture to the contest
   doc.startsAt = Fixtures.findOne({ _id: doc.fixture.id }).startsAt
-  # Embed the events into the doc
+  # Embed the fixture events into the doc
   doc.fixture.events = Fixtures.findOne({ _id: doc.fixture.id }).events
 
 
