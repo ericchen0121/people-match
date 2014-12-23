@@ -4,11 +4,21 @@ template(name='contestCreate')
       div(class='col-xs-24') Sport
         div(class='form-section footspace-25')
           div(class='row')
-            div(class='col-xs-3') NFL
-            div(class='col-xs-3') CFB
-            div(class='col-xs-3') CBB
-            div(class='col-xs-3') NBA
-            div(class='col-xs-3') NHL
+            label(class='col-xs-3')
+              input(type='radio' value='NFL' name='sport-select')
+              span NFL
+            label(class='col-xs-3')
+              input(type='radio' value='NBA' name='sport-select')
+              span NBA
+            label(class='col-xs-3')
+              input(type='radio' value='CFB' name='sport-select')
+              span CFB
+            label(class='col-xs-3')
+              input(type='radio' value='CBB' name='sport-select')
+              span CBB
+            label(class='col-xs-3')
+              input(type='radio' value='NHL' name='sport-select')
+              span NHL
     div(class='row')
       div(class='col-xs-24') Date
         div(class='form-section footspace-25')
@@ -28,13 +38,21 @@ template(name='contestCreate')
       div(class='col-xs-12') Contest Type
         div(class='form-section footspace-25')
           div(class='row')
-            span(class='col-xs-12') League
-            span(class='col-xs-12') Head 2 Head
+            label(class='col-xs-12')
+              input(type='radio' value='league' name='contest-type-select')
+              span League
+            label(class='col-xs-12')
+              input(type='radio' value='h2h' name='contest-type-select')
+              span Head to Head
       div(class='col-xs-12') Opponent
         div(class='form-section footspace-25')
           div(class='row')
-              span(class='col-xs-12') Public
-              span(class='col-xs-12') Private - Invites Only
+            label(class='col-xs-12')
+              input(type='radio' value='public' name='public-status-select')
+              span Public
+            label(class='col-xs-12')
+              input(type='radio' value='private' name='public-status-select')
+              span Private - Friends Only
     div(class='row')
       div(class='col-xs-12') Size
         div(class='form-section footspace-25')
@@ -48,11 +66,11 @@ template(name='contestCreate')
         div(class='form-section footspace-25')
           div(class='row')
             div(class='col-xs-12')
-              select(id='contest-size-select')
+              select(id='entry-fee-select')
                 +each availableEntryFees
                   option(value='#{ value }') #{ name }
             div(class='col-xs-12')
-              select(id='contest-size-select')
+              select(id='prize-structure-select')
                 +each availablePrizeStructures
                   option(value='{{this}}') {{this}}
     div(class='row')
@@ -60,8 +78,7 @@ template(name='contestCreate')
         div(class='form-section footspace-25')
           div(class='row')
             div(class='col-xs-12')
-              form
-                input(type='text' name='leagueName')
+              input(type='text' name='league-name')
     div(class='row')
       div(class='col-xs-24')
         div(class='row')

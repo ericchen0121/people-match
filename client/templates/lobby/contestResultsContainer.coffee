@@ -36,7 +36,7 @@ Template.contestResultsContainer.helpers
   # Powers the contest list view of the lobby
   # Returns an Array of contest objects
   #
-  contestsFake: ->
+  contestsMock: ->
     contestFake =
     {
       contestId: 'abcd123'
@@ -60,7 +60,7 @@ Template.contestResultsContainer.helpers
         'DEF': 1
       },
       salaryCap: 60000
-      slate: [
+      fixture: [
         {
           eventId: 1,
           gameName: 'PIT @ CIN',
@@ -157,7 +157,7 @@ Template.contestResultsContainer.helpers
     return contestSet
 
   # When the contests are in the DB, flip this switch to turn it on!
-  contestsReal: ->
+  contests: ->
     Contests.find()
 
 

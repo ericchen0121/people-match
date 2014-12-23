@@ -24,8 +24,11 @@ Router.route '/players/:espn_id/:first_name-:last_name', {
     NflPlayers.findOne({espn_id: parseInt @params.espn_id })
 }
 
-Router.route '/lobby', {name: 'lobbyLayout'}, ->
-  @render 'lobbyLayout'
+Router.route '/lobby', {
+  name: 'lobbyLayout'
+  waitOn: ->
+    Meteor.subscribe 'contests'
+  }
 
 Router.route '/upcoming', {
     name: 'upcomingContestListLayout'
@@ -76,7 +79,7 @@ Router.route '/contest/1234/draftteam', {
       prizeFormat: 'Winner Takes All'
       startsAt: new Date()
       salaryCap: 60000
-      slate: [
+      fixture: [
         {
           eventId: 1,
           gameName: 'PIT @ CIN',

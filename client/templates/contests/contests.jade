@@ -6,10 +6,10 @@ template(name='contestTitle')
     div(class='row')
       h4(id='contest-information') Entries: #{entries} / #{size}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
 
-template(name='contestSlateContainer')
+template(name='contestFixtureContainer')
   div(class='col-xs-24')
     div(class='row')
-      each slate
+      each fixture
         div(class='col-xs-2') #{gameName} {{momentify starts 'shortTime'}}
 
 template(name='contestLineupContainer')
@@ -49,7 +49,7 @@ template(name='contestLineupContainer')
                 div(class='col-xs-6 player-name vAlign') #{full_name}
                 div(class='col-xs-3 player-fppg vAlign') 12.3
                 div(class='col-xs-3 player-played vAlign') 13
-                div(class='col-xs-5 player-slate vAlign') CIN @ PIT
+                div(class='col-xs-5 player-fixture vAlign') CIN @ PIT
                 div(class='col-xs-2 player-salary vAlign') $4,500
                 if inCurrentLineup
                   div(class='col-xs-2 col-xs-push-1 lineup-player-remove vAlign')

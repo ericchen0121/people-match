@@ -156,7 +156,7 @@ Template.contestLineupContainer.events
       entry = {
         userId: Meteor.userId()
         contestId: @.contestId # eventually when we have real contests, make @._id
-        slate: @.slate
+        fixture: @.fixture
         contestStarts: @.starts
         contestName: @.contestName
         contestSport: @.sport
