@@ -1,12 +1,13 @@
 template(name="contestDetailsModal")
-  div(class='modal fade' id='contestDetailsModal')
+  div(class='modal fade' id='contestDetailsModal-#{_id}')
     div(class="modal-dialog")
     div(class="modal-content")
       div(class="modal-header")
         h2(class="modal-title" id="exampleModalLabel") Contest Name
         h6
-          span Entry Fee: #{entryFee}  |
+          span Entry Fee: $#{entryFee}  |
           span Entries: #{entries}  |
+          span Size: #{entrySize}  |
           span Prizes: $#{prizes}  |
           span {{#if guaranteedPrizes }}Guaranteed Payouts {{/if}}
       div(class="modal-body")
@@ -17,7 +18,9 @@ template(name="contestDetailsModal")
             a(data-target='#prizes') Prizes
         div(class='tab-content')
           div(role="tabpanel" class='tab-pane active' id='info')
-            div hello
+            //- attribute of contest obj
+            +each fixture.events
+              div #{away} @ #{home} {{ momentify startsAt }}
           div(role="tabpanel" class='tab-pane' id='prizes') #{readablePrizePayouts}
       div(class="modal-footer")
         button(type="button" class="btn btn-default" data-dismiss="modal") Close
