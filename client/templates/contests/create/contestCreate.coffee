@@ -1,15 +1,20 @@
 Template.contestCreate.helpers
 
   availableFixtures: ->
-    Fixtures.find({}, { sort: { startsAt: 1 } })
+    Fixtures.find(MQH.startsAtAfterNow, MQH.sortedByStartsAt)
 
-  fixtureEventCount: ->
-    @.events.length
-
+  # Basically, this is neccessary as a template helper because we can't
+  # '{{events}}' is a reserved word within helpers. However, we also have
+  # a key on a collection named events. This is unfortunate, but its the most obvious
+  # and generic name for an event (without specifying it as a "game" or "sporting event" or something else)
   # Template.events.helpers is a reserved method
   # TODO: either make this a global helper or change the key 'Fixtures.events'
   fixtureEvents: ->
     @.events
+
+  fixtureEventCount: ->
+    @.events.length
+
 
   fixtureSelected: ->
     selectedId = Session.get('contestFixtureSelection')
@@ -38,6 +43,10 @@ Template.contestCreate.rendered = ->
 Template.contestCreate.events
   'change select#contest-fixture-select': (e) ->
     Session.set 'contestFixtureSelection', $('select#contest-fixture-select option:selected').val()
+
+  # TODO: write the template or helper method that changes the sport based
+  # on the Events obj's sport attribute. Currently it doesn't filter by sport at all.
+  #
 
   'click .create-contest': (e) ->
     # TODO: server-side: prize payouts

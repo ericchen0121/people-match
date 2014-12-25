@@ -1,10 +1,10 @@
 Template.fixtureCreate.helpers
 
   allFutureEvents: ->
-    Events.find({ startsAt: {$gte: Date.now() }})
+    Events.find(MQH.startsAtAfterNow)
 
   fixtures: ->
-    Fixtures.find()
+    Fixtures.find(MQH.startsAtAfterNow, MQH.sortedByStartsAt)
 
   # for use within fixture data context
   fixturesEventCount: ->

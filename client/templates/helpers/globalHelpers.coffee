@@ -1,3 +1,7 @@
+# This file defines global helpers which can be used across templates.
+# https://docs.meteor.com/#/full/template_registerhelper
+
+# Events
 # http://www.neo.com/2014/05/23/reactive-forms-in-meteor-js
 window.AllEvents = {}
 
@@ -5,8 +9,11 @@ AllEvents.handleNaturally = (e) ->
   e.preventDefault()
   e.stopPropagation()
 
-# This file defines global helpers which can be used across templates.
-# https://docs.meteor.com/#/full/template_registerhelper
+# Mongo Queries
+# Mongo Query Helpers (MQH)
+window.MQH = {}
+MQH.startsAtAfterNow = { startsAt: {$gte: Date.now() }}
+MQH.sortedByStartsAt = { sort: { startsAt: 1 }}
 
 # Provides an easy ESPN src image given a data context
 # Required: `espn_id` and `espn_size` attributes
