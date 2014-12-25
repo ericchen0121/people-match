@@ -1,7 +1,7 @@
 Template.fixtureCreate.helpers
 
-  allEvents: ->
-    Events.find()
+  allFutureEvents: ->
+    Events.find({ startsAt: {$gte: Date.now() }})
 
   fixtures: ->
     Fixtures.find()

@@ -33,4 +33,4 @@ Meteor.methods
         newGame = _.extend(game.$, { sport: 'nfl' })
         Events.insert(newGame)
 
-# Meteor.call 'getEventsNFL', 16
+# Meteor.call 'getEventsNFL', 17

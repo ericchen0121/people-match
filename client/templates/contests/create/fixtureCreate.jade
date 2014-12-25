@@ -7,7 +7,7 @@ template(name='fixtureCreate')
     div(class='row')
       div(class='col-xs-8')
         h3 Events
-        +each allEvents
+        +each allFutureEvents
           div(class='event-options') {{momentify startsAt}} #{home} #{away}
         div(class='btn btn-lg btn-default create-fixture') Create Fixture
       div(class='col-xs-8')
