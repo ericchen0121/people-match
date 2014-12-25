@@ -14,6 +14,8 @@ AllEvents.handleNaturally = (e) ->
 window.MQH = {}
 MQH.startsInFuture = { startsAt: {$gte: Date.now() }}
 MQH.startsInFutureSortAsc = { sort: { startsAt: 1 }}
+MQH.contestStartsInFuture = { contestStarts: {$gte: Date.now() }} # TODO: consider consolidating the attribute to startsAt
+
 
 # Provides an easy ESPN src image given a data context
 # Required: `espn_id` and `espn_size` attributes
