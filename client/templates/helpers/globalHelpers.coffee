@@ -12,8 +12,8 @@ AllEvents.handleNaturally = (e) ->
 # Mongo Queries
 # Mongo Query Helpers (MQH)
 window.MQH = {}
-MQH.startsAtAfterNow = { startsAt: {$gte: Date.now() }}
-MQH.sortedByStartsAt = { sort: { startsAt: 1 }}
+MQH.startsInFuture = { startsAt: {$gte: Date.now() }}
+MQH.startsInFutureSortAsc = { sort: { startsAt: 1 }}
 
 # Provides an easy ESPN src image given a data context
 # Required: `espn_id` and `espn_size` attributes

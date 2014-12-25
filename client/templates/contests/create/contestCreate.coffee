@@ -1,7 +1,7 @@
 Template.contestCreate.helpers
 
   availableFixtures: ->
-    Fixtures.find(MQH.startsAtAfterNow, MQH.sortedByStartsAt)
+    Fixtures.find(MQH.startsInFuture, MQH.startsInFutureSortAsc)
 
   # Basically, this is neccessary as a template helper because we can't
   # '{{events}}' is a reserved word within helpers. However, we also have
