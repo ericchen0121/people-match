@@ -87,9 +87,9 @@ Template.contestLineupContainer.helpers
     console.log 'team filter is', team_filter
     switch position_filter
       when 'All'
-        NflPlayers.find({ position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
+        NflPlayers.find({ team_id: {$in: team_filter }, position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
       when 'K' # edge case when filter won't match position name
-        NflPlayers.find({ position: 'PK' })
+        NflPlayers.find({ team_id: {$in: team_filter }, position: 'PK' })
       # when 'D'
          # NflPlayers.find({ position: 'DEF' })
       else
@@ -227,3 +227,7 @@ Template.contestFixtureContainer.events
   'click .event-filter': (e) ->
     Session.setJSON "playerListFilter.teams", [@.home, @.away]
 
+# Template.contestFixtureContainer.rendered = ->
+#   @$('#event-filters-container').mCustomScrollbar
+#     theme: 'minimal-dark'
+#     axis: "x"

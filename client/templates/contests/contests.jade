@@ -7,7 +7,7 @@ template(name='contestTitle')
       h4(id='contest-information') Entries: #{entryCount} / #{entrySize}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
 
 template(name='contestFixtureContainer')
-  div(class='col-xs-24')
+  div(class='col-xs-24' id='event-filters-container')
     div(class='row event-filters size-13 pointer')
       each fixture.events
         div(class='col-xs-2 event-filter-tab')
