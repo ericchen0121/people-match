@@ -8,16 +8,17 @@ template(name='contestTitle')
 
 template(name='contestFixtureContainer')
   div(class='col-xs-24')
-    div(class='row')
+    div(class='row event-filters size-13 pointer')
       each fixture.events
-        div(class='col-xs-2') #{away} @ #{home} {{momentify startsAt 'shortTime'}}
+        div(class='col-xs-2 event-filter-tab')
+          div(class='event-filter') #{away} @ #{home} {{momentify startsAt 'shortTime'}}
 
 template(name='contestLineupContainer')
   div(class='contestLineupContainer col-xs-24')
     div(class='row')
       div(class='col-xs-13')
         h2 Available Players
-        div(class='row player-list-table-position-filters size-13 pointer')
+        div(class='row position-filters size-13 pointer')
           div(class='col-xs-2 position-filter-tab')
             div(class='position-filter vAlign') All
           div(class='col-xs-2 position-filter-tab')

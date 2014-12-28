@@ -59,7 +59,8 @@ validateEntry = () ->
 
   return valid
 
-# Returns a list of all players in positions that can score
+# Returns a list of all players in positions based on the Contest's Fixture Events
+# QUESTION: Why does this calculate three times?
 availableTeams = (contest) ->
   # events is an array of Event objects
   events = contest.fixture.events
@@ -80,8 +81,11 @@ availableTeams = (contest) ->
 Template.contestLineupContainer.helpers
 
   availablePlayers: ->
-    filter = Session.get 'playerListFilter'
-    switch filter
+    position_filter = Session.getJSON 'playerListFilter.position'
+    selectedTeamFilter = Session.getJSON "playerListFilter.teams"
+    team_filter = if selectedTeamFilter? then selectedTeamFilter else availableTeams(@)
+    console.log 'team filter is', team_filter
+    switch position_filter
       when 'All'
         NflPlayers.find({ position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
       when 'K' # edge case when filter won't match position name
@@ -91,7 +95,7 @@ Template.contestLineupContainer.helpers
       else
         # http://stackoverflow.com/questions/19019822/how-do-i-access-one-sibling-variable-in-a-meteor-template-helper-when-i-am-in
         # assumed data context (ie. what @ is) is the Contest
-        NflPlayers.find({ position: filter, team_id: {$in: availableTeams(@) }})
+        NflPlayers.find({ position: position_filter, team_id: {$in: team_filter }})
 
   salaryRemaining: ->
     60000
@@ -135,7 +139,7 @@ Template.contestLineupContainer.helpers
 Template.contestLineupContainer.events
   'click .position-filter': (e) ->
     filterText = $(e.target).text()
-    Session.set 'playerListFilter', filterText
+    Session.setJSON 'playerListFilter.position', filterText
 
   'click .lineup-player-add': (e) ->
     # @ is the data context of the template for the click handler, ie. the player
@@ -193,7 +197,9 @@ Template.contestLineupContainer.events
       alert('Please select a player for each position!')
 
 Template.contestLineupContainer.rendered = ->
-  Session.set 'playerListFilter', 'QB'
+  # Defaults
+  Session.setJSON 'playerListFilter.position', 'QB'
+  Session.getJSON "playerListFilter.teams", undefined
 
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
   #
@@ -216,3 +222,8 @@ Template.contestLineupContainer.rendered = ->
   }
 
   Session.setJSON('currentLineup.roster', roster)
+
+Template.contestFixtureContainer.events
+  'click .event-filter': (e) ->
+    Session.setJSON "playerListFilter.teams", [@.home, @.away]
+
