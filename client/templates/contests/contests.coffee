@@ -59,12 +59,28 @@ validateEntry = () ->
 
   return valid
 
+# Returns a list of all players in positions that can score
+availableTeams = (contest) ->
+  # events is an array of Event objects
+  events = contest.fixture.events
+  teams = []
+  for event in events
+    # provide a if/switch statement here in case schema of Event changes per sport
+    if event.sport == 'nfl'
+    # Assumes the Event object includes two teams like this: { ..
+    # "home" : "JAC",
+    # "away" : "TEN",
+    # ..}
+      teams.push event.home
+      teams.push event.away
+
+  console.log 'the available teams in this contest are: ', teams
+  return teams
+
 Template.contestLineupContainer.helpers
 
-  # Returns a list of all players in positions that can score
   availablePlayers: ->
     filter = Session.get 'playerListFilter'
-    console.log 'this is the available player filter', filter
     switch filter
       when 'All'
         NflPlayers.find({ position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
@@ -73,7 +89,9 @@ Template.contestLineupContainer.helpers
       # when 'D'
          # NflPlayers.find({ position: 'DEF' })
       else
-        NflPlayers.find({ position: filter })
+        # http://stackoverflow.com/questions/19019822/how-do-i-access-one-sibling-variable-in-a-meteor-template-helper-when-i-am-in
+        # assumed data context (ie. what @ is) is the Contest
+        NflPlayers.find({ position: filter, team_id: {$in: availableTeams(@) }})
 
   salaryRemaining: ->
     60000
@@ -175,7 +193,7 @@ Template.contestLineupContainer.events
       alert('Please select a player for each position!')
 
 Template.contestLineupContainer.rendered = ->
-  Session.set 'playerListFilter', 'All'
+  Session.set 'playerListFilter', 'QB'
 
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
   #
