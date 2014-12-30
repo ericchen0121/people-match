@@ -63,7 +63,13 @@ Router.route '/contest/create', {
 Router.route '/contest/:contestId/draftteam', {
   name: 'contestLayout',
   data: ->
-    Contests.findOne({_id: @params.contestId})
+    Contests.findOne({ _id: @params.contestId })
+}
+
+Router.route '/entry/:entryId', {
+  name: 'entryLayout',
+  data: ->
+    Entries.findOne({ _id: @params.entryId })
 }
 
 # TODO: do I need to make a upsert or insert :before the route is hit?

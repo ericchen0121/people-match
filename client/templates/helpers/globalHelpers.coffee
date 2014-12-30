@@ -18,7 +18,7 @@ MQH.contestStartsInFuture = { contestStarts: {$gte: Date.now() }} # TODO: consid
 
 
 # Provides an easy ESPN src image given a data context
-# Required: `espn_id` and `espn_size` attributes
+# Required: pass in `espn_id` and `espn_size` attributes in the obj
 # Usage like so in a template: <img class='playerPhoto' src={{ playerImageESPN espn_id = this.espn_id espn_size = 'micro'}}>
 
 Template.registerHelper 'playerImageESPN', (obj) ->
