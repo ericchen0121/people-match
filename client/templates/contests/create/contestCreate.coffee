@@ -1,7 +1,8 @@
 Template.contestCreate.helpers
 
   availableFixtures: ->
-    Fixtures.find(MQH.startsInFuture, MQH.startsInFutureSortAsc)
+    # Fixtures.find(MQH.startsInFuture, MQH.startsInFutureSortAsc)
+    Fixtures.find() # temporary until we can grab new POSTseason events
 
   # Basically, this is neccessary as a template helper because we can't
   # '{{events}}' is a reserved word within helpers. However, we also have

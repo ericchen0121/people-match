@@ -34,4 +34,4 @@ Meteor.methods
     NflPlayers.update({team: "St. Louis Rams"}, {$set: {"team_id": "STL"}}, {multi: true})
     NflPlayers.update({team: "Seattle Seahawks"}, {$set: {"team_id": "SEA"}}, {multi: true})
 
-# Meteor.call("addTeamIdsToPlayers")
+Meteor.call("addTeamIdsToPlayers")

@@ -126,6 +126,8 @@ Template.contestLineupContainer.helpers
 
     return rosterArray
 
+  # Declarative way to find if player is in curent lineup, could use jQuery way
+  # of simply switching a class on the player as this is fairly processor intensive.
   inCurrentLineup: ->
     rosterJSON = Session.getJSON 'currentLineup.roster'
     result = false # assume player is not in lineup, until proven true
@@ -135,6 +137,18 @@ Template.contestLineupContainer.helpers
         return false # to break out of $.each loop
 
     return result
+
+  # Returns the Event Name
+  # Template calls like this to pass parent data context: {{currentGame ..}}
+  # If you want to bold the current Game, you may need to break this up into a different helper
+  currentGame: (parentDataContext) ->
+    # @ is an Athlete / NflPlayer object (NflPlayer to be deprecated)
+    # parentDataContext should be a Contest obj
+    # Checks if player 
+    for event in parentDataContext.fixture.events
+      if @.team_id == event.home || @.team_id == event.away
+        return event.away + " vs. " + event.home
+
 
 Template.contestLineupContainer.events
   'click .position-filter': (e) ->
@@ -228,6 +242,7 @@ Template.contestLineupContainer.rendered = ->
 
 Template.contestFixtureContainer.events
   'click .event-filter': (e) ->
+    # @ is a Contest obj
     Session.setJSON "playerListFilter.teams", [@.home, @.away]
 
 # Template.contestFixtureContainer.rendered = ->
