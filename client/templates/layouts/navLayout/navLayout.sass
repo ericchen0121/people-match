@@ -2,6 +2,8 @@
 // Color Variables
 $highlightGreen: #7ab800
 $lightGray: #d3d3d3
+$navbarDarkGray: #2d2d2d
+$navbarLightGrayText: #dfdfdf
 
 $navHighlightHeight: 4px
 // Progress Bar
@@ -45,6 +47,12 @@ $progressbar-color: $highlightGreen
 .container-fluid
   padding: 0
 
+.navbar-header, .navbar-collapse
+  background-color: $navbarDarkGray
+
+.nav li
+  background-color: $navbarDarkGray
+
 .navbar-nav
   .login-block
     display: inline-block
@@ -59,19 +67,25 @@ $progressbar-color: $highlightGreen
     width: 45px
     height: 50px
 
-.navbar-nav li
-  border-bottom: $navHighlightHeight solid light-gray // for transitioning the border, it needs to exist first!
+.navbar-default .navbar-nav li
+  border-bottom: $navHighlightHeight solid $navbarDarkGray // for transitioning the border, it needs to exist first!
 
   a
     text-decoration: none
     padding-bottom: 15px - $navHighlightHeight // overwrites the 15px for a -4px to accomodate the hover/active states
+    color: $navbarLightGrayText
+    font-weight: 200
 
     &.active
       border-bottom: $navHighlightHeight solid $highlightGreen
+      color: $navbarLightGrayText
+      font-weight: 200
 
     &:hover
       transition: all .25s ease-in-out
       border-bottom: $navHighlightHeight solid $highlightGreen
+      color: $navbarLightGrayText
+      font-weight: 200
 
   .dropdown-menu
     padding: 5px 0 0
