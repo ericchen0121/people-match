@@ -59,7 +59,7 @@ template(name='contestCreate')
           div(class='row')
             div(class='col-xs-24')
               select(id='contest-size-select')
-                +each availableLeagueSizes
+                each availableLeagueSizes
                   option(value='{{this}}') {{this}}
     div(class='row')
       div(class='col-xs-12') Entry Fee & Prize Structure

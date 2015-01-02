@@ -1,6 +1,5 @@
 Events.before.insert (userId, doc) ->
   # BASED ON SPORTS DATA API, USE BRIDGE OR ADAPER PATTERN HERE
-  # add
   doc.createdAt = Date.now()
 
   # transform
@@ -33,4 +32,4 @@ Meteor.methods
         newGame = _.extend(game.$, { sport: 'nfl' })
         Events.insert(newGame)
 
-Meteor.call 'getEventsNFL', 1
+# Meteor.call 'getEventsNFL', 1

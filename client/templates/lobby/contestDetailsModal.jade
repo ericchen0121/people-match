@@ -3,12 +3,12 @@ template(name="contestDetailsModal")
     div(class="modal-dialog")
     div(class="modal-content")
       div(class="modal-header")
-        h2(class="modal-title" id="exampleModalLabel") Contest Name
+        h2(class="modal-title" id="exampleModalLabel") #{ contestName }
         h6
-          span Entry Fee: $#{entryFee}  |
-          span Entries: #{entryCount}  |
-          span Size: #{entrySize}  |
-          span Prizes: $#{prizes}  |
+          span Entry Fee: $#{ entryFee }  |
+          span Entries: #{ entryCount }  |
+          span Size: #{ entrySize }  |
+          span Prizes: $#{ prizes }  |
           span {{#if guaranteedPrizes }}Guaranteed Payouts {{/if}}
       div(class="modal-body")
         ul(class="nav nav-tabs")
@@ -20,9 +20,9 @@ template(name="contestDetailsModal")
           div(role="tabpanel" class='tab-pane active' id='info')
             //- attribute of contest obj
             +each fixture.events
-              div #{away} @ #{home} {{ momentify startsAt }}
-          div(role="tabpanel" class='tab-pane' id='prizes') #{readablePrizePayouts}
+              div #{ away } @ #{ home } {{ momentify startsAt }}
+          div(role="tabpanel" class='tab-pane' id='prizes') #{ readablePrizePayouts }
       div(class="modal-footer")
-        button(type="button" class="btn btn-default" data-dismiss="modal") Close
-        button(type="button" class="btn btn-primary")
-          a(href='/contest/#{_id}/draftteam') Enter New Lineup
+        button(type="button" class="btn btn-primary" data-dismiss="modal") Close
+        button(type="button" class="btn btn-default")
+          a(href='/contest/#{ _id }/draftteam') Enter

@@ -1,8 +1,7 @@
 Template.contestCreate.helpers
 
   availableFixtures: ->
-    # Fixtures.find(MQH.startsInFuture, MQH.startsInFutureSortAsc)
-    Fixtures.find() # temporary until we can grab new POSTseason events
+    Fixtures.find(MQH.startsInFuture, MQH.startsInFutureSortAsc)
 
   # Basically, this is neccessary as a template helper because we can't
   # '{{events}}' is a reserved word within helpers. However, we also have
@@ -25,6 +24,9 @@ Template.contestCreate.helpers
   availableLeagueSizes: ->
     [3..20]
 
+  adminLeagueSizes: ->
+    [10..1000]  
+    
   availableEntryFees: ->
     [{name: 'Free', value: 0},
      {name:'$2', value: 2},

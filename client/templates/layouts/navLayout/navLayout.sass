@@ -68,24 +68,24 @@ $progressbar-color: $highlightGreen
     height: 50px
 
 .navbar-default .navbar-nav li
-  border-bottom: $navHighlightHeight solid $navbarDarkGray // for transitioning the border, it needs to exist first!
 
   a
     text-decoration: none
-    padding-bottom: 15px - $navHighlightHeight // overwrites the 15px for a -4px to accomodate the hover/active states
     color: $navbarLightGrayText
     font-weight: 200
 
     &.active
-      border-bottom: $navHighlightHeight solid $highlightGreen
+      border-top: $navHighlightHeight solid $highlightGreen
       color: $navbarLightGrayText
       font-weight: 200
+      padding-top: 15px - $navHighlightHeight
 
     &:hover
-      transition: all .25s ease-in-out
-      border-bottom: $navHighlightHeight solid $highlightGreen
+      border-top: $navHighlightHeight solid $highlightGreen
       color: $navbarLightGrayText
       font-weight: 200
+      transition: all .25s ease-in-out
+      padding-top: 15px - $navHighlightHeight
 
   .dropdown-menu
     padding: 5px 0 0
@@ -94,6 +94,9 @@ $progressbar-color: $highlightGreen
 
     li
       height: 38px
+
+    a:hover
+      background-color: $navbarDarkGray
 
 .nav .open
   > a,
