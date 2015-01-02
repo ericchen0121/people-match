@@ -1,5 +1,6 @@
 Meteor.methods
 
+# TODO: Can create a global key/value and call all of them in one loop here.
   addTeamIdsToPlayers: ->
     NflPlayers.update({team: "Tennessee Titans"}, {$set: {"team_id": "TEN"}}, {multi: true})
     NflPlayers.update({team: "Buffalo Bills"}, {$set: {"team_id": "BUF"}}, {multi: true})
@@ -34,4 +35,4 @@ Meteor.methods
     NflPlayers.update({team: "St. Louis Rams"}, {$set: {"team_id": "STL"}}, {multi: true})
     NflPlayers.update({team: "Seattle Seahawks"}, {$set: {"team_id": "SEA"}}, {multi: true})
 
-Meteor.call("addTeamIdsToPlayers")
+# Meteor.call("addTeamIdsToPlayers")

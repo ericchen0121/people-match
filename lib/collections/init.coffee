@@ -21,6 +21,7 @@
 @Entries = new Mongo.Collection('entries')
 @Lineups = new Mongo.Collection('lineups')
 
+@EventStats = new Mongo.Collection('eventStats')
 
 # Implement a Search across Nfl Players
 # https://github.com/matteodem/meteor-easy-search/wiki/Getting-started
