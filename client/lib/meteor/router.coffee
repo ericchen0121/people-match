@@ -1,3 +1,6 @@
+# uses meteorhacks/subs-manager
+subs = new SubsManager()
+
 Router.configure
 
   layoutTemplate: 'navLayout',
@@ -27,37 +30,37 @@ Router.route '/players/:espn_id/:first_name-:last_name', {
 Router.route '/lobby', {
   name: 'lobbyLayout'
   waitOn: ->
-    Meteor.subscribe 'contests'
+    subs.subscribe 'contests'
   }
 
 Router.route '/upcoming', {
     name: 'upcomingContestListLayout'
     waitOn: ->
-      Meteor.subscribe 'entries'
+      subs.subscribe 'entries'
   }
 
 Router.route '/live', {
     name: 'liveContestListLayout'
     waitOn: ->
-      Meteor.subscribe 'entries'
+      subs.subscribe 'entries'
   }
 
 Router.route '/history', {
     name: 'historyContestListLayout'
     waitOn: ->
-      Meteor.subscribe 'entries'
+      subs.subscribe 'entries'
   }
 
 Router.route '/fixture/create', {
   name: 'fixtureCreateLayout'
   waitOn: ->
-    Meteor.subscribe 'events'
+    subs.subscribe 'events'
 }
 
 Router.route '/contest/create', {
   name: 'contestCreateLayout'
   waitOn: ->
-    Meteor.subscribe 'fixtures'
+    subs.subscribe 'fixtures'
 }
 
 # TODO: Change this to ._id to take advantage of it finding the _id property on the contest automatically

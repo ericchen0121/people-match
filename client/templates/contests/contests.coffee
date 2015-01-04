@@ -216,7 +216,7 @@ Template.contestLineupContainer.events
 Template.contestLineupContainer.rendered = ->
   # Defaults
   Session.setJSON 'playerListFilter.position', 'QB'
-  Session.getJSON "playerListFilter.teams", undefined
+  Session.setJSON "playerListFilter.teams", undefined
 
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
   #
