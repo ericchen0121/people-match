@@ -60,16 +60,17 @@ Router.route '/contest/create', {
     Meteor.subscribe 'fixtures'
 }
 
+# TODO: Change this to ._id to take advantage of it finding the _id property on the contest automatically
 Router.route '/contest/:contestId/draftteam', {
   name: 'contestLayout',
   data: ->
     Contests.findOne({ _id: @params.contestId })
 }
 
-Router.route '/entry/:entryId', {
+Router.route '/entry/:_id', {
   name: 'entryLayout',
   data: ->
-    Entries.findOne({ _id: @params.entryId })
+    Entries.findOne({ _id: @params._id })
 }
 
 # TODO: do I need to make a upsert or insert :before the route is hit?

@@ -16,6 +16,7 @@ Meteor.methods
 			updatedAt: Date.now() # TODO: if already exists, update this, is it necessary?
 		})
  
+ # Schedule as an Array for populating EventStats DB
 nfl_2014_schedule = [[1,"GB","SEA"]
 [1,"NO","ATL"]
 [1,"NE","MIA"]

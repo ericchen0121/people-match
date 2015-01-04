@@ -57,6 +57,7 @@ Meteor.methods
           jersey_number: player.jersey_number
           position: player.position
           team: roster.team.market + ' ' + roster.team.name
+          team_id: roster.team.id
           api: {
             SDPlayerId: player.id
           }
@@ -64,7 +65,7 @@ Meteor.methods
 
         console.log 'new player', player.name_full, ' ', roster.team.market
 
-# how Meteor.setInterval works, the code is cracked!
+# Meteor.setInterval works, the code is cracked!
 # http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
 # 
 i = 0
@@ -76,5 +77,5 @@ callback = ->
   else
     Meteor.call 'getAthletesNFL', nfl_team_ids[i]
     i++
-
+# TURN THIS ON TO SEE THE MAGIC
 # timer = Meteor.setInterval callback, 5000

@@ -42,7 +42,7 @@ Template.registerHelper "userImage", (userId) ->
     return user.profile.picture
   else
     # TO CHANGE or Add default photo url
-    return "images/withOutPhoto.png"
+    return "images/icon.jpg"
 
 # Presents a human readable moment.js time
 #
