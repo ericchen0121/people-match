@@ -11,7 +11,6 @@
   <li class='nflPlayer'>
     {{> playerCardPhoto}}
     {{> playerCardInfoStyled}}
-    {{> playerSuperstarMe}}
   </li>
 </template>
 
@@ -40,12 +39,13 @@
     <div>
       <span class='cardJerseyNumber {{team}}'>{{jersey_number}}</span>
       <span class='cardPosition {{team}}'>{{position}}</span>
+      <span class='leftSpace-20'>{{> playerSuperstarMe}}</span>
     </div>
   </div>
 </template>
 
 <template name='playerSuperstarMe'>
-  <div class ='superstar'>Superstar</div>
+  <i class="superstar fa fa-bookmark pointer"></i>
 </template>
 
 <!-- TEMPLATES FOR SIMPLIFIED VIEWS -->

@@ -1,15 +1,24 @@
-# http://www.neo.com/2014/05/23/reactive-forms-in-meteor-js
-window.Events = {}
-
-Events.handleNaturally = (e) ->
-  e.preventDefault()
-  e.stopPropagation()
-
 # This file defines global helpers which can be used across templates.
 # https://docs.meteor.com/#/full/template_registerhelper
 
+# Events
+# http://www.neo.com/2014/05/23/reactive-forms-in-meteor-js
+window.AllEvents = {}
+
+AllEvents.handleNaturally = (e) ->
+  e.preventDefault()
+  e.stopPropagation()
+
+# Mongo Queries
+# Mongo Query Helpers (MQH)
+window.MQH = {}
+MQH.startsInFuture = { startsAt: {$gte: Date.now() }}
+MQH.startsInFutureSortAsc = { sort: { startsAt: 1 }}
+MQH.contestStartsInFuture = { contestStarts: {$gte: Date.now() }} # TODO: consider consolidating the attribute to startsAt
+
+
 # Provides an easy ESPN src image given a data context
-# Required: `espn_id` and `espn_size` attributes
+# Required: pass in `espn_id` and `espn_size` attributes in the obj
 # Usage like so in a template: <img class='playerPhoto' src={{ playerImageESPN espn_id = this.espn_id espn_size = 'micro'}}>
 
 Template.registerHelper 'playerImageESPN', (obj) ->
@@ -33,18 +42,24 @@ Template.registerHelper "userImage", (userId) ->
     return user.profile.picture
   else
     # TO CHANGE or Add default photo url
-    return "images/withOutPhoto.png"
+    return "images/icon.jpg"
 
 # Presents a human readable moment.js time
 #
 Template.registerHelper 'momentify', (time, formatName) ->
+    formatted = moment(time)
     # mediumDateTime: e.g. Sun, 1:00PM
+    # naming of: http://msdn.microsoft.com/en-us/library/362btx8f%28v=vs.90%29.aspx
     #
     if formatName == 'mediumDateTime'
-      moment(time).format('ddd, h:mmA')
+      formatted.format('ddd, h:mmA')
     # shortTime: e.g. 1:00PM
     #
     else if formatName == 'shortTime'
-      moment(time).format('h:mmA')
+      formatted.format('h:mmA')
+
+    else if formatName == 'longDateTime'
+      formatted.tz('America/New_York').format('ddd, MMM Do h:mmA z ')
+
     else  # default to MediumDateTime
-      moment(time).format('ddd, h:mmA')
+      formatted.format('ddd, h:mmA')

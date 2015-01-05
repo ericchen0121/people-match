@@ -1,15 +1,72 @@
-.player-list-item
-  height: 45px
+$highlightGreen: #7ab800
+$highlightRed: #e22b00
+$lightGrey: #d6d6d6
+$lighterGrey: #ebebeb
+$lightestGrey: #fafafa
+$mediumGrey: #9b9c9d
+$lightBlue: #3f96cb
 
-#player-list-table
+.contestLineupContainer
+  .player-list-item
+    height: 45px
+
+    &.selected-player
+      background-color: #f2fbe9
+
+  .position-filters
+    height: 40px
+    background-color: $lighterGrey
+
+  .position-filter-tab
+    height: 100%
+    color: $lightBlue
+    border-right: 1px white solid
+
+#event-filters-container
+  // width: 900px
+
+  .event-filter-tab
+    height: 100%
+    border: 1px solid white
+
+    &:hover
+      border: 1px solid $highlightGreen
+
+  .event-filter
+    height: 60px
+
+.fa-plus-circle
+    color: $highlightGreen
+    font-size: 22px
+
+.fa-minus-circle
+  color: $highlightRed
+  font-size: 22px
+
+.player-list-table-header
+  height: 30px
+  background-color: $lightestGrey
+  border-bottom: 1px solid $lightGrey
+
+  .player-list-table-title
+    font-weight: bold
+
+#player-list-table-container
   height: 600px
 
-.lineup-player-selection
-  height: 60px
+#player-list-table
+  border: 1px solid $lightGrey
+
+  .row
+    border-bottom: 1px solid $lightGrey
 
 .lineup-table
-  border: 1px solid grey
-  border-radius: 15px
+  border: 1px solid $lightGrey
+  border-radius: 5px
+  padding: 8px
+
+  .row
+    border-bottom: 1px solid $lightGrey
 
   .player-photo
     height: 50px
@@ -18,3 +75,24 @@
   .player-photo-anonymous
     height: 50px
     width: 50px
+
+  .lineup-player-selection,
+  .lineup-player-enter
+    height: 60px
+
+  .lineup-player-selection.player-empty
+    background-color: $lightestGrey
+
+  .lineup-empty-name
+    color: $lightGrey
+
+  .lineup-player-position
+    color: $mediumGrey
+
+  .lineup-clear-all
+    height: 45px
+    color: $highlightRed
+
+  .btn.btn-default.btn-lg.contest-entry
+    padding: 12px 30px
+

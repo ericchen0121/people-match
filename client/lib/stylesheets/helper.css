@@ -70,13 +70,32 @@
     letter-spacing: .5px
 }
 
+.size-11 {
+    font-size: 11px;
+    letter-spacing: .5px
+}
+
 .size-12 {
     font-size: 12px;
     letter-spacing: .5px
 }
 
+.size-13 {
+    font-size: 13px;
+    letter-spacing: .5px
+}
+
+.size-14 {
+    font-size: 14px;
+    letter-spacing: .5px
+}
+
 .size-16 {
     font-size: 16px
+}
+
+.size-22 {
+    font-size: 22px
 }
 
 /*BORDERS*/

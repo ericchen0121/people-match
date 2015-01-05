@@ -1,7 +1,7 @@
 Template.historyContestListContainer.helpers
 
   historyEntriesCount : ->
-    Entries.find({ status: 'history' }).count()
+    Entries.find().count()
 
   historyContests: ->
-    Entries.find({ status: 'history' })
+    Entries.find()

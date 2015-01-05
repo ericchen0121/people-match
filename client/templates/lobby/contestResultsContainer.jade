@@ -11,8 +11,9 @@ template(name="contestResultsContainer")
           div(class='col-xs-4') Starts (ET)
         div(class='row')
           div(id='contestResultsTable' class='col-xs-24')
-            div(class='row contestResultsBlankItem')
-            +each contestsFake
-              +contestResultsItem
-              +contestDetailsModal
+            div(class='contestScrollableContainer')
+              div(class='row contestResultsBlankItem')
+              +each contests
+                +contestResultsItem
+                +contestDetailsModal
               //- TODO: Refactor out this modal duplication

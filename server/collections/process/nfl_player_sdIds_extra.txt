@@ -1,0 +1,230 @@
+## NEW PLAYERS - NEED ESPN IMAGE IDS - 223
+  -FIND OUT WHICH OF THESE ARE OFFENSIVE PLAYERS...
+## OLD PLAYERS - NOT MATCHING ANY CURRENT ROSTER - 576
+  - FIGURE OUT IF DEACTIVATE THEIR STATUS
+  - FIGURE OUT IF NAME DIDNT" MATCH. IE. Steve Smith Sr.
+
+new player Marcel Jones Baltimore
+new player Konrad Reuland Baltimore
+new player J.J. Unga Baltimore
+new player Will Rackley Baltimore
+new player Rashaan Melvin Baltimore
+new player Nate Menkin Baltimore
+new player Alec Lemon Baltimore
+new player Steven Means Baltimore
+new player Danny Gorrer Baltimore
+new player Zachary Orr Baltimore
+new player Rod Sweeting   Buffalo
+new player Brandon Smith   Buffalo
+new player Kiko Alonso   Buffalo
+new player Jeremy Towns   Buffalo
+new player D.J. Morrell   Buffalo
+new player Tobais Palmer   Buffalo
+new player Ike Igbinosun   Buffalo
+new player Jimmy Gaines   Buffalo
+new player Emmett Cleary   Cincinnati
+new player Kevin Brock   Cincinnati
+new player Garrett Hartley   Cleveland
+new player Charley Hughlett   Cleveland
+new player Tyler Thigpen   Cleveland
+new player Scott Solomon   Cleveland
+new player Glenn Winston   Cleveland
+new player Keith Pough   Cleveland
+new player Chris Kirksey   Cleveland
+new player Nick McDonald   Cleveland
+new player Tommy Streeter   Jacksonville
+new player Peyton Thompson   Jacksonville
+new player Tony Washington   Jacksonville
+new player J.T. Thomas III   Jacksonville
+new player Eric Kettani   Jacksonville
+new player Matt Daniels   Jacksonville
+new player Nic Jacobs   Jacksonville
+new player Marcus Whitfield   Jacksonville
+new player Tyler Shatley   Jacksonville
+new player Craig Loston   Jacksonville
+new player Aaron Colvin   Jacksonville
+new player Khairi Fortt   Jacksonville
+new player Cody Booth   Jacksonville
+new player Stephen Morris   Jacksonville
+new player Michael Flacco   Jacksonville
+new player Charles James   Houston
+new player Ryan Pickett   Houston
+new player Ben Malena   Houston
+new player Andre Hal   Houston
+new player Thad Lewis   Houston
+new player Jon Weeks   Houston
+new player Jace Davis   Houston
+new player Louis Nix   Houston
+new player Ricky Stanzi   Houston
+new player David Quessenberry   Houston
+new player Jamon Meredith   Tennessee
+new player Chaz Sutton   Tennessee
+new player Daquan Jones   Tennessee
+new player Jordan Palmer   Tennessee
+new player Alex Tanney   Tennessee
+new player Brett Brackett   Tennessee
+new player Nate Askew   Tennessee
+new player Rico Richardson   Tennessee
+new player William Poehls   Tennessee
+new player Yamin Smallwood   Tennessee
+new player Nate Isles   Seattle
+new player Allen Bradford   Seattle
+new player Dion Bailey   Seattle
+new player Garrett Scott   Seattle
+new player Michael Zimmer   Seattle
+new player Eric Pinkins   Seattle
+new player Douglas McNeil   Seattle
+new player RaShaun Allen   Seattle
+new player Matt Conrath   St. Louis
+new player Will Herring   St. Louis
+new player Mark Barron   St. Louis
+new player Benny Cunningham   St. Louis
+new player Steven Baker   St. Louis
+new player Devon Wylie   St. Louis
+new player Chas Alecxih   San Diego
+new player Chris Davis   San Diego
+new player Branden Oliver   San Diego
+new player Bryce Quigley   San Diego
+new player Craig Watts   San Diego
+new player Greg Ducre   San Diego
+new player Richard Crawford   San Diego
+new player Mat McBriar   San Diego
+new player Adrian Phillips   San Diego
+new player Deji Olatoye   Kansas City
+new player Brandon Barden   Kansas City
+new player Frankie Hammond   Kansas City
+new player Adam Schiltz   Kansas City
+new player JoJo Dickson   Kansas City
+new player Hebron Fangupo   Kansas City
+new player Curtis Feigt   Kansas City
+new player Dan Kistler   Oakland
+new player Ras-I Dowling   Oakland
+new player Evan Wilson   Oakland
+new player Jansen Watson   Oakland
+new player TJ Carrie   Oakland
+new player Spencer Hadley   Oakland
+new player George Atkinson   Oakland
+new player Vernon Kearney   Oakland
+new player Michael Palardy   Oakland
+new player Kenny Shaw   Oakland
+new player Josh Brent   Dallas
+new player Demarcus Lawrence   Dallas
+new player Reggie Dunn   Dallas
+new player Chris Whaley   Dallas
+new player Amobi Okoye   Dallas
+new player Micah Pellerin   Dallas
+new player L.P. LaDouceur   Dallas
+new player Robert Steeples   Dallas
+new player Chris Boyd   Dallas
+new player Travis Harvey   Arizona
+new player Marion Grice   Arizona
+new player Ryan Spadola   Arizona
+new player Jeff Mathews   Arizona
+new player Drew Butler   Arizona
+new player Kerwynn Williams   Arizona
+new player Ryan Lindley   Arizona
+new player Ross Weaver   Arizona
+new player Ted Ginn   Arizona
+new player Julian Vandervelde   Philadelphia
+new player Josh Andrews   Philadelphia
+new player Victor Hampton   New York
+new player Juron Criner   New York
+new player Adam Gettis   New York
+new player Chris Harper   New York
+new player James Davidson   New York
+new player Jerome Cunningham   New York
+new player Chase Dixon   Washington
+new player Courtney Bridget Jr.   Washington
+new player Tevita Stevens   Washington
+new player Je'Ron Hamm   Washington
+new player Robert Thomas   Washington
+new player Kenny Okoro   Washington
+new player Jerry Rice Jr.   Washington
+new player Trevardo Williams   Washington
+new player Rishaw Johnson   Washington
+new player Jackson Jeffcoat   Washington
+new player Rashad Ross   Washington
+new player Thomas Wolfe   Washington
+new player Robert Griffin III   Washington
+new player Conor Boffeli   Chicago
+new player Jason Weaver   Chicago
+new player B.J. Cunningham   Chicago
+new player Brian de la Puente   Chicago
+new player Jonathan Bostic   Chicago
+new player Jonathan Brown   Chicago
+new player Jay Feely   Chicago
+new player Jeremy Cain   Chicago
+new player Blake Annen   Chicago
+new player Jamil Merrell   Chicago
+new player Jacob Maxwell   Chicago
+new player Rashad Lawrence   Chicago
+new player Al Louis-Jean   Chicago
+new player George Winn   Detroit
+new player Skye Dawson   Detroit
+new player Trevin Wade   Detroit
+new player Jerrell Harris   Detroit
+new player Jeremy Vujnovic   Green Bay
+new player Devonta Glover-Wright   Green Bay
+new player Justin Renfrow   Green Bay
+new player Jean Fanor   Green Bay
+new player J.C. Tretter   Green Bay
+new player Antone Exum Jr.   Minnesota
+new player Ryan Otten   Minnesota
+new player Pat Devlin   Minnesota
+new player Lawrence Sidbury   Tampa Bay
+new player Evan Rodriguez   Tampa Bay
+new player Shelton Johnson   Tampa Bay
+new player George Uko   Tampa Bay
+new player Josh Allen   Tampa Bay
+new player Jeremiah Warren   Tampa Bay
+new player Jacob Schum   Tampa Bay
+new player Derrius Brooks   Tampa Bay
+new player Solomon Patton   Tampa Bay
+new player Matthew Masifilo   Tampa Bay
+new player Matt Patchan   Tampa Bay
+new player Ka'Lial Glaud   Tampa Bay
+new player Mike Kafka   Tampa Bay
+new player Cameron Brate   Tampa Bay
+new player Ronnie Wingo   Atlanta
+new player Ricky Havili-Heimuli   Atlanta
+new player Adam Replogle   Atlanta
+new player Brandan Bishop   Atlanta
+new player Jonathan Scott   Atlanta
+new player Charles Godfrey   Atlanta
+new player Jerome Smith   Atlanta
+new player Jordan Mabin   Atlanta
+new player Nate Stupar   Atlanta
+new player Freddie Martino   Atlanta
+new player Roman Harper   Carolina
+new player Kevin Reddick   Carolina
+new player Kevin Greene   Carolina
+new player Robert Lester   Carolina
+new player Melvin White   Carolina
+new player James Dockery   Carolina
+new player Graham Gano   Carolina
+new player Brad Nortman   Carolina
+new player Kimario McFadden   Carolina
+new player Tre Boston   Carolina
+new player Colin Jones   Carolina
+new player Bene Benwikere   Carolina
+new player Carrington Byndom   Carolina
+new player Thomas DeCoud   Carolina
+new player Dustin Hopkins   New Orleans
+new player Brandon Coleman   New Orleans
+new player Stanley Jean-Baptiste   New Orleans
+new player Edwin Baker   New Orleans
+new player Seantavius Jones   New Orleans
+new player Lawrence Virgil   New Orleans
+new player Tavon Rooks   New Orleans
+new player L.J. McCray   San Francisco
+new player Fouimalo Fonoti   San Francisco
+new player Alex Boone   San Francisco
+new player Cornellius Carradine   San Francisco
+new player Xavier Grimble   San Francisco
+new player Trey Millard   San Francisco
+new player Keith Reaser   San Francisco
+new player Cameron Fuller   San Francisco
+new player Steve Johnson   San Francisco
+new player Kyle Nelson   San Francisco
+new player Lance Lewis   San Francisco
+new player Brandon Thomas   San Francisco

@@ -15,12 +15,13 @@
 @CommentariesUsers = new Mongo.Collection('commentariesUsers') # necessary to see all users' Names and Pictures
 
 @Contests = new Mongo.Collection('contests')
-@Slates = new Mongo.Collection('slates')
+@Fixtures = new Mongo.Collection('fixtures')
 @Events = new Mongo.Collection('events')
 
 @Entries = new Mongo.Collection('entries')
 @Lineups = new Mongo.Collection('lineups')
 
+@EventStats = new Mongo.Collection('eventStats')
 
 # Implement a Search across Nfl Players
 # https://github.com/matteodem/meteor-easy-search/wiki/Getting-started

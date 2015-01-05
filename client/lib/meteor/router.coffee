@@ -1,3 +1,6 @@
+# uses meteorhacks/subs-manager
+subs = new SubsManager()
+
 Router.configure
 
   layoutTemplate: 'navLayout',
@@ -24,140 +27,53 @@ Router.route '/players/:espn_id/:first_name-:last_name', {
     NflPlayers.findOne({espn_id: parseInt @params.espn_id })
 }
 
-Router.route '/lobby', {name: 'lobbyLayout'}, ->
-  @render 'lobbyLayout'
+Router.route '/lobby', {
+  name: 'lobbyLayout'
+  waitOn: ->
+    subs.subscribe 'contests'
+  }
 
 Router.route '/upcoming', {
     name: 'upcomingContestListLayout'
     waitOn: ->
-      Meteor.subscribe 'entries'
+      subs.subscribe 'entries'
   }
 
 Router.route '/live', {
     name: 'liveContestListLayout'
     waitOn: ->
-      Meteor.subscribe 'entries'
+      subs.subscribe 'entries'
   }
 
 Router.route '/history', {
     name: 'historyContestListLayout'
     waitOn: ->
-      Meteor.subscribe 'entries'
+      subs.subscribe 'entries'
   }
 
-Router.route '/contest/1234/draftteam', {
+Router.route '/fixture/create', {
+  name: 'fixtureCreateLayout'
+  waitOn: ->
+    subs.subscribe 'events'
+}
+
+Router.route '/contest/create', {
+  name: 'contestCreateLayout'
+  waitOn: ->
+    subs.subscribe 'fixtures'
+}
+
+# TODO: Change this to ._id to take advantage of it finding the _id property on the contest automatically
+Router.route '/contest/:contestId/draftteam', {
   name: 'contestLayout',
   data: ->
-    # Contests.findOne({_id: @params.contestId})
-    {
-      contestId: 'abcd123'
-      sport: 'NFL'
-      contestType: 'h2h'
-      contestName: 'NFL - Sweet Sweet Nectar Freeroll'
-      guaranteedPrizes: true
-      multipleEntries: true
-      multipleEntriesAllowed: 25
-      entries: 7
-      size: 50
-      entryFee: 100
-      prizes: 100
-      prizeFormat: 'Winner Takes All'
-      starts: new Date()
-      salaryCap: 60000
-      slate: [
-        {
-          eventId: 1,
-          gameName: 'PIT @ CIN',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ],
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 2,
-          gameName: 'IND @ CLE',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 3,
-          gameName: 'CAR @ NO',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 4,
-          gameName: 'BUF @ DEN',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 5,
-          gameName: 'SF @ OAK',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        },
-        {
-          eventId: 6,
-          gameName: 'STL @ WAS',
-          startsAt: new Date(),
-          teams: [
-            {
-              teamId: 100
-            },
-            {
-              teamId: 101
-            }
-          ]
-        }
-      ],
+    Contests.findOne({ _id: @params.contestId })
+}
 
-      prizePayouts:
-        [
-          {1: 1000}, {2: 500}, {3: 200}, {4: 100}, {5: 50}, {'6-10', 10}
-        ]
-    }
+Router.route '/entry/:_id', {
+  name: 'entryLayout',
+  data: ->
+    Entries.findOne({ _id: @params._id })
 }
 
 # TODO: do I need to make a upsert or insert :before the route is hit?

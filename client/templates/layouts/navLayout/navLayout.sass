@@ -1,12 +1,11 @@
 /* CSS declarations go here */
 // Color Variables
-$purple: purple
-$red: red
-$green: green
 $highlightGreen: #7ab800
-$lightGray : #d3d3d3
+$lightGray: #d3d3d3
+$navbarDarkGray: #2d2d2d
+$navbarLightGrayText: #dfdfdf
 
-
+$navHighlightHeight: 4px
 // Progress Bar
 // https://github.com/Multiply/iron-router-progress
 //
@@ -48,6 +47,12 @@ $progressbar-color: $highlightGreen
 .container-fluid
   padding: 0
 
+.navbar-header, .navbar-collapse
+  background-color: $navbarDarkGray
+
+.nav li
+  background-color: $navbarDarkGray
+
 .navbar-nav
   .login-block
     display: inline-block
@@ -58,18 +63,40 @@ $progressbar-color: $highlightGreen
 .navbar-brand
   padding: 0 15px
 
-.navbar-nav li
-  border-bottom: 4px solid light-gray // for transitioning the border, it needs to exist first!
+  img
+    width: 45px
+    height: 50px
 
-  &.active
-    border-bottom: 4px solid $highlightGreen
-
-  &:hover
-    transition: all .25s ease-in-out
-    border-bottom: 4px solid $highlightGreen
+.navbar-default .navbar-nav li
 
   a
     text-decoration: none
+    color: $navbarLightGrayText
+    font-weight: 200
+
+    &.active
+      border-top: $navHighlightHeight solid $highlightGreen
+      color: $navbarLightGrayText
+      font-weight: 200
+      padding-top: 15px - $navHighlightHeight
+
+    &:hover
+      border-top: $navHighlightHeight solid $highlightGreen
+      color: $navbarLightGrayText
+      font-weight: 200
+      transition: all .25s ease-in-out
+      padding-top: 15px - $navHighlightHeight
+
+  .dropdown-menu
+    padding: 5px 0 0
+    margin-top: $navHighlightHeight
+    border-top-width: $navHighlightHeight
+
+    li
+      height: 38px
+
+    a:hover
+      background-color: $navbarDarkGray
 
 .nav .open
   > a,
@@ -77,9 +104,7 @@ $progressbar-color: $highlightGreen
   > a:focus
     border-color: $highlightGreen
 
-.dropdown-menu
-  padding: 5px 0 0
-
 #globalContainer
+  padding-top: 50px
   width: 1170px
   margin: auto

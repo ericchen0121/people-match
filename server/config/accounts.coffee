@@ -13,3 +13,7 @@ Accounts.onCreateUser( (options, user) ->
     user.profile = options.profile
   return user
 )
+
+# Make Admin
+ericUserId = "JQL5piSC28N6WrNTN"
+Roles.addUsersToRoles(ericUserId, ['admin'])
