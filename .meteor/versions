@@ -6,7 +6,7 @@ accounts-twitter@1.0.3-rc.1
 accounts-ui@1.1.4-rc.1
 accounts-ui-unstyled@1.1.5-rc.1
 alanning:roles@1.2.13
-aldeed:autoform@4.2.1
+aldeed:autoform@4.2.2
 aldeed:collection2@2.3.0
 aldeed:simple-schema@1.1.0
 application-configuration@1.0.4-rc.1
@@ -81,7 +81,7 @@ mrt:moment@2.8.1
 mrt:moment-timezone@0.2.1
 msavin:sessioninspector@1.1.0
 multiply:iron-router-progress@1.0.0
-natestrauser:font-awesome@4.2.0
+natestrauser:font-awesome@4.2.0_1
 nemo64:bootstrap@3.3.0_1
 nemo64:bootstrap-data@3.3.0_1
 npm-bcrypt@0.7.7

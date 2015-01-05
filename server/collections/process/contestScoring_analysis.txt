@@ -1,10 +1,3 @@
-Meteor.methods
-	
-	# Find contest
-	# get Fixtures
-	# 
-	convertEventStatsToContestStats: ->
-		# EventStats.findOne()
 
 # VICTIV Offense Scoring
 # Non-Passing TD6
