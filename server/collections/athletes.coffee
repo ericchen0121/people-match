@@ -77,5 +77,6 @@ callback = ->
   else
     Meteor.call 'getAthletesNFL', nfl_team_ids[i]
     i++
+    
 # TURN THIS ON TO SEE THE MAGIC
 # timer = Meteor.setInterval callback, 5000

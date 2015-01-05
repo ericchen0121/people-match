@@ -17,7 +17,7 @@ Meteor.methods
 		})
  
  # Schedule as an Array for populating EventStats DB
-nfl_2014_schedule = [[1,"GB","SEA"]
+nfl_2014_REG_schedule = [[1,"GB","SEA"]
 [1,"NO","ATL"]
 [1,"NE","MIA"]
 [1,"JAC","PHI"]
@@ -274,18 +274,20 @@ nfl_2014_schedule = [[1,"GB","SEA"]
 [17,"STL","SEA"]
 [17,"CIN","PIT"]]
 
+nfl_2014_PST_schedule = [[1, 'BAL', 'PIT']]
+
 # how Meteor.setInterval works, the code is cracked!
 # http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
 # 
 i = 0 
-len = nfl_2014_schedule.length
+len = nfl_2014_PST_schedule.length
 
 callback = ->
 	if i is len
 		Meteor.clearInterval timer
 	else
-	  console.log nfl_2014_schedule[i][0], nfl_2014_schedule[i][1], nfl_2014_schedule[i][2]
-	  Meteor.call 'getEventStatsNFL', nfl_2014_schedule[i][0], nfl_2014_schedule[i][1], nfl_2014_schedule[i][2]
+	  console.log nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
+	  Meteor.call 'getEventStatsNFL', nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
 	  i++
 # TURN THIS ON TO SEE THE MAGIC
 # timer = Meteor.setInterval callback, 1000
