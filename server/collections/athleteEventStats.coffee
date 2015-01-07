@@ -7,7 +7,7 @@ Meteor.methods
 
 	convertContestStatToAthleteEventStats: ->
 
-		eventStat = EventStats.findOne({_id: "CvqPgB7oboD7m62v7"}) # TO CHANGE
+		eventStat = EventStats.findOne({_id: "CvqPgB7oboD7m62v7"}) # TO PASS IN AS AN ARGUMENT
 		newStat = {}
 
 		newStat.api = eventStat.api # API id for event
@@ -17,6 +17,8 @@ Meteor.methods
 		# TODO: add game id: '2014_PST_1_BAL_PIT'
 
 		# for each of the two teams in the array
+		# POTENTIALLY ADD EVENT ID
+		#
 		for team in eventStat.team
 			newStat.teamId = team.id
 
@@ -86,5 +88,5 @@ Meteor.methods
 			newStat.stats.type = 'defense'
 			AthleteEventStats.insert(newStat)
 
-Meteor.call 'convertContestStatToAthleteEventStats'
+# Meteor.call 'convertContestStatToAthleteEventStats'
 
