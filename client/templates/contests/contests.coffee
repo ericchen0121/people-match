@@ -59,7 +59,7 @@ validateEntry = () ->
 
   return valid
 
-# Returns a list of all players in positions based on the Contest's Fixture Events
+# Returns a list of all teams based on the Contest's Fixture Events
 # QUESTION: Why does this calculate three times?
 availableTeams = (contest) ->
   # events is an array of Event objects
@@ -67,7 +67,7 @@ availableTeams = (contest) ->
   teams = []
   for event in events
     # provide a if/switch statement here in case schema of Event changes per sport
-    if event.sport == 'nfl'
+    if event.sport == 'NFL'
     # Assumes the Event object includes two teams like this: { ..
     # "home" : "JAC",
     # "away" : "TEN",
@@ -75,7 +75,6 @@ availableTeams = (contest) ->
       teams.push event.home
       teams.push event.away
 
-  console.log 'the available teams in this contest are: ', teams
   return teams
 
 Template.contestLineupContainer.helpers
@@ -84,7 +83,6 @@ Template.contestLineupContainer.helpers
     position_filter = Session.getJSON 'playerListFilter.position'
     selectedTeamFilter = Session.getJSON "playerListFilter.teams"
     team_filter = if selectedTeamFilter? then selectedTeamFilter else availableTeams(@)
-    console.log 'team filter is', team_filter
     switch position_filter
       when 'All'
         NflPlayers.find({ team_id: {$in: team_filter }, position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
@@ -242,8 +240,10 @@ Template.contestLineupContainer.rendered = ->
 
 Template.contestFixtureContainer.events
   'click .event-filter': (e) ->
-    # @ is a Contest obj
-    Session.setJSON "playerListFilter.teams", [@.home, @.away]
+    if e.target.innerHTML == 'All' # this depends on the DOM, a bit fragile
+      Session.setJSON "playerListFilter.teams", undefined
+    else # @ is a Contest obj
+      Session.setJSON "playerListFilter.teams", [@.home, @.away]
 
 # Template.contestFixtureContainer.rendered = ->
 #   @$('#event-filters-container').mCustomScrollbar

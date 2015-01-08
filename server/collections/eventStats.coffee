@@ -274,6 +274,7 @@ nfl_2014_REG_schedule = [[1,"GB","SEA"]
 [17,"STL","SEA"]
 [17,"CIN","PIT"]]
 
+# To access a new statistic, add the game to the Array below and ensure that the variable name is the same as in the Function below.
 nfl_2014_PST_schedule = [[1, 'BAL', 'PIT']]
 
 # how Meteor.setInterval works, the code is cracked!

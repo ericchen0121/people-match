@@ -9,6 +9,8 @@ template(name='contestTitle')
 template(name='contestFixtureContainer')
   div(class='col-xs-24' id='event-filters-container')
     div(class='row event-filters size-13 pointer')
+      div(class='col-xs-2 event-filter-tab')
+          div(class='event-filter') All
       each fixture.events
         div(class='col-xs-2 event-filter-tab')
           div(class='event-filter') #{away} @ #{home} {{momentify startsAt 'shortTime'}}

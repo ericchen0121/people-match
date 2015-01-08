@@ -27,9 +27,9 @@ Meteor.methods
     for game in games
       console.log game
       # check for duplicate
-      unless Events.findOne({"api.SDGameId": game.$.id})
+      unless Events.findOne({"api.SDGameId": game.id})
         # add sport
-        newGame = _.extend(game.$, { sport: 'nfl' })
-        Events.insert(newGame)
+        game.sport = 'NFL'
+        Events.insert(game)
 
-# Meteor.call 'getEventsNFL', 1
+# Meteor.call 'getEventsNFL', 2
