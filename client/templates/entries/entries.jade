@@ -33,3 +33,7 @@ template(name='entryView')
           img(src="{{playerImageESPN espn_id = K.espn_id espn_size = 'micro'}}")
           div #{ K.full_name }
 
+template(name='entryViewNames')
+    with roster
+      div #{QB.last_name}, #{RB1.last_name}, #{RB2.last_name}, #{WR1.last_name}, #{WR2.last_name}, #{WR3.last_name}, #{FLEX1.last_name}, #{FLEX2.last_name}, #{TE.last_name}, #{K.last_name}
+   
