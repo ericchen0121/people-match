@@ -205,7 +205,7 @@ Template.contestLineupContainer.events
       Meteor.call 'entryCreate', entry, (error, result) ->
         return console.log error.reason if error
         # 'result' is the created entry _id
-        Router.go 'entryLayout', { entryId: result }
+        Router.go 'entryLayout', { _id: result }
     else
       alert('Please select a player for each position!')
 
