@@ -149,9 +149,12 @@ Template.contestLineupContainer.helpers
 
 
 Template.contestLineupContainer.events
-  'click .position-filter': (e) ->
-    filterText = $(e.target).text()
-    Session.setJSON 'playerListFilter.position', filterText
+  # http://www.kirupa.com/html5/handling_events_for_many_elements.htm
+  'click .position-filters': (e) ->
+    if e.target != e.currentTarget
+      filterText = $(e.target).closest('.position-filter-tab').find('.position-filter').text()
+      Session.setJSON 'playerListFilter.position', filterText
+    e.stopPropagation()
 
   'click .lineup-player-add': (e) ->
     # @ is the data context of the template for the click handler, ie. the player
