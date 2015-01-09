@@ -190,7 +190,24 @@ Template.contestLineupContainer.events
 
     if validateEntry()
       # @ is a Contest object
+
+      # TODO: THIS IS PROBABLY BEST AS A REACTIVE JOIN INSTEAD OF MANUALLY MAINTAINING A COPY
+      # If removing, also remove from the entry.api.SDPlayerIds below
+      # This doesn't work because not all athletes have SDPlayerIds
+      rosterJSON = Session.getJSON 'currentLineup.roster'
+      rosterIds = []
+
+      $.each rosterJSON, (k, v) =>
+        console.log v
+        if v.api
+          rosterIds.push( v.api.SDPlayerId )
+
+      console.log rosterIds #
+
       entry = {
+        api: {
+          SDPlayerIds: rosterIds
+        }
         userId: Meteor.userId()
         contestId: @._id
         fixtureId: @.fixture.id
@@ -200,7 +217,7 @@ Template.contestLineupContainer.events
         contestType: @.contestType
         entryFee: @.entryFee
         # status: @.status # TODO: Update this value when contest is live
-        roster: Session.getJSON 'currentLineup.roster'
+        roster: rosterJSON
       }
 
       console.log 'we will enter this contest entry', entry

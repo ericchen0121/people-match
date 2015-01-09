@@ -42,13 +42,16 @@ Meteor.methods
     players = roster.team.player
 
     for player in players
-      # if player exists already
+      # if player exists already, 
+      # TODO: This leaves a number of players without matching names WITHOUT api.SDPlayerIds
       existingPlayer = NflPlayers.findOne({ "full_name": player.name_full })
       if existingPlayer
         # add the id to the player
         NflPlayers.update({ espn_id: existingPlayer.espn_id },
           { $set: { api: { SDPlayerId: player.id }} }
         )
+
+        console.log 'added SD player Id to ', player.name_full
       else # if player doesn't exist, insert him
         NflPlayers.insert({
           full_name: player.name_full
