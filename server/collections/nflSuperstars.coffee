@@ -1,6 +1,7 @@
-NflSuperstars.before.insert (userId, doc) ->
-  doc.createdAt = Date.now()
-  doc.userId = userId
+# ARUNODA WAS HERE
+# NflSuperstars.before.insert (userId, doc) ->
+#   doc.createdAt = Date.now()
+#   doc.userId = userId
 
 Meteor.methods
 

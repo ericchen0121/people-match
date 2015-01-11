@@ -4,6 +4,7 @@
 # but you can also edit it by hand.
 
 meteor-platform
+meteorhacks:aggregate
 coffeescript
 jquery
 accounts-ui
@@ -35,14 +36,10 @@ natestrauser:font-awesome
 meteorhacks:npm
 
 mrt:moment-timezone
-aldeed:autoform
-aldeed:collection2
 alanning:roles
-
 
 npm-container
 houston:admin
 meteorhacks:kadira
 meteorhacks:subs-manager
-peerlibrary:peerdb
-peerlibrary:related
+

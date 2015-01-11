@@ -4,19 +4,36 @@ Meteor.methods
 	getEventStatsNFL: (week, awayTeam, homeTeam) =>
 		eventStats = @sd.NFLApi.getGameStats week, awayTeam, homeTeam
 
-		EventStats.insert({
-			api: {
-				SDGameId: eventStats.game.id
-			}
-			status: eventStats.game.status
-			home: eventStats.game.home
-			away: eventStats.game.away
-			team: eventStats.game.team
-			createdAt: Date.now()
-			updatedAt: Date.now() # TODO: if already exists, update this, is it necessary?
-		})
+		EventStats.update({ 
+				api: { SDGameId: eventStats.game.id }
+			},
+			{ 
+				$set: 
+					api: 
+						SDGameId: eventStats.game.id
+					status: eventStats.game.status
+					team: eventStats.game.team
+					updatedAt: Date.now()
+					home: eventStats.game.home
+					away: eventStats.game.away
+					createdAt: Date.now()
+			},
+			{ upsert: true }
+		)
+
+		# EventStats.insert({
+		# 	api: {
+		# 		SDGameId: eventStats.game.id
+		# 	}
+		# 	status: eventStats.game.status
+		# 	home: eventStats.game.home
+		# 	away: eventStats.game.away
+		# 	team: eventStats.game.team
+		# 	createdAt: Date.now()
+		# 	updatedAt: Date.now() # TODO: if already exists, update this, is it necessary?
+		# })
  
- # Schedule as an Array for populating EventStats DB
+ # Schedule as an Array for populating EventStats DB 
 nfl_2014_REG_schedule = [[1,"GB","SEA"]
 [1,"NO","ATL"]
 [1,"NE","MIA"]
@@ -275,13 +292,14 @@ nfl_2014_REG_schedule = [[1,"GB","SEA"]
 [17,"CIN","PIT"]]
 
 # To access a new statistic, add the game to the Array below and ensure that the variable name is the same as in the Function below.
-nfl_2014_PST_schedule = [[1, 'BAL', 'PIT']]
+nfl_2014_PST_schedule = [[2, 'IND', 'DEN']]
 
 # how Meteor.setInterval works, the code is cracked!
 # http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
 # 
 i = 0 
 len = nfl_2014_PST_schedule.length
+console.log 'EVENT STATS', len
 
 callback = ->
 	if i is len
@@ -291,4 +309,4 @@ callback = ->
 	  Meteor.call 'getEventStatsNFL', nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
 	  i++
 # TURN THIS ON TO SEE THE MAGIC
-# timer = Meteor.setInterval callback, 1000
+timer = Meteor.setInterval callback, 1000
