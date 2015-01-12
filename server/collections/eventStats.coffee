@@ -1,6 +1,9 @@
 Meteor.methods
 	
 	# populates EventStats Collection from SD Api
+	# This method continously overwrites the EventStat document with new information
+	# during the course of the game. 
+	# 
 	getEventStatsNFL: (week, awayTeam, homeTeam) =>
 		eventStats = @sd.NFLApi.getGameStats week, awayTeam, homeTeam
 
@@ -20,18 +23,6 @@ Meteor.methods
 			},
 			{ upsert: true }
 		)
-
-		# EventStats.insert({
-		# 	api: {
-		# 		SDGameId: eventStats.game.id
-		# 	}
-		# 	status: eventStats.game.status
-		# 	home: eventStats.game.home
-		# 	away: eventStats.game.away
-		# 	team: eventStats.game.team
-		# 	createdAt: Date.now()
-		# 	updatedAt: Date.now() # TODO: if already exists, update this, is it necessary?
-		# })
  
  # Schedule as an Array for populating EventStats DB 
 nfl_2014_REG_schedule = [[1,"GB","SEA"]
@@ -299,14 +290,14 @@ nfl_2014_PST_schedule = [[2, 'IND', 'DEN']]
 # 
 i = 0 
 len = nfl_2014_PST_schedule.length
-console.log 'EVENT STATS', len
 
 callback = ->
-	if i is len
-		Meteor.clearInterval timer
-	else
+	if nfl_2014_PST_schedule[i]
 	  console.log nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
 	  Meteor.call 'getEventStatsNFL', nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
 	  i++
+  else
+  	Meteor.clearInterval timer
+
 # TURN THIS ON TO SEE THE MAGIC
-timer = Meteor.setInterval callback, 1000
+# timer = Meteor.setInterval callback, 1000
