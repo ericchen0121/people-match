@@ -38,7 +38,7 @@ Meteor.methods
 						newStat.position = stat.position
 						newStat.stats = _.omit(stat, ['id', 'name', 'jersey', 'position']) # remove redundant ID, remove all strings
 
-						# convert xml strings to integers
+						# convert xml strings to integers.
 						for k,v of newStat.stats
 							newStat.stats[k] = parseInt(v)
 
@@ -53,7 +53,8 @@ Meteor.methods
 			newStat = {}
 			newStat.statType = 'defense'
 			newStat.api = eventStat.api # API id for event
-			newStat.api.SDPlayerId = team.id 
+			newStat.api.SDPlayerId = team.id
+			newStat.teamId = team.id
 			newStat.status = eventStat.status
 			newStat.sport = 'NFL'
 			newStat.stats = {}
@@ -71,5 +72,5 @@ Meteor.methods
 			
 # TODO: THIS ID ARGUMENT SHOULD NOT BE HARDCODED 
 # This method currently finds the IND vs DEN 2014_PST_2 game
-# Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
+Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
 
