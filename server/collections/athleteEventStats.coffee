@@ -1,4 +1,4 @@
-# TODO: Rewrite these methods in the aggregate framwork. Examples in athleteEventStats2.coffee. 
+# TODO: Rewrite these methods in the aggregate framwork. Examples in athleteEventStats2.coffee.
 # 
 Meteor.methods
 
@@ -29,36 +29,47 @@ Meteor.methods
 					if !Array.isArray(playerStats)
 						playerStats = [playerStats]
 
-					# iterate over the array
+					# iterate over the array.
+					# TODO: Fix the "api.SDGameId" key that is created.
 					for stat in playerStats
+						newStat.statType = statType 
 						newStat.api.SDPlayerId = stat.id
 						newStat.full_name = stat.name
 						newStat.position = stat.position
-						newStat.stats = _.omit(stat, ['id', 'name', 'jersey', 'position']) # remove redundant ID
-						newStat.statType = statType 
+						newStat.stats = _.omit(stat, ['id', 'name', 'jersey', 'position']) # remove redundant ID, remove all strings
+
+						# convert xml strings to integers
+						for k,v of newStat.stats
+							newStat.stats[k] = parseInt(v)
+
+						newStat.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' + statType # unique id
 						AthleteEventStats.upsert(
-							{ "api.SDGameId": newStat.api.SDGameId, "api.SDPlayerId": newStat.api.SDPlayerId, "statType": newStat.statsType }, 
-							{ $set: newStat },
-							(err, res) -> 
+							{ "compoundId": newStat.compoundId }, 
+							newStat
 						)
-						# AthleteEventStats.insert(newStat)
-		# DEFENSE is easier to deal with separately
+
+		# DEFENSE is easier to deal with separately.
 		for team in eventStat.team
 			newStat = {}
-			newStat.api = _.omit(eventStat.api, 'SDPlayerId') # API id for event
-			newStat.api.SDTeamId = team.id 
+			newStat.statType = 'defense'
+			newStat.api = eventStat.api # API id for event
+			newStat.api.SDPlayerId = team.id 
 			newStat.status = eventStat.status
 			newStat.sport = 'NFL'
 			newStat.stats = {}
 			newStat.stats = _.omit(team.defense, 'player') # remove entire player array
-			newStat.statType = 'defense'
+
+			# convert xml strings to integers bam
+			for k,v of newStat.stats
+							newStat.stats[k] = parseInt(v)
+
+			newStat.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' +  newStat.statType
 			AthleteEventStats.upsert(
-				{ "api.SDGameId": newStat.api.SDGameId, "api.SDPlayerId": newStat.api.SDPlayerId, "statType": newStat.statsType }, 
-				{ $set: newStat },
-				(err, res) -> 
+				{ "compoundId": newStat.compoundId }, 
+				newStat
 			)
 			
-# TODO: THIS ID ARGUMENT SHOULD NOT BE HARDCODED
+# TODO: THIS ID ARGUMENT SHOULD NOT BE HARDCODED 
 # This method currently finds the IND vs DEN 2014_PST_2 game
-Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
+# Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
 

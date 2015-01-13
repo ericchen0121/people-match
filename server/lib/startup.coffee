@@ -1,3 +1,6 @@
+# Indexes
+# Create a unique compound key on Event, Athlete and Stat Type
+AthleteEventStats._ensureIndex( { "compoundId": 1 }, { unique: true, sparse: true } )
 # Fast Render APIs, available only on the server
 # https://github.com/meteorhacks/fast-render#using-fast-renders-route-apis
 

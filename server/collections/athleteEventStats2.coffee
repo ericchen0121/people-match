@@ -25,6 +25,7 @@ eventStatToAthleteEventStat2 = [
 
 # LEARNINGS, FOR LATER: 
 # can only use $unwind when there is an array.
+# You can check if there is an array by using $ifnull and checking BSON types
 # you can use $group to put things in an array, however the problem with this dataset
 # arises because of $player of each stat is either an object or an array, depending 
 # TO SOLVE this problme, just make every one an array.
