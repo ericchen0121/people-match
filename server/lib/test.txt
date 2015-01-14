@@ -1,0 +1,63 @@
+var pipeline = [{ $match : { sport : 'NFL'}}, {$project: {contestName: 1, entrySize: 1}}];
+var result = Metrics.aggregate({$match: {sport: 'NFL'}});
+// console.log(result);
+
+// match all manning
+// 
+var manning = [ { $match: {"api.SDPlayerId": "aae6d92e-5f28-43ee-b0dc-522e80e99f76" }}, {] 
+
+// match all passing
+// group by yards, $avg
+var passing = [ { $match: {"statType": "passing" }}, {$group: {_id: null, processPassing: {$avg: "$stats.yds"}}} ] 
+var passing = [ { $match: {"statType": "passing" }}, {$group: {_id: null, processPassing: {$sum "$stats.yds"}}} ] 
+var passing = [ { $match: {"statType": "passing" }}, {$group: {_id: null, processPassing: {$min: "$stats.yds"}}} ] 
+var passing = [ { $match: {"statType": "passing" }}, {$group: {_id: null, processPassing: {$max: "$stats.yds"}}} ] 
+var passing = [ { $match: {"statType": "passing" }}, {$group: {_id: null, processPassing: {$addToSet: "$stats.yds"}}} ] 
+
+var passing = { $match: {"statType": "passing" }}, {$group: {_id: null, avgPassing: {$push: "$stats.yds"}, count: {$sum: 1}}} ]
+
+
+// SCORE EACH 
+	
+
+// AGGREGATE PER PLAYER, PER CONTEST
+
+// Multiply by points!
+var accumulatePlayerScoring = [ 
+	{ $match: {
+			"api.SDPlayerId": "99c4968c-f811-4343-8cba-4bdd2884d734",
+			"api.SDGameId": "6d1d2061-0130-4a79-b772-4297bc0e3e92"
+		}
+	},
+	{ $project: { _id: 0, api: 1, status: 1, sport: 1, teamId: 1, "stats.statType": "$statType", "stats.stats": "$stats", full_name: 1, position: 1}},
+	{ $group: { _id: null, allStats: {$addToSet: "$stats"} }}
+	// { $project: 
+	// 	{	statsScore: 
+	// 		{
+	// 			$map: 
+	// 				{
+	// 					input: "$stats",
+	// 					as: 
+	// 				}
+	// 		}
+	// 	}
+	// },
+	{ $project: { pointsPassing: { $multiply: ['$processPassing', .1] }}}	
+]
+
+{ $out : "athleteEventScoring" }
+
+var manning = [ { $match: {"api.SDPlayerId": "9102665d-a658-4264-81c3-b9810776ddf0" }} ]
+
+
+
+
+
+
+
+
+
+
+
+
+

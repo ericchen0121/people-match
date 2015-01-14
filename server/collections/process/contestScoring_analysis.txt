@@ -23,24 +23,32 @@
 # Offense:
 # Rushing yards made = 0.1pts
 # Rushing touchdowns = 6pts
+
 # Passing yards = 0.04pts
 # Passing touchdowns = 4pts
 # Interceptions = -1pt
+
 # Receiving yards = 0.1pts
 # Receiving touchdowns = 6pts
 # Receptions = 0.5pts
+
 # Kickoff return touchdowns = 6pts
 # Punt return touchdowns = 6pts
+
 # Fumbles lost = -2pts
 # Own fumbles recovered touchdowns = 6pts
+
 # Two-point conversions scored = 2pts
 # Two-point conversion passes = 2pts
+
 # Field-goals from 0-19 yards = 3pts
 # Field-goals from 20-29 yards = 3pts
 # Field-goals from 30-39 yards = 3pts
 # Field-goals from 40-49 yards = 4pts
 # Field-goals from 50+ yards = 5pts
-# Extra-point conversions = 1ptDefense:
+# Extra-point conversions = 1pt
+
+Defense:
 # Sacks = 1pt
 # Opponent-fumbles recovered = 2pts
 # Return touchdowns = 6pts
