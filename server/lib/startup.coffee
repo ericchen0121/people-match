@@ -6,18 +6,48 @@ path = Npm.require('path')
 Future = Npm.require(path.join('fibers', 'future'))
 
 # distinct() definition from https://github.com/meteor/meteor/pull/644
-AthleteEventStats.distinct = (key) ->
+AthleteEventStats.distinct = (key, query) ->
   future = new Future
   @find()._mongo.db.createCollection @_name, (err,collection) =>
     future.throw err if err
 
-    collection.distinct key, (err,result) =>
+    collection.distinct key, query, (err,result) =>
       future.throw(err) if err
       future['return']([true,result]) 
   
   result = future.wait()
   throw result[1] if !result[0]
   result[1]
+
+# path = Npm.require("path")
+# Future = Npm.require(path.join("fibers", "future"))
+
+# _dummyCollection_ = new Meteor.Collection '__dummy__'
+
+# # Wrapper of the call to the db into a Future
+# _futureWrapper = (collection, commandName, args)->
+#   col = if (typeof collection) == "string" then  _dummyCollection_ else collection
+#   collectionName = if (typeof collection) == "string" then  collection else collection._name
+
+#   #tl?.debug "future Wrapper called for collection " + collectionName + " command: " + commandName + " args: " + args
+
+#   coll1 = col.find()._mongo.db.collection(collectionName)
+
+#   future = new Future
+#   cb = future.resolver()
+#   args = args.slice()
+#   args.push(cb)
+#   coll1[commandName].apply(coll1, args)
+#   result = future.wait()
+
+# _.extend Meteor.Collection::,
+
+#   distinct: (key, query, options) ->
+#     #_collectionDistinct @_name, key, query, options
+#     _futureWrapper @_name, "distinct", [key, query, options]
+
+#   aggregate: (pipeline) ->
+#     _futureWrapper @_name, "aggregate", [pipeline]
 
 # Fast Render APIs, available only on the server
 # https://github.com/meteorhacks/fast-render#using-fast-renders-route-apis
