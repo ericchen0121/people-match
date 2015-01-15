@@ -1,6 +1,7 @@
 # Indexes
 # Create a unique compound key on Event, Athlete and Stat Type
 AthleteEventStats._ensureIndex( { "compoundId": 1 }, { unique: true, sparse: true } )
+AthleteEventScores._ensureIndex( { "api.compoundId": 1 }, { unique: true, sparse: true } )
 
 # Add `distinct` method to Collection
 path = Npm.require('path')

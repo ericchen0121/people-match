@@ -23,7 +23,7 @@
 
 @EventStats = new Mongo.Collection('eventStats')
 @AthleteEventStats = new Mongo.Collection('athleteEventStats')
-@AthleteEventScore = new Mongo.Collection('athleteEventScore')
+@AthleteEventScores = new Mongo.Collection('athleteEventScores')
 
 # Implement a Search across Nfl Players
 # https://github.com/matteodem/meteor-easy-search/wiki/Getting-started
