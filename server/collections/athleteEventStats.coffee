@@ -42,9 +42,9 @@ Meteor.methods
 						for k,v of newStat.stats
 							newStat.stats[k] = parseInt(v)
 
-						newStat.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' + statType # unique id
+						newStat.api.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' + statType # unique id
 						AthleteEventStats.upsert(
-							{ "compoundId": newStat.compoundId }, 
+							{ "api.compoundId": newStat.api.compoundId }, 
 							newStat
 						)
 
@@ -64,13 +64,13 @@ Meteor.methods
 			for k,v of newStat.stats
 							newStat.stats[k] = parseInt(v)
 
-			newStat.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' +  newStat.statType
+			newStat.api.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' +  newStat.statType
 			AthleteEventStats.upsert(
-				{ "compoundId": newStat.compoundId }, 
+				{ "api.compoundId": newStat.api.compoundId }, 
 				newStat
 			)
 			
 # TODO: THIS ID ARGUMENT SHOULD NOT BE HARDCODED 
 # This method currently finds the IND vs DEN 2014_PST_2 game
-# Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
+Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
 
