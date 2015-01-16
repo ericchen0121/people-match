@@ -40,6 +40,10 @@ Meteor.methods
 
 		return stats[0]
 		
+	# Add scores to each AthleteEventScore
+	# Note: scores are multiplied by 100, to keep good javascript integers for the scores
+	# TODO: add a dictionary of statType variables, for easy switching out of scoring styles...
+	# ie: points = { rushing_yds = .1, ... }
 	addScoring: ->
 		AthleteEventScores.find().forEach (doc) ->
 			score = 0 # initialize score
@@ -83,14 +87,11 @@ Meteor.methods
 						score += stat.stats.int_td * 600
 						score += stat.stats.fum_td * 600
 
-			if score == NaN
-				console.log 'Its NAN', doc.full_name
 			AthleteEventScores.update(
 				{ _id: doc._id } # update its own doc
 				{ $set: { score: score }}
 			)
 
-# athleteEventScoring("99c4968c-f811-4343-8cba-4bdd2884d734", "6d1d2061-0130-4a79-b772-4297bc0e3e92")
-# findUniqueAthleteIds('6d1d2061-0130-4a79-b772-4297bc0e3e92')
+# j
 # Meteor.call 'batchAthleteEventScoring', '6d1d2061-0130-4a79-b772-4297bc0e3e92'
-Meteor.call 'addScoring'
+# Meteor.call 'addScoring'
