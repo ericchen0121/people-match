@@ -19,7 +19,7 @@ Meteor.methods
 
 			# Create a new AthleteEventStat doc for each player in the EventStat for each 
 			# statistical category of relevance
-			statTypes = ['rushing', 'passing', 'receiving', 'touchdowns', 'two_point_conversion', 'fumbles', 'field_goal']
+			statTypes = ['rushing', 'passing', 'receiving', 'touchdowns', 'two_point_conversion', 'extra_point', 'fumbles', 'field_goal']
 
 			for statType in statTypes
 				if team[statType] # if it exists... in the middle of a game it may not exist
@@ -62,7 +62,7 @@ Meteor.methods
 
 			# convert xml strings to integers bam
 			for k,v of newStat.stats
-							newStat.stats[k] = parseInt(v)
+				newStat.stats[k] = parseInt(v)
 
 			newStat.api.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' +  newStat.statType
 			AthleteEventStats.upsert(
@@ -70,7 +70,7 @@ Meteor.methods
 				newStat
 			)
 			
-# TODO: THIS ID ARGUMENT SHOULD NOT BE HARDCODED 
+# TODO: THIS ID ARGUMENT SHOULD NOT BE HARDCODED
 # This method currently finds the IND vs DEN 2014_PST_2 game
 Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
 

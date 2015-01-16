@@ -40,6 +40,57 @@ Meteor.methods
 
 		return stats[0]
 		
+	addScoring: ->
+		AthleteEventScores.find().forEach (doc) ->
+			score = 0 # initialize score
+			for stat in doc.allStats
+				switch stat.statType
+					when 'rushing'
+						score += stat.stats.yds * 10
+					when 'passing'
+						score += stat.stats.yds * 4
+						score += stat.stats.td * 400
+						score += stat.stats.int * -100
+					when 'receiving'
+						score += stat.stats.yds * 10
+						score += stat.stats.rec * 50
+					when 'touchdowns'
+						score += stat.stats.pass * 600
+						score += stat.stats.rush * 600
+						score += stat.stats.int * 600 
+						score += stat.stats.fum_ret * 600
+						score += stat.stats.punt_ret * 600
+						score += stat.stats.kick_ret * 600
+						score += stat.stats.fg_ret * 600
+						score += stat.stats.other * 600
+					# when 'two_point_conversion'
+						# score += stat.stats. # TODO: Add when you know the key
+					when 'fumbles'
+						score += stat.stats.lost * -200
+						score += stat.stats.own_rec_td * 600
+					when 'field_goal'
+						score += stat.stats.made_19 * 300
+						score += stat.stats.made_29 * 300
+						score += stat.stats.made_39 * 300
+						score += stat.stats.made_49 * 400
+						score += stat.stats.made_50 * 500
+					when 'extra_point'
+						score += stat.stats.made * 100
+					when 'defense' # DOUBLE CHECK THESE CATEGORIES ARE ALL COVERED
+						score += stat.stats.sack * 100
+						score += stat.stats.fum_rec * 200
+						score += stat.stats.int * 200
+						score += stat.stats.int_td * 600
+						score += stat.stats.fum_td * 600
+
+			if score == NaN
+				console.log 'Its NAN', doc.full_name
+			AthleteEventScores.update(
+				{ _id: doc._id } # update its own doc
+				{ $set: { score: score }}
+			)
+
 # athleteEventScoring("99c4968c-f811-4343-8cba-4bdd2884d734", "6d1d2061-0130-4a79-b772-4297bc0e3e92")
 # findUniqueAthleteIds('6d1d2061-0130-4a79-b772-4297bc0e3e92')
-Meteor.call 'batchAthleteEventScoring', '6d1d2061-0130-4a79-b772-4297bc0e3e92'
+# Meteor.call 'batchAthleteEventScoring', '6d1d2061-0130-4a79-b772-4297bc0e3e92'
+Meteor.call 'addScoring'
