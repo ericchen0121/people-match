@@ -1,9 +1,8 @@
-# # Collection-hooks adds attributes before insert
-# ARUNODA WAS HERE
-# Commentaries.before.insert (userId, doc) ->
-#   doc.createdAt = Date.now()
-#   doc.updateAt = Date.now()
-#   doc.userId = userId
+# Collection-hooks adds attributes before insert
+Commentaries.before.insert (userId, doc) ->
+  doc.createdAt = Date.now()
+  doc.updateAt = Date.now()
+  doc.userId = userId
 
 Meteor.methods
 

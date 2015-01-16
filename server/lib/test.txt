@@ -48,16 +48,3 @@ var accumulatePlayerScoring = [
 { $out : "athleteEventScoring" }
 
 var manning = [ { $match: {"api.SDPlayerId": "9102665d-a658-4264-81c3-b9810776ddf0" }} ]
-
-
-
-
-
-
-
-
-
-
-
-
-

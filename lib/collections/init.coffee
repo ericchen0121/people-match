@@ -28,9 +28,8 @@
 # Implement a Search across Nfl Players
 # https://github.com/matteodem/meteor-easy-search/wiki/Getting-started
 #
-# ARUNODA WAS HERE
-# EasySearch.createSearchIndex('nflPlayersSearch', {
-#     'field' : ['full_name'],            # required, searchable field(s)
-#     'collection' : NflPlayers,          # required, Mongo Collection
-#     'limit' : 3                         # not required, default is 10
-# })
+EasySearch.createSearchIndex('nflPlayersSearch', {
+    'field' : ['full_name'],            # required, searchable field(s)
+    'collection' : NflPlayers,          # required, Mongo Collection
+    'limit' : 3                         # not required, default is 10
+})

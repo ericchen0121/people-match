@@ -1,21 +1,20 @@
-# ARUNODA WAS HERE
-# Events.before.insert (userId, doc) ->
-#   # BASED ON SPORTS DATA API, USE BRIDGE OR ADAPER PATTERN HERE
-#   doc.createdAt = Date.now()
+Events.before.insert (userId, doc) ->
+  # BASED ON SPORTS DATA API, USE BRIDGE OR ADAPER PATTERN HERE
+  doc.createdAt = Date.now()
 
-#   # transform
-#   # convert time
-#   # http://stackoverflow.com/questions/18896470/mongodb-converting-isodate-to-numerical-value
-#   doc.startsAt = new Date(doc.scheduled).getTime() # get numeric from ISODate
+  # ======= transform the doc =========
+  # convert time
+  # http://stackoverflow.com/questions/18896470/mongodb-converting-isodate-to-numerical-value
+  doc.startsAt = new Date(doc.scheduled).getTime() # get numeric from ISODate
 
-#   # rename
-#   doc.api = doc.api || {} # API namespace
-#   doc.api.SDGameId = doc.id
-#   delete doc.id
+  # rename
+  doc.api = doc.api || {} # API namespace
+  doc.api.SDGameId = doc.id
+  delete doc.id
 
-#   # delete
-#   delete doc.home_rotation
-#   delete doc.away_rotation
+  # delete
+  delete doc.home_rotation
+  delete doc.away_rotation
 
 Meteor.methods
 

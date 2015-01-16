@@ -45,6 +45,9 @@ Meteor.methods
 	# TODO: add a dictionary of statType variables, for easy switching out of scoring styles...
 	# ie: points = { rushing_yds = .1, ... }
 	addScoring: ->
+		# TODO: currently this finds all scores docs and processes them all
+		# Will want to filter them down to process a reasonable amount at a time 
+		# TODO: How to do this stuff really reactively?
 		AthleteEventScores.find().forEach (doc) ->
 			score = 0 # initialize score
 			for stat in doc.allStats
