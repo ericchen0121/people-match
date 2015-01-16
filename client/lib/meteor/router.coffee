@@ -1,4 +1,4 @@
-# uses meteorhacks/subs-manager
+# uses meteorhacks/subs-manager for subscriptions
 subs = new SubsManager()
 
 Router.configure
@@ -72,27 +72,11 @@ Router.route '/contest/:contestId/draftteam', {
 
 Router.route '/entry/:_id', {
   name: 'entryLayout',
+  waitOn: ->
+    [
+      subs.subscribe 'entries', @params._id
+      subs.subscribe 'athleteEventScoresOnEntry', @params._id
+    ]
   data: ->
     Entries.findOne({ _id: @params._id })
 }
-
-# TODO: do I need to make a upsert or insert :before the route is hit?
-# This is how Victiv does it, they generate an entryId, attach it to the DOM, and use it
-# This creates some problems, namely having to generate the entryId, and creating the id before its necessary
-#  The alternative is to send the user to the contest.
-# Router.route '/contest/entry/:entryId', {
-#   name: 'entryLayout',
-#   data: ->
-#     Entries.findOne @params.entryId
-# }
-
-# Router.route '/contestentry/:contest_id'
-
-# This doesn't work as expected since the nflPlayersList template relies on teh
-# Session.get 'nflPosition', which is a global...
-
-# Router.route '/nfl/players/team/:team', {
-# 	name: 'nflPlayersList',
-# 	data: ->
-# 		NflPlayers.find({ team: @params.team })
-# }

@@ -32,10 +32,12 @@ Meteor.methods
 	# Returns the transformed document to insert 
 	# from mongo's aggregation pipeline
 	_getAggregateStats: (sdPlayerId, sdGameId) ->
+		# TODO: IF this fails when there isn't yet a SCORE field... conditional if `score` field exists
+		# then may need to copy this and do a check if they field exitsts....
 		stats =  AthleteEventStats.aggregate([ 
 			{ $match: { "api.SDPlayerId": sdPlayerId, "api.SDGameId": sdGameId } },
-		 	{ $project: { _id: 0, "api.SDPlayerId": "$api.SDPlayerId", "api.SDGameId": "$api.SDGameId", "api.compoundId": {$concat: ["$api.SDPlayerId", "-", "$api.SDGameId"]}, status: 1, sport: 1, teamId: 1, "stats.statType": "$statType", "stats.stats": "$stats", full_name: 1, position: 1 }}, 
-		 	{ $group: { _id: null, allStats: {$addToSet: "$stats"}, api: {$first: "$api"}, status: {$first: "$status"}, sport: {$first: "$sport"}, teamId: {$first: "$teamId"}, full_name: {$first: "$full_name"}, position: {$first: "$position"}} } 
+		 	{ $project: { _id: 0, "api.SDPlayerId": "$api.SDPlayerId", "api.SDGameId": "$api.SDGameId", "api.compoundId": {$concat: ["$api.SDPlayerId", "-", "$api.SDGameId"]}, status: 1, sport: 1, teamId: 1, "stats.statType": "$statType", "stats.stats": "$stats", full_name: 1, position: 1, score: 1 }}, 
+		 	{ $group: { _id: null, allStats: {$addToSet: "$stats"}, api: {$first: "$api"}, status: {$first: "$status"}, sport: {$first: "$sport"}, teamId: {$first: "$teamId"}, full_name: {$first: "$full_name"}, position: {$first: "$position"}, score: {$first: "$score"} } }
 		])
 
 		return stats[0]
@@ -49,7 +51,7 @@ Meteor.methods
 		# Will want to filter them down to process a reasonable amount at a time 
 		# TODO: How to do this stuff really reactively?
 		AthleteEventScores.find().forEach (doc) ->
-			score = 0 # initialize score
+			score = 0 # initialize scores
 			for stat in doc.allStats
 				switch stat.statType
 					when 'rushing'
@@ -97,4 +99,6 @@ Meteor.methods
 
 # j
 # Meteor.call 'batchAthleteEventScoring', '6d1d2061-0130-4a79-b772-4297bc0e3e92'
+
+# Meteor.call 'batchAthleteEventScoring', "e659d606-7755-4fe6-a6f9-2c7da29da194"
 # Meteor.call 'addScoring'

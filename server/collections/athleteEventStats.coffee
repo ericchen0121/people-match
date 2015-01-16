@@ -72,5 +72,5 @@ Meteor.methods
 			
 # TODO: THIS ID ARGUMENT SHOULD NOT BE HARDCODED
 # This method currently finds the IND vs DEN 2014_PST_2 game
-Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
-
+# Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
+# Meteor.call 'convertSDContestStatToAthleteEventStats', "vRwdHNf3FMoifsNKh" # SDGame ID: 2PST-SEA-CAR "e659d606-7755-4fe6-a6f9-2c7da29da194"

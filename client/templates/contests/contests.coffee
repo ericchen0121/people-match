@@ -59,21 +59,18 @@ validateEntry = () ->
 
   return valid
 
-# Returns a list of all teams based on the Contest's Fixture Events
+# Returns a list of all teams in the Contest
 # QUESTION: Why does this calculate three times?
 availableTeams = (contest) ->
-  # events is an array of Event objects
-  events = contest.fixture.events
+  events = contest.fixture.events # array of Events
   teams = []
   for event in events
-    # provide a if/switch statement here in case schema of Event changes per sport
     if event.sport == 'NFL'
-    # Assumes the Event object includes two teams like this: { ..
-    # "home" : "JAC",
-    # "away" : "TEN",
-    # ..}
       teams.push event.home
       teams.push event.away
+    # TODO: To add more sports! Coming soon!
+    # if event.sport == 'NBA'
+    # if event.sport == 'CBB'
 
   return teams
 
@@ -105,10 +102,9 @@ Template.contestLineupContainer.helpers
   # returns: [Array] of Athlete Objects
   currentLineup: ->
 
-    # { 'QB': 'open', 'RB': object }
     rosterJSON = Session.getJSON 'currentLineup.roster'
 
-    # convert the JSON form into an array for template iteration
+    # convert the JSON form into an array for iterating inside the Template
     rosterArray = []
 
     if rosterJSON
@@ -138,13 +134,15 @@ Template.contestLineupContainer.helpers
 
   # Returns the Event Name
   # Template calls like this to pass parent data context: {{currentGame ..}}
-  # If you want to bold the current Game, you may need to break this up into a different helper
-  currentGame: (parentDataContext) ->
-    # @ is an Athlete / NflPlayer object (NflPlayer to be deprecated)
+  # TODO: Feature: If you want to bold the current Game, you may need to break this up into two separate helpers
+  getCurrentEvent: (parentDataContext) ->
+    # @ is an Athlete / NflPlayer object (to be deprecated)
     # parentDataContext should be a Contest obj
+    athlete = @
+    contest = parentDataContext
     # Checks if player 
-    for event in parentDataContext.fixture.events
-      if @.team_id == event.home || @.team_id == event.away
+    for event in contest.fixture.events
+      if athlete.team_id == event.home || athlete.team_id == event.away
         return event.away + " vs. " + event.home
 
 
@@ -152,13 +150,14 @@ Template.contestLineupContainer.events
   # http://www.kirupa.com/html5/handling_events_for_many_elements.htm
   'click .position-filters': (e) ->
     if e.target != e.currentTarget
-      filterText = $(e.target).closest('.position-filter-tab').find('.position-filter').text()
+      filterText = $(e.target).closest('.position-filter-tab').find('.position-filter').text() #closest and find are friends
       Session.setJSON 'playerListFilter.position', filterText
     e.stopPropagation()
 
   'click .lineup-player-add': (e) ->
     # @ is the data context of the template for the click handler, ie. the player
-    addPlayerToRoster(@)
+    athlete = @
+    addPlayerToRoster(athlete)
 
   'click .lineup-player-remove': (e) ->
     rosterJSON = Session.getJSON 'currentLineup.roster'
@@ -242,6 +241,7 @@ Template.contestLineupContainer.rendered = ->
     theme: 'minimal-dark'
     autoHideScrollbar: true
 
+  # initialize the Roster
   roster = {
     'QB': 'open'
     'RB1': 'open'
@@ -260,10 +260,11 @@ Template.contestLineupContainer.rendered = ->
 
 Template.contestFixtureContainer.events
   'click .event-filter': (e) ->
+    contest = @ # @ is a Contest obj
     if e.target.innerHTML == 'All' # this depends on the DOM, a bit fragile
       Session.setJSON "playerListFilter.teams", undefined
-    else # @ is a Contest obj
-      Session.setJSON "playerListFilter.teams", [@.home, @.away]
+    else
+      Session.setJSON "playerListFilter.teams", [contest.home, contest.away]
 
 # Template.contestFixtureContainer.rendered = ->
 #   @$('#event-filters-container').mCustomScrollbar
