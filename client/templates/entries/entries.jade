@@ -3,35 +3,55 @@ template(name='entryView')
     div(class='row')
       with roster
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = QB.espn_id espn_size = 'micro'}}")
-          div #{ QB.full_name }
+          with QB
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = RB1.espn_id espn_size = 'micro'}}")
-          div #{ RB1.full_name }
+          with RB1
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = RB2.espn_id espn_size = 'micro'}}")
-          div #{ RB2.full_name }
+          with RB2
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = WR1.espn_id espn_size = 'micro'}}")
-          div #{ WR1.full_name }
+          with WR1
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = WR2.espn_id espn_size = 'micro'}}")
-          div #{ WR2.full_name }
+          with WR2
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = WR3.espn_id espn_size = 'micro'}}")
-          div #{ WR3.full_name }
+          with WR3
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = FLEX1.espn_id espn_size = 'micro'}}")
-          div #{ FLEX1.full_name }
+          with FLEX1
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = FLEX2.espn_id espn_size = 'micro'}}")
-          div #{ FLEX2.full_name }
+          with FLEX2
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = TE.espn_id espn_size = 'micro'}}")
-          div #{ TE.full_name }
+          with TE
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
         div(class='col-xs-2')
-          img(src="{{playerImageESPN espn_id = K.espn_id espn_size = 'micro'}}")
-          div #{ K.full_name }
+          with K
+            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+            div #{ full_name }
+            div #{ score }
 
 template(name='entryViewNames')
     with roster

@@ -7,7 +7,7 @@ Entries.before.insert (userId, doc) ->
 
   # adds array of event api ids to the Entry
   contest = Contests.findOne({_id: doc.contestId})
-  doc.api ?= {}
+  doc.api ?= {} # don't overwrite existing api obj if it already exists
   eventIds = (id for {api: {SDGameId: id}} in contest.fixture.events)
   doc.api.SDGameIds = eventIds
 
