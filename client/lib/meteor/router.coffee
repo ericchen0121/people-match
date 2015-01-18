@@ -51,16 +51,22 @@ Router.route '/history', {
       subs.subscribe 'entries'
   }
 
-Router.route '/fixture/create', {
+Router.route '/administrator/fixture/create', {
   name: 'fixtureCreateLayout'
   waitOn: ->
     subs.subscribe 'events'
 }
 
-Router.route '/contest/create', {
+Router.route '/administrator/contest/create', {
   name: 'contestCreateLayout'
   waitOn: ->
     subs.subscribe 'fixtures'
+}
+
+Router.route '/administrator/events/score', {
+  name: 'scoreLayout'
+  waitOn: ->
+    subs.subscribe 'events'
 }
 
 # TODO: Change this to ._id to take advantage of it finding the _id property on the contest automatically
