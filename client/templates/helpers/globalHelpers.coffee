@@ -63,3 +63,12 @@ Template.registerHelper 'momentify', (time, formatName) ->
 
     else  # default to MediumDateTime
       formatted.format('ddd, h:mmA')
+
+# Truncates the text to the first or last xxx characters
+# 
+Template.registerHelper 'truncate', (text, position = 'last', numChar) ->
+  if position is 'first'
+    text.substr(0, numChar)
+  else if position is 'last'
+    text.substr(text.length - numChar)
+

@@ -7,29 +7,25 @@ Events.before.insert (userId, doc) ->
   # http://stackoverflow.com/questions/18896470/mongodb-converting-isodate-to-numerical-value
   doc.startsAt = new Date(doc.scheduled).getTime() # get numeric from ISODate
 
-  # rename
-  doc.api = doc.api || {} # API namespace
+  # rename fields
+  doc.api = doc.api || {} # API namespace, TODO: doc.api ?= {}
   doc.api.SDGameId = doc.id
   delete doc.id
 
-  # delete
+  # delete fields
   delete doc.home_rotation
   delete doc.away_rotation
 
 Meteor.methods
 
-  getEventsNFL: (week) ->
-    games = []
+  getEvents: (sport, week) ->
+    if sport == 'NFL'
+      sched = sd.NFLApi.getWeeklySchedule week
+      events = sched.games.game
 
-    sched = sd.NFLApi.getWeeklySchedule week
-    games = sched.games.game
+      for event in events
+        unless Events.findOne({"api.SDGameId": event.id}) # check duplicate
+          event.sport = sport # add event info
+          Events.insert(event)
 
-    for game in games
-      console.log game
-      # check for duplicate
-      unless Events.findOne({"api.SDGameId": game.id})
-        # add sport
-        game.sport = 'NFL'
-        Events.insert(game)
-
-# Meteor.call 'getEventsNFL', 2
+# Meteor.call 'getEvents', 'NFL', 3

@@ -20,6 +20,15 @@ Template.fixtureCreate.helpers
     @.events
 
 Template.fixtureCreate.events
+  'click .update-events': (e) ->
+    sport = $('select#event-sport-select').val()
+    schedule = +$('select#event-schedule-select').val()
+    console.log sport, schedule
+    Meteor.call 'getEvents', sport, schedule 
+
+  'click .remove-fixture': (e) ->
+    Meteor.call 'removeFixture', @_id
+
   'click .event-options': (e) ->
     fixture = Session.getJSON 'currentFixture' || []
     fixture.push(@)

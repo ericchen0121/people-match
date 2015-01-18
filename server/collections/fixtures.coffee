@@ -14,3 +14,6 @@ Meteor.methods
 
   createFixture: (fixture) ->
     Fixtures.insert(fixture)
+
+  removeFixture: (id) ->
+    Fixtures.remove({_id: id})
