@@ -12,21 +12,23 @@ template(name='fixtureCreate')
       div(class='col-xs-6')
         h4 Step 2: Create a Fixture
         +each allFutureEvents
-          div(class='event-options') {{momentify startsAt}} #{home} #{away}
+          div(class='event-options cursor') {{momentify startsAt}} #{home} #{away}
         div(class='btn btn-sm btn-default create-fixture') Create Fixture
       div(class='col-xs-6')
-        h4 Step 3. View Fixtures
-          +each fixtures
-            div(class='row')
-              div(class='col-xs-4')
-                span
-                  h6 {{ fixturesEventCount }} Events
-              div(class='col-xs-16') 
-                +each fixturesEvents
-                  div(class='row vAlign')
-                    div(class='col-xs-24 size-12') {{momentify startsAt}} #{away} @ #{home}
-              div(class='col-xs-2 remove-fixture')
-                i(class='fa fa-minus-circle pointer')
+        div(class='row')
+          div(class='col-xs-24')
+            h4 Step 3. View Fixtures
+        +each fixtures
+          div(class='row fixture-item')
+            div(class='col-xs-4')
+              span
+                h6 {{ fixturesEventCount }} Events
+            div(class='col-xs-16') 
+              +each fixturesEvents
+                div(class='row')
+                  div(class='col-xs-24 size-12') {{momentify startsAt}} #{away} @ #{home}
+            div(class='col-xs-2 remove-fixture')
+              i(class='fa fa-minus-circle pointer')
       div(class='col-xs-6')
         h4 Step 4. Create Contests
         div(class='btn btn-sm btn-default create-fixture')
