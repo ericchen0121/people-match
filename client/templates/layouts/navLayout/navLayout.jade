@@ -35,6 +35,8 @@ template(name='navLayout')
                   a(href="{{pathFor 'contestCreateLayout' }}") Create Contests
                 li
                   a(href="{{pathFor 'scoreLayout' }}") Score!
+            li
+              a(href="{{ pathFor 'historyContestListLayout' }}" class="{{ isActiveRoute regex='historyContestListLayout' }}") $0.00
           ul(class="nav navbar-nav navbar-right")
             div(class="login-block")
               if user
