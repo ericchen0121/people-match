@@ -1,3 +1,10 @@
+# THIS IS A TRIAL TO GET AN AGGREGATE MONGODB PIPELINE TO
+# TRANSFORM DATA FROM EVENTSTATS to ATHLETEEVENTSTATS
+# As of 1/18/2015, this is not being used and this is a POC
+# 
+# NOTE: Because Mongo 2.4 is used instead of 2.6, $out and $cond Aggregate
+# functions are not available
+# 
 # TODO: $match criteria will change to something like `status: 'inprogress'`
 eventStatToAthleteEventStat = [
 	{$match: {api:{SDGameId: "3c42f4ea-e4b3-449d-82d5-36850144add9"}}}, 

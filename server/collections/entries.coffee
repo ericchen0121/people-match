@@ -11,6 +11,10 @@ Entries.before.insert (userId, doc) ->
   eventIds = (id for {api: {SDGameId: id}} in contest.fixture.events)
   doc.api.SDGameIds = eventIds
 
+# Entries.before.update (userId, doc) ->
+#   doc.updatedAt = Date.now()
+#   doc.status = doc.status
+ 
 Meteor.methods
   entryCreate: (entry) ->
     # update the contest with the number of entries

@@ -4,8 +4,12 @@ Meteor.methods
 	# This method continously overwrites the EventStat document with new information
 	# during the course of the game. 
 	# 
-	getEventStatsNFL: (week, awayTeam, homeTeam) =>
-		eventStats = @sd.NFLApi.getGameStats week, awayTeam, homeTeam
+	getEventStats: (sport, week, awayTeam, homeTeam) =>
+		console.log 'UPDATING EVENT STATS', sport, week, awayTeam, homeTeam
+		switch sport
+			when 'NFL'
+				eventStats = @sd.NFLApi.getGameStats week, awayTeam, homeTeam
+				sport = 'NFL'
 
 		EventStats.update({ 
 				api: { SDGameId: eventStats.game.id }
@@ -14,16 +18,29 @@ Meteor.methods
 				$set: 
 					api: 
 						SDGameId: eventStats.game.id
+					sport: sport
 					status: eventStats.game.status
 					team: eventStats.game.team
-					updatedAt: Date.now()
 					home: eventStats.game.home
 					away: eventStats.game.away
 					createdAt: Date.now()
+					updatedAt: Date.now()
 			},
 			{ upsert: true }
 		)
  
+#  	callGetStatsNFL: ->
+#  		timer = Meteor.setInterval callback, 1000
+
+#  	var dotime=function(){
+#   var iv = setInterval(function(){
+#     sys.puts("interval");
+#   }, 1000);
+#   return setTimeout(function(){
+#     clearInterval(iv);
+#   }, 5500);
+# };
+
  # Schedule as an Array for populating EventStats DB 
 nfl_2014_REG_schedule = [[1,"GB","SEA"]
 [1,"NO","ATL"]
@@ -282,10 +299,11 @@ nfl_2014_REG_schedule = [[1,"GB","SEA"]
 [17,"STL","SEA"]
 [17,"CIN","PIT"]]
 
+
 # To access a new statistic, add the game to the Array below and ensure that the variable name is the same as in the Function below.
 # nfl_2014_PST_schedule = [[2, 'IND', 'DEN'], [2, 'CAR', 'SEA'], [2, 'BAL', 'NE'], [2, 'DAL', 'GB']]
-nfl_2014_PST_schedule = [[2, 'CAR', 'SEA']]
-
+nfl_2014_PST_schedule = [[3, 'IND', 'NE']]
+# PST
 # how Meteor.setInterval works, the code is cracked!
 # http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
 # 
@@ -295,7 +313,7 @@ len = nfl_2014_PST_schedule.length
 callback = ->
 	if nfl_2014_PST_schedule[i]
 	  console.log nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
-	  Meteor.call 'getEventStatsNFL', nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
+	  Meteor.call 'getEventStats', 'NFL', nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
 	  i++
   else
   	Meteor.clearInterval timer

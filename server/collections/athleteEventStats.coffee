@@ -1,9 +1,21 @@
-# TODO: Rewrite these methods in the aggregate framwork. Examples in athleteEventStats2.coffee.
+# ARCHITECTURE NOTES: 
+# -We have architected this pipeline leg around the status of an Event Stat (which comes from Events)
+# being in a certain state ("inprogress", as given by SD API). 
+# -The key here is the Event Stat _id property, which we are using as the key to unlock the eventStat.
+# -We could run this off the api.SDGameId as well or some other identifier we would create on 
+# the collections: eventId: NFL_2014_PST_3_IND_NE
+# 
+# POTENTIAL TODO: Rewrite these methods in the aggregate framwork. Examples in athleteEventStats2.coffee.
 # 
 Meteor.methods
 
-	convertSDContestStatToAthleteEventStats: (id) ->
+	# INPUT: asks for a sport's 'inprogress' status. 
+	# OUTPUT: returns distinct ids  of games with that status
+	_getAthleteEventStats: (sport, status) ->
+		EventStats.distinct('_id', { sport: sport, status: status })
 
+	convertSDContestStatToAthleteEventStats: (id) ->
+		console.log 'converting this game id: ', id
 		eventStat = EventStats.findOne({_id: id})
 		newStat = {}
 
@@ -73,4 +85,5 @@ Meteor.methods
 # TODO: THIS ID ARGUMENT SHOULD NOT BE HARDCODED
 # This method currently finds the IND vs DEN 2014_PST_2 game
 # Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
-# Meteor.call 'convertSDContestStatToAthleteEventStats', "vRwdHNf3FMoifsNKh" # SDGame ID: 2PST-SEA-CAR "e659d606-7755-4fe6-a6f9-2c7da29da194"
+# Meteor.call 'convertSDContestStatToAthleteEventStats', "xyzoYMHJLE5JjmoH3" # PLAYOFF 3 GB SEA
+

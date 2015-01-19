@@ -23,9 +23,23 @@ Meteor.methods
       sched = sd.NFLApi.getWeeklySchedule week
       events = sched.games.game
 
-      for event in events
-        unless Events.findOne({"api.SDGameId": event.id}) # check duplicate
-          event.sport = sport # add event info
-          Events.insert(event)
+    for event in events
+      Events.update({
+          api: { SDGameId: event.id }
+        }, 
+        { 
+          $set: 
+            api: 
+              SDGameId: event.id
+            sport: sport
+            status: event.status
+            team: event.team
+            home: event.home
+            away: event.away
+            createdAt: Date.now()
+            updatedAt: Date.now()
+        },
+        { upsert: true }
+      )
 
 # Meteor.call 'getEvents', 'NFL', 3

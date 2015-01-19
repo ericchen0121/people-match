@@ -15,7 +15,7 @@ AthleteEventScores._ensureIndex( { "api.compoundId": 1 }, { unique: true, sparse
 
 # -------------------------------------- Mongo Distinct ----------------------------------------
 # Create a Mongo Distinct Function on a Specific Collection
-# via https://github.com/meteor/meteor/pull/644
+# via looking at how aggregate was wrapped: https://github.com/meteor/meteor/pull/644
 # 
 # Add `distinct` method to Collection
 path = Npm.require('path')
@@ -34,6 +34,18 @@ AthleteEventStats.distinct = (key, query) ->
   throw result[1] if !result[0]
   result[1]
 
+EventStats.distinct = (key, query) ->
+  future = new Future
+  @find()._mongo.db.createCollection @_name, (err,collection) =>
+    future.throw err if err
+
+    collection.distinct key, query, (err,result) =>
+      future.throw(err) if err
+      future['return']([true,result]) 
+  
+  result = future.wait()
+  throw result[1] if !result[0]
+  result[1]
 # ----------------------------------------Fast Render----------------------------------------
 # https://github.com/meteorhacks/fast-render#using-fast-renders-route-apis
 

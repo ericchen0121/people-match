@@ -6,6 +6,7 @@ Meteor.methods
 	# 3. Stores them in a new AthleteEventScore Collection!
 	# 
 	batchAthleteEventScoring: (sdGameId) ->
+		console.log 'batch scoring this game', sdGameId
 		# get distinct ids per game
 		SDathleteIds = Meteor.call '_getAthletes', sdGameId
 
@@ -50,6 +51,7 @@ Meteor.methods
 		# TODO: currently this finds all scores docs and processes them all
 		# Will want to filter them down to process a reasonable amount at a time 
 		# TODO: How to do this stuff really reactively?
+		console.log 'scoring with NFL scores!'
 		AthleteEventScores.find().forEach (doc) ->
 			score = 0 # initialize scores
 			for stat in doc.allStats
@@ -97,8 +99,6 @@ Meteor.methods
 				{ $set: { score: score }}
 			)
 
-# j
-# Meteor.call 'batchAthleteEventScoring', '6d1d2061-0130-4a79-b772-4297bc0e3e92'
 
-# Meteor.call 'batchAthleteEventScoring', "e659d606-7755-4fe6-a6f9-2c7da29da194"
-# Meteor.call 'addScoring'
+Meteor.call 'batchAthleteEventScoring', "07d2e969-3d43-49da-830b-295084e7be25"
+Meteor.call 'addScoring'
