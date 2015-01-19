@@ -42,3 +42,5 @@ npm-container
 houston:admin
 meteorhacks:kadira
 meteorhacks:subs-manager
+sanjo:jasmine
+velocity:html-reporter
