@@ -18,5 +18,17 @@ Entries.before.insert (userId, doc) ->
 Meteor.methods
   entryCreate: (entry) ->
     # update the contest with the number of entries
-    Contests.update(entry.contestId, {$inc: {entryCount: 1 }})
+    Contests.update(entry.contestId, { $inc: { entryCount: 1 } } ) # this doesn't have the true count if entries are deleted
     Entries.insert(entry)
+
+  # entryUpdateScoreLive: (entryId) ->
+  #   # Find the entry "pzfPTTEb6AW9cnp7q"
+  #   Entries.findOne({ _id: "pzfPTTEb6AW9cnp7q" })
+  #   # Get the Players associated with it
+    
+  #   # AGGREGATE QUERY
+  #   ATHLETEEVENTSTATS.AGGREGATE(EntryId) ->
+
+
+  # Once entries for the day are completed... update all entries one last time.
+  entryUpdateComplete: ->

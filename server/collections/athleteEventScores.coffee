@@ -45,12 +45,12 @@ Meteor.methods
 		
 	# Add scores to each AthleteEventScore
 	# Note: scores are multiplied by 100, to keep good javascript integers for the scores
+	
 	# TODO: add a dictionary of statType variables, for easy switching out of scoring styles...
 	# ie: points = { rushing_yds = .1, ... }
 	addScoring: ->
 		# TODO: currently this finds all scores docs and processes them all
-		# Will want to filter them down to process a reasonable amount at a time 
-		# TODO: How to do this stuff really reactively?
+		# Will want to filter them down (pass in (sdGameId) ->) to process a reasonable amount at a time 
 		console.log 'scoring with NFL scores!'
 		AthleteEventScores.find().forEach (doc) ->
 			score = 0 # initialize scores
@@ -74,8 +74,9 @@ Meteor.methods
 						score += stat.stats.kick_ret * 600
 						score += stat.stats.fg_ret * 600
 						score += stat.stats.other * 600
+				  # TODO: Add when you know XXX
 					# when 'two_point_conversion'
-						# score += stat.stats. # TODO: Add when you know the key
+						# score += stat.stats.XXX
 					when 'fumbles'
 						score += stat.stats.lost * -200
 						score += stat.stats.own_rec_td * 600
@@ -100,5 +101,5 @@ Meteor.methods
 			)
 
 
-Meteor.call 'batchAthleteEventScoring', "07d2e969-3d43-49da-830b-295084e7be25"
-Meteor.call 'addScoring'
+# Meteor.call 'batchAthleteEventScoring', "07d2e969-3d43-49da-830b-295084e7be25"
+# Meteor.call 'addScoring'
