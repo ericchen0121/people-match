@@ -1,79 +1,15 @@
 template(name='entryView')
   div(class='col-xs-24')
     div(class='row')
-      with roster
+      each roster
         div(class='col-xs-2')
-          with QB
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
-        div(class='col-xs-2')
-          with RB1
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
-        div(class='col-xs-2')
-          with RB2
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
-        div(class='col-xs-2')
-          with WR1
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
-        div(class='col-xs-2')
-          with WR2
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
-        div(class='col-xs-2')
-          with WR3
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
-        div(class='col-xs-2')
-          with FLEX1
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
-        div(class='col-xs-2')
-          with FLEX2
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
-        div(class='col-xs-2')
-          with TE
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
-        div(class='col-xs-2')
-          with K
-            img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-            div #{ full_name }
-            div #{ score }
-            each relevantStats
-              div #{ value } #{ type }
+          img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+          div #{ last_name }, #{ first_name }
+          div #{ score }
+          each relevantStats
+            div #{ value } #{ type }
 
 template(name='entryViewNames')
-    with roster
-      div #{QB.last_name}, #{RB1.last_name}, #{RB2.last_name}, #{WR1.last_name}, #{WR2.last_name}, #{WR3.last_name}, #{FLEX1.last_name}, #{FLEX2.last_name}, #{TE.last_name}, #{K.last_name}
+    each roster
+      div #{last_name}
    

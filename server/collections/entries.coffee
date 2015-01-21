@@ -22,7 +22,7 @@ Meteor.methods
     Entries.insert(entry)
 
   # entryUpdateScoreLive: (entryId) ->
-  #   # Find the entry "pzfPTTEb6AW9cnp7q"
+  # #   # Find the entry "pzfPTTEb6AW9cnp7q"
   #   Entries.findOne({ _id: "pzfPTTEb6AW9cnp7q" })
   #   # Get the Players associated with it
     

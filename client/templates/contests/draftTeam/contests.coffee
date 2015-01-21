@@ -46,8 +46,6 @@ addPlayerToRoster = (player) ->
     when 'DEF'
       if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else alert 'DEFs are Full'
 
-  # console.log Session.getJSON("currentLineup.roster")
-
 validateEntry = () ->
   rosterJSON = Session.getJSON 'currentLineup.roster'
   valid = true # assume contest entry is true until proven false ;)
@@ -190,18 +188,19 @@ Template.contestLineupContainer.events
     if validateEntry()
       # @ is a Contest object
 
-      # TODO: THIS IS PROBABLY BEST AS A REACTIVE JOIN INSTEAD OF MANUALLY MAINTAINING A COPY
-      # If removing, also remove from the entry.api.SDPlayerIds below
-      # This doesn't work because not all athletes have SDPlayerIds
+      # Transform data
       rosterJSON = Session.getJSON 'currentLineup.roster'
       rosterIds = []
+      roster = []
 
+      # aggregate ids of all roster players
+      # standardize roster to an array of player objects
       $.each rosterJSON, (k, v) =>
-        console.log v
         if v.api
           rosterIds.push( v.api.SDPlayerId )
-
-      console.log rosterIds #
+        # add slot name
+        v['slot'] = k
+        roster.push v
 
       entry = {
         api: {
@@ -216,10 +215,8 @@ Template.contestLineupContainer.events
         contestType: @.contestType
         entryFee: @.entryFee
         # status: @.status # TODO: Update this value when contest is live
-        roster: rosterJSON
+        roster: roster
       }
-
-      console.log 'we will enter this contest entry', entry
 
       Meteor.call 'entryCreate', entry, (error, result) ->
         return console.log error.reason if error
@@ -227,8 +224,6 @@ Template.contestLineupContainer.events
         Router.go 'entryLayout', { _id: result }
     else
       alert('Please select a player for each position!')
-
-
 
 Template.contestLineupContainer.rendered = ->
   # Defaults
