@@ -4,13 +4,15 @@ Template.score.helpers
 		Events.find({ status: 'inprogress' })
 
 Template.score.events
+	# TODO: un-hardcode this.
 	'click .update-events': (e) ->
 		console.log 'udpate or get event status'
-		Meteor.call 'getEvents', 'NFL', 3
+		Meteor.call 'getEvents', 'NFL', 4
 
+	# TODO: un-hardcode this.
 	'click .update-event-stats': (e) ->
 		console.log 'udpate event stats'
-		Meteor.call 'getEventStats', 'NFL', 3, 'IND', 'NE'
+		Meteor.call 'getEventStats', 'NFL', 4, 'SEA', 'NE'
 
 	'click .create-athlete-event-stats': (e) ->
 		console.log 'convert to athlete event stats'

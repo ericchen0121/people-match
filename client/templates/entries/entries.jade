@@ -1,6 +1,8 @@
 template(name='entryView')
   div(class='col-xs-24')
     div(class='row')
+      h2 {{ formatScore totalScore }}
+    div(class='row')
       each roster
         div(class='col-xs-2')
           img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
@@ -8,7 +10,6 @@ template(name='entryView')
           div #{ score }
           each relevantStats
             div #{ value } #{ type }
-
 template(name='entryViewNames')
     each roster
       div #{last_name}

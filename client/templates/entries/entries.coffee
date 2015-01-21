@@ -13,6 +13,9 @@ Template.entryView.helpers
 		else 
 			return 0 
 		
+	formatScore: (score) ->
+		score / 100.0 
+		
 	# This outputs an Array of objects consisting of relevant stats
 	# I considered storing this on the AthleteEventScores object itself, however 
 	# I like more flexibility into the 'presentation' and the naming of stats.

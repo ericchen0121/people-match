@@ -21,14 +21,26 @@ Meteor.methods
     Contests.update(entry.contestId, { $inc: { entryCount: 1 } } ) # this doesn't have the true count if entries are deleted
     Entries.insert(entry)
 
-  # entryUpdateScoreLive: (entryId) ->
-  # #   # Find the entry "pzfPTTEb6AW9cnp7q"
-  #   Entries.findOne({ _id: "pzfPTTEb6AW9cnp7q" })
-  #   # Get the Players associated with it
+  # TODO: This potentially long term will be an expensive operation
+  entryUpdateScoreLive: (entryId) ->
+    entry = Entries.findOne({ _id: entryId })
     
-  #   # AGGREGATE QUERY
-  #   ATHLETEEVENTSTATS.AGGREGATE(EntryId) ->
+    # limit the search to players and games on the entry
+    # Use `_id: null` for accumulated values in the $group stage
+    result = AthleteEventScores.aggregate([
+      { $match: {"api.SDPlayerId": { $in: entry.api.SDPlayerIds }, "api.SDGameId": { $in: entry.api.SDGameIds}}},
+      { $group: { _id: null, totalScore: { $sum: "$score" } }}
+    ])
 
+    console.log 'the result!!!', result 
 
-  # Once entries for the day are completed... update all entries one last time.
-  entryUpdateComplete: ->
+    Entries.update(
+      { _id: entryId }
+      { $set: { totalScore: result[0].totalScore }} 
+    )
+
+  # TODO: At the end reconciliation of the Entry, 
+  # Add scores for each player (Or reactively join) 
+
+Meteor.call 'entryUpdateScoreLive', "HjiiRzfB8zah8AhfD"
+
