@@ -11,12 +11,14 @@ Entries.before.insert (userId, doc) ->
   eventIds = (id for {api: {SDGameId: id}} in contest.fixture.events)
   doc.api.SDGameIds = eventIds
 
+  # initialize score
+  doc.totalScore = 0
+
 # https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
 Entries.before.update (userId, doc, fieldNames, modifier, options) ->
   modifier.$set.createdAt = modifier.$set.createdAt || new Date().toISOString()
   modifier.$set.updatedAt = new Date().toISOString()
 
- 
 Meteor.methods
   entryCreate: (entry) ->
     # update the contest with the number of entries
