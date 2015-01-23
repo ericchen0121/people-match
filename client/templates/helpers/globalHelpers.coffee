@@ -12,9 +12,9 @@ AllEvents.handleNaturally = (e) ->
 # Mongo Queries
 # Mongo Query Helpers (MQH)
 window.MQH = {}
-MQH.startsInFuture = { startsAt: {$gte: Date.now() }}
+MQH.startsInFuture = { startsAt: {$gte: new Date().toISOString() }}
 MQH.startsInFutureSortAsc = { sort: { startsAt: 1 }}
-MQH.contestStartsInFuture = { contestStarts: {$gte: Date.now() }} # TODO: consider consolidating the attribute to startsAt
+MQH.contestStartsInFuture = { contestStarts: {$gte: new Date().toISOString() }} # TODO: consider consolidating the attribute to startsAt
 
 
 # Provides an easy ESPN src image given a data context

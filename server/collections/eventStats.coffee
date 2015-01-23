@@ -1,5 +1,10 @@
+# https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
+EventStats.before.update (userId, doc, fieldNames, modifier, options) ->
+
+  modifier.$set.createdAt = modifier.$set.createdAt || new Date().toISOString()
+  modifier.$set.updatedAt = new Date().toISOString()
+
 Meteor.methods
-	
 	# populates EventStats Collection from SD Api
 	# This method continously overwrites the EventStat document with new information
 	# during the course of the game. 
@@ -23,8 +28,6 @@ Meteor.methods
 					team: eventStats.game.team
 					home: eventStats.game.home
 					away: eventStats.game.away
-					createdAt: Date.now()
-					updatedAt: Date.now()
 			},
 			{ upsert: true }
 		)

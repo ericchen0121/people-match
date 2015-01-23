@@ -1,20 +1,7 @@
-Events.before.insert (userId, doc) ->
-  # BASED ON SPORTS DATA API, USE BRIDGE OR ADAPER PATTERN HERE
-  doc.createdAt = Date.now()
-
-  # ======= transform the doc =========
-  # convert time
-  # http://stackoverflow.com/questions/18896470/mongodb-converting-isodate-to-numerical-value
-  doc.startsAt = new Date(doc.scheduled).getTime() # get numeric from ISODate
-
-  # rename fields
-  doc.api = doc.api || {} # API namespace, TODO: doc.api ?= {}
-  doc.api.SDGameId = doc.id
-  delete doc.id
-
-  # delete fields
-  delete doc.home_rotation
-  delete doc.away_rotation
+# https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
+Events.before.update (userId, doc, fieldNames, modifier, options) ->
+  modifier.$set.createdAt = modifier.$set.createdAt || new Date().toISOString()
+  modifier.$set.updatedAt = new Date().toISOString()
 
 Meteor.methods
 
@@ -23,23 +10,28 @@ Meteor.methods
       sched = sd.NFLApi.getWeeklySchedule week
       events = sched.games.game
 
-    for event in events
-      Events.update({
-          api: { SDGameId: event.id }
-        }, 
-        { 
-          $set: 
-            api: 
-              SDGameId: event.id
-            sport: sport
-            status: event.status
-            team: event.team
-            home: event.home
-            away: event.away
-            createdAt: Date.now()
-            updatedAt: Date.now()
-        },
-        { upsert: true }
-      )
+    # events is an Array when multiple, but an dictionary when single 
+    if Array.isArray(events)
+      for event in events
+        Meteor.call 'updateEvent', event, sport
+    else
+      Meteor.call 'updateEvent', events, sport
 
-# Meteor.call 'getEvents', 'NFL', 3
+  updateEvent: (event, sport) ->
+    Events.update({
+        api: { SDGameId: event.id }
+      }, 
+      { 
+        $set: 
+          api: 
+            SDGameId: event.id
+          sport: sport
+          status: event.status
+          home: event.home
+          away: event.away
+          startsAt: new Date(event.scheduled).toISOString()
+      },
+      { upsert: true }
+    )
+
+Meteor.call 'getEvents', 'NFL', 4

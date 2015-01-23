@@ -1,8 +1,8 @@
 # Collection-hooks adds attributes before Entries.insert(entry)
 
 Entries.before.insert (userId, doc) ->
-  doc.createdAt = Date.now()
-  doc.updatedAt = Date.now()
+  doc.createdAt = doc.createdAt || new Date().toISOString()
+  doc.updatedAt = new Date().toISOString()
   doc.userId = userId
 
   # adds array of event api ids to the Entry
@@ -11,9 +11,11 @@ Entries.before.insert (userId, doc) ->
   eventIds = (id for {api: {SDGameId: id}} in contest.fixture.events)
   doc.api.SDGameIds = eventIds
 
-# Entries.before.update (userId, doc) ->
-#   doc.updatedAt = Date.now()
-#   doc.status = doc.status
+# https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
+Entries.before.update (userId, doc, fieldNames, modifier, options) ->
+  modifier.$set.createdAt = modifier.$set.createdAt || new Date().toISOString()
+  modifier.$set.updatedAt = new Date().toISOString()
+
  
 Meteor.methods
   entryCreate: (entry) ->
@@ -42,5 +44,5 @@ Meteor.methods
   # TODO: At the end reconciliation of the Entry, 
   # Add scores for each player (Or reactively join) 
 
-Meteor.call 'entryUpdateScoreLive', "HjiiRzfB8zah8AhfD"
+# Meteor.call 'entryUpdateScoreLive', "HjiiRzfB8zah8AhfD"
 
