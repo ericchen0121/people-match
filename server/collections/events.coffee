@@ -1,35 +1,37 @@
-Events.before.insert (userId, doc) ->
-  # BASED ON SPORTS DATA API, USE BRIDGE OR ADAPER PATTERN HERE
-  doc.createdAt = Date.now()
-
-  # transform
-  # convert time
-  # http://stackoverflow.com/questions/18896470/mongodb-converting-isodate-to-numerical-value
-  doc.startsAt = new Date(doc.scheduled).getTime() # get numeric from ISODate
-
-  # rename
-  doc.api = doc.api || {} # API namespace
-  doc.api.SDGameId = doc.id
-  delete doc.id
-
-  # delete
-  delete doc.home_rotation
-  delete doc.away_rotation
+# https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
+Events.before.update (userId, doc, fieldNames, modifier, options) ->
+  modifier.$set.createdAt = modifier.$set.createdAt || new Date().toISOString()
+  modifier.$set.updatedAt = new Date().toISOString()
 
 Meteor.methods
 
-  getEventsNFL: (week) ->
-    games = []
+  getEvents: (sport, week) ->
+    if sport == 'NFL'
+      sched = sd.NFLApi.getWeeklySchedule week
+      events = sched.games.game
 
-    sched = sd.NFLApi.getWeeklySchedule week
-    games = sched.games.game
+    # events is an Array when multiple, but an dictionary when single 
+    if Array.isArray(events)
+      for event in events
+        Meteor.call 'updateEvent', event, sport
+    else
+      Meteor.call 'updateEvent', events, sport
 
-    for game in games
-      console.log game
-      # check for duplicate
-      unless Events.findOne({"api.SDGameId": game.$.id})
-        # add sport
-        newGame = _.extend(game.$, { sport: 'nfl' })
-        Events.insert(newGame)
+  updateEvent: (event, sport) ->
+    Events.update({
+        api: { SDGameId: event.id }
+      }, 
+      { 
+        $set: 
+          api: 
+            SDGameId: event.id
+          sport: sport
+          status: event.status
+          home: event.home
+          away: event.away
+          startsAt: new Date(event.scheduled).toISOString()
+      },
+      { upsert: true }
+    )
 
-# Meteor.call 'getEventsNFL', 1
+Meteor.call 'getEvents', 'NFL', 4

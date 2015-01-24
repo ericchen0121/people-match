@@ -33,11 +33,15 @@ template(name='navLayout')
                   a(href="{{ pathFor 'fixtureCreateLayout' }} ") Create Fixtures
                 li
                   a(href="{{pathFor 'contestCreateLayout' }}") Create Contests
+                li
+                  a(href="{{pathFor 'scoreLayout' }}") Score!
+            li
+              a(href="{{ pathFor 'historyContestListLayout' }}" class="{{ isActiveRoute regex='historyContestListLayout' }}") $0.00
           ul(class="nav navbar-nav navbar-right")
             div(class="login-block")
               if user
                 +avatarImage
             div(class="login-block")
               +login
-    div(id='globalContainer' class='row container-fluid')
-      +yield
+  div(id='globalContainer' class='row container-fluid')
+    +yield

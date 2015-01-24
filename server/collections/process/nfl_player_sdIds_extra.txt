@@ -228,3 +228,10 @@ new player Steve Johnson   San Francisco
 new player Kyle Nelson   San Francisco
 new player Lance Lewis   San Francisco
 new player Brandon Thomas   San Francisco
+new player Danny Coale   Pittsburgh
+new player Kadron Boone   Indianapolis
+new player James Gayle   Washington
+new player Joe Madsen   Green Bay
+new player Seth Lobato   Tampa Bay
+new player Jocquel Skinner   Tampa Bay
+new player Tim Hightower   New Orleans

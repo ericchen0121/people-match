@@ -1,4 +1,4 @@
-# Set Up Collections
+# Set Up Collections 
 #
 
 # For the People page
@@ -22,6 +22,8 @@
 @Lineups = new Mongo.Collection('lineups')
 
 @EventStats = new Mongo.Collection('eventStats')
+@AthleteEventStats = new Mongo.Collection('athleteEventStats')
+@AthleteEventScores = new Mongo.Collection('athleteEventScores')
 
 # Implement a Search across Nfl Players
 # https://github.com/matteodem/meteor-easy-search/wiki/Getting-started

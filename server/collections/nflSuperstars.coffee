@@ -1,5 +1,5 @@
 NflSuperstars.before.insert (userId, doc) ->
-  doc.createdAt = Date.now()
+  doc.createdAt = new Date().toISOString()
   doc.userId = userId
 
 Meteor.methods

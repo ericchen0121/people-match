@@ -1,11 +1,11 @@
 Template.fixtureCreate.helpers
 
   allFutureEvents: ->
-    Events.find(MQH.startsInFuture)
+    Events.find({startsAt: mq.future})
     # Events.find() # temporary to see events, since SD api doesn't yet have POSTseason sched exposed
 
   fixtures: ->
-    Fixtures.find(MQH.startsInFuture, MQH.startsInFutureSortAsc)
+    Fixtures.find({startsAt: mq.future})#, MQH.startsInFutureSortAsc)
     # Fixtures.find() # temporary to see events, since SD api doesn't yet have POSTseason sched exposed
 
   # for use within fixture data context
@@ -20,11 +20,19 @@ Template.fixtureCreate.helpers
     @.events
 
 Template.fixtureCreate.events
+  'click .update-events': (e) ->
+    sport = $('select#event-sport-select').val()
+    schedule = +$('select#event-schedule-select').val()
+    Meteor.call 'getEvents', sport, schedule 
+
+  'click .remove-fixture': (e) ->
+    Meteor.call 'removeFixture', @_id
+
   'click .event-options': (e) ->
-    fixture = Session.getJSON 'currentFixture' || []
-    fixture.push(@)
-    console.log fixture
-    Session.setJSON 'currentFixture', fixture
+    # construct Fixture from selected Events
+    fixtureArray = Session.getJSON 'currentFixture' || []
+    fixtureArray.push(@)
+    Session.setJSON 'currentFixture', fixtureArray
 
   'click .create-fixture': (e) ->
     fixture = Session.getJSON 'currentFixture'

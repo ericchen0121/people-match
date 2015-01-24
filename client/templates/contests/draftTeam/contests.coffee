@@ -46,8 +46,6 @@ addPlayerToRoster = (player) ->
     when 'DEF'
       if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else alert 'DEFs are Full'
 
-  # console.log Session.getJSON("currentLineup.roster")
-
 validateEntry = () ->
   rosterJSON = Session.getJSON 'currentLineup.roster'
   valid = true # assume contest entry is true until proven false ;)
@@ -59,23 +57,19 @@ validateEntry = () ->
 
   return valid
 
-# Returns a list of all players in positions based on the Contest's Fixture Events
+# Returns a list of all teams in the Contest
 # QUESTION: Why does this calculate three times?
 availableTeams = (contest) ->
-  # events is an array of Event objects
-  events = contest.fixture.events
+  events = contest.fixture.events # array of Events
   teams = []
   for event in events
-    # provide a if/switch statement here in case schema of Event changes per sport
-    if event.sport == 'nfl'
-    # Assumes the Event object includes two teams like this: { ..
-    # "home" : "JAC",
-    # "away" : "TEN",
-    # ..}
+    if event.sport == 'NFL'
       teams.push event.home
       teams.push event.away
+    # TODO: To add more sports! Coming soon!
+    # if event.sport == 'NBA'
+    # if event.sport == 'CBB'
 
-  console.log 'the available teams in this contest are: ', teams
   return teams
 
 Template.contestLineupContainer.helpers
@@ -84,7 +78,6 @@ Template.contestLineupContainer.helpers
     position_filter = Session.getJSON 'playerListFilter.position'
     selectedTeamFilter = Session.getJSON "playerListFilter.teams"
     team_filter = if selectedTeamFilter? then selectedTeamFilter else availableTeams(@)
-    console.log 'team filter is', team_filter
     switch position_filter
       when 'All'
         NflPlayers.find({ team_id: {$in: team_filter }, position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
@@ -107,10 +100,9 @@ Template.contestLineupContainer.helpers
   # returns: [Array] of Athlete Objects
   currentLineup: ->
 
-    # { 'QB': 'open', 'RB': object }
     rosterJSON = Session.getJSON 'currentLineup.roster'
 
-    # convert the JSON form into an array for template iteration
+    # convert the JSON form into an array for iterating inside the Template
     rosterArray = []
 
     if rosterJSON
@@ -140,24 +132,30 @@ Template.contestLineupContainer.helpers
 
   # Returns the Event Name
   # Template calls like this to pass parent data context: {{currentGame ..}}
-  # If you want to bold the current Game, you may need to break this up into a different helper
-  currentGame: (parentDataContext) ->
-    # @ is an Athlete / NflPlayer object (NflPlayer to be deprecated)
+  # TODO: Feature: If you want to bold the current Game, you may need to break this up into two separate helpers
+  getCurrentEvent: (parentDataContext) ->
+    # @ is an Athlete / NflPlayer object (to be deprecated)
     # parentDataContext should be a Contest obj
+    athlete = @
+    contest = parentDataContext
     # Checks if player 
-    for event in parentDataContext.fixture.events
-      if @.team_id == event.home || @.team_id == event.away
+    for event in contest.fixture.events
+      if athlete.team_id == event.home || athlete.team_id == event.away
         return event.away + " vs. " + event.home
 
 
 Template.contestLineupContainer.events
-  'click .position-filter': (e) ->
-    filterText = $(e.target).text()
-    Session.setJSON 'playerListFilter.position', filterText
+  # http://www.kirupa.com/html5/handling_events_for_many_elements.htm
+  'click .position-filters': (e) ->
+    if e.target != e.currentTarget
+      filterText = $(e.target).closest('.position-filter-tab').find('.position-filter').text() #closest and find are friends
+      Session.setJSON 'playerListFilter.position', filterText
+    e.stopPropagation()
 
   'click .lineup-player-add': (e) ->
     # @ is the data context of the template for the click handler, ie. the player
-    addPlayerToRoster(@)
+    athlete = @
+    addPlayerToRoster(athlete)
 
   'click .lineup-player-remove': (e) ->
     rosterJSON = Session.getJSON 'currentLineup.roster'
@@ -189,7 +187,25 @@ Template.contestLineupContainer.events
 
     if validateEntry()
       # @ is a Contest object
+
+      # Transform data
+      rosterJSON = Session.getJSON 'currentLineup.roster'
+      rosterIds = []
+      roster = []
+
+      # aggregate ids of all roster players
+      # standardize roster to an array of player objects
+      $.each rosterJSON, (k, v) =>
+        if v.api
+          rosterIds.push( v.api.SDPlayerId )
+        # add slot name
+        v['slot'] = k
+        roster.push v
+
       entry = {
+        api: {
+          SDPlayerIds: rosterIds
+        }
         userId: Meteor.userId()
         contestId: @._id
         fixtureId: @.fixture.id
@@ -199,19 +215,15 @@ Template.contestLineupContainer.events
         contestType: @.contestType
         entryFee: @.entryFee
         # status: @.status # TODO: Update this value when contest is live
-        roster: Session.getJSON 'currentLineup.roster'
+        roster: roster
       }
-
-      console.log 'we will enter this contest entry', entry
 
       Meteor.call 'entryCreate', entry, (error, result) ->
         return console.log error.reason if error
         # 'result' is the created entry _id
-        Router.go 'entryLayout', { entryId: result }
+        Router.go 'entryLayout', { _id: result }
     else
       alert('Please select a player for each position!')
-
-
 
 Template.contestLineupContainer.rendered = ->
   # Defaults
@@ -224,6 +236,7 @@ Template.contestLineupContainer.rendered = ->
     theme: 'minimal-dark'
     autoHideScrollbar: true
 
+  # initialize the Roster
   roster = {
     'QB': 'open'
     'RB1': 'open'
@@ -242,8 +255,11 @@ Template.contestLineupContainer.rendered = ->
 
 Template.contestFixtureContainer.events
   'click .event-filter': (e) ->
-    # @ is a Contest obj
-    Session.setJSON "playerListFilter.teams", [@.home, @.away]
+    contest = @ # @ is a Contest obj
+    if e.target.innerHTML == 'All' # this depends on the DOM, a bit fragile
+      Session.setJSON "playerListFilter.teams", undefined
+    else
+      Session.setJSON "playerListFilter.teams", [contest.home, contest.away]
 
 # Template.contestFixtureContainer.rendered = ->
 #   @$('#event-filters-container').mCustomScrollbar

@@ -44,11 +44,21 @@ $progressbar-color: $highlightGreen
 
 // Bootstrap Navbar
 //
+#nav-container
+  margin-bottom: 10px
+   
 .container-fluid
   padding: 0
 
 .navbar-header, .navbar-collapse
   background-color: $navbarDarkGray
+
+.nav.nav-tabs li
+  background-color: white
+
+  border: 1px solid $highlightGreen
+  border-bottom: 0px
+  border-radius: 4px
 
 .nav li
   background-color: $navbarDarkGray
@@ -67,36 +77,32 @@ $progressbar-color: $highlightGreen
     width: 45px
     height: 50px
 
-.navbar-default .navbar-nav li
+.navbar-default .navbar-nav > li > a
+  text-decoration: none
+  color: $navbarLightGrayText
+  font-weight: 200
 
-  a
-    text-decoration: none
+  &.active
+    border-top: $navHighlightHeight solid $highlightGreen
     color: $navbarLightGrayText
     font-weight: 200
+    padding-top: 15px - $navHighlightHeight
 
-    &.active
-      border-top: $navHighlightHeight solid $highlightGreen
-      color: $navbarLightGrayText
-      font-weight: 200
-      padding-top: 15px - $navHighlightHeight
+  &:hover
+    border-top: $navHighlightHeight solid $highlightGreen
+    color: $navbarLightGrayText
+    font-weight: 200
+    transition: all .25s ease-in-out
+    padding-top: 15px - $navHighlightHeight
 
-    &:hover
-      border-top: $navHighlightHeight solid $highlightGreen
-      color: $navbarLightGrayText
-      font-weight: 200
-      transition: all .25s ease-in-out
-      padding-top: 15px - $navHighlightHeight
 
-  .dropdown-menu
-    padding: 5px 0 0
-    margin-top: $navHighlightHeight
-    border-top-width: $navHighlightHeight
+.navbar-nav  .dropdown-menu
+  background-color: $highlightGreen
 
-    li
-      height: 38px
-
-    a:hover
-      background-color: $navbarDarkGray
+  li
+    height: 38px
+  a
+    color: $navbarLightGrayText
 
 .nav .open
   > a,

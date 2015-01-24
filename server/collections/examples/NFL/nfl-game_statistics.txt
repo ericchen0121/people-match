@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/xslt/nfl/statistics-v1.0.xsl"?>
+<!-- Generation started at 2015-01-11 20:12:53 +0000 -->
+<game xmlns="http://feed.elasticstats.com/schema/nfl/statistics-v1.0.xsd" id="9dbb842d-6e4f-479d-ac98-58fc431bced3" scheduled="2015-01-11T18:05:00+00:00" home="GB" away="DAL" status="inprogress">
+  <team id="GB" name="Packers" market="Green Bay" points="13" remaining_challenges="1" remaining_timeouts="2">
+    <touchdowns pass="1" rush="0" int="0" fum_ret="0" punt_ret="0" kick_ret="0" fg_ret="0" other="0">
+      <player id="8eafc2b1-3e22-4416-b690-9a1232669f62" name="Andrew Quarless" jersey="81" position="TE" pass="1" rush="0" int="0" fum_ret="0" punt_ret="0" kick_ret="0" fg_ret="0" other="0"/>
+    </touchdowns>
+    <third_down_efficiency att="9" conv="5" pct="55.556" pass="3" rush="2" pen="0">
+    </third_down_efficiency>
+    <rushing att="22" yds="110" avg="5.0" lg="29" td="0" fd="6" fd_pct="27.273" sfty="0" rz_att="4" fum="1" yds_10_pls="2" yds_20_pls="1" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0">
+      <player id="de070f62-4494-4a98-8a76-0929c19be685" name="James Starks" jersey="44" position="RB" att="5" yds="16" avg="3.2" lg="6" td="0" fd="1" fd_pct="20.0" sfty="0" rz_att="0" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="a7152c92-426c-4c6b-9629-da63f5c60ff8" name="John Kuhn" jersey="30" position="FB" att="1" yds="4" avg="4.0" lg="4" td="0" fd="0" fd_pct="0.0" sfty="0" rz_att="1" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="0ce48193-e2fa-466e-a986-33f751add206" name="Aaron Rodgers" jersey="12" position="QB" att="1" yds="0" avg="0.0" lg="0" td="0" fd="0" fd_pct="0.0" sfty="0" rz_att="0" fum="1" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="030f508b-be11-478e-bf68-d21e70fcff7b" name="Eddie Lacy" jersey="27" position="RB" att="15" yds="90" avg="6.0" lg="29" td="0" fd="5" fd_pct="33.333" sfty="0" rz_att="3" fum="0" yds_10_pls="2" yds_20_pls="1" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+    </rushing>
+    <redzone_efficiency att="2" td="1" pct="50.0">
+    </redzone_efficiency>
+    <receiving tar="19" rec="11" yds="105" yac="105" fd="6" avg="9.545" td="1" lg="31" rz_tar="3" fum="0" yds_10_pls="5" yds_20_pls="0" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0">
+      <player id="8eafc2b1-3e22-4416-b690-9a1232669f62" name="Andrew Quarless" jersey="81" position="TE" tar="1" rec="1" yds="4" yac="4" fd="1" avg="4.0" td="1" lg="4" rz_tar="1" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="a7152c92-426c-4c6b-9629-da63f5c60ff8" name="John Kuhn" jersey="30" position="FB" tar="1" rec="0" yds="0" yac="0" fd="0" avg="0.0" td="0" lg="0" rz_tar="0" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="9f2aebe4-b654-4f0e-a437-ec46f20b6bfe" name="Jordy Nelson" jersey="87" position="WR" tar="4" rec="2" yds="22" yac="22" fd="2" avg="11.0" td="0" lg="11" rz_tar="0" fum="0" yds_10_pls="2" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="3283f152-d373-43b3-b88f-f6f261c48e81" name="Randall Cobb" jersey="18" position="WR" tar="7" rec="4" yds="58" yac="58" fd="3" avg="14.5" td="0" lg="31" rz_tar="0" fum="0" yds_10_pls="2" yds_20_pls="0" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="e7d6ae25-bf15-4660-8b37-c37716551de3" name="Davante Adams" jersey="17" position="WR" tar="5" rec="3" yds="11" yac="11" fd="0" avg="3.667" td="0" lg="5" rz_tar="2" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="030f508b-be11-478e-bf68-d21e70fcff7b" name="Eddie Lacy" jersey="27" position="RB" tar="1" rec="1" yds="10" yac="10" fd="0" avg="10.0" td="0" lg="10" rz_tar="0" fum="0" yds_10_pls="1" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+    </receiving>
+    <punting punts="2" yds="75" net_yds="68" lg="40" blk="0" in20="0" tb="0" ret="2" sfty="0" avg="37.5" net_avg="34.0" ret_yds="7" avg_ret="3.5" in20_pct="0.0" tb_pct="0.0">
+      <player id="a4822eab-6faa-449c-9a72-e07f018032ba" name="Tim Masthay" jersey="8" position="P" punts="2" yds="75" net_yds="68" lg="40" blk="0" in20="0" tb="0" ret="2" sfty="0" avg="37.5" net_avg="34.0" ret_yds="7" avg_ret="3.5" in20_pct="0.0" tb_pct="0.0"/>
+    </punting>
+    <punt_return returns="0" yds="0" fc="1" lg="0" td="0" avg="0.0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0">
+      <player id="e030ef2b-1dcc-4c66-b8de-0016ca0d52d2" name="Micah Hyde" jersey="33" position="DB" returns="0" yds="0" fc="1" lg="0" td="0" avg="0.0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+    </punt_return>
+    <penalty num="6" yds="62" fd="3">
+      <player id="f7201332-06df-4ad1-b7af-3752eeae6d76" name="Brad Jones" jersey="59" position="LB" num="1" yds="5" fd="1"/>
+      <player id="bb6c7928-54f1-43bd-bf14-f2645644dda9" name="Davon House" jersey="31" position="CB" num="1" yds="5" fd="0"/>
+      <player id="640710b9-72f2-47e1-9afa-f3070b23c119" name="Tramon Williams" jersey="38" position="CB" num="2" yds="32" fd="2"/>
+      <player id="b5a6d6f3-73a9-4d70-bfa1-786bf166d14c" name="Clay Matthews" jersey="52" position="LB" num="1" yds="5" fd="0"/>
+      <player id="3ebbc479-fec5-4463-8eb1-b9b09b0d3bc2" name="T.J. Lang" jersey="70" position="G" num="1" yds="15" fd="0"/>
+    </penalty>
+    <passing att="19" cmp="11" yds="105" lg="31" sk="1" sk_yds="10.0" td="1" int="0" int_td="0" fd="6" sfty="0" rz_att="3" rating="90.9" avg="5.526" cmp_pct="57.895" cmp_avg="9.545" td_pct="5.263" int_pct="0.0" yds_10_pls="5" yds_20_pls="0" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0">
+      <player id="0ce48193-e2fa-466e-a986-33f751add206" name="Aaron Rodgers" jersey="12" position="QB" att="19" cmp="11" yds="105" lg="31" sk="1" sk_yds="10.0" td="1" int="0" int_td="0" fd="6" sfty="0" rz_att="3" rating="90.9" avg="5.526" cmp_pct="57.895" cmp_avg="9.545" td_pct="5.263" int_pct="0.0" yds_10_pls="5" yds_20_pls="0" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0"/>
+    </passing>
+    <kickoffs kicks="3" yds="191" net_yds="114" lg="69" endzone="2" in20="0" tb="1" ret="2" avg="63.667" net_avg="38.0" ret_yds="77" avg_ret="38.5" in20_pct="0.0" tb_pct="33.333">
+      <player id="e0856548-6fd5-4f83-9aa0-91f1bf4cbbd8" name="Mason Crosby" jersey="2" position="K" kicks="3" yds="191" net_yds="114" lg="69" endzone="2" in20="0" tb="1" ret="2" avg="63.667" net_avg="38.0" ret_yds="77" in20_pct="0.0" tb_pct="33.333"/>
+    </kickoffs>
+    <kick_return returns="2" yds="43" fc="0" lg="23" td="0" avg="21.5" yds_10_pls="0" yds_20_pls="2" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0">
+      <player id="3283f152-d373-43b3-b88f-f6f261c48e81" name="Randall Cobb" jersey="18" position="WR" returns="1" yds="23" fc="0" lg="23" td="0" avg="23.0" yds_10_pls="0" yds_20_pls="1" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="e030ef2b-1dcc-4c66-b8de-0016ca0d52d2" name="Micah Hyde" jersey="33" position="DB" returns="1" yds="20" fc="0" lg="20" td="0" avg="20.0" yds_10_pls="0" yds_20_pls="1" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+    </kick_return>
+    <goal_efficiency att="1" td="1" pct="100.0">
+    </goal_efficiency>
+    <fumbles fum="2" lost="1" oob="0" own_rec="1" own_rec_yds="0" own_rec_td="0" force_fum="2" opp_rec="1" opp_rec_yds="0" opp_rec_td="0">
+      <player id="3258dbca-9194-4fd7-bc2b-8440c73d0d9c" name="Datone Jones" jersey="95" position="DE" fum="0" lost="0" oob="0" own_rec="0" own_rec_yds="0" own_rec_td="0" force_fum="0" opp_rec="1" opp_rec_yds="0" opp_rec_td="0"/>
+      <player id="c058f888-ff75-4f13-a9e7-3f5be65288bf" name="Julius Peppers" jersey="56" position="LB" fum="0" lost="0" oob="0" own_rec="0" own_rec_yds="0" own_rec_td="0" force_fum="2" opp_rec="0" opp_rec_yds="0" opp_rec_td="0"/>
+      <player id="0ce48193-e2fa-466e-a986-33f751add206" name="Aaron Rodgers" jersey="12" position="QB" fum="2" lost="1" oob="0" own_rec="1" own_rec_yds="0" own_rec_td="0" force_fum="0" opp_rec="0" opp_rec_yds="0" opp_rec_td="0"/>
+    </fumbles>
+    <fourth_down_efficiency att="0" conv="0" pct="0.0" pass="0" rush="0" pen="0">
+    </fourth_down_efficiency>
+    <first_downs num="13" pass="6" rush="6" pen="1">
+      <player id="8eafc2b1-3e22-4416-b690-9a1232669f62" name="Andrew Quarless" jersey="81" position="TE" num="1" pass="1" rush="0" pen="0"/>
+      <player id="0ce48193-e2fa-466e-a986-33f751add206" name="Aaron Rodgers" jersey="12" position="QB" num="1" pass="0" rush="0" pen="1"/>
+      <player id="de070f62-4494-4a98-8a76-0929c19be685" name="James Starks" jersey="44" position="RB" num="1" pass="0" rush="1" pen="0"/>
+      <player id="3283f152-d373-43b3-b88f-f6f261c48e81" name="Randall Cobb" jersey="18" position="WR" num="3" pass="3" rush="0" pen="0"/>
+      <player id="9f2aebe4-b654-4f0e-a437-ec46f20b6bfe" name="Jordy Nelson" jersey="87" position="WR" num="2" pass="2" rush="0" pen="0"/>
+      <player id="030f508b-be11-478e-bf68-d21e70fcff7b" name="Eddie Lacy" jersey="27" position="RB" num="5" pass="0" rush="5" pen="0"/>
+    </first_downs>
+    <field_goal att="2" made="2" pct="100.0" lg="40" att_19="0" made_19="0" att_29="0" made_29="0" att_39="1" made_39="1" att_49="1" made_49="1" att_50="0" made_50="0">
+      <player id="e0856548-6fd5-4f83-9aa0-91f1bf4cbbd8" name="Mason Crosby" jersey="2" position="K" att="2" made="2" pct="100.0" lg="40" blk="0" att_19="0" made_19="0" att_29="0" made_29="0" att_39="1" made_39="1" att_49="1" made_49="1" att_50="0" made_50="0"/>
+    </field_goal>
+    <extra_point att="1" made="1" pct="100.0" blk="0">
+      <player id="e0856548-6fd5-4f83-9aa0-91f1bf4cbbd8" name="Mason Crosby" jersey="2" position="K" att="1" made="1" pct="100.0" blk="0"/>
+    </extra_point>
+    <defense tackle="32" ast="11" comb="43" tlost="0" sack="1.0" sack_yds="5.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="2" fum_rec="1" fum_td="0" qh="2" pd="0" bk="1" sp_tackle="4" sp_ast="1" sp_comb="5" sp_force_fum="0" sp_fum_rec="0" misc_tackle="1" misc_ast="0" misc_comb="1" misc_force_fum="0" misc_fum_rec="0">
+      <player id="8920894c-dc0e-4ed6-96e5-b96eadcf2092" name="Jarrett Boykin" jersey="11" position="WR" tackle="0" ast="0" comb="0" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="1" sp_ast="0" sp_comb="1" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="640710b9-72f2-47e1-9afa-f3070b23c119" name="Tramon Williams" jersey="38" position="CB" tackle="1" ast="0" comb="1" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="34de0b93-9cab-4987-915b-25ef8480cae7" name="Mike Daniels" jersey="76" position="DT" tackle="0" ast="1" comb="1" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="204e0eb0-c5ef-4522-9056-393e2e5177ea" name="Nick Perry" jersey="53" position="LB" tackle="2" ast="0" comb="2" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="89431b6e-4364-4584-aaf0-86e2e0a6f062" name="Josh Boyd" jersey="93" position="DT" tackle="1" ast="1" comb="2" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="a278c39e-7d4d-48c2-8145-2f8ad882ebeb" name="Casey Hayward" jersey="29" position="CB" tackle="1" ast="0" comb="1" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="4642915e-8c37-4692-9169-fa210b6efc8c" name="Jayrone Elliott" jersey="91" position="LB" tackle="0" ast="0" comb="0" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="1" sp_ast="0" sp_comb="1" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="8b9bc551-66bb-4948-849f-c0471caaeb19" name="Mike Pennel" jersey="64" position="DT" tackle="1" ast="0" comb="1" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="af8457a7-6cbe-4e2f-8bdf-2a34cba56f40" name="A.J. Hawk" jersey="50" position="LB" tackle="2" ast="1" comb="3" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="f7201332-06df-4ad1-b7af-3752eeae6d76" name="Brad Jones" jersey="59" position="LB" tackle="1" ast="0" comb="1" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="1" sp_ast="0" sp_comb="1" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="409377a4-293c-4eee-a9d1-02a46449a540" name="Morgan Burnett" jersey="42" position="SAF" tackle="1" ast="1" comb="2" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="1" sp_ast="0" sp_comb="1" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="bb6c7928-54f1-43bd-bf14-f2645644dda9" name="Davon House" jersey="31" position="CB" tackle="0" ast="0" comb="0" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="1" sp_comb="1" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="57ac58f6-9566-4aa4-88d2-c2e291ffec41" name="Mike Neal" jersey="96" position="LB" tackle="4" ast="0" comb="4" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="c058f888-ff75-4f13-a9e7-3f5be65288bf" name="Julius Peppers" jersey="56" position="LB" tackle="4" ast="2" comb="6" tlost="0" sack="1.0" sack_yds="5.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="2" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="3258dbca-9194-4fd7-bc2b-8440c73d0d9c" name="Datone Jones" jersey="95" position="DE" tackle="1" ast="0" comb="1" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="1" fum_td="0" qh="0" pd="0" bk="1" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="0ce48193-e2fa-466e-a986-33f751add206" name="Aaron Rodgers" jersey="12" position="QB" tackle="0" ast="0" comb="0" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="1" misc_ast="0" misc_comb="1" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="977e4e40-c596-43c3-a5a9-2141f6590b89" name="Ha Ha Clinton-Dix" jersey="21" position="SAF" tackle="3" ast="1" comb="4" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="aad60db9-4a23-44d5-a738-46443e99ea77" name="Sam Barrington" jersey="58" position="LB" tackle="4" ast="1" comb="5" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="2fd4116c-52de-41f5-9f30-16614eb424c4" name="Letroy Guion" jersey="98" position="DT" tackle="3" ast="1" comb="4" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="1" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="b5a6d6f3-73a9-4d70-bfa1-786bf166d14c" name="Clay Matthews" jersey="52" position="LB" tackle="2" ast="1" comb="3" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="1" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="74b40266-cab7-4c5f-9f72-b560f7457a55" name="Sam Shields" jersey="37" position="CB" tackle="1" ast="1" comb="2" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+    </defense>
+  </team>
+  <team id="DAL" name="Cowboys" market="Dallas" points="14" remaining_challenges="2" remaining_timeouts="3">
+    <touchdowns pass="2" rush="0" int="0" fum_ret="0" punt_ret="0" kick_ret="0" fg_ret="0" other="0">
+      <player id="cb96a5c5-d178-43c0-b0df-a78c71818060" name="Tyler Clutts" jersey="44" position="FB" pass="1" rush="0" int="0" fum_ret="0" punt_ret="0" kick_ret="0" fg_ret="0" other="0"/>
+      <player id="3c2db5b7-77bf-4c52-bb77-b0fe3cf89e5e" name="Terrance Williams" jersey="83" position="WR" pass="1" rush="0" int="0" fum_ret="0" punt_ret="0" kick_ret="0" fg_ret="0" other="0"/>
+    </touchdowns>
+    <third_down_efficiency att="6" conv="4" pct="66.667" pass="1" rush="3" pen="0">
+    </third_down_efficiency>
+    <rushing att="22" yds="79" avg="3.591" lg="13" td="0" fd="6" fd_pct="27.273" sfty="0" rz_att="1" fum="1" yds_10_pls="1" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0">
+      <player id="c32d8200-2b85-4638-8db3-9a52fb86b207" name="Tony Romo" jersey="9" position="QB" att="1" yds="7" avg="7.0" lg="7" td="0" fd="0" fd_pct="0.0" sfty="0" rz_att="0" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="478ae115-d220-424e-af45-56137f163d3a" name="DeMarco Murray" jersey="29" position="RB" att="20" yds="59" avg="2.95" lg="7" td="0" fd="5" fd_pct="25.0" sfty="0" rz_att="1" fum="1" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="dcb30c96-f1de-44be-9ef6-4b967d17eb30" name="Joseph Randle" jersey="21" position="RB" att="1" yds="13" avg="13.0" lg="13" td="0" fd="1" fd_pct="100.0" sfty="0" rz_att="0" fum="0" yds_10_pls="1" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+    </rushing>
+    <redzone_efficiency att="1" td="1" pct="100.0">
+    </redzone_efficiency>
+    <receiving tar="13" rec="10" yds="134" yac="134" fd="6" avg="13.4" td="2" lg="38" rz_tar="1" fum="0" yds_10_pls="3" yds_20_pls="1" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0">
+      <player id="cb96a5c5-d178-43c0-b0df-a78c71818060" name="Tyler Clutts" jersey="44" position="FB" tar="1" rec="1" yds="1" yac="1" fd="1" avg="1.0" td="1" lg="1" rz_tar="1" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="7092bb09-a161-4ab9-8d19-fdcf1a91bb3d" name="Cole Beasley" jersey="11" position="WR" tar="2" rec="2" yds="29" yac="29" fd="1" avg="14.5" td="0" lg="18" rz_tar="0" fum="0" yds_10_pls="2" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="478ae115-d220-424e-af45-56137f163d3a" name="DeMarco Murray" jersey="29" position="RB" tar="1" rec="0" yds="0" yac="0" fd="0" avg="0.0" td="0" lg="0" rz_tar="0" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="e38c9b1b-7c51-48a2-ac1d-a752502e8930" name="Jason Witten" jersey="82" position="TE" tar="5" rec="4" yds="38" yac="38" fd="2" avg="9.5" td="0" lg="18" rz_tar="0" fum="0" yds_10_pls="1" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="3c2db5b7-77bf-4c52-bb77-b0fe3cf89e5e" name="Terrance Williams" jersey="83" position="WR" tar="2" rec="1" yds="38" yac="38" fd="1" avg="38.0" td="1" lg="38" rz_tar="0" fum="0" yds_10_pls="0" yds_20_pls="0" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0"/>
+      <player id="b84fb536-9705-45a9-b652-92a33578ac48" name="Dez Bryant" jersey="88" position="WR" tar="2" rec="2" yds="28" yac="28" fd="1" avg="14.0" td="0" lg="20" rz_tar="0" fum="0" yds_10_pls="0" yds_20_pls="1" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+    </receiving>
+    <punting punts="1" yds="37" net_yds="37" lg="37" blk="0" in20="0" tb="0" ret="0" sfty="0" avg="37.0" net_avg="37.0" ret_yds="0" avg_ret="0.0" in20_pct="0.0" tb_pct="0.0">
+      <player id="4d1f4c44-3666-4014-95fc-4b0013b6d9a5" name="Chris Jones" jersey="6" position="P" punts="1" yds="37" net_yds="37" lg="37" blk="0" in20="0" tb="0" ret="0" sfty="0" avg="37.0" net_avg="37.0" ret_yds="0" avg_ret="0.0" in20_pct="0.0" tb_pct="0.0"/>
+    </punting>
+    <punt_return returns="2" yds="7" fc="0" lg="4" td="0" avg="3.5" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0">
+      <player id="5ed2cea8-e0c6-482c-9ee1-548c06612226" name="Dwayne Harris" jersey="17" position="WR" returns="2" yds="7" fc="0" lg="4" td="0" avg="3.5" yds_10_pls="0" yds_20_pls="0" yds_30_pls="0" yds_40_pls="0" yds_50_pls="0"/>
+    </punt_return>
+    <penalty num="5" yds="35" fd="2">
+      <player id="5a001d28-b271-410a-8c91-3159a6096258" name="Zack Martin" jersey="70" position="G" num="1" yds="10" fd="0"/>
+      <player id="23893852-6ef4-48a9-99a0-c51f41670508" name="Brandon Carr" jersey="39" position="CB" num="1" yds="5" fd="1"/>
+      <player id="65859588-5da0-4df0-a339-6adf83287078" name="Anthony Spencer" jersey="93" position="DE" num="1" yds="5" fd="0"/>
+      <player id="cdbaf089-9c7e-418f-829e-d903c28b2628" name="Kyle Wilber" jersey="51" position="LB" num="1" yds="10" fd="1"/>
+      <player id="58ac0e67-b0c1-4a2d-b89d-ccf3296c787f" name="L.P. LaDouceur" jersey="91" position="LS" num="1" yds="5" fd="0"/>
+    </penalty>
+    <passing att="13" cmp="10" yds="134" lg="38" sk="1" sk_yds="5.0" td="2" int="0" int_td="0" fd="6" sfty="0" rz_att="1" rating="148.7" avg="10.308" cmp_pct="76.923" cmp_avg="13.4" td_pct="15.385" int_pct="0.0" yds_10_pls="3" yds_20_pls="1" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0">
+      <player id="c32d8200-2b85-4638-8db3-9a52fb86b207" name="Tony Romo" jersey="9" position="QB" att="13" cmp="10" yds="134" lg="38" sk="1" sk_yds="5.0" td="2" int="0" int_td="0" fd="6" sfty="0" rz_att="1" rating="148.7" avg="10.308" cmp_pct="76.923" cmp_avg="13.4" td_pct="15.385" int_pct="0.0" yds_10_pls="3" yds_20_pls="1" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0"/>
+    </passing>
+    <kickoffs kicks="3" yds="167" net_yds="104" lg="60" endzone="1" in20="0" tb="1" ret="2" avg="55.667" net_avg="34.667" ret_yds="63" avg_ret="31.5" in20_pct="0.0" tb_pct="33.333">
+      <player id="beb64618-614c-49f7-a3aa-c0c75b7839ea" name="Dan Bailey" jersey="5" position="K" kicks="3" yds="167" net_yds="104" lg="60" endzone="1" in20="0" tb="1" ret="2" avg="55.667" net_avg="34.667" ret_yds="63" in20_pct="0.0" tb_pct="33.333"/>
+    </kickoffs>
+    <kick_return returns="2" yds="57" fc="0" lg="30" td="0" avg="28.5" yds_10_pls="0" yds_20_pls="1" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0">
+      <player id="5ed2cea8-e0c6-482c-9ee1-548c06612226" name="Dwayne Harris" jersey="17" position="WR" returns="2" yds="57" fc="0" lg="30" td="0" avg="28.5" yds_10_pls="0" yds_20_pls="1" yds_30_pls="1" yds_40_pls="0" yds_50_pls="0"/>
+    </kick_return>
+    <goal_efficiency att="1" td="1" pct="100.0">
+    </goal_efficiency>
+    <fumbles fum="3" lost="1" oob="0" own_rec="2" own_rec_yds="0" own_rec_td="0" force_fum="1" opp_rec="1" opp_rec_yds="0" opp_rec_td="0">
+      <player id="c32d8200-2b85-4638-8db3-9a52fb86b207" name="Tony Romo" jersey="9" position="QB" fum="2" lost="0" oob="0" own_rec="2" own_rec_yds="0" own_rec_td="0" force_fum="0" opp_rec="0" opp_rec_yds="0" opp_rec_td="0"/>
+      <player id="478ae115-d220-424e-af45-56137f163d3a" name="DeMarco Murray" jersey="29" position="RB" fum="1" lost="1" oob="0" own_rec="0" own_rec_yds="0" own_rec_td="0" force_fum="0" opp_rec="0" opp_rec_yds="0" opp_rec_td="0"/>
+      <player id="e0df28b2-39ed-42a9-abbb-ab9f723a3ddb" name="Jeremy Mincey" jersey="92" position="DE" fum="0" lost="0" oob="0" own_rec="0" own_rec_yds="0" own_rec_td="0" force_fum="1" opp_rec="1" opp_rec_yds="0" opp_rec_td="0"/>
+    </fumbles>
+    <fourth_down_efficiency att="0" conv="0" pct="0.0" pass="0" rush="0" pen="0">
+    </fourth_down_efficiency>
+    <first_downs num="15" pass="6" rush="6" pen="3">
+      <player id="cb96a5c5-d178-43c0-b0df-a78c71818060" name="Tyler Clutts" jersey="44" position="FB" num="1" pass="1" rush="0" pen="0"/>
+      <player id="7092bb09-a161-4ab9-8d19-fdcf1a91bb3d" name="Cole Beasley" jersey="11" position="WR" num="1" pass="1" rush="0" pen="0"/>
+      <player id="3c2db5b7-77bf-4c52-bb77-b0fe3cf89e5e" name="Terrance Williams" jersey="83" position="WR" num="1" pass="1" rush="0" pen="0"/>
+      <player id="478ae115-d220-424e-af45-56137f163d3a" name="DeMarco Murray" jersey="29" position="RB" num="5" pass="0" rush="5" pen="0"/>
+      <player id="e38c9b1b-7c51-48a2-ac1d-a752502e8930" name="Jason Witten" jersey="82" position="TE" num="2" pass="2" rush="0" pen="0"/>
+      <player id="c32d8200-2b85-4638-8db3-9a52fb86b207" name="Tony Romo" jersey="9" position="QB" num="3" pass="0" rush="0" pen="3"/>
+      <player id="b84fb536-9705-45a9-b652-92a33578ac48" name="Dez Bryant" jersey="88" position="WR" num="1" pass="1" rush="0" pen="0"/>
+      <player id="dcb30c96-f1de-44be-9ef6-4b967d17eb30" name="Joseph Randle" jersey="21" position="RB" num="1" pass="0" rush="1" pen="0"/>
+    </first_downs>
+    <field_goal att="1" made="0" pct="0.0" lg="0" att_19="0" made_19="0" att_29="0" made_29="0" att_39="0" made_39="0" att_49="0" made_49="0" att_50="1" made_50="0">
+      <player id="beb64618-614c-49f7-a3aa-c0c75b7839ea" name="Dan Bailey" jersey="5" position="K" att="1" made="0" pct="0.0" lg="0" blk="1" att_19="0" made_19="0" att_29="0" made_29="0" att_39="0" made_39="0" att_49="0" made_49="0" att_50="1" made_50="0"/>
+    </field_goal>
+    <extra_point att="2" made="2" pct="100.0" blk="0">
+      <player id="beb64618-614c-49f7-a3aa-c0c75b7839ea" name="Dan Bailey" jersey="5" position="K" att="2" made="2" pct="100.0" blk="0"/>
+    </extra_point>
+    <defense tackle="32" ast="9" comb="41" tlost="4" sack="1.0" sack_yds="10.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="1" fum_rec="1" fum_td="0" qh="1" pd="0" bk="0" sp_tackle="2" sp_ast="0" sp_comb="2" sp_force_fum="0" sp_fum_rec="0" misc_tackle="1" misc_ast="0" misc_comb="1" misc_force_fum="0" misc_fum_rec="2">
+      <player id="2c4c0744-1bf0-4f1d-881a-9b1012de6dda" name="Rolando McClain" jersey="55" position="LB" tackle="0" ast="1" comb="1" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="30a193de-13a3-4e22-a1a5-ce240f498280" name="Jeff Heath" jersey="38" position="DB" tackle="2" ast="0" comb="2" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="10af66eb-88ac-456d-8d47-d7c1e19c8b30" name="Tyler Patmon" jersey="20" position="CB" tackle="0" ast="0" comb="0" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="1" sp_ast="0" sp_comb="1" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="919cdf12-3811-49d1-a7a5-65ff29a59434" name="Anthony Hitchens" jersey="59" position="OLB" tackle="2" ast="0" comb="2" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="85a051d3-3f76-411d-a59e-82d04a971c3a" name="Orlando Scandrick" jersey="32" position="CB" tackle="2" ast="0" comb="2" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="65859588-5da0-4df0-a339-6adf83287078" name="Anthony Spencer" jersey="93" position="DE" tackle="1" ast="0" comb="1" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="c32d8200-2b85-4638-8db3-9a52fb86b207" name="Tony Romo" jersey="9" position="QB" tackle="0" ast="0" comb="0" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="2"/>
+      <player id="3e3bd10a-6462-47f8-8938-42518781d060" name="Demarcus Lawrence" jersey="90" position="DE" tackle="1" ast="0" comb="1" tlost="0" sack="1.0" sack_yds="10.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="1" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="4bcd7b38-cfd3-4bfa-bad2-b6ef9d09a877" name="Cameron Lawrence" jersey="53" position="OLB" tackle="0" ast="0" comb="0" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="1" sp_ast="0" sp_comb="1" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="58082e7d-926f-4acd-9a6b-8b09d2306e4b" name="Ken Bishop" jersey="66" position="DT" tackle="2" ast="2" comb="4" tlost="1" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="ad9a6262-7df3-41a8-9753-b89866f5cd0e" name="Barry Church" jersey="42" position="SAF" tackle="6" ast="1" comb="7" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="5a001d28-b271-410a-8c91-3159a6096258" name="Zack Martin" jersey="70" position="G" tackle="0" ast="0" comb="0" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="1" misc_ast="0" misc_comb="1" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="036fd3fc-e7a0-4f75-9019-8a5badff5e5f" name="Sterling Moore" jersey="26" position="CB" tackle="2" ast="0" comb="2" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="e0df28b2-39ed-42a9-abbb-ab9f723a3ddb" name="Jeremy Mincey" jersey="92" position="DE" tackle="4" ast="1" comb="5" tlost="2" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="1" fum_rec="1" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="23893852-6ef4-48a9-99a0-c51f41670508" name="Brandon Carr" jersey="39" position="CB" tackle="3" ast="0" comb="3" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="1670a774-4e0f-4474-b1d7-c665b6e4e4ec" name="George Selvie" jersey="99" position="DE" tackle="4" ast="1" comb="5" tlost="0" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+      <player id="6fbd5f30-db84-4c38-98ea-69631bdbc53f" name="Bruce Carter" jersey="54" position="LB" tackle="3" ast="3" comb="6" tlost="1" sack="0.0" sack_yds="0.0" sfty="0" int="0" int_yds="0" int_lg="0" int_td="0" force_fum="0" fum_rec="0" fum_td="0" qh="0" pd="0" bk="0" sp_tackle="0" sp_ast="0" sp_comb="0" sp_force_fum="0" sp_fum_rec="0" misc_tackle="0" misc_ast="0" misc_comb="0" misc_force_fum="0" misc_fum_rec="0"/>
+    </defense>
+  </team>
+</game>
+<!-- Generation finished at 2015-01-11 20:12:54 +0000 -->

@@ -1,0 +1,36 @@
+NOTE: status: 'scheduled', 'inprogress', 'closed'
+
+{id: '1a846255-6f99-46fb-8ef9-481f0e7d5513',
+ scheduled: '2015-01-10T21:35:00+00:00',
+ home_rotation: '',
+ away_rotation: '',
+ home: 'NE',
+ away: 'BAL',
+ status: 'scheduled',
+ venue:
+  { id: 'e43310b1-cb82-4df9-8be5-e9b39637031b',
+    country: 'USA',
+    name: 'Gillette Stadium',
+    city: 'Foxborough',
+    state: 'MA',
+    capacity: '68756',
+    surface: 'artificial',
+    type: 'outdoor',
+    zip: '02035',
+    address: 'One Patriot Place' },
+ weather:
+  { temperature: '',
+    condition: '',
+    humidity: '',
+    wind: { speed: '', direction: '' } },
+ broadcast: { network: 'NBC', satellite: '', internet: '', cable: '' },
+ links:
+  { link:
+     [ [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object] ] }
+}
