@@ -1,11 +1,11 @@
 Template.fixtureCreate.helpers
 
   allFutureEvents: ->
-    Events.find(MQH.startsInFuture)
+    Events.find({startsAt: mq.future})
     # Events.find() # temporary to see events, since SD api doesn't yet have POSTseason sched exposed
 
   fixtures: ->
-    Fixtures.find(MQH.startsInFuture, MQH.startsInFutureSortAsc)
+    Fixtures.find({startsAt: mq.future})#, MQH.startsInFutureSortAsc)
     # Fixtures.find() # temporary to see events, since SD api doesn't yet have POSTseason sched exposed
 
   # for use within fixture data context

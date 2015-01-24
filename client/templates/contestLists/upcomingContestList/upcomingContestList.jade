@@ -8,7 +8,7 @@ template(name='upcomingContestListContainer')
       div(class='row')
         h3(class='col-xs-2') Entry
         h3(class='col-xs-4') Contest
-        h3(class='col-xs-12') Players
+        h3(class='col-xs-6') Players
         h3(class='col-xs-6') Entry
       +each upcomingContests
         div(class='row')
@@ -17,6 +17,6 @@ template(name='upcomingContestListContainer')
               i(class="fa fa-money pointer")
           div(class='col-xs-4') 
             a(href="{{pathFor 'entryLayout'}}") #{contestName}
-          div(class='col-xs-12 size-9')
+          div(class='col-xs-6 size-9')
             +entryViewNames
           div(class='col-xs-6') $#{entryFee}
