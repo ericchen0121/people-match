@@ -11,6 +11,3 @@ Template.upcomingContestListContainer.helpers
 
   upcomingContests: ->
     Entries.find({ contestStarts: mq.future })
-
-Template.upcomingContestListContainer.rendered = ->
-  $('#counter').countdown('2015/01/30')

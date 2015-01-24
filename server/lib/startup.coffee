@@ -46,6 +46,7 @@ EventStats.distinct = (key, query) ->
   result = future.wait()
   throw result[1] if !result[0]
   result[1]
+  
 # ----------------------------------------Fast Render----------------------------------------
 # https://github.com/meteorhacks/fast-render#using-fast-renders-route-apis
 
