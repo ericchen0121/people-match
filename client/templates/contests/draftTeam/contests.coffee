@@ -91,10 +91,30 @@ Template.contestLineupContainer.helpers
         NflPlayers.find({ position: position_filter, team_id: {$in: team_filter }})
 
   salaryRemaining: ->
-    60000
+    totalSalary = 60000
+    rosterJSON = Session.getJSON 'currentLineup.roster'
+
+    $.each rosterJSON, (k, v) =>
+      if v != 'open' # then there is a player
+        totalSalary -= v['salary']
+    
+    Session.set 'remainingSalary', totalSalary
+
+    return totalSalary.toLocaleString()
 
   salaryRemainingAvg: ->
-    60000 / 12
+    averageSalary = Session.get 'remainingSalary'
+    rosterJSON = Session.getJSON 'currentLineup.roster'
+    openSpots = 0
+
+    $.each rosterJSON, (k,v) ->
+      if v == 'open'
+        openSpots += 1
+
+    if openSpots != 0 # no division by zero
+      averageSalary /= openSpots
+
+    return Math.floor(averageSalary).toLocaleString()
 
   # Generates the Lineup View based on Session Data.
   # returns: [Array] of Athlete Objects

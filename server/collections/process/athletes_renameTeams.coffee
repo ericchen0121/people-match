@@ -35,5 +35,13 @@ Meteor.methods
     NflPlayers.update({team: "St. Louis Rams"}, {$set: {"team_id": "STL"}}, {multi: true})
     NflPlayers.update({team: "Seattle Seahawks"}, {$set: {"team_id": "SEA"}}, {multi: true})
 
+  # Adds a base salary of 4500 to all players, which powers the contest.
+  addSalary: ->
+    NflPlayers.update(
+      {}, 
+      { $set: { salary: 4500 }}
+      { multi: true}
+    )
+
 # TODO: Create a frontend UI to call this method 
 # Meteor.call("addTeamIdsToPlayers")
