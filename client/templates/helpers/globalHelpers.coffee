@@ -65,6 +65,12 @@ Template.registerHelper 'truncate', (text, position = 'last', numChar) ->
   else if position is 'last'
     text.substr(text.length - numChar)
 
+# ---------------------------------------- Commas in Numbers ----------------------------------------
+# Adds commas!
+#
+Template.registerHelper 'addCommas', (number) ->
+  number.toLocaleString()
+
 # ---------------------------------------- Handle Events ----------------------------------------
 # http://www.neo.com/2014/05/23/reactive-forms-in-meteor-js
 window.AllEvents = {}
