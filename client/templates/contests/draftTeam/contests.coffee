@@ -7,10 +7,17 @@
 # or submits after a contest is filled up, and wants to remember his lineup.
 addPlayerToRoster = (player) ->
   currentRoster = Session.getJSON 'currentLineup.roster'
+  toastr.options = {
+    "positionClass": "toast-bottom-full-width",
+    "preventDuplicates": false,
+    "showDuration": "300",
+    "hideDuration": "500",
+    "timeOut": "1500"
+  }
 
   switch player.position
     when 'QB'
-      if currentRoster['QB'] is 'open' then Session.setJSON 'currentLineup.roster.QB', player else alert 'QBs are Full'
+      if currentRoster['QB'] is 'open' then Session.setJSON 'currentLineup.roster.QB', player else toastr.info 'QBs are Full'
     when 'RB'
       if currentRoster['RB1'] is 'open'
         Session.setJSON 'currentLineup.roster.RB1', player
@@ -20,7 +27,7 @@ addPlayerToRoster = (player) ->
         Session.setJSON 'currentLineup.roster.FLEX1', player
       else if currentRoster['FLEX2'] is 'open'
         Session.setJSON 'currentLineup.roster.FLEX2', player
-      else alert 'RBs are Full'
+      else toastr.info 'RBs are Full'
     when 'WR'
       if currentRoster['WR1'] is 'open'
         Session.setJSON 'currentLineup.roster.WR1', player
@@ -32,7 +39,7 @@ addPlayerToRoster = (player) ->
         Session.setJSON 'currentLineup.roster.FLEX1', player
       else if currentRoster['FLEX2'] is 'open'
         Session.setJSON 'currentLineup.roster.FLEX2', player
-      else alert 'WRs are Full'
+      else toastr.info 'WRs are Full'
     when 'TE'
       if currentRoster['TE'] is 'open'
         Session.setJSON 'currentLineup.roster.TE', player
@@ -40,11 +47,11 @@ addPlayerToRoster = (player) ->
         Session.setJSON 'currentLineup.roster.FLEX1', player
       else if currentRoster['FLEX2'] is 'open'
         Session.setJSON 'currentLineup.roster.FLEX2', player
-      else alert 'TEs are Full'
+      else toastr.info 'TEs are Full'
     when 'PK'
-      if currentRoster['K'] is 'open' then Session.setJSON 'currentLineup.roster.K', player else alert 'Ks are Full'
+      if currentRoster['K'] is 'open' then Session.setJSON 'currentLineup.roster.K', player else toastr.info 'Ks are Full'
     when 'DEF'
-      if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else alert 'DEFs are Full'
+      if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else toastr.info 'DEFs are Full'
 
 validateEntry = () ->
   rosterJSON = Session.getJSON 'currentLineup.roster'
@@ -243,7 +250,7 @@ Template.contestLineupContainer.events
         # 'result' is the created entry _id
         Router.go 'entryLayout', { _id: result }
     else
-      alert('Please select a player for each position!')
+      toastr.info('Please select a player for each position!')
 
 Template.contestLineupContainer.rendered = ->
   # Defaults
