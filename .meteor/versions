@@ -110,6 +110,7 @@ service-configuration@1.0.3
 session@1.0.5
 sewdn:velocityjs@0.8.0
 sha@1.0.2
+softwarerero:accounts-t9n@1.0.5
 spacebars@1.0.5
 spacebars-compiler@1.0.4
 srp@1.0.2
@@ -122,6 +123,8 @@ twitter@1.1.3
 ui@1.0.5
 underscore@1.0.2
 url@1.0.3
+useraccounts:bootstrap@1.5.0
+useraccounts:core@1.5.0
 velocity:core@0.4.5
 velocity:meteor-stubs@1.0.0_2
 velocity:node-soft-mirror@0.2.8

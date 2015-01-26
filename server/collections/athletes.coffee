@@ -48,7 +48,6 @@ Meteor.methods
     console.log '-------------', team, '-------------'
     roster = sd.NFLApi.getTeamRoster team
     players = roster.team.player
-    console.log players
 
     for player in players
       # if player exists already, 
@@ -60,11 +59,18 @@ Meteor.methods
         if !existingPlayer.api and !existingPlayer.SDPlayerId
           NflPlayers.update(
             { full_name: existingPlayer.full_name },
-            { $set: { "api.SDPlayerId": player.id } }
+            { $set: { 
+                "api.SDPlayerId": player.id 
+                position: player.position
+                # team_id: roster.team.id # THIS CURRENTLY DOESN"T WORK
+                # due to removing attributes from XML
+                # When we move this to JSON this will work.
+                # this affects players changing teams
+                # also note we will need to keep team_id and team in sync.
+              }
+            }
           )
-          console.log player
-          console.log 'existing player: added SD player Id to ', player.name_full, ' ', player.position
-        
+
       else # if athlete doesn't exist, insert him
         NflPlayers.insert({
           full_name: player.name_full
