@@ -13,27 +13,27 @@ template(name='nav')
       div(class='collapse navbar-collapse' id='mobile-nav-collapse')
         ul(class="nav navbar-nav")
           li
-            a(href="{{ pathFor 'lobbyLayout' }}" class="{{ isActiveRoute regex='lobbyLayout' }}") Lobby
+            a(href="{{ pathFor 'lobbyLayout' }}" class="{{ isActiveRoute regex='lobbyLayout' }}") LOBBY
           li
-            a(href="{{ pathFor 'chatterLayout' }}" class="{{ isActiveRoute regex='chatterLayout' }}") Chatter
+            a(href="{{ pathFor 'chatterLayout' }}" class="{{ isActiveRoute regex='chatterLayout' }}") TALK
           li
-            a(href="{{ pathFor 'nflPlayersListLayout' }}" class="{{ isActiveRoute regex='nflPlayersListLayout' }}") Players
+            a(href="{{ pathFor 'nflPlayersListLayout' }}" class="{{ isActiveRoute regex='nflPlayersListLayout' }}") PLAYERS
           li
-            a(href="{{ pathFor 'upcomingContestListLayout' }}" class="{{ isActiveRoute regex='upcomingContestListLayout' }}") Upcoming
+            a(href="{{ pathFor 'upcomingContestListLayout' }}" class="{{ isActiveRoute regex='upcomingContestListLayout' }}") UPCOMING
           li
-            a(href="{{ pathFor 'liveContestListLayout' }}" class="{{ isActiveRoute regex='liveContestListLayout' }}") Live
+            a(href="{{ pathFor 'liveContestListLayout' }}" class="{{ isActiveRoute regex='liveContestListLayout' }}") LIVE
           li
-            a(href="{{ pathFor 'historyContestListLayout' }}" class="{{ isActiveRoute regex='historyContestListLayout' }}") History
+            a(href="{{ pathFor 'historyContestListLayout' }}" class="{{ isActiveRoute regex='historyContestListLayout' }}") HISTORY
           li(class="dropdown")
-            a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false") Admin
+            a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false") ADMIN
               span(class="caret")
             ul(class="dropdown-menu" role="menu")
               li
-                a(href="{{ pathFor 'fixtureCreateLayout' }} ") Create Fixtures
+                a(href="{{ pathFor 'fixtureCreateLayout' }} ") FIXTURES
               li
-                a(href="{{pathFor 'contestCreateLayout' }}") Create Contests
+                a(href="{{pathFor 'contestCreateLayout' }}") CONTESTS
               li
-                a(href="{{pathFor 'scoreLayout' }}") Score!
+                a(href="{{pathFor 'scoreLayout' }}") SCORE YAHZTE!
           li
             a(href="{{ pathFor 'historyContestListLayout' }}" class="{{ isActiveRoute regex='historyContestListLayout' }}") $0.00
         ul(class="nav navbar-nav navbar-right")

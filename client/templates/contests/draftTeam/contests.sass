@@ -1,5 +1,5 @@
-$highlightGreen: #7ab800
-$highlightRed: #e22b00
+@import "../../../lib/stylesheets/colors.sass"
+
 $lightGrey: #d6d6d6
 $lighterGrey: #ebebeb
 $lightestGrey: #fafafa
@@ -31,13 +31,13 @@ $lightBlue: #3f96cb
     border: 1px solid white
 
     &:hover
-      border: 1px solid $highlightGreen
+      border: 1px solid $accent-highlight
 
   .event-filter
     height: 60px
 
 .fa-plus-circle
-    color: $highlightGreen
+    // color: $accent-highlight
     font-size: 22px
 
 .fa-minus-circle
@@ -100,7 +100,7 @@ $lightBlue: #3f96cb
 
   .lineup-clear-all
     height: 45px
-    color: $highlightRed
+    color: $highlight-red
 
   .btn.btn-default.btn-lg.contest-entry
     padding: 12px 30px

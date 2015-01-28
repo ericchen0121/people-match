@@ -1,27 +1,22 @@
+@import "../../../lib/stylesheets/colors.sass"
+
+$progressbar-color: $accent-highlight
+
 /* CSS declarations go here */
 // Color Variables
-$highlightGreen: #7ab800
 $lightGray: #d3d3d3
 $navbarDarkGray: #2d2d2d
 $navbarLightGrayText: #dfdfdf
 
-$navHighlightHeight: 4px
+$navHighlightHeight: 3px
 // Progress Bar
 // https://github.com/Multiply/iron-router-progress
 //
-$progressbar-color: $highlightGreen
 
-body
-  font-smoothing: antialiased
-  -webkit-webkit-font-smoothing: antialiased
-  -moz-webkit-font-smoothing: antialiased
-  -ms-webkit-font-smoothing: antialiased
-  -o-webkit-font-smoothing: antialiased
-  webkit-font-smoothing: antialiased
 
 #iron-router-progress
   background-color : $progressbar-color
-  box-shadow       : 0 0 3px $progressbar-color
+  box-shadow       : 0 0 4px $progressbar-color
 
 #iron-router-progress.spinner:before
   border-color: $progressbar-color
@@ -64,7 +59,7 @@ body
 .nav.nav-tabs li
   background-color: white
 
-  border: 1px solid $highlightGreen
+  border: 1px solid $accent-highlight
   border-bottom: 0px
   border-radius: 4px
 
@@ -85,27 +80,33 @@ body
     width: 45px
     height: 50px
 
-.navbar-default .navbar-nav > li > a
-  text-decoration: none
-  color: $navbarLightGrayText
-  font-weight: 200
+.navbar-default .navbar-nav 
+  > li > a
+    text-decoration: none
+    color: white
+    font-weight: 600
 
-  &.active
-    border-top: $navHighlightHeight solid $highlightGreen
-    color: $navbarLightGrayText
-    font-weight: 200
-    padding-top: 15px - $navHighlightHeight
+    &.active
+      border-top: $navHighlightHeight solid $accent-highlight
+      color: $accent-foil
+      transition: all 1s ease-in-out
+      padding-top: 15px - $navHighlightHeight
 
-  &:hover
-    border-top: $navHighlightHeight solid $highlightGreen
-    color: $navbarLightGrayText
-    font-weight: 200
-    transition: all .25s ease-in-out
-    padding-top: 15px - $navHighlightHeight
+    &:hover
+      border-top: $navHighlightHeight solid $accent-foil
+      color: $accent-foil
+      transition: all .25s ease-in-out
+      padding-top: 15px - $navHighlightHeight
+
+  > .open
+    > a,
+    > a:hover,
+    > a:focus
+      background-color: $accent-highlight
 
 
 .navbar-nav  .dropdown-menu
-  background-color: $highlightGreen
+  background-color: $accent-highlight
 
   li
     height: 38px
@@ -116,7 +117,7 @@ body
   > a,
   > a:hover,
   > a:focus
-    border-color: $highlightGreen
+    border-color: $accent-highlight
 
 .headerBar
   width: 100%
