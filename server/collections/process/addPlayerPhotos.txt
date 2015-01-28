@@ -1,0 +1,5 @@
+// Finds Players without Photos
+db.nflPlayers.find({position: {$in: ['QB', 'RB', 'WR', 'TE', 'K']}, team_id: {$in: ['SEA', 'NE']}, espn_id: {$exists: 0}}).pretty()
+
+// NFL Photos
+http://static.nfl.com/static/content/public/image/fantasy/transparent/200x200/SEA.png

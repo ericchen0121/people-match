@@ -11,6 +11,14 @@ $navHighlightHeight: 4px
 //
 $progressbar-color: $highlightGreen
 
+body
+  font-smoothing: antialiased
+  -webkit-webkit-font-smoothing: antialiased
+  -moz-webkit-font-smoothing: antialiased
+  -ms-webkit-font-smoothing: antialiased
+  -o-webkit-font-smoothing: antialiased
+  webkit-font-smoothing: antialiased
+
 #iron-router-progress
   background-color : $progressbar-color
   box-shadow       : 0 0 3px $progressbar-color
@@ -110,7 +118,13 @@ $progressbar-color: $highlightGreen
   > a:focus
     border-color: $highlightGreen
 
+.headerBar
+  width: 100%
+  height: 120px
+  margin-bottom: 15px
+  background-image: url("/images/triangle_green.svg")
+
 #globalContainer
-  padding-top: 50px
-  width: 1170px
+  width: 95%
   margin: auto
+  
