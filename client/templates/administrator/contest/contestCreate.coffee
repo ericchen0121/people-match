@@ -22,7 +22,7 @@ Template.contestCreate.helpers
       return 'is-expanded'
 
   availableLeagueSizes: ->
-    [3..20]
+    [3..500]
 
   adminLeagueSizes: ->
     [10..1000]  

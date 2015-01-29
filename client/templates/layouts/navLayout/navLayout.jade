@@ -1,8 +1,9 @@
 template(name='navLayout')
   div(id='nav-container')
     +nav
-  div(class='headerBar')
-  div(id='globalContainer' class='row container-fluid')
-    +yield
+  div(class='wrapper')
+    div(class='headerBar')
+    div(id='globalContainer' class='row container-fluid')
+      +yield
   div(id='footerContainer' class='row container-fluid')
     +footer
