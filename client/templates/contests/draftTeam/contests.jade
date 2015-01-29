@@ -1,114 +1,114 @@
 template(name='contestTitle')
-  div(class='col-xs-24')
+  div(class='col-md-24')
     div(class='row')
-      h1(id='contest-title' class='col-xs-16') #{contestName}
-      h4(id='contest-date' class='col-xs-8') Contest Starts this {{momentify startsAt}}
+      h1(id='contest-title' class='col-md-16') #{contestName}
+      h4(id='contest-date' class='col-md-8') Contest Starts this {{momentify startsAt}}
     div(class='row')
-      h4(id='contest-information' class='col-xs-24 size-12') Entries: #{entryCount} / #{entrySize}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
+      h4(id='contest-information' class='col-md-24 size-12') Entries: #{entryCount} / #{entrySize}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
 
 template(name='contestFixtureContainer')
-  div(class='col-xs-24' id='event-filters-container')
+  div(class='col-md-24' id='event-filters-container')
     div(class='row event-filters size-13 pointer')
-      div(class='col-xs-2 event-filter-tab')
+      div(class='col-md-2 event-filter-tab')
         div(class='event-filter') 
           div(class='vAlign') All
       each fixture.events
-        div(class='col-xs-2 event-filter-tab')
+        div(class='col-md-2 event-filter-tab')
           div(class='event-filter') 
             div #{away} 
             div @ #{home} 
             div(class='size-10') {{momentify startsAt 'shortTime'}}
 
 template(name='contestLineupContainer')
-  div(class='contestLineupContainer col-xs-24')
+  div(class='contestLineupContainer col-md-24')
     div(class='row')
-      div(class='col-xs-13')
+      div(class='col-md-13')
         h2 Available Players
         div(class='row position-filters size-13 pointer')
-          div(class='col-xs-2 position-filter-tab')
+          div(class='col-md-2 position-filter-tab')
             div(class='position-filter vAlign') All
-          div(class='col-xs-2 position-filter-tab')
+          div(class='col-md-2 position-filter-tab')
             div(class='position-filter vAlign') QB
-          div(class='col-xs-2 position-filter-tab')
+          div(class='col-md-2 position-filter-tab')
             div(class='position-filter vAlign') RB
-          div(class='col-xs-2 position-filter-tab')
+          div(class='col-md-2 position-filter-tab')
             div(class='position-filter vAlign') WR
-          div(class='col-xs-2 position-filter-tab')
+          div(class='col-md-2 position-filter-tab')
             div(class='position-filter vAlign') TE
-          div(class='col-xs-2 position-filter-tab')
+          div(class='col-md-2 position-filter-tab')
             div(class='position-filter vAlign') K
-          div(class='col-xs-2 position-filter-tab')
+          div(class='col-md-2 position-filter-tab')
             div(class='position-filter vAlign') D
-          div(class='col-xs-6 col-xs-push-4 position-filter-tab')
+          div(class='col-md-6 col-md-push-4 position-filter-tab')
             div(class='position-filter vAlign') Player search...
         div(class='row player-list-table-header size-12')
-          div(class='col-xs-4 player-list-table-title vAlign') Pos
-          div(class='col-xs-6 player-list-table-title vAlign') Name
-          div(class='col-xs-2 player-list-table-title vAlign') FPPG
-          div(class='col-xs-2 player-list-table-title vAlign') Played
-          div(class='col-xs-5 player-list-table-title vAlign') Game
-          div(class='col-xs-2 player-list-table-title vAlign') Salary
-          div(class='col-xs-2 player-list-table-title vAlign')
+          div(class='col-md-4 player-list-table-title vAlign') Pos
+          div(class='col-md-6 player-list-table-title vAlign') Name
+          div(class='col-md-2 player-list-table-title vAlign') FPPG
+          div(class='col-md-2 player-list-table-title vAlign') Played
+          div(class='col-md-5 player-list-table-title vAlign') Game
+          div(class='col-md-2 player-list-table-title vAlign') Salary
+          div(class='col-md-2 player-list-table-title vAlign')
         div(id='player-list-table-container' class='row')
-          div(id='player-list-table' class='col-xs-24')
+          div(id='player-list-table' class='col-md-24')
             each availablePlayers
               div(class='row player-list-item size-13 {{#if inCurrentLineup}}selected-player{{/if}}')
-                div(class='col-xs-1 player-position vAlign') #{position}
-                div(class='col-xs-3 player-image vAlign')
+                div(class='col-md-1 player-position vAlign') #{position}
+                div(class='col-md-3 player-image vAlign')
                   img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
-                div(class='col-xs-6 player-name vAlign') #{full_name}
-                div(class='col-xs-2 player-fppg vAlign') 12.3
-                div(class='col-xs-2 player-played vAlign') 13
-                div(class='col-xs-5 player-fixture vAlign') {{ getCurrentEvent ..}}
-                div(class='col-xs-2 player-salary vAlign') ${{ addCommas salary }}
+                div(class='col-md-6 player-name vAlign') #{full_name}
+                div(class='col-md-2 player-fppg vAlign') 12.3
+                div(class='col-md-2 player-played vAlign') 13
+                div(class='col-md-5 player-fixture vAlign') {{ getCurrentEvent ..}}
+                div(class='col-md-2 player-salary vAlign') ${{ addCommas salary }}
                 if inCurrentLineup
-                  div(class='col-xs-2 col-xs-push-1 lineup-player-remove vAlign')
+                  div(class='col-md-2 col-md-push-1 lineup-player-remove vAlign')
                     i(class="fa fa-minus-circle fa-2x pointer")
                 else
-                  div(class='col-xs-2 col-xs-push-1 lineup-player-add vAlign')
+                  div(class='col-md-2 col-md-push-1 lineup-player-add vAlign')
                     i(class="fa fa-plus-circle fa-2x pointer")
-      div(class='col-xs-10 col-xs-push-1')
+      div(class='col-md-10 col-md-push-1')
         div(class='row')
-          div(class='col-xs-10')
+          div(class='col-md-10')
             h3 Your Lineup
-          div(class='col-xs-2')
-          div(class='col-xs-6')
+          div(class='col-md-2')
+          div(class='col-md-6')
             h3 $#{salaryRemaining}
-          div(class='col-xs-6')
+          div(class='col-md-6')
             h3 $#{salaryRemainingAvg}
         div(class='row size-10 lineup-desc')
-          div(class='col-xs-10') Lineup locks @ {{momentify startsAt}}
-          div(class='col-xs-2')
-          div(class='col-xs-6') Salary Remaining
-          div(class='col-xs-6') Avg/Player
+          div(class='col-md-10') Lineup locks @ {{momentify startsAt}}
+          div(class='col-md-2')
+          div(class='col-md-6') Salary Remaining
+          div(class='col-md-6') Avg/Player
         div(class='row lineup-table')
-          div(class='col-xs-24')
+          div(class='col-md-24')
             each currentLineup
               if espn_id
                 +AnimateWithVelocity
                   div(class='row lineup-player-selection size-13')
-                    div(class='col-xs-4 lineup-player-image vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
+                    div(class='col-md-4 lineup-player-image vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
                       img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'small'}}")
-                    div(class='col-xs-2 lineup-player-position vAlign') #{position}
-                    div(class='col-xs-8 lineup-player-name vAlign') #{full_name}
-                    div(class='col-xs-2 lineup-player-salary vAlign') ${{addCommas salary}}
-                    div(class='col-xs-2 col-xs-push-2 lineup-player-remove vAlign')
+                    div(class='col-md-2 lineup-player-position vAlign') #{position}
+                    div(class='col-md-8 lineup-player-name vAlign') #{full_name}
+                    div(class='col-md-2 lineup-player-salary vAlign') ${{addCommas salary}}
+                    div(class='col-md-2 col-md-push-2 lineup-player-remove vAlign')
                       i(class="fa fa-minus-circle fa-2x pointer")
               else
                 div(class='row lineup-player-selection player-empty size-13')
-                  div(class='col-xs-4 lineup-player-image vAlign')
+                  div(class='col-md-4 lineup-player-image vAlign')
                     img(class='player-photo-anonymous' src='/images/anonymous_player.png')
-                  div(class='col-xs-12 lineup-player-position vAlign')
+                  div(class='col-md-12 lineup-player-position vAlign')
                     span #{this}
-                    span(class='lineup-empty-name col-xs-push-1') ADD PLAYER
+                    span(class='lineup-empty-name col-md-push-1') ADD PLAYER
             div(class='row lineup-clear-all size-12')
-              div(class='col-xs-6 col-xs-push-18 pointer vAlign')
+              div(class='col-md-6 col-md-push-18 pointer vAlign')
                 i(class="fa fa-minus-circle size-13")
                 span Clear All
             div(class='row lineup-player-enter')
-              div(class='col-xs-6 col-xs-push-18')
+              div(class='col-md-6 col-md-push-18')
                 div(class='btn btn-default btn-lg contest-entry') Enter
 
 template(name='lineupCard')
   div(class='row')
-    div(class='col-xs-12')
+    div(class='col-md-12')

@@ -1,11 +1,11 @@
 template(name='entryView')
-  div(class='col-xs-24')
+  div(class='col-md-24')
     div(class='row')
       h2 {{ formatScore totalScore }}
     div(class='row')
       each roster
         +AnimateWithVelocity
-          div(class='col-xs-2' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
+          div(class='col-md-2' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
             img(src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
             div #{ last_name }, #{ first_name }
             div #{ score }

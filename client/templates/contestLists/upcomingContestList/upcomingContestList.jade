@@ -1,22 +1,22 @@
 template(name='upcomingContestListContainer')
   div(class='upcoming-contest-list')
-    div(class='col-xs-24')
+    div(class='col-md-24')
       div(class='row')
-        h1(id='upcoming-contest-title' class='col-xs-16') Upcoming Contests
+        h1(id='upcoming-contest-title' class='col-md-16') Upcoming Contests
       div(class='row')
-        h4(class='col-xs-8') You have #{ upcomingEntriesCount } contest entries upcoming.
+        h4(class='col-md-8') You have #{ upcomingEntriesCount } contest entries upcoming.
       div(class='row')
-        h3(class='col-xs-2') Entry
-        h3(class='col-xs-4') Contest
-        h3(class='col-xs-6') Players
-        h3(class='col-xs-6') Entry
+        h3(class='col-md-2') Entry
+        h3(class='col-md-4') Contest
+        h3(class='col-md-6') Players
+        h3(class='col-md-6') Entry
       +each upcomingContests
         div(class='row')
-          div(class='col-xs-2') 
+          div(class='col-md-2') 
             a(href="{{pathFor 'entryLayout'}}") 
               i(class="fa fa-money pointer")
-          div(class='col-xs-4') 
+          div(class='col-md-4') 
             a(href="{{pathFor 'entryLayout'}}") #{contestName}
-          div(class='col-xs-6 size-9')
+          div(class='col-md-6 size-9')
             +entryViewNames
-          div(class='col-xs-6') $#{entryFee}
+          div(class='col-md-6') $#{entryFee}

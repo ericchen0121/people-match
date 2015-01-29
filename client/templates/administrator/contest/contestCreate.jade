@@ -1,29 +1,29 @@
 template(name='contestCreate')
-  div(class='col-xs-24')
+  div(class='col-md-24')
     div(class='row')
-      div(class='col-xs-24') Sport
+      div(class='col-md-24') Sport
         div(class='form-section footspace-25')
           div(class='row')
-            label(class='col-xs-3')
+            label(class='col-md-3')
               input(type='radio' value='NFL' name='sport-select')
               span NFL
-            label(class='col-xs-3')
+            label(class='col-md-3')
               input(type='radio' value='NBA' name='sport-select')
               span NBA
-            label(class='col-xs-3')
+            label(class='col-md-3')
               input(type='radio' value='CFB' name='sport-select')
               span CFB
-            label(class='col-xs-3')
+            label(class='col-md-3')
               input(type='radio' value='CBB' name='sport-select')
               span CBB
-            label(class='col-xs-3')
+            label(class='col-md-3')
               input(type='radio' value='NHL' name='sport-select')
               span NHL
     div(class='row')
-      div(class='col-xs-24') Date
+      div(class='col-md-24') Date
         div(class='form-section footspace-25')
           div(class='row')
-            div(class='col-xs-24')
+            div(class='col-md-24')
               select(id='contest-fixture-select')
                 +each availableFixtures
                   option(value='#{_id}') {{momentify startsAt "longDateTime"}}
@@ -33,56 +33,56 @@ template(name='contestCreate')
                     a Includes #{ fixtureEventCount } #{ sport } Games
                   ul(class='row')
                     +each fixtureEvents
-                      li(class='col-xs-6') #{away} @ #{home} {{momentify startsAt}}
+                      li(class='col-md-6') #{away} @ #{home} {{momentify startsAt}}
     div(class='row')
-      div(class='col-xs-12') Contest Type
+      div(class='col-md-12') Contest Type
         div(class='form-section footspace-25')
           div(class='row')
-            label(class='col-xs-12')
+            label(class='col-md-12')
               input(type='radio' value='league' name='contest-type-select')
               span League
-            label(class='col-xs-12')
+            label(class='col-md-12')
               input(type='radio' value='h2h' name='contest-type-select')
               span Head to Head
-      div(class='col-xs-12') Opponent
+      div(class='col-md-12') Opponent
         div(class='form-section footspace-25')
           div(class='row')
-            label(class='col-xs-12')
+            label(class='col-md-12')
               input(type='radio' value='public' name='public-status-select')
               span Public
-            label(class='col-xs-12')
+            label(class='col-md-12')
               input(type='radio' value='private' name='public-status-select')
               span Private - Friends Only
     div(class='row')
-      div(class='col-xs-12') Size
+      div(class='col-md-12') Size
         div(class='form-section footspace-25')
           div(class='row')
-            div(class='col-xs-24')
+            div(class='col-md-24')
               select(id='contest-size-select')
                 each availableLeagueSizes
                   option(value='{{this}}') {{this}}
     div(class='row')
-      div(class='col-xs-12') Entry Fee & Prize Structure
+      div(class='col-md-12') Entry Fee & Prize Structure
         div(class='form-section footspace-25')
           div(class='row')
-            div(class='col-xs-12')
+            div(class='col-md-12')
               select(id='entry-fee-select')
                 +each availableEntryFees
                   option(value='#{ value }') #{ name }
-            div(class='col-xs-12')
+            div(class='col-md-12')
               select(id='prize-structure-select')
                 +each availablePrizeStructures
                   option(value='{{this}}') {{this}}
     div(class='row')
-      div(class='col-xs-12') Name Your League (optional)
+      div(class='col-md-12') Name Your League (optional, 25 char max)
         div(class='form-section footspace-25')
           div(class='row')
-            div(class='col-xs-12')
-              input(type='text' name='league-name')
+            div(class='col-md-12')
+              input(type='text' name='league-name' maxlength='25')
     div(class='row')
-      div(class='col-xs-24')
+      div(class='col-md-24')
         div(class='row')
-            div(class='col-xs-12 col-xs-push-18')
+            div(class='col-md-12 col-md-push-18')
               div(class='btn btn-lg btn-default create-contest')
                 a(href='#') Create Contest
 
