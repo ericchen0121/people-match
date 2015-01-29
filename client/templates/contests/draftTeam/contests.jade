@@ -58,8 +58,8 @@ template(name='contestLineupContainer')
                   img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
                 div(class='col-md-6 player-name vAlign') #{full_name}
                 div(class='col-md-2 player-fppg vAlign') 12.3
-                div(class='col-md-2 player-played vAlign') 13
-                div(class='col-md-5 player-fixture vAlign') {{ getCurrentEvent ..}}
+                div(class='col-md-1 player-played vAlign') 13
+                div(class='col-md-4 player-fixture vAlign') {{ getCurrentEvent ..}}
                 div(class='col-md-2 player-salary vAlign') ${{ addCommas salary }}
                 if inCurrentLineup
                   div(class='col-md-2 col-md-push-1 lineup-player-remove vAlign')
@@ -92,7 +92,7 @@ template(name='contestLineupContainer')
                     div(class='col-md-2 lineup-player-position vAlign') #{position}
                     div(class='col-md-8 lineup-player-name vAlign') #{full_name}
                     div(class='col-md-2 lineup-player-salary vAlign') ${{addCommas salary}}
-                    div(class='col-md-2 col-md-push-2 lineup-player-remove vAlign')
+                    div(class='col-md-2 col-md-push-6 lineup-player-remove vAlign')
                       i(class="fa fa-minus-circle fa-2x pointer")
               else
                 div(class='row lineup-player-selection player-empty size-13')
@@ -102,12 +102,12 @@ template(name='contestLineupContainer')
                     span #{this}
                     span(class='lineup-empty-name col-md-push-1') ADD PLAYER
             div(class='row lineup-clear-all size-12')
-              div(class='col-md-6 col-md-push-18 pointer vAlign')
+              div(class='col-md-8 col-md-push-16 pointer vAlign')
                 i(class="fa fa-minus-circle size-13")
                 span Clear All
             div(class='row lineup-player-enter')
-              div(class='col-md-6 col-md-push-18')
-                div(class='btn btn-default btn-lg contest-entry') Enter
+              div(class='col-md-6 col-md-push-14')
+                div(class='btn btn-default btn-lg contest-entry headspace-5') Enter
 
 template(name='lineupCard')
   div(class='row')

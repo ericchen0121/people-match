@@ -1,9 +1,10 @@
 template(name='navLayout')
-  div(id='nav-container')
-    +nav
-  div(class='wrapper')
-    div(class='headerBar')
-    div(id='globalContainer' class='row container-fluid')
-      +yield
-  div(id='footerContainer' class='row container-fluid')
-    +footer
+  div(class='wrapper-main')
+    div(id='nav-container')
+      +nav
+    div(class='wrapper-body')
+      div(class='headerBar')
+      div(id='globalContainer' class='row container-fluid')
+        +yield
+    div(id='footerContainer' class='row container-fluid')
+      +footer
