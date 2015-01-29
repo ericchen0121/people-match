@@ -1,5 +1,5 @@
-$highlightGreen: #7ab800
-$highlightRed: #e22b00
+@import "../../../lib/stylesheets/colors.sass"
+
 $lightGrey: #d6d6d6
 $lighterGrey: #ebebeb
 $lightestGrey: #fafafa
@@ -9,6 +9,7 @@ $lightBlue: #3f96cb
 .contestLineupContainer
   .player-list-item
     height: 45px
+    background-image: url("/images/player_purple_pink.svg")
 
     &.selected-player
       background-color: #f2fbe9
@@ -30,17 +31,17 @@ $lightBlue: #3f96cb
     border: 1px solid white
 
     &:hover
-      border: 1px solid $highlightGreen
+      border: 1px solid $accent-highlight
 
   .event-filter
     height: 60px
 
 .fa-plus-circle
-    color: $highlightGreen
+    color: $fa-plus
     font-size: 22px
 
 .fa-minus-circle
-  color: $highlightRed
+  color: $fa-minus
   font-size: 22px
 
 .player-list-table-header
@@ -63,6 +64,10 @@ $lightBlue: #3f96cb
 
     &:last-child
       border-bottom: 0px
+
+  .player-photo
+    height: 40px
+    width: 54px
 
 .lineup-table
   border: 1px solid $lightGrey
@@ -95,8 +100,10 @@ $lightBlue: #3f96cb
 
   .lineup-clear-all
     height: 45px
-    color: $highlightRed
+    color: $highlight-red
 
   .btn.btn-default.btn-lg.contest-entry
     padding: 12px 30px
 
+.lineup-desc
+  margin-bottom: 10px

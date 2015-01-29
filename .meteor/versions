@@ -5,7 +5,6 @@ accounts-password@1.0.6
 accounts-twitter@1.0.3
 accounts-ui@1.1.4
 accounts-ui-unstyled@1.1.6
-alanning:package-stubber@0.0.9
 alanning:roles@1.2.13
 application-configuration@1.0.4
 autoupdate@1.1.5
@@ -17,6 +16,7 @@ blaze-tools@1.0.2
 boilerplate-generator@1.0.2
 callback-hook@1.0.2
 check@1.0.4
+chrismbeckett:toastr@2.1.0
 chuangbo:cookie@1.1.0
 coffeescript@1.0.5
 copleykj:jquery-autosize@1.17.8
@@ -78,6 +78,7 @@ momentjs:moment@2.9.0
 mongo@1.0.11
 mongo-livedata@1.0.7
 mquandalle:jade@0.4.1
+mrgalaxy:stripe@1.5.6
 mrt:moment@2.8.1
 mrt:moment-timezone@0.2.1
 mrt:underscore-string-latest@2.3.3
@@ -93,8 +94,6 @@ oauth1@1.1.3
 oauth2@1.1.2
 observe-sequence@1.0.4
 ordered-dict@1.0.2
-practicalmeteor:chai@1.9.2_3
-practicalmeteor:loglevel@1.1.0_3
 random@1.0.2
 reactive-dict@1.0.5
 reactive-var@1.0.4
@@ -102,12 +101,11 @@ reload@1.1.2
 retry@1.0.2
 reywood:publish-composite@1.3.5
 routepolicy@1.0.4
-sanjo:jasmine@0.11.0
-sanjo:karma@1.2.0
 service-configuration@1.0.3
 session@1.0.5
 sewdn:velocityjs@0.8.0
 sha@1.0.2
+softwarerero:accounts-t9n@1.0.5
 spacebars@1.0.5
 spacebars-compiler@1.0.4
 srp@1.0.2
@@ -120,11 +118,8 @@ twitter@1.1.3
 ui@1.0.5
 underscore@1.0.2
 url@1.0.3
-velocity:core@0.4.5
-velocity:meteor-stubs@1.0.0_2
-velocity:node-soft-mirror@0.2.8
-velocity:shim@0.1.0
-velocity:test-proxy@0.0.4
+useraccounts:bootstrap@1.5.0
+useraccounts:core@1.5.0
 velocityjs:velocityjs@1.2.1
 vjau:xml2js@4.4.0
 webapp@1.1.6

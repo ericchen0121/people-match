@@ -5,7 +5,7 @@ Template.entryView.helpers
 		athlete = @ # via template data context
 		if athlete.api # in case athlete doesn't have api (TO DEPRECATEs)
 			# TODO: Limit it to the games to ensure right score
-			# howver, need parent context... "api.SDGameId: {$in: [ @.api.SDGameIds ]
+			# however, need parent context... "api.SDGameId: {$in: [ @.api.SDGameIds ]
 			scoreDoc = AthleteEventScores.findOne(
 				{ "api.SDPlayerId": athlete.api.SDPlayerId}
 			)
@@ -13,9 +13,18 @@ Template.entryView.helpers
 		else 
 			return 0 
 		
+	# returns 88.55 from a score of 8855
 	formatScore: (score) ->
 		score / 100.0 
-		
+	
+	# returns 88 from a score of 8855
+	pointScore: (score) ->
+		return Math.floor(score / 100)
+
+	# returns 55 from a score of 8855
+	decimalScore: (score) ->
+		return (score - ( Math.floor(score / 100) * 100) )
+
 	# This outputs an Array of objects consisting of relevant stats
 	# I considered storing this on the AthleteEventScores object itself, however 
 	# I like more flexibility into the 'presentation' and the naming of stats.

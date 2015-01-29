@@ -1,25 +1,38 @@
-.contestFilterRow
-  height: 90px
-  font-size: 12px
+@import "../../lib/stylesheets/colors.sass"
 
-.contestDetailsModal
+.lobbyFilterRow
+  height: 55px
+  font-size: 10px
+  padding: 5px
+
+.contestModal
   cursor: pointer
 
 #contestResultsTable
-  height: 500px // set a fixed height so the custom scrollbar takes effect
+  height: 800px // set a fixed height so the custom scrollbar takes effect
+  background-color: white
 
+.contestIcons
+  border-radius: 3px
+  
 .contestGuaranteedPayIcon
-  color: white
+  color: orange
   background-color: gray
-  padding: 2px 5px
+  padding: 2px 4px
 
 .contestMultiEntryIcon
-  color: white
+  color: orange
   background-color: gray
-  padding: 2px 5px
+  padding: 2px 4px
+  border-radius: 1px
 
 .contestResultItem
-  height: 50px
+  color: $baby-blue
+  height: 35px
+
+  .title
+    font-family: 'jersey'
+    font-size: 1.4em
 
 // currently used to compensate for table header over contestResultItem
 // this pushed the first resultItem down 20px so it can be seen

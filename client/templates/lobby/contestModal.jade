@@ -1,13 +1,12 @@
-template(name="contestDetailsModal")
-  div(class='modal fade' id='contestDetailsModal-#{_id}')
+template(name="contestModal")
+  div(class='modal fade' id='contestModal-#{_id}')
     div(class="modal-dialog")
     div(class="modal-content")
       div(class="modal-header")
         h2(class="modal-title" id="exampleModalLabel") #{ contestName }
         h6
-          span Entry Fee: $#{ entryFee }  |
-          span Entries: #{ entryCount }  |
-          span Size: #{ entrySize }  |
+          span Entry Fee: $#{ entryFee }  |       
+          span Entries: #{ entryCount } / #{ entrySize }   |       
           span Prizes: $#{ prizes }  |
           span {{#if guaranteedPrizes }}Guaranteed Payouts {{/if}}
       div(class="modal-body")
