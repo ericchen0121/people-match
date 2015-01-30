@@ -53,7 +53,7 @@ addPlayerToRoster = (player) ->
     when 'DEF'
       if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else toastr.info 'DEFs are Full'
 
-validateEntry = () ->
+validateEntry = ->
   rosterJSON = Session.getJSON 'currentLineup.roster'
   valid = true # assume contest entry is true until proven false ;)
 
@@ -64,10 +64,11 @@ validateEntry = () ->
         Session.set 'invalidEntryMessage', 'Please select a player for each position!'
         return false # this false breaks out of $.each loop
 
-  if Session.get 'remainingSalary' < 0
+  if Session.get('remainingSalary') < 0
     valid = false
     Session.set 'invalidEntryMessage', 'You went over the salary cap!'
 
+  console.log valid
   return valid
 
 # Returns a list of all teams in the Contest
@@ -223,8 +224,9 @@ Template.contestLineupContainer.events
   # The lineup will be in the Session.getJSON 'currentLineup.roster'
   # TODO: Consolidate naming - Roster or Lineup
   'click .contest-entry': (e) ->
+    valid = validateEntry()
 
-    if validateEntry()
+    if valid == true
       # @ is a Contest object
 
       # Transform data

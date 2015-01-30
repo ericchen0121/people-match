@@ -46,7 +46,7 @@ template(name='contestLineupContainer')
           div(class='col-md-6 player-list-table-title vAlign') Name
           div(class='col-md-2 player-list-table-title vAlign') FPPG
           div(class='col-md-2 player-list-table-title vAlign') Played
-          div(class='col-md-5 player-list-table-title vAlign') Game
+          div(class='col-md-4 player-list-table-title vAlign') Game
           div(class='col-md-2 player-list-table-title vAlign') Salary
           div(class='col-md-2 player-list-table-title vAlign')
         div(id='player-list-table-container' class='row')
@@ -57,9 +57,9 @@ template(name='contestLineupContainer')
                 div(class='col-md-3 player-image vAlign')
                   img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
                 div(class='col-md-6 player-name vAlign') #{full_name}
-                div(class='col-md-2 player-fppg vAlign') 12.3
-                div(class='col-md-1 player-played vAlign') 13
-                div(class='col-md-4 player-fixture vAlign') {{ getCurrentEvent ..}}
+                div(class='col-md-2 player-fppg vAlign') --
+                div(class='col-md-1 player-played vAlign') -
+                div(class='col-md-5 player-fixture vAlign') {{ getCurrentEvent ..}}
                 div(class='col-md-2 player-salary vAlign') ${{ addCommas salary }}
                 if inCurrentLineup
                   div(class='col-md-2 col-md-push-1 lineup-player-remove vAlign')

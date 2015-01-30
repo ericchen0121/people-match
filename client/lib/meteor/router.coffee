@@ -29,7 +29,7 @@ subs = new SubsManager()
 # --------------- ROUTES --------------
 #
 Router.route '/', ->
-  @render 'chatterLayout'
+  @render 'lobbyLayout'
 
 Router.route '/chatter', {name: 'chatterLayout'}, ->
   @render 'chatterLayout'
