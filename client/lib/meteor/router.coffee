@@ -1,9 +1,10 @@
 # ---------------CONFIGURATION --------------
 Router.configure
-
-  layoutTemplate: 'navLayout',
-  loadingTemplate: 'loading',
+  layoutTemplate: 'navLayout'
+  loadingTemplate: 'loading'
   notFoundTemplate: 'fourOhFour'
+  trackPageView: true
+
 
 # --------------- ACCOUNTS --------------
 # Package: https://github.com/meteor-useraccounts/core/ 

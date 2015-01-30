@@ -7,6 +7,8 @@ mongodump -h 127.0.0.1 --port 3001 -d meteor
 //
 meteor mongo --url $METEOR_APP_URL
 
+meteor mongo --url infinityprimal.meteor.com
+
 // parse that response into this form, 
 // replacing the username, password, db (if different) and hostname (probably slightly different)
 // run this command in the meteor project folder that has the dump/meteor folder in it
@@ -20,7 +22,7 @@ mongorestore -u client-4598a2ff -p 25df0119-2e80-e949-e4f7-b7f966ad3540 --db inf
 -------------- LOGIN TO A METEOR DEPLOYED APP ---------------
 // http://stackoverflow.com/questions/15583107/meteor-app-resetting-a-deployed-apps-db
 //
-mongo production-db-d3.meteor.io:27017/infinityprimal_meteor_com -u client-d65abc82 -p 330baf87-bd17-8220-4241-41a06f81030b
+mongo production-db-d3.meteor.io:27017/infinityprimal_meteor_com -u client-fe858a91 -p a84d9e13-f127-d891-e135-8aa346068a2e
 
 
 -------------- EXPORT/IMPORT LOCAL METOR MONGO COLLECTION TO CSV ---------------

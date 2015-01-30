@@ -1,7 +1,7 @@
 Template.commentaryArea.helpers
 	
 	placeholderText: () ->
-		'Commentary, opine, rant, jeer, cheer...'
+		'Super Bowl Sunday. Who are you rooting for and why?'
 
 Template.commentaryArea.rendered = ->
 	# Creates a dynamically expanding textarea for commentaries.
