@@ -87,7 +87,7 @@ Template.contestLineupContainer.helpers
     team_filter = if selectedTeamFilter? then selectedTeamFilter else availableTeams(@)
     switch position_filter
       when 'All'
-        NflPlayers.find({ team_id: {$in: team_filter }, position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']} })
+        NflPlayers.find({ team_id: {$in: team_filter }, position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']}}, { sort: { salary: -1 }} )
       when 'K' # edge case when filter won't match position name
         NflPlayers.find({ team_id: {$in: team_filter }, position: 'PK' })
       # when 'D'
@@ -98,7 +98,7 @@ Template.contestLineupContainer.helpers
         NflPlayers.find({ position: position_filter, team_id: {$in: team_filter }})
 
   salaryRemaining: ->
-    totalSalary = 60000
+    totalSalary = 75000
     rosterJSON = Session.getJSON 'currentLineup.roster'
 
     if rosterJSON
@@ -262,15 +262,26 @@ Template.contestLineupContainer.events
 Template.contestLineupContainer.rendered = ->
   # Defaults
   # initialize the Roster
+  # roster = {
+  #   'QB': 'open'
+  #   'RB1': 'open'
+  #   'RB2': 'open'
+  #   'WR1': 'open'
+  #   'WR2': 'open'
+  #   'WR3': 'open'
+  #   'FLEX1': 'open'
+  #   'FLEX2': 'open'
+  #   'TE': 'open'
+  #   'K': 'open'
+  #   # 'DEF': 'open'
+  # }
+
   roster = {
     'QB': 'open'
     'RB1': 'open'
-    'RB2': 'open'
     'WR1': 'open'
     'WR2': 'open'
-    'WR3': 'open'
     'FLEX1': 'open'
-    'FLEX2': 'open'
     'TE': 'open'
     'K': 'open'
     # 'DEF': 'open'

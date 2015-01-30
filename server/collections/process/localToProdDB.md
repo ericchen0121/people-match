@@ -1,0 +1,38 @@
+-------------- RESTORING A METEOR DEPLOYED APP FROM A LOCAL MONGO DB ---------------
+// 1. dump a local collection 
+//
+mongodump -h 127.0.0.1 --port 3001 -d meteor
+
+// 2. get deployed meteor app's credentials
+//
+meteor mongo --url $METEOR_APP_URL
+
+// parse that response into this form, 
+// replacing the username, password, db (if different) and hostname (probably slightly different)
+// run this command in the meteor project folder that has the dump/meteor folder in it
+//
+mongorestore -u client-781a5f04 -p 6f40dddc-7362-1fb5-c7fe-93ef4a09e6e7 --db infinityprimal_meteor_com -h production-db-d3.meteor.io:27017 dump/meteor
+
+// add this flag if just dumping and restoring a collection
+//
+-c comments.bson
+
+-------------- LOGIN TO A METEOR DEPLOYED APP ---------------
+// http://stackoverflow.com/questions/15583107/meteor-app-resetting-a-deployed-apps-db
+//
+mongo production-db-d3.meteor.io:27017/infinityprimal_meteor_com -u client-d65abc82 -p 330baf87-bd17-8220-4241-41a06f81030b
+
+
+-------------- EXPORT/IMPORT LOCAL METOR MONGO COLLECTION TO CSV ---------------
+// http://docs.mongodb.org/manual/core/import-export/
+//
+mongoexport -h 127.0.0.1 --port 3001 -d meteor -c nflPlayers --csv -f "full_name,salary,position,team_id" --out athletes.csv
+
+mongoimport --collection collection --file collection.json --upsert
+mongoimport -h 127.0.0.1 --port 3001 -d meteor -c nflPlayers --file athletes.csv --upsert
+
+// these didn't work for me.
+//
+mongoimport -h 127.0.0.1 --port 3001 -d meteor -c nflPlayers --upsert --file athletes.csv --upsertFields "espn_id"  --type csv --ignoreBlanks --headerline
+
+mongoimport -h 127.0.0.1 --port 3001 -d meteor -c nflPlayers --upsert --file athletes.csv  --type csv --headerline

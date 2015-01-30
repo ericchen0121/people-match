@@ -7,16 +7,16 @@ template(name='upcomingContestListContainer')
         h4(class='col-md-8') You have #{ upcomingEntriesCount } contest entries upcoming.
       div(class='row')
         h3(class='col-md-2') Entry
-        h3(class='col-md-4') Contest
-        h3(class='col-md-6') Players
-        h3(class='col-md-6') Entry
+        h3(class='col-md-8') Contest
+        h3(class='col-md-12') Players
+        h3(class='col-md-2') Entry
       +each upcomingContests
         div(class='row')
           div(class='col-md-2') 
             a(href="{{pathFor 'entryLayout'}}") 
               i(class="fa fa-money pointer")
-          div(class='col-md-4') 
+          div(class='col-md-8 title') 
             a(href="{{pathFor 'entryLayout'}}") #{contestName}
-          div(class='col-md-6 size-9')
+          div(class='col-md-12 size-9')
             +entryViewNames
-          div(class='col-md-6') $#{entryFee}
+          div(class='col-md-2') $#{entryFee}
