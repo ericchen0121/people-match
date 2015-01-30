@@ -94,18 +94,18 @@ Template.contestLineupContainer.helpers
     team_filter = if selectedTeamFilter? then selectedTeamFilter else availableTeams(@)
     switch position_filter
       when 'All'
-        NflPlayers.find({ team_id: {$in: team_filter }, position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK']}}, { sort: { salary: -1 }} )
+        NflPlayers.find({ team_id: {$in: team_filter }, position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK', 'DEF']}})
       when 'K' # edge case when filter won't match position name
         NflPlayers.find({ team_id: {$in: team_filter }, position: 'PK' })
-      # when 'D'
-         # NflPlayers.find({ position: 'DEF' })
+      when 'D'
+         NflPlayers.find({ position: 'DEF' })
       else
         # http://stackoverflow.com/questions/19019822/how-do-i-access-one-sibling-variable-in-a-meteor-template-helper-when-i-am-in
         # assumed data context (ie. what @ is) is the Contest
         NflPlayers.find({ position: position_filter, team_id: {$in: team_filter }})
 
   salaryRemaining: ->
-    totalSalary = 75000
+    totalSalary = 80000
     rosterJSON = Session.getJSON 'currentLineup.roster'
 
     if rosterJSON
@@ -292,7 +292,7 @@ Template.contestLineupContainer.rendered = ->
     'FLEX1': 'open'
     'TE': 'open'
     'K': 'open'
-    # 'DEF': 'open'
+    'DEF': 'open'
   }
 
   Session.setJSON('currentLineup.roster', roster)

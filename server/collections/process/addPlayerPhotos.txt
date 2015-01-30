@@ -3,3 +3,27 @@ db.nflPlayers.find({position: {$in: ['QB', 'RB', 'WR', 'TE', 'K']}, team_id: {$i
 
 // NFL Photos
 http://static.nfl.com/static/content/public/image/fantasy/transparent/200x200/SEA.png
+
+//
+{
+	"espn_id" : n,
+	"first_name" : "New England",
+	"full_name" : "New England Patriots",
+	"jersey_number" : 99,
+	"last_name" : "Patriots",
+	"position" : "DEF",
+	"salary" : 5000,
+	"team" : "New England Patriots",
+	"team_id" : "NE"
+}
+{
+	"espn_id" : null,
+	"first_name" : "Seattle",
+	"full_name" : "Seattle Seahawks",
+	"jersey_number" : 99,
+	"last_name" : "Seahawks",
+	"position" : "DEF",
+	"salary" : 7000,
+	"team" : "Seattle Seahawks",
+	"team_id" : "SEA"
+}
