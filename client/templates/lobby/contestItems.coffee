@@ -2,7 +2,7 @@ Template.contestItems.events
 
   # Twitter Bootstrap Modal JS Events
   #
-  'show.bs.modal #contestModal': (e) ->
+  'show.bs.modal .contestModal': (e) ->
     # If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     # Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
 
@@ -31,6 +31,13 @@ Template.contestModal.helpers
   # TODO: CHANGE this to be pulling from the contest
   readablePrizePayouts: ->
     '1st: $500'
+
+Template.contestModal.events
+  # hack solution for .modal-open not disappering on modal close
+  # https://github.com/makeusabrew/bootbox/issues/232
+  # 
+  # 'hide.bs.modal .contestModal': (e) ->
+  #   $('.modal-open').removeClass('modal-open')
 
 Template.contestItems.helpers
 

@@ -306,7 +306,9 @@ Template.contestLineupContainer.rendered = ->
     theme: 'minimal-dark'
     autoHideScrollbar: true
 
-  
+  # Bootstrap Modal hack
+  # https://github.com/makeusabrew/bootbox/issues/232
+  $('body').removeClass('modal-open')
 
 Template.contestFixtureContainer.events
   'click .event-filter': (e) ->
