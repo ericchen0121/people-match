@@ -1,0 +1,18 @@
+-------------- RESTORING A METEOR DEPLOYED APP FROM A LOCAL MONGO DB ---------------
+// dump a local collection 
+//
+mongodump -h 127.0.0.1 --port 3001 -d meteor
+
+// command to get meteor app
+//
+meteor mongo --url $METEOR_APP_URL
+
+// parse that response into this form, 
+// replacing the username, password, db (if different) and hostname (probably slightly different)
+// run this command in the meteor project folder that has the dump/meteor folder in it
+//
+mongorestore -u client-781a5f04 -p 6f40dddc-7362-1fb5-c7fe-93ef4a09e6e7 --db infinityprimal_meteor_com -h production-db-d3.meteor.io:27017 dump/meteor
+
+// add this flag if just dumping and restoring a collection
+//
+-c comments.bson

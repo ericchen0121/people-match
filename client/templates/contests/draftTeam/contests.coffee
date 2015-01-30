@@ -101,12 +101,14 @@ Template.contestLineupContainer.helpers
     totalSalary = 60000
     rosterJSON = Session.getJSON 'currentLineup.roster'
 
-    $.each rosterJSON, (k, v) =>
-      if v != 'open' # then there is a player
-        totalSalary -= v['salary']
+    if rosterJSON
+      $.each rosterJSON, (k, v) =>
+        if v != 'open' # then there is a player
+          totalSalary -= v['salary']
     
     Session.set 'remainingSalary', totalSalary
 
+    # toLocalString() adds the commas for 10000 to be 10,000
     return totalSalary.toLocaleString()
 
   salaryRemainingAvg: ->
@@ -114,9 +116,10 @@ Template.contestLineupContainer.helpers
     rosterJSON = Session.getJSON 'currentLineup.roster'
     openSpots = 0
 
-    $.each rosterJSON, (k,v) ->
-      if v == 'open'
-        openSpots += 1
+    if rosterJSON
+      $.each rosterJSON, (k,v) ->
+        if v == 'open'
+          openSpots += 1
 
     if openSpots != 0 # no division by zero
       averageSalary /= openSpots
@@ -150,10 +153,11 @@ Template.contestLineupContainer.helpers
   inCurrentLineup: ->
     rosterJSON = Session.getJSON 'currentLineup.roster'
     result = false # assume player is not in lineup, until proven true
-    $.each rosterJSON, (k, v) =>
-      if v._id and v._id._str == @._id._str
-        result = true # return true if the player is in the current lineup
-        return false # to break out of $.each loop
+    if rosterJSON
+      $.each rosterJSON, (k, v) =>
+        if v._id and v._id._str == @._id._str
+          result = true # return true if the player is in the current lineup
+          return false # to break out of $.each loop
 
     return result
 
@@ -187,11 +191,12 @@ Template.contestLineupContainer.events
   'click .lineup-player-remove': (e) ->
     rosterJSON = Session.getJSON 'currentLineup.roster'
 
-    $.each rosterJSON, (k, v) =>
-      # compare player removed to roster session variable
-      # shortcircuit if there is no player object (e.g. v._id)
-      if v._id and @._id._str == v._id._str
-        rosterJSON[k] = 'open' # reset spot to open
+    if rosterJSON
+      $.each rosterJSON, (k, v) =>
+        # compare player removed to roster session variable
+        # shortcircuit if there is no player object (e.g. v._id)
+        if v._id and @._id._str == v._id._str
+          rosterJSON[k] = 'open' # reset spot to open
 
     # save to Session object
     Session.setJSON 'currentLineup.roster', rosterJSON
@@ -203,8 +208,9 @@ Template.contestLineupContainer.events
     if confirmation
       rosterJSON = Session.getJSON 'currentLineup.roster'
 
-      $.each rosterJSON, (k, v) =>
-        rosterJSON[k] = 'open'
+      if rosterJSON
+        $.each rosterJSON, (k, v) =>
+          rosterJSON[k] = 'open'
 
       Session.setJSON 'currentLineup.roster', rosterJSON
 
@@ -222,12 +228,13 @@ Template.contestLineupContainer.events
 
       # aggregate ids of all roster players
       # standardize roster to an array of player objects
-      $.each rosterJSON, (k, v) =>
-        if v.api
-          rosterIds.push( v.api.SDPlayerId )
-        # add slot name
-        v['slot'] = k
-        roster.push v
+      if rosterJSON
+        $.each rosterJSON, (k, v) =>
+          if v.api
+            rosterIds.push( v.api.SDPlayerId )
+          # add slot name
+          v['slot'] = k
+          roster.push v
 
       entry = {
         api: {
@@ -254,15 +261,6 @@ Template.contestLineupContainer.events
 
 Template.contestLineupContainer.rendered = ->
   # Defaults
-  Session.setJSON 'playerListFilter.position', 'QB'
-  Session.setJSON "playerListFilter.teams", undefined
-
-  # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
-  #
-  @$('#player-list-table-container').mCustomScrollbar
-    theme: 'minimal-dark'
-    autoHideScrollbar: true
-
   # initialize the Roster
   roster = {
     'QB': 'open'
@@ -279,6 +277,17 @@ Template.contestLineupContainer.rendered = ->
   }
 
   Session.setJSON('currentLineup.roster', roster)
+
+  Session.setJSON 'playerListFilter.position', 'QB'
+  Session.setJSON "playerListFilter.teams", undefined
+
+  # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
+  #
+  @$('#player-list-table-container').mCustomScrollbar
+    theme: 'minimal-dark'
+    autoHideScrollbar: true
+
+  
 
 Template.contestFixtureContainer.events
   'click .event-filter': (e) ->

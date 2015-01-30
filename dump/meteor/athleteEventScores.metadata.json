@@ -1,0 +1,1 @@
+{ "indexes" : [ { "v" : 1, "name" : "_id_", "key" : { "_id" : 1 }, "ns" : "meteor.athleteEventScores" }, { "v" : 1, "name" : "api.compoundId_1", "key" : { "api.compoundId" : 1 }, "unique" : true, "ns" : "meteor.athleteEventScores", "sparse" : true } ] }
