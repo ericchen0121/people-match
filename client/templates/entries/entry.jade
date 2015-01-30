@@ -6,7 +6,7 @@ template(name='entryView')
         span(class='point-score') {{ pointScore totalScore }}
         span(class='decimal-score') .{{ decimalScore totalScore }}
     div(class='row player-row')
-      //- TODO: responsive to size
+      //- TODO: responsive to size, use offset or better centering solution
       div(class='col-md-4') 
       each roster
         +AnimateWithVelocity
@@ -16,6 +16,16 @@ template(name='entryView')
             div #{ score }
             each relevantStats
               div #{ value } #{ type }
+    div(class='row')
+      +AnimateWithVelocity
+        div(class='col-md-10 col-md-offset-10' data-animate data-property="opacity" data-duration="3500" data-from-value="0" data-to-value="1")
+          span
+            div(class='btn btn-default') 
+              a(href="{{ pathFor 'contestLayout' }}") Enter Again
+          span
+            div(class='btn btn-default') 
+              a(href="{{ pathFor 'upcomingContestListLayout' }}") View Entries
+
 template(name='entryViewNames')
     each roster
       div #{last_name}

@@ -57,10 +57,16 @@ validateEntry = () ->
   rosterJSON = Session.getJSON 'currentLineup.roster'
   valid = true # assume contest entry is true until proven false ;)
 
-  $.each rosterJSON, (k, v) =>
-    if v == 'open' || v._id == undefined
-      valid = false
-      return false # break out of $.each loop
+  if rosterJSON
+    $.each rosterJSON, (k, v) =>
+      if v == 'open' || v._id == undefined
+        valid = false
+        Session.set 'invalidEntryMessage', 'Please select a player for each position!'
+        return false # this false breaks out of $.each loop
+
+  if Session.get 'remainingSalary' < 0
+    valid = false
+    Session.set 'invalidEntryMessage', 'You went over the salary cap!'
 
   return valid
 
@@ -257,7 +263,7 @@ Template.contestLineupContainer.events
         # 'result' is the created entry _id
         Router.go 'entryLayout', { _id: result }
     else
-      toastr.info('Please select a player for each position!')
+      toastr.info(Session.get 'invalidEntryMessage')
 
 Template.contestLineupContainer.rendered = ->
   # Defaults
