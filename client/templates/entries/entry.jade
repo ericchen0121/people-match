@@ -20,11 +20,9 @@ template(name='entryView')
       +AnimateWithVelocity
         div(class='col-md-10 col-md-offset-9' data-animate data-property="opacity" data-duration="3500" data-from-value="0" data-to-value="1")
           span
-            div(class='btn btn-default') 
-              a(href="{{ pathFor 'contestLayout' }}") Enter Again
+            a(class='btn btn-default' href="{{ pathFor 'contestLayout' }}") Enter Again
           span
-            div(class='btn btn-default') 
-              a(href="{{ pathFor 'upcomingContestListLayout' }}") View Entries
+            a(class='btn btn-default' href="{{ pathFor 'upcomingContestListLayout' }}") View Entries
 
 template(name='entryViewMini')
   div(class='row player-row')

@@ -1,7 +1,7 @@
 Template.historyContestListContainer.helpers
 
   historyEntriesCount : ->
-    Entries.find().count()
+    Entries.find({ userId: Meteor.userId() }).count()
 
   historyContests: ->
-    Entries.find()
+    Entries.find({ userId: Meteor.userId() })

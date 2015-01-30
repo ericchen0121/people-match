@@ -1,7 +1,7 @@
 Template.liveContestListContainer.helpers
 
   liveEntriesCount : ->
-    Entries.find({ status: 'inprogress' }).count()
+    Entries.find({ userId: Meteor.userId(), status: 'inprogress' }).count()
 
   liveContests: ->
-    Entries.find({ status: 'inprogress' })
+    Entries.find({ userId: Meteor.userId(), status: 'inprogress' })

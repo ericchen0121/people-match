@@ -7,7 +7,7 @@ Template.upcomingContestListContainer.helpers
     # we always name it 'upcoming'. when a contest starts, we update all entries associated
     # with 'live', and when it's over, we name it 'history'. All entries after creation are
     # managed and updated through contests.
-    Entries.find({ contestStarts: mq.future }).count() # as long as the entry is in the future
+    Entries.find({ userId: Meteor.userId(), contestStarts: mq.future }).count() # as long as the entry is in the future
 
   upcomingContests: ->
-    Entries.find({ contestStarts: mq.future })
+    Entries.find({ userId: Meteor.userId(), contestStarts: mq.future })

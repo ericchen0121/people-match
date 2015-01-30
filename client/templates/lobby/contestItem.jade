@@ -16,6 +16,5 @@ template(name="contestItem")
       div(class='col-md-1')
     div(class='col-md-4 vAlign contestModal' data-toggle='modal' data-target='#contestModal-#{_id}' data-name='#{contestName}') {{momentify startsAt}}
     div(class='col-md-4 vAlign')
-      button(class='btn btn-default btn-sm contestEnterButton')
-        a(href='/contest/#{_id}/draftteam') ENTER
+      a(class='btn btn-default btn-sm contestEnterButton' href='/contest/#{_id}/draftteam') ENTER
     div(class='clearfix')
