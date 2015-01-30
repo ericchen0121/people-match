@@ -2,19 +2,19 @@ Template.contestItems.events
 
   # Twitter Bootstrap Modal JS Events
   #
-  'show.bs.modal #contestModal': (event) ->
+  'show.bs.modal #contestModal': (e) ->
     # If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     # Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
 
     # Get Data-* Properties
-    triggerEl = $(event.relatedTarget) # Element that triggered the modal
+    triggerEl = $(e.relatedTarget) # Element that triggered the modal
     contestName = triggerEl.data('name') # Extract info from data-* attributes, in this case data-name
 
     # data = $(this).data
     # console.log 'this is the data', data
 
     # Set Modal content
-    modal = $(event.target)
+    modal = $(e.target)
     modal.find('.modal-title').text(contestName + ' Tournament!')
 
   # QUESTION: Why doesn't this event handler belong in the
@@ -22,9 +22,9 @@ Template.contestItems.events
   # Initializes Bootstrap JS Tabs
   # http://getbootstrap.com/javascript/#tabs
   #
-  'click ul.nav.nav-tabs > li > a': (event) ->
-    event.preventDefault()
-    $(event.target).tab('show')
+  'click ul.nav.nav-tabs > li > a': (e) ->
+    e.preventDefault()
+    $(e.target).tab('show')
 
 Template.contestModal.helpers
 
@@ -36,7 +36,7 @@ Template.contestItems.helpers
 
   # When the contests are in the DB, flip this switch to turn it on!
   contests: ->
-    Contests.find() # TODO: filter these down to contests in the next few days
+    Contests.find({startsAt: mq.future}, { sort: { startsAt: 1 }} ) # TODO: filter these down to contests in the next few days
 
 Template.contestItems.rendered = ->
   # Uses Malihu's scrollbar Meteor package, which as of 12/4/2014 is on v3.0.3
