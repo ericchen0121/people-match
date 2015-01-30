@@ -11,7 +11,7 @@ meteor mongo --url $METEOR_APP_URL
 // replacing the username, password, db (if different) and hostname (probably slightly different)
 // run this command in the meteor project folder that has the dump/meteor folder in it
 //
-mongorestore -u client-781a5f04 -p 6f40dddc-7362-1fb5-c7fe-93ef4a09e6e7 --db infinityprimal_meteor_com -h production-db-d3.meteor.io:27017 dump/meteor
+mongorestore -u client-4598a2ff -p 25df0119-2e80-e949-e4f7-b7f966ad3540 --db infinityprimal_meteor_com -h production-db-d3.meteor.io:27017 dump/meteor
 
 // add this flag if just dumping and restoring a collection
 //
