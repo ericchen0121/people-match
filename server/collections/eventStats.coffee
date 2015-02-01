@@ -1,4 +1,4 @@
-# https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
+	# https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
 EventStats.before.update (userId, doc, fieldNames, modifier, options) ->
 
   modifier.$set.createdAt = modifier.$set.createdAt || new Date().toISOString()
@@ -16,6 +16,8 @@ Meteor.methods
 				eventStats = @sd.NFLApi.getGameStats week, awayTeam, homeTeam
 				sport = 'NFL'
 
+		console.log 'eventStat is', eventStats
+		
 		EventStats.update({ 
 				api: { SDGameId: eventStats.game.id }
 			},

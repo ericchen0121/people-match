@@ -14,9 +14,11 @@ Meteor.methods
 	_getAthleteEventStats: (sport, status) ->
 		EventStats.distinct('_id', { sport: sport, status: status })
 
-	convertSDContestStatToAthleteEventStats: (id) ->
-		console.log 'converting this game id: ', id
-		eventStat = EventStats.findOne({_id: id})
+	# input: idObj is an identifying query such as { _id: xx } or { api: { SDGameId: xxxx }}
+	# 
+	convertSDContestStatToAthleteEventStats: (idObject) ->
+		eventStat = EventStats.findOne(idObject)
+		console.log eventStat
 		newStat = {}
 
 		newStat.api = eventStat.api # API id for event

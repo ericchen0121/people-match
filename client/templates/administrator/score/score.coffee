@@ -1,7 +1,12 @@
 Template.score.helpers
 
+	# TODO: Run a CRON job once a day, or multiple times a day, to constantly get new events into the system
+	# with new status.
+	# find events that are upcoming ie. `created`, or live, ie. `inprogress`
+	# these are states given bt the SD API.
+	# 
 	liveEvents:  ->
-		Events.find({ status: 'inprogress' })
+		Events.find({ status: {$in: ['inprogress', 'created']} })
 
 Template.score.events
 	# TODO: un-hardcode this.
@@ -12,11 +17,11 @@ Template.score.events
 	# TODO: un-hardcode this.
 	'click .update-event-stats': (e) ->
 		console.log 'udpate event stats'
-		Meteor.call 'getEventStats', 'NFL', 4, 'SEA', 'NE'
+		Meteor.call 'getEventStats', 'NFL', 4, 'NE', 'SEA' # TODO: change this to be extensible
 
 	'click .create-athlete-event-stats': (e) ->
-		console.log 'convert to athlete event stats'
-		Meteor.call 'convertSDContestStatToAthleteEventStats', 'RYHL4Sn2jMKjQW9zb'
+		# NOTE: @ is the event object, uniquely ID'ed by api.SDGameID attribute
+		Meteor.call 'convertSDContestStatToAthleteEventStats', {api: {SDGameId: @.api.SDGameId }}
 
 	'click .score-stats': (e) ->
 		console.log 'udpate event stats'

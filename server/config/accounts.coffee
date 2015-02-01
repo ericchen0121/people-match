@@ -1,3 +1,4 @@
+# --------------------- ENRICH DATA OF PROFILES ---------------------
 # Adds Profile Picture link to users
 # http://stackoverflow.com/questions/15018552/how-to-query-a-facebook-user-picture-via-meteors-accounts-facebook
 #
@@ -13,7 +14,7 @@ Accounts.onCreateUser( (options, user) ->
   return user
 )
 
-# Make Admin
+# --------------------- ROLES --------------------- 
 # uses `alanning:roles` package
 ericAdminUserId = "ujo7jBtPJg7d9WzXW"
 Roles.addUsersToRoles(ericAdminUserId, ['admin'])
