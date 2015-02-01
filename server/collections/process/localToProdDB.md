@@ -13,7 +13,7 @@ meteor mongo --url infinityprimal.meteor.com
 // replacing the username, password, db (if different) and hostname (probably slightly different)
 // run this command in the meteor project folder that has the dump/meteor folder in it
 //
-mongorestore -u client-4598a2ff -p 25df0119-2e80-e949-e4f7-b7f966ad3540 --db infinityprimal_meteor_com -h production-db-d3.meteor.io:27017 dump/meteor
+mongorestore -u client-bc79eed6  -p 9113b9a8-f884-2e1c-28ac-4dbb225f50fb --db infinityprimal_meteor_com -h production-db-d3.meteor.io:27017 dump/meteor
 
 // add this flag if just dumping and restoring a collection
 //
@@ -22,7 +22,7 @@ mongorestore -u client-4598a2ff -p 25df0119-2e80-e949-e4f7-b7f966ad3540 --db inf
 -------------- LOGIN TO A METEOR DEPLOYED APP ---------------
 // http://stackoverflow.com/questions/15583107/meteor-app-resetting-a-deployed-apps-db
 //
-mongo production-db-d3.meteor.io:27017/infinityprimal_meteor_com -u client-8416e093 -p bad2c625-2a83-2af9-1bd3-d48eec31bab2
+mongo production-db-d3.meteor.io:27017/infinityprimal_meteor_com -u client-2d27c3bf -p 0216f56a-1500-1beb-264b-455b3d536cd0
 
 
 -------------- EXPORT/IMPORT LOCAL METOR MONGO COLLECTION TO CSV ---------------

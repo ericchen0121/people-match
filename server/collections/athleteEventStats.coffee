@@ -16,9 +16,8 @@ Meteor.methods
 
 	# input: idObj is an identifying query such as { _id: xx } or { api: { SDGameId: xxxx }}
 	# 
-	convertSDContestStatToAthleteEventStats: (idObject) ->
-		eventStat = EventStats.findOne(idObject)
-		console.log eventStat
+	convertSDContestStatToAthleteEventStats: (SDGameId) ->
+		eventStat = EventStats.findOne({api: { SDGameId: SDGameId }})
 		newStat = {}
 
 		newStat.api = eventStat.api # API id for event
@@ -63,6 +62,7 @@ Meteor.methods
 						)
 
 		# DEFENSE is easier to deal with separately.
+		# defense ONLY STORES team defense stats at this time
 		for team in eventStat.team
 			newStat = {}
 			newStat.statType = 'defense'
@@ -72,7 +72,7 @@ Meteor.methods
 			newStat.status = eventStat.status
 			newStat.sport = 'NFL'
 			newStat.stats = {}
-			newStat.stats = _.omit(team.defense, 'player') # remove entire player array
+			newStat.stats = _.omit(team.defense, 'player') # remove entire player array, only keeping team stats
 
 			# convert xml strings to integers bam
 			for k,v of newStat.stats

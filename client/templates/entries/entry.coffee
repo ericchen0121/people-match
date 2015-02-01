@@ -30,9 +30,10 @@ Template.entryView.helpers
 	# I like more flexibility into the 'presentation' and the naming of stats.
 	# 
 	relevantStats: ->
-		athlete = @
+		athlete = @ # based on template data
 		relevantStats = []
 
+		# The Key to match the athlete to the 
 		if athlete.api 
 			scoreDoc = AthleteEventScores.findOne({ "api.SDPlayerId": athlete.api.SDPlayerId } )
 

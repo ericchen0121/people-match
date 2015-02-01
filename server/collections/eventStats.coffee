@@ -17,22 +17,23 @@ Meteor.methods
 				sport = 'NFL'
 
 		console.log 'eventStat is', eventStats
-		
-		EventStats.update({ 
-				api: { SDGameId: eventStats.game.id }
-			},
-			{ 
-				$set: 
-					api: 
-						SDGameId: eventStats.game.id
-					sport: sport
-					status: eventStats.game.status
-					team: eventStats.game.team
-					home: eventStats.game.home
-					away: eventStats.game.away
-			},
-			{ upsert: true }
-		)
+
+		if eventStats
+			EventStats.update({ 
+					api: { SDGameId: eventStats.game.id }
+				},
+				{ 
+					$set: 
+						api: 
+							SDGameId: eventStats.game.id
+						sport: sport
+						status: eventStats.game.status
+						team: eventStats.game.team
+						home: eventStats.game.home
+						away: eventStats.game.away
+				},
+				{ upsert: true }
+			)
  
 #  	callGetStatsNFL: ->
 #  		timer = Meteor.setInterval callback, 1000
@@ -46,7 +47,7 @@ Meteor.methods
 #   }, 5500);
 # };
 
- # Schedule as an Array for populating EventStats DB 
+ # 2014 REG Schedule as an Array for populating EventStats collection 
 nfl_2014_REG_schedule = [[1,"GB","SEA"]
 [1,"NO","ATL"]
 [1,"NE","MIA"]

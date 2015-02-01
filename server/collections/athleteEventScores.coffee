@@ -7,10 +7,16 @@ Meteor.methods
 	# 
 	batchAthleteEventScoring: (sdGameId) ->
 		console.log 'batch scoring this game', sdGameId
-		# get distinct ids per game
+		# find distinct athletes in the game
 		SDathleteIds = Meteor.call '_getAthletes', sdGameId
 
+		# for defense, add in distinct team_ids, ie. 'SEA', 'NE'
+		event = Events.find({ api: { SDGameId: sdGameId }})
+		SDathleteIds.push event.home
+		SDathleteIds.push event.away
+		console.log 'BATCH SHIT', SDathleteIds
 		# gets aggregated stats per athlete per event
+		# TODO: could create a new method from this
 		aggregatedStats = []
 		for id in SDathleteIds
 			aggregatedStats.push (Meteor.call '_getAggregateStats', id, sdGameId)
@@ -48,11 +54,11 @@ Meteor.methods
 	
 	# TODO: add a dictionary of statType variables, for easy switching out of scoring styles...
 	# ie: points = { rushing_yds = .1, ... }
-	addScoring: ->
+	addScoring: (sdGameId) ->
 		# TODO: currently this finds all scores docs and processes them all
 		# Will want to filter them down (pass in (sdGameId) ->) to process a reasonable amount at a time 
 		console.log 'scoring with NFL scores!'
-		AthleteEventScores.find().forEach (doc) ->
+		AthleteEventScores.find({ api: { SDGameId: sdGameId }}).forEach (doc) ->
 			score = 0 # initialize scores
 			for stat in doc.allStats
 				switch stat.statType
@@ -96,7 +102,7 @@ Meteor.methods
 						score += stat.stats.fum_td * 600
 
 			AthleteEventScores.update(
-				{ _id: doc._id } # update its own doc
+				{ _id: doc._id } # update itself
 				{ $set: { score: score }}
 			)
 
