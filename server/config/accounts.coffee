@@ -3,11 +3,10 @@
 #
 Accounts.onCreateUser( (options, user) ->
   if options.profile
-
-    if typeof(user.services.facebook) != "undefined"
+    if typeof(user.services.facebook) != "undefined" 
       # FB allows for other image sizes, the param is ?type= square |small| normal | large
       options.profile.picture = "http://graph.facebook.com/" + user.services.facebook.id + "/picture/?type=square"
-    else if typeof(user.services.twitter) !='undefined'
+    else if typeof(user.services.twitter) != 'undefined'
       options.profile.picture = user.services.twitter.profile_image_url
 
     user.profile = options.profile
@@ -15,5 +14,6 @@ Accounts.onCreateUser( (options, user) ->
 )
 
 # Make Admin
-ericUserId = "JQL5piSC28N6WrNTN"
-Roles.addUsersToRoles(ericUserId, ['admin'])
+# uses `alanning:roles` package
+ericAdminUserId = "ujo7jBtPJg7d9WzXW"
+Roles.addUsersToRoles(ericAdminUserId, ['admin'])

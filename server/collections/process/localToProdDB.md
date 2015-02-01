@@ -22,7 +22,7 @@ mongorestore -u client-4598a2ff -p 25df0119-2e80-e949-e4f7-b7f966ad3540 --db inf
 -------------- LOGIN TO A METEOR DEPLOYED APP ---------------
 // http://stackoverflow.com/questions/15583107/meteor-app-resetting-a-deployed-apps-db
 //
-mongo production-db-d3.meteor.io:27017/infinityprimal_meteor_com -u client-b12319bf -p dace55d1-e971-10e8-2adc-343ada16b1ae
+mongo production-db-d3.meteor.io:27017/infinityprimal_meteor_com -u client-8416e093 -p bad2c625-2a83-2af9-1bd3-d48eec31bab2
 
 
 -------------- EXPORT/IMPORT LOCAL METOR MONGO COLLECTION TO CSV ---------------

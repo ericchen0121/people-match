@@ -75,6 +75,7 @@ Router.route '/history', {
 # TODO: Change this to ._id to take advantage of it finding the _id property on the contest automatically
 Router.route '/contest/:contestId/draftteam', {
   name: 'contestLayout',
+  # onBeforeAction: [ requireLogin ] # TODO: Add and test this and remove Router.before action at bottom
   data: ->
     Contests.findOne({ _id: @params.contestId })
 }
