@@ -10,7 +10,6 @@ Router.configure
 # Package: https://github.com/meteor-useraccounts/core/ 
 # Docs: https://github.com/meteor-useraccounts/core/blob/master/Guide.md#internal-states
 # 
-# AccountsTemplates.configureRoute('signIn')
 AccountsTemplates.configureRoute('signIn', {
     name: 'signin',
     path: '/login',
@@ -108,3 +107,12 @@ Router.route '/administrator/events/score', {
   waitOn: ->
     subs.subscribe 'events'
 }
+
+# --------------- ROUTER LOGIC --------------
+requireLogin = -> 
+  if !Meteor.user() 
+    @render('myLogin')
+    @stop()
+
+# Require login for Contest Layout
+Router.before requireLogin, {only: 'contestLayout'}
