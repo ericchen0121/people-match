@@ -112,7 +112,9 @@ Router.route '/administrator/events/score', {
 requireLogin = -> 
   if !Meteor.user() 
     @render('myLogin')
-    @stop()
+    @wait()
+  else
+    @next()
 
 # Require login for Contest Layout
 Router.before requireLogin, {only: 'contestLayout'}
