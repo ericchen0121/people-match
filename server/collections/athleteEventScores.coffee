@@ -23,12 +23,13 @@ Meteor.methods
 
 		# pushes them into a new Collection
 		for newStat in aggregatedStats
-			AthleteEventScores.upsert(
-				{
-					"api.compoundId": newStat.api.compoundId
-				}, 
-				_.omit(newStat, '_id')
-			)
+			if newStat # take care of undefined
+				AthleteEventScores.upsert(
+					{
+						"api.compoundId": newStat.api.compoundId
+					}, 
+					_.omit(newStat, '_id')
+				)
 
 	# Returns all unique athletes per Game
 	# input is SportsData API Game Id 

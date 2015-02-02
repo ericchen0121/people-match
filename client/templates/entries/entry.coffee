@@ -3,6 +3,7 @@ Template.entryView.helpers
 	# Returns the score
 	score : ->
 		athlete = @ # via template data context
+		console.log athlete
 		if athlete.api # in case athlete doesn't have api (TO DEPRECATEs)
 			# TODO: Limit it to the games to ensure right score
 			# however, need parent context... "api.SDGameId: {$in: [ @.api.SDGameIds ]

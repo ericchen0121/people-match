@@ -8,7 +8,8 @@ Entries.before.insert (userId, doc) ->
   # adds array of event api ids to the Entry
   contest = Contests.findOne({ _id: doc.contestId })
   doc.api ?= {} # don't overwrite existing api obj if it already exists
-  eventIds = (id for {api: { SDGameId: id }} in contest.fixture.events)
+  eventIds = (id for {'api.SDGameId': id } in contest.fixture.events)
+  console.log eventIds
   doc.api.SDGameIds = eventIds
 
   # initialize score
