@@ -1,6 +1,6 @@
 Template.entryView.helpers
 
-	# Returns the score
+	# Returns the score.
 	score : ->
 		athlete = @ # via template data context
 		console.log athlete
@@ -12,7 +12,7 @@ Template.entryView.helpers
 			)
 			if scoreDoc then scoreDoc.score / 100.0 else 0
 		else 
-			return 0 
+			return 0
 		
 	# returns 88.55 from a score of 8855
 	formatScore: (score) ->

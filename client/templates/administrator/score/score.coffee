@@ -6,7 +6,9 @@ Template.score.helpers
 	# these are states given bt the SD API.
 	# 
 	liveEvents:  ->
-		Events.find({ status: {$in: ['inprogress', 'created']} })
+		# TODO: instead of basing this on the lifecycle of the status, much better to base it on the day
+		# If its on the same day as today...
+		Events.find({ status: {$in: ['inprogress', 'created', 'complete', 'closed']} })
 
 Template.score.events
 	# TODO: un-hardcode this.

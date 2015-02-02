@@ -1,4 +1,5 @@
-NOTE: status: 'scheduled', 'inprogress', 'closed'
+NOTE: The lifecycle of a gameStat / eventStat and its status: 
+'scheduled', 'inprogress', 'complete', closed'
 
 {id: '1a846255-6f99-46fb-8ef9-481f0e7d5513',
  scheduled: '2015-01-10T21:35:00+00:00',

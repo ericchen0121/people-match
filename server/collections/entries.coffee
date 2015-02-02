@@ -26,22 +26,38 @@ Meteor.methods
     Contests.update(entry.contestId, { $inc: { entryCount: 1 } } ) # TODO: this is not reactive
     Entries.insert(entry)
 
-  # TODO: This potentially long term will be an expensive operation
+  # NOTE: This potentially long term will be an expensive operation
+  # TODO: create a way to score entries from a Contest
+  # Instead of scoring each individual entryId, I need to score all entries with a Contest
+  
+  # updateEntriesForContest: (sdGameId) ->
+  #    entries = Entries.find({ 'api.SDGameId': sdGameId })
+
+  #    for entry in entries
+
+
   entryUpdateScoreLive: (entryId) ->
     entry = Entries.findOne({ _id: entryId })
     
+    # aggregate all scores for all the players in the game on the entry.
     # limit the search to players and games on the entry
     # Use `_id: null` for accumulated values in the $group stage
+    # 
     result = AthleteEventScores.aggregate([
-      { $match: {"api.SDPlayerId": { $in: entry.api.SDPlayerIds }, "api.SDGameId": { $in: entry.api.SDGameIds}}},
-      { $group: { _id: null, totalScore: { $sum: "$score" } }}
+      { $match: {'api.SDPlayerId': { $in: entry.api.SDPlayerIds }, 'api.SDGameId': { $in: entry.api.SDGameIds}}},
+      { $group: { _id: null, totalScore: { $sum: '$score' }, status: {$first: '$status' } }}
     ])
 
-    console.log 'the result!!!', result 
+    resultDoc = result[0]
 
     Entries.update(
       { _id: entryId }
-      { $set: { totalScore: result[0].totalScore }} 
+      { $set: 
+        { 
+          totalScore: resultDoc.totalScore, 
+          status: resultDoc.status
+        }
+      } 
     )
 
   # TODO: At the end reconciliation of the Entry, 

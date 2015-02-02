@@ -1,5 +1,6 @@
 # EVENT STAT PREGAME VIA SD API
-# Note `status`: `created`
+
+#--------------------- Note `status`: `created` ---------------------
 
 	"_id" : "6NsFkYFSCMydoNmYL",
 	"api" : {
@@ -29,7 +30,18 @@
 	"away" : "NE"
 }
 
-# 
+#--------------------- Note `status`: `complete` ---------------------
+{ game:
+  { xmlns: 'http://feed.elasticstats.com/schema/nfl/statistics-v1.0.xsd',
+    id: 'b7aeb58f-7987-4202-bc41-3ad9a5b83fa4',
+    scheduled: '2015-02-01T23:30:00+00:00',
+    home: 'SEA',
+    away: 'NE',
+    status: 'complete',
+    team: [ [Object], [Object] ] } }
+
+
+# --------------------- Note `status`: `closed` ---------------------
 # EVENT STAT OBJECT EXAMPLE
 # 
 # 	"api" : {
