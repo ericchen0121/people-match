@@ -11,7 +11,7 @@ Meteor.methods
 		SDathleteIds = Meteor.call '_getAthletes', sdGameId
 
 		# for defense, add in distinct team_ids, ie. 'SEA', 'NE'
-		event = Events.find({ api: { SDGameId: sdGameId }})
+		event = Events.find({ 'api.SDGameId': sdGameId })
 		SDathleteIds.push event.home
 		SDathleteIds.push event.away
 		console.log 'BATCH SHIT', SDathleteIds
@@ -58,7 +58,7 @@ Meteor.methods
 		# TODO: currently this finds all scores docs and processes them all
 		# Will want to filter them down (pass in (sdGameId) ->) to process a reasonable amount at a time 
 		console.log 'scoring with NFL scores!'
-		AthleteEventScores.find({ api: { SDGameId: sdGameId }}).forEach (doc) ->
+		AthleteEventScores.find({ 'api.SDGameId': sdGameId }).forEach (doc) ->
 			score = 0 # initialize scores
 			for stat in doc.allStats
 				switch stat.statType

@@ -14,7 +14,7 @@ Meteor.methods
 	_getAthleteEventStats: (sport, status) ->
 		EventStats.distinct('_id', { sport: sport, status: status })
 
-	# input: idObj is an identifying query such as { _id: xx } or { api: { SDGameId: xxxx }}
+	# input: idObj is an identifying query such as { _id: xx } or { 'api.SDGameId': xxxx }}
 	# 
 	convertSDContestStatToAthleteEventStats: (SDGameId) ->
 		eventStat = EventStats.findOne({api: { SDGameId: SDGameId }})
@@ -45,11 +45,14 @@ Meteor.methods
 					# iterate over the array.
 					# TODO: Fix the "api.SDGameId" key that is created.
 					for stat in playerStats
-						newStat.statType = statType 
-						newStat.api.SDPlayerId = stat.id
-						newStat.full_name = stat.name
-						newStat.position = stat.position
-						newStat.stats = _.omit(stat, ['id', 'name', 'jersey', 'position']) # remove redundant ID, remove all strings
+						if stat # in case stat is 'undefined'
+							newStat.statType = statType 
+							console.log statType
+							console.log stat
+							newStat.api.SDPlayerId = stat.id
+							newStat.full_name = stat.name
+							newStat.position = stat.position
+							newStat.stats = _.omit(stat, ['id', 'name', 'jersey', 'position']) # remove redundant ID, remove all strings
 
 						# convert xml strings to integers.
 						for k,v of newStat.stats

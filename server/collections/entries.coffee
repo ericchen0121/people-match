@@ -6,9 +6,9 @@ Entries.before.insert (userId, doc) ->
   doc.userId = userId
 
   # adds array of event api ids to the Entry
-  contest = Contests.findOne({_id: doc.contestId})
+  contest = Contests.findOne({ _id: doc.contestId })
   doc.api ?= {} # don't overwrite existing api obj if it already exists
-  eventIds = (id for {api: {SDGameId: id}} in contest.fixture.events)
+  eventIds = (id for {api: { SDGameId: id }} in contest.fixture.events)
   doc.api.SDGameIds = eventIds
 
   # initialize score
@@ -22,7 +22,7 @@ Entries.before.update (userId, doc, fieldNames, modifier, options) ->
 Meteor.methods
   entryCreate: (entry) ->
     # update the contest with the number of entries
-    Contests.update(entry.contestId, { $inc: { entryCount: 1 } } ) # this doesn't have the true count if entries are deleted
+    Contests.update(entry.contestId, { $inc: { entryCount: 1 } } ) # TODO: this is not reactive
     Entries.insert(entry)
 
   # TODO: This potentially long term will be an expensive operation

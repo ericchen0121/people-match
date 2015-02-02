@@ -4,9 +4,11 @@ db.nflPlayers.find({position: {$in: ['QB', 'RB', 'WR', 'TE', 'K']}, team_id: {$i
 // NFL Photos
 http://static.nfl.com/static/content/public/image/fantasy/transparent/200x200/SEA.png
 
-//
+// These are db.nflPlayers.insert() values for adding in support for Defenses.
+// The Api.SDPlayerId allows Defenses to be scored and show up just like regular players. 
 {
-	"espn_id" : n,
+	"espn_id" : 66,
+	"api": {"SDPlayerId": "NE"},
 	"first_name" : "New England",
 	"full_name" : "New England Patriots",
 	"jersey_number" : 99,
@@ -18,6 +20,7 @@ http://static.nfl.com/static/content/public/image/fantasy/transparent/200x200/SE
 }
 {
 	"espn_id" : null,
+	"api": {"SDPlayerId": "SEA"},
 	"first_name" : "Seattle",
 	"full_name" : "Seattle Seahawks",
 	"jersey_number" : 99,
@@ -27,3 +30,6 @@ http://static.nfl.com/static/content/public/image/fantasy/transparent/200x200/SE
 	"team" : "Seattle Seahawks",
 	"team_id" : "SEA"
 }
+
+// If they don't have API.SDPlayerIds yet, here it is:
+db.nflPlayers.update({position: 'DEF', team_id: 'NE'}, {$set: {api: {SDPlayerId: "NE"}}})

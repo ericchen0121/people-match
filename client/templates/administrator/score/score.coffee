@@ -27,4 +27,4 @@ Template.score.events
 	'click .score-stats': (e) ->
 		console.log 'udpate event stats'
 		Meteor.call 'batchAthleteEventScoring', @.api.SDGameId
-		Meteor.call 'addScoring'
+		Meteor.call 'addScoring', @.api.SDGameId
