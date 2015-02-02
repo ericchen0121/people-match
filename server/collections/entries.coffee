@@ -30,10 +30,12 @@ Meteor.methods
   # TODO: create a way to score entries from a Contest
   # Instead of scoring each individual entryId, I need to score all entries with a Contest
   
-  # updateEntriesForContest: (sdGameId) ->
-  #    entries = Entries.find({ 'api.SDGameId': sdGameId })
-
-  #    for entry in entries
+  updateEntriesForContest: (sdGameId) ->
+    console.log 'UPDATE ENTRIES FOR CONTEST'
+    # iterate over the mongodb collection cursor
+    # http://docs.mongodb.org/manual/reference/method/cursor.forEach/
+    Entries.find({ 'api.SDGameIds': sdGameId }).forEach (entry) ->
+      Meteor.call 'entryUpdateScoreLiveOne', entry
 
 
   entryUpdateScoreLive: (entryId) ->
@@ -50,16 +52,39 @@ Meteor.methods
 
     resultDoc = result[0]
 
-    Entries.update(
-      { _id: entryId }
-      { $set: 
-        { 
-          totalScore: resultDoc.totalScore, 
-          status: resultDoc.status
-        }
-      } 
-    )
+    if resultDoc.totalScore && resultDoc.status
+      Entries.update(
+        { _id: entryId }
+        { $set: 
+          { 
+            totalScore: resultDoc.totalScore, 
+            status: resultDoc.status
+          }
+        } 
+      )
 
+  entryUpdateScoreLiveOne: (entry) ->
+    # aggregate all scores for all the players in the game on the entry.
+    # limit the search to players and games on the entry
+    # Use `_id: null` for accumulated values in the $group stage
+    # 
+    result = AthleteEventScores.aggregate([
+      { $match: {'api.SDPlayerId': { $in: entry.api.SDPlayerIds }, 'api.SDGameId': { $in: entry.api.SDGameIds}}},
+      { $group: { _id: null, totalScore: { $sum: '$score' }, status: {$first: '$status' } }}
+    ])
+
+    resultDoc = result[0]
+
+    if resultDoc && resultDoc.totalScore && resultDoc.status
+      Entries.update(
+        { _id: entry._id }
+        { $set: 
+          { 
+            totalScore: resultDoc.totalScore, 
+            status: resultDoc.status
+          }
+        } 
+      )
   # TODO: At the end reconciliation of the Entry, 
   # Add scores for each player (Or reactively join) 
 

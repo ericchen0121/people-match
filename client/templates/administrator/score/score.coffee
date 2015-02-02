@@ -8,6 +8,7 @@ Template.score.helpers
 	liveEvents:  ->
 		# TODO: instead of basing this on the lifecycle of the status, much better to base it on the day
 		# If its on the same day as today...
+		# Events.find({ status: {$in: ['inprogress', 'created', 'complete']} }) # is better to not have all closed ones and cluttter
 		Events.find({ status: {$in: ['inprogress', 'created', 'complete', 'closed']} })
 
 Template.score.events
@@ -32,10 +33,14 @@ Template.score.events
 		Meteor.call 'addScoring', @.api.SDGameId
 
 	'click .score-entries': (e) ->
+		console.log @
+		console.log @.api.SDGameId
+		Meteor.call 'updateEntriesForContest', @.api.SDGameId
+
 		# TODO: This is quite the hack to score single entries in server/collections/entries
-		Meteor.call 'entryUpdateScoreLive', "nhEXzDo2QYM82NMeG"
-		Meteor.call 'entryUpdateScoreLive', "ETjJxDpu67nB46k7v"
-		Meteor.call 'entryUpdateScoreLive', "xFFxhH98ypqMt39AX"
-		Meteor.call 'entryUpdateScoreLive', "tEowQYqbhGbReua2S"
-		Meteor.call 'entryUpdateScoreLive', "52axuiGABT2oYADcs" #development
+		# Meteor.call 'entryUpdateScoreLive', "nhEXzDo2QYM82NMeG"
+		# Meteor.call 'entryUpdateScoreLive', "ETjJxDpu67nB46k7v"
+		# Meteor.call 'entryUpdateScoreLive', "xFFxhH98ypqMt39AX"
+		# Meteor.call 'entryUpdateScoreLive', "tEowQYqbhGbReua2S"
+		# Meteor.call 'entryUpdateScoreLive', "52axuiGABT2oYADcs" #development
 		
