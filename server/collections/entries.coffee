@@ -26,47 +26,22 @@ Meteor.methods
     Contests.update(entry.contestId, { $inc: { entryCount: 1 } } ) # TODO: this is not reactive
     Entries.insert(entry)
 
+  # iterate over all entries with a given contest (identifed by a sdGameId)
   # NOTE: This potentially long term will be an expensive operation
-  # TODO: create a way to score entries from a Contest
-  # Instead of scoring each individual entryId, I need to score all entries with a Contest
-  
-  updateEntriesForContest: (sdGameId) ->
-    console.log 'UPDATE ENTRIES FOR CONTEST'
+  addTotalScoreAllEntries: (sdGameId) ->
     # iterate over the mongodb collection cursor
     # http://docs.mongodb.org/manual/reference/method/cursor.forEach/
-    Entries.find({ 'api.SDGameIds': sdGameId }).forEach (entry) ->
-      Meteor.call 'entryUpdateScoreLiveOne', entry
-
-
-  entryUpdateScoreLive: (entryId) ->
-    entry = Entries.findOne({ _id: entryId })
-    
-    # aggregate all scores for all the players in the game on the entry.
-    # limit the search to players and games on the entry
-    # Use `_id: null` for accumulated values in the $group stage
+    # 'api.SDGameIds' is an array, which should contain the sdGameId
     # 
-    result = AthleteEventScores.aggregate([
-      { $match: {'api.SDPlayerId': { $in: entry.api.SDPlayerIds }, 'api.SDGameId': { $in: entry.api.SDGameIds}}},
-      { $group: { _id: null, totalScore: { $sum: '$score' }, status: {$first: '$status' } }}
-    ])
+    Entries.find({'api.SDGameIds': sdGameId }).forEach (entry) ->
+      Meteor.call 'addTotalScoreEntry', entry
 
-    resultDoc = result[0]
-
-    if resultDoc.totalScore && resultDoc.status
-      Entries.update(
-        { _id: entryId }
-        { $set: 
-          { 
-            totalScore: resultDoc.totalScore, 
-            status: resultDoc.status
-          }
-        } 
-      )
-
-  entryUpdateScoreLiveOne: (entry) ->
-    # aggregate all scores for all the players in the game on the entry.
-    # limit the search to players and games on the entry
-    # Use `_id: null` for accumulated values in the $group stage
+  # input: takes an entry document
+  # result: 
+  # 
+  addTotalScoreEntry: (entry) ->
+    # match players and games from the entry's array
+    # Use `_id: null` to get accumulated values in the $group stage
     # 
     result = AthleteEventScores.aggregate([
       { $match: {'api.SDPlayerId': { $in: entry.api.SDPlayerIds }, 'api.SDGameId': { $in: entry.api.SDGameIds}}},
@@ -85,8 +60,7 @@ Meteor.methods
           }
         } 
       )
+
   # TODO: At the end reconciliation of the Entry, 
   # Add scores for each player (Or reactively join) 
-
-# Meteor.call 'entryUpdateScoreLive', "HjiiRzfB8zah8AhfD"
 

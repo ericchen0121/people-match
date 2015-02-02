@@ -14,33 +14,22 @@ Template.score.helpers
 Template.score.events
 	# TODO: un-hardcode this.
 	'click .update-events': (e) ->
-		console.log 'udpate or get event status'
 		Meteor.call 'getEvents', 'NFL', 4 # TODO: Change this so its not hardcoded
 
 	# TODO: un-hardcode this.
 	# Base this on a call to WEEKLY or DAILY Schedule thru API. 
 	'click .update-event-stats': (e) ->
-		console.log 'udpate event stats'
 		Meteor.call 'getEventStats', 'NFL', 4, 'NE', 'SEA' # TODO: change this to be extensible
 
 	'click .create-athlete-event-stats': (e) ->
-		# NOTE: @ is the event object, uniquely ID'ed by api.SDGameID attribute
-		Meteor.call 'convertSDContestStatToAthleteEventStats', @.api.SDGameId
+		event = @
+		Meteor.call 'convertSDContestStatToAthleteEventStats', event.api.SDGameId
 
 	'click .score-stats': (e) ->
-		console.log 'udpate event stats'
-		Meteor.call 'batchAthleteEventScoring', @.api.SDGameId
-		Meteor.call 'addScoring', @.api.SDGameId
+		event = @
+		Meteor.call 'batchAthleteEventScoring', event.api.SDGameId
+		Meteor.call 'addScoring', event.api.SDGameId
 
 	'click .score-entries': (e) ->
-		console.log @
-		console.log @.api.SDGameId
-		Meteor.call 'updateEntriesForContest', @.api.SDGameId
-
-		# TODO: This is quite the hack to score single entries in server/collections/entries
-		# Meteor.call 'entryUpdateScoreLive', "nhEXzDo2QYM82NMeG"
-		# Meteor.call 'entryUpdateScoreLive', "ETjJxDpu67nB46k7v"
-		# Meteor.call 'entryUpdateScoreLive', "xFFxhH98ypqMt39AX"
-		# Meteor.call 'entryUpdateScoreLive', "tEowQYqbhGbReua2S"
-		# Meteor.call 'entryUpdateScoreLive', "52axuiGABT2oYADcs" #development
-		
+		event = @
+		Meteor.call 'addTotalScoreAllEntries', event.api.SDGameId
