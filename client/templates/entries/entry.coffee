@@ -8,7 +8,7 @@ Template.entryView.helpers
 			# TODO: Limit it to the games to ensure right score
 			# however, need parent context... "api.SDGameId: {$in: [ @.api.SDGameIds ]
 			scoreDoc = AthleteEventScores.findOne(
-				{ "api.SDPlayerId": athlete.api.SDPlayerId}
+				{ 'api.SDPlayerId': athlete.api.SDPlayerId }
 			)
 			if scoreDoc then scoreDoc.score / 100.0 else 0
 		else 

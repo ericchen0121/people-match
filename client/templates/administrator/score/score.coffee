@@ -28,3 +28,12 @@ Template.score.events
 		console.log 'udpate event stats'
 		Meteor.call 'batchAthleteEventScoring', @.api.SDGameId
 		Meteor.call 'addScoring', @.api.SDGameId
+
+	'click .score-entries': (e) ->
+		# TODO: This is quite the hack to score single entries in server/collections/entries
+		Meteor.call 'entryUpdateScoreLive', "nhEXzDo2QYM82NMeG"
+		Meteor.call 'entryUpdateScoreLive', "ETjJxDpu67nB46k7v"
+		Meteor.call 'entryUpdateScoreLive', "xFFxhH98ypqMt39AX"
+		Meteor.call 'entryUpdateScoreLive', "tEowQYqbhGbReua2S"
+		Meteor.call 'entryUpdateScoreLive', "52axuiGABT2oYADcs" #development
+		
