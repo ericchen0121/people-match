@@ -47,6 +47,19 @@ EventStats.distinct = (key, query) ->
   throw result[1] if !result[0]
   result[1]
   
+Entries.distinct = (key, query) ->
+  future = new Future
+  @find()._mongo.db.createCollection @_name, (err,collection) =>
+    future.throw err if err
+
+    collection.distinct key, query, (err,result) =>
+      future.throw(err) if err
+      future['return']([true,result]) 
+  
+  result = future.wait()
+  throw result[1] if !result[0]
+  result[1]
+  
 # ----------------------------------------Fast Render----------------------------------------
 # https://github.com/meteorhacks/fast-render#using-fast-renders-route-apis
 

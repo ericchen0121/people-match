@@ -227,7 +227,7 @@ Template.contestLineupContainer.events
     valid = validateEntry()
 
     if valid == true
-      # @ is a Contest object
+      contest = @ # @ is a Contest object
 
       # Transform data
       rosterJSON = Session.getJSON 'currentLineup.roster'
@@ -249,14 +249,15 @@ Template.contestLineupContainer.events
           SDPlayerIds: rosterIds
         }
         userId: Meteor.userId()
-        contestId: @._id
-        fixtureId: @.fixture.id
-        contestStarts: @.startsAt
-        contestName: @.contestName
-        contestSport: @.sport
-        contestType: @.contestType
-        entryFee: @.entryFee
-        # status: @.status # TODO: Update this value when contest is live
+        contestId: contest._id
+        fixtureId: contest.fixture.id
+        contestStarts: contest.startsAt
+        contestName: contest.contestName
+        contestSport: contest.sport
+        contestType: contest.contestType
+        contestSize: contest.entrySize
+        entryFee: contest.entryFee
+        # status: contest.status # TODO: Update this value when contest is live
         roster: roster
       }
 
@@ -284,6 +285,7 @@ Template.contestLineupContainer.rendered = ->
   #   # 'DEF': 'open'
   # }
 
+  # Smaller for Super Bowl.
   roster = {
     'QB': 'open'
     'RB1': 'open'

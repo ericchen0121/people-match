@@ -33,3 +33,7 @@ Template.score.events
 	'click .score-entries': (e) ->
 		event = @
 		Meteor.call 'addTotalScoreAllEntries', event.api.SDGameId
+
+	'click .rank-entries': (e) ->
+		event = @
+		Meteor.call 'rankContestsForEvent', event.api.SDGameId

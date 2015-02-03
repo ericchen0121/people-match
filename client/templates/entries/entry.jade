@@ -4,6 +4,7 @@ template(name='entryView')
       div(class='col-md-push-8 col-md-9 font-jersey contest-name') #{ contestName }
     div(class='row')
       div(class='col-md-push-10 col-md-6')
+        span(class='contest-rank') #{ rank } / #{ contestSize }
         //- format the totalScore attribute on the entry, uses template helpers to achieve effect
         span(class='point-score') {{ pointScore totalScore }}
         span(class='decimal-score') .{{ decimalScore totalScore }}

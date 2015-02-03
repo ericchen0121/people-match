@@ -14,13 +14,18 @@ template(name='score')
         +each liveEvents
           div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default create-athlete-event-stats') Convert
-      div(class='col-md-6')
+      div(class='col-md-4')
         h4 Step 4. Score
         +each liveEvents
           div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default score-stats') Score Em! 
-      div(class='col-md-6')
+      div(class='col-md-4')
         h4 Step 5. Add Total Score to Entries
         +each liveEvents
           div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default score-entries') Add total Scores to Entries
+      div(class='col-md-4')
+        h4 Step 6. Rank Entries
+        +each liveEvents
+          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
+          div(class='btn btn-sm btn-default rank-entries') Rank 'em

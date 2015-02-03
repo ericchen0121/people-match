@@ -31,7 +31,7 @@ Meteor.methods
   addTotalScoreAllEntries: (sdGameId) ->
     # iterate over the mongodb collection cursor
     # http://docs.mongodb.org/manual/reference/method/cursor.forEach/
-    # 'api.SDGameIds' is an array, which should contain the sdGameId
+    # 'api.SDGameIds' is an array, in which one value is sdGameId
     # 
     Entries.find({'api.SDGameIds': sdGameId }).forEach (entry) ->
       Meteor.call 'addTotalScoreEntry', entry
@@ -61,6 +61,58 @@ Meteor.methods
         } 
       )
 
+  # Input: contestId, as all Entries are related to one Contest
+  # Output: ranks all entries (on 'rank' attribute) according to their score rank
+#   addRankToEntry: (contestId) ->
+#     result = Entries.aggregate([
+#       { $match: { contestId: contestId }}, 
+#       { $project: { totalScore: 1 }}
+#     ])
+
+#     console.log 'the result is ', result 
+
+#     for scoreDoc in result
+#       rankDoc = Entries.aggregate([
+#         { $match: { contestId: contestId, totalScore: { $gt: scoreDoc.totalScore } }}, 
+#         { $group: { _id: 1, rank: {$sum: 1}} }
+#       ])
+
+#       console.log rankDoc
+# Meteor.call 'addRankToEntry', 'KDFPHF5vJygCzWHGj'
+
+  # Note: this is a helper for use with rankEntries, since we are feeding in a sdGameId/Event. However, rankEntries
+  # works on contests. 
+
+  rankContestsForEvent: (sdGameId) ->
+    contestIds = Meteor.call 'distinctContestsForEvent', sdGameId
+    
+    for contestId in contestIds
+      Meteor.call 'rankEntries', contestId
+
+  distinctContestsForEvent: (sdGameId) ->
+    Entries.distinct( 'contestId', {'api.SDGameIds': sdGameId } )
+
+  # input: contestId, which is associated to entries
+  # output: a 'rank' attribute on all associated entries with a number ranking their totalScore
+  # method: uses Aggregation pipeline to rank, then uses an array to loop thru and update entries
+  # todo/methodology: looked into doing this all in one go in Aggregation pipeline but spent too 
+  # much time and couldn't do it in one query. Ultimately instead of two queries and still not having 
+  # the result (see addRankToEntry method above), decided to move on.
+  # 
+  rankEntries: (contestId) ->
+    result = Entries.aggregate([
+      { $match: { contestId: contestId }}, 
+      { $project: { totalScore: 1 }}, 
+      { $sort: { totalScore: -1 }}
+    ])
+
+    for doc, i in result
+      Entries.update(
+        { _id: doc._id },
+        { $set: { rank: i + 1 }}
+      )
+
+# Meteor.call 'rankEntries', 'KDFPHF5vJygCzWHGj'
+  
   # TODO: At the end reconciliation of the Entry, 
   # Add scores for each player (Or reactively join) 
-
