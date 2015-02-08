@@ -15,43 +15,86 @@ addPlayerToRoster = (player) ->
     "timeOut": "1500"
   }
 
-  switch player.position
-    when 'QB'
-      if currentRoster['QB'] is 'open' then Session.setJSON 'currentLineup.roster.QB', player else toastr.info 'QBs are Full'
-    when 'RB'
-      if currentRoster['RB1'] is 'open'
-        Session.setJSON 'currentLineup.roster.RB1', player
-      else if currentRoster['RB2'] is 'open'
-        Session.setJSON 'currentLineup.roster.RB2', player
-      else if currentRoster['FLEX1'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX1', player
-      else if currentRoster['FLEX2'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX2', player
-      else toastr.info 'RBs are Full'
-    when 'WR'
-      if currentRoster['WR1'] is 'open'
-        Session.setJSON 'currentLineup.roster.WR1', player
-      else if currentRoster['WR2'] is 'open'
-        Session.setJSON 'currentLineup.roster.WR2', player
-      else if currentRoster['WR3'] is 'open'
-        Session.setJSON 'currentLineup.roster.WR3', player
-      else if currentRoster['FLEX1'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX1', player
-      else if currentRoster['FLEX2'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX2', player
-      else toastr.info 'WRs are Full'
-    when 'TE'
-      if currentRoster['TE'] is 'open'
-        Session.setJSON 'currentLineup.roster.TE', player
-      else if currentRoster['FLEX1'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX1', player
-      else if currentRoster['FLEX2'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX2', player
-      else toastr.info 'TEs are Full'
-    when 'PK'
-      if currentRoster['K'] is 'open' then Session.setJSON 'currentLineup.roster.K', player else toastr.info 'Ks are Full'
-    when 'DEF'
-      if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else toastr.info 'DEFs are Full'
+  switch player.sport
+    when 'NFL'
+      switch player.position
+        when 'QB'
+          if currentRoster['QB'] is 'open' then Session.setJSON 'currentLineup.roster.QB', player else toastr.info 'QBs are Full'
+        when 'RB'
+          if currentRoster['RB1'] is 'open'
+            Session.setJSON 'currentLineup.roster.RB1', player
+          else if currentRoster['RB2'] is 'open'
+            Session.setJSON 'currentLineup.roster.RB2', player
+          else if currentRoster['FLEX1'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX1', player
+          else if currentRoster['FLEX2'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX2', player
+          else toastr.info 'RBs are Full'
+        when 'WR'
+          if currentRoster['WR1'] is 'open'
+            Session.setJSON 'currentLineup.roster.WR1', player
+          else if currentRoster['WR2'] is 'open'
+            Session.setJSON 'currentLineup.roster.WR2', player
+          else if currentRoster['WR3'] is 'open'
+            Session.setJSON 'currentLineup.roster.WR3', player
+          else if currentRoster['FLEX1'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX1', player
+          else if currentRoster['FLEX2'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX2', player
+          else toastr.info 'WRs are Full'
+        when 'TE'
+          if currentRoster['TE'] is 'open'
+            Session.setJSON 'currentLineup.roster.TE', player
+          else if currentRoster['FLEX1'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX1', player
+          else if currentRoster['FLEX2'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX2', player
+          else toastr.info 'TEs are Full'
+        when 'PK'
+          if currentRoster['K'] is 'open' then Session.setJSON 'currentLineup.roster.K', player else toastr.info 'Ks are Full'
+        when 'DEF'
+          if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else toastr.info 'DEFs are Full'
+          
+    when 'NBA'
+      switch player.position
+        when 'PG'
+          if currentRoster['PG'] is 'open' 
+            Session.setJSON 'currentLineup.roster.PG', player
+          else if currentRoster['G'] is 'open'
+            Session.setJSON 'currentLineup.roster.G', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'PGs are Full'
+        when 'SG'
+          if currentRoster['SG'] is 'open'
+            Session.setJSON 'currentLineup.roster.SG', player
+          else if currentRoster['G'] is 'open'
+            Session.setJSON 'currentLineup.roster.G', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'SGs are Full'
+        when 'SF'
+          if currentRoster['SF'] is 'open'
+            Session.setJSON 'currentLineup.roster.SF', player
+          else if currentRoster['F'] is 'open'
+            Session.setJSON 'currentLineup.roster.F', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'SFs are Full'
+        when 'PF'
+          if currentRoster['PF'] is 'open'
+            Session.setJSON 'currentLineup.roster.PF', player
+          else if currentRoster['F'] is 'open'
+            Session.setJSON 'currentLineup.roster.F', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'PFs are Full'
+        when 'C'
+          if currentRoster['C'] is 'open' 
+            Session.setJSON 'currentLineup.roster.C', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'Ks are Full'
 
 validateEntry = ->
   rosterJSON = Session.getJSON 'currentLineup.roster'
@@ -77,10 +120,7 @@ availableTeams = (contest) ->
   events = contest.fixture.events # array of Events
   teams = []
   for event in events
-    if event.sport == 'NFL'
-      teams.push event.home
-      teams.push event.away
-    if event.sport == 'NBA'
+    if event.sport == 'NFL' || event.sport == 'NBA'
       teams.push event.home
       teams.push event.away
     # if event.sport == 'CBB'
@@ -227,8 +267,10 @@ Template.contestLineupContainer.events
       Session.setJSON 'playerListFilter.position', filterText
     e.stopPropagation()
 
+  # @data-param @: [@] an Athlete / NflPlayer object (to be deprecated)
+  # ie. @ is the data context of the template for the click handler
+  # 
   'click .lineup-player-add': (e) ->
-    # @ is the data context of the template for the click handler, ie. the player
     athlete = @
     addPlayerToRoster(athlete)
 
@@ -258,13 +300,14 @@ Template.contestLineupContainer.events
 
       Session.setJSON 'currentLineup.roster', rosterJSON
 
-  # The lineup will be in the Session.getJSON 'currentLineup.roster'
+  # The lineup will be in the Session.getJSON 'currentLineup.roster'  
+  # @data-param @: [@] Contest object
   # TODO: Consolidate naming - Roster or Lineup
   'click .contest-entry': (e) ->
     valid = validateEntry()
 
     if valid == true
-      contest = @ # @ is a Contest object
+      contest = @
 
       # Transform data
       rosterJSON = Session.getJSON 'currentLineup.roster'
