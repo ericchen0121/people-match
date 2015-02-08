@@ -87,6 +87,14 @@ availableTeams = (contest) ->
   return teams
 
 Template.contestLineupContainer.helpers
+  positionFilters: ->
+    sport = @.sport
+
+    switch sport
+      when 'NFL'
+        return ['QB', 'RB', 'WR', 'TE', 'K', 'D']
+      when 'NBA'
+        return ['PG', 'SG', 'SF', 'PF', 'C', 'G', 'F', 'UTIL']
 
   availablePlayers: ->
     position_filter = Session.getJSON 'playerListFilter.position'

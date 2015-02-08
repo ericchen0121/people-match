@@ -50,7 +50,7 @@ Template.registerHelper 'momentify', (time, formatName) ->
       formatted.format('h:mmA')
 
     else if formatName == 'longDateTime'
-      formatted.tz('America/New_York').format('ddd, MMM Do h:mmA z ')
+      formatted.tz('America/New_York').format('ddd, MMM Do h:mmA z')
 
     # default to MediumDateTime
     else  
