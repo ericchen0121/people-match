@@ -32,6 +32,6 @@ template(name='entryViewMini')
     each roster
       +AnimateWithVelocity
         span(class='col-md-2' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
-          img(class='entry-view-mini' src="{{playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+          img(class='entry-view-mini' src="{{playerImageESPN espn_id = espn_id espn_size = 'micro' sport=sport }}")
           div #{ last_name }, #{ first_name }
           div #{ score }

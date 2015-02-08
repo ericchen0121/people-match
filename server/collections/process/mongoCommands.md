@@ -30,11 +30,18 @@ mongo production-db-d3.meteor.io:27017/infinityprimal_meteor_com -u client-2d27c
 //
 mongoexport -h 127.0.0.1 --port 3001 -d meteor -c nflPlayers --csv -f "full_name,salary,position,team_id" --out athletes.csv
 
-mongoimport --collection collection --file collection.json --upsert
-mongoimport -h 127.0.0.1 --port 3001 -d meteor -c nflPlayers --file athletes.csv --upsert
+-------------- IMPORT LOCAL METOR MONGO COLLECTION FROM CSV ---------------
+TEMPLATE: 
+	mongoimport --collection collection --file collection.json --upsert
+ACTUAL: 
+	mongoimport -h 127.0.0.1 --port 3001 -d meteor -c nflPlayers --file athletes.csv --upsert
 
-// these didn't work for me.
-//
-mongoimport -h 127.0.0.1 --port 3001 -d meteor -c nflPlayers --upsert --file athletes.csv --upsertFields "espn_id"  --type csv --ignoreBlanks --headerline
 
-mongoimport -h 127.0.0.1 --port 3001 -d meteor -c nflPlayers --upsert --file athletes.csv  --type csv --headerline
+ACTUAL:
+NOTE: I had to remove the headerline and add it into the --fields/-f argument
+NOTE: Then I had to import in batches. First, just one file with one player. Then another file with all the players.
+
+	mongoimport -h 127.0.0.1:3001 -d meteor -c athletes --file ~/code/meteor-learning/people-match/server/collections/nba_player_data_2.csv --type csv -v -f "sport,espn_id,first_name,last_name,full_name,team_id,team,salary,position,jersey_number"
+
+ACTUAL: For upserting; 
+	mongoimport -h 127.0.0.1:3001 -d meteor -c athletes --file ~/code/meteor-learning/people-match/server/collections/nba_player_data.csv --type csv -v -f "sport,espn_id,first_name,last_name,full_name,team_id,team,salary,position,jersey_number" --upsert --upsertFields "espn_id" 

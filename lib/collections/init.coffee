@@ -8,6 +8,9 @@
 @NflPlayers = new Mongo.Collection('nflPlayers')
 @NflTeams = new Mongo.Collection('nflTeams')
 
+# Athletes
+@Athletes = new Mongo.Collection('athletes')
+
 # Bookmarked Players / WatchList
 @NflSuperstars = new Mongo.Collection('nflSuperstars')
 

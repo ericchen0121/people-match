@@ -80,13 +80,19 @@ availableTeams = (contest) ->
     if event.sport == 'NFL'
       teams.push event.home
       teams.push event.away
-    # TODO: To add more sports! Coming soon!
-    # if event.sport == 'NBA'
+    if event.sport == 'NBA'
+      teams.push event.home
+      teams.push event.away
     # if event.sport == 'CBB'
 
   return teams
 
 Template.contestLineupContainer.helpers
+  
+  # Returns the positions to filter for each respective sport.
+  # @data-param @ is the Contest object, from the template context
+  # @return Array of positional filters in Available Players section
+  # 
   positionFilters: ->
     sport = @.sport
 
@@ -96,21 +102,41 @@ Template.contestLineupContainer.helpers
       when 'NBA'
         return ['PG', 'SG', 'SF', 'PF', 'C', 'G', 'F', 'UTIL']
 
+  # Returns the available players in the contest, based on the sport, teams and contest fixtures
+  # @data-param @ is the Contest object, from the template context
+  # @return Array of positional filters in Available Players section
+  # 
   availablePlayers: ->
+    # Setup
+    sport = @.sport
     position_filter = Session.getJSON 'playerListFilter.position'
-    selectedTeamFilter = Session.getJSON "playerListFilter.teams"
+    selectedTeamFilter = Session.getJSON 'playerListFilter.teams'
+
+    # Logic
     team_filter = if selectedTeamFilter? then selectedTeamFilter else availableTeams(@)
-    switch position_filter
-      when 'All'
-        NflPlayers.find({ team_id: {$in: team_filter }, position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK', 'DEF']}})
-      when 'K' # edge case when filter won't match position name
-        NflPlayers.find({ team_id: {$in: team_filter }, position: 'PK' })
-      when 'D'
-         NflPlayers.find({ position: 'DEF' })
-      else
-        # http://stackoverflow.com/questions/19019822/how-do-i-access-one-sibling-variable-in-a-meteor-template-helper-when-i-am-in
-        # assumed data context (ie. what @ is) is the Contest
-        NflPlayers.find({ position: position_filter, team_id: {$in: team_filter }})
+
+    # Sports
+    switch sport
+      # TODO: Change NflPlayers to Athletes
+      when 'NFL'
+        switch position_filter
+          when 'All'
+            NflPlayers.find({ team_id: { $in: team_filter }, position: { $in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK', 'DEF'] }})
+          when 'K' # edge case when filter won't match position name
+            NflPlayers.find({ team_id: { $in: team_filter }, position: 'PK' })
+          when 'D' # another edge case
+             NflPlayers.find({ position: 'DEF' })
+          else
+            NflPlayers.find({ position: position_filter, team_id: { $in: team_filter }})
+
+      when 'NBA'
+        switch position_filter
+          when 'All'
+            Athletes.find({ sport: sport, team_id: {$in: team_filter }, position: { $in: ['PG', 'SG', 'SF', 'PF', 'C', 'G', 'F'] }})
+          # when 'UTIL'
+          #   Athletes.find({ team_id: {$in: team_filter }, position: { $in: ['PG', 'SG', 'SF', 'PF', 'C', 'G', 'F'] }})
+          else
+            Athletes.find({ sport: sport, position: position_filter, team_id: { $in: team_filter }})
 
   salaryRemaining: ->
     totalSalary = 80000
@@ -165,6 +191,7 @@ Template.contestLineupContainer.helpers
 
   # Declarative way to find if player is in curent lineup, could use jQuery way
   # of simply switching a class on the player as this is fairly processor intensive.
+    # 
   inCurrentLineup: ->
     rosterJSON = Session.getJSON 'currentLineup.roster'
     result = false # assume player is not in lineup, until proven true
@@ -176,15 +203,17 @@ Template.contestLineupContainer.helpers
 
     return result
 
-  # Returns the Event Name
-  # Template calls like this to pass parent data context: {{currentGame ..}}
+  # Returns the event's matchup description, ie. 'NE vs. SEA'
+  # 
   # TODO: Feature: If you want to bold the current Game, you may need to break this up into two separate helpers
+  # @data-param @: [@] an Athlete / NflPlayer object (to be deprecated)
+  # @parentDataContext [obj] a Contest obj, the parent context
+  # Usage: [template] Template calls like this to pass parent data context: {{ getCurrentGame .. }}
+  # 
   getCurrentEvent: (parentDataContext) ->
-    # @ is an Athlete / NflPlayer object (to be deprecated)
-    # parentDataContext should be a Contest obj
     athlete = @
     contest = parentDataContext
-    # Checks if player 
+
     for event in contest.fixture.events
       if athlete.team_id == event.home || athlete.team_id == event.away
         return event.away + " vs. " + event.home
@@ -277,37 +306,49 @@ Template.contestLineupContainer.events
       toastr.info(Session.get 'invalidEntryMessage')
 
 Template.contestLineupContainer.rendered = ->
-  # Defaults
-  # initialize the Roster
-  # roster = {
-  #   'QB': 'open'
-  #   'RB1': 'open'
-  #   'RB2': 'open'
-  #   'WR1': 'open'
-  #   'WR2': 'open'
-  #   'WR3': 'open'
-  #   'FLEX1': 'open'
-  #   'FLEX2': 'open'
-  #   'TE': 'open'
-  #   'K': 'open'
-  #   # 'DEF': 'open'
-  # }
 
-  # Smaller for Super Bowl.
-  roster = {
-    'QB': 'open'
-    'RB1': 'open'
-    'WR1': 'open'
-    'WR2': 'open'
-    'FLEX1': 'open'
-    'TE': 'open'
-    'K': 'open'
-    'DEF': 'open'
-  }
+  # @data-param: @.data is Contest, this is from Iron-Router's data context for the route.
+  # 
+  contest = @.data
+  sport = contest.sport
 
+  switch sport
+    when 'NFL'
+      # TODO: can add attribute to the Contest and that will be defined in Contest Creation.
+      roster = {
+        'QB': 'open'
+        'RB1': 'open'
+        # 'RB2': 'open'
+        'WR1': 'open'
+        'WR2': 'open'
+        # 'WR3': 'open' 
+        'FLEX1': 'open'
+        # 'FLEX2': 'open' 
+        'TE': 'open'
+        'K': 'open'
+        'DEF': 'open'
+      }
+
+      startingPosition = 'QB'
+
+    when 'NBA'
+      roster = {
+        'PG': 'open'
+        'SG': 'open'
+        'SF': 'open'
+        'PF': 'open'
+        'C': 'open'
+        'G': 'open'
+        'F': 'open'
+        'UTIL': 'open'
+      }
+
+      startingPosition = 'PG'
+  
+  # Set Session Variables
+  # 
   Session.setJSON('currentLineup.roster', roster)
-
-  Session.setJSON 'playerListFilter.position', 'QB'
+  Session.setJSON 'playerListFilter.position', startingPosition
   Session.setJSON "playerListFilter.teams", undefined
 
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
@@ -321,14 +362,13 @@ Template.contestLineupContainer.rendered = ->
   $('body').removeClass('modal-open')
 
 Template.contestFixtureContainer.events
+
+  # @data-param: @ is a Contest
+  # 
   'click .event-filter': (e) ->
-    contest = @ # @ is a Contest obj
+    contest = @
     if e.target.innerHTML == 'All' # this depends on the DOM, a bit fragile
       Session.setJSON "playerListFilter.teams", undefined
     else
+      # TODO: logic to add more teams to it, and remove if they're already in there
       Session.setJSON "playerListFilter.teams", [contest.home, contest.away]
-
-# Template.contestFixtureContainer.rendered = ->
-#   @$('#event-filters-container').mCustomScrollbar
-#     theme: 'minimal-dark'
-#     axis: "x"
