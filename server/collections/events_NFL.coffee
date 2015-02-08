@@ -1,4 +1,5 @@
-# https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
+#https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
+# 
 Events.before.update (userId, doc, fieldNames, modifier, options) ->
   modifier.$set.createdAt = modifier.$set.createdAt || new Date().toISOString()
   modifier.$set.updatedAt = new Date().toISOString()
@@ -34,4 +35,4 @@ Meteor.methods
       { upsert: true }
     )
 
-Meteor.call 'getEvents', 'NFL', 4
+# Meteor.call 'getEvents', 'NFL', 4
