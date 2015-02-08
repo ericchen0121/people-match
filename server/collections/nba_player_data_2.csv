@@ -1,0 +1,427 @@
+NBA,3593,Bojan,Bogdanovic,Bojan Bogdanovic,BKN,Brooklyn Nets,4500,SG,44
+NBA,2530750,Markel,Brown,Markel Brown,BKN,Brooklyn Nets,4500,SG,22
+NBA,2490144,Brandon,Davies,Brandon Davies,BKN,Brooklyn Nets,4500,PF,20
+NBA,261,Kevin,Garnett,Kevin Garnett,BKN,Brooklyn Nets,4500,PF,2
+NBA,2768,Jarrett,Jack,Jarrett Jack,BKN,Brooklyn Nets,4500,PG,0
+NBA,2488845,Cory,Jefferson,Cory Jefferson,BKN,Brooklyn Nets,4500,PF,21
+NBA,1007,Joe,Johnson,Joe Johnson,BKN,Brooklyn Nets,4500,SF,7
+NBA,4280,Jerome,Jordan,Jerome Jordan,BKN,Brooklyn Nets,4500,C,9
+NBA,2959745,Sergey,Karasev,Sergey Karasev,BKN,Brooklyn Nets,4500,SG,10
+NBA,3448,Brook,Lopez,Brook Lopez,BKN,Brooklyn Nets,4500,C,11
+NBA,6463,Darius,Morris,Darius Morris,BKN,Brooklyn Nets,4500,PG,14
+NBA,2488653,Mason,Plumlee,Mason Plumlee,BKN,Brooklyn Nets,4500,C,1
+NBA,4385,Mirza,Teletovic,Mirza Teletovic,BKN,Brooklyn Nets,4500,PF,33
+NBA,2798,Deron,Williams,Deron Williams,BKN,Brooklyn Nets,4500,PG,8
+NBA,6576,Quincy,Acy,Quincy Acy,NY,New York Knicks,4500,SF,4
+NBA,4267,Cole,Aldrich,Cole Aldrich,NY,New York Knicks,4500,C,45
+NBA,1975,Carmelo,Anthony,Carmelo Anthony,NY,New York Knicks,4500,SF,7
+NBA,2987,Andrea,Bargnani,Andrea Bargnani,NY,New York Knicks,4500,C,77
+NBA,2806,Jose,Calderon,Jose Calderon,NY,New York Knicks,4500,PG,3
+NBA,991,Samuel,Dalembert,Samuel Dalembert,NY,New York Knicks,4500,C,11
+NBA,2991227,Cleanthony,Early,Cleanthony Early,NY,New York Knicks,4500,SF,17
+NBA,2528210,Tim,Hardaway Jr.,Tim Hardaway Jr.,NY,New York Knicks,4500,SG,5
+NBA,2596158,Shane,Larkin,Shane Larkin,NY,New York Knicks,4500,PG,0
+NBA,4182,Pablo,Prigioni,Pablo Prigioni,NY,New York Knicks,4500,PG,9
+NBA,6468,Iman,Shumpert,Iman Shumpert,NY,New York Knicks,4500,SG,21
+NBA,2444,J.R.,Smith,J.R. Smith,NY,New York Knicks,4500,SG,8
+NBA,3232,Jason,Smith,Jason Smith,NY,New York Knicks,4500,C,14
+NBA,1727,Amar'e,Stoudemire,Amar'e Stoudemire,NY,New York Knicks,4500,PF,1
+NBA,2488674,Travis,Wear,Travis Wear,NY,New York Knicks,4500,SF,6
+NBA,2596108,Michael,Carter-Williams,Michael Carter-Williams,PHI,Philadelphia 76ers,4500,PG,1
+NBA,2490620,Robert,Covington,Robert Covington,PHI,Philadelphia 76ers,4500,SF,33
+NBA,3059318,Joel,Embiid,Joel Embiid,PHI,Philadelphia 76ers,4500,C,21
+NBA,2991070,Jerami,Grant,Jerami Grant,PHI,Philadelphia 76ers,4500,SF,39
+NBA,434,Andrei,Kirilenko,Andrei Kirilenko,PHI,Philadelphia 76ers,4500,SF,47
+NBA,3451,Luc,Richard Mbah a Moute,Luc Richard Mbah a Moute,PHI,Philadelphia 76ers,4500,PF,12
+NBA,2566741,K.J.,McDaniels,K.J. McDaniels,PHI,Philadelphia 76ers,4500,SG,14
+NBA,2991280,Nerlens,Noel,Nerlens Noel,PHI,Philadelphia 76ers,4500,PF,4
+NBA,1018,Jason,Richardson,Jason Richardson,PHI,Philadelphia 76ers,4500,SG,23
+NBA,2608891,JaKarr,Sampson,JaKarr Sampson,PHI,Philadelphia 76ers,4500,PF,9
+NBA,6647,Henry,Sims,Henry Sims,PHI,Philadelphia 76ers,4500,C,35
+NBA,6511,Malcolm,Thomas,Malcolm Thomas,PHI,Philadelphia 76ers,4500,PF,11
+NBA,6634,Hollis,Thompson,Hollis Thompson,PHI,Philadelphia 76ers,4500,SG,31
+NBA,2789,Ronny,Turiaf,Ronny Turiaf,PHI,Philadelphia 76ers,4500,C,32
+NBA,6630,Tony,Wroten,Tony Wroten,PHI,Philadelphia 76ers,4500,SG,8
+NBA,3113297,Bruno,Caboclo,Bruno Caboclo,TOR,Toronto Raptors,4500,SF,5
+NBA,3978,DeMar,DeRozan,DeMar DeRozan,TOR,Toronto Raptors,4500,SG,10
+NBA,4274,Landry,Fields,Landry Fields,TOR,Toronto Raptors,4500,SG,2
+NBA,3991,Tyler,Hansbrough,Tyler Hansbrough,TOR,Toronto Raptors,4500,PF,50
+NBA,2834,Chuck,Hayes,Chuck Hayes,TOR,Toronto Raptors,4500,C,44
+NBA,2769,Amir,Johnson,Amir Johnson,TOR,Toronto Raptors,4500,PF,15
+NBA,3999,James,Johnson,James Johnson,TOR,Toronto Raptors,4500,PF,3
+NBA,3012,Kyle,Lowry,Kyle Lowry,TOR,Toronto Raptors,4500,PG,7
+NBA,3032980,Lucas,Nogueira,Lucas Nogueira,TOR,Toronto Raptors,4500,C,92
+NBA,4264,Patrick,Patterson,Patrick Patterson,TOR,Toronto Raptors,4500,PF,54
+NBA,6619,Terrence,Ross,Terrence Ross,TOR,Toronto Raptors,4500,SF,31
+NBA,4235,Greg,Stiemsma,Greg Stiemsma,TOR,Toronto Raptors,4500,C,34
+NBA,6477,Jonas,Valanciunas,Jonas Valanciunas,TOR,Toronto Raptors,4500,C,17
+NBA,4291,Greivis,Vasquez,Greivis Vasquez,TOR,Toronto Raptors,4500,PG,21
+NBA,2799,Louis,Williams,Louis Williams,TOR,Toronto Raptors,4500,SG,23
+NBA,2166,Leandro,Barbosa,Leandro Barbosa,GS,Golden State Warriors,4500,SG,19
+NBA,6578,Harrison,Barnes,Harrison Barnes,GS,Golden State Warriors,4500,SF,40
+NBA,2747,Andrew,Bogut,Andrew Bogut,GS,Golden State Warriors,4500,C,12
+NBA,3975,Stephen,Curry,Stephen Curry,GS,Golden State Warriors,4500,PG,30
+NBA,6587,Festus,Ezeli,Festus Ezeli,GS,Golden State Warriors,4500,C,31
+NBA,6589,Draymond,Green,Draymond Green,GS,Golden State Warriors,4500,SF,23
+NBA,2284101,Justin,Holiday,Justin Holiday,GS,Golden State Warriors,4500,SG,7
+NBA,2386,Andre,Iguodala,Andre Iguodala,GS,Golden State Warriors,4500,SG,9
+NBA,6602,Ognjen,Kuzmic,Ognjen Kuzmic,GS,Golden State Warriors,4500,C,1
+NBA,2772,David,Lee,David Lee,GS,Golden State Warriors,4500,PF,10
+NBA,2393,Shaun,Livingston,Shaun Livingston,GS,Golden State Warriors,4500,PG,34
+NBA,3457,Brandon,Rush,Brandon Rush,GS,Golden State Warriors,4500,SG,4
+NBA,3460,Marreese,Speights,Marreese Speights,GS,Golden State Warriors,4500,PF,5
+NBA,6475,Klay,Thompson,Klay Thompson,GS,Golden State Warriors,4500,SG,11
+NBA,1765,Matt,Barnes,Matt Barnes,LAC,Los Angeles Clippers,4500,SF,22
+NBA,2528779,Reggie,Bullock,Reggie Bullock,LAC,Los Angeles Clippers,4500,SG,25
+NBA,165,Jamal,Crawford,Jamal Crawford,LAC,Los Angeles Clippers,4500,SG,11
+NBA,6582,Jared,Cunningham,Jared Cunningham,LAC,Los Angeles Clippers,4500,SG,9
+NBA,6582,Jared,Cunningham,Jared Cunningham,LAC,Los Angeles Clippers,4500,SG,9
+NBA,3200,Glen,Davis,Glen Davis,LAC,Los Angeles Clippers,4500,PF,0
+NBA,3422,Chris,Douglas-Roberts,Chris Douglas-Roberts,LAC,Los Angeles Clippers,4500,SG,14
+NBA,3002,Jordan,Farmar,Jordan Farmar,LAC,Los Angeles Clippers,4500,PG,1
+NBA,3989,Blake,Griffin,Blake Griffin,LAC,Los Angeles Clippers,4500,PF,32
+NBA,3211,Spencer,Hawes,Spencer Hawes,LAC,Los Angeles Clippers,4500,PF,10
+NBA,3442,DeAndre,Jordan,DeAndre Jordan,LAC,Los Angeles Clippers,4500,C,6
+NBA,2779,Chris,Paul,Chris Paul,LAC,Los Angeles Clippers,4500,PG,3
+NBA,3024,J.J.,Redick,J.J. Redick,LAC,Los Angeles Clippers,4500,SG,4
+NBA,862,Hedo,Turkoglu,Hedo Turkoglu,LAC,Los Angeles Clippers,4500,SF,15
+NBA,4261,Ekpe,Udoh,Ekpe Udoh,LAC,Los Angeles Clippers,4500,PF,13
+NBA,2488999,C.J.,Wilcox,C.J. Wilcox,LAC,Los Angeles Clippers,4500,SG,30
+NBA,2528393,Tarik,Black,Tarik Black,LAL,Los Angeles Lakers,4500,PF,0
+NBA,1703,Carlos,Boozer,Carlos Boozer,LAL,Los Angeles Lakers,4500,PF,5
+NBA,110,Kobe,Bryant,Kobe Bryant,LAL,Los Angeles Lakers,4500,SG,24
+NBA,2528426,Jordan,Clarkson,Jordan Clarkson,LAL,Los Angeles Lakers,4500,PG,6
+NBA,4259,Ed,Davis,Ed Davis,LAL,Los Angeles Lakers,4500,PF,21
+NBA,3981,Wayne,Ellington,Wayne Ellington,LAL,Los Angeles Lakers,4500,SG,2
+NBA,3994,Jordan,Hill,Jordan Hill,LAL,Los Angeles Lakers,4500,C,27
+NBA,4247,Wesley,Johnson,Wesley Johnson,LAL,Los Angeles Lakers,4500,SF,11
+NBA,2488651,Ryan,Kelly,Ryan Kelly,LAL,Los Angeles Lakers,4500,PF,4
+NBA,4299,Jeremy,Lin,Jeremy Lin,LAL,Los Angeles Lakers,4500,PG,17
+NBA,592,Steve,Nash,Steve Nash,LAL,Los Angeles Lakers,4500,PG,10
+NBA,2807,Ronnie,Price,Ronnie Price,LAL,Los Angeles Lakers,4500,PG,9
+NBA,3064514,Julius,Randle,Julius Randle,LAL,Los Angeles Lakers,4500,PF,30
+NBA,6620,Robert,Sacre,Robert Sacre,LAL,Los Angeles Lakers,4500,C,50
+NBA,3243,Nick,Young,Nick Young,LAL,Los Angeles Lakers,4500,SF,0
+NBA,4238,Eric,Bledsoe,Eric Bledsoe,PHX,Phoenix Suns,4500,PG,2
+NBA,3423,Goran,Dragic,Goran Dragic,PHX,Phoenix Suns,4500,SG,1
+NBA,2560823,Zoran,Dragic,Zoran Dragic,PHX,Phoenix Suns,4500,SG,10
+NBA,3059281,Tyler,Ennis,Tyler Ennis,PHX,Phoenix Suns,4500,PG,4
+NBA,2991281,Archie,Goodwin,Archie Goodwin,PHX,Phoenix Suns,4500,SG,20
+NBA,2761,Gerald,Green,Gerald Green,PHX,Phoenix Suns,4500,SG,14
+NBA,2596107,Alex,Len,Alex Len,PHX,Phoenix Suns,4500,C,21
+NBA,2583664,Tony,Mitchell,Tony Mitchell,PHX,Phoenix Suns,4500,PF,9
+NBA,6462,Marcus,Morris,Marcus Morris,PHX,Phoenix Suns,4500,PF,15
+NBA,6461,Markieff,Morris,Markieff Morris,PHX,Phoenix Suns,4500,PF,11
+NBA,6616,Miles,Plumlee,Miles Plumlee,PHX,Phoenix Suns,4500,C,22
+NBA,2810,Shavlik,Randolph,Shavlik Randolph,PHX,Phoenix Suns,4500,PF,43
+NBA,6472,Isaiah,Thomas,Isaiah Thomas,PHX,Phoenix Suns,4500,PG,3
+NBA,3033,P.J.,Tucker,P.J. Tucker,PHX,Phoenix Suns,4500,SF,17
+NBA,2982334,T.J.,Warren,T.J. Warren,PHX,Phoenix Suns,4500,SF,12
+NBA,3554,Omri,Casspi,Omri Casspi,SAC,Sacramento Kings,4500,SF,18
+NBA,3973,Darren,Collison,Darren Collison,SAC,Sacramento Kings,4500,PG,7
+NBA,4258,DeMarcus,Cousins,DeMarcus Cousins,SAC,Sacramento Kings,4500,C,15
+NBA,1828,Reggie,Evans,Reggie Evans,SAC,Sacramento Kings,4500,PF,30
+NBA,3005,Rudy,Gay,Rudy Gay,SAC,Sacramento Kings,4500,SF,8
+NBA,3008,Ryan,Hollins,Ryan Hollins,SAC,Sacramento Kings,4500,C,5
+NBA,3217,Carl,Landry,Carl Landry,SAC,Sacramento Kings,4500,PF,24
+NBA,2528447,Ray,McCallum,Ray McCallum,SAC,Sacramento Kings,4500,PG,3
+NBA,2578213,Ben,McLemore,Ben McLemore,SAC,Sacramento Kings,4500,SG,23
+NBA,2531352,Eric,Moreland,Eric Moreland,SAC,Sacramento Kings,4500,PF,25
+NBA,3231,Ramon,Sessions,Ramon Sessions,SAC,Sacramento Kings,4500,PG,9
+NBA,2991042,Nik,Stauskas,Nik Stauskas,SAC,Sacramento Kings,4500,SG,10
+NBA,3462,Jason,Thompson,Jason Thompson,SAC,Sacramento Kings,4500,PF,34
+NBA,6480,Derrick,Williams,Derrick Williams,SAC,Sacramento Kings,4500,PF,13
+NBA,2528354,Cameron,Bairstow,Cameron Bairstow,CHI,Chicago Bulls,4500,PF,41
+NBA,3192,Aaron,Brooks,Aaron Brooks,CHI,Chicago Bulls,4500,PG,0
+NBA,6430,Jimmy,Butler,Jimmy Butler,CHI,Chicago Bulls,4500,SG,21
+NBA,1708,Mike,Dunleavy,Mike Dunleavy,CHI,Chicago Bulls,4500,SF,34
+NBA,996,Pau,Gasol,Pau Gasol,CHI,Chicago Bulls,4500,PF,16
+NBA,3986,Taj,Gibson,Taj Gibson,CHI,Chicago Bulls,4500,PF,22
+NBA,1981,Kirk,Hinrich,Kirk Hinrich,CHI,Chicago Bulls,4500,SG,12
+NBA,2528588,Doug,McDermott,Doug McDermott,CHI,Chicago Bulls,4500,SF,3
+NBA,6459,Nikola,Mirotic,Nikola Mirotic,CHI,Chicago Bulls,4500,PF,44
+NBA,568,Nazr,Mohammed,Nazr Mohammed,CHI,Chicago Bulls,4500,C,48
+NBA,6460,E'Twaun,Moore,E'Twaun Moore,CHI,Chicago Bulls,4500,SG,55
+NBA,3224,Joakim,Noah,Joakim Noah,CHI,Chicago Bulls,4500,C,13
+NBA,3456,Derrick,Rose,Derrick Rose,CHI,Chicago Bulls,4500,PG,1
+NBA,2528353,Tony,Snell,Tony Snell,CHI,Chicago Bulls,4500,SF,20
+NBA,3041,Lou,Amundson,Lou Amundson,CLE,Cleveland Cavaliers,4500,PF,89
+NBA,2489716,Matthew,Dellavedova,Matthew Dellavedova,CLE,Cleveland Cavaliers,4500,SG,8
+NBA,2528794,Joe,Harris,Joe Harris,CLE,Cleveland Cavaliers,4500,SG,12
+NBA,1000,Brendan,Haywood,Brendan Haywood,CLE,Cleveland Cavaliers,4500,C,33
+NBA,6442,Kyrie,Irving,Kyrie Irving,CLE,Cleveland Cavaliers,4500,PG,2
+NBA,1966,LeBron,James,LeBron James,CLE,Cleveland Cavaliers,4500,SF,23
+NBA,2009,James,Jones,James Jones,CLE,Cleveland Cavaliers,4500,SF,1
+NBA,2528355,Alex,Kirk,Alex Kirk,CLE,Cleveland Cavaliers,4500,C,53
+NBA,3449,Kevin,Love,Kevin Love,CLE,Cleveland Cavaliers,4500,PF,0
+NBA,510,Shawn,Marion,Shawn Marion,CLE,Cleveland Cavaliers,4500,SF,31
+NBA,558,Mike,Miller,Mike Miller,CLE,Cleveland Cavaliers,4500,SF,18
+NBA,4010,A.J.,Price,A.J. Price,CLE,Cleveland Cavaliers,4500,PG,21
+NBA,6474,Tristan,Thompson,Tristan Thompson,CLE,Cleveland Cavaliers,4500,PF,13
+NBA,2419,Anderson,Varejao,Anderson Varejao,CLE,Cleveland Cavaliers,4500,C,17
+NBA,6628,Dion,Waiters,Dion Waiters,CLE,Cleveland Cavaliers,4500,SG,3
+NBA,3247,Joel,Anthony,Joel Anthony,DET,Detroit Pistons,4500,C,50
+NBA,3415,D.J.,Augustin,D.J. Augustin,DET,Detroit Pistons,4500,PG,14
+NBA,1705,Caron,Butler,Caron Butler,DET,Detroit Pistons,4500,SF,31
+NBA,2581018,Kentavious,Caldwell-Pope,Kentavious Caldwell-Pope,DET,Detroit Pistons,4500,SG,5
+NBA,2585629,Luigi,Datome,Luigi Datome,DET,Detroit Pistons,4500,SF,13
+NBA,2580782,Spencer,Dinwiddie,Spencer Dinwiddie,DET,Detroit Pistons,4500,PG,8
+NBA,6585,Andre,Drummond,Andre Drummond,DET,Detroit Pistons,4500,C,0
+NBA,3997,Brandon,Jennings,Brandon Jennings,DET,Detroit Pistons,4500,PG,7
+NBA,3998,Jonas,Jerebko,Jonas Jerebko,DET,Detroit Pistons,4500,PF,33
+NBA,3930,Cartier,Martin,Cartier Martin,DET,Detroit Pistons,4500,PF,35
+NBA,4003,Jodie,Meeks,Jodie Meeks,DET,Detroit Pistons,4500,SG,20
+NBA,4260,Greg,Monroe,Greg Monroe,DET,Detroit Pistons,4500,PF,10
+NBA,6469,Kyle,Singler,Kyle Singler,DET,Detroit Pistons,4500,SF,25
+NBA,3276,Anthony,Tolliver,Anthony Tolliver,DET,Detroit Pistons,4500,PF,43
+NBA,6424,Lavoy,Allen,Lavoy Allen,IND,Indiana Pacers,4500,PF,5
+NBA,6635,Chris,Copeland,Chris Copeland,IND,Indiana Pacers,4500,SF,22
+NBA,4251,Paul,George,Paul George,IND,Indiana Pacers,4500,SF,13
+NBA,3436,Roy,Hibbert,Roy Hibbert,IND,Indiana Pacers,4500,C,55
+NBA,3438,George,Hill,George Hill,IND,Indiana Pacers,4500,PG,3
+NBA,2488958,Solomon,Hill,Solomon Hill,IND,Indiana Pacers,4500,SF,44
+NBA,2774,Ian,Mahinmi,Ian Mahinmi,IND,Indiana Pacers,4500,C,28
+NBA,2778,C.J.,Miles,C.J. Miles,IND,Indiana Pacers,4500,SG,0
+NBA,2309097,Damjan,Rudez,Damjan Rudez,IND,Indiana Pacers,4500,SF,9
+NBA,1781,Luis,Scola,Luis Scola,IND,Indiana Pacers,4500,PF,4
+NBA,4303,Donald,Sloan,Donald Sloan,IND,Indiana Pacers,4500,PG,15
+NBA,3235,Rodney,Stuckey,Rodney Stuckey,IND,Indiana Pacers,4500,PG,2
+NBA,3277,C.J.,Watson,C.J. Watson,IND,Indiana Pacers,4500,PG,32
+NBA,2177,David,West,David West,IND,Indiana Pacers,4500,PF,21
+NBA,2491063,Shayne,Whittington,Shayne Whittington,IND,Indiana Pacers,4500,PF,42
+NBA,3032977,Giannis,Antetokounmpo,Giannis Antetokounmpo,MIL,Milwaukee Bucks,4500,SG,34
+NBA,3417,Jerryd,Bayless,Jerryd Bayless,MIL,Milwaukee Bucks,4500,PG,19
+NBA,3201,Jared,Dudley,Jared Dudley,MIL,Milwaukee Bucks,4500,SG,9
+NBA,6592,John,Henson,John Henson,MIL,Milwaukee Bucks,4500,C,31
+NBA,2767,Ersan,Ilyasova,Ersan Ilyasova,MIL,Milwaukee Bucks,4500,PF,7
+NBA,3102534,Damien,Inglis,Damien Inglis,MIL,Milwaukee Bucks,4500,SF,17
+NBA,6448,Brandon,Knight,Brandon Knight,MIL,Milwaukee Bucks,4500,PG,11
+NBA,6607,Kendall,Marshall,Kendall Marshall,MIL,Milwaukee Bucks,4500,PG,5
+NBA,3450,O.J.,Mayo,O.J. Mayo,MIL,Milwaukee Bucks,4500,SG,0
+NBA,6609,Khris,Middleton,Khris Middleton,MIL,Milwaukee Bucks,4500,PF,22
+NBA,2581084,Johnny,O'Bryant III,Johnny O'Bryant III,MIL,Milwaukee Bucks,4500,PF,3
+NBA,2016,Zaza,Pachulia,Zaza Pachulia,MIL,Milwaukee Bucks,4500,C,27
+NBA,3056600,Jabari,Parker,Jabari Parker,MIL,Milwaukee Bucks,4500,SF,12
+NBA,4265,Larry,Sanders,Larry Sanders,MIL,Milwaukee Bucks,4500,C,8
+NBA,2491079,Nate,Wolters,Nate Wolters,MIL,Milwaukee Bucks,4500,PG,6
+NBA,4248,Al-Farouq,Aminu,Al-Farouq Aminu,DAL,Dallas Mavericks,4500,SF,7
+NBA,3055,J.J.,Barea,J.J. Barea,DAL,Dallas Mavericks,4500,PG,5
+NBA,984,Tyson,Chandler,Tyson Chandler,DAL,Dallas Mavericks,4500,C,6
+NBA,2751,Monta,Ellis,Monta Ellis,DAL,Dallas Mavericks,4500,SG,11
+NBA,2753,Raymond,Felton,Raymond Felton,DAL,Dallas Mavericks,4500,PG,2
+NBA,2382,Devin,Harris,Devin Harris,DAL,Dallas Mavericks,4500,PG,20
+NBA,1006,Richard,Jefferson,Richard Jefferson,DAL,Dallas Mavericks,4500,SF,24
+NBA,2991143,Ricky,Ledo,Ricky Ledo,DAL,Dallas Mavericks,4500,SG,1
+NBA,609,Dirk,Nowitzki,Dirk Nowitzki,DAL,Dallas Mavericks,4500,PF,41
+NBA,6466,Chandler,Parsons,Chandler Parsons,DAL,Dallas Mavericks,4500,SF,25
+NBA,3026,Rajon,Rondo,Rajon Rondo,DAL,Dallas Mavericks,4500,PG,9
+NBA,6530,Greg,Smith,Greg Smith,DAL,Dallas Mavericks,4500,PF,4
+NBA,2792,Charlie,Villanueva,Charlie Villanueva,DAL,Dallas Mavericks,4500,PF,3
+NBA,2426,Trevor,Ariza,Trevor Ariza,HOU,Houston Rockets,4500,SF,1
+NBA,3964,Patrick,Beverley,Patrick Beverley,HOU,Houston Rockets,4500,PG,2
+NBA,3191,Corey,Brewer,Corey Brewer,HOU,Houston Rockets,4500,SG,33
+NBA,2490589,Isaiah,Canaan,Isaiah Canaan,HOU,Houston Rockets,4500,PG,0
+NBA,3102529,Clint,Capela,Clint Capela,HOU,Houston Rockets,4500,C,15
+NBA,3421,Joey,Dorsey,Joey Dorsey,HOU,Houston Rockets,4500,PF,8
+NBA,3992,James,Harden,James Harden,HOU,Houston Rockets,4500,SG,13
+NBA,2384,Dwight,Howard,Dwight Howard,HOU,Houston Rockets,4500,C,12
+NBA,2580589,Nick,Johnson,Nick Johnson,HOU,Houston Rockets,4500,SG,3
+NBA,6597,Terrence,Jones,Terrence Jones,HOU,Houston Rockets,4500,PF,6
+NBA,6464,Donatas,Motiejunas,Donatas Motiejunas,HOU,Houston Rockets,4500,PF,20
+NBA,4195,Kostas,Papanikolaou,Kostas Papanikolaou,HOU,Houston Rockets,4500,SF,16
+NBA,3882,Alexey,Shved,Alexey Shved,HOU,Houston Rockets,4500,PG,88
+NBA,2411,Josh,Smith,Josh Smith,HOU,Houston Rockets,4500,SF,5
+NBA,841,Jason,Terry,Jason Terry,HOU,Houston Rockets,4500,SG,31
+NBA,2993873,Jordan,Adams,Jordan Adams,MEM,Memphis Grizzlies,4500,SG,3
+NBA,2367,Tony,Allen,Tony Allen,MEM,Memphis Grizzlies,4500,SG,9
+NBA,3969,Nick,Calathes,Nick Calathes,MEM,Memphis Grizzlies,4500,SG,12
+NBA,136,Vince,Carter,Vince Carter,MEM,Memphis Grizzlies,4500,SG,15
+NBA,3195,Mike,Conley,Mike Conley,MEM,Memphis Grizzlies,4500,PG,11
+NBA,3206,Marc,Gasol,Marc Gasol,MEM,Memphis Grizzlies,4500,C,33
+NBA,3444,Kosta,Koufos,Kosta Koufos,MEM,Memphis Grizzlies,4500,C,41
+NBA,3445,Courtney,Lee,Courtney Lee,MEM,Memphis Grizzlies,4500,SG,5
+NBA,6452,Jon,Leuer,Jon Leuer,MEM,Memphis Grizzlies,4500,PF,30
+NBA,4253,Quincy,Pondexter,Quincy Pondexter,MEM,Memphis Grizzlies,4500,SG,8
+NBA,1724,Tayshaun,Prince,Tayshaun Prince,MEM,Memphis Grizzlies,4500,SF,21
+NBA,1017,Zach,Randolph,Zach Randolph,MEM,Memphis Grizzlies,4500,PF,50
+NBA,2614962,Jarnell,Stokes,Jarnell Stokes,MEM,Memphis Grizzlies,4500,PF,1
+NBA,2448,Beno,Udrih,Beno Udrih,MEM,Memphis Grizzlies,4500,PG,19
+NBA,3410,Alexis,Ajinca,Alexis Ajinca,NO,New Orleans Pelicans,4500,C,42
+NBA,3412,Ryan,Anderson,Ryan Anderson,NO,New Orleans Pelicans,4500,PF,33
+NBA,3414,Omer,Asik,Omer Asik,NO,New Orleans Pelicans,4500,C,3
+NBA,4250,Luke,Babbitt,Luke Babbitt,NO,New Orleans Pelicans,4500,SF,8
+NBA,3974,Dante,Cunningham,Dante Cunningham,NO,New Orleans Pelicans,4500,PF,44
+NBA,6583,Anthony,Davis,Anthony Davis,NO,New Orleans Pelicans,4500,PF,23
+NBA,3983,Tyreke,Evans,Tyreke Evans,NO,New Orleans Pelicans,4500,SF,1
+NBA,6434,Jimmer,Fredette,Jimmer Fredette,NO,New Orleans Pelicans,4500,PG,32
+NBA,3431,Eric,Gordon,Eric Gordon,NO,New Orleans Pelicans,4500,SG,10
+NBA,3995,Jrue,Holiday,Jrue Holiday,NO,New Orleans Pelicans,4500,PG,11
+NBA,6617,Austin,Rivers,Austin Rivers,NO,New Orleans Pelicans,4500,SG,25
+NBA,1726,John,Salmons,John Salmons,NO,New Orleans Pelicans,4500,SF,15
+NBA,2531038,Russ,Smith,Russ Smith,NO,New Orleans Pelicans,4500,PG,9
+NBA,2333797,Jeff,Withey,Jeff Withey,NO,New Orleans Pelicans,4500,C,5
+NBA,2993874,Kyle,Anderson,Kyle Anderson,SA,San Antonio Spurs,4500,SF,1
+NBA,4008,Jeff,Ayres,Jeff Ayres,SA,San Antonio Spurs,4500,PF,11
+NBA,2968439,Aron,Baynes,Aron Baynes,SA,San Antonio Spurs,4500,PF,16
+NBA,3190,Marco,Belinelli,Marco Belinelli,SA,San Antonio Spurs,4500,SG,3
+NBA,1996,Matt,Bonner,Matt Bonner,SA,San Antonio Spurs,4500,PF,15
+NBA,3976,Austin,Daye,Austin Daye,SA,San Antonio Spurs,4500,SF,23
+NBA,2167,Boris,Diaw,Boris Diaw,SA,San Antonio Spurs,4500,PF,33
+NBA,215,Tim,Duncan,Tim Duncan,SA,San Antonio Spurs,4500,PF,21
+NBA,272,Manu,Ginobili,Manu Ginobili,SA,San Antonio Spurs,4500,SG,20
+NBA,3988,Danny,Green,Danny Green,SA,San Antonio Spurs,4500,SG,14
+NBA,6446,Cory,Joseph,Cory Joseph,SA,San Antonio Spurs,4500,PG,5
+NBA,6450,Kawhi,Leonard,Kawhi Leonard,SA,San Antonio Spurs,4500,SF,2
+NBA,4004,Patty,Mills,Patty Mills,SA,San Antonio Spurs,4500,PG,8
+NBA,1015,Tony,Parker,Tony Parker,SA,San Antonio Spurs,4500,PG,9
+NBA,3233,Tiago,Splitter,Tiago Splitter,SA,San Antonio Spurs,4500,PF,22
+NBA,2585616,Pero,Antic,Pero Antic,ATL,Atlanta Hawks,4500,PF,6
+NBA,6637,Kent,Bazemore,Kent Bazemore,ATL,Atlanta Hawks,4500,SG,24
+NBA,91,Elton,Brand,Elton Brand,ATL,Atlanta Hawks,4500,PF,7
+NBA,3970,DeMarre,Carroll,DeMarre Carroll,ATL,Atlanta Hawks,4500,SF,5
+NBA,3213,Al,Horford,Al Horford,ATL,Atlanta Hawks,4500,C,15
+NBA,6594,John,Jenkins,John Jenkins,ATL,Atlanta Hawks,4500,SG,12
+NBA,2011,Kyle,Korver,Kyle Korver,ATL,Atlanta Hawks,4500,SG,26
+NBA,6454,Shelvin,Mack,Shelvin Mack,ATL,Atlanta Hawks,4500,PG,8
+NBA,3015,Paul,Millsap,Paul Millsap,ATL,Atlanta Hawks,4500,PF,4
+NBA,2490089,Mike,Muscala,Mike Muscala,ATL,Atlanta Hawks,4500,PF,31
+NBA,2531100,Adreian,Payne,Adreian Payne,ATL,Atlanta Hawks,4500,PF,33
+NBA,3032979,Dennis,Schroder,Dennis Schroder,ATL,Atlanta Hawks,4500,PG,17
+NBA,6622,Mike,Scott,Mike Scott,ATL,Atlanta Hawks,4500,PF,32
+NBA,3028,Thabo,Sefolosha,Thabo Sefolosha,ATL,Atlanta Hawks,4500,SG,25
+NBA,4015,Jeff,Teague,Jeff Teague,ATL,Atlanta Hawks,4500,PG,0
+NBA,6427,Bismack,Biyombo,Bismack Biyombo,CHA,Charlotte Hornets,4500,C,8
+NBA,2594816,P.J.,Hairston,P.J. Hairston,CHA,Charlotte Hornets,4500,SG,19
+NBA,3993,Gerald,Henderson,Gerald Henderson,CHA,Charlotte Hornets,4500,SG,9
+NBA,2389,Al,Jefferson,Al Jefferson,CHA,Charlotte Hornets,4500,C,25
+NBA,6601,Michael,Kidd-Gilchrist,Michael Kidd-Gilchrist,CHA,Charlotte Hornets,4500,SF,14
+NBA,2775,Jason,Maxiell,Jason Maxiell,CHA,Charlotte Hornets,4500,PF,54
+NBA,4300,Gary,Neal,Gary Neal,CHA,Charlotte Hornets,4500,SG,12
+NBA,1821,Jannero,Pargo,Jannero Pargo,CHA,Charlotte Hornets,4500,PG,5
+NBA,6641,Brian,Roberts,Brian Roberts,CHA,Charlotte Hornets,4500,PG,22
+NBA,4244,Lance,Stephenson,Lance Stephenson,CHA,Charlotte Hornets,4500,SG,1
+NBA,6156,Jeff,Taylor,Jeff Taylor,CHA,Charlotte Hornets,4500,SF,44
+NBA,3078284,Noah,Vonleh,Noah Vonleh,CHA,Charlotte Hornets,4500,PF,11
+NBA,6479,Kemba,Walker,Kemba Walker,CHA,Charlotte Hornets,4500,PG,15
+NBA,2797,Marvin,Williams,Marvin Williams,CHA,Charlotte Hornets,4500,PF,2
+NBA,2579258,Cody,Zeller,Cody Zeller,CHA,Charlotte Hornets,4500,C,40
+NBA,1135,Chris,Andersen,Chris Andersen,MIA,Miami Heat,4500,PF,11
+NBA,1977,Chris,Bosh,Chris Bosh,MIA,Miami Heat,4500,C,1
+NBA,3419,Mario,Chalmers,Mario Chalmers,MIA,Miami Heat,4500,PG,15
+NBA,6431,Norris,Cole,Norris Cole,MIA,Miami Heat,4500,PG,30
+NBA,2488650,Andre,Dawkins,Andre Dawkins,MIA,Miami Heat,4500,SG,24
+NBA,2429,Luol,Deng,Luol Deng,MIA,Miami Heat,4500,SF,9
+NBA,2579321,James,Ennis,James Ennis,MIA,Miami Heat,4500,SF,32
+NBA,2760,Danny,Granger,Danny Granger,MIA,Miami Heat,4500,SF,22
+NBA,6590,Justin,Hamilton,Justin Hamilton,MIA,Miami Heat,4500,C,7
+NBA,2184,Udonis,Haslem,Udonis Haslem,MIA,Miami Heat,4500,PF,40
+NBA,3220,Josh,McRoberts,Josh McRoberts,MIA,Miami Heat,4500,PF,4
+NBA,2530780,Shabazz,Napier,Shabazz Napier,MIA,Miami Heat,4500,PG,13
+NBA,1987,Dwyane,Wade,Dwyane Wade,MIA,Miami Heat,4500,SG,3
+NBA,4262,Hassan,Whiteside,Hassan Whiteside,MIA,Miami Heat,4500,C,21
+NBA,3038,Shawne,Williams,Shawne Williams,MIA,Miami Heat,4500,SF,43
+NBA,2580913,Dewayne,Dedmon,Dewayne Dedmon,ORL,Orlando Magic,4500,C,3
+NBA,6588,Evan,Fournier,Evan Fournier,ORL,Orlando Magic,4500,SG,10
+NBA,2754,Channing,Frye,Channing Frye,ORL,Orlando Magic,4500,PF,8
+NBA,3064290,Aaron,Gordon,Aaron Gordon,ORL,Orlando Magic,4500,PF,0
+NBA,2381,Ben,Gordon,Ben Gordon,ORL,Orlando Magic,4500,SG,7
+NBA,2004,Willie,Green,Willie Green,ORL,Orlando Magic,4500,SG,34
+NBA,6591,Maurice,Harkless,Maurice Harkless,ORL,Orlando Magic,4500,SF,21
+NBA,6440,Tobias,Harris,Tobias Harris,ORL,Orlando Magic,4500,SF,12
+NBA,2527968,Devyn,Marble,Devyn Marble,ORL,Orlando Magic,4500,SG,11
+NBA,6614,Andrew,Nicholson,Andrew Nicholson,ORL,Orlando Magic,4500,PF,44
+NBA,6615,Kyle,O'Quinn,Kyle O'Quinn,ORL,Orlando Magic,4500,PF,2
+NBA,2527963,Victor,Oladipo,Victor Oladipo,ORL,Orlando Magic,4500,SG,5
+NBA,2583639,Elfrid,Payton,Elfrid Payton,ORL,Orlando Magic,4500,PG,4
+NBA,1985,Luke,Ridnour,Luke Ridnour,ORL,Orlando Magic,4500,PG,13
+NBA,6478,Nikola,Vucevic,Nikola Vucevic,ORL,Orlando Magic,4500,C,9
+NBA,6580,Bradley,Beal,Bradley Beal,WSH,Washington Wizards,4500,SG,3
+NBA,3965,DeJuan,Blair,DeJuan Blair,WSH,Washington Wizards,4500,C,45
+NBA,1767,Rasual,Butler,Rasual Butler,WSH,Washington Wizards,4500,SF,8
+NBA,1711,Drew,Gooden,Drew Gooden,WSH,Washington Wizards,4500,PF,90
+NBA,2758,Marcin,Gortat,Marcin Gortat,WSH,Washington Wizards,4500,C,4
+NBA,1713,Nene,Hilario,Nene Hilario,WSH,Washington Wizards,4500,PF,42
+NBA,2433,Kris,Humphries,Kris Humphries,WSH,Washington Wizards,4500,PF,43
+NBA,557,Andre,Miller,Andre Miller,WSH,Washington Wizards,4500,PG,24
+NBA,662,Paul,Pierce,Paul Pierce,WSH,Washington Wizards,4500,SF,34
+NBA,2594922,Otto,Porter Jr.,Otto Porter Jr.,WSH,Washington Wizards,4500,SF,22
+NBA,2488660,Glen,Rice Jr.,Glen Rice Jr.,WSH,Washington Wizards,4500,SG,14
+NBA,4289,Kevin,Seraphin,Kevin Seraphin,WSH,Washington Wizards,4500,C,13
+NBA,4023,Garrett,Temple,Garrett Temple,WSH,Washington Wizards,4500,SG,17
+NBA,4237,John,Wall,John Wall,WSH,Washington Wizards,4500,PG,2
+NBA,2795,Martell,Webster,Martell Webster,WSH,Washington Wizards,4500,SF,9
+NBA,3187,Arron,Afflalo,Arron Afflalo,DEN,Denver Nuggets,4500,SG,10
+NBA,3413,Darrell,Arthur,Darrell Arthur,DEN,Denver Nuggets,4500,PF,0
+NBA,3194,Wilson,Chandler,Wilson Chandler,DEN,Denver Nuggets,4500,SF,21
+NBA,6433,Kenneth,Faried,Kenneth Faried,DEN,Denver Nuggets,4500,PF,35
+NBA,3003,Randy,Foye,Randy Foye,DEN,Denver Nuggets,4500,SG,4
+NBA,3428,Danilo,Gallinari,Danilo Gallinari,DEN,Denver Nuggets,4500,SF,8
+NBA,4232,Alonzo,Gee,Alonzo Gee,DEN,Denver Nuggets,4500,SF,1
+NBA,2488684,Erick,Green,Erick Green,DEN,Denver Nuggets,4500,PG,11
+NBA,2999547,Gary,Harris,Gary Harris,DEN,Denver Nuggets,4500,SG,14
+NBA,3437,J.J.,Hickson,J.J. Hickson,DEN,Denver Nuggets,4500,C,7
+NBA,4000,Ty,Lawson,Ty Lawson,DEN,Denver Nuggets,4500,PG,3
+NBA,3452,JaVale,McGee,JaVale McGee,DEN,Denver Nuggets,4500,C,34
+NBA,4298,Timofey,Mozgov,Timofey Mozgov,DEN,Denver Nuggets,4500,C,25
+NBA,3102530,Jusuf,Nurkic,Jusuf Nurkic,DEN,Denver Nuggets,4500,C,23
+NBA,2782,Nate,Robinson,Nate Robinson,DEN,Denver Nuggets,4500,PG,5
+NBA,4335,Jeff,Adrien,Jeff Adrien,MIN,Minnesota Timberwolves,4500,SF,12
+NBA,2991473,Anthony,Bennett,Anthony Bennett,MIN,Minnesota Timberwolves,4500,PF,24
+NBA,3968,Chase,Budinger,Chase Budinger,MIN,Minnesota Timberwolves,4500,SF,10
+NBA,2489530,Troy,Daniels,Troy Daniels,MIN,Minnesota Timberwolves,4500,SG,30
+NBA,2534781,Gorgui,Dieng,Gorgui Dieng,MIN,Minnesota Timberwolves,4500,C,5
+NBA,6633,Robbie,Hummel,Robbie Hummel,MIN,Minnesota Timberwolves,4500,SF,4
+NBA,3064440,Zach,LaVine,Zach LaVine,MIN,Minnesota Timberwolves,4500,PG,8
+NBA,2394,Kevin,Martin,Kevin Martin,MIN,Minnesota Timberwolves,4500,SG,23
+NBA,2993875,Shabazz,Muhammad,Shabazz Muhammad,MIN,Minnesota Timberwolves,4500,SF,15
+NBA,3453,Nikola,Pekovic,Nikola Pekovic,MIN,Minnesota Timberwolves,4500,C,14
+NBA,2991039,Glenn,Robinson III,Glenn Robinson III,MIN,Minnesota Timberwolves,4500,SG,1
+NBA,4011,Ricky,Rubio,Ricky Rubio,MIN,Minnesota Timberwolves,4500,PG,9
+NBA,3059319,Andrew,Wiggins,Andrew Wiggins,MIN,Minnesota Timberwolves,4500,SF,22
+NBA,2178,Mo,Williams,Mo Williams,MIN,Minnesota Timberwolves,4500,PG,25
+NBA,3244,Thaddeus,Young,Thaddeus Young,MIN,Minnesota Timberwolves,4500,SF,33
+NBA,2991235,Steven,Adams,Steven Adams,OKC,Oklahoma City Thunder,4500,C,12
+NBA,1978,Nick,Collison,Nick Collison,OKC,Oklahoma City Thunder,4500,PF,4
+NBA,3202,Kevin,Durant,Kevin Durant,OKC,Oklahoma City Thunder,4500,SF,35
+NBA,3439,Serge,Ibaka,Serge Ibaka,OKC,Oklahoma City Thunder,4500,PF,9
+NBA,6443,Reggie,Jackson,Reggie Jackson,OKC,Oklahoma City Thunder,4500,PG,15
+NBA,2991009,Grant,Jerrett,Grant Jerrett,OKC,Oklahoma City Thunder,4500,PF,7
+NBA,6598,Perry,Jones,Perry Jones,OKC,Oklahoma City Thunder,4500,SF,3
+NBA,6603,Jeremy,Lamb,Jeremy Lamb,OKC,Oklahoma City Thunder,4500,SG,11
+NBA,2991041,Mitch,McGary,Mitch McGary,OKC,Oklahoma City Thunder,4500,PF,33
+NBA,3474,Anthony,Morrow,Anthony Morrow,OKC,Oklahoma City Thunder,4500,SG,2
+NBA,2018,Kendrick,Perkins,Kendrick Perkins,OKC,Oklahoma City Thunder,4500,C,5
+NBA,2530596,Andre,Roberson,Andre Roberson,OKC,Oklahoma City Thunder,4500,SG,21
+NBA,4305,Ish,Smith,Ish Smith,OKC,Oklahoma City Thunder,4500,PG,8
+NBA,6485,Lance,Thomas,Lance Thomas,OKC,Oklahoma City Thunder,4500,SF,42
+NBA,3468,Russell,Westbrook,Russell Westbrook,OKC,Oklahoma City Thunder,4500,PG,0
+NBA,2983,LaMarcus,Aldridge,LaMarcus Aldridge,POR,Portland Trail Blazers,4500,PF,12
+NBA,6579,Will,Barton,Will Barton,POR,Portland Trail Blazers,4500,SG,5
+NBA,3416,Nicolas,Batum,Nicolas Batum,POR,Portland Trail Blazers,4500,SF,88
+NBA,1994,Steve,Blake,Steve Blake,POR,Portland Trail Blazers,4500,PG,25
+NBA,3972,Victor,Claver,Victor Claver,POR,Portland Trail Blazers,4500,PF,18
+NBA,2531210,Allen,Crabbe,Allen Crabbe,POR,Portland Trail Blazers,4500,SG,23
+NBA,3004,Joel,Freeland,Joel Freeland,POR,Portland Trail Blazers,4500,C,19
+NBA,1982,Chris,Kaman,Chris Kaman,POR,Portland Trail Blazers,4500,C,35
+NBA,6605,Meyers,Leonard,Meyers Leonard,POR,Portland Trail Blazers,4500,C,11
+NBA,6606,Damian,Lillard,Damian Lillard,POR,Portland Trail Blazers,4500,PG,0
+NBA,3447,Robin,Lopez,Robin Lopez,POR,Portland Trail Blazers,4500,C,42
+NBA,4032,Wesley,Matthews,Wesley Matthews,POR,Portland Trail Blazers,4500,SG,2
+NBA,2490149,C.J.,McCollum,C.J. McCollum,POR,Portland Trail Blazers,4500,SG,3
+NBA,6618,Thomas,Robinson,Thomas Robinson,POR,Portland Trail Blazers,4500,PF,41
+NBA,2423,Dorell,Wright,Dorell Wright,POR,Portland Trail Blazers,4500,SF,1
+NBA,4270,Trevor,Booker,Trevor Booker,UTAH,Utah Jazz,4500,PF,33
+NBA,2579260,Trey,Burke,Trey Burke,UTAH,Utah Jazz,4500,PG,3
+NBA,6429,Alec,Burks,Alec Burks,UTAH,Utah Jazz,4500,PG,10
+NBA,2232456,Patrick,Christopher,Patrick Christopher,UTAH,Utah Jazz,4500,SG,19
+NBA,2489785,Ian,Clark,Ian Clark,UTAH,Utah Jazz,4500,SG,21
+NBA,4295,Jeremy,Evans,Jeremy Evans,UTAH,Utah Jazz,4500,SF,40
+NBA,3102528,Dante,Exum,Dante Exum,UTAH,Utah Jazz,4500,SG,11
+NBA,4257,Derrick,Favors,Derrick Favors,UTAH,Utah Jazz,4500,PF,15
+NBA,3032976,Rudy,Gobert,Rudy Gobert,UTAH,Utah Jazz,4500,C,27
+NBA,4249,Gordon,Hayward,Gordon Hayward,UTAH,Utah Jazz,4500,SF,20
+NBA,2581177,Rodney,Hood,Rodney Hood,UTAH,Utah Jazz,4500,SG,5
+NBA,2968436,Joe,Ingles,Joe Ingles,UTAH,Utah Jazz,4500,SF,2
+NBA,6447,Enes,Kanter,Enes Kanter,UTAH,Utah Jazz,4500,C,0
+NBA,2327107,Toure,Murry,Toure' Murry,UTAH,Utah Jazz,4500,SF,23
+NBA,3018,Steve,Novak,Steve Novak,UTAH,Utah Jazz,4500,SF,16
