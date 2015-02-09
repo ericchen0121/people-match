@@ -20,15 +20,24 @@ Template.score.events
   # Base this on a call to WEEKLY or DAILY Schedule thru API. 
   'click .update-event-stats': (e) ->
     event = @
-    if event.sport == 'nfl' #change all event Sport attrs to "NFL"
-      Meteor.call 'getEventStatsNFL', 'NFL', 4, event.away, event.home # TODO: change this to be extensible
-    else if event.sport == 'NBA'
-      console.log 'NBA boyyss', event.api.SDGameId
-      Meteor.call 'getEventStatNBA', event.api.SDGameId 
+    sport = event.sport
+
+    switch sport
+      when 'nfl' #change all event Sport attrs to "NFL"
+        Meteor.call 'getEventStatsNFL', 'NFL', 4, event.away, event.home # TODO: change this to be extensible
+      when 'NBA'
+        Meteor.call 'getEventStatNBA', event.api.SDGameId 
 
   'click .create-athlete-event-stats': (e) ->
     event = @
-    Meteor.call 'convertSDContestStatToAthleteEventStats', event.api.SDGameId
+    sport = event.sport
+
+    switch sport
+      when 'nfl'
+        Meteor.call 'convertSDContestStatToAthleteEventStats', event.api.SDGameId
+      when 'NBA'
+        console.log 'CREATING ATHELETE EVENT STATS in NBA'
+        Meteor.call 'convertToAthleteEventStatsNBA', event.api.SDGameId
 
   'click .score-stats': (e) ->
     event = @
