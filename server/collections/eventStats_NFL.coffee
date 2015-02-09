@@ -1,44 +1,44 @@
-	# https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
+  # https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
 EventStats.before.update (userId, doc, fieldNames, modifier, options) ->
 
   modifier.$set.createdAt = modifier.$set.createdAt || new Date().toISOString()
   modifier.$set.updatedAt = new Date().toISOString()
 
 Meteor.methods
-	# populates EventStats Collection from SD Api
-	# This method continously overwrites the EventStat document with new information
-	# during the course of the game. 
-	# 
-	getEventStats: (sport, week, awayTeam, homeTeam) =>
-		console.log 'UPDATING EVENT STATS', sport, week, awayTeam, homeTeam
-		switch sport
-			when 'NFL'
-				eventStats = @sd.NFLApi.getGameStats week, awayTeam, homeTeam
-				sport = 'NFL'
+  # populates EventStats Collection from SD Api
+  # This method continously overwrites the EventStat document with new information
+  # during the course of the game. 
+  # 
+  getEventStatsNFL: (sport, week, awayTeam, homeTeam) =>
+    console.log 'UPDATING EVENT STATS', sport, week, awayTeam, homeTeam
+    switch sport
+      when 'NFL'
+        eventStats = @sd.NFLApi.getGameStats week, awayTeam, homeTeam
+        sport = 'NFL'
 
-		console.log 'eventStat is', eventStats
+    console.log 'eventStat is', eventStats
 
-		if eventStats
-			EventStats.update({ 
-					api: { SDGameId: eventStats.game.id }
-				},
-				{ 
-					$set: 
-						api: 
-							SDGameId: eventStats.game.id
-						sport: sport
-						status: eventStats.game.status
-						team: eventStats.game.team
-						home: eventStats.game.home
-						away: eventStats.game.away
-				},
-				{ upsert: true }
-			)
+    if eventStats
+      EventStats.update({ 
+          api: { SDGameId: eventStats.game.id }
+        },
+        { 
+          $set: 
+            api: 
+              SDGameId: eventStats.game.id
+            sport: sport
+            status: eventStats.game.status
+            team: eventStats.game.team
+            home: eventStats.game.home
+            away: eventStats.game.away
+        },
+        { upsert: true }
+      )
  
-#  	callGetStatsNFL: ->
-#  		timer = Meteor.setInterval callback, 1000
+#   callGetStatsNFL: ->
+#     timer = Meteor.setInterval callback, 1000
 
-#  	var dotime=function(){
+#   var dotime=function(){
 #   var iv = setInterval(function(){
 #     sys.puts("interval");
 #   }, 1000);
@@ -317,12 +317,12 @@ i = 0
 len = nfl_2014_PST_schedule.length
 
 callback = ->
-	if nfl_2014_PST_schedule[i]
-	  console.log nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
-	  Meteor.call 'getEventStats', 'NFL', nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
-	  i++
+  if nfl_2014_PST_schedule[i]
+    console.log nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
+    Meteor.call 'getEventStatsNFL', 'NFL', nfl_2014_PST_schedule[i][0], nfl_2014_PST_schedule[i][1], nfl_2014_PST_schedule[i][2]
+    i++
   else
-  	Meteor.clearInterval timer
+    Meteor.clearInterval timer
 
 # TURN THIS ON TO SEE THE MAGIC
 # timer = Meteor.setInterval callback, 1000
