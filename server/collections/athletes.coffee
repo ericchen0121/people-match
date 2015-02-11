@@ -248,6 +248,8 @@ Meteor.methods
       if alias.toLowerCase() == team.alias.toLowerCase()
         return team.id
 
+  # Adds SDPlayerId to Athlete
+  # 
   getAthletesByTeamNBA: (alias) ->
     id = Meteor.call 'getTeamIdNBA', alias
     roster = JSON.parse sd.NBAApi.getTeamProfile(id)
@@ -280,7 +282,7 @@ Meteor.methods
     , 2500)
 
   updateAllTeamRostersNFL: ->
-    # Meteor.setInterval works, the code is cracked!
+    # Meteor.setInterval works, the code is cracked! 
     # http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
     # 
     i = 0
@@ -294,5 +296,5 @@ Meteor.methods
         i++
     , 5000)
         
-# Meteor.call 'getAthletesByTeamNBA', 'BKN'
+Meteor.call 'getAthletesByTeamNBA', 'BOS'
 # Meteor.call 'updateAllTeamRostersNBA'
