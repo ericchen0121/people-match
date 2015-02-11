@@ -3,7 +3,9 @@ template(name='score')
     div(class='row')
       div(class='col-md-4')
         h4 Step 1: Update Events
-        div(class='btn btn-sm btn-default update-events') Update Events
+        +each liveEvents
+          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
+          div(class='btn btn-sm btn-default update-events-status') Update Events
       div(class='col-md-4')
         h4 Step 2: Create Event Stats
         +each liveEvents

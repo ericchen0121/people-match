@@ -2,9 +2,20 @@
 # https://docs.meteor.com/#/full/template_registerhelper
 
 # ---------------------------------------- Mongo Query Helpers ----------------------------------------
+
+today = moment().startOf('day').toISOString()
+yesterday = moment(today).subtract(1, 'days').toISOString()
+tomorrow = moment(today).add(1, 'days').toISOString()
+lastThreeDays = moment(today).subtract(3, 'days').toISOString()
+lastWeek = moment(today).subtract(7, 'days').toISOString()
+
 window.mq = {}
 mq.future = { $gte: new Date().toISOString() }
-mq.today = {}
+mq.past = { $lte: new Date().toISOString() }
+mq.today = { $gte: today, $lt: tomorrow }
+mq.yesterday = { $gte: yesterday, $lt: today }
+mq.lastFewDays = { $gte: lastThreeDays, $lt: tomorrow }
+mq.lastWeek = { $gte: lastWeek, $lt: tomorrow }
 
 # ---------------------------------------- Player Images URLS ----------------------------------------
 # Required: pass in `espn_id` and `espn_size` attributes in the obj

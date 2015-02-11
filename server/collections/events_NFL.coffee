@@ -6,7 +6,7 @@ Events.before.update (userId, doc, fieldNames, modifier, options) ->
 
 Meteor.methods
 
-  getEvents: (sport, week) ->
+  getEventsNFL: (sport, week) ->
     if sport == 'NFL'
       sched = sd.NFLApi.getWeeklySchedule week
       events = sched.games.game
@@ -35,4 +35,4 @@ Meteor.methods
       { upsert: true }
     )
 
-# Meteor.call 'getEvents', 'NFL', 4
+# Meteor.call 'getEventsNFL', 'NFL', 4
