@@ -1,5 +1,5 @@
 Real life game starts: 
-get Events
+ensure Event is created
 API call: SDApi contestStats -->
 Mongo Collection: EventStats -->
 Mongo Collection: AthleteEventStats -->

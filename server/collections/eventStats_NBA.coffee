@@ -28,8 +28,7 @@ Meteor.methods
         { upsert: true }
       )
 
-      console.log 'EVENTSTAT: ', eventStat, eventStat.status
-
+      # TODO: Move this to Event Meter.call 'updateEvent' method
       Events.update({
         "api.SDGameId": eventStat.id
       },

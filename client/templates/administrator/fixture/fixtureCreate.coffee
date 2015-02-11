@@ -2,22 +2,25 @@ Template.fixtureCreate.helpers
 
   allFutureEvents: ->
     Events.find({ startsAt: mq.future })
-    # Events.find() # temporary to see events, since SD api doesn't yet have POSTseason sched exposed
 
   fixtures: ->
-    Fixtures.find({ startsAt: mq.future })#, MQH.startsInFutureSortAsc)
-    # Fixtures.find() # temporary to see events, since SD api doesn't yet have POSTseason sched exposed
+    Fixtures.find({ startsAt: mq.future })
 
-  # for use within fixture data context
+  # @param-data [obj] a Fixture 
+  # 
   fixturesEventCount: ->
-    @.events.length
+    fixture = @
+    fixture.events.length
 
-  # for use within fixture data context.
   # TODO: Refactor... There may be a better way to render out a cursor call with a nested variable
   # but this is the way I know how to do it now. This is basically hardcoding with
   # the understanding that @ context is a fixture and it has an array called @.events
+
+  # @param-data [obj] a Fixture 
+  # 
   fixturesEvents: ->
-    @.events
+    fixture = @
+    fixture.events
 
 Template.fixtureCreate.events
   'click .update-events': (e) ->
@@ -26,12 +29,16 @@ Template.fixtureCreate.events
     Meteor.call 'getEvents', sport, schedule 
 
   'click .remove-fixture': (e) ->
-    Meteor.call 'removeFixture', @_id
+    fixture = @
+    Meteor.call 'removeFixture', fixture._id
 
+  # @param-data [obj] an Event 
+  # 
   'click .event-options': (e) ->
+    event = @
     # construct Fixture from selected Events
     fixtureArray = Session.getJSON 'currentFixture' || []
-    fixtureArray.push(@)
+    fixtureArray.push(event)
     Session.setJSON 'currentFixture', fixtureArray
 
   'click .create-fixture': (e) ->
