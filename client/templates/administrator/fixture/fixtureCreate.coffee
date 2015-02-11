@@ -1,10 +1,12 @@
 Template.fixtureCreate.helpers
 
   allFutureEvents: ->
-    Events.find({ startsAt: mq.future })
+    # Events.find({ startsAt: mq.future })
+    Events.find({ startsAt: mq.lastFewDays })
 
   fixtures: ->
-    Fixtures.find({ startsAt: mq.future })
+    # Fixtures.find({ startsAt: mq.future })
+    Fixtures.find({ startsAt: mq.lastFewDays })
 
   # @param-data [obj] a Fixture 
   # 

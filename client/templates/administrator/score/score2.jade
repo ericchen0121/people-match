@@ -1,38 +1,26 @@
-template(name='score')
+template(name='score2')
   div(class='col-md-24')
+  +each liveEvents
     div(class='row')
       div(class='col-md-3')
         h4 Step 00: All In One (TESTING)
-        +each liveEvents
           div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default score-it-all') Soup to Nuts
       div(class='col-md-3')
         h4 Step 1: Update Events
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default update-events-status') Update Events
       div(class='col-md-3')
         h4 Step 2: Create Event Stats
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default update-event-stats') Update EventStats
       div(class='col-md-3')
         h4 Step 3: Convert to Athlete Event Stats
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default create-athlete-event-stats') Convert
       div(class='col-md-3')
         h4 Step 4. Score
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default score-stats') Score Em! 
       div(class='col-md-3')
         h4 Step 5. Add Total Score to Entries
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default score-entries') Add Totals to Entries
       div(class='col-md-3')
         h4 Step 6. Rank Entries
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
           div(class='btn btn-sm btn-default rank-entries') Rank 'em
