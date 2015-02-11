@@ -15,7 +15,7 @@ Meteor.methods
 
   # @param SDGameId [string] the SportsData API's game id
   # 
-  convertSDContestStatToAthleteEventStats: (SDGameId) ->
+  convertToAthleteEventStatsNFL: (SDGameId) ->
     # STEP 1: Find existing Event Stat
     eventStat = EventStats.findOne({api: { SDGameId: SDGameId }})
 
@@ -57,10 +57,12 @@ Meteor.methods
               newStat.position = stat.position
               newStat.stats = _.omit(stat, ['id', 'name', 'jersey', 'position']) # remove redundant ID, remove all strings
 
+            # STEP 4A: Clean XML Data (to deprecate!)
             # convert xml strings to integers.
             for k,v of newStat.stats
               newStat.stats[k] = parseInt(v)
 
+            # STEP 5: Upsert each into the collection
             newStat.api.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' + statType # unique id
             AthleteEventStats.upsert(
               { "api.compoundId": newStat.api.compoundId }, 
@@ -80,20 +82,17 @@ Meteor.methods
       newStat.stats = {}
       newStat.stats = _.omit(team.defense, 'player') # remove entire player array, only keeping team stats
 
+      # STEP 4A: Clean XML Data (to deprecate!)
       # convert xml strings to integers bam
       for k,v of newStat.stats
         newStat.stats[k] = parseInt(v)
 
+      # STEP 5: Upsert each into the collection
       newStat.api.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' +  newStat.statType
       AthleteEventStats.upsert(
         { "api.compoundId": newStat.api.compoundId }, 
         newStat
       )
-      
-# TODO: THIS ID ARGUMENT SHOULD NOT BE HARDCODED
-# This method currently finds the IND vs DEN 2014_PST_2 game
-# Meteor.call 'convertSDContestStatToAthleteEventStats', "6JRmaZP3CZButrHnY"
-# Meteor.call 'convertSDContestStatToAthleteEventStats', "xyzoYMHJLE5JjmoH3" # PLAYOFF 3 GB SEA
 
   convertToAthleteEventStatsNBA: (SDGameId) ->
     # STEP 1: Find existing Event Stat
@@ -114,23 +113,38 @@ Meteor.methods
       # STEP 4: Parse over each player data to get to individual player stat
       for player in team.players
 
+        player_pared = _.omit(player, 'first_name', 'last_name') 
+
         # Copy all key-value pairs over
-        _.each(player, (v, k) ->
+        _.each player_pared, (v, k) ->
           if k == 'id'
             newStat.api.SDPlayerId = v # store all SD info in api key
           else if k == 'statistics'
             newStat['stats'] = v # rename to 'stats' to be consistent with NFL
           else
             newStat[k] = v # else keep what the API gives
-        )
         
-        console.log '-------NEW STAT-----', 
-        console.log newStat
+        # STEP 5: Upsert each into the collection
+        AthleteEventStats.upsert(
+          { 
+            "api.SDGameId": newStat.api.SDGameId
+            "api.SDPlayerId": newStat.api.SDPlayerId
+          }, 
+          newStat
+        )
 
+        #STEP 6. Copy into Scores collection as well.
+        AthleteEventScores.upsert(
+          { 
+            "api.SDGameId": newStat.api.SDGameId
+            "api.SDPlayerId": newStat.api.SDPlayerId
+          }, 
+          newStat
+        )
   # @param market [String] the team's market, or city, name. ie. 'Minnesota'
   # @return [String] the team abbreviation, ie. 'MIN'
   # 
-  teamAbbreviationNBA: (market) ->
+  # teamAbbreviationNBA: (market) ->
 
 
 

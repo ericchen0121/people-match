@@ -23,8 +23,8 @@ Template.score.events
     sport = event.sport
 
     switch sport
-      when 'nfl' #change all event Sport attrs to "NFL"
-        Meteor.call 'getEventStatsNFL', 'NFL', 4, event.away, event.home # TODO: change this to be extensible
+      when 'NFL' #change all event Sport attrs to "NFL"
+        Meteor.call 'getEventStatsNFL', 'NFL', 4, event.away, event.home # TODO: change this to be extensible, no hardcoded Week 4!, which means, probably must store 4 on the event itself
       when 'NBA'
         Meteor.call 'getEventStatNBA', event.api.SDGameId 
 
@@ -33,16 +33,23 @@ Template.score.events
     sport = event.sport
 
     switch sport
-      when 'nfl'
-        Meteor.call 'convertSDContestStatToAthleteEventStats', event.api.SDGameId
+      when 'NFL'
+        Meteor.call 'convertToAthleteEventStatsNFL', event.api.SDGameId
       when 'NBA'
-        console.log 'CREATING ATHELETE EVENT STATS in NBA'
         Meteor.call 'convertToAthleteEventStatsNBA', event.api.SDGameId
+        # This also adds to AthleteEventScores
 
   'click .score-stats': (e) ->
     event = @
-    Meteor.call 'batchAthleteEventScoring', event.api.SDGameId
-    Meteor.call 'addScoring', event.api.SDGameId
+    sport = event.sport
+
+    switch sport
+      when 'NFL'
+        Meteor.call 'batchAthleteEventScoringNFL', event.api.SDGameId
+        Meteor.call 'addScoreByGame', 'NFL', event.api.SDGameId
+      when 'NBA'
+        # Previous method already added to AthleteEventScores
+        Meteor.call 'addScoreByGame', 'NBA', event.api.SDGameId
 
   'click .score-entries': (e) ->
     event = @
