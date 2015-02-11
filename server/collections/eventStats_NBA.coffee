@@ -27,3 +27,13 @@ Meteor.methods
         }, 
         { upsert: true }
       )
+
+      console.log 'EVENTSTAT: ', eventStat, eventStat.status
+
+      Events.update({
+        "api.SDGameId": eventStat.id
+      },
+      {
+        $set:
+          status: eventStat.status
+      })

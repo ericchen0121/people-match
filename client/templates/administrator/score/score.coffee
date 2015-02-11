@@ -9,12 +9,17 @@ Template.score.helpers
     # TODO: instead of basing this on the lifecycle of the status, much better to base it on the day
     # If its on the same day as today...
     # Events.find({ status: {$in: ['inprogress', 'created', 'complete']} }) # is better to not have all closed ones and cluttter
-    Events.find({ status: {$in: ['inprogress', 'created', 'complete', 'closed']} })
+    # Events.find({ status: {$in: ['inprogress', 'created', 'complete', 'closed']} })
+    # Events.find({ status: {$in: ['scheduled']} })
+    Events.find { startsAt: mq.lastFewDays }
 
 Template.score.events
   # TODO: un-hardcode this.
-  'click .update-events': (e) ->
-    Meteor.call 'getEvents', 'NFL', 4 # TODO: Change this so its not hardcoded
+  # NOTE: NBA events are all created at the beginning of the year
+  'click .update-events-status': (e) ->
+    event = @
+    console.log @
+    Meteor.call 'updateEventStatus', @
 
   # TODO: un-hardcode this.
   # Base this on a call to WEEKLY or DAILY Schedule thru API. 
