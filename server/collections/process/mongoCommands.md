@@ -41,7 +41,7 @@ ACTUAL:
 NOTE: I had to remove the headerline and add it into the --fields/-f argument
 NOTE: Then I had to import in batches. First, just one file with one player. Then another file with all the players.
 
-	mongoimport -h 127.0.0.1:3001 -d meteor -c athletes --file ~/code/meteor-learning/people-match/server/collections/nba_player_data_2.csv --type csv -v -f "sport,espn_id,first_name,last_name,full_name,team_id,team,salary,position,jersey_number"
+	mongoimport -h 127.0.0.1:3001 -d meteor -c athletes --file ~/code/meteor-learning/people-match/server/collections/nba_player_data_3.csv --type csv -v -f "sport,espn_id,first_name,last_name,full_name,team_id,team,salary,position,jersey_number"
 
 ACTUAL: For upserting; 
 	mongoimport -h 127.0.0.1:3001 -d meteor -c athletes --file ~/code/meteor-learning/people-match/server/collections/nba_player_data.csv --type csv -v -f "sport,espn_id,first_name,last_name,full_name,team_id,team,salary,position,jersey_number" --upsert --upsertFields "espn_id" 
