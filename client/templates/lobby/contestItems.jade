@@ -12,7 +12,10 @@ template(name="contestItems")
           div(id='contestResultsTable' class='col-md-24')
             div(class='contestScrollableContainer')
               div(class='row contestResultsBlankItem')
-              +each contests
+              +each contestsFuture
+                +contestItem
+                +contestModal
+              +each contestsPast
                 +contestItem
                 +contestModal
               //- TODO: Refactor out this modal duplication

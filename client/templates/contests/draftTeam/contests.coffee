@@ -15,43 +15,86 @@ addPlayerToRoster = (player) ->
     "timeOut": "1500"
   }
 
-  switch player.position
-    when 'QB'
-      if currentRoster['QB'] is 'open' then Session.setJSON 'currentLineup.roster.QB', player else toastr.info 'QBs are Full'
-    when 'RB'
-      if currentRoster['RB1'] is 'open'
-        Session.setJSON 'currentLineup.roster.RB1', player
-      else if currentRoster['RB2'] is 'open'
-        Session.setJSON 'currentLineup.roster.RB2', player
-      else if currentRoster['FLEX1'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX1', player
-      else if currentRoster['FLEX2'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX2', player
-      else toastr.info 'RBs are Full'
-    when 'WR'
-      if currentRoster['WR1'] is 'open'
-        Session.setJSON 'currentLineup.roster.WR1', player
-      else if currentRoster['WR2'] is 'open'
-        Session.setJSON 'currentLineup.roster.WR2', player
-      else if currentRoster['WR3'] is 'open'
-        Session.setJSON 'currentLineup.roster.WR3', player
-      else if currentRoster['FLEX1'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX1', player
-      else if currentRoster['FLEX2'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX2', player
-      else toastr.info 'WRs are Full'
-    when 'TE'
-      if currentRoster['TE'] is 'open'
-        Session.setJSON 'currentLineup.roster.TE', player
-      else if currentRoster['FLEX1'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX1', player
-      else if currentRoster['FLEX2'] is 'open'
-        Session.setJSON 'currentLineup.roster.FLEX2', player
-      else toastr.info 'TEs are Full'
-    when 'PK'
-      if currentRoster['K'] is 'open' then Session.setJSON 'currentLineup.roster.K', player else toastr.info 'Ks are Full'
-    when 'DEF'
-      if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else toastr.info 'DEFs are Full'
+  switch player.sport
+    when 'NFL'
+      switch player.position
+        when 'QB'
+          if currentRoster['QB'] is 'open' then Session.setJSON 'currentLineup.roster.QB', player else toastr.info 'QBs are Full'
+        when 'RB'
+          if currentRoster['RB1'] is 'open'
+            Session.setJSON 'currentLineup.roster.RB1', player
+          else if currentRoster['RB2'] is 'open'
+            Session.setJSON 'currentLineup.roster.RB2', player
+          else if currentRoster['FLEX1'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX1', player
+          else if currentRoster['FLEX2'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX2', player
+          else toastr.info 'RBs are Full'
+        when 'WR'
+          if currentRoster['WR1'] is 'open'
+            Session.setJSON 'currentLineup.roster.WR1', player
+          else if currentRoster['WR2'] is 'open'
+            Session.setJSON 'currentLineup.roster.WR2', player
+          else if currentRoster['WR3'] is 'open'
+            Session.setJSON 'currentLineup.roster.WR3', player
+          else if currentRoster['FLEX1'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX1', player
+          else if currentRoster['FLEX2'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX2', player
+          else toastr.info 'WRs are Full'
+        when 'TE'
+          if currentRoster['TE'] is 'open'
+            Session.setJSON 'currentLineup.roster.TE', player
+          else if currentRoster['FLEX1'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX1', player
+          else if currentRoster['FLEX2'] is 'open'
+            Session.setJSON 'currentLineup.roster.FLEX2', player
+          else toastr.info 'TEs are Full'
+        when 'PK'
+          if currentRoster['K'] is 'open' then Session.setJSON 'currentLineup.roster.K', player else toastr.info 'Ks are Full'
+        when 'DEF'
+          if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else toastr.info 'DEFs are Full'
+          
+    when 'NBA'
+      switch player.position
+        when 'PG'
+          if currentRoster['PG'] is 'open' 
+            Session.setJSON 'currentLineup.roster.PG', player
+          else if currentRoster['G'] is 'open'
+            Session.setJSON 'currentLineup.roster.G', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'PGs are Full'
+        when 'SG'
+          if currentRoster['SG'] is 'open'
+            Session.setJSON 'currentLineup.roster.SG', player
+          else if currentRoster['G'] is 'open'
+            Session.setJSON 'currentLineup.roster.G', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'SGs are Full'
+        when 'SF'
+          if currentRoster['SF'] is 'open'
+            Session.setJSON 'currentLineup.roster.SF', player
+          else if currentRoster['F'] is 'open'
+            Session.setJSON 'currentLineup.roster.F', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'SFs are Full'
+        when 'PF'
+          if currentRoster['PF'] is 'open'
+            Session.setJSON 'currentLineup.roster.PF', player
+          else if currentRoster['F'] is 'open'
+            Session.setJSON 'currentLineup.roster.F', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'PFs are Full'
+        when 'C'
+          if currentRoster['C'] is 'open' 
+            Session.setJSON 'currentLineup.roster.C', player
+          else if currentRoster['UTIL'] is 'open'
+            Session.setJSON 'currentLineup.roster.UTIL', player
+          else toastr.info 'Ks are Full'
 
 validateEntry = ->
   rosterJSON = Session.getJSON 'currentLineup.roster'
@@ -77,32 +120,63 @@ availableTeams = (contest) ->
   events = contest.fixture.events # array of Events
   teams = []
   for event in events
-    if event.sport == 'NFL'
+    if event.sport == 'NFL' || event.sport == 'NBA'
       teams.push event.home
       teams.push event.away
-    # TODO: To add more sports! Coming soon!
-    # if event.sport == 'NBA'
     # if event.sport == 'CBB'
 
   return teams
 
 Template.contestLineupContainer.helpers
+  
+  # Returns the positions to filter for each respective sport.
+  # @data-param @ is the Contest object, from the template context
+  # @return Array of positional filters in Available Players section
+  # 
+  positionFilters: ->
+    sport = @.sport
 
+    switch sport
+      when 'NFL'
+        return ['QB', 'RB', 'WR', 'TE', 'K', 'D']
+      when 'NBA'
+        return ['PG', 'SG', 'SF', 'PF', 'C', 'G', 'F', 'UTIL']
+
+  # Returns the available players in the contest, based on the sport, teams and contest fixtures
+  # @data-param @ is the Contest object, from the template context
+  # @return Array of positional filters in Available Players section
+  # 
   availablePlayers: ->
+    # Setup
+    sport = @.sport
     position_filter = Session.getJSON 'playerListFilter.position'
-    selectedTeamFilter = Session.getJSON "playerListFilter.teams"
+    selectedTeamFilter = Session.getJSON 'playerListFilter.teams'
+
+    # Logic
     team_filter = if selectedTeamFilter? then selectedTeamFilter else availableTeams(@)
-    switch position_filter
-      when 'All'
-        NflPlayers.find({ team_id: {$in: team_filter }, position: {$in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK', 'DEF']}})
-      when 'K' # edge case when filter won't match position name
-        NflPlayers.find({ team_id: {$in: team_filter }, position: 'PK' })
-      when 'D'
-         NflPlayers.find({ position: 'DEF' })
-      else
-        # http://stackoverflow.com/questions/19019822/how-do-i-access-one-sibling-variable-in-a-meteor-template-helper-when-i-am-in
-        # assumed data context (ie. what @ is) is the Contest
-        NflPlayers.find({ position: position_filter, team_id: {$in: team_filter }})
+
+    # Sports
+    switch sport
+      # TODO: Change NflPlayers to Athletes
+      when 'NFL'
+        switch position_filter
+          when 'All'
+            NflPlayers.find({ team_id: { $in: team_filter }, position: { $in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK', 'DEF'] }})
+          when 'K' # edge case when filter won't match position name
+            NflPlayers.find({ team_id: { $in: team_filter }, position: 'PK' })
+          when 'D' # another edge case
+             NflPlayers.find({ position: 'DEF' })
+          else
+            NflPlayers.find({ position: position_filter, team_id: { $in: team_filter }})
+
+      when 'NBA'
+        switch position_filter
+          when 'All'
+            Athletes.find({ sport: sport, team_id: {$in: team_filter }, position: { $in: ['PG', 'SG', 'SF', 'PF', 'C', 'G', 'F'] }})
+          # when 'UTIL'
+          #   Athletes.find({ team_id: {$in: team_filter }, position: { $in: ['PG', 'SG', 'SF', 'PF', 'C', 'G', 'F'] }})
+          else
+            Athletes.find({ sport: sport, position: position_filter, team_id: { $in: team_filter }})
 
   salaryRemaining: ->
     totalSalary = 80000
@@ -157,6 +231,7 @@ Template.contestLineupContainer.helpers
 
   # Declarative way to find if player is in curent lineup, could use jQuery way
   # of simply switching a class on the player as this is fairly processor intensive.
+    # 
   inCurrentLineup: ->
     rosterJSON = Session.getJSON 'currentLineup.roster'
     result = false # assume player is not in lineup, until proven true
@@ -168,15 +243,17 @@ Template.contestLineupContainer.helpers
 
     return result
 
-  # Returns the Event Name
-  # Template calls like this to pass parent data context: {{currentGame ..}}
+  # Returns the event's matchup description, ie. 'NE vs. SEA'
+  # 
   # TODO: Feature: If you want to bold the current Game, you may need to break this up into two separate helpers
+  # @data-param @: [@] an Athlete / NflPlayer object (to be deprecated)
+  # @parentDataContext [obj] a Contest obj, the parent context
+  # Usage: [template] Template calls like this to pass parent data context: {{ getCurrentGame .. }}
+  # 
   getCurrentEvent: (parentDataContext) ->
-    # @ is an Athlete / NflPlayer object (to be deprecated)
-    # parentDataContext should be a Contest obj
     athlete = @
     contest = parentDataContext
-    # Checks if player 
+
     for event in contest.fixture.events
       if athlete.team_id == event.home || athlete.team_id == event.away
         return event.away + " vs. " + event.home
@@ -190,8 +267,10 @@ Template.contestLineupContainer.events
       Session.setJSON 'playerListFilter.position', filterText
     e.stopPropagation()
 
+  # @data-param @: [@] an Athlete / NflPlayer object (to be deprecated)
+  # ie. @ is the data context of the template for the click handler
+  # 
   'click .lineup-player-add': (e) ->
-    # @ is the data context of the template for the click handler, ie. the player
     athlete = @
     addPlayerToRoster(athlete)
 
@@ -221,13 +300,14 @@ Template.contestLineupContainer.events
 
       Session.setJSON 'currentLineup.roster', rosterJSON
 
-  # The lineup will be in the Session.getJSON 'currentLineup.roster'
+  # The lineup will be in the Session.getJSON 'currentLineup.roster'  
+  # @data-param @: [@] Contest object
   # TODO: Consolidate naming - Roster or Lineup
   'click .contest-entry': (e) ->
     valid = validateEntry()
 
     if valid == true
-      contest = @ # @ is a Contest object
+      contest = @
 
       # Transform data
       rosterJSON = Session.getJSON 'currentLineup.roster'
@@ -269,37 +349,49 @@ Template.contestLineupContainer.events
       toastr.info(Session.get 'invalidEntryMessage')
 
 Template.contestLineupContainer.rendered = ->
-  # Defaults
-  # initialize the Roster
-  # roster = {
-  #   'QB': 'open'
-  #   'RB1': 'open'
-  #   'RB2': 'open'
-  #   'WR1': 'open'
-  #   'WR2': 'open'
-  #   'WR3': 'open'
-  #   'FLEX1': 'open'
-  #   'FLEX2': 'open'
-  #   'TE': 'open'
-  #   'K': 'open'
-  #   # 'DEF': 'open'
-  # }
 
-  # Smaller for Super Bowl.
-  roster = {
-    'QB': 'open'
-    'RB1': 'open'
-    'WR1': 'open'
-    'WR2': 'open'
-    'FLEX1': 'open'
-    'TE': 'open'
-    'K': 'open'
-    'DEF': 'open'
-  }
+  # @data-param: @.data is Contest, this is from Iron-Router's data context for the route.
+  # 
+  contest = @.data
+  sport = contest.sport
 
+  switch sport
+    when 'NFL'
+      # TODO: can add attribute to the Contest and that will be defined in Contest Creation.
+      roster = {
+        'QB': 'open'
+        'RB1': 'open'
+        # 'RB2': 'open'
+        'WR1': 'open'
+        'WR2': 'open'
+        # 'WR3': 'open' 
+        'FLEX1': 'open'
+        # 'FLEX2': 'open' 
+        'TE': 'open'
+        'K': 'open'
+        'DEF': 'open'
+      }
+
+      startingPosition = 'QB'
+
+    when 'NBA'
+      roster = {
+        'PG': 'open'
+        'SG': 'open'
+        'SF': 'open'
+        'PF': 'open'
+        'C': 'open'
+        'G': 'open'
+        'F': 'open'
+        'UTIL': 'open'
+      }
+
+      startingPosition = 'PG'
+  
+  # Set Session Variables
+  # 
   Session.setJSON('currentLineup.roster', roster)
-
-  Session.setJSON 'playerListFilter.position', 'QB'
+  Session.setJSON 'playerListFilter.position', startingPosition
   Session.setJSON "playerListFilter.teams", undefined
 
   # Color Themes: http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
@@ -313,14 +405,13 @@ Template.contestLineupContainer.rendered = ->
   $('body').removeClass('modal-open')
 
 Template.contestFixtureContainer.events
+
+  # @data-param: @ is a Contest
+  # 
   'click .event-filter': (e) ->
-    contest = @ # @ is a Contest obj
+    contest = @
     if e.target.innerHTML == 'All' # this depends on the DOM, a bit fragile
       Session.setJSON "playerListFilter.teams", undefined
     else
+      # TODO: logic to add more teams to it, and remove if they're already in there
       Session.setJSON "playerListFilter.teams", [contest.home, contest.away]
-
-# Template.contestFixtureContainer.rendered = ->
-#   @$('#event-filters-container').mCustomScrollbar
-#     theme: 'minimal-dark'
-#     axis: "x"

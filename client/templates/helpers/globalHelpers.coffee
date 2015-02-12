@@ -2,15 +2,27 @@
 # https://docs.meteor.com/#/full/template_registerhelper
 
 # ---------------------------------------- Mongo Query Helpers ----------------------------------------
+
+today = moment().startOf('day').toISOString()
+yesterday = moment(today).subtract(1, 'days').toISOString()
+tomorrow = moment(today).add(1, 'days').toISOString()
+lastThreeDays = moment(today).subtract(3, 'days').toISOString()
+lastWeek = moment(today).subtract(7, 'days').toISOString()
+
 window.mq = {}
 mq.future = { $gte: new Date().toISOString() }
-mq.today = {}
+mq.past = { $lte: new Date().toISOString() }
+mq.today = { $gte: today, $lt: tomorrow }
+mq.yesterday = { $gte: yesterday, $lt: today }
+mq.lastFewDays = { $gte: lastThreeDays, $lt: tomorrow }
+mq.lastWeek = { $gte: lastWeek, $lt: tomorrow }
 
 # ---------------------------------------- Player Images URLS ----------------------------------------
 # Required: pass in `espn_id` and `espn_size` attributes in the obj
 # Usage like so in a template: <img class='playerPhoto' src={{ playerImageESPN espn_id = this.espn_id espn_size = 'micro'}}>
 
 Template.registerHelper 'playerImageESPN', (obj) ->
+  sport = obj.hash.sport
 
   if obj.hash.espn_size
     size = switch obj.hash.espn_size
@@ -22,7 +34,13 @@ Template.registerHelper 'playerImageESPN', (obj) ->
       else ''
   else size = ''
 
-  'http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/' + obj.hash.espn_id + '.png' + size
+  
+  if sport
+    switch sport
+      when 'NFL'
+        return 'http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/' + obj.hash.espn_id + '.png' + size
+      when 'NBA'
+        return 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/' + obj.hash.espn_id + '.png' + size
 
 # ---------------------------------------- Profile Image and Default----------------------------------------
 # http://stackoverflow.com/questions/15018552/how-to-query-a-facebook-user-picture-via-meteors-accounts-facebook
@@ -50,7 +68,7 @@ Template.registerHelper 'momentify', (time, formatName) ->
       formatted.format('h:mmA')
 
     else if formatName == 'longDateTime'
-      formatted.tz('America/New_York').format('ddd, MMM Do h:mmA z ')
+      formatted.tz('America/New_York').format('ddd, MMM Do h:mmA z')
 
     # default to MediumDateTime
     else  
