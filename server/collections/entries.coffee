@@ -4,12 +4,14 @@ Entries.before.insert (userId, doc) ->
   doc.createdAt = doc.createdAt || new Date().toISOString()
   doc.updatedAt = new Date().toISOString()
   doc.userId = userId
-
-  # adds array of event api ids to the Entry
-  contest = Contests.findOne({ _id: doc.contestId })
   doc.api ?= {} # don't overwrite existing api obj if it already exists
-  eventIds = (id for {'api.SDGameId': id } in contest.fixture.events)
-  console.log eventIds
+
+  # Store SDGameIds on Entry
+  contest = Contests.findOne({ _id: doc.contestId })
+  eventIds = []
+  for event in contest.fixture.events
+    eventIds.push event.api.SDGameId
+
   doc.api.SDGameIds = eventIds
 
   # initialize score
@@ -27,7 +29,7 @@ Meteor.methods
     Entries.insert(entry)
 
   # iterate over all entries with a given contest (identifed by a sdGameId)
-  # NOTE: This potentially long term will be an expensive operation
+  # NOTE: This potentially long term will be an expensive operation, ie. if there are 90,000 entries on a game
   addTotalScoreAllEntries: (sdGameId) ->
     # iterate over the mongodb collection cursor
     # http://docs.mongodb.org/manual/reference/method/cursor.forEach/

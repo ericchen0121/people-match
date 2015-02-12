@@ -42,8 +42,11 @@ Template.contestModal.events
 Template.contestItems.helpers
 
   # When the contests are in the DB, flip this switch to turn it on!
-  contests: ->
+  contestsFuture: ->
     Contests.find({startsAt: mq.future}, { sort: { startsAt: 1 }} ) # TODO: filter these down to contests in the next few days
+
+  contestsPast: ->
+    Contests.find({startsAt: mq.past}, { sort: { startsAt: 1 }} )
 
 Template.contestItems.rendered = ->
   # Uses Malihu's scrollbar Meteor package, which as of 12/4/2014 is on v3.0.3

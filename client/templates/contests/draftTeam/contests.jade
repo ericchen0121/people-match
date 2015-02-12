@@ -27,19 +27,10 @@ template(name='contestLineupContainer')
         div(class='row position-filters size-13 pointer')
           div(class='col-md-2 position-filter-tab')
             div(class='position-filter vAlign') All
-          div(class='col-md-2 position-filter-tab')
-            div(class='position-filter vAlign') QB
-          div(class='col-md-2 position-filter-tab')
-            div(class='position-filter vAlign') RB
-          div(class='col-md-2 position-filter-tab')
-            div(class='position-filter vAlign') WR
-          div(class='col-md-2 position-filter-tab')
-            div(class='position-filter vAlign') TE
-          div(class='col-md-2 position-filter-tab')
-            div(class='position-filter vAlign') K
-          div(class='col-md-2 position-filter-tab')
-            div(class='position-filter vAlign') D
-          div(class='col-md-6 col-md-push-4 position-filter-tab')
+          each positionFilters
+            div(class='col-md-2 position-filter-tab')
+              div(class='position-filter vAlign') {{ this }}
+          div(class='col-md-6 position-filter-tab')
             div(class='position-filter vAlign') Player search...
         div(class='row player-list-table-header size-12')
           div(class='col-md-4 player-list-table-title vAlign') Pos
@@ -55,7 +46,7 @@ template(name='contestLineupContainer')
               div(class='row player-list-item size-13 {{#if inCurrentLineup}}selected-player{{/if}}')
                 div(class='col-md-1 player-position vAlign') #{position}
                 div(class='col-md-3 player-image vAlign')
-                  img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro'}}")
+                  img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro' sport=sport }}")
                 div(class='col-md-6 player-name vAlign') #{full_name}
                 div(class='col-md-2 player-fppg vAlign') --
                 div(class='col-md-1 player-played vAlign') -
@@ -88,7 +79,7 @@ template(name='contestLineupContainer')
                 +AnimateWithVelocity
                   div(class='row lineup-player-selection size-13')
                     div(class='col-md-4 lineup-player-image vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
-                      img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'small'}}")
+                      img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'small' sport=sport }}")
                     div(class='col-md-2 lineup-player-position vAlign') #{position}
                     div(class='col-md-8 lineup-player-name vAlign') #{full_name}
                     div(class='col-md-2 lineup-player-salary vAlign') ${{addCommas salary}}
