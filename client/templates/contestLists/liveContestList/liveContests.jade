@@ -11,6 +11,11 @@ template(name='liveContestListContainer')
         h3(class='col-md-6') Entry
       +each liveContests
         div(class='row')
-          div(class='col-md-3') #{contestId}
-          div(class='col-md-6') #{contestName}
-          div(class='col-md-6') $#{entryFee}
+          div(class='col-md-2') 
+            a(href="{{pathFor 'entryLayout'}}") 
+              i(class="fa fa-money pointer") 
+              span $#{entryFee}
+          div(class='col-md-6 title') 
+            a(href="{{pathFor 'entryLayout'}}") #{contestName}
+          div(class='col-md-16 size-9')
+            +entryViewMini
