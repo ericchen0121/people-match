@@ -16,9 +16,33 @@ Template.score.helpers
 Template.score.events
   # TODO: un-hardcode this.
   # NOTE: NBA events are all created at the beginning of the year
+
+  'click .score-it-all': (e) ->
+    event = @
+    sport = event.sport
+    Meteor.call 'updateEventStatus', @
+
+    switch sport
+      when 'NFL'
+        Meteor.call 'getEventStatsNFL', 'NFL', 4, event.away, event.home
+        
+        Meteor.call 'convertToAthleteEventStatsNFL', event.api.SDGameId
+
+        Meteor.call 'batchAthleteEventScoringNFL', event.api.SDGameId
+        Meteor.call 'addScoreByGame', 'NFL', event.api.SDGameId
+
+      when 'NBA'
+        Meteor.call 'getEventStatNBA', event.api.SDGameId 
+
+        Meteor.call 'convertToAthleteEventStatsNBA', event.api.SDGameId
+
+        Meteor.call 'addScoreByGame', 'NBA', event.api.SDGameId
+
+    Meteor.call 'addTotalScoreAllEntries', event.api.SDGameId
+    Meteor.call 'rankContestsForEvent', event.api.SDGameId
+
   'click .update-events-status': (e) ->
     event = @
-    console.log @
     Meteor.call 'updateEventStatus', @
 
   # TODO: un-hardcode this.

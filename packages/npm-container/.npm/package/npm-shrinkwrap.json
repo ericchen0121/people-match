@@ -46,10 +46,10 @@
               "version": "5.0.0"
             },
             "mime-types": {
-              "version": "2.0.8",
+              "version": "2.0.9",
               "dependencies": {
                 "mime-db": {
-                  "version": "1.6.0"
+                  "version": "1.7.0"
                 }
               }
             },
@@ -124,16 +124,16 @@
           }
         },
         "xml2js": {
-          "version": "0.4.4",
+          "version": "0.4.5",
           "dependencies": {
             "sax": {
               "version": "0.6.1"
             },
             "xmlbuilder": {
-              "version": "2.5.0",
+              "version": "2.5.1",
               "dependencies": {
                 "lodash": {
-                  "version": "3.0.1"
+                  "version": "3.1.0"
                 }
               }
             }
