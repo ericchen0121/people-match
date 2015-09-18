@@ -8,10 +8,9 @@ Meteor.methods
 
   getEventsNFL: (sport, week) ->
     if sport == 'NFL'
-      sched = sd.NFLApi.getWeeklySchedule week
-      events = sched.games.game
-
-    # events is an Array when multiple, but an dictionary when single 
+      sched = JSON.parse(sd.NFLApi.getWeeklySchedule week)
+      events = sched.games
+    # events is an Array when multiple, but a dictionary when single 
     if Array.isArray(events)
       for event in events
         Meteor.call 'updateEvent', event, sport
@@ -35,4 +34,4 @@ Meteor.methods
       { upsert: true }
     )
 
-# Meteor.call 'getEventsNFL', 'NFL', 4
+Meteor.call 'getEventsNFL', 'NFL', '2'

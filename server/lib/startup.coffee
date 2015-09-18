@@ -98,8 +98,8 @@ if @NflTeams.find().count() == 0 # import only when NflTeams data is empty
     @NflTeams.insert(value)
 
 # ---------------------------------------- Houston Admin ---------------------------------------- 
-Houston.hide_collection(EventStats)
-Houston.hide_collection(AthleteEventStats)
-Houston.hide_collection(AthleteEventScores)
+# Houston.hide_collection(EventStats)
+# Houston.hide_collection(AthleteEventStats)
+# Houston.hide_collection(AthleteEventScores)
 # Houston.hide_collection(AthleteEventData)
 # Houston.hide_collection(AthleteEventStatsAggregate)
