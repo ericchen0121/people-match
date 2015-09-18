@@ -9,7 +9,7 @@ SD_API_KEY_NBA = 'zy2799hzfk77uhcwjax5c58n'
 # ------------------------- NFL ------------------------- 
 # // Init the Sports Data object with the access level, version, apikey, year, and season you care about
 # CAN MOVE THIS INTO A Meteor.method so user can author PRE, PST or REG for NFL
-@sd.NFL.init('t', 1, SD_API_KEY_NFL, '2015', 'REG')
+@sd.NFL.init('t', 1, SD_API_KEY_NFL, '2015', 'REG', 'json')
 
 # ASYNC UTILITIES WRAPPING 'node-sportsdata' API
 # METEORHACKS:NPM

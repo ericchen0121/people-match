@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "sportsdata-mongo": {
-      "version": "https://npm.interactive-apps.apple.com/sportsdata-mongo/-/sportsdata-mongo-0.1.10.tgz",
+      "version": "0.1.11",
       "dependencies": {
         "request": {
           "version": "https://npm.interactive-apps.apple.com/request/-/request-2.62.0.tgz",
@@ -81,10 +81,10 @@
                   "version": "https://npm.interactive-apps.apple.com/assert-plus/-/assert-plus-0.1.5.tgz"
                 },
                 "asn1": {
-                  "version": "https://npm.interactive-apps.apple.com/asn1/-/asn1-0.1.11.tgz"
+                  "version": "0.1.11"
                 },
                 "ctype": {
-                  "version": "https://npm.interactive-apps.apple.com/ctype/-/ctype-0.5.3.tgz"
+                  "version": "0.5.3"
                 }
               }
             },
@@ -184,7 +184,7 @@
                       }
                     },
                     "jsonpointer": {
-                      "version": "https://npm.interactive-apps.apple.com/jsonpointer/-/jsonpointer-2.0.0.tgz"
+                      "version": "2.0.0"
                     },
                     "xtend": {
                       "version": "https://npm.interactive-apps.apple.com/xtend/-/xtend-4.0.0.tgz"
