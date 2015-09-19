@@ -1,0 +1,1889 @@
+player,player,number,number,position,position
+NFL,8644,Matt Cassel,Matt,Cassel,16,QB,Buffalo Bills
+NFL,15803,EJ Manuel,EJ,Manuel,3,QB,Buffalo Bills
+NFL,14163,Tyrod Taylor,Tyrod,Taylor,5,QB,Buffalo Bills
+NFL,13212,Boobie Dixon,Boobie,Dixon,26,RB,Buffalo Bills
+NFL,12514,LeSean McCoy,LeSean,McCoy,25,RB,Buffalo Bills
+NFL,2576817,Karlos Williams,Karlos,Williams,29,RB,Buffalo Bills
+NFL,11369,Jerome Felton,Jerome,Felton,42,FB,Buffalo Bills
+NFL,13224,Marcus Easley,Marcus,Easley,81,WR,Buffalo Bills
+NFL,15839,Marquise Goodwin,Marquise,Goodwin,88,WR,Buffalo Bills
+NFL,12569,Percy Harvin,Percy,Harvin,18,WR,Buffalo Bills
+NFL,14402,Chris Hogan,Chris,Hogan,15,WR,Buffalo Bills
+NFL,12524,Marcus Thigpen,Marcus,Thigpen,11,WR,Buffalo Bills
+NFL,16725,Sammy Watkins,Sammy,Watkins,14,WR,Buffalo Bills
+NFL,15880,Robert Woods,Robert,Woods,10,WR,Buffalo Bills
+NFL,14145,Charles Clay,Charles,Clay,85,TE,Buffalo Bills
+NFL,15940,Chris Gragg,Chris,Gragg,89,TE,Buffalo Bills
+NFL,16323,MarQueis Gray,MarQueis,Gray,48,TE,Buffalo Bills
+NFL,11708,Matthew Mulligan,Matthew,Mulligan,82,TE,Buffalo Bills
+NFL,17179,Gabe Ikard,Gabe,Ikard,61,C,Buffalo Bills
+NFL,12627,Eric Wood,Eric,Wood,70,C,Buffalo Bills
+NFL,8495,Richie Incognito,Richie,Incognito,64,G,Buffalo Bills
+NFL,2576639,John Miller,John,Miller,76,G,Buffalo Bills
+NFL,12742,Kraig Urbik,Kraig,Urbik,60,G,Buffalo Bills
+NFL,2512608,Tyson Chandler,Tyson,Chandler,78,OT,Buffalo Bills
+NFL,14971,Cordy Glenn,Cordy,Glenn,77,OT,Buffalo Bills
+NFL,16892,Seantrel Henderson,Seantrel,Henderson,66,OT,Buffalo Bills
+NFL,16796,Cyrus Kouandjio,Cyrus,Kouandjio,71,OT,Buffalo Bills
+NFL,16858,IK Enemkpali,IK,Enemkpali,75,DE,Buffalo Bills
+NFL,13245,Jerry Hughes,Jerry,Hughes,55,DE,Buffalo Bills
+NFL,9608,Manny Lawson,Manny,Lawson,91,DE,Buffalo Bills
+NFL,9587,Mario Williams,Mario,Williams,94,DE,Buffalo Bills
+NFL,12752,Jarius Wynn,Jarius,Wynn,92,DE,Buffalo Bills
+NFL,14231,Corbin Bryant,Corbin,Bryant,97,DT,Buffalo Bills
+NFL,13266,Alex Carrington,Alex,Carrington,98,DT,Buffalo Bills
+NFL,16568,Stefan Charles,Stefan,Charles,96,DT,Buffalo Bills
+NFL,13992,Marcell Dareus,Marcell,Dareus,99,DT,Buffalo Bills
+NFL,11321,Andre Fluellen,Andre,Fluellen,93,DT,Buffalo Bills
+NFL,9720,Kyle Williams,Kyle,Williams,95,DT,Buffalo Bills
+NFL,15075,Nigel Bradham,Nigel,Bradham,53,LB,Buffalo Bills
+NFL,16762,Preston Brown,Preston,Brown,52,LB,Buffalo Bills
+NFL,16816,Randell Johnson,Randell,Johnson,58,LB,Buffalo Bills
+NFL,16036,Ty Powell,Ty,Powell,56,LB,Buffalo Bills
+NFL,2576504,Tony Steward,Tony,Steward,50,LB,Buffalo Bills
+NFL,2517788,AJ Tarpley,AJ,Tarpley,59,LB,Buffalo Bills
+NFL,15008,Ron Brooks,Ron,Brooks,33,CB,Buffalo Bills
+NFL,14671,Mario Butler,Mario,Butler,39,CB,Buffalo Bills
+NFL,2969920,Ronald Darby,Ronald,Darby,28,CB,Buffalo Bills
+NFL,14942,Stephon Gilmore,Stephon,Gilmore,24,CB,Buffalo Bills
+NFL,16217,Nickell Robey,Nickell,Robey,37,CB,Buffalo Bills
+NFL,2573402,Cam Thomas,Cam,Thomas,43,CB,Buffalo Bills
+NFL,10611,Corey Graham,Corey,Graham,20,S,Buffalo Bills
+NFL,15912,Bacarri Rambo,Bacarri,Rambo,30,S,Buffalo Bills
+NFL,14045,Aaron Williams,Aaron,Williams,23,S,Buffalo Bills
+NFL,15884,Duke Williams,Duke,Williams,27,S,Buffalo Bills
+NFL,11688,Dan Carpenter,Dan,Carpenter,2,PK,Buffalo Bills
+NFL,16591,Jordan Gay,Jordan,Gay,4,PK,Buffalo Bills
+NFL,16623,Colton Schmidt,Colton,Schmidt,6,P,Buffalo Bills
+NFL,13078,Garrison Sanborn,Garrison,Sanborn,65,LS,Buffalo Bills
+NFL,11128,Matt Moore,Matt,Moore,8,QB,Miami Dolphins
+NFL,14876,Ryan Tannehill,Ryan,Tannehill,17,QB,Miami Dolphins
+NFL,2573300,Jay Ajayi,Jay,Ajayi,33,RB,Miami Dolphins
+NFL,14886,Lamar Miller,Lamar,Miller,26,RB,Miami Dolphins
+NFL,2576414,Raheem Mostert,Raheem,Mostert,27,RB,Miami Dolphins
+NFL,17359,Damien Williams,Damien,Williams,34,RB,Miami Dolphins
+NFL,16870,Matt Hazel,Matt,Hazel,83,WR,Miami Dolphins
+NFL,9638,Greg Jennings,Greg,Jennings,85,WR,Miami Dolphins
+NFL,16790,Jarvis Landry,Jarvis,Landry,14,WR,Miami Dolphins
+NFL,15102,Rishard Matthews,Rishard,Matthews,18,WR,Miami Dolphins
+NFL,2576623,DeVante Parker,DeVante,Parker,11,WR,Miami Dolphins
+NFL,16016,Kenny Stills,Kenny,Stills,10,WR,Miami Dolphins
+NFL,14189,Jordan Cameron,Jordan,Cameron,84,TE,Miami Dolphins
+NFL,15974,Dion Sims,Dion,Sims,80,TE,Miami Dolphins
+NFL,16493,Jake Stoneburner,Jake,Stoneburner,86,TE,Miami Dolphins
+NFL,13413,Jacques McClendon,Jacques,McClendon,66,C,Miami Dolphins
+NFL,13974,Mike Pouncey,Mike,Pouncey,51,C,Miami Dolphins
+NFL,2516927,Jamil Douglas,Jamil,Douglas,75,G,Miami Dolphins
+NFL,13751,Jeffrey Linkenbach,Jeffrey,Linkenbach,72,G,Miami Dolphins
+NFL,15868,Dallas Thomas,Dallas,Thomas,63,G,Miami Dolphins
+NFL,16759,Billy Turner,Billy,Turner,77,G,Miami Dolphins
+NFL,11249,Branden Albert,Branden,Albert,76,OT,Miami Dolphins
+NFL,13364,Jason Fox,Jason,Fox,74,OT,Miami Dolphins
+NFL,16722,Ja'Wuan James,Ja'Wuan,James,70,OT,Miami Dolphins
+NFL,16860,Terrence Fede,Terrence,Fede,78,DE,Miami Dolphins
+NFL,15800,Dion Jordan,Dion,Jordan,95,DE,Miami Dolphins
+NFL,15278,Derrick Shelby,Derrick,Shelby,79,DE,Miami Dolphins
+NFL,14982,Olivier Vernon,Olivier,Vernon,50,DE,Miami Dolphins
+NFL,12417,Cameron Wake,Cameron,Wake,91,DE,Miami Dolphins
+NFL,16398,A.J. Francis,A.J.,Francis,96,DT,Miami Dolphins
+NFL,13288,Earl Mitchell,Earl,Mitchell,90,DT,Miami Dolphins
+NFL,8605,C.J. Mosley,C.J.,Mosley,94,DT,Miami Dolphins
+NFL,2577466,Jordan Phillips,Jordan,Phillips,97,DT,Miami Dolphins
+NFL,13234,Ndamukong Suh,Ndamukong,Suh,93,DT,Miami Dolphins
+NFL,3059880,Neville Hewitt,Neville,Hewitt,46,LB,Miami Dolphins
+NFL,15985,Jelani Jenkins,Jelani,Jenkins,53,LB,Miami Dolphins
+NFL,17430,Chris McCain,Chris,McCain,58,LB,Miami Dolphins
+NFL,13287,Koa Misi,Koa,Misi,55,LB,Miami Dolphins
+NFL,14648,Spencer Paysinger,Spencer,Paysinger,42,LB,Miami Dolphins
+NFL,13995,Kelvin Sheppard,Kelvin,Sheppard,52,LB,Miami Dolphins
+NFL,2517389,Zach Vigil,Zach,Vigil,49,LB,Miami Dolphins
+NFL,11365,Zack Bowman,Zack,Bowman,30,CB,Miami Dolphins
+NFL,15833,Will Davis,Will,Davis,29,CB,Miami Dolphins
+NFL,10913,Brent Grimes,Brent,Grimes,21,CB,Miami Dolphins
+NFL,2515418,Tony Lippett,Tony,Lippett,36,CB,Miami Dolphins
+NFL,2575606,Bobby McCain,Bobby,McCain,28,CB,Miami Dolphins
+NFL,12690,Brice McCain,Brice,McCain,24,CB,Miami Dolphins
+NFL,15866,Jamar Taylor,Jamar,Taylor,22,CB,Miami Dolphins
+NFL,16819,Walt Aikens,Walt,Aikens,35,S,Miami Dolphins
+NFL,12528,Louis Delmas,Louis,Delmas,25,S,Miami Dolphins
+NFL,13395,Reshad Jones,Reshad,Jones,20,S,Miami Dolphins
+NFL,16363,Jordan Kovacs,Jordan,Kovacs,32,S,Miami Dolphins
+NFL,15231,Michael Thomas,Michael,Thomas,31,S,Miami Dolphins
+NFL,3893609,Andrew Franks,Andrew,Franks,3,PK,Miami Dolphins
+NFL,2516357,Matt Darr,Matt,Darr,4,P,Miami Dolphins
+NFL,9287,John Denney,John,Denney,92,LS,Miami Dolphins
+NFL,2330,Tom Brady,Tom,Brady,12,QB,New England Patriots
+NFL,16760,Jimmy Garoppolo,Jimmy,Garoppolo,10,QB,New England Patriots
+NFL,13213,LeGarrette Blount,LeGarrette,Blount,29,RB,New England Patriots
+NFL,15478,Brandon Bolden,Brandon,Bolden,38,RB,New England Patriots
+NFL,15457,Travaris Cadet,Travaris,Cadet,39,RB,New England Patriots
+NFL,16838,Tyler Gaffney,Tyler,Gaffney,36,RB,New England Patriots
+NFL,14198,Dion Lewis,Dion,Lewis,33,RB,New England Patriots
+NFL,16913,James White,James,White,28,RB,New England Patriots
+NFL,13940,James Develin,James,Develin,46,FB,New England Patriots
+NFL,11674,Danny Amendola,Danny,Amendola,80,WR,New England Patriots
+NFL,15834,Aaron Dobson,Aaron,Dobson,17,WR,New England Patriots
+NFL,12649,Julian Edelman,Julian,Edelman,11,WR,New England Patriots
+NFL,12567,Brandon Gibson,Brandon,Gibson,13,WR,New England Patriots
+NFL,12576,Brandon LaFell,Brandon,LaFell,19,WR,New England Patriots
+NFL,14916,Keshawn Martin,Keshawn,Martin,82,WR,New England Patriots
+NFL,11387,Matthew Slater,Matthew,Slater,18,WR,New England Patriots
+NFL,15252,Brian Tyms,Brian,Tyms,84,WR,New England Patriots
+NFL,10572,Scott Chandler,Scott,Chandler,88,TE,New England Patriots
+NFL,3046413,AJ Derby,AJ,Derby,86,TE,New England Patriots
+NFL,13229,Rob Gronkowski,Rob,Gronkowski,87,TE,New England Patriots
+NFL,13387,Michael Hoomanawanui,Michael,Hoomanawanui,47,TE,New England Patriots
+NFL,15910,Michael Williams,Michael,Williams,85,TE,New England Patriots
+NFL,2578529,David Andrews,David,Andrews,60,C,New England Patriots
+NFL,2576792,Tre' Jackson,Tre',Jackson,63,G,New England Patriots
+NFL,14116,Marcus Cannon,Marcus,Cannon,61,OL,New England Patriots
+NFL,16403,Josh Kline,Josh,Kline,67,OL,New England Patriots
+NFL,2576917,Shaq Mason,Shaq,Mason,69,OL,New England Patriots
+NFL,16826,Bryan Stork,Bryan,Stork,66,OL,New England Patriots
+NFL,11786,Ryan Wendell,Ryan,Wendell,62,OL,New England Patriots
+NFL,14550,Kevin Hughes,Kevin,Hughes,00,OT,New England Patriots
+NFL,13964,Nate Solder,Nate,Solder,77,OT,New England Patriots
+NFL,12626,Sebastian Vollmer,Sebastian,Vollmer,76,OT,New England Patriots
+NFL,14927,Chandler Jones,Chandler,Jones,95,DE,New England Patriots
+NFL,9721,Rob Ninkovich,Rob,Ninkovich,50,DE,New England Patriots
+NFL,15955,Chris Jones,Chris,Jones,94,DT,New England Patriots
+NFL,10477,Alan Branch,Alan,Branch,97,DL,New England Patriots
+NFL,2971698,Malcom Brown,Malcom,Brown,90,DL,New England Patriots
+NFL,16721,Dominique Easley,Dominique,Easley,99,DL,New England Patriots
+NFL,2574519,Trey Flowers,Trey,Flowers,98,DL,New England Patriots
+NFL,2514217,Geneo Grissom,Geneo,Grissom,92,DL,New England Patriots
+NFL,14036,Jabaal Sheard,Jabaal,Sheard,93,DL,New England Patriots
+NFL,14441,Sealver Siliga,Sealver,Siliga,96,DL,New England Patriots
+NFL,15830,Jamie Collins,Jamie,Collins,91,LB,New England Patriots
+NFL,13564,Dane Fletcher,Dane,Fletcher,52,LB,New England Patriots
+NFL,14387,Jonathan Freeny,Jonathan,Freeny,55,LB,New England Patriots
+NFL,14933,Dont'a Hightower,Dont'a,Hightower,54,LB,New England Patriots
+NFL,16031,Rufus Johnson,Rufus,Johnson,59,LB,New England Patriots
+NFL,11244,Jerod Mayo,Jerod,Mayo,51,LB,New England Patriots
+NFL,13482,Dekoda Watson,Dekoda,Watson,41,LB,New England Patriots
+NFL,10590,Tarell Brown,Tarell,Brown,25,CB,New England Patriots
+NFL,17435,Malcolm Butler,Malcolm,Butler,21,CB,New England Patriots
+NFL,12652,Bradley Fletcher,Bradley,Fletcher,24,CB,New England Patriots
+NFL,15861,Logan Ryan,Logan,Ryan,26,CB,New England Patriots
+NFL,2577707,Justin Coleman,Justin,Coleman,22,DB,New England Patriots
+NFL,15125,Nate Ebner,Nate,Ebner,43,DB,New England Patriots
+NFL,15842,Duron Harmon,Duron,Harmon,30,DB,New England Patriots
+NFL,13236,Devin McCourty,Devin,McCourty,32,DB,New England Patriots
+NFL,2577139,Jordan Richards,Jordan,Richards,37,DB,New England Patriots
+NFL,2515490,Darryl Roberts,Darryl,Roberts,00,DB,New England Patriots
+NFL,14977,Tavon Wilson,Tavon,Wilson,27,DB,New England Patriots
+NFL,12527,Patrick Chung,Patrick,Chung,23,S,New England Patriots
+NFL,9704,Stephen Gostkowski,Stephen,Gostkowski,3,PK,New England Patriots
+NFL,16382,Ryan Allen,Ryan,Allen,6,P,New England Patriots
+NFL,2575907,Joe Cardona,Joe,Cardona,49,LS,New England Patriots
+NFL,8664,Ryan Fitzpatrick,Ryan,Fitzpatrick,14,QB,New York Jets
+NFL,2466005,Bryce Petty,Bryce,Petty,9,QB,New York Jets
+NFL,15864,Geno Smith,Geno,Smith,7,QB,New York Jets
+NFL,13587,Chris Ivory,Chris,Ivory,33,RB,New York Jets
+NFL,14129,Bilal Powell,Bilal,Powell,29,RB,New York Jets
+NFL,14028,Stevan Ridley,Stevan,Ridley,22,RB,New York Jets
+NFL,15996,Zac Stacy,Zac,Stacy,30,RB,New York Jets
+NFL,15973,Tommy Bohanon,Tommy,Bohanon,40,FB,New York Jets
+NFL,13271,Eric Decker,Eric,Decker,87,WR,New York Jets
+NFL,16899,Quincy Enunwa,Quincy,Enunwa,81,WR,New York Jets
+NFL,14151,Jeremy Kerley,Jeremy,Kerley,11,WR,New York Jets
+NFL,9705,Brandon Marshall,Brandon,Marshall,15,WR,New York Jets
+NFL,15230,Chris Owusu,Chris,Owusu,17,WR,New York Jets
+NFL,2576395,Devin Smith,Devin,Smith,19,WR,New York Jets
+NFL,16792,Jace Amaro,Jace,Amaro,88,TE,New York Jets
+NFL,13555,Jeff Cumberland,Jeff,Cumberland,85,TE,New York Jets
+NFL,11392,Kellen Davis,Kellen,Davis,47,TE,New York Jets
+NFL,16418,Zach Sudfeld,Zach,Sudfeld,44,TE,New York Jets
+NFL,9615,Nick Mangold,Nick,Mangold,74,C,New York Jets
+NFL,16861,Dakota Dozier,Dakota,Dozier,70,OT,New York Jets
+NFL,9590,D'Brickashaw Ferguson,D'Brickashaw,Ferguson,60,OT,New York Jets
+NFL,11384,Breno Giacomini,Breno,Giacomini,68,OT,New York Jets
+NFL,14041,Ben Ijalana,Ben,Ijalana,71,OT,New York Jets
+NFL,17087,Brent Qvale,Brent,Qvale,79,OT,New York Jets
+NFL,13993,James Carpenter,James,Carpenter,77,OG,New York Jets
+NFL,9717,Willie Colon,Willie,Colon,66,OG,New York Jets
+NFL,2511809,Jarvis Harrison,Jarvis,Harrison,64,OG,New York Jets
+NFL,15879,Brian Winters,Brian,Winters,67,OG,New York Jets
+NFL,10361,Stephen Bowen,Stephen,Bowen,72,DE,New York Jets
+NFL,2971622,Leonard Williams,Leonard,Williams,92,DE,New York Jets
+NFL,16127,T.J. Barnes,T.J.,Barnes,99,DT,New York Jets
+NFL,11920,Leger Douzable,Leger,Douzable,78,DT,New York Jets
+NFL,15380,Damon Harrison,Damon,Harrison,94,DT,New York Jets
+NFL,2568060,Deon Simon,Deon,Simon,93,DT,New York Jets
+NFL,13985,Muhammad Wilkerson,Muhammad,Wilkerson,96,DL,New York Jets
+NFL,14934,Quinton Coples,Quinton,Coples,98,LB,New York Jets
+NFL,14958,Demario Davis,Demario,Davis,56,LB,New York Jets
+NFL,10491,David Harris,David,Harris,52,LB,New York Jets
+NFL,11636,Erin Henderson,Erin,Henderson,58,LB,New York Jets
+NFL,14597,Jamari Lattimore,Jamari,Lattimore,54,LB,New York Jets
+NFL,2576646,Lorenzo Mauldin,Lorenzo,Mauldin,55,LB,New York Jets
+NFL,4476,Calvin Pace,Calvin,Pace,97,LB,New York Jets
+NFL,16834,Trevor Reilly,Trevor,Reilly,57,LB,New York Jets
+NFL,9605,Antonio Cromartie,Antonio,Cromartie,31,CB,New York Jets
+NFL,16805,Dexter McDougle,Dexter,McDougle,23,CB,New York Jets
+NFL,15804,Dee Milliner,Dee,Milliner,27,CB,New York Jets
+NFL,10458,Darrelle Revis,Darrelle,Revis,24,CB,New York Jets
+NFL,14139,Buster Skrine,Buster,Skrine,41,CB,New York Jets
+NFL,14510,Darrin Walls,Darrin,Walls,26,CB,New York Jets
+NFL,2508192,Marcus Williams,Marcus,Williams,20,CB,New York Jets
+NFL,15061,Antonio Allen,Antonio,Allen,39,S,New York Jets
+NFL,14018,Marcus Gilchrist,Marcus,Gilchrist,21,S,New York Jets
+NFL,14043,Jaiquawn Jarrett,Jaiquawn,Jarrett,37,S,New York Jets
+NFL,2577293,Ronald Martin,Ronald,Martin,42,S,New York Jets
+NFL,16729,Calvin Pryor,Calvin,Pryor,25,S,New York Jets
+NFL,10621,Nick Folk,Nick,Folk,2,PK,New York Jets
+NFL,15616,Ryan Quigley,Ryan,Quigley,4,P,New York Jets
+NFL,12605,Tanner Purdum,Tanner,Purdum,46,LS,New York Jets
+NFL,5209,Tony Romo,Tony,Romo,9,QB,Dallas Cowboys
+NFL,14878,Brandon Weeden,Brandon,Weeden,3,QB,Dallas Cowboys
+NFL,15369,Lance Dunbar,Lance,Dunbar,25,RB,Dallas Cowboys
+NFL,11238,Darren McFadden,Darren,McFadden,20,RB,Dallas Cowboys
+NFL,15855,Christine Michael,Christine,Michael,30,RB,Dallas Cowboys
+NFL,16013,Joseph Randle,Joseph,Randle,21,RB,Dallas Cowboys
+NFL,13945,Tyler Clutts,Tyler,Clutts,44,FB,Dallas Cowboys
+NFL,15349,Cole Beasley,Cole,Beasley,11,WR,Dallas Cowboys
+NFL,13215,Dez Bryant,Dez,Bryant,88,WR,Dallas Cowboys
+NFL,15896,Brice Butler,Brice,Butler,00,WR,Dallas Cowboys
+NFL,16815,Devin Street,Devin,Street,15,WR,Dallas Cowboys
+NFL,3052735,Lucky Whitehead,Lucky,Whitehead,13,WR,Dallas Cowboys
+NFL,15878,Terrance Williams,Terrance,Williams,83,WR,Dallas Cowboys
+NFL,15836,Gavin Escobar,Gavin,Escobar,89,TE,Dallas Cowboys
+NFL,14906,James Hanna,James,Hanna,84,TE,Dallas Cowboys
+NFL,3046704,Geoff Swaim,Geoff,Swaim,87,TE,Dallas Cowboys
+NFL,4527,Jason Witten,Jason,Witten,82,TE,Dallas Cowboys
+NFL,15793,Travis Frederick,Travis,Frederick,72,C,Dallas Cowboys
+NFL,13263,Charles Brown,Charles,Brown,78,OL,Dallas Cowboys
+NFL,2577302,La'el Collins,La'el,Collins,71,OL,Dallas Cowboys
+NFL,2516053,Chaz Green,Chaz,Green,79,OL,Dallas Cowboys
+NFL,10565,Doug Free,Doug,Free,68,OT,Dallas Cowboys
+NFL,13978,Tyron Smith,Tyron,Smith,77,OT,Dallas Cowboys
+NFL,11484,Mackenzy Bernadeau,Mackenzy,Bernadeau,73,OG,Dallas Cowboys
+NFL,2971751,Reshod Fortenberry,Reshod,Fortenberry,00,OG,Dallas Cowboys
+NFL,15276,Ronald Leary,Ronald,Leary,65,OG,Dallas Cowboys
+NFL,16709,Zack Martin,Zack,Martin,70,OG,Dallas Cowboys
+NFL,3895806,Randy Gregory,Randy,Gregory,94,DE,Dallas Cowboys
+NFL,13377,Greg Hardy,Greg,Hardy,76,DE,Dallas Cowboys
+NFL,16802,DeMarcus Lawrence,DeMarcus,Lawrence,90,DE,Dallas Cowboys
+NFL,9777,Jeremy Mincey,Jeremy,Mincey,92,DE,Dallas Cowboys
+NFL,2511687,Ryan Russell,Ryan,Russell,99,DE,Dallas Cowboys
+NFL,17334,Davon Coleman,Davon,Coleman,60,DT,Dallas Cowboys
+NFL,15090,Jack Crawford,Jack,Crawford,58,DT,Dallas Cowboys
+NFL,14987,Tyrone Crawford,Tyrone,Crawford,98,DT,Dallas Cowboys
+NFL,11415,Nick Hayden,Nick,Hayden,96,DT,Dallas Cowboys
+NFL,14014,Terrell McClain,Terrell,McClain,97,DT,Dallas Cowboys
+NFL,16953,Ken Bishop,Ken,Bishop,93,NT,Dallas Cowboys
+NFL,14141,Andrew Gachkar,Andrew,Gachkar,52,LB,Dallas Cowboys
+NFL,16883,Anthony Hitchens,Anthony,Hitchens,59,LB,Dallas Cowboys
+NFL,16476,Cameron Lawrence,Cameron,Lawrence,00,LB,Dallas Cowboys
+NFL,13284,Sean Lee,Sean,Lee,50,LB,Dallas Cowboys
+NFL,13255,Rolando McClain,Rolando,McClain,55,LB,Dallas Cowboys
+NFL,17315,Keith Smith,Keith,Smith,56,LB,Dallas Cowboys
+NFL,15038,Kyle Wilber,Kyle,Wilber,51,LB,Dallas Cowboys
+NFL,3040207,Damien Wilson,Damien,Wilson,57,LB,Dallas Cowboys
+NFL,11363,Brandon Carr,Brandon,Carr,39,CB,Dallas Cowboys
+NFL,14943,Morris Claiborne,Morris,Claiborne,24,CB,Dallas Cowboys
+NFL,2513035,Byron Jones,Byron,Jones,31,CB,Dallas Cowboys
+NFL,17450,Tyler Patmon,Tyler,Patmon,26,CB,Dallas Cowboys
+NFL,11366,Orlando Scandrick,Orlando,Scandrick,32,CB,Dallas Cowboys
+NFL,15086,Corey White,Corey,White,23,CB,Dallas Cowboys
+NFL,13338,Barry Church,Barry,Church,42,S,Dallas Cowboys
+NFL,16473,Jeff Heath,Jeff,Heath,38,S,Dallas Cowboys
+NFL,13611,Danny McCray,Danny,McCray,40,S,Dallas Cowboys
+NFL,15874,J.J. Wilcox,J.J.,Wilcox,27,S,Dallas Cowboys
+NFL,14322,Dan Bailey,Dan,Bailey,5,PK,Dallas Cowboys
+NFL,14723,Chris Jones,Chris,Jones,6,P,Dallas Cowboys
+NFL,9349,L.P. Ladouceur,L.P.,Ladouceur,91,LS,Dallas Cowboys
+NFL,5526,Eli Manning,Eli,Manning,10,QB,New York Jets
+NFL,15891,Ryan Nassib,Ryan,Nassib,12,QB,New York Jets
+NFL,17331,Orleans Darkwa,Orleans,Darkwa,26,RB,New York Jets
+NFL,12503,Rashad Jennings,Rashad,Jennings,23,RB,New York Jets
+NFL,14017,Shane Vereen,Shane,Vereen,34,RB,New York Jets
+NFL,16889,Andre Williams,Andre,Williams,44,RB,New York Jets
+NFL,17288,Nikita Whitlock,Nikita,Whitlock,49,FB,New York Jets
+NFL,16733,Odell Beckham Jr.,Odell,Beckham Jr.,13,WR,New York Jets
+NFL,13553,Victor Cruz,Victor,Cruz,80,WR,New York Jets
+NFL,2513030,Geremy Davis,Geremy,Davis,18,WR,New York Jets
+NFL,16007,Chris Harper,Chris,Harper,00,WR,New York Jets
+NFL,14100,Dwayne Harris,Dwayne,Harris,17,WR,New York Jets
+NFL,14688,Marcus Harris,Marcus,Harris,18,WR,New York Jets
+NFL,13703,Preston Parker,Preston,Parker,15,WR,New York Jets
+NFL,14911,Rueben Randle,Rueben,Randle,82,WR,New York Jets
+NFL,2476373,Jerome Cunningham,Jerome,Cunningham,86,TE,New York Jets
+NFL,15707,Larry Donnell,Larry,Donnell,84,TE,New York Jets
+NFL,10287,Daniel Fells,Daniel,Fells,85,TE,New York Jets
+NFL,3173563,Brett Jones,Brett,Jones,69,C,New York Jets
+NFL,16746,Weston Richburg,Weston,Richburg,70,OL,New York Jets
+NFL,12610,Will Beatty,Will,Beatty,56,OT,New York Jets
+NFL,2969952,Ereck Flowers,Ereck,Flowers,76,OT,New York Jets
+NFL,13428,Marshall Newhouse,Marshall,Newhouse,73,OT,New York Jets
+NFL,15808,Justin Pugh,Justin,Pugh,67,OT,New York Jets
+NFL,2576789,Bobby Hart,Bobby,Hart,68,OG,New York Jets
+NFL,13278,John Jerry,John,Jerry,77,OG,New York Jets
+NFL,12839,Dallas Reynolds,Dallas,Reynolds,61,OG,New York Jets
+NFL,11475,Geoff Schwartz,Geoff,Schwartz,74,OG,New York Jets
+NFL,12432,Robert Ayers,Robert,Ayers,91,DE,New York Jets
+NFL,15858,Damontre Moore,Damontre,Moore,98,DE,New York Jets
+NFL,2510866,Owa Odighizuwa,Owa,Odighizuwa,58,DE,New York Jets
+NFL,13452,George Selvie,George,Selvie,93,DE,New York Jets
+NFL,17296,Kerry Wynn,Kerry,Wynn,72,DE,New York Jets
+NFL,16776,Jay Bromley,Jay,Bromley,96,DT,New York Jets
+NFL,15841,Johnathan Hankins,Johnathan,Hankins,95,DT,New York Jets
+NFL,5009,Cullen Jenkins,Cullen,Jenkins,99,DT,New York Jets
+NFL,15024,Markus Kuhn,Markus,Kuhn,78,DT,New York Jets
+NFL,16806,Louis Nix III,Louis,Nix III,53,DT,New York Jets
+NFL,10469,Jon Beason,Jon,Beason,52,LB,New York Jets
+NFL,12451,Jasper Brinkley,Jasper,Brinkley,53,LB,New York Jets
+NFL,13045,Jonathan Casillas,Jonathan,Casillas,54,LB,New York Jets
+NFL,14262,Mark Herzlich,Mark,Herzlich,94,LB,New York Jets
+NFL,16820,Devon Kennard,Devon,Kennard,59,LB,New York Jets
+NFL,14216,J.T. Thomas,J.T.,Thomas,55,LB,New York Jets
+NFL,2517026,Uani' Unga,Uani',Unga,47,LB,New York Jets
+NFL,13975,Prince Amukamara,Prince,Amukamara,20,CB,New York Jets
+NFL,14983,Jayron Hosley,Jayron,Hosley,28,CB,New York Jets
+NFL,10664,Trumaine McBride,Trumaine,McBride,38,CB,New York Jets
+NFL,11250,Dominique Rodgers-Cromartie,Dominique,Rodgers-Cromartie,41,CB,New York Jets
+NFL,15016,Trevin Wade,Trevin,Wade,31,DB,New York Jets
+NFL,16850,Nat Berhe,Nat,Berhe,29,S,New York Jets
+NFL,2979841,Landon Collins,Landon,Collins,21,S,New York Jets
+NFL,2574756,Justin Currie,Justin,Currie,36,S,New York Jets
+NFL,10785,Craig Dahl,Craig,Dahl,43,S,New York Jets
+NFL,13370,Josh Gordy,Josh,Gordy,35,S,New York Jets
+NFL,16879,Bennett Jackson,Bennett,Jackson,24,S,New York Jets
+NFL,10468,Brandon Meriweather,Brandon,Meriweather,22,S,New York Jets
+NFL,15895,Cooper Taylor,Cooper,Taylor,30,S,New York Jets
+NFL,2577581,Mykkele Thompson,Mykkele,Thompson,27,S,New York Jets
+NFL,4680,Josh Brown,Josh,Brown,3,PK,New York Jets
+NFL,16241,Brad Wing,Brad,Wing,9,P,New York Jets
+NFL,10560,Zak DeOssie,Zak,DeOssie,51,LS,New York Jets
+NFL,13197,Sam Bradford,Sam,Bradford,7,QB,Philadelphia Eagles
+NFL,17220,Stephen Morris,Stephen,Morris,4,QB,Philadelphia Eagles
+NFL,12482,Mark Sanchez,Mark,Sanchez,3,QB,Philadelphia Eagles
+NFL,15921,Kenjon Barner,Kenjon,Barner,34,RB,Philadelphia Eagles
+NFL,13204,Ryan Mathews,Ryan,Mathews,24,RB,Philadelphia Eagles
+NFL,14005,DeMarco Murray,DeMarco,Murray,29,RB,Philadelphia Eagles
+NFL,8544,Darren Sproles,Darren,Sproles,43,RB,Philadelphia Eagles
+NFL,2971618,Nelson Agholor,Nelson,Agholor,17,WR,Philadelphia Eagles
+NFL,13524,Seyi Ajirotutu,Seyi,Ajirotutu,16,WR,Philadelphia Eagles
+NFL,10147,Miles Austin,Miles,Austin,19,WR,Philadelphia Eagles
+NFL,13225,Riley Cooper,Riley,Cooper,14,WR,Philadelphia Eagles
+NFL,16779,Josh Huff,Josh,Huff,13,WR,Philadelphia Eagles
+NFL,16763,Jordan Matthews,Jordan,Matthews,81,WR,Philadelphia Eagles
+NFL,16974,Trey Burton,Trey,Burton,47,TE,Philadelphia Eagles
+NFL,10605,Brent Celek,Brent,Celek,87,TE,Philadelphia Eagles
+NFL,15835,Zach Ertz,Zach,Ertz,86,TE,Philadelphia Eagles
+NFL,14124,Jason Kelce,Jason,Kelce,62,C,Philadelphia Eagles
+NFL,15030,David Molk,David,Molk,63,C,Philadelphia Eagles
+NFL,14127,Julian Vandervelde,Julian,Vandervelde,61,C,Philadelphia Eagles
+NFL,10563,Allen Barbre,Allen,Barbre,76,OT,Philadelphia Eagles
+NFL,15797,Lane Johnson,Lane,Johnson,65,OT,Philadelphia Eagles
+NFL,6012,Jason Peters,Jason,Peters,71,OT,Philadelphia Eagles
+NFL,16963,Josh Andrews,Josh,Andrews,68,OG,Philadelphia Eagles
+NFL,12659,Andrew Gardner,Andrew,Gardner,66,OG,Philadelphia Eagles
+NFL,15054,Dennis Kelly,Dennis,Kelly,67,OG,Philadelphia Eagles
+NFL,16235,Matt Tobin,Matt,Tobin,64,OG,Philadelphia Eagles
+NFL,14361,Brandon Bair,Brandon,Bair,93,DE,Philadelphia Eagles
+NFL,14941,Fletcher Cox,Fletcher,Cox,91,DE,Philadelphia Eagles
+NFL,14959,Vinny Curry,Vinny,Curry,75,DE,Philadelphia Eagles
+NFL,16865,Taylor Hart,Taylor,Hart,97,DE,Philadelphia Eagles
+NFL,2513043,B.J. McBryde,B.J.,McBryde,00,DE,Philadelphia Eagles
+NFL,14310,Cedric Thornton,Cedric,Thornton,72,DE,Philadelphia Eagles
+NFL,16912,Beau Allen,Beau,Allen,94,DT,Philadelphia Eagles
+NFL,15850,Bennie Logan,Bennie,Logan,96,DT,Philadelphia Eagles
+NFL,15819,Kiko Alonso,Kiko,Alonso,50,LB,Philadelphia Eagles
+NFL,12449,Connor Barwin,Connor,Barwin,98,LB,Philadelphia Eagles
+NFL,14524,Bryan Braman,Bryan,Braman,56,LB,Philadelphia Eagles
+NFL,13239,Brandon Graham,Brandon,Graham,55,LB,Philadelphia Eagles
+NFL,2514270,Jordan Hicks,Jordan,Hicks,58,LB,Philadelphia Eagles
+NFL,12675,Brad Jones,Brad,Jones,52,LB,Philadelphia Eagles
+NFL,14978,Mychal Kendricks,Mychal,Kendricks,95,LB,Philadelphia Eagles
+NFL,16641,Travis Long,Travis,Long,57,LB,Philadelphia Eagles
+NFL,9619,DeMeco Ryans,DeMeco,Ryans,59,LB,Philadelphia Eagles
+NFL,16712,Marcus Smith II,Marcus,Smith II,90,LB,Philadelphia Eagles
+NFL,13333,Nolan Carroll II,Nolan,Carroll II,23,CB,Philadelphia Eagles
+NFL,12633,E.J. Biggers,E.J.,Biggers,38,DB,Philadelphia Eagles
+NFL,16982,Jerome Couplin III,Jerome,Couplin III,21,DB,Philadelphia Eagles
+NFL,14133,Byron Maxwell,Byron,Maxwell,31,DB,Philadelphia Eagles
+NFL,2565759,Denzel Rice,Denzel,Rice,35,DB,Philadelphia Eagles
+NFL,2576002,Eric Rowe,Eric,Rowe,32,DB,Philadelphia Eagles
+NFL,2577237,JaCorey Shepherd,JaCorey,Shepherd,36,DB,Philadelphia Eagles
+NFL,13473,Walter Thurmond III,Walter,Thurmond III,26,DB,Philadelphia Eagles
+NFL,12426,Malcolm Jenkins,Malcolm,Jenkins,27,FS,Philadelphia Eagles
+NFL,13697,Chris Maragos,Chris,Maragos,42,FS,Philadelphia Eagles
+NFL,17082,Cody Parkey,Cody,Parkey,1,PK,Philadelphia Eagles
+NFL,5749,Donnie Jones,Donnie,Jones,8,P,Philadelphia Eagles
+NFL,4902,Jon Dorenbos,Jon,Dorenbos,46,LS,Philadelphia Eagles
+NFL,14880,Kirk Cousins,Kirk,Cousins,8,QB,Washington Redskins
+NFL,14875,Robert Griffin,Robert,Griffin,10,QB,Washington Redskins
+NFL,13199,Colt McCoy,Colt,McCoy,16,QB,Washington Redskins
+NFL,2980105,Matt Jones,Matt,Jones,31,RB,Washington Redskins
+NFL,15009,Alfred Morris,Alfred,Morris,46,RB,Washington Redskins
+NFL,17352,Silas Redd,Silas,Redd,32,RB,Washington Redskins
+NFL,15966,Chris Thompson,Chris,Thompson,25,RB,Washington Redskins
+NFL,13097,Darrel Young,Darrel,Young,36,FB,Washington Redskins
+NFL,2576716,Jamison Crowder,Jamison,Crowder,80,WR,Washington Redskins
+NFL,11439,Pierre Garcon,Pierre,Garcon,88,WR,Washington Redskins
+NFL,16845,Ryan Grant,Ryan,Grant,14,WR,Washington Redskins
+NFL,11283,DeSean Jackson,DeSean,Jackson,11,WR,Washington Redskins
+NFL,13226,Andre Roberts,Andre,Roberts,12,WR,Washington Redskins
+NFL,16566,Rashad Ross,Rashad,Ross,19,WR,Washington Redskins
+NFL,15403,Derek Carrier,Derek,Carrier,89,TE,Washington Redskins
+NFL,13414,Anthony McCoy,Anthony,McCoy,85,TE,Washington Redskins
+NFL,14156,Niles Paul,Niles,Paul,84,TE,Washington Redskins
+NFL,13726,Logan Paulsen,Logan,Paulsen,82,TE,Washington Redskins
+NFL,15860,Jordan Reed,Jordan,Reed,86,TE,Washington Redskins
+NFL,14961,Josh LeRibeus,Josh,LeRibeus,67,C,Washington Redskins
+NFL,11342,Kory Lichtensteiger,Kory,Lichtensteiger,78,C,Washington Redskins
+NFL,12904,Nick Sundberg,Nick,Sundberg,57,C,Washington Redskins
+NFL,2511708,Brandon Scherff,Brandon,Scherff,75,G,Washington Redskins
+NFL,15082,Tom Compton,Tom,Compton,68,OT,Washington Redskins
+NFL,16771,Morgan Moses,Morgan,Moses,76,OT,Washington Redskins
+NFL,15724,Ty Nsekhe,Ty,Nsekhe,79,OT,Washington Redskins
+NFL,13241,Trent Williams,Trent,Williams,71,OT,Washington Redskins
+NFL,2515944,Arie Kouandjio,Arie,Kouandjio,74,OG,Washington Redskins
+NFL,13283,Shawn Lauvao,Shawn,Lauvao,77,OG,Washington Redskins
+NFL,16743,Spencer Long,Spencer,Long,61,OG,Washington Redskins
+NFL,17156,James Gayle,James,Gayle,00,DE,Washington Redskins
+NFL,9782,Kedric Golston,Kedric,Golston,64,DE,Washington Redskins
+NFL,9678,Jason Hatcher,Jason,Hatcher,97,DE,Washington Redskins
+NFL,14176,Frank Kearse,Frank,Kearse,73,DE,Washington Redskins
+NFL,12760,Chris Baker,Chris,Baker,92,DT,Washington Redskins
+NFL,12443,Ricky Jean Francois,Ricky,Jean Francois,99,DT,Washington Redskins
+NFL,12677,Terrance Knighton,Terrance,Knighton,98,DT,Washington Redskins
+NFL,14049,Stephen Paea,Stephen,Paea,90,DT,Washington Redskins
+NFL,16324,Will Compton,Will,Compton,51,LB,Washington Redskins
+NFL,13566,Junior Galette,Junior,Galette,58,LB,Washington Redskins
+NFL,10625,Adam Hayward,Adam,Hayward,55,LB,Washington Redskins
+NFL,17008,Jackson Jeffcoat,Jackson,Jeffcoat,53,LB,Washington Redskins
+NFL,13973,Ryan Kerrigan,Ryan,Kerrigan,91,LB,Washington Redskins
+NFL,16751,Trent Murphy,Trent,Murphy,93,LB,Washington Redskins
+NFL,13443,Perry Riley Jr.,Perry,Riley Jr.,56,LB,Washington Redskins
+NFL,15017,Keenan Robinson,Keenan,Robinson,52,LB,Washington Redskins
+NFL,2577446,Preston Smith,Preston,Smith,94,LB,Washington Redskins
+NFL,3046428,Martrell Spaight,Martrell,Spaight,50,LB,Washington Redskins
+NFL,15820,David Amerson,David,Amerson,39,CB,Washington Redskins
+NFL,9701,Will Blackmon,Will,Blackmon,41,CB,Washington Redskins
+NFL,16890,Bashaud Breeland,Bashaud,Breeland,26,CB,Washington Redskins
+NFL,5533,DeAngelo Hall,DeAngelo,Hall,23,CB,Washington Redskins
+NFL,14071,Justin Rogers,Justin,Rogers,35,CB,Washington Redskins
+NFL,14044,Chris Culliver,Chris,Culliver,29,DB,Washington Redskins
+NFL,10569,Dashon Goldson,Dashon,Goldson,38,DB,Washington Redskins
+NFL,10550,Tanard Jackson,Tanard,Jackson,36,DB,Washington Redskins
+NFL,14274,Jeron Johnson,Jeron,Johnson,20,DB,Washington Redskins
+NFL,15190,Duke Ihenacho,Duke,Ihenacho,24,S,Washington Redskins
+NFL,2577889,Kyshoen Jarrett,Kyshoen,Jarrett,30,S,Washington Redskins
+NFL,15049,Trenton Robinson,Trenton,Robinson,34,FS,Washington Redskins
+NFL,15965,Dustin Hopkins,Dustin,Hopkins,3,PK,Washington Redskins
+NFL,16166,Tress Way,Tress,Way,5,P,Washington Redskins
+NFL,1428,Peyton Manning,Peyton,Manning,18,QB,Denver Broncos
+NFL,14879,Brock Osweiler,Brock,Osweiler,17,QB,Denver Broncos
+NFL,2511109,Trevor Siemian,Trevor,Siemian,13,QB,Denver Broncos
+NFL,16040,C.J. Anderson,C.J.,Anderson,22,RB,Denver Broncos
+NFL,14895,Ronnie Hillman,Ronnie,Hillman,23,RB,Denver Broncos
+NFL,17045,Juwan Thompson,Juwan,Thompson,40,RB,Denver Broncos
+NFL,11331,Andre Caldwell,Andre,Caldwell,12,WR,Denver Broncos
+NFL,16995,Bennie Fowler,Bennie,Fowler,16,WR,Denver Broncos
+NFL,16793,Cody Latimer,Cody,Latimer,14,WR,Denver Broncos
+NFL,12587,Jordan Norwood,Jordan,Norwood,11,WR,Denver Broncos
+NFL,13295,Emmanuel Sanders,Emmanuel,Sanders,10,WR,Denver Broncos
+NFL,13216,Demaryius Thomas,Demaryius,Thomas,88,WR,Denver Broncos
+NFL,13488,Kyle Williams,Kyle,Williams,15,WR,Denver Broncos
+NFL,12535,James Casey,James,Casey,80,TE,Denver Broncos
+NFL,9684,Owen Daniels,Owen,Daniels,81,TE,Denver Broncos
+NFL,14085,Virgil Green,Virgil,Green,85,TE,Denver Broncos
+NFL,2573419,Mitchell Henry,Mitchell,Henry,84,TE,Denver Broncos
+NFL,2576389,Jeff Heuerman,Jeff,Heuerman,82,TE,Denver Broncos
+NFL,15241,Aaron Brewer,Aaron,Brewer,46,C,Denver Broncos
+NFL,17361,James Ferentz,James,Ferentz,53,C,Denver Broncos
+NFL,2512538,Max Garcia,Max,Garcia,73,C,Denver Broncos
+NFL,16847,Matt Paradis,Matt,Paradis,61,C,Denver Broncos
+NFL,8493,Evan Mathis,Evan,Mathis,69,G,Denver Broncos
+NFL,13460,Shelley Smith,Shelley,Smith,64,G,Denver Broncos
+NFL,11246,Ryan Clady,Ryan,Clady,78,OT,Denver Broncos
+NFL,10514,Ryan Harris,Ryan,Harris,68,OT,Denver Broncos
+NFL,2514397,Ty Sambrailo,Ty,Sambrailo,74,OT,Denver Broncos
+NFL,16741,Michael Schofield,Michael,Schofield,79,OT,Denver Broncos
+NFL,12744,Louis Vasquez,Louis,Vasquez,65,OT,Denver Broncos
+NFL,16965,Kenny Anunike,Kenny,Anunike,91,DE,Denver Broncos
+NFL,5660,Antonio Smith,Antonio,Smith,90,DE,Denver Broncos
+NFL,8426,DeMarcus Ware,DeMarcus,Ware,94,DE,Denver Broncos
+NFL,14964,Derek Wolfe,Derek,Wolfe,95,DE,Denver Broncos
+NFL,14025,Marvin Austin Jr.,Marvin,Austin Jr.,76,DT,Denver Broncos
+NFL,15047,Malik Jackson,Malik,Jackson,97,DT,Denver Broncos
+NFL,2512544,Darius Kilgo,Darius,Kilgo,98,DT,Denver Broncos
+NFL,12448,Vance Walker,Vance,Walker,96,DT,Denver Broncos
+NFL,15816,Sylvester Williams,Sylvester,Williams,92,DT,Denver Broncos
+NFL,16967,Shaquil Barrett,Shaquil,Barrett,48,LB,Denver Broncos
+NFL,17497,Todd Davis,Todd,Davis,51,LB,Denver Broncos
+NFL,15002,Brandon Marshall,Brandon,Marshall,54,LB,Denver Broncos
+NFL,16090,Lerentee McCray,Lerentee,McCray,55,LB,Denver Broncos
+NFL,13976,Von Miller,Von,Miller,58,LB,Denver Broncos
+NFL,16902,Corey Nelson,Corey,Nelson,52,LB,Denver Broncos
+NFL,2577371,Shane Ray,Shane,Ray,56,LB,Denver Broncos
+NFL,15074,Danny Trevathan,Danny,Trevathan,59,LB,Denver Broncos
+NFL,2972135,Lorenzo Doss,Lorenzo,Doss,37,CB,Denver Broncos
+NFL,14398,Chris Harris Jr.,Chris,Harris Jr.,25,CB,Denver Broncos
+NFL,16719,Bradley Roby,Bradley,Roby,29,CB,Denver Broncos
+NFL,11254,Aqib Talib,Aqib,Talib,21,CB,Denver Broncos
+NFL,15872,Kayvon Webster,Kayvon,Webster,36,CB,Denver Broncos
+NFL,13645,Darian Stewart,Darian,Stewart,26,DB,Denver Broncos
+NFL,15113,Josh Bush,Josh,Bush,20,S,Denver Broncos
+NFL,14997,Omar Bolden,Omar,Bolden,31,SS,Denver Broncos
+NFL,12638,David Bruton Jr.,David,Bruton Jr.,30,SS,Denver Broncos
+NFL,13304,T.J. Ward,T.J.,Ward,43,SS,Denver Broncos
+NFL,16339,Brandon McManus,Brandon,McManus,8,PK,Denver Broncos
+NFL,12773,Britton Colquitt,Britton,Colquitt,4,P,Denver Broncos
+NFL,12471,Chase Daniel,Chase,Daniel,10,QB,Kansas City Chiefs
+NFL,17021,Aaron Murray,Aaron,Murray,7,QB,Kansas City Chiefs
+NFL,8416,Alex Smith,Alex,Smith,11,QB,Kansas City Chiefs
+NFL,11307,Jamaal Charles,Jamaal,Charles,25,RB,Kansas City Chiefs
+NFL,15832,Knile Davis,Knile,Davis,34,RB,Kansas City Chiefs
+NFL,17284,Charcandrick West,Charcandrick,West,35,RB,Kansas City Chiefs
+NFL,14135,Anthony Sherman,Anthony,Sherman,42,FB,Kansas City Chiefs
+NFL,9695,Jason Avant,Jason,Avant,81,WR,Kansas City Chiefs
+NFL,2578533,Chris Conley,Chris,Conley,17,WR,Kansas City Chiefs
+NFL,16260,Frankie Hammond,Frankie,Hammond,85,WR,Kansas City Chiefs
+NFL,12579,Jeremy Maclin,Jeremy,Maclin,19,WR,Kansas City Chiefs
+NFL,16945,De'Anthony Thomas,De'Anthony,Thomas,13,WR,Kansas City Chiefs
+NFL,17051,Albert Wilson,Albert,Wilson,12,WR,Kansas City Chiefs
+NFL,16318,Demetrius Harris,Demetrius,Harris,84,TE,Kansas City Chiefs
+NFL,15847,Travis Kelce,Travis,Kelce,87,TE,Kansas City Chiefs
+NFL,2508079,James O'Shaughnessy,James,O'Shaughnessy,80,TE,Kansas City Chiefs
+NFL,2508328,Brian Parker,Brian,Parker,82,TE,Kansas City Chiefs
+NFL,2514122,Mitch Morse,Mitch,Morse,61,C,Kansas City Chiefs
+NFL,16665,James Winchester,James,Winchester,41,C,Kansas City Chiefs
+NFL,12651,Paul Fanaika,Paul,Fanaika,74,OL,Kansas City Chiefs
+NFL,13999,Jah Reid,Jah,Reid,75,OL,Kansas City Chiefs
+NFL,14990,Jeff Allen,Jeff,Allen,71,OT,Kansas City Chiefs
+NFL,16958,Laurent Duvernay-Tardif,Laurent,Duvernay-Tardif,76,OT,Kansas City Chiefs
+NFL,15790,Eric Fisher,Eric,Fisher,72,OT,Kansas City Chiefs
+NFL,14956,Donald Stephenson,Donald,Stephenson,79,OT,Kansas City Chiefs
+NFL,16923,Zach Fulton,Zach,Fulton,73,OG,Kansas City Chiefs
+NFL,10473,Ben Grubbs,Ben,Grubbs,66,OG,Kansas City Chiefs
+NFL,14020,Allen Bailey,Allen,Bailey,97,DE,Kansas City Chiefs
+NFL,10763,Mike DeVito,Mike,DeVito,70,DE,Kansas City Chiefs
+NFL,15005,Jaye Howard,Jaye,Howard,96,DE,Kansas City Chiefs
+NFL,2575453,Rakeem Nunez-Roches,Rakeem,Nunez-Roches,99,DT,Kansas City Chiefs
+NFL,2317118,Nick Williams,Nick,Williams,98,DT,Kansas City Chiefs
+NFL,14939,Dontari Poe,Dontari,Poe,92,DL,Kansas City Chiefs
+NFL,3001171,D.J. Alexander,D.J.,Alexander,57,LB,Kansas City Chiefs
+NFL,16707,Dee Ford,Dee,Ford,55,LB,Kansas City Chiefs
+NFL,9606,Tamba Hali,Tamba,Hali,91,LB,Kansas City Chiefs
+NFL,14048,Justin Houston,Justin,Houston,50,LB,Kansas City Chiefs
+NFL,8430,Derrick Johnson,Derrick,Johnson,56,LB,Kansas City Chiefs
+NFL,2574282,Justin March,Justin,March,59,LB,Kansas City Chiefs
+NFL,13165,Josh Mauga,Josh,Mauga,90,LB,Kansas City Chiefs
+NFL,15272,Dezman Moses,Dezman,Moses,54,LB,Kansas City Chiefs
+NFL,2578565,Ramik Wilson,Ramik,Wilson,53,LB,Kansas City Chiefs
+NFL,13779,Frank Zombo,Frank,Zombo,51,LB,Kansas City Chiefs
+NFL,15888,Marcus Cooper,Marcus,Cooper,31,CB,Kansas City Chiefs
+NFL,14955,Jamell Fleming,Jamell,Fleming,30,CB,Kansas City Chiefs
+NFL,16750,Phillip Gaines,Phillip,Gaines,23,CB,Kansas City Chiefs
+NFL,3045287,Steven Nelson,Steven,Nelson,20,CB,Kansas City Chiefs
+NFL,2578378,Marcus Peters,Marcus,Peters,22,CB,Kansas City Chiefs
+NFL,12430,Sean Smith,Sean,Smith,21,CB,Kansas City Chiefs
+NFL,11334,Tyvon Branch,Tyvon,Branch,27,DB,Kansas City Chiefs
+NFL,17259,Daniel Sorensen,Daniel,Sorensen,49,DB,Kansas City Chiefs
+NFL,13252,Eric Berry,Eric,Berry,29,SS,Kansas City Chiefs
+NFL,14297,Ron Parker,Ron,Parker,38,SS,Kansas City Chiefs
+NFL,11910,Husain Abdullah,Husain,Abdullah,39,FS,Kansas City Chiefs
+NFL,17427,Cairo Santos,Cairo,Santos,5,PK,Kansas City Chiefs
+NFL,8513,Dustin Colquitt,Dustin,Colquitt,2,P,Kansas City Chiefs
+NFL,16757,Derek Carr,Derek,Carr,4,QB,Oakland Raiders
+NFL,16593,Matt McGloin,Matt,McGloin,14,QB,Oakland Raiders
+NFL,14192,Roy Helu,Roy,Helu,26,RB,Oakland Raiders
+NFL,14167,Taiwan Jones,Taiwan,Jones,22,RB,Oakland Raiders
+NFL,15920,Latavius Murray,Latavius,Murray,28,RB,Oakland Raiders
+NFL,15653,Jamize Olawale,Jamize,Olawale,49,RB,Oakland Raiders
+NFL,11717,Marcel Reece,Marcel,Reece,45,FB,Oakland Raiders
+NFL,2976499,Amari Cooper,Amari,Cooper,89,WR,Oakland Raiders
+NFL,12563,Michael Crabtree,Michael,Crabtree,15,WR,Oakland Raiders
+NFL,2447736,Andre Debose,Andre,Debose,00,WR,Oakland Raiders
+NFL,14403,Andre Holmes,Andre,Holmes,18,WR,Oakland Raiders
+NFL,17402,Seth Roberts,Seth,Roberts,10,WR,Oakland Raiders
+NFL,15391,Rod Streater,Rod,Streater,80,WR,Oakland Raiders
+NFL,15923,Mychal Rivera,Mychal,Rivera,81,TE,Oakland Raiders
+NFL,14215,Lee Smith,Lee,Smith,86,TE,Oakland Raiders
+NFL,2512593,Clive Walford,Clive,Walford,88,TE,Oakland Raiders
+NFL,14976,Tony Bergstrom,Tony,Bergstrom,70,C,Oakland Raiders
+NFL,9276,Jon Condo,Jon,Condo,59,C,Oakland Raiders
+NFL,8466,Khalif Barnes,Khalif,Barnes,69,OT,Oakland Raiders
+NFL,15013,Matt McCants,Matt,McCants,73,OT,Oakland Raiders
+NFL,10062,Donald Penn,Donald,Penn,72,OT,Oakland Raiders
+NFL,15871,Menelik Watson,Menelik,Watson,71,OT,Oakland Raiders
+NFL,13483,J'Marcus Webb,J'Marcus,Webb,76,OT,Oakland Raiders
+NFL,2512577,Jon Feliciano,Jon,Feliciano,68,OG,Oakland Raiders
+NFL,13585,Austin Howard,Austin,Howard,77,OG,Oakland Raiders
+NFL,14013,Rodney Hudson,Rodney,Hudson,61,OG,Oakland Raiders
+NFL,16753,Gabe Jackson,Gabe,Jackson,66,OG,Oakland Raiders
+NFL,2969921,Mario Edwards Jr.,Mario,Edwards Jr.,97,DE,Oakland Raiders
+NFL,16710,Khalil Mack,Khalil,Mack,52,DE,Oakland Raiders
+NFL,16528,Benson Mayowa,Benson,Mayowa,95,DE,Oakland Raiders
+NFL,8488,Justin Tuck,Justin,Tuck,91,DE,Oakland Raiders
+NFL,16857,Justin Ellis,Justin,Ellis,78,DT,Oakland Raiders
+NFL,15906,Stacy McGee,Stacy,McGee,92,DT,Oakland Raiders
+NFL,13235,Dan Williams,Dan,Williams,90,DT,Oakland Raiders
+NFL,17447,Denico Autry,Denico,Autry,96,DL,Oakland Raiders
+NFL,13491,C.J. Wilson,C.J.,Wilson,98,DL,Oakland Raiders
+NFL,9424,Lorenzo Alexander,Lorenzo,Alexander,56,LB,Oakland Raiders
+NFL,16463,Ray-Ray Armstrong,Ray-Ray,Armstrong,57,LB,Oakland Raiders
+NFL,2516039,Neiron Ball,Neiron,Ball,58,LB,Oakland Raiders
+NFL,2577219,Ben Heeney,Ben,Heeney,51,LB,Oakland Raiders
+NFL,11271,Curtis Lofton,Curtis,Lofton,50,LB,Oakland Raiders
+NFL,13988,Aldon Smith,Aldon,Smith,99,LB,Oakland Raiders
+NFL,14214,Malcolm Smith,Malcolm,Smith,53,LB,Oakland Raiders
+NFL,16808,TJ Carrie,TJ,Carrie,38,CB,Oakland Raiders
+NFL,14107,Chimdi Chekwa,Chimdi,Chekwa,35,CB,Oakland Raiders
+NFL,15794,D.J. Hayden,D.J.,Hayden,25,CB,Oakland Raiders
+NFL,2513908,Dexter McDonald,Dexter,McDonald,21,CB,Oakland Raiders
+NFL,16940,Keith McGill,Keith,McGill,39,CB,Oakland Raiders
+NFL,13310,Larry Asante,Larry,Asante,42,DB,Oakland Raiders
+NFL,15535,Neiko Thorpe,Neiko,Thorpe,31,DB,Oakland Raiders
+NFL,13257,Nate Allen,Nate,Allen,20,S,Oakland Raiders
+NFL,2511098,Jimmy Hall,Jimmy,Hall,43,S,Oakland Raiders
+NFL,2507931,Keenan Lambert,Keenan,Lambert,32,S,Oakland Raiders
+NFL,13286,Taylor Mays,Taylor,Mays,27,S,Oakland Raiders
+NFL,1442,Charles Woodson,Charles,Woodson,24,FS,Oakland Raiders
+NFL,2148,Sebastian Janikowski,Sebastian,Janikowski,11,PK,Oakland Raiders
+NFL,15389,Marquette King,Marquette,King,7,P,Oakland Raiders
+NFL,9635,Kellen Clemens,Kellen,Clemens,10,QB,San Diego Chargers
+NFL,5529,Philip Rivers,Philip,Rivers,17,QB,San Diego Chargers
+NFL,12489,Donald Brown,Donald,Brown,34,RB,San Diego Chargers
+NFL,2576434,Melvin Gordon,Melvin,Gordon,28,RB,San Diego Chargers
+NFL,17452,Branden Oliver,Branden,Oliver,43,RB,San Diego Chargers
+NFL,11788,Danny Woodhead,Danny,Woodhead,39,RB,San Diego Chargers
+NFL,15818,Keenan Allen,Keenan,Allen,13,WR,San Diego Chargers
+NFL,16962,Torrence Allen,Torrence,Allen,3,WR,San Diego Chargers
+NFL,6016,Malcom Floyd,Malcom,Floyd,80,WR,San Diego Chargers
+NFL,14269,Dontrelle Inman,Dontrelle,Inman,15,WR,San Diego Chargers
+NFL,11458,Stevie Johnson,Stevie,Johnson,11,WR,San Diego Chargers
+NFL,10517,Jacoby Jones,Jacoby,Jones,12,WR,San Diego Chargers
+NFL,5362,Antonio Gates,Antonio,Gates,85,TE,San Diego Chargers
+NFL,14904,Ladarius Green,Ladarius,Green,89,TE,San Diego Chargers
+NFL,12506,David Johnson,David,Johnson,88,TE,San Diego Chargers
+NFL,12550,John Phillips,John,Phillips,83,TE,San Diego Chargers
+NFL,15365,Trevor Robinson,Trevor,Robinson,60,C,San Diego Chargers
+NFL,16754,Chris Watt,Chris,Watt,65,C,San Diego Chargers
+NFL,13777,Mike Windt,Mike,Windt,47,C,San Diego Chargers
+NFL,2516312,Ben Beckwith,Ben,Beckwith,62,G,San Diego Chargers
+NFL,15027,Johnnie Troutman,Johnnie,Troutman,63,G,San Diego Chargers
+NFL,14460,Kenny Wiggins,Kenny,Wiggins,79,G,San Diego Chargers
+NFL,14030,Joe Barksdale,Joe,Barksdale,72,OT,San Diego Chargers
+NFL,11464,King Dunlap,King,Dunlap,77,OT,San Diego Chargers
+NFL,15792,D.J. Fluker,D.J.,Fluker,76,OT,San Diego Chargers
+NFL,13996,Orlando Franklin,Orlando,Franklin,74,OT,San Diego Chargers
+NFL,14134,Chris Hairston,Chris,Hairston,75,OT,San Diego Chargers
+NFL,17457,Craig Watts,Craig,Watts,64,OG,San Diego Chargers
+NFL,13989,Corey Liuget,Corey,Liuget,94,DE,San Diego Chargers
+NFL,2980071,Darius Philon,Darius,Philon,93,DE,San Diego Chargers
+NFL,14953,Kendall Reyes,Kendall,Reyes,91,DE,San Diego Chargers
+NFL,13860,Mitch Unrein,Mitch,Unrein,96,DE,San Diego Chargers
+NFL,13406,Sean Lissemore,Sean,Lissemore,98,DT,San Diego Chargers
+NFL,13411,Ricardo Mathews,Ricardo,Mathews,90,DT,San Diego Chargers
+NFL,17024,Tenny Palepoi,Tenny,Palepoi,95,DT,San Diego Chargers
+NFL,16851,Ryan Carrethers,Ryan,Carrethers,92,NT,San Diego Chargers
+NFL,2511087,Chi Chi Ariguzo,Chi,Chi Ariguzo,40,LB,San Diego Chargers
+NFL,16761,Jeremiah Attaochu,Jeremiah,Attaochu,97,LB,San Diego Chargers
+NFL,13265,Donald Butler,Donald,Butler,56,LB,San Diego Chargers
+NFL,13342,Kavell Conner,Kavell,Conner,53,LB,San Diego Chargers
+NFL,2518789,Nick Dzubnar,Nick,Dzubnar,48,LB,San Diego Chargers
+NFL,2508212,Kyle Emanuel,Kyle,Emanuel,51,LB,San Diego Chargers
+NFL,2512124,Brock Hekking,Brock,Hekking,59,LB,San Diego Chargers
+NFL,14926,Melvin Ingram,Melvin,Ingram,54,LB,San Diego Chargers
+NFL,15580,Cordarro Law,Cordarro,Law,99,LB,San Diego Chargers
+NFL,2579621,Denzel Perryman,Denzel,Perryman,52,LB,San Diego Chargers
+NFL,15867,Manti Te'o,Manti,Te'o,50,LB,San Diego Chargers
+NFL,16000,Tourek Williams,Tourek,Williams,58,LB,San Diego Chargers
+NFL,16987,Chris Davis,Chris,Davis,20,CB,San Diego Chargers
+NFL,11269,Brandon Flowers,Brandon,Flowers,24,CB,San Diego Chargers
+NFL,2510713,Craig Mager,Craig,Mager,29,CB,San Diego Chargers
+NFL,16726,Jason Verrett,Jason,Verrett,22,CB,San Diego Chargers
+NFL,2468497,Steve Williams,Steve,Williams,23,CB,San Diego Chargers
+NFL,16039,Jahleel Addae,Jahleel,Addae,37,DB,San Diego Chargers
+NFL,13238,Patrick Robinson,Patrick,Robinson,26,DB,San Diego Chargers
+NFL,13465,Darrell Stuckey,Darrell,Stuckey,25,DB,San Diego Chargers
+NFL,14059,Jimmy Wilson,Jimmy,Wilson,27,DB,San Diego Chargers
+NFL,2570378,Gordon Hill,Gordon,Hill,41,S,San Diego Chargers
+NFL,17487,Adrian Phillips,Adrian,Phillips,31,S,San Diego Chargers
+NFL,10481,Eric Weddle,Eric,Weddle,32,FS,San Diego Chargers
+NFL,2998120,Josh Lambo,Josh,Lambo,2,PK,San Diego Chargers
+NFL,4607,Mike Scifres,Mike,Scifres,5,P,San Diego Chargers
+NFL,15948,Matt Barkley,Matt,Barkley,9,QB,Arizona Cardinals
+NFL,4459,Carson Palmer,Carson,Palmer,3,QB,Arizona Cardinals
+NFL,10487,Drew Stanton,Drew,Stanton,5,QB,Arizona Cardinals
+NFL,15893,Andre Ellington,Andre,Ellington,38,RB,Arizona Cardinals
+NFL,11258,Chris Johnson,Chris,Johnson,23,RB,Arizona Cardinals
+NFL,2508176,David Johnson,David,Johnson,31,RB,Arizona Cardinals
+NFL,15981,Stepfan Taylor,Stepfan,Taylor,30,RB,Arizona Cardinals
+NFL,16024,Kerwynn Williams,Kerwynn,Williams,33,RB,Arizona Cardinals
+NFL,16172,Jaron Brown,Jaron,Brown,13,WR,Arizona Cardinals
+NFL,16804,John Brown,John,Brown,12,WR,Arizona Cardinals
+NFL,5528,Larry Fitzgerald,Larry,Fitzgerald,11,WR,Arizona Cardinals
+NFL,14908,Michael Floyd,Michael,Floyd,15,WR,Arizona Cardinals
+NFL,15564,Brittan Golden,Brittan,Golden,10,WR,Arizona Cardinals
+NFL,2515759,J.J. Nelson,J.J.,Nelson,14,WR,Arizona Cardinals
+NFL,2512192,Gerald Christian,Gerald,Christian,83,TE,Arizona Cardinals
+NFL,15773,Darren Fells,Darren,Fells,85,TE,Arizona Cardinals
+NFL,13228,Jermaine Gresham,Jermaine,Gresham,84,TE,Arizona Cardinals
+NFL,15775,Ifeanyi Momah,Ifeanyi,Momah,80,TE,Arizona Cardinals
+NFL,16797,Troy Niklas,Troy,Niklas,87,TE,Arizona Cardinals
+NFL,2482,Mike Leach,Mike,Leach,82,C,Arizona Cardinals
+NFL,11075,Lyle Sendlein,Lyle,Sendlein,63,C,Arizona Cardinals
+NFL,12726,A.Q. Shipley,A.Q.,Shipley,53,C,Arizona Cardinals
+NFL,15901,Earl Watford,Earl,Watford,78,G,Arizona Cardinals
+NFL,17330,John Fullington,John,Fullington,75,OT,Arizona Cardinals
+NFL,2971048,D.J. Humphries,D.J.,Humphries,74,OT,Arizona Cardinals
+NFL,15096,Bobby Massie,Bobby,Massie,70,OT,Arizona Cardinals
+NFL,15284,Bradley Sowell,Bradley,Sowell,79,OT,Arizona Cardinals
+NFL,13302,Jared Veldheer,Jared,Veldheer,68,OT,Arizona Cardinals
+NFL,15787,Jonathan Cooper,Jonathan,Cooper,61,OG,Arizona Cardinals
+NFL,13246,Mike Iupati,Mike,Iupati,76,OG,Arizona Cardinals
+NFL,13403,Ted Larsen,Ted,Larsen,62,OG,Arizona Cardinals
+NFL,11284,Calais Campbell,Calais,Campbell,93,DE,Arizona Cardinals
+NFL,17017,Josh Mauro,Josh,Mauro,97,DE,Arizona Cardinals
+NFL,4524,Cory Redding,Cory,Redding,90,DE,Arizona Cardinals
+NFL,9677,Frostee Rucker,Frostee,Rucker,92,DE,Arizona Cardinals
+NFL,16840,Ed Stinson,Ed,Stinson,91,DE,Arizona Cardinals
+NFL,2507719,Rodney Gunter,Rodney,Gunter,95,DT,Arizona Cardinals
+NFL,13292,Corey Peters,Corey,Peters,98,DT,Arizona Cardinals
+NFL,2508191,Xavier Williams,Xavier,Williams,94,DT,Arizona Cardinals
+NFL,16181,Kenny Demens,Kenny,Demens,54,LB,Arizona Cardinals
+NFL,2513206,Alani Fua,Alani,Fua,59,LB,Arizona Cardinals
+NFL,2971432,Markus Golden,Markus,Golden,44,LB,Arizona Cardinals
+NFL,16764,Kareem Martin,Kareem,Martin,96,LB,Arizona Cardinals
+NFL,15856,Kevin Minter,Kevin,Minter,51,LB,Arizona Cardinals
+NFL,15976,Alex Okafor,Alex,Okafor,57,LB,Arizona Cardinals
+NFL,2589809,Shaq Riddick,Shaq,Riddick,47,LB,Arizona Cardinals
+NFL,2520854,Zack Wagenmann,Zack,Wagenmann,94,LB,Arizona Cardinals
+NFL,13243,Sean Weatherspoon,Sean,Weatherspoon,55,LB,Arizona Cardinals
+NFL,10490,LaMarr Woodley,LaMarr,Woodley,56,LB,Arizona Cardinals
+NFL,15089,Justin Bethel,Justin,Bethel,28,CB,Arizona Cardinals
+NFL,13980,Patrick Peterson,Patrick,Peterson,21,CB,Arizona Cardinals
+NFL,12714,Jerraud Powers,Jerraud,Powers,25,CB,Arizona Cardinals
+NFL,3894940,Brandon Person,Brandon,Person,34,DB,Arizona Cardinals
+NFL,12645,Chris Clemons,Chris,Clemons,29,S,Arizona Cardinals
+NFL,16723,Deone Bucannon,Deone,Bucannon,20,SS,Arizona Cardinals
+NFL,16195,Tony Jefferson,Tony,Jefferson,22,SS,Arizona Cardinals
+NFL,12674,Rashad Johnson,Rashad,Johnson,26,FS,Arizona Cardinals
+NFL,15851,Tyrann Mathieu,Tyrann,Mathieu,32,FS,Arizona Cardinals
+NFL,16976,Chandler Catanzaro,Chandler,Catanzaro,7,PK,Arizona Cardinals
+NFL,15209,Drew Butler,Drew,Butler,2,P,Arizona Cardinals
+NFL,13987,Blaine Gabbert,Blaine,Gabbert,2,QB,836,San Francisco 49ers
+NFL,14001,Colin Kaepernick,Colin,Kaepernick,7,QB,837,San Francisco 49ers
+NFL,9588,Reggie Bush,Reggie,Bush,23,RB,838,San Francisco 49ers
+NFL,3025433,Mike Davis,Mike,Davis,22,RB,839,San Francisco 49ers
+NFL,3423412,Jarryd Hayne,Jarryd,Hayne,38,RB,840,San Francisco 49ers
+NFL,16777,Carlos Hyde,Carlos,Hyde,28,RB,841,San Francisco 49ers
+NFL,14083,Bruce Miller,Bruce,Miller,49,FB,842,San Francisco 49ers
+NFL,2514542,Dres Anderson,Dres,Anderson,6,WR,843,San Francisco 49ers
+NFL,4512,Anquan Boldin,Anquan,Boldin,81,WR,844,San Francisco 49ers
+NFL,16946,Bruce Ellington,Bruce,Ellington,10,WR,846,San Francisco 49ers
+NFL,16026,Quinton Patton,Quinton,Patton,11,WR,847,San Francisco 49ers
+NFL,11280,Jerome Simpson,Jerome,Simpson,14,WR,848,San Francisco 49ers
+NFL,14032,Torrey Smith,Torrey,Smith,82,WR,849,San Francisco 49ers
+NFL,2515962,DeAndrew White,DeAndrew,White,18,WR,850,San Francisco 49ers
+NFL,2577661,Busta Anderson,Busta,Anderson,80,TE,851,San Francisco 49ers
+NFL,2514206,Blake Bell,Blake,Bell,84,TE,852,San Francisco 49ers
+NFL,15204,Garrett Celek,Garrett,Celek,88,TE,853,San Francisco 49ers
+NFL,9592,Vernon Davis,Vernon,Davis,85,TE,854,San Francisco 49ers
+NFL,15853,Vance McDonald,Vance,McDonald,89,TE,856,San Francisco 49ers
+NFL,2507667,Nicholas Easton,Nicholas,Easton,69,C,857,San Francisco 49ers
+NFL,16788,Marcus Martin,Marcus,Martin,66,C,858,San Francisco 49ers
+NFL,3043109,Trent Brown,Trent,Brown,77,OL,859,San Francisco 49ers
+NFL,16385,Jordan Devey,Jordan,Devey,65,OL,860,San Francisco 49ers
+NFL,2516067,Ian Silberman,Ian,Silberman,62,OL,861,San Francisco 49ers
+NFL,9399,Erik Pears,Erik,Pears,71,OT,862,San Francisco 49ers
+NFL,10472,Joe Staley,Joe,Staley,74,OT,863,San Francisco 49ers
+NFL,12910,Alex Boone,Alex,Boone,75,OG,864,San Francisco 49ers
+NFL,16739,Brandon Thomas,Brandon,Thomas,60,OG,865,San Francisco 49ers
+NFL,15829,Tank Carradine,Tank,Carradine,95,DE,867,San Francisco 49ers
+NFL,15430,Tony Jerod-Eddie,Tony,Jerod-Eddie,63,DE,868,San Francisco 49ers
+NFL,16028,Quinton Dial,Quinton,Dial,92,DT,869,San Francisco 49ers
+NFL,16377,Mike Purcell,Mike,Purcell,64,DT,870,San Francisco 49ers
+NFL,14461,Ian Williams,Ian,Williams,93,DT,871,San Francisco 49ers
+NFL,2971275,Arik Armstead,Arik,Armstead,91,DL,872,San Francisco 49ers
+NFL,11239,Glenn Dorsey,Glenn,Dorsey,90,DL,873,San Francisco 49ers
+NFL,14471,Nick Bellore,Nick,Bellore,50,LB,874,San Francisco 49ers
+NFL,13262,NaVorro Bowman,NaVorro,Bowman,53,LB,875,San Francisco 49ers
+NFL,10138,Ahmad Brooks,Ahmad,Brooks,55,LB,876,San Francisco 49ers
+NFL,2979652,Eli Harold,Eli,Harold,58,LB,877,San Francisco 49ers
+NFL,15849,Corey Lemonier,Corey,Lemonier,96,LB,878,San Francisco 49ers
+NFL,16941,Aaron Lynch,Aaron,Lynch,59,LB,879,San Francisco 49ers
+NFL,17251,Shayne Skov,Shayne,Skov,56,LB,880,San Francisco 49ers
+NFL,13988,Aldon Smith,Aldon,Smith,99,LB,881,San Francisco 49ers
+NFL,14859,Michael Wilhoite,Michael,Wilhoite,57,LB,882,San Francisco 49ers
+NFL,16914,Kenneth Acker,Kenneth,Acker,20,CB,883,San Francisco 49ers
+NFL,13681,Tramaine Brock,Tramaine,Brock,26,CB,884,San Francisco 49ers
+NFL,16893,Dontae Johnson,Dontae,Johnson,36,CB,885,San Francisco 49ers
+NFL,16930,Keith Reaser,Keith,Reaser,27,CB,886,San Francisco 49ers
+NFL,17212,L.J. McCray,L.J.,McCray,31,DB,887,San Francisco 49ers
+NFL,14010,Shareece Wright,Shareece,Wright,24,DB,888,San Francisco 49ers
+NFL,9793,Antoine Bethea,Antoine,Bethea,41,SS,889,San Francisco 49ers
+NFL,2509844,Jaquiski Tartt,Jaquiski,Tartt,29,SS,890,San Francisco 49ers
+NFL,16717,Jimmie Ward,Jimmie,Ward,25,SS,891,San Francisco 49ers
+NFL,15809,Eric Reid,Eric,Reid,35,FS,892,San Francisco 49ers
+NFL,1440,Phil Dawson,Phil,Dawson,9,PK,894,San Francisco 49ers
+NFL,2977680,Bradley Pinion,Bradley,Pinion,5,P,895,San Francisco 49ers
+NFL,14426,Kyle Nelson,Kyle,Nelson,86,LS,896,San Francisco 49ers
+NFL,9650,Tarvaris Jackson,Tarvaris,Jackson,7,QB,Seattle Seahawks
+NFL,14881,Russell Wilson,Russell,Wilson,3,QB,Seattle Seahawks
+NFL,10195,Fred Jackson,Fred,Jackson,22,RB,Seattle Seahawks
+NFL,10456,Marshawn Lynch,Marshawn,Lynch,24,RB,Seattle Seahawks
+NFL,2576237,Thomas Rawls,Thomas,Rawls,34,RB,Seattle Seahawks
+NFL,15351,Derrick Coleman,Derrick,Coleman,40,FB,Seattle Seahawks
+NFL,13913,Will Tukuafu,Will,Tukuafu,46,FB,Seattle Seahawks
+NFL,14221,Doug Baldwin,Doug,Baldwin,89,WR,Seattle Seahawks
+NFL,15899,B.J. Daniels,B.J.,Daniels,11,WR,Seattle Seahawks
+NFL,15428,Jermaine Kearse,Jermaine,Kearse,15,WR,Seattle Seahawks
+NFL,2577327,Tyler Lockett,Tyler,Lockett,16,WR,Seattle Seahawks
+NFL,14280,Ricardo Lockette,Ricardo,Lockette,83,WR,Seattle Seahawks
+NFL,14285,Chris Matthews,Chris,Matthews,13,WR,Seattle Seahawks
+NFL,16781,Paul Richardson,Paul,Richardson,10,WR,Seattle Seahawks
+NFL,13232,Jimmy Graham,Jimmy,Graham,88,TE,Seattle Seahawks
+NFL,15670,Cooper Helfet,Cooper,Helfet,84,TE,Seattle Seahawks
+NFL,16121,Luke Willson,Luke,Willson,82,TE,Seattle Seahawks
+NFL,13573,Clint Gresham,Clint,Gresham,49,C,Seattle Seahawks
+NFL,16557,Patrick Lewis,Patrick,Lewis,65,C,Seattle Seahawks
+NFL,2515893,Kristjan Sokoli,Kristjan,Sokoli,67,C,Seattle Seahawks
+NFL,16044,Alvin Bailey,Alvin,Bailey,78,G,Seattle Seahawks
+NFL,16742,Justin Britt,Justin,Britt,68,OT,Seattle Seahawks
+NFL,16997,Garry Gilliam,Garry,Gilliam,79,OT,Seattle Seahawks
+NFL,13242,Russell Okung,Russell,Okung,76,OT,Seattle Seahawks
+NFL,2976632,Mark Glowinski,Mark,Glowinski,63,OG,Seattle Seahawks
+NFL,15366,Drew Nowak,Drew,Nowak,62,OG,Seattle Seahawks
+NFL,15025,J.R. Sweezy,J.R.,Sweezy,64,OG,Seattle Seahawks
+NFL,11326,Cliff Avril,Cliff,Avril,56,DE,Seattle Seahawks
+NFL,12762,Michael Bennett,Michael,Bennett,72,DE,Seattle Seahawks
+NFL,2576242,Frank Clark,Frank,Clark,55,DE,Seattle Seahawks
+NFL,14377,Demarcus Dobbs,Demarcus,Dobbs,95,DE,Seattle Seahawks
+NFL,16873,Cassius Marsh,Cassius,Marsh,91,DE,Seattle Seahawks
+NFL,16531,Ryan Robinson,Ryan,Robinson,44,DE,Seattle Seahawks
+NFL,15843,Jordan Hill,Jordan,Hill,97,DT,Seattle Seahawks
+NFL,15905,David King,David,King,93,DT,Seattle Seahawks
+NFL,10529,Brandon Mebane,Brandon,Mebane,92,DT,Seattle Seahawks
+NFL,11424,Ahtyba Rubin,Ahtyba,Rubin,77,DT,Seattle Seahawks
+NFL,16983,Brock Coyle,Brock,Coyle,52,LB,Seattle Seahawks
+NFL,14946,Bruce Irvin,Bruce,Irvin,51,LB,Seattle Seahawks
+NFL,14292,Mike Morgan,Mike,Morgan,57,LB,Seattle Seahawks
+NFL,16888,Kevin Pierre-Louis,Kevin,Pierre-Louis,58,LB,Seattle Seahawks
+NFL,14979,Bobby Wagner,Bobby,Wagner,54,LB,Seattle Seahawks
+NFL,14140,K.J. Wright,K.J.,Wright,50,LB,Seattle Seahawks
+NFL,16131,Marcus Burley,Marcus,Burley,28,CB,Seattle Seahawks
+NFL,15087,Jeremy Lane,Jeremy,Lane,20,CB,Seattle Seahawks
+NFL,17245,Mohammed Seisay,Mohammed,Seisay,39,CB,Seattle Seahawks
+NFL,14086,Richard Sherman,Richard,Sherman,25,CB,Seattle Seahawks
+NFL,16021,Tharold Simon,Tharold,Simon,27,CB,Seattle Seahawks
+NFL,2588098,Tye Smith,Tye,Smith,21,CB,Seattle Seahawks
+NFL,11463,Cary Williams,Cary,Williams,26,DB,Seattle Seahawks
+NFL,15305,Kelcie McCray,Kelcie,McCray,33,S,Seattle Seahawks
+NFL,15419,DeShawn Shead,DeShawn,Shead,35,S,Seattle Seahawks
+NFL,16966,Dion Bailey,Dion,Bailey,37,FS,Seattle Seahawks
+NFL,16450,Steven Terrell,Steven,Terrell,23,FS,Seattle Seahawks
+NFL,13251,Earl Thomas,Earl,Thomas,29,FS,Seattle Seahawks
+NFL,11923,Steven Hauschka,Steven,Hauschka,4,PK,Seattle Seahawks
+NFL,10238,Jon Ryan,Jon,Ryan,9,P,Seattle Seahawks
+NFL,14877,Nick Foles,Nick,Foles,5,QB,960,St. Louis Rams
+NFL,15168,Case Keenum,Case,Keenum,17,QB,961,St. Louis Rams
+NFL,2517017,Sean Mannion,Sean,Mannion,14,QB,962,St. Louis Rams
+NFL,16055,Benjamin Cunningham,Benjamin,Cunningham,36,RB,963,St. Louis Rams
+NFL,2977644,Todd Gurley,Todd,Gurley,30,RB,964,St. Louis Rams
+NFL,16784,Tre Mason,Tre,Mason,27,RB,965,St. Louis Rams
+NFL,14888,Isaiah Pead,Isaiah,Pead,24,RB,966,St. Louis Rams
+NFL,14820,Chase Reynolds,Chase,Reynolds,34,RB,967,St. Louis Rams
+NFL,17282,Trey Watts,Trey,Watts,42,RB,968,St. Louis Rams
+NFL,15786,Tavon Austin,Tavon,Austin,11,WR,969,St. Louis Rams
+NFL,15822,Stedman Bailey,Stedman,Bailey,12,WR,971,St. Louis Rams
+NFL,12556,Kenny Britt,Kenny,Britt,18,WR,972,St. Louis Rams
+NFL,2984816,Isiah Ferguson,Isiah,Ferguson,2,WR,973,St. Louis Rams
+NFL,15078,Chris Givens,Chris,Givens,19,WR,974,St. Louis Rams
+NFL,2577645,Bradley Marquez,Bradley,Marquez,15,WR,975,St. Louis Rams
+NFL,14914,Brian Quick,Brian,Quick,83,WR,976,St. Louis Rams
+NFL,12537,Jared Cook,Jared,Cook,89,TE,977,St. Louis Rams
+NFL,15226,Cory Harkey,Cory,Harkey,46,TE,978,St. Louis Rams
+NFL,14007,Lance Kendricks,Lance,Kendricks,88,TE,980,St. Louis Rams
+NFL,14517,Tim Barnes,Tim,Barnes,61,C,981,St. Louis Rams
+NFL,14676,Jake McQuaide,Jake,McQuaide,44,C,982,St. Louis Rams
+NFL,16954,Demetrius Rhaney,Demetrius,Rhaney,65,C,983,St. Louis Rams
+NFL,13294,Rodger Saffold,Rodger,Saffold,76,G,984,St. Louis Rams
+NFL,2517252,Cody Wichmann,Cody,Wichmann,69,G,985,St. Louis Rams
+NFL,2576647,Jamon Brown,Jamon,Brown,68,OT,986,St. Louis Rams
+NFL,2511692,Andrew Donnal,Andrew,Donnal,64,OT,987,St. Louis Rams
+NFL,2515613,Robert Havenstein,Robert,Havenstein,79,OT,988,St. Louis Rams
+NFL,11234,Jake Long,Jake,Long,77,OT,989,St. Louis Rams
+NFL,12718,Garrett Reynolds,Garrett,Reynolds,71,OT,990,St. Louis Rams
+NFL,7439,Greg Robinson,Greg,Robinson,73,OT,991,St. Louis Rams
+NFL,2577503,Darrell Williams,Darrell,Williams,63,OT,992,St. Louis Rams
+NFL,11337,William Hayes,William,Hayes,95,DE,994,St. Louis Rams
+NFL,11236,Chris Long,Chris,Long,91,DE,995,St. Louis Rams
+NFL,13984,Robert Quinn,Robert,Quinn,94,DE,996,St. Louis Rams
+NFL,13457,Eugene Sims,Eugene,Sims,97,DE,997,St. Louis Rams
+NFL,14944,Michael Brockers,Michael,Brockers,90,DT,998,St. Louis Rams
+NFL,16716,Aaron Donald,Aaron,Donald,99,DT,999,St. Louis Rams
+NFL,13990,Nick Fairley,Nick,Fairley,98,DT,1000,St. Louis Rams
+NFL,17285,Ethan Westbrooks,Ethan,Westbrooks,93,DT,1001,St. Louis Rams
+NFL,14015,Akeem Ayers,Akeem,Ayers,56,LB,1002,St. Louis Rams
+NFL,16299,Daren Bates,Daren,Bates,53,LB,1003,St. Louis Rams
+NFL,2512999,Bryce Hager,Bryce,Hager,54,LB,1004,St. Louis Rams
+NFL,12454,James Laurinaitis,James,Laurinaitis,55,LB,1005,St. Louis Rams
+NFL,2577602,Cameron Lynch,Cameron,Lynch,50,LB,1006,St. Louis Rams
+NFL,15806,Alec Ogletree,Alec,Ogletree,52,LB,1007,St. Louis Rams
+NFL,16898,E.J. Gaines,E.J.,Gaines,33,CB,1008,St. Louis Rams
+NFL,14974,Janoris Jenkins,Janoris,Jenkins,21,CB,1009,St. Louis Rams
+NFL,14989,Trumaine Johnson,Trumaine,Johnson,22,CB,1010,St. Louis Rams
+NFL,16769,Lamarcus Joyner,Lamarcus,Joyner,20,CB,1011,St. Louis Rams
+NFL,17241,Marcus Roberson,Marcus,Roberson,47,CB,1012,St. Louis Rams
+NFL,16286,Cody Davis,Cody,Davis,38,DB,1013,St. Louis Rams
+NFL,16937,Maurice Alexander,Maurice,Alexander,31,SS,1014,St. Louis Rams
+NFL,14932,Mark Barron,Mark,Barron,26,SS,1015,St. Louis Rams
+NFL,15852,T.J. McDonald,T.J.,McDonald,25,SS,1016,St. Louis Rams
+NFL,15222,Rodney McLeod,Rodney,McLeod,23,FS,1017,St. Louis Rams
+NFL,14993,Greg Zuerlein,Greg,Zuerlein,4,PK,1019,St. Louis Rams
+NFL,15153,Johnny Hekker,Johnny,Hekker,6,P,1020,St. Louis Rams
+NFL,11252,Joe Flacco,Joe,Flacco,5,QB,Baltimore Ravens
+NFL,5615,Matt Schaub,Matt,Schaub,8,QB,Baltimore Ravens
+NFL,2577253,Javorius Allen,Javorius,Allen,37,RB,Baltimore Ravens
+NFL,11467,Justin Forsett,Justin,Forsett,29,RB,Baltimore Ravens
+NFL,2577283,Terrence Magee,Terrence,Magee,30,RB,Baltimore Ravens
+NFL,16950,Lorenzo Taliaferro,Lorenzo,Taliaferro,34,RB,Baltimore Ravens
+NFL,16002,Kyle Juszczyk,Kyle,Juszczyk,44,FB,Baltimore Ravens
+NFL,14583,Kamar Aiken,Kamar,Aiken,11,WR,Baltimore Ravens
+NFL,16581,Marlon Brown,Marlon,Brown,14,WR,Baltimore Ravens
+NFL,16832,Michael Campanaro,Michael,Campanaro,15,WR,Baltimore Ravens
+NFL,2972460,Breshad Perriman,Breshad,Perriman,18,WR,Baltimore Ravens
+NFL,2622,Steve Smith Sr.,Steve,Smith Sr.,89,WR,Baltimore Ravens
+NFL,2576925,Darren Waller,Darren,Waller,12,WR,Baltimore Ravens
+NFL,3059735,Cam Worthy,Cam,Worthy,81,WR,Baltimore Ravens
+NFL,2574591,Nick Boyle,Nick,Boyle,82,TE,Baltimore Ravens
+NFL,16775,Crockett Gillmore,Crockett,Gillmore,80,TE,Baltimore Ravens
+NFL,13231,Dennis Pitta,Dennis,Pitta,88,TE,Baltimore Ravens
+NFL,14433,Allen Reisner,Allen,Reisner,85,TE,Baltimore Ravens
+NFL,2970726,Maxx Williams,Maxx,Williams,87,TE,Baltimore Ravens
+NFL,13848,Morgan Cox,Morgan,Cox,46,C,Baltimore Ravens
+NFL,16038,Ryan Jensen,Ryan,Jensen,66,C,Baltimore Ravens
+NFL,11317,Jeremy Zuttah,Jeremy,Zuttah,53,C,Baltimore Ravens
+NFL,17178,James Hurst,James,Hurst,74,OT,Baltimore Ravens
+NFL,12620,Eugene Monroe,Eugene,Monroe,60,OT,Baltimore Ravens
+NFL,15900,Rick Wagner,Rick,Wagner,71,OT,Baltimore Ravens
+NFL,14957,Kelechi Osemele,Kelechi,Osemele,72,OG,Baltimore Ravens
+NFL,16868,John Urschel,John,Urschel,64,OG,Baltimore Ravens
+NFL,10530,Marshal Yanda,Marshal,Yanda,73,OG,Baltimore Ravens
+NFL,8546,Chris Canty,Chris,Canty,99,DE,Baltimore Ravens
+NFL,14185,Lawrence Guy,Lawrence,Guy,93,DE,Baltimore Ravens
+NFL,16785,Timmy Jernigan,Timmy,Jernigan,97,DE,Baltimore Ravens
+NFL,15937,Kapron Lewis-Moore,Kapron,Lewis-Moore,95,DE,Baltimore Ravens
+NFL,17093,Zach Thompson,Zach,Thompson,92,DE,Baltimore Ravens
+NFL,16831,Brent Urban,Brent,Urban,96,DE,Baltimore Ravens
+NFL,15103,Christo Bilukidi,Christo,Bilukidi,79,DT,Baltimore Ravens
+NFL,2511690,Carl Davis,Carl,Davis,94,DT,Baltimore Ravens
+NFL,15875,Brandon Williams,Brandon,Williams,98,DT,Baltimore Ravens
+NFL,5552,Jason Babin,Jason,Babin,56,LB,Baltimore Ravens
+NFL,15828,Arthur Brown,Arthur,Brown,59,LB,Baltimore Ravens
+NFL,9712,Elvis Dumervil,Elvis,Dumervil,58,LB,Baltimore Ravens
+NFL,13851,Albert McClellan,Albert,McClellan,50,LB,Baltimore Ravens
+NFL,16720,C.J. Mosley,C.J.,Mosley,57,LB,Baltimore Ravens
+NFL,17300,Zachary Orr,Zachary,Orr,54,LB,Baltimore Ravens
+NFL,5564,Daryl Smith,Daryl,Smith,51,LB,Baltimore Ravens
+NFL,3043168,Za'Darius Smith,Za'Darius,Smith,90,LB,Baltimore Ravens
+NFL,4468,Terrell Suggs,Terrell,Suggs,55,LB,Baltimore Ravens
+NFL,14970,Courtney Upshaw,Courtney,Upshaw,91,LB,Baltimore Ravens
+NFL,13845,Anthony Levine,Anthony,Levine,41,CB,Baltimore Ravens
+NFL,16270,Rashaan Melvin,Rashaan,Melvin,38,CB,Baltimore Ravens
+NFL,13963,Jimmy Smith,Jimmy,Smith,22,CB,Baltimore Ravens
+NFL,2567992,Tray Walker,Tray,Walker,25,CB,Baltimore Ravens
+NFL,12747,Lardarius Webb,Lardarius,Webb,21,CB,Baltimore Ravens
+NFL,11494,Kyle Arrington,Kyle,Arrington,24,DB,Baltimore Ravens
+NFL,13404,Kendrick Lewis,Kendrick,Lewis,23,DB,Baltimore Ravens
+NFL,16419,Brynden Trawick,Brynden,Trawick,28,DB,Baltimore Ravens
+NFL,15789,Matt Elam,Matt,Elam,26,S,Baltimore Ravens
+NFL,15621,Will Hill,Will,Hill,33,SS,Baltimore Ravens
+NFL,16768,Terrence Brooks,Terrence,Brooks,31,FS,Baltimore Ravens
+NFL,15683,Justin Tucker,Justin,Tucker,9,PK,Baltimore Ravens
+NFL,9789,Sam Koch,Sam,Koch,4,P,Baltimore Ravens
+NFL,14012,Andy Dalton,Andy,Dalton,14,QB,Cincinnati Bengals
+NFL,16810,AJ McCarron,AJ,McCarron,5,QB,Cincinnati Bengals
+NFL,15826,Giovani Bernard,Giovani,Bernard,25,RB,Cincinnati Bengals
+NFL,15971,Rex Burkhead,Rex,Burkhead,33,RB,Cincinnati Bengals
+NFL,16803,Jeremy Hill,Jeremy,Hill,32,RB,Cincinnati Bengals
+NFL,12519,Cedric Peerman,Cedric,Peerman,30,RB,Cincinnati Bengals
+NFL,3052686,Mario Alford,Mario,Alford,15,WR,Cincinnati Bengals
+NFL,13983,A.J. Green,A.J.,Green,18,WR,Cincinnati Bengals
+NFL,15072,Marvin Jones,Marvin,Jones,82,WR,Cincinnati Bengals
+NFL,14024,Greg Little,Greg,Little,11,WR,Cincinnati Bengals
+NFL,14922,Mohamed Sanu,Mohamed,Sanu,12,WR,Cincinnati Bengals
+NFL,12597,Brandon Tate,Brandon,Tate,19,WR,Cincinnati Bengals
+NFL,16922,James Wright,James,Wright,00,WR,Cincinnati Bengals
+NFL,15788,Tyler Eifert,Tyler,Eifert,85,TE,Cincinnati Bengals
+NFL,17169,Ryan Hewitt,Ryan,Hewitt,89,TE,Cincinnati Bengals
+NFL,2582410,Tyler Kroft,Tyler,Kroft,81,TE,Cincinnati Bengals
+NFL,2574576,C.J. Uzomah,C.J.,Uzomah,87,TE,Cincinnati Bengals
+NFL,16876,Russell Bodine,Russell,Bodine,61,C,Cincinnati Bengals
+NFL,10686,Clark Harris,Clark,Harris,46,C,Cincinnati Bengals
+NFL,15915,T.J. Johnson,T.J.,Johnson,60,C,Cincinnati Bengals
+NFL,2576971,Jake Fisher,Jake,Fisher,74,OT,Cincinnati Bengals
+NFL,12622,Andre Smith,Andre,Smith,71,OT,Cincinnati Bengals
+NFL,9641,Andrew Whitworth,Andrew,Whitworth,77,OT,Cincinnati Bengals
+NFL,9652,Eric Winston,Eric,Winston,73,OT,Cincinnati Bengals
+NFL,14178,Clint Boling,Clint,Boling,65,OG,Cincinnati Bengals
+NFL,14931,Kevin Zeitler,Kevin,Zeitler,68,OG,Cincinnati Bengals
+NFL,16758,Will Clarke,Will,Clarke,93,DE,Cincinnati Bengals
+NFL,13274,Carlos Dunlap,Carlos,Dunlap,96,DE,Cincinnati Bengals
+NFL,11809,Wallace Gilberry,Wallace,Gilberry,95,DE,Cincinnati Bengals
+NFL,15844,Margus Hunt,Margus,Hunt,99,DE,Cincinnati Bengals
+NFL,12436,Michael Johnson,Michael,Johnson,90,DE,Cincinnati Bengals
+NFL,13311,Geno Atkins,Geno,Atkins,97,DT,Cincinnati Bengals
+NFL,3043238,Marcus Hardison,Marcus,Hardison,91,DT,Cincinnati Bengals
+NFL,9709,Domata Peko,Domata,Peko,94,DT,Cincinnati Bengals
+NFL,11311,Pat Sims,Pat,Sims,92,DT,Cincinnati Bengals
+NFL,14965,Brandon Thompson,Brandon,Thompson,98,DT,Cincinnati Bengals
+NFL,15246,Vontaze Burfict,Vontaze,Burfict,55,LB,Cincinnati Bengals
+NFL,14174,Chris Carter,Chris,Carter,51,LB,Cincinnati Bengals
+NFL,2971555,P.J. Dawson,P.J.,Dawson,47,LB,Cincinnati Bengals
+NFL,16924,Marquis Flowers,Marquis,Flowers,53,LB,Cincinnati Bengals
+NFL,9591,A.J. Hawk,A.J.,Hawk,50,LB,Cincinnati Bengals
+NFL,15640,Emmanuel Lamur,Emmanuel,Lamur,59,LB,Cincinnati Bengals
+NFL,12455,Rey Maualuga,Rey,Maualuga,58,LB,Cincinnati Bengals
+NFL,15986,Sean Porter,Sean,Porter,56,LB,Cincinnati Bengals
+NFL,13766,Vincent Rey,Vincent,Rey,57,LB,Cincinnati Bengals
+NFL,16718,Darqueze Dennard,Darqueze,Dennard,21,CB,Cincinnati Bengals
+NFL,10462,Leon Hall,Leon,Hall,29,CB,Cincinnati Bengals
+NFL,8421,Adam Jones,Adam,Jones,24,CB,Cincinnati Bengals
+NFL,14940,Dre Kirkpatrick,Dre,Kirkpatrick,27,CB,Cincinnati Bengals
+NFL,15713,Chris Lewis-Harris,Chris,Lewis-Harris,37,CB,Cincinnati Bengals
+NFL,2971605,Josh Shaw,Josh,Shaw,26,CB,Cincinnati Bengals
+NFL,15085,George Iloka,George,Iloka,43,SS,Cincinnati Bengals
+NFL,15877,Shawn Williams,Shawn,Williams,36,SS,Cincinnati Bengals
+NFL,10465,Reggie Nelson,Reggie,Nelson,20,FS,Cincinnati Bengals
+NFL,2517248,Derron Smith,Derron,Smith,40,FS,Cincinnati Bengals
+NFL,8461,Mike Nugent,Mike,Nugent,2,PK,Cincinnati Bengals
+NFL,12669,Kevin Huber,Kevin,Huber,10,P,Cincinnati Bengals
+NFL,15187,Austin Davis,Austin,Davis,7,QB,Cleveland Browns
+NFL,16736,Johnny Manziel,Johnny,Manziel,2,QB,Cleveland Browns
+NFL,3609,Josh McCown,Josh,McCown,13,QB,Cleveland Browns
+NFL,17247,Connor Shaw,Connor,Shaw,9,QB,Cleveland Browns
+NFL,17133,Isaiah Crowell,Isaiah,Crowell,34,RB,Cleveland Browns
+NFL,14518,Shaun Draughn,Shaun,Draughn,20,RB,Cleveland Browns
+NFL,2969962,Duke Johnson Jr.,Duke,Johnson Jr.,29,RB,Cleveland Browns
+NFL,14894,Robert Turbin,Robert,Turbin,27,RB,Cleveland Browns
+NFL,2516316,Malcolm Johnson,Malcolm,Johnson,42,FB,Cleveland Browns
+NFL,15062,Travis Benjamin,Travis,Benjamin,11,WR,Cleveland Browns
+NFL,10467,Dwayne Bowe,Dwayne,Bowe,80,WR,Cleveland Browns
+NFL,17437,Taylor Gabriel,Taylor,Gabriel,18,WR,Cleveland Browns
+NFL,15705,Josh Gordon,Josh,Gordon,12,WR,Cleveland Browns
+NFL,12568,Brian Hartline,Brian,Hartline,83,WR,Cleveland Browns
+NFL,13958,Andrew Hawkins,Andrew,Hawkins,16,WR,Cleveland Browns
+NFL,13616,Marlon Moore,Marlon,Moore,15,WR,Cleveland Browns
+NFL,11364,Gary Barnidge,Gary,Barnidge,82,TE,Cleveland Browns
+NFL,3039924,E.J. Bibbs,E.J.,Bibbs,88,TE,Cleveland Browns
+NFL,13357,Jim Dray,Jim,Dray,81,TE,Cleveland Browns
+NFL,14009,Rob Housler,Rob,Housler,84,TE,Cleveland Browns
+NFL,15379,Charley Hughlett,Charley,Hughlett,47,C,Cleveland Browns
+NFL,12616,Alex Mack,Alex,Mack,55,C,Cleveland Browns
+NFL,15975,Michael Bowie,Michael,Bowie,61,OL,Cleveland Browns
+NFL,15347,Austin Pasztor,Austin,Pasztor,67,OL,Cleveland Browns
+NFL,2512504,Cameron Erving,Cameron,Erving,74,OT,Cleveland Browns
+NFL,14951,Mitchell Schwartz,Mitchell,Schwartz,72,OT,Cleveland Browns
+NFL,10448,Joe Thomas,Joe,Thomas,73,OT,Cleveland Browns
+NFL,16740,Joel Bitonio,Joel,Bitonio,75,OG,Cleveland Browns
+NFL,11299,John Greco,John,Greco,77,OG,Cleveland Browns
+NFL,16037,Armonty Bryant,Armonty,Bryant,95,DE,Cleveland Browns
+NFL,12949,Desmond Bryant,Desmond,Bryant,92,DE,Cleveland Browns
+NFL,14954,John Hughes III,John,Hughes III,93,DE,Cleveland Browns
+NFL,2578408,Xavier Cooper,Xavier,Cooper,96,DT,Cleveland Browns
+NFL,2578384,Danny Shelton,Danny,Shelton,71,DT,Cleveland Browns
+NFL,5596,Randy Starks,Randy,Starks,94,DT,Cleveland Browns
+NFL,17214,Jamie Meder,Jamie,Meder,98,DL,Cleveland Browns
+NFL,15014,Tank Carder,Tank,Carder,59,LB,Cleveland Browns
+NFL,5558,Karlos Dansby,Karlos,Dansby,56,LB,Cleveland Browns
+NFL,16767,Christian Kirksey,Christian,Kirksey,58,LB,Cleveland Browns
+NFL,12437,Paul Kruger,Paul,Kruger,99,LB,Cleveland Browns
+NFL,15805,Barkevious Mingo,Barkevious,Mingo,51,LB,Cleveland Browns
+NFL,3052511,Nate Orchard,Nate,Orchard,44,LB,Cleveland Browns
+NFL,14860,Craig Robertson,Craig,Robertson,53,LB,Cleveland Browns
+NFL,15028,Scott Solomon,Scott,Solomon,54,LB,Cleveland Browns
+NFL,15359,Johnson Bademosi,Johnson,Bademosi,24,CB,Cleveland Browns
+NFL,16948,Pierre Desir,Pierre,Desir,26,CB,Cleveland Browns
+NFL,16714,Justin Gilbert,Justin,Gilbert,21,CB,Cleveland Browns
+NFL,13249,Joe Haden,Joe,Haden,23,CB,Cleveland Browns
+NFL,15979,Jordan Poyer,Jordan,Poyer,33,CB,Cleveland Browns
+NFL,2576621,Charles Gaines,Charles,Gaines,43,DB,Cleveland Browns
+NFL,17444,K'Waun Williams,K'Waun,Williams,36,DB,Cleveland Browns
+NFL,5432,Tramon Williams,Tramon,Williams,22,DB,Cleveland Browns
+NFL,2511090,Ibraheim Campbell,Ibraheim,Campbell,30,SS,Cleveland Browns
+NFL,9594,Donte Whitner,Donte,Whitner,31,SS,Cleveland Browns
+NFL,15235,Tashaun Gipson,Tashaun,Gipson,39,FS,Cleveland Browns
+NFL,17130,Travis Coons,Travis,Coons,6,PK,Cleveland Browns
+NFL,5713,Andy Lee,Andy,Lee,8,P,Cleveland Browns
+NFL,9780,Bruce Gradkowski,Bruce,Gradkowski,5,QB,Pittsburgh Steelers
+NFL,15904,Landry Jones,Landry,Jones,3,QB,Pittsburgh Steelers
+NFL,5536,Ben Roethlisberger,Ben,Roethlisberger,7,QB,Pittsburgh Steelers
+NFL,2549,Michael Vick,Michael,Vick,2,QB,Pittsburgh Steelers
+NFL,16755,Dri Archer,Dri,Archer,13,RB,Pittsburgh Steelers
+NFL,15825,Le'Veon Bell,Le'Veon,Bell,26,RB,Pittsburgh Steelers
+NFL,17223,Roosevelt Nix,Roosevelt,Nix,45,RB,Pittsburgh Steelers
+NFL,14186,Jordan Todman,Jordan,Todman,30,RB,Pittsburgh Steelers
+NFL,9613,DeAngelo Williams,DeAngelo,Williams,34,RB,Pittsburgh Steelers
+NFL,14870,Will Johnson,Will,Johnson,46,FB,Pittsburgh Steelers
+NFL,13934,Antonio Brown,Antonio,Brown,84,WR,Pittsburgh Steelers
+NFL,16886,Martavis Bryant,Martavis,Bryant,10,WR,Pittsburgh Steelers
+NFL,2574549,Sammie Coates,Sammie,Coates,14,WR,Pittsburgh Steelers
+NFL,12570,Darrius Heyward-Bey,Darrius,Heyward-Bey,88,WR,Pittsburgh Steelers
+NFL,2516059,Tyler Murphy,Tyler,Murphy,16,WR,Pittsburgh Steelers
+NFL,13621,David Nelson,David,Nelson,15,WR,Pittsburgh Steelers
+NFL,15873,Markus Wheaton,Markus,Wheaton,11,WR,Pittsburgh Steelers
+NFL,16855,Rob Blanchflower,Rob,Blanchflower,87,TE,Pittsburgh Steelers
+NFL,2979590,Jesse James,Jesse,James,81,TE,Pittsburgh Steelers
+NFL,8444,Heath Miller,Heath,Miller,83,TE,Pittsburgh Steelers
+NFL,10521,Matt Spaeth,Matt,Spaeth,89,TE,Pittsburgh Steelers
+NFL,16076,Chris Hubbard,Chris,Hubbard,74,C,Pittsburgh Steelers
+NFL,11556,Doug Legursky,Doug,Legursky,64,C,Pittsburgh Steelers
+NFL,13250,Maurkice Pouncey,Maurkice,Pouncey,53,C,Pittsburgh Steelers
+NFL,8133,Mike Adams,Mike,Adams,76,OT,Pittsburgh Steelers
+NFL,15035,Kelvin Beachum,Kelvin,Beachum,68,OT,Pittsburgh Steelers
+NFL,13998,Marcus Gilbert,Marcus,Gilbert,77,OT,Pittsburgh Steelers
+NFL,16706,Alejandro Villanueva,Alejandro,Villanueva,78,OT,Pittsburgh Steelers
+NFL,14935,David DeCastro,David,DeCastro,66,OG,Pittsburgh Steelers
+NFL,12883,Ramon Foster,Ramon,Foster,73,OG,Pittsburgh Steelers
+NFL,11341,Cody Wallace,Cody,Wallace,72,OG,Pittsburgh Steelers
+NFL,13366,Clifton Geathers,Clifton,Geathers,96,DE,Pittsburgh Steelers
+NFL,13977,Cameron Heyward,Cameron,Heyward,97,DE,Pittsburgh Steelers
+NFL,3908873,Caushaud Lyons,Caushaud,Lyons,99,DE,Pittsburgh Steelers
+NFL,13470,Cam Thomas,Cam,Thomas,93,DE,Pittsburgh Steelers
+NFL,16798,Stephon Tuitt,Stephon,Tuitt,91,DE,Pittsburgh Steelers
+NFL,2516417,L.T. Walton,L.T.,Walton,96,DE,Pittsburgh Steelers
+NFL,16952,Daniel McCullers,Daniel,McCullers,62,DT,Pittsburgh Steelers
+NFL,12895,Steve McLendon,Steve,McLendon,90,DT,Pittsburgh Steelers
+NFL,2576702,Bud Dupree,Bud,Dupree,48,LB,Pittsburgh Steelers
+NFL,16457,Terence Garvin,Terence,Garvin,57,LB,Pittsburgh Steelers
+NFL,4433,James Harrison,James,Harrison,92,LB,Pittsburgh Steelers
+NFL,15799,Jarvis Jones,Jarvis,Jones,95,LB,Pittsburgh Steelers
+NFL,13422,Arthur Moats,Arthur,Moats,55,LB,Pittsburgh Steelers
+NFL,16727,Ryan Shazier,Ryan,Shazier,50,LB,Pittsburgh Steelers
+NFL,14972,Sean Spence,Sean,Spence,51,LB,Pittsburgh Steelers
+NFL,10459,Lawrence Timmons,Lawrence,Timmons,94,LB,Pittsburgh Steelers
+NFL,15934,Vince Williams,Vince,Williams,98,LB,Pittsburgh Steelers
+NFL,16874,Jordan Zumwalt,Jordan,Zumwalt,52,LB,Pittsburgh Steelers
+NFL,14109,Cortez Allen,Cortez,Allen,28,CB,Pittsburgh Steelers
+NFL,16843,Ross Cockrell,Ross,Cockrell,31,CB,Pittsburgh Steelers
+NFL,10613,William Gay,William,Gay,22,CB,Pittsburgh Steelers
+NFL,2577390,Senquez Golson,Senquez,Golson,27,CB,Pittsburgh Steelers
+NFL,15350,Antwon Blake,Antwon,Blake,41,DB,Pittsburgh Steelers
+NFL,15057,Brandon Boykin,Brandon,Boykin,25,DB,Pittsburgh Steelers
+NFL,13658,Ross Ventrone,Ross,Ventrone,35,DB,Pittsburgh Steelers
+NFL,15213,Robert Golden,Robert,Golden,21,S,Pittsburgh Steelers
+NFL,5636,Will Allen,Will,Allen,20,SS,Pittsburgh Steelers
+NFL,15992,Shamarko Thomas,Shamarko,Thomas,29,SS,Pittsburgh Steelers
+NFL,12619,Mike Mitchell,Mike,Mitchell,23,FS,Pittsburgh Steelers
+NFL,11543,Garrett Hartley,Garrett,Hartley,00,PK,Pittsburgh Steelers
+NFL,5662,Josh Scobee,Josh,Scobee,8,PK,Pittsburgh Steelers
+NFL,9361,Shaun Suisham,Shaun,Suisham,6,PK,Pittsburgh Steelers
+NFL,2472364,Jordan Berry,Jordan,Berry,4,P,Pittsburgh Steelers
+NFL,9306,Greg Warren,Greg,Warren,60,LS,Pittsburgh Steelers
+NFL,13198,Jimmy Clausen,Jimmy,Clausen,8,QB,Chicago Bears
+NFL,9597,Jay Cutler,Jay,Cutler,6,QB,Chicago Bears
+NFL,16942,Ka'Deem Carey,Ka'Deem,Carey,25,RB,Chicago Bears
+NFL,11278,Matt Forte,Matt,Forte,22,RB,Chicago Bears
+NFL,2515416,Jeremy Langford,Jeremy,Langford,33,RB,Chicago Bears
+NFL,17421,Senorise Perry,Senorise,Perry,32,RB,Chicago Bears
+NFL,14193,Jacquizz Rodgers,Jacquizz,Rodgers,35,RB,Chicago Bears
+NFL,15555,Joshua Bellamy,Joshua,Bellamy,11,WR,Chicago Bears
+NFL,14912,Alshon Jeffery,Alshon,Jeffery,17,WR,Chicago Bears
+NFL,13409,Marc Mariani,Marc,Mariani,80,WR,Chicago Bears
+NFL,2520698,Cameron Meredith,Cameron,Meredith,81,WR,Chicago Bears
+NFL,11276,Eddie Royal,Eddie,Royal,19,WR,Chicago Bears
+NFL,3042435,Kevin White,Kevin,White,13,WR,Chicago Bears
+NFL,16023,Marquess Wilson,Marquess,Wilson,10,WR,Chicago Bears
+NFL,11295,Martellus Bennett,Martellus,Bennett,83,TE,Chicago Bears
+NFL,3144062,Khari Lee,Khari,Lee,82,TE,Chicago Bears
+NFL,12699,Zach Miller,Zach,Miller,86,TE,Chicago Bears
+NFL,10183,Thomas Gafford,Thomas,Gafford,43,C,Chicago Bears
+NFL,2516984,Hroniss Grasu,Hroniss,Grasu,55,C,Chicago Bears
+NFL,9820,Will Montgomery,Will,Montgomery,64,C,Chicago Bears
+NFL,16327,Patrick Omameh,Patrick,Omameh,65,G,Chicago Bears
+NFL,10568,Jermon Bushrod,Jermon,Bushrod,74,OT,Chicago Bears
+NFL,13273,Vladimir Ducasse,Vladimir,Ducasse,62,OT,Chicago Bears
+NFL,2513205,Tayo Fabuluje,Tayo,Fabuluje,73,OT,Chicago Bears
+NFL,16848,Charles Leno,Charles,Leno,72,OT,Chicago Bears
+NFL,16283,Jason Weaver,Jason,Weaver,70,OT,Chicago Bears
+NFL,15801,Kyle Long,Kyle,Long,75,OG,Chicago Bears
+NFL,12728,Matt Slauson,Matt,Slauson,68,OG,Chicago Bears
+NFL,15909,Lavar Edwards,Lavar,Edwards,76,DE,Chicago Bears
+NFL,14202,Pernell McPhee,Pernell,McPhee,92,DE,Chicago Bears
+NFL,16778,Ego Ferguson,Ego,Ferguson,95,DT,Chicago Bears
+NFL,14019,Jarvis Jenkins,Jarvis,Jenkins,96,DT,Chicago Bears
+NFL,8638,Jeremiah Ratliff,Jeremiah,Ratliff,90,DT,Chicago Bears
+NFL,16738,Will Sutton,Will,Sutton,93,DT,Chicago Bears
+NFL,2969924,Eddie Goldman,Eddie,Goldman,91,DL,Chicago Bears
+NFL,15914,Cornelius Washington,Cornelius,Washington,94,DL,Chicago Bears
+NFL,14152,Sam Acho,Sam,Acho,49,LB,Chicago Bears
+NFL,5651,Jared Allen,Jared,Allen,69,LB,Chicago Bears
+NFL,16852,Lamin Barrow,Lamin,Barrow,57,LB,Chicago Bears
+NFL,15827,Jonathan Bostic,Jonathan,Bostic,52,LB,Chicago Bears
+NFL,13277,Lamarr Houston,Lamarr,Houston,99,LB,Chicago Bears
+NFL,17070,Christian Jones,Christian,Jones,59,LB,Chicago Bears
+NFL,14937,Shea McClellin,Shea,McClellin,50,LB,Chicago Bears
+NFL,2578388,John Timu,John,Timu,53,LB,Chicago Bears
+NFL,13497,Willie Young,Willie,Young,97,LB,Chicago Bears
+NFL,2515641,Bryce Callahan,Bryce,Callahan,37,CB,Chicago Bears
+NFL,16715,Kyle Fuller,Kyle,Fuller,23,CB,Chicago Bears
+NFL,16144,Demontre Hurst,Demontre,Hurst,30,CB,Chicago Bears
+NFL,13419,Sherrick McManis,Sherrick,McManis,27,CB,Chicago Bears
+NFL,16927,Terrance Mitchell,Terrance,Mitchell,20,CB,Chicago Bears
+NFL,11274,Tracy Porter,Tracy,Porter,21,CB,Chicago Bears
+NFL,10680,Alan Ball,Alan,Ball,24,DB,Chicago Bears
+NFL,2510861,Anthony Jefferson,Anthony,Jefferson,46,S,Chicago Bears
+NFL,3894939,Harold Jones-Quartey,Harold,Jones-Quartey,29,S,Chicago Bears
+NFL,11428,Ryan Mundy,Ryan,Mundy,21,S,Chicago Bears
+NFL,8423,Antrel Rolle,Antrel,Rolle,26,S,Chicago Bears
+NFL,2582132,Adrian Amos,Adrian,Amos,38,FS,Chicago Bears
+NFL,16906,Brock Vereen,Brock,Vereen,45,FS,Chicago Bears
+NFL,9354,Robbie Gould,Robbie,Gould,9,PK,Chicago Bears
+NFL,16863,Pat O'Donnell,Pat,O'Donnell,16,P,Chicago Bears
+NFL,8559,Dan Orlovsky,Dan,Orlovsky,8,QB,Detroit Lions
+NFL,12483,Matthew Stafford,Matthew,Stafford,9,QB,Detroit Lions
+NFL,2576336,Ameer Abdullah,Ameer,Abdullah,21,RB,Detroit Lions
+NFL,13536,Joique Bell,Joique,Bell,35,RB,Detroit Lions
+NFL,15994,Theo Riddick,Theo,Riddick,25,RB,Detroit Lions
+NFL,2521161,Zach Zenner,Zach,Zenner,34,RB,Detroit Lions
+NFL,2515270,Michael Burton,Michael,Burton,46,FB,Detroit Lions
+NFL,16014,Corey Fuller,Corey,Fuller,10,WR,Detroit Lions
+NFL,10447,Calvin Johnson,Calvin,Johnson,81,WR,Detroit Lions
+NFL,16880,TJ Jones,TJ,Jones,13,WR,Detroit Lions
+NFL,9400,Lance Moore,Lance,Moore,16,WR,Detroit Lions
+NFL,13217,Golden Tate,Golden,Tate,15,WR,Detroit Lions
+NFL,16732,Eric Ebron,Eric,Ebron,85,TE,Detroit Lions
+NFL,12549,Brandon Pettigrew,Brandon,Pettigrew,87,TE,Detroit Lions
+NFL,16705,Jordan Thompson,Jordan,Thompson,82,TE,Detroit Lions
+NFL,16285,Timothy Wright,Timothy,Wright,83,TE,Detroit Lions
+NFL,14725,Taylor Boggs,Taylor,Boggs,65,C,Detroit Lions
+NFL,16523,Darren Keyton,Darren,Keyton,68,C,Detroit Lions
+NFL,8362,Don Muhlbach,Don,Muhlbach,48,C,Detroit Lions
+NFL,16752,Travis Swanson,Travis,Swanson,64,C,Detroit Lions
+NFL,10561,Manny Ramirez,Manny,Ramirez,63,G,Detroit Lions
+NFL,15870,Larry Warford,Larry,Warford,75,G,Detroit Lions
+NFL,17202,Cornelius Lucas,Cornelius,Lucas,77,OT,Detroit Lions
+NFL,14930,Riley Reiff,Riley,Reiff,71,OT,Detroit Lions
+NFL,2516338,Corey Robinson,Corey,Robinson,70,OT,Detroit Lions
+NFL,16333,LaAdrian Waddle,LaAdrian,Waddle,66,OT,Detroit Lions
+NFL,2512477,Laken Tomlinson,Laken,Tomlinson,72,OG,Detroit Lions
+NFL,15785,Ezekiel Ansah,Ezekiel,Ansah,94,DE,Detroit Lions
+NFL,12989,Phillip Hunt,Phillip,Hunt,58,DE,Detroit Lions
+NFL,11288,Jason Jones,Jason,Jones,91,DE,Detroit Lions
+NFL,9649,Darryl Tapp,Darryl,Tapp,52,DE,Detroit Lions
+NFL,15916,Devin Taylor,Devin,Taylor,98,DE,Detroit Lions
+NFL,15460,Tyrunn Walker,Tyrunn,Walker,93,DE,Detroit Lions
+NFL,13494,Corey Wootton,Corey,Wootton,99,DE,Detroit Lions
+NFL,13554,Jermelle Cudjo,Jermelle,Cudjo,99,DT,Detroit Lions
+NFL,9598,Haloti Ngata,Haloti,Ngata,92,DT,Detroit Lions
+NFL,16853,Caraun Reid,Caraun,Reid,97,DT,Detroit Lions
+NFL,2574579,Gabe Wright,Gabe,Wright,90,DT,Detroit Lions
+NFL,14519,Josh Bynes,Josh,Bynes,57,LB,Detroit Lions
+NFL,16393,Brandon Copeland,Brandon,Copeland,95,LB,Detroit Lions
+NFL,12682,DeAndre Levy,DeAndre,Levy,54,LB,Detroit Lions
+NFL,15011,Travis Lewis,Travis,Lewis,50,LB,Detroit Lions
+NFL,2582398,Kevin Snyder,Kevin,Snyder,51,LB,Detroit Lions
+NFL,9702,Stephen Tulloch,Stephen,Tulloch,55,LB,Detroit Lions
+NFL,16772,Kyle Van Noy,Kyle,Van Noy,53,LB,Detroit Lions
+NFL,15070,Tahir Whitehead,Tahir,Whitehead,59,LB,Detroit Lions
+NFL,2978256,Alex Carter,Alex,Carter,33,CB,Detroit Lions
+NFL,2577553,Quandre Diggs,Quandre,Diggs,28,CB,Detroit Lions
+NFL,16929,Nevin Lawson,Nevin,Lawson,24,CB,Detroit Lions
+NFL,4497,Rashean Mathis,Rashean,Mathis,31,CB,Detroit Lions
+NFL,12713,Chris Owens,Chris,Owens,40,CB,Detroit Lions
+NFL,15863,Darius Slay,Darius,Slay,23,CB,Detroit Lions
+NFL,10499,Josh Wilson,Josh,Wilson,30,DB,Detroit Lions
+NFL,14466,Isa Abdul-Quddus,Isa,Abdul-Quddus,42,SS,Detroit Lions
+NFL,12644,Don Carey,Don,Carey,26,SS,Detroit Lions
+NFL,10749,James Ihedigbo,James,Ihedigbo,32,SS,Detroit Lions
+NFL,12716,Glover Quin,Glover,Quin,27,FS,Detroit Lions
+NFL,11122,Matt Prater,Matt,Prater,5,PK,Detroit Lions
+NFL,15928,Sam Martin,Sam,Martin,6,P,Detroit Lions
+NFL,2577189,Brett Hundley,Brett,Hundley,7,QB,Green Bay Packers
+NFL,8439,Aaron Rodgers,Aaron,Rodgers,12,QB,Green Bay Packers
+NFL,14353,Scott Tolzien,Scott,Tolzien,16,QB,Green Bay Packers
+NFL,2574010,Alonzo Harris,Alonzo,Harris,46,RB,Green Bay Packers
+NFL,15848,Eddie Lacy,Eddie,Lacy,27,RB,Green Bay Packers
+NFL,13214,James Starks,James,Starks,44,RB,Green Bay Packers
+NFL,9530,John Kuhn,John,Kuhn,30,FB,Green Bay Packers
+NFL,2577467,Aaron Ripkowski,Aaron,Ripkowski,22,FB,Green Bay Packers
+NFL,16800,Davante Adams,Davante,Adams,17,WR,Green Bay Packers
+NFL,14053,Randall Cobb,Randall,Cobb,18,WR,Green Bay Packers
+NFL,16960,Jeff Janis,Jeff,Janis,83,WR,Green Bay Packers
+NFL,10522,James Jones,James,Jones,89,WR,Green Bay Packers
+NFL,2577134,Ty Montgomery,Ty,Montgomery,88,WR,Green Bay Packers
+NFL,11270,Jordy Nelson,Jordy,Nelson,87,WR,Green Bay Packers
+NFL,2582311,Kennard Backman,Kennard,Backman,86,TE,Green Bay Packers
+NFL,13440,Andrew Quarless,Andrew,Quarless,81,TE,Green Bay Packers
+NFL,16786,Richard Rodgers,Richard,Rodgers,82,TE,Green Bay Packers
+NFL,11229,Brett Goode,Brett,Goode,61,C,Green Bay Packers
+NFL,16864,Corey Linsley,Corey,Linsley,63,C,Green Bay Packers
+NFL,15963,David Bakhtiari,David,Bakhtiari,69,OT,Green Bay Packers
+NFL,15409,Don Barclay,Don,Barclay,67,OT,Green Bay Packers
+NFL,13247,Bryan Bulaga,Bryan,Bulaga,75,OT,Green Bay Packers
+NFL,16001,JC Tretter,JC,Tretter,73,OT,Green Bay Packers
+NFL,12680,T.J. Lang,T.J.,Lang,70,OG,Green Bay Packers
+NFL,11382,Josh Sitton,Josh,Sitton,71,OG,Green Bay Packers
+NFL,16549,Lane Taylor,Lane,Taylor,65,OG,Green Bay Packers
+NFL,17095,Josh Walker,Josh,Walker,79,OG,Green Bay Packers
+NFL,15989,Josh Boyd,Josh,Boyd,93,DE,Green Bay Packers
+NFL,14994,Mike Daniels,Mike,Daniels,76,DE,Green Bay Packers
+NFL,15798,Datone Jones,Datone,Jones,95,DE,Green Bay Packers
+NFL,12447,B.J. Raji,B.J.,Raji,90,DE,Green Bay Packers
+NFL,17155,Bruce Gaston,Bruce,Gaston,99,DT,Green Bay Packers
+NFL,11386,Letroy Guion,Letroy,Guion,98,DT,Green Bay Packers
+NFL,17230,Mike Pennel,Mike,Pennel,64,DT,Green Bay Packers
+NFL,15954,Sam Barrington,Sam,Barrington,58,LB,Green Bay Packers
+NFL,16991,Jayrone Elliott,Jayrone,Elliott,91,LB,Green Bay Packers
+NFL,12438,Clay Matthews,Clay,Matthews,52,LB,Green Bay Packers
+NFL,16560,Andy Mulumba,Andy,Mulumba,55,LB,Green Bay Packers
+NFL,13291,Mike Neal,Mike,Neal,96,LB,Green Bay Packers
+NFL,15930,Nate Palmer,Nate,Palmer,51,LB,Green Bay Packers
+NFL,3530,Julius Peppers,Julius,Peppers,56,LB,Green Bay Packers
+NFL,14929,Nick Perry,Nick,Perry,53,LB,Green Bay Packers
+NFL,2515337,Jake Ryan,Jake,Ryan,47,LB,Green Bay Packers
+NFL,16949,Demetri Goodson,Demetri,Goodson,39,CB,Green Bay Packers
+NFL,2969954,LaDarius Gunter,LaDarius,Gunter,36,CB,Green Bay Packers
+NFL,14966,Casey Hayward,Casey,Hayward,29,CB,Green Bay Packers
+NFL,3043258,Damarious Randall,Damarious,Randall,23,CB,Green Bay Packers
+NFL,3125961,Quinten Rollins,Quinten,Rollins,24,CB,Green Bay Packers
+NFL,13769,Sam Shields,Sam,Shields,37,CB,Green Bay Packers
+NFL,15454,Sean Richardson,Sean,Richardson,28,DB,Green Bay Packers
+NFL,15782,Chris Banjo,Chris,Banjo,32,SS,Green Bay Packers
+NFL,13264,Morgan Burnett,Morgan,Burnett,42,SS,Green Bay Packers
+NFL,16735-dix,Ha Ha Clinton-Dix,21,FS,Green Bay Packers
+NFL,15960,Micah Hyde,Micah,Hyde,33,FS,Green Bay Packers
+NFL,10636,Mason Crosby,Mason,Crosby,2,PK,Green Bay Packers
+NFL,12998,Tim Masthay,Tim,Masthay,8,P,Green Bay Packers
+NFL,16728,Teddy Bridgewater,Teddy,Bridgewater,5,QB,Minnesota Vikings
+NFL,2565969,Taylor Heinicke,Taylor,Heinicke,6,QB,Minnesota Vikings
+NFL,4260,Shaun Hill,Shaun,Hill,13,QB,Minnesota Vikings
+NFL,14360,Matt Asiata,Matt,Asiata,44,RB,Minnesota Vikings
+NFL,16782,Jerick McKinnon,Jerick,McKinnon,31,RB,Minnesota Vikings
+NFL,10452,Adrian Peterson,Adrian,Peterson,28,RB,Minnesota Vikings
+NFL,16366,Zach Line,Zach,Line,48,FB,Minnesota Vikings
+NFL,2976212,Stefon Diggs,Stefon,Diggs,14,WR,Minnesota Vikings
+NFL,15885,Charles Johnson,Charles,Johnson,12,WR,Minnesota Vikings
+NFL,2613214,Gavin Lutman,Gavin,Lutman,8,WR,Minnesota Vikings
+NFL,15807,Cordarrelle Patterson,Cordarrelle,Patterson,84,WR,Minnesota Vikings
+NFL,16460,Adam Thielen,Adam,Thielen,19,WR,Minnesota Vikings
+NFL,12601,Mike Wallace,Mike,Wallace,11,WR,Minnesota Vikings
+NFL,14918,Jarius Wright,Jarius,Wright,17,WR,Minnesota Vikings
+NFL,15003,Rhett Ellison,Rhett,Ellison,85,TE,Minnesota Vikings
+NFL,15647,Chase Ford,Chase,Ford,86,TE,Minnesota Vikings
+NFL,2508256,MyCole Pruitt,MyCole,Pruitt,83,TE,Minnesota Vikings
+NFL,14054,Kyle Rudolph,Kyle,Rudolph,82,TE,Minnesota Vikings
+NFL,8621,Joe Berger,Joe,Berger,61,C,Minnesota Vikings
+NFL,17013,Zac Kerin,Zac,Kerin,67,C,Minnesota Vikings
+NFL,16361,Kevin McDermott,Kevin,McDermott,47,C,Minnesota Vikings
+NFL,11421,John Sullivan,John,Sullivan,65,C,Minnesota Vikings
+NFL,15573,Mike Harris,Mike,Harris,79,G,Minnesota Vikings
+NFL,17040,Jeremiah Sirles,Jeremiah,Sirles,78,G,Minnesota Vikings
+NFL,15892,Carter Bykowski,Carter,Bykowski,60,OT,Minnesota Vikings
+NFL,2513131,T.J. Clemmings,T.J.,Clemmings,68,OT,Minnesota Vikings
+NFL,14928,Matt Kalil,Matt,Kalil,75,OT,Minnesota Vikings
+NFL,12615,Phil Loadholt,Phil,Loadholt,71,OT,Minnesota Vikings
+NFL,14208,Brandon Fusco,Brandon,Fusco,63,OG,Minnesota Vikings
+NFL,2515956,Austin Shepherd,Austin,Shepherd,74,OG,Minnesota Vikings
+NFL,16780,Scott Crichton,Scott,Crichton,95,DE,Minnesota Vikings
+NFL,13373,Everson Griffen,Everson,Griffen,97,DE,Minnesota Vikings
+NFL,2976560,Danielle Hunter,Danielle,Hunter,99,DE,Minnesota Vikings
+NFL,10546,Brian Robison,Brian,Robison,96,DE,Minnesota Vikings
+NFL,14673,Justin Trattou,Justin,Trattou,94,DE,Minnesota Vikings
+NFL,15791,Sharrif Floyd,Sharrif,Floyd,73,DT,Minnesota Vikings
+NFL,16695,Tom Johnson,Tom,Johnson,92,DT,Minnesota Vikings
+NFL,13281,Linval Joseph,Linval,Joseph,98,DT,Minnesota Vikings
+NFL,16866,Shamar Stephen,Shamar,Stephen,93,DT,Minnesota Vikings
+NFL,16711,Anthony Barr,Anthony,Barr,55,LB,Minnesota Vikings
+NFL,15023,Audie Cole,Audie,Cole,57,LB,Minnesota Vikings
+NFL,9603,Chad Greenway,Chad,Greenway,52,LB,Minnesota Vikings
+NFL,15977,Gerald Hodges,Gerald,Hodges,50,LB,Minnesota Vikings
+NFL,2510863,Eric Kendricks,Eric,Kendricks,54,LB,Minnesota Vikings
+NFL,14181,Casey Matthews,Casey,Matthews,59,LB,Minnesota Vikings
+NFL,3137087,Edmond Robinson,Edmond,Robinson,51,LB,Minnesota Vikings
+NFL,16833,Antone Exum Jr.,Antone,Exum Jr.,32,CB,Minnesota Vikings
+NFL,12703,Captain Munnerlyn,Captain,Munnerlyn,24,CB,Minnesota Vikings
+NFL,4463,Terence Newman,Terence,Newman,23,CB,Minnesota Vikings
+NFL,16878,Jabari Price,Jabari,Price,25,CB,Minnesota Vikings
+NFL,15810,Xavier Rhodes,Xavier,Rhodes,29,CB,Minnesota Vikings
+NFL,14948,Josh Robinson,Josh,Robinson,21,CB,Minnesota Vikings
+NFL,13843,Marcus Sherels,Marcus,Sherels,35,CB,Minnesota Vikings
+NFL,2576283,Trae Waynes,Trae,Waynes,26,CB,Minnesota Vikings
+NFL,15079,Robert Blanton,Robert,Blanton,36,SS,Minnesota Vikings
+NFL,13939,Andrew Sendejo,Andrew,Sendejo,34,SS,Minnesota Vikings
+NFL,14945,Harrison Smith,Harrison,Smith,22,FS,Minnesota Vikings
+NFL,15058,Blair Walsh,Blair,Walsh,3,PK,Minnesota Vikings
+NFL,15926,Jeff Locke,Jeff,Locke,18,P,Minnesota Vikings
+NFL,12477,Brian Hoyer,Brian,Hoyer,7,QB,Houston Texans 
+NFL,14037,Ryan Mallett,Ryan,Mallett,15,QB,Houston Texans 
+NFL,16943,Tom Savage,Tom,Savage,3,QB,Houston Texans 
+NFL,16921,Alfred Blue,Alfred,Blue,28,RB,Houston Texans 
+NFL,12497,Arian Foster,Arian,Foster,23,RB,Houston Texans 
+NFL,15632,Jonathan Grimes,Jonathan,Grimes,41,RB,Houston Texans 
+NFL,14889,Chris Polk,Chris,Polk,22,RB,Houston Texans 
+NFL,16875,Jay Prosch,Jay,Prosch,45,FB,Houston Texans 
+NFL,15795,DeAndre Hopkins,DeAndre,Hopkins,10,WR,Houston Texans 
+NFL,2515420,Keith Mumphery,Keith,Mumphery,12,WR,Houston Texans 
+NFL,14184,Cecil Shorts III,Cecil,Shorts III,18,WR,Houston Texans 
+NFL,3043263,Jaelen Strong,Jaelen,Strong,11,WR,Houston Texans 
+NFL,9307,Nate Washington,Nate,Washington,85,WR,Houston Texans 
+NFL,2581319,Chandler Worthy,Chandler,Worthy,13,WR,Houston Texans 
+NFL,16766,C.J. Fiedorowicz,C.J.,Fiedorowicz,87,TE,Houston Texans 
+NFL,13371,Garrett Graham,Garrett,Graham,88,TE,Houston Texans 
+NFL,15887,Ryan Griffin,Ryan,Griffin,84,TE,Houston Texans 
+NFL,2577494,Mike McFarland,Mike,McFarland,89,TE,Houston Texans 
+NFL,2516865,Greg Mancz,Greg,Mancz,65,C,Houston Texans 
+NFL,13729,Jonathan Weeks,Jonathan,Weeks,46,C,Houston Texans 
+NFL,2516029,Chad Slade,Chad,Slade,62,G,Houston Texans 
+NFL,16801,Xavier Su'a-Filo,Xavier,Su'a-Filo,71,G,Houston Texans 
+NFL,15972,Oday Aboushi,Oday,Aboushi,78,OT,Houston Texans 
+NFL,15368,Jeff Adams,Jeff,Adams,70,OT,Houston Texans 
+NFL,11260,Duane Brown,Duane,Brown,76,OT,Houston Texans 
+NFL,11689,Chris Clark,Chris,Clark,74,OT,Houston Texans 
+NFL,2509370,Kendall Lamm,Kendall,Lamm,63,OT,Houston Texans 
+NFL,14197,Derek Newton,Derek,Newton,72,OT,Houston Texans 
+NFL,14962,Brandon Brooks,Brandon,Brooks,79,OG,Houston Texans 
+NFL,15109,Ben Jones,Ben,Jones,60,OG,Houston Texans 
+NFL,15019,Jared Crick,Jared,Crick,93,DE,Houston Texans 
+NFL,16947,Jeoffrey Pagan,Jeoffrey,Pagan,97,DE,Houston Texans 
+NFL,13979,J.J. Watt,J.J.,Watt,99,DE,Houston Texans 
+NFL,2580666,Christian Covington,Christian,Covington,95,DT,Houston Texans 
+NFL,5546,Vince Wilfork,Vince,Wilfork,75,DT,Houston Texans 
+NFL,2514799,Reshard Cliett,Reshard,Cliett,58,LB,Houston Texans 
+NFL,16734,Jadeveon Clowney,Jadeveon,Clowney,90,LB,Houston Texans 
+NFL,12453,Brian Cushing,Brian,Cushing,56,LB,Houston Texans 
+NFL,14006,Akeem Dent,Akeem,Dent,50,LB,Houston Texans 
+NFL,2577429,Benardrick McKinney,Benardrick,McKinney,55,LB,Houston Texans 
+NFL,14936,Whitney Mercilus,Whitney,Mercilus,59,LB,Houston Texans 
+NFL,14097,Mike Mohamed,Mike,Mohamed,54,LB,Houston Texans 
+NFL,16010,John Simon,John,Simon,51,LB,Houston Texans 
+NFL,2516283,Carlos Thompson,Carlos,Thompson,44,LB,Houston Texans 
+NFL,16114,Justin Tuggle,Justin,Tuggle,57,LB,Houston Texans 
+NFL,16562,A.J. Bouye,A.J.,Bouye,34,CB,Houston Texans 
+NFL,13254,Kareem Jackson,Kareem,Jackson,25,CB,Houston Texans 
+NFL,2511523,Kevin Johnson,Kevin,Johnson,30,CB,Houston Texans 
+NFL,9610,Johnathan Joseph,Johnathan,Joseph,24,CB,Houston Texans 
+NFL,17467,Andre Hal,Andre,Hal,29,DB,Houston Texans 
+NFL,14050,Rahim Moore,Rahim,Moore,26,DB,Houston Texans 
+NFL,16367,Darryl Morris,Darryl,Morris,21,DB,Houston Texans 
+NFL,15612,Eddie Pleasant,Eddie,Pleasant,35,DB,Houston Texans 
+NFL,16219,Jumal Rolle,Jumal,Rolle,20,DB,Houston Texans 
+NFL,16911,Lonnie Ballentine,Lonnie,Ballentine,39,S,Houston Texans 
+NFL,11351,Quintin Demps,Quintin,Demps,27,S,Houston Texans 
+NFL,15091,Randy Bullock,Randy,Bullock,4,PK,Houston Texans 
+NFL,2273,Shane Lechler,Shane,Lechler,9,P,Houston Texans 
+NFL,1575,Matt Hasselbeck,Matt,Hasselbeck,8,QB,Indianapolis Colts
+NFL,14874,Andrew Luck,Andrew,Luck,12,QB,Indianapolis Colts
+NFL,14898,Vick Ballard,Vick,Ballard,26,RB,Indianapolis Colts
+NFL,8479,Frank Gore,Frank,Gore,23,RB,Indianapolis Colts
+NFL,2577419,Josh Robinson,Josh,Robinson,34,RB,Indianapolis Colts
+NFL,2969294,Tyler Varga,Tyler,Varga,38,RB,Indianapolis Colts
+NFL,2579604,Phillip Dorsett,Phillip,Dorsett,15,WR,Indianapolis Colts
+NFL,14924,T.Y. Hilton,T.Y.,Hilton,13,WR,Indianapolis Colts
+NFL,4461,Andre Johnson,Andre,Johnson,81,WR,Indianapolis Colts
+NFL,16791,Donte Moncrief,Donte,Moncrief,10,WR,Indianapolis Colts
+NFL,15360,Griff Whalen,Griff,Whalen,17,WR,Indianapolis Colts
+NFL,14901,Dwayne Allen,Dwayne,Allen,83,TE,Indianapolis Colts
+NFL,16504,Jack Doyle,Jack,Doyle,84,TE,Indianapolis Colts
+NFL,14900,Coby Fleener,Coby,Fleener,80,TE,Indianapolis Colts
+NFL,17066,Jonotthan Harrison,Jonotthan,Harrison,72,C,Indianapolis Colts
+NFL,15897,Khaled Holmes,Khaled,Holmes,62,C,Indianapolis Colts
+NFL,13186,Matt Overton,Matt,Overton,45,C,Indianapolis Colts
+NFL,13970,Anthony Castonzo,Anthony,Castonzo,74,OT,Indianapolis Colts
+NFL,2985235,Denzelle Good,Denzelle,Good,71,OT,Indianapolis Colts
+NFL,8540,Todd Herremans,Todd,Herremans,79,OG,Indianapolis Colts
+NFL,12684,Lance Louis,Lance,Louis,60,OG,Indianapolis Colts
+NFL,16745,Jack Mewhort,Jack,Mewhort,75,OG,Indianapolis Colts
+NFL,11842,Joe Reitz,Joe,Reitz,76,OG,Indianapolis Colts
+NFL,15869,Hugh Thornton,Hugh,Thornton,69,OG,Indianapolis Colts
+NFL,2517752,Henry Anderson,Henry,Anderson,96,DE,Indianapolis Colts
+NFL,13394,Arthur Jones,Arthur,Jones,97,DE,Indianapolis Colts
+NFL,11300,Kendall Langford,Kendall,Langford,90,DE,Indianapolis Colts
+NFL,16551,Earl Okine,Earl,Okine,95,DE,Indianapolis Colts
+NFL,17071,Zach Kerr,Zach,Kerr,94,DT,Indianapolis Colts
+NFL,2577757,T.Y. McGill,T.Y.,McGill,67,DT,Indianapolis Colts
+NFL,2517779,David Parry,David,Parry,54,DT,Indianapolis Colts
+NFL,15021,Billy Winn,Billy,Winn,99,DT,Indianapolis Colts
+NFL,8560,Trent Cole,Trent,Cole,58,LB,Indianapolis Colts
+NFL,11533,Jerrell Freeman,Jerrell,Freeman,50,LB,Indianapolis Colts
+NFL,14004,Nate Irving,Nate,Irving,55,LB,Indianapolis Colts
+NFL,9620,D'Qwell Jackson,D'Qwell,Jackson,52,LB,Indianapolis Colts
+NFL,4596,Robert Mathis,Robert,Mathis,98,LB,Indianapolis Colts
+NFL,15778,Josh McNary,Josh,McNary,57,LB,Indianapolis Colts
+NFL,15859,Sio Moore,Sio,Moore,51,LB,Indianapolis Colts
+NFL,16867,Jonathan Newsome,Jonathan,Newsome,91,LB,Indianapolis Colts
+NFL,2574801,Junior Sylvestre,Junior,Sylvestre,57,LB,Indianapolis Colts
+NFL,11401,Erik Walden,Erik,Walden,93,LB,Indianapolis Colts
+NFL,15815,Bjoern Werner,Bjoern,Werner,92,LB,Indianapolis Colts
+NFL,12423,Darius Butler,Darius,Butler,20,CB,Indianapolis Colts
+NFL,12424,Vontae Davis,Vontae,Davis,21,CB,Indianapolis Colts
+NFL,2574530,Tevin Mitchel,Tevin,Mitchel,00,CB,Indianapolis Colts
+NFL,2514174,Joshua Mitchell,Joshua,Mitchell,82,CB,Indianapolis Colts
+NFL,2577861,Eric Patterson,Eric,Patterson,41,CB,Indianapolis Colts
+NFL,16302,Sheldon Price,Sheldon,Price,40,CB,Indianapolis Colts
+NFL,2982861,D'Joun Smith,D'Joun,Smith,30,CB,Indianapolis Colts
+NFL,12738,Greg Toler,Greg,Toler,28,CB,Indianapolis Colts
+NFL,14066,Jalil Brown,Jalil,Brown,25,DB,Indianapolis Colts
+NFL,11347,Dwight Lowery,Dwight,Lowery,33,DB,Indianapolis Colts
+NFL,5893,Mike Adams,Mike,Adams,29,SS,Indianapolis Colts
+NFL,2519211,Clayton Geathers,Clayton,Geathers,42,SS,Indianapolis Colts
+NFL,12757,Colt Anderson,Colt,Anderson,32,FS,Indianapolis Colts
+NFL,15073,Winston Guy,Winston,Guy,27,FS,Indianapolis Colts
+NFL,1097,Adam Vinatieri,Adam,Vinatieri,4,PK,Indianapolis Colts
+NFL,12689,Pat McAfee,Pat,McAfee,1,P,Indianapolis Colts
+NFL,16724,Blake Bortles,Blake,Bortles,5,QB,Jacksonville Jaguars
+NFL,11291,Chad Henne,Chad,Henne,7,QB,Jacksonville Jaguars
+NFL,13211,Toby Gerhart,Toby,Gerhart,21,RB,Jacksonville Jaguars
+NFL,2515934,Corey Grant,Corey,Grant,33,RB,Jacksonville Jaguars
+NFL,14891,Bernard Pierce,Bernard,Pierce,30,RB,Jacksonville Jaguars
+NFL,15951,Denard Robinson,Denard,Robinson,16,RB,Jacksonville Jaguars
+NFL,2976516,T.J. Yeldon,T.J.,Yeldon,24,RB,Jacksonville Jaguars
+NFL,13218,Arrelious Benn,Arrelious,Benn,12,WR,Jacksonville Jaguars
+NFL,14907,Justin Blackmon,Justin,Blackmon,14,WR,Jacksonville Jaguars
+NFL,2576785,Rashad Greene,Rashad,Greene,13,WR,Jacksonville Jaguars
+NFL,17177,Allen Hurns,Allen,Hurns,88,WR,Jacksonville Jaguars
+NFL,16787,Marqise Lee,Marqise,Lee,11,WR,Jacksonville Jaguars
+NFL,16799,Allen Robinson,Allen,Robinson,15,WR,Jacksonville Jaguars
+NFL,13662,Bryan Walters,Bryan,Walters,81,WR,Jacksonville Jaguars
+NFL,13376,Clay Harbor,Clay,Harbor,86,TE,Jacksonville Jaguars
+NFL,17181,Nic Jacobs,Nic,Jacobs,85,TE,Jacksonville Jaguars
+NFL,9614,Marcedes Lewis,Marcedes,Lewis,89,TE,Jacksonville Jaguars
+NFL,14204,Julius Thomas,Julius,Thomas,80,TE,Jacksonville Jaguars
+NFL,16830,Luke Bowanko,Luke,Bowanko,70,C,Jacksonville Jaguars
+NFL,16359,Carson Tinker,Carson,Tinker,46,C,Jacksonville Jaguars
+NFL,169,Stefen Wisniewski,Stefen,Wisniewski,61,C,Jacksonville Jaguars
+NFL,15796,Luke Joeckel,Luke,Joeckel,76,OT,Jacksonville Jaguars
+NFL,13066,Jermey Parnell,Jermey,Parnell,78,OT,Jacksonville Jaguars
+NFL,17283,Josh Wells,Josh,Wells,72,OT,Jacksonville Jaguars
+NFL,13496,Sam Young,Sam,Young,74,OT,Jacksonville Jaguars
+NFL,13261,Zane Beadles,Zane,Beadles,68,OG,Jacksonville Jaguars
+NFL,2516325,A.J. Cann,A.J.,Cann,60,OG,Jacksonville Jaguars
+NFL,16770,Brandon Linder,Brandon,Linder,65,OG,Jacksonville Jaguars
+NFL,17037,Tyler Shatley,Tyler,Shatley,69,OG,Jacksonville Jaguars
+NFL,13233,Tyson Alualu,Tyson,Alualu,93,DE,Jacksonville Jaguars
+NFL,14952,Andre Branch,Andre,Branch,90,DE,Jacksonville Jaguars
+NFL,4864,Chris Clemons,Chris,Clemons,91,DE,Jacksonville Jaguars
+NFL,15319,Ryan Davis,Ryan,Davis,59,DE,Jacksonville Jaguars
+NFL,2980100,Dante Fowler Jr.,Dante,Fowler Jr.,56,DE,Jacksonville Jaguars
+NFL,12442,Ziggy Hood,Ziggy,Hood,92,DE,Jacksonville Jaguars
+NFL,16917,Chris Smith,Chris,Smith,98,DE,Jacksonville Jaguars
+NFL,2576371,Michael Bennett,Michael,Bennett,96,DT,Jacksonville Jaguars
+NFL,16376,Abry Jones,Abry,Jones,95,DT,Jacksonville Jaguars
+NFL,12445,Sen'Derrick Marks,Sen'Derrick,Marks,99,DT,Jacksonville Jaguars
+NFL,12698,Roy Miller,Roy,Miller,97,DT,Jacksonville Jaguars
+NFL,13244,Jared Odrick,Jared,Odrick,75,DT,Jacksonville Jaguars
+NFL,2579598,Thurston Armbrister,Thurston,Armbrister,57,LB,Jacksonville Jaguars
+NFL,16087,John Lotulelei,John,Lotulelei,53,LB,Jacksonville Jaguars
+NFL,10478,Paul Posluszny,Paul,Posluszny,51,LB,Jacksonville Jaguars
+NFL,16449,LaRoy Reynolds,LaRoy,Reynolds,52,LB,Jacksonville Jaguars
+NFL,12932,Dan Skuta,Dan,Skuta,55,LB,Jacksonville Jaguars
+NFL,16891,Telvin Smith,Telvin,Smith,50,LB,Jacksonville Jaguars
+NFL,16900,Aaron Colvin,Aaron,Colvin,22,CB,Jacksonville Jaguars
+NFL,15840,Dwayne Gratz,Dwayne,Gratz,27,CB,Jacksonville Jaguars
+NFL,3051898,Nick Marshall,Nick,Marshall,41,CB,Jacksonville Jaguars
+NFL,16005,Demetrius McCray,Demetrius,McCray,35,CB,Jacksonville Jaguars
+NFL,13541,Sergio Brown,Sergio,Brown,38,DB,Jacksonville Jaguars
+NFL,14157,Davon House,Davon,House,31,DB,Jacksonville Jaguars
+NFL,2578381,James Sample,James,Sample,23,S,Jacksonville Jaguars
+NFL,15831,Johnathan Cyprien,Johnathan,Cyprien,37,SS,Jacksonville Jaguars
+NFL,15984,Josh Evans,Josh,Evans,26,FS,Jacksonville Jaguars
+NFL,2473037,Jason Myers,Jason,Myers,2,PK,Jacksonville Jaguars
+NFL,14950,Bryan Anger,Bryan,Anger,19,P,Jacksonville Jaguars
+NFL,2576980,Marcus Mariota,Marcus,Mariota,8,QB,Tennesseee Titans
+NFL,16814,Zach Mettenberger,Zach,Mettenberger,7,QB,Tennesseee Titans
+NFL,9667,Charlie Whitehurst,Charlie,Whitehurst,12,QB,Tennesseee Titans
+NFL,17105,Antonio Andrews,Antonio,Andrews,26,RB,Tennesseee Titans
+NFL,2576303,David Cobb,David,Cobb,44,RB,Tennesseee Titans
+NFL,13207,Dexter McCluster,Dexter,McCluster,22,RB,Tennesseee Titans
+NFL,16794,Bishop Sankey,Bishop,Sankey,20,RB,Tennesseee Titans
+NFL,16783,Terrance West,Terrance,West,35,RB,Tennesseee Titans
+NFL,2515931,Jalston Fowler,Jalston,Fowler,45,FB,Tennesseee Titans
+NFL,2516223,Connor Neighbors,Connor,Neighbors,00,FB,Tennesseee Titans
+NFL,11318,Harry Douglas,Harry,Douglas,83,WR,Tennesseee Titans
+NFL,2971433,Dorial Green-Beckham,Dorial,Green-Beckham,17,WR,Tennesseee Titans
+NFL,15845,Justin Hunter,Justin,Hunter,15,WR,Tennesseee Titans
+NFL,14909,Kendall Wright,Kendall,Wright,13,WR,Tennesseee Titans
+NFL,12536,Chase Coffman,Chase,Coffman,85,TE,Tennesseee Titans
+NFL,13353,Dorin Dickerson,Dorin,Dickerson,42,TE,Tennesseee Titans
+NFL,9639,Anthony Fasano,Anthony,Fasano,80,TE,Tennesseee Titans
+NFL,11319,Craig Stevens,Craig,Stevens,88,TE,Tennesseee Titans
+NFL,15257,Phillip Supernaw,Phillip,Supernaw,89,TE,Tennesseee Titans
+NFL,9761,Delanie Walker,Delanie,Walker,82,TE,Tennesseee Titans
+NFL,15355,Beau Brinkley,Beau,Brinkley,48,C,Tennesseee Titans
+NFL,2512369,Andy Gallik,Andy,Gallik,69,C,Tennesseee Titans
+NFL,15978,Brian Schwenke,Brian,Schwenke,62,C,Tennesseee Titans
+NFL,14753,Byron Bell,Byron,Bell,76,OT,Tennesseee Titans
+NFL,16708,Taylor Lewan,Taylor,Lewan,77,OT,Tennesseee Titans
+NFL,12696,Jamon Meredith,Jamon,Meredith,79,OT,Tennesseee Titans
+NFL,2971660,Jeremiah Poutasi,Jeremiah,Poutasi,72,OT,Tennesseee Titans
+NFL,2515319,Quinton Spain,Quinton,Spain,60,OG,Tennesseee Titans
+NFL,15814,Chance Warmack,Chance,Warmack,70,OG,Tennesseee Titans
+NFL,14047,Jurrell Casey,Jurrell,Casey,99,DE,Tennesseee Titans
+NFL,16910,DaQuan Jones,DaQuan,Jones,90,DE,Tennesseee Titans
+NFL,14079,Karl Klug,Karl,Klug,97,DE,Tennesseee Titans
+NFL,14988,Mike Martin,Mike,Martin,93,DE,Tennesseee Titans
+NFL,11778,Ropati Pitoitua,Ropati,Pitoitua,92,DE,Tennesseee Titans
+NFL,2574582,Angelo Blackson,Angelo,Blackson,95,DT,Tennesseee Titans
+NFL,12667,Sammie Hill,Sammie,Hill,94,DT,Tennesseee Titans
+NFL,13493,Al Woods,Al,Woods,96,DT,Tennesseee Titans
+NFL,16025,David Bass,David,Bass,51,LB,Tennesseee Titans
+NFL,14973,Zach Brown,Zach,Brown,55,LB,Tennesseee Titans
+NFL,15838,Zaviar Gooden,Zaviar,Gooden,50,LB,Tennesseee Titans
+NFL,15733,Steven Johnson,Steven,Johnson,52,LB,Tennesseee Titans
+NFL,13248,Derrick Morgan,Derrick,Morgan,91,LB,Tennesseee Titans
+NFL,2576635,Deiontrez Mount,Deiontrez,Mount,53,LB,Tennesseee Titans
+NFL,12439,Brian Orakpo,Brian,Orakpo,98,LB,Tennesseee Titans
+NFL,16896,Yawin Smallwood,Yawin,Smallwood,47,LB,Tennesseee Titans
+NFL,2577264,J.R. Tavai,J.R.,Tavai,41,LB,Tennesseee Titans
+NFL,16920,Avery Williamson,Avery,Williamson,54,LB,Tennesseee Titans
+NFL,11609,Wesley Woodyard,Wesley,Woodyard,59,LB,Tennesseee Titans
+NFL,10587,Brandon Harris,Brandon,Harris,2,CB,Tennesseee Titans
+NFL,12691,Jason McCourty,Jason,McCourty,30,CB,Tennesseee Titans
+NFL,2516063,Cody Riggs,Cody,Riggs,37,CB,Tennesseee Titans
+NFL,2525492,Curtis Riley,Curtis,Riley,00,CB,Tennesseee Titans
+NFL,14998,Coty Sensabaugh,Coty,Sensabaugh,24,CB,Tennesseee Titans
+NFL,15881,Blidi Wreh-Wilson,Blidi,Wreh-Wilson,25,CB,Tennesseee Titans
+NFL,13344,Perrish Cox,Perrish,Cox,29,DB,Tennesseee Titans
+NFL,14143,Da'Norris Searcy,Da'Norris,Searcy,21,S,Tennesseee Titans
+NFL,16904,Marqueston Huff,Marqueston,Huff,28,SS,Tennesseee Titans
+NFL,16030,Daimion Stafford,Daimion,Stafford,39,SS,Tennesseee Titans
+NFL,10463,Michael Griffin,Michael,Griffin,33,FS,Tennesseee Titans
+NFL,12731,Ryan Succop,Ryan,Succop,4,PK,Tennesseee Titans
+NFL,11555,Brett Kern,Brett,Kern,6,P,Tennesseee Titans
+NFL,15894,Sean Renfree,Sean,Renfree,12,QB,Atlanta Falcons
+NFL,11237,Matt Ryan,Matt,Ryan,2,QB,Atlanta Falcons
+NFL,2979477,Tevin Coleman,Tevin,Coleman,26,RB,Atlanta Falcons
+NFL,16944,Devonta Freeman,Devonta,Freeman,24,RB,Atlanta Falcons
+NFL,15130,Collin Mooney,Collin,Mooney,39,RB,Atlanta Falcons
+NFL,2577023,Terron Ward,Terron,Ward,33,RB,Atlanta Falcons
+NFL,14332,Patrick DiMarco,Patrick,DiMarco,42,FB,Atlanta Falcons
+NFL,14021,Leonard Hankerson,Leonard,Hankerson,85,WR,Atlanta Falcons
+NFL,2518678,Justin Hardy,Justin,Hardy,16,WR,Atlanta Falcons
+NFL,9643,Devin Hester,Devin,Hester,17,WR,Atlanta Falcons
+NFL,13982,Julio Jones,Julio,Jones,11,WR,Atlanta Falcons
+NFL,10770,Eric Weems,Eric,Weems,14,WR,Atlanta Falcons
+NFL,8442,Roddy White,Roddy,White,84,WR,Atlanta Falcons
+NFL,16345,Nick Williams,Nick,Williams,15,WR,Atlanta Falcons
+NFL,2974931,Beau Gardner,Beau,Gardner,00,TE,Atlanta Falcons
+NFL,11373,Jacob Tamme,Jacob,Tamme,83,TE,Atlanta Falcons
+NFL,15980,Levine Toilolo,Levine,Toilolo,80,TE,Atlanta Falcons
+NFL,9642,Chris Chester,Chris,Chester,65,C,Atlanta Falcons
+NFL,14999,Gino Gradkowski,Gino,Gradkowski,66,C,Atlanta Falcons
+NFL,17262,James Stone,James,Stone,62,C,Atlanta Falcons
+NFL,12614,Andy Levitre,Andy,Levitre,67,G,Atlanta Falcons
+NFL,15145,Bryce Harris,Bryce,Harris,72,OT,Atlanta Falcons
+NFL,14986,Lamar Holmes,Lamar,Holmes,79,OT,Atlanta Falcons
+NFL,11234,Jake Long,Jake,Long,75,OT,Atlanta Falcons
+NFL,16713,Jake Matthews,Jake,Matthews,70,OT,Atlanta Falcons
+NFL,14070,Mike Person,Mike,Person,68,OT,Atlanta Falcons
+NFL,11572,Tyler Polumbus,Tyler,Polumbus,76,OT,Atlanta Falcons
+NFL,16222,Ryan Schraeder,Ryan,Schraeder,73,OT,Atlanta Falcons
+NFL,13260,Jon Asamoah,Jon,Asamoah,75,OG,Atlanta Falcons
+NFL,8473,Jonathan Babineaux,Jonathan,Babineaux,95,DE,Atlanta Falcons
+NFL,2512400,Vic Beasley Jr.,Vic,Beasley Jr.,44,DE,Atlanta Falcons
+NFL,11388,Kroy Biermann,Kroy,Biermann,71,DE,Atlanta Falcons
+NFL,13965,Adrian Clayborn,Adrian,Clayborn,99,DE,Atlanta Falcons
+NFL,15957,Malliciah Goodman,Malliciah,Goodman,93,DE,Atlanta Falcons
+NFL,16744,Ra'Shede Hageman,Ra'Shede,Hageman,77,DE,Atlanta Falcons
+NFL,12435,Tyson Jackson,Tyson,Jackson,94,DT,Atlanta Falcons
+NFL,2576492,Grady Jarrett,Grady,Jarrett,97,DT,Atlanta Falcons
+NFL,10552,Paul Soliai,Paul,Soliai,96,DT,Atlanta Falcons
+NFL,17167,Ricky Havili-Heimuli,Ricky,Havili-Heimuli,92,NT,Atlanta Falcons
+NFL,16171,Joplo Bartu,Joplo,Bartu,59,LB,Atlanta Falcons
+NFL,14103,Allen Bradford,Allen,Bradford,53,LB,Atlanta Falcons
+NFL,10492,Justin Durant,Justin,Durant,52,LB,Atlanta Falcons
+NFL,13997,Brooks Reed,Brooks,Reed,56,LB,Atlanta Falcons
+NFL,13449,O'Brien Schofield,O'Brien,Schofield,50,LB,Atlanta Falcons
+NFL,15040,Nathan Stupar,Nathan,Stupar,54,LB,Atlanta Falcons
+NFL,16243,Paul Worrilow,Paul,Worrilow,55,LB,Atlanta Falcons
+NFL,15817,Robert Alford,Robert,Alford,23,CB,Atlanta Falcons
+NFL,2577292,Jalen Collins,Jalen,Collins,32,CB,Atlanta Falcons
+NFL,16490,Travis Howard,Travis,Howard,33,CB,Atlanta Falcons
+NFL,15812,Desmond Trufant,Desmond,Trufant,21,CB,Atlanta Falcons
+NFL,13308,Phillip Adams,Phillip,Adams,20,DB,Atlanta Falcons
+NFL,2574553,Robenson Therezie,Robenson,Therezie,27,DB,Atlanta Falcons
+NFL,16882,Ricardo Allen,Ricardo,Allen,37,S,Atlanta Falcons
+NFL,16008,Kemal Ishmael,Kemal,Ishmael,36,SS,Atlanta Falcons
+NFL,12530,William Moore,William,Moore,25,SS,Atlanta Falcons
+NFL,16747,Dezmen Southward,Dezmen,Southward,22,FS,Atlanta Falcons
+NFL,4333,Matt Bryant,Matt,Bryant,3,PK,Atlanta Falcons
+NFL,14073,Matt Bosher,Matt,Bosher,5,P,Atlanta Falcons
+NFL,15151,Josh Harris,Josh,Harris,47,LS,Atlanta Falcons
+NFL,8627,Derek Anderson,Derek,Anderson,3,QB,Carolina Panthers
+NFL,13994,Cam Newton,Cam,Newton,1,QB,Carolina Panthers
+NFL,13484,Joe Webb,Joe,Webb,14,QB,Carolina Panthers
+NFL,3043097,Cameron Artis-Payne,Cameron,Artis-Payne,34,RB,Carolina Panthers
+NFL,11247,Jonathan Stewart,Jonathan,Stewart,28,RB,Carolina Panthers
+NFL,2465679,Brandon Wegher,Brandon,Wegher,32,RB,Carolina Panthers
+NFL,15755,Fozzy Whittaker,Fozzy,Whittaker,43,RB,Carolina Panthers
+NFL,11658,Mike Tolbert,Mike,Tolbert,35,FB,Carolina Panthers
+NFL,16730,Kelvin Benjamin,Kelvin,Benjamin,13,WR,Carolina Panthers
+NFL,17399,Corey Brown,Corey,Brown,10,WR,Carolina Panthers
+NFL,5633,Jerricho Cotchery,Jerricho,Cotchery,82,WR,Carolina Panthers
+NFL,2977609,Devin Funchess,Devin,Funchess,17,WR,Carolina Panthers
+NFL,10453,Ted Ginn Jr.,Ted,Ginn Jr.,19,WR,Carolina Panthers
+NFL,14910,Stephen Hill,Stephen,Hill,87,WR,Carolina Panthers
+NFL,16841,Kevin Norwood,Kevin,Norwood,81,WR,Carolina Panthers
+NFL,13538,Richie Brockel,Richie,Brockel,47,TE,Carolina Panthers
+NFL,13272,Ed Dickson,Ed,Dickson,84,TE,Carolina Panthers
+NFL,10475,Greg Olsen,Greg,Olsen,88,TE,Carolina Panthers
+NFL,16313,Brandon Williams,Brandon,Williams,86,TE,Carolina Panthers
+NFL,11759,J.J. Jansen,J.J.,Jansen,44,C,Carolina Panthers
+NFL,10503,Ryan Kalil,Ryan,Kalil,67,C,Carolina Panthers
+NFL,11601,Fernando Velasco,Fernando,Velasco,61,G,Carolina Panthers
+NFL,15492,Nate Chandler,Nate,Chandler,78,OT,Carolina Panthers
+NFL,12621,Michael Oher,Michael,Oher,73,OT,Carolina Panthers
+NFL,15422,Mike Remmers,Mike,Remmers,74,OT,Carolina Panthers
+NFL,2514244,Daryl Williams,Daryl,Williams,60,OT,Carolina Panthers
+NFL,12661,Tyronne Green,Tyronne,Green,00,OG,Carolina Panthers
+NFL,17388,Andrew Norwell,Andrew,Norwell,68,OG,Carolina Panthers
+NFL,13451,Chris Scott,Chris,Scott,79,OG,Carolina Panthers
+NFL,14981,Amini Silatolu,Amini,Silatolu,66,OG,Carolina Panthers
+NFL,16789,Trai Turner,Trai,Turner,70,OG,Carolina Panthers
+NFL,14320,Mario Addison,Mario,Addison,97,DE,Carolina Panthers
+NFL,15010,Frank Alexander,Frank,Alexander,90,DE,Carolina Panthers
+NFL,16773,Kony Ealy,Kony,Ealy,94,DE,Carolina Panthers
+NFL,16431,Wes Horton,Wes,Horton,96,DE,Carolina Panthers
+NFL,10527,Charles Johnson,Charles,Johnson,95,DE,Carolina Panthers
+NFL,2568870,Arthur Miley,Arthur,Miley,71,DE,Carolina Panthers
+NFL,4870,Colin Cole,Colin,Cole,91,DT,Carolina Panthers
+NFL,5576,Dwan Edwards,Dwan,Edwards,92,DT,Carolina Panthers
+NFL,15802,Star Lotulelei,Star,Lotulelei,98,DT,Carolina Panthers
+NFL,13608,Kyle Love,Kyle,Love,93,DT,Carolina Panthers
+NFL,15862,Kawann Short,Kawann,Short,99,DT,Carolina Panthers
+NFL,8429,Thomas Davis,Thomas,Davis,58,LB,Carolina Panthers
+NFL,14739,Ben Jacobs,Ben,Jacobs,53,LB,Carolina Panthers
+NFL,15964,A.J. Klein,A.J.,Klein,56,LB,Carolina Panthers
+NFL,14938,Luke Kuechly,Luke,Kuechly,59,LB,Carolina Panthers
+NFL,2972400,David Mayo,David,Mayo,55,LB,Carolina Panthers
+NFL,2978313,Shaq Thompson,Shaq,Thompson,54,LB,Carolina Panthers
+NFL,16872,Bené Benwikere,25,CB,Carolina Panthers
+NFL,15124,Josh Norman,Josh,Norman,24,CB,Carolina Panthers
+NFL,13340,Kurt Coleman,Kurt,Coleman,20,DB,Carolina Panthers
+NFL,14117,Colin Jones,Colin,Jones,42,DB,Carolina Panthers
+NFL,4493,Charles Tillman,Charles,Tillman,31,DB,Carolina Panthers
+NFL,13922,Teddy Williams,Teddy,Williams,21,DB,Carolina Panthers
+NFL,9629,Roman Harper,Roman,Harper,41,SS,Carolina Panthers
+NFL,16877,Tre Boston,Tre,Boston,33,FS,Carolina Panthers
+NFL,2519038,Dean Marlowe,Dean,Marlowe,29,FS,Carolina Panthers
+NFL,12460,Graham Gano,Graham,Gano,9,PK,Carolina Panthers
+NFL,15051,Brad Nortman,Brad,Nortman,8,P,Carolina Panthers
+NFL,2580,Drew Brees,Drew,Brees,9,QB,New Orleans Saints
+NFL,2575660,Garrett Grayson,Garrett,Grayson,18,QB,New Orleans Saints
+NFL,5631,Luke McCown,Luke,McCown,7,QB,New Orleans Saints
+NFL,13981,Mark Ingram,Mark,Ingram,22,RB,New Orleans Saints
+NFL,2514123,Marcus Murphy,Marcus,Murphy,23,RB,New Orleans Saints
+NFL,16530,Khiry Robinson,Khiry,Robinson,29,RB,New Orleans Saints
+NFL,13203,C.J. Spiller,C.J.,Spiller,28,RB,New Orleans Saints
+NFL,15765,Austin Johnson,Austin,Johnson,35,FB,New Orleans Saints
+NFL,17127,Brandon Coleman,Brandon,Coleman,16,WR,New Orleans Saints
+NFL,9838,Marques Colston,Marques,Colston,12,WR,New Orleans Saints
+NFL,16731,Brandin Cooks,Brandin,Cooks,10,WR,New Orleans Saints
+NFL,14424,Joseph Morgan,Joseph,Morgan,13,WR,New Orleans Saints
+NFL,17258,Willie Snead,Willie,Snead,83,WR,New Orleans Saints
+NFL,12874,Kevin Brock,Kevin,Brock,85,TE,New Orleans Saints
+NFL,16143,Josh Hill,Josh,Hill,89,TE,New Orleans Saints
+NFL,2577113,Jack Tabb,Jack,Tabb,00,TE,New Orleans Saints
+NFL,5557,Benjamin Watson,Benjamin,Watson,82,TE,New Orleans Saints
+NFL,15751,Mike Brewster,Mike,Brewster,70,C,New Orleans Saints
+NFL,13559,Justin Drescher,Justin,Drescher,47,C,New Orleans Saints
+NFL,15123,Senio Kelemete,Senio,Kelemete,65,C,New Orleans Saints
+NFL,12624,Max Unger,Max,Unger,60,C,New Orleans Saints
+NFL,16146,Tim Lelito,Tim,Lelito,68,G,New Orleans Saints
+NFL,11343,Mike McGlynn,Mike,McGlynn,63,G,New Orleans Saints
+NFL,15821,Terron Armstead,Terron,Armstead,72,OT,New Orleans Saints
+NFL,2978278,Andrus Peat,Andrus,Peat,75,OT,New Orleans Saints
+NFL,9796,Zach Strief,Zach,Strief,64,OT,New Orleans Saints
+NFL,9694,Jahri Evans,Jahri,Evans,73,OG,New Orleans Saints
+NFL,2512398,Tavaris Barnes,Tavaris,Barnes,90,DE,New Orleans Saints
+NFL,2468550,Obum Gwacham,Obum,Gwacham,58,DE,New Orleans Saints
+NFL,14984,Akiem Hicks,Akiem,Hicks,76,DE,New Orleans Saints
+NFL,13971,Cameron Jordan,Cameron,Jordan,94,DE,New Orleans Saints
+NFL,2578316,Bobby Richardson,Bobby,Richardson,78,DE,New Orleans Saints
+NFL,10470,Anthony Spencer,Anthony,Spencer,99,DE,New Orleans Saints
+NFL,16971,Austin Brown,Austin,Brown,00,DT,New Orleans Saints
+NFL,2517230,Tyeler Davison,Tyeler,Davison,95,DT,New Orleans Saints
+NFL,2516320,Kaleb Eulls,Kaleb,Eulls,71,DT,New Orleans Saints
+NFL,15846,John Jenkins,John,Jenkins,92,DT,New Orleans Saints
+NFL,17274,Lawrence Virgil,Lawrence,Virgil,96,DT,New Orleans Saints
+NFL,4467,Kevin Williams,Kevin,Williams,93,DT,New Orleans Saints
+NFL,2576482,Stephone Anthony,Stephone,Anthony,50,LB,New Orleans Saints
+NFL,17141,Kasim Edebali,Kasim,Edebali,91,LB,New Orleans Saints
+NFL,13103,Dannell Ellerbe,Dannell,Ellerbe,59,LB,New Orleans Saints
+NFL,11544,David Hawthorne,David,Hawthorne,57,LB,New Orleans Saints
+NFL,12988,Ramon Humber,Ramon,Humber,53,LB,New Orleans Saints
+NFL,2509488,Hau'oli Kikaha,Hau'oli,Kikaha,44,LB,New Orleans Saints
+NFL,15903,Michael Mauti,Michael,Mauti,56,LB,New Orleans Saints
+NFL,2520845,Davis Tull,Davis,Tull,55,LB,New Orleans Saints
+NFL,2267296,Delvin Breaux,Delvin,Breaux,40,CB,New Orleans Saints
+NFL,12683,Keenan Lewis,Keenan,Lewis,21,CB,New Orleans Saints
+NFL,2578561,Damian Swann,Damian,Swann,27,CB,New Orleans Saints
+NFL,2977661,P.J. Williams,P.J.,Williams,36,CB,New Orleans Saints
+NFL,9250,Brandon Browner,Brandon,Browner,39,DB,New Orleans Saints
+NFL,17139,Brian Dixon,Brian,Dixon,20,DB,New Orleans Saints
+NFL,15943,Don Jones,Don,Jones,30,DB,New Orleans Saints
+NFL,13237,Kyle Wilson,Kyle,Wilson,24,DB,New Orleans Saints
+NFL,11265,Kenny Phillips,Kenny,Phillips,30,S,New Orleans Saints
+NFL,12721,Jamarca Sanford,Jamarca,Sanford,33,SS,New Orleans Saints
+NFL,15813,Kenny Vaccaro,Kenny,Vaccaro,32,SS,New Orleans Saints
+NFL,13544,Rafael Bush,Rafael,Bush,25,FS,New Orleans Saints
+NFL,12613,Jairus Byrd,Jairus,Byrd,31,FS,New Orleans Saints
+NFL,16916,Zach Hocker,Zach,Hocker,2,PK,New Orleans Saints
+NFL,12701,Thomas Morstead,Thomas,Morstead,6,P,New Orleans Saints
+NFL,15837,Mike Glennon,Mike,Glennon,8,QB,Tampa Bay Buccaneers
+NFL,16140,Ryan Griffin,Ryan,Griffin,4,QB,Tampa Bay Buccaneers
+NFL,2969939,Jameis Winston,Jameis,Winston,3,QB,Tampa Bay Buccaneers
+NFL,15968,Mike James,Mike,James,25,RB,Tampa Bay Buccaneers
+NFL,14885,Doug Martin,Doug,Martin,22,RB,Tampa Bay Buccaneers
+NFL,15501,Bobby Rainey,Bobby,Rainey,43,RB,Tampa Bay Buccaneers
+NFL,16749,Charles Sims,Charles,Sims,34,RB,Tampa Bay Buccaneers
+NFL,12510,Jorvorskie Lane,Jorvorskie,Lane,46,FB,Tampa Bay Buccaneers
+NFL,2514150,Kenny Bell,Kenny,Bell,80,WR,Tampa Bay Buccaneers
+NFL,16737,Mike Evans,Mike,Evans,13,WR,Tampa Bay Buccaneers
+NFL,2576491,Adam Humphries,Adam,Humphries,11,WR,Tampa Bay Buccaneers
+NFL,8475,Vincent Jackson,Vincent,Jackson,83,WR,Tampa Bay Buccaneers
+NFL,12585,Louis Murphy,Louis,Murphy,18,WR,Tampa Bay Buccaneers
+NFL,16227,Russell Shepard,Russell,Shepard,89,WR,Tampa Bay Buccaneers
+NFL,12705,Brandon Myers,Brandon,Myers,82,TE,Tampa Bay Buccaneers
+NFL,16795,Austin Seferian-Jenkins,Austin,Seferian-Jenkins,87,TE,Tampa Bay Buccaneers
+NFL,14099,Luke Stocker,Luke,Stocker,88,TE,Tampa Bay Buccaneers
+NFL,15726,Andrew DePaola,Andrew,DePaola,48,C,Tampa Bay Buccaneers
+NFL,13385,Joe Hawley,Joe,Hawley,68,C,Tampa Bay Buccaneers
+NFL,12972,Evan Smith,Evan,Smith,62,C,Tampa Bay Buccaneers
+NFL,15463,Jeremiah Warren,Jeremiah,Warren,60,C,Tampa Bay Buccaneers
+NFL,15132,Matthew Masifilo,Matthew,Masifilo,65,OL,Tampa Bay Buccaneers
+NFL,11251,Gosder Cherilus,Gosder,Cherilus,78,OT,Tampa Bay Buccaneers
+NFL,13050,Demar Dotson,Demar,Dotson,69,OT,Tampa Bay Buccaneers
+NFL,16835,Kevin Pamphile,Kevin,Pamphile,64,OT,Tampa Bay Buccaneers
+NFL,2582147,Donovan Smith,Donovan,Smith,76,OT,Tampa Bay Buccaneers
+NFL,8446,Logan Mankins,Logan,Mankins,70,OG,Tampa Bay Buccaneers
+NFL,3165702,Ali Marpet,Ali,Marpet,74,OG,Tampa Bay Buccaneers
+NFL,12434,Larry English,Larry,English,57,DE,Tampa Bay Buccaneers
+NFL,2469737,T.J. Fatinikun,T.J.,Fatinikun,96,DE,Tampa Bay Buccaneers
+NFL,16019,William Gholston,William,Gholston,92,DE,Tampa Bay Buccaneers
+NFL,13812,George Johnson,George,Johnson,94,DE,Tampa Bay Buccaneers
+NFL,12695,Henry Melton,Henry,Melton,90,DE,Tampa Bay Buccaneers
+NFL,15356,Jacquies Smith,Jacquies,Smith,56,DE,Tampa Bay Buccaneers
+NFL,13240,Gerald McCoy,Gerald,McCoy,93,DT,Tampa Bay Buccaneers
+NFL,10031,Tony McDaniel,Tony,McDaniel,77,DT,Tampa Bay Buccaneers
+NFL,12692,Clinton McDonald,Clinton,McDonald,98,DT,Tampa Bay Buccaneers
+NFL,15958,Akeem Spence,Akeem,Spence,97,DT,Tampa Bay Buccaneers
+NFL,2976541,Kwon Alexander,Kwon,Alexander,58,LB,Tampa Bay Buccaneers
+NFL,15177,Kourtnei Brown,Kourtnei,Brown,91,LB,Tampa Bay Buccaneers
+NFL,14026,Bruce Carter,Bruce,Carter,50,LB,Tampa Bay Buccaneers
+NFL,14985,Lavonte David,Lavonte,David,54,LB,Tampa Bay Buccaneers
+NFL,16897,Jeremiah George,Jeremiah,George,52,LB,Tampa Bay Buccaneers
+NFL,15032,James-Michael Johnson,James-Michael,Johnson,53,LB,Tampa Bay Buccaneers
+NFL,11762,Danny Lansanah,Danny,Lansanah,51,LB,Tampa Bay Buccaneers
+NFL,14343,Orie Lemon,Orie,Lemon,45,LB,Tampa Bay Buccaneers
+NFL,15824,Johnthan Banks,Johnthan,Banks,27,CB,Tampa Bay Buccaneers
+NFL,11259,Mike Jenkins,Mike,Jenkins,24,CB,Tampa Bay Buccaneers
+NFL,9648,Tim Jennings,Tim,Jennings,28,CB,Tampa Bay Buccaneers
+NFL,13478,Alterraun Verner,Alterraun,Verner,21,CB,Tampa Bay Buccaneers
+NFL,14016,Chris Conte,Chris,Conte,23,DB,Tampa Bay Buccaneers
+NFL,14802,Sterling Moore,Sterling,Moore,26,DB,Tampa Bay Buccaneers
+NFL,15865,D.J. Swearinger,D.J.,Swearinger,36,DB,Tampa Bay Buccaneers
+NFL,16269,Bradley McDougald,Bradley,McDougald,30,SS,Tampa Bay Buccaneers
+NFL,13307,Major Wright,Major,Wright,31,SS,Tampa Bay Buccaneers
+NFL,15001,Keith Tandy,Keith,Tandy,37,FS,Tampa Bay Buccaneers
+NFL,2576045,Kyle Brindza,Kyle,Brindza,2,PK,Tampa Bay Buccaneers
+NFL,16684,Patrick Murray,Patrick,Murray,7,PK,Tampa Bay Buccaneers
+NFL,15774,Jake Schum,Jake,Schum,5,P,Tampa Bay Buccaneers
