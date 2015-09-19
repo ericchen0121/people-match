@@ -22,8 +22,8 @@ mq.lastWeek = { $gte: lastWeek, $lt: tomorrow }
 # Usage like so in a template: <img class='playerPhoto' src={{ playerImageESPN espn_id = this.espn_id espn_size = 'micro'}}>
 
 Template.registerHelper 'playerImageESPN', (obj) ->
-  console.log obj.hash.espn_id, obj.hash.espn_size
   sport = obj.hash.sport || 'NFL'
+  espn_id = obj.hash.espn_id || '15803'
 
   if obj.hash.espn_size
     size = switch obj.hash.espn_size
@@ -34,13 +34,8 @@ Template.registerHelper 'playerImageESPN', (obj) ->
       when 'micro' then '&w=68&h=50'
       else ''
   else size = ''
-
-  if sport
-    switch sport
-      when 'NFL'
-        return 'http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/' + obj.hash.espn_id + '.png' + size
-      when 'NBA'
-        return 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/' + obj.hash.espn_id + '.png' + size
+  
+  return 'http://a.espncdn.com/combiner/i?img=/i/headshots/' + sport.toLowerCase() + '/players/full/' + espn_id + '.png' + size
 
 # ---------------------------------------- Profile Image and Default----------------------------------------
 # http://stackoverflow.com/questions/15018552/how-to-query-a-facebook-user-picture-via-meteors-accounts-facebook
