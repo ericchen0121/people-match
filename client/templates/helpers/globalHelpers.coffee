@@ -22,7 +22,8 @@ mq.lastWeek = { $gte: lastWeek, $lt: tomorrow }
 # Usage like so in a template: <img class='playerPhoto' src={{ playerImageESPN espn_id = this.espn_id espn_size = 'micro'}}>
 
 Template.registerHelper 'playerImageESPN', (obj) ->
-  sport = obj.hash.sport
+  console.log obj.hash.espn_id, obj.hash.espn_size
+  sport = obj.hash.sport || 'NFL'
 
   if obj.hash.espn_size
     size = switch obj.hash.espn_size
@@ -34,7 +35,6 @@ Template.registerHelper 'playerImageESPN', (obj) ->
       else ''
   else size = ''
 
-  
   if sport
     switch sport
       when 'NFL'

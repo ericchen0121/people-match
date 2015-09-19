@@ -1,8 +1,7 @@
 Template.contestCreate.helpers
 
   availableFixtures: ->
-    # Fixtures.find {startsAt: mq.future}, { sort: { startsAt: 1 }} 
-    Fixtures.find {startsAt: mq.lastFewDays}, { sort: { startsAt: 1 }} 
+    Fixtures.find {startsAt: mq.future}, { sort: { startsAt: 1 }} 
 
   # Basically, this is neccessary as a template helper because we can't
   # '{{events}}' is a reserved word within helpers. However, we also have

@@ -46,7 +46,7 @@ template(name='contestLineupContainer')
               div(class='row player-list-item size-13 {{#if inCurrentLineup}}selected-player{{/if}}')
                 div(class='col-md-1 player-position vAlign') #{position}
                 div(class='col-md-3 player-image vAlign')
-                  img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'micro' sport=sport }}")
+                  img(class='player-photo' src="{{ playerImageESPN espn_id = espn_id espn_size = 'micro' sport=sport }}")
                 div(class='col-md-6 player-name vAlign') #{full_name}
                 div(class='col-md-2 player-fppg vAlign') --
                 div(class='col-md-1 player-played vAlign') -

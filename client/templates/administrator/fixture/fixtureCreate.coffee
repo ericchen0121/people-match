@@ -5,7 +5,6 @@ Template.fixtureCreate.helpers
 
   fixtures: ->
     Fixtures.find({ startsAt: mq.future })
-    # Fixtures.find({ startsAt: mq.lastFewDays })
 
   # @param-data [obj] a Fixture 
   # 

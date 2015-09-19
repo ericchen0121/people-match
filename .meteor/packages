@@ -44,10 +44,9 @@ meteorhacks:kadira
 meteorhacks:subs-manager
 velocityjs:velocityjs
 frozeman:animation-helper-velocity
-mrgalaxy:stripe
 chrismbeckett:toastr
 useraccounts:core
 useraccounts:bootstrap
+useraccounts:iron-routing
 reywood:iron-router-ga
 velocity:html-reporter
-mike:mocha
