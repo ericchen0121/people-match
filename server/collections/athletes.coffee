@@ -222,6 +222,11 @@ Meteor.methods
                 jersey_number: player.jersey_number
                 team: roster.market + ' ' + roster.name
                 team_id: roster.id
+                height: player.height
+                weight: player.weight
+                status: player.status
+                salary: player.salary
+                experience: player.experience
               }
             }
           )
@@ -231,6 +236,13 @@ Meteor.methods
           full_name: player.name_full
           first_name: player.name_first
           last_name: player.name_last
+          birthdate: player.birthdate
+          height: player.height
+          weight: player.weight
+          college: player.college
+          status: player.status
+          salary: player.salary
+          experience: player.experience
           jersey_number: player.jersey_number
           position: player.position
           team: roster.market + ' ' + roster.name
@@ -265,8 +277,8 @@ Meteor.methods
 
     return null
 
-# Meteor.call 'updateAllTeamRostersNFL'
-
+Meteor.call 'updateAllTeamRostersNFL'
+# Meteor.call 'getAthletesByTeamNFL', 'BAL'
   #
   #
   # NBA METHODS

@@ -163,9 +163,9 @@ Template.contestLineupContainer.helpers
       when 'NFL'
         switch position_filter
           when 'All'
-            NflPlayers.find({ team_id: { $in: team_filter }, position: { $in: ['QB', 'RB', 'FB', 'WR', 'TE', 'PK', 'DEF'] }})
+            NflPlayers.find({ team_id: { $in: team_filter }, position: { $in: ['QB', 'RB', 'FB', 'WR', 'TE', 'K', 'DEF'] }})
           when 'K' # edge case when filter won't match position name
-            NflPlayers.find({ team_id: { $in: team_filter }, position: 'PK' })
+            NflPlayers.find({ team_id: { $in: team_filter }, position: 'K' })
           when 'D' # another edge case
              NflPlayers.find({ position: 'DEF' })
           else
