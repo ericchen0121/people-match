@@ -33,7 +33,8 @@ nflTeams = [
   'SEA'
 ]
 
-playoffTeams = ['NE', 'SEA', 'GB', 'IND']
+# TODO: 2014 Playoff Teams, Replace for 2015!
+playoffTeams = ['NE', 'SEA', 'GB', 'IND'] 
 
 nbaTeams =  [
             {
@@ -190,6 +191,8 @@ nbaTeams =  [
 
 Meteor.methods
 
+  # function getAthletesByTeamNFL
+  #
   # This method adds the SD Player Id to the existing player's object.
   # This method initially was for adding Data to Seed Data
   # There are a few scenarios: 
@@ -197,34 +200,32 @@ Meteor.methods
   # 2) existing player, new information (team change, most likely)
   # 3) duplicate name, yet different player. (difficult, may need to add other identifer on there - jersey-team-last-name)
   # If the athlete doesn't exist yet, it adds them.
+  #
   getAthletesByTeamNFL: (team) ->
-    console.log '------------- UPDATING ATHLETE ', sport, ' ROSTERS -------------'
-    console.log '-------------', team, '-------------'
-    roster = sd.NFLApi.getTeamRoster team
-    players = roster.team.player
+    console.log '-------------  ' + team + ': UPDATING ROSTERS -------------'
+    roster = JSON.parse(sd.NFLApi.getTeamRoster team)
+    players = roster["players"]
+    new_players = [] # for debugging and adding new ESPN images
 
     for player in players
-      # if player exists already, 
-      # TODO: This leaves a number of players without matching names WITHOUT api.SDPlayerIds
-      existingPlayer = NflPlayers.findOne({ "full_name": player.name_full })
+      existingPlayer = NflPlayers.findOne({ "api.SDPlayerId": player.id }) # if player is in db
       if existingPlayer
-        # add the id to the player
-        # TODO: full_name isn't the most unique identifier
         if !existingPlayer.api || !existingPlayer.api.SDPlayerId
           NflPlayers.update(
-            { full_name: existingPlayer.full_name },
+            { full_name: existingPlayer.full_name, team_id: roster.id }, # find player uniquely
             { $set: { 
-                "api.SDPlayerId": player.id 
-                position: player.position
-                # team_id: roster.team.id # THIS CURRENTLY DOESN"T WORK
-                # due to removing attributes from XML
-                # When we move this to JSON this will work.
-                # this affects players changing teams
-                # also note we will need to keep team_id and team in sync.
+                "api.SDPlayerId": player.id  # add the api id key to the player
+                #
+                # in case these changed
+                #
+                position: player.position 
+                jersey_number: player.jersey_number
+                team: roster.market + ' ' + roster.name
+                team_id: roster.id
               }
             }
           )
-
+          console.log 'API ID ADDED for' + player.name_full + ' ' + roster.market +  ' ' + player.position
       else # if athlete doesn't exist, insert him
         NflPlayers.insert({
           full_name: player.name_full
@@ -232,29 +233,40 @@ Meteor.methods
           last_name: player.name_last
           jersey_number: player.jersey_number
           position: player.position
-          team: roster.team.market + ' ' + roster.team.name
-          team_id: roster.team.id
+          team: roster.market + ' ' + roster.name
+          team_id: roster.id
           api: {
             SDPlayerId: player.id
           }
         })
-
-        console.log 'new player', player.name_full, ' ', roster.team.market, ' ', player.position
+        
+        #
+        # DEBUGGING
+        #
+        new_players.push({name: player.name_full, api_id: player.id, team: roster.id})
+    #
+    # DEBUGGING
+    #
+    console.log 'NEW PLAYERS, ADD IMAGES TO:--------------------', new_players, " Total New Players", new_players.length
 
   updateAllTeamRostersNFL: ->
     # Meteor.setInterval works, the code is cracked! 
-    # http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
+    # docs: http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
     # 
     i = 0
     len = nflTeams.length
-
     timer = Meteor.setInterval( ->
-      if i is len
+      if i >= len
         Meteor.clearInterval timer
       else
-        Meteor.call 'getAthletesByTeamNFL', playoffTeams[i]
+        Meteor.call 'getAthletesByTeamNFL', nflTeams[i]
         i++
     , 5000)
+
+    return null
+
+# Meteor.call 'updateAllTeamRostersNFL'
+
   #
   #
   # NBA METHODS
@@ -299,6 +311,7 @@ Meteor.methods
   #       Meteor.call 'getAthletesByTeamNBA', nbaTeams[i].alias
   #       i++
   #   , 2500)
+  # return null
         
 # Meteor.call 'getAthletesByTeamNBA', 'BOS'
 # Meteor.call 'updateAllTeamRostersNBA'

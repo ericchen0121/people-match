@@ -51,7 +51,7 @@ addPlayerToRoster = (player) ->
       else if currentRoster['FLEX2'] is 'open'
         Session.setJSON 'currentLineup.roster.FLEX2', player
       else toastr.info 'TEs are Full'
-    when 'PK'
+    when 'K'
       if currentRoster['K'] is 'open' then Session.setJSON 'currentLineup.roster.K', player else toastr.info 'Ks are Full'
     when 'DEF'
       if currentRoster['DEF'] is 'open' then Session.setJSON 'currentLineup.roster.DEF', player else toastr.info 'DEFs are Full'

@@ -1,4 +1,4 @@
-player,player,number,number,position,position
+sport,espn_id,full_name,first_name,last_name,jersey_number,position,team
 NFL,8644,Matt Cassel,Matt,Cassel,16,QB,Buffalo Bills
 NFL,15803,EJ Manuel,EJ,Manuel,3,QB,Buffalo Bills
 NFL,14163,Tyrod Taylor,Tyrod,Taylor,5,QB,Buffalo Bills
