@@ -6,7 +6,6 @@
 # NOTE: We should persist this roster somehow and/or do checks if a user leaves a contest page
 # or submits after a contest is filled up, and wants to remember his lineup.
 addPlayerToRoster = (player) ->
-  console.log player
   currentRoster = Session.getJSON 'currentLineup.roster'
   toastr.options = {
     "positionClass": "toast-bottom-full-width",
@@ -20,7 +19,10 @@ addPlayerToRoster = (player) ->
   #
   switch player.position
     when 'QB'
-      if currentRoster['QB'] is 'open' then Session.setJSON 'currentLineup.roster.QB', player else toastr.info 'QBs are Full'
+      console.log currentRoster['QB'] 
+      if currentRoster['QB'] is 'open'
+        Session.setJSON 'currentLineup.roster.QB', player 
+      else toastr.info 'QBs are Full'
     when 'RB'
       if currentRoster['RB1'] is 'open'
         Session.setJSON 'currentLineup.roster.RB1', player
@@ -240,10 +242,9 @@ Template.contestLineupContainer.helpers
     result = false # assume player is not in lineup, until proven true
     if rosterJSON
       $.each rosterJSON, (k, v) =>
-        if v._id and v._id._str == @._id._str
+        if v._id and v._id == @._id
           result = true # return true if the player is in the current lineup
           return false # to break out of $.each loop
-
     return result
 
   # Returns the event's matchup description, ie. 'NE vs. SEA'

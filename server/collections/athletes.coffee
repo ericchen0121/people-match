@@ -282,14 +282,14 @@ Meteor.methods
     # data via https://www.kimonolabs.com/apis/6dmp1l9s#data
     data = JSON.parse(Assets.getText("assets/nfl_player_data_espn_2015.json"))
     players = data.results.collection1
-    nonMatchedPlayers = []
     for player in players
       Meteor.call 'addESPNId', player
 
+#
+  # Meteor.setInterval works, the code is cracked! 
+  # docs: http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
+  # 
   updateAllTeamRostersNFL: ->
-    # Meteor.setInterval works, the code is cracked! 
-    # docs: http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
-    # 
     i = 0
     len = nflTeams.length
     timer = Meteor.setInterval( ->

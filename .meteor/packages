@@ -49,4 +49,3 @@ useraccounts:core
 useraccounts:bootstrap
 useraccounts:iron-routing
 reywood:iron-router-ga
-velocity:html-reporter

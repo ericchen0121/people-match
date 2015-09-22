@@ -45,3 +45,4 @@ Meteor.methods
 
 # TODO: Create a frontend UI to call this method 
 # Meteor.call("addTeamIdsToPlayers")
+# Meteor.call("addSalary")
