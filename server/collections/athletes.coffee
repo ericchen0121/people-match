@@ -261,6 +261,36 @@ Meteor.methods
     #
     console.log 'NEW PLAYERS, ADD IMAGES TO:--------------------', new_players, " Total New Players", new_players.length
 
+  addESPNId: (player) ->
+    # ESPN Url regex for extracting ID
+    # 
+    regexp = new RegExp(/_\/id\/(\d+)/) # docs: http://www.w3schools.com/jsref/jsref_obj_regexp.asp
+    existingPlayer = NflPlayers.findOne({ "full_name": player.name }) # if player is in db
+    # Grab ESPN player ID from URL string
+    id = regexp.exec(player.url)
+    if id && existingPlayer && !existingPlayer.espn_id
+      NflPlayers.update(
+        { full_name: existingPlayer.full_name, team: player.team.text }, # find player uniquely
+        { $set: { 
+            "espn_id": id[1] 
+          }
+        }
+      )
+    else
+      if !existingPlayer.espn_id
+        return player.name
+    return false
+
+  addESPNPlayerId: -> 
+    # data via https://www.kimonolabs.com/apis/6dmp1l9s#data
+    data = JSON.parse(Assets.getText("assets/nfl_player_data_espn_2015.json"))
+    players = data.results.collection1
+    nonMatchedPlayers = []
+    for player in players
+      nonMatchedPlayer = Meteor.call 'addESPNId', player
+      nonMatchedPlayers.push(nonMatchedPlayer)
+    console.log nonMatchedPlayers
+
   updateAllTeamRostersNFL: ->
     # Meteor.setInterval works, the code is cracked! 
     # docs: http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
@@ -277,7 +307,9 @@ Meteor.methods
 
     return null
 
-Meteor.call 'updateAllTeamRostersNFL'
+# Meteor.call 'updateAllTeamRostersNFL'
+# Meteor.call 'addESPNPlayerId'
+
 # Meteor.call 'getAthletesByTeamNFL', 'BAL'
   #
   #
