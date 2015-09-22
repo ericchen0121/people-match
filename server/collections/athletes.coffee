@@ -268,7 +268,7 @@ Meteor.methods
     existingPlayer = NflPlayers.findOne({ "full_name": player.name }) # if player is in db
     # Grab ESPN player ID from URL string
     id = regexp.exec(player.url)
-    if id && existingPlayer && !existingPlayer.espn_id
+    if id && existingPlayer
       NflPlayers.update(
         { full_name: existingPlayer.full_name, team: player.team.text }, # find player uniquely
         { $set: { 
@@ -276,9 +276,6 @@ Meteor.methods
           }
         }
       )
-    else
-      if !existingPlayer.espn_id
-        return player.name
     return false
 
   addESPNPlayerId: -> 
@@ -287,9 +284,7 @@ Meteor.methods
     players = data.results.collection1
     nonMatchedPlayers = []
     for player in players
-      nonMatchedPlayer = Meteor.call 'addESPNId', player
-      nonMatchedPlayers.push(nonMatchedPlayer)
-    console.log nonMatchedPlayers
+      Meteor.call 'addESPNId', player
 
   updateAllTeamRostersNFL: ->
     # Meteor.setInterval works, the code is cracked! 
@@ -308,7 +303,7 @@ Meteor.methods
     return null
 
 # Meteor.call 'updateAllTeamRostersNFL'
-# Meteor.call 'addESPNPlayerId'
+Meteor.call 'addESPNPlayerId'
 
 # Meteor.call 'getAthletesByTeamNFL', 'BAL'
   #
