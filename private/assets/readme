@@ -1,0 +1,2 @@
+nfl_player_data_espn_2015
+	-file used for updating ESPN ID after using the SportsRadara API to seed the nflPlayers database
