@@ -21,7 +21,5 @@ Meteor.methods
     return { superstarExists: true, superstarId: superstar._id } if superstarAlreadyInDB
     # this error is not caught properly on the client side code right now. in nflPlayersListCards.coffee
 
-    console.log 'superstarInsert ...'
-
     # else create a new superstar in the db!!!
     NflSuperstars.insert(superstar)

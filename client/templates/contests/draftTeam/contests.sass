@@ -10,6 +10,8 @@ $lightBlue: #3f96cb
   .player-list-item
     height: 45px
     background-image: url("/images/player_purple_pink.svg")
+    &:hover
+      background-color: $lightestGrey
 
     &.selected-player
       background-color: #f2fbe9
@@ -21,7 +23,7 @@ $lightBlue: #3f96cb
   .position-filter-tab
     height: 100%
     color: $lightBlue
-    border-right: 1px white solid
+    border-right: 2px white solid
 
 #event-filters-container
   // width: 900px
@@ -29,12 +31,15 @@ $lightBlue: #3f96cb
   .event-filter-tab
     height: 100%
     border: 1px solid white
+    padding-top: 5px 0
 
     &:hover
-      border: 1px solid $accent-highlight
+      border-left: 1px solid $accent-highlight
+      background-color: $lightestGrey
 
   .event-filter
     height: 60px
+    font-color: $lightBlue 
 
 .fa-plus-circle
     color: $fa-plus

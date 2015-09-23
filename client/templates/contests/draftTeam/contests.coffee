@@ -19,7 +19,6 @@ addPlayerToRoster = (player) ->
   #
   switch player.position
     when 'QB'
-      console.log currentRoster['QB'] 
       if currentRoster['QB'] is 'open'
         Session.setJSON 'currentLineup.roster.QB', player 
       else toastr.info 'QBs are Full'
@@ -285,7 +284,7 @@ Template.contestLineupContainer.events
       $.each rosterJSON, (k, v) =>
         # compare player removed to roster session variable
         # shortcircuit if there is no player object (e.g. v._id)
-        if v._id and @._id._str == v._id._str
+        if v._id and @._id == v._id
           rosterJSON[k] = 'open' # reset spot to open
 
     # save to Session object
@@ -365,7 +364,7 @@ Template.contestLineupContainer.rendered = ->
       roster = {
         'QB': 'open'
         'RB1': 'open'
-        # 'RB2': 'open'
+        'RB2': 'open'
         'WR1': 'open'
         'WR2': 'open'
         # 'WR3': 'open' 

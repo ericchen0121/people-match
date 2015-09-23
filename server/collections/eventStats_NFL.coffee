@@ -16,8 +16,6 @@ Meteor.methods
         eventStats = @sd.NFLApi.getGameStats week, awayTeam, homeTeam
         sport = 'NFL'
 
-    console.log 'eventStat is', eventStats
-
     if eventStats
       EventStats.update({ 
           api: { SDGameId: eventStats.game.id }

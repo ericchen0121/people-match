@@ -33,6 +33,8 @@ nflTeams = [
   'SEA'
 ]
 
+
+
 # TODO: 2014 Playoff Teams, Replace for 2015!
 playoffTeams = ['NE', 'SEA', 'GB', 'IND'] 
 
@@ -190,6 +192,204 @@ nbaTeams =  [
             }]
 
 Meteor.methods
+  
+  getNFLTeamMarketDictionary: (teamId) ->
+    teamDictionary = {
+      "TEN": {
+        "id": "TEN",
+        "name": "Titans",
+        "market": "Tennessee",
+        "full_name": "Tennessee Titans",
+      },
+      "BUF": {
+        "id": "BUF",
+        "name": "Bills",
+        "market": "Buffalo",
+        "full_name": "Buffalo Bills",
+      },
+      "MIA": {
+        "id": "MIA",
+        "name": "Dolphins",
+        "market": "Miami",
+        "full_name": "Miami Dolphins",
+      },
+      "NYJ": {
+        "id": "NYJ",
+        "name": "Jets",
+        "market": "New York",
+        "full_name": "New York Jets",
+      },
+      "NE": {
+        "id": "NE",
+        "name": "Patriots",
+        "market": "New England",
+        "full_name": "New England Patriots",
+      },
+      "CIN": {
+        "id": "CIN",
+        "name": "Bengals",
+        "market": "Cincinnati",
+        "full_name": "Cincinnati Bengals",
+      },
+      "CLE": {
+        "id": "CLE",
+        "name": "Browns",
+        "market": "Cleveland",
+        "full_name": "Cleveland Browns",
+      },
+      "BAL": {
+        "id": "BAL",
+        "name": "Ravens",
+        "market": "Baltimore",
+        "full_name": "Baltimore Ravens",
+      },
+      "PIT": {
+        "id": "PIT",
+        "name": "Steelers",
+        "market": "Pittsburgh",
+        "full_name": "Pittsburgh Steelers",
+      },
+      "IND": {
+        "id": "IND",
+        "name": "Colts",
+        "market": "Indianapolis",
+        "full_name": "Indianapolis Colts",
+      },
+      "JAC": {
+        "id": "JAC",
+        "name": "Jaguars",
+        "market": "Jacksonville",
+        "full_name": "Jacksonville Jaguars",
+      },
+      "HOU": {
+        "id": "HOU",
+        "name": "Texans",
+        "market": "Houston",
+        "full_name": "Houston Texans",
+      },
+      "DEN": {
+        "id": "DEN",
+        "name": "Broncos",
+        "market": "Denver",
+        "full_name": "Denver Broncos",
+      },
+      "SD": {
+        "id": "SD",
+        "name": "Chargers",
+        "market": "San Diego",
+        "full_name": "San Diego Chargers",
+      },
+      "KC": {
+        "id": "KC",
+        "name": "Chiefs",
+        "market": "Kansas City",
+        "full_name": "Kansas City Chiefs",
+      },
+      "OAK": {
+        "id": "OAK",
+        "name": "Raiders",
+        "market": "Oakland",
+        "full_name": "Oakland Raiders",
+      },
+      "DAL": {
+        "id": "DAL",
+        "name": "Cowboys",
+        "market": "Dallas",
+        "full_name": "Dallas Cowboys",
+      },
+      "PHI": {
+        "id": "PHI",
+        "name": "Eagles",
+        "market": "Philadelphia",
+        "full_name": "Philadelphia Eagles",
+      },
+      "NYG": {
+        "id": "NYG",
+        "name": "Giants",
+        "market": "New",
+        "full_name": "New York Giants",
+      },
+      "WAS": {
+        "id": "WAS",
+        "name": "Redskins",
+        "market": "Washington",
+        "full_name": "Washington Redskins",
+      },
+      "CHI": {
+        "id": "CHI",
+        "name": "Bears",
+        "market": "Chicago",
+        "full_name": "Chicago Bears",
+      },
+      "DET": {
+        "id": "DET",
+        "name": "Lions",
+        "market": "Detroit",
+        "full_name": "Detroit Lions",
+      },
+      "GB": {
+        "id": "GB",
+        "name": "Packers",
+        "market": "Green Bay",
+        "full_name": "Green Bay Packers",
+      },
+      "MIN": {
+        "id": "MIN",
+        "name": "Vikings",
+        "market": "Minnesota",
+        "full_name": "Minnesota Vikings",
+      },
+      "TB": {
+        "id": "TB",
+        "name": "Buccaneers",
+        "market": "Tampa Bay",
+        "full_name": "Tampa Bay Buccaneers",
+      },
+      "ATL": {
+        "id": "ATL",
+        "name": "Falcons",
+        "market": "Atlanta",
+        "full_name": "Atlanta Falcons",
+      },
+      "CAR": {
+        "id": "CAR",
+        "name": "Panthers",
+        "market": "Carolina",
+        "full_name": "Carolina Panthers",
+      },
+      "NO": {
+        "id": "NO",
+        "name": "Saints",
+        "market": "New Orleans",
+        "full_name": "New Orleans Saints",
+      },
+      "SF": {
+        "id": "SF",
+        "name": "49ers",
+        "market": "San Francisco",
+        "full_name": "San Francisco 49ers",
+      },
+      "ARI": {
+        "id": "ARI",
+        "name": "Cardinals",
+        "market": "Arizona",
+        "full_name": "Arizona Cardinals",
+      },
+      "STL": {
+        "id": "STL",
+        "name": "Rams",
+        "market": "St. Louis",
+        "full_name": "St. Louis Rams",
+      },
+      "SEA": {
+        "id": "SEA",
+        "name": "Seahawks",
+        "market": "Seattle",
+        "full_name": "Seattle Seahawks"
+      }
+    }
+
+    return teamDictionary[teamId]
 
   # function getAthletesByTeamNFL
   #
@@ -285,7 +485,24 @@ Meteor.methods
     for player in players
       Meteor.call 'addESPNId', player
 
-#
+  addNFLDefenses: ->
+    for teamId in nflTeams
+      teamDict = Meteor.call 'getNFLTeamMarketDictionary', teamId
+      NflPlayers.insert(
+        {
+          "api": {
+            "SDPlayerId": teamDict.id
+          }
+          "full_name": teamDict.full_name
+          "status": "ACT"
+          "position": "DEF"
+          "team": teamDict.full_name
+          "team_id": teamDict.id
+          "salary": 4500
+        }
+      )
+     
+  #
   # Meteor.setInterval works, the code is cracked! 
   # docs: http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
   # 
@@ -303,7 +520,8 @@ Meteor.methods
     return null
 
 # Meteor.call 'updateAllTeamRostersNFL'
-Meteor.call 'addESPNPlayerId'
+# Meteor.call 'addESPNPlayerId'
+Meteor.call 'addNFLDefenses'
 
 # Meteor.call 'getAthletesByTeamNFL', 'BAL'
   #
