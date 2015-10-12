@@ -23,7 +23,7 @@ mq.lastWeek = { $gte: lastWeek, $lt: tomorrow }
 
 Template.registerHelper 'playerImageESPN', (obj) ->
   sport = obj.hash.sport || 'NFL'
-  espn_id = obj.hash.espn_id || '15803'
+  espn_id = obj.hash.espn_id
 
   if obj.hash.espn_size
     size = switch obj.hash.espn_size
