@@ -37,6 +37,19 @@ Template.registerHelper 'playerImageESPN', (obj) ->
   
   return 'http://a.espncdn.com/combiner/i?img=/i/headshots/' + sport.toLowerCase() + '/players/full/' + espn_id + '.png' + size
 
+Template.registerHelper 'teamLogoESPN', (obj) ->
+  sport = obj.hash.sport || 'NFL'
+  espn_id = obj.hash.espn_id
+
+  if obj.hash.espn_size
+    size = switch obj.hash.espn_size
+      when 'small' then '&w=100&h=100'
+      when 'medium' then '&w=200&h=200'
+      else ''
+  else size = ''
+
+  return 'http://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/' + espn_id.toLowerCase() + '.png' + size
+
 # ---------------------------------------- Profile Image and Default----------------------------------------
 # http://stackoverflow.com/questions/15018552/how-to-query-a-facebook-user-picture-via-meteors-accounts-facebook
 Template.registerHelper "userImage", (userId) ->

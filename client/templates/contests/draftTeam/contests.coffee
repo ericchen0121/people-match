@@ -193,7 +193,7 @@ Template.contestLineupContainer.helpers
     
     Session.set 'remainingSalary', totalSalary
 
-    # toLocalString() adds the commas for 10000 to be 10,000
+    # toLocalString() adds the commas to change 10000 to 10,000
     return totalSalary.toLocaleString()
 
   salaryRemainingAvg: ->

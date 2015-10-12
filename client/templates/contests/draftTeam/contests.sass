@@ -87,11 +87,21 @@ $lightBlue: #3f96cb
     height: 50px
     width: 68px
     border-radius: 50%
+    -webkit-filter: brightness(1.15)
+    overflow: hidden
+
+  .team-logo
+    height: 50px
+    width: 50px
+    border-radius: 0%
 
   .player-photo-anonymous
     height: 50px
     width: 50px
     border-radius: 50%
+
+  .lineup-player-image
+    padding: 0 0 0 5px
 
   .lineup-player-selection,
   .lineup-player-enter
@@ -112,6 +122,31 @@ $lightBlue: #3f96cb
 
   .btn.btn-default.btn-lg.contest-entry
     padding: 12px 30px
+
+  // http://cssglobe.com/angled-content-mask-with-css/
+  // important is all three layers have overflow: hidden
+  .lineup-team-logo
+    overflow: hidden
+    padding: 0
+    height: 60px
+    width: 70px
+
+    .diagonal-mask
+      overflow: hidden
+      transform: skew(-25deg, 0)
+      height: 60px
+      width: 60px
+      border-left: 1px solid gold
+      position: absolute
+      left: 10px
+
+    .player-team-logo
+      height: 70px
+      width: 70px
+      margin-left: -20px
+      margin-top: -7px
+      transform: skew(25deg, 0)
+
 
 .lineup-desc
   margin-bottom: 10px

@@ -78,10 +78,27 @@ template(name='contestLineupContainer')
                   div(class='row lineup-player-selection size-13')
                     div(class='col-md-4 lineup-player-image vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
                       img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'small' sport=sport }}")
-                    div(class='col-md-2 lineup-player-position vAlign') #{position}
-                    div(class='col-md-8 lineup-player-name vAlign') #{full_name}
+                    div(class='col-md-2 lineup-team-logo vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
+                      div(class='diagonal-mask')
+                        img(class='player-team-logo' src= "{{ teamLogoESPN espn_id=team_id espn_size='medium' sport=sport }}")
+                      
+                    div(class='col-md-1 lineup-player-position vAlign') #{position}
+                    div(class='col-md-6 lineup-player-name vAlign') #{full_name}
                     div(class='col-md-2 lineup-player-salary vAlign') ${{addCommas salary}}
-                    div(class='col-md-2 col-md-push-6 lineup-player-remove vAlign')
+                    div(class='col-md-1 col-md-push-3 lineup-player-remove vAlign')
+                      i(class="fa fa-minus-circle fa-2x pointer")
+              else if team_id
+                +AnimateWithVelocity
+                  div(class='row lineup-player-selection size-13')
+                    div(class='col-md-4 lineup-player-image vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
+                      img(class='team-logo' src= "{{ teamLogoESPN espn_id=team_id espn_size='small' sport=sport }}")
+                    div(class='col-md-2 lineup-team-logo vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
+                      div(class='diagonal-mask')
+                        img(class='player-team-logo' src= "{{ teamLogoESPN espn_id=team_id espn_size='medium' sport=sport }}")
+                    div(class='col-md-1 lineup-player-position vAlign') #{position}
+                    div(class='col-md-6 lineup-player-name vAlign') #{full_name}
+                    div(class='col-md-2 lineup-player-salary vAlign') ${{addCommas salary}}
+                    div(class='col-md-1 col-md-push-3 lineup-player-remove vAlign')
                       i(class="fa fa-minus-circle fa-2x pointer")
               else
                 div(class='row lineup-player-selection player-empty size-13')
