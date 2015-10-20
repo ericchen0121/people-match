@@ -153,3 +153,6 @@ Meteor.methods
         { _id: doc._id } # update itself
         { $set: { score: score }}
       )
+
+Meteor.call 'batchAthleteEventScoringNFL', "c7c45e93-5d60-4389-84e1-971c8ce8807e"
+Meteor.call 'addScoreByGameNFL', "c7c45e93-5d60-4389-84e1-971c8ce8807e"

@@ -13,11 +13,11 @@ Meteor.methods
     # events is an Array when multiple, but a dictionary when single 
     if Array.isArray(events)
       for event in events
-        Meteor.call 'updateEvent', event, sport
+        Meteor.call 'updateEventNFL', event, week
     else
-      Meteor.call 'updateEvent', events, sport
+      Meteor.call 'updateEventNFL', events, week
 
-  updateEvent: (event, sport) ->
+  updateEventNFL: (event, week) ->
     Events.update({
         api: { SDGameId: event.id }
       }, 
@@ -25,7 +25,8 @@ Meteor.methods
         $set: 
           api: 
             SDGameId: event.id
-          sport: sport
+          sport: 'NFL'
+          week: week
           status: event.status
           home: event.home
           away: event.away
@@ -33,5 +34,3 @@ Meteor.methods
       },
       { upsert: true }
     )
-
-Meteor.call 'getEventsNFL', 'NFL', '2'

@@ -1,10 +1,10 @@
 Template.fixtureCreate.helpers
 
   allFutureEvents: ->
-    Events.find({ startsAt: mq.future })
+    Events.find({ startsAt: mq.past })
 
   fixtures: ->
-    Fixtures.find({ startsAt: mq.future })
+    Fixtures.find({ startsAt: mq.past })
 
   # @param-data [obj] a Fixture 
   # 
@@ -25,8 +25,8 @@ Template.fixtureCreate.helpers
 Template.fixtureCreate.events
   'click .update-events': (e) ->
     sport = $('select#event-sport-select').val()
-    schedule = +$('select#event-schedule-select').val()
-    Meteor.call 'getEvents', sport, schedule 
+    schedule = $('select#event-schedule-select').val()
+    Meteor.call 'getEventsNFL', sport, schedule 
 
   'click .remove-fixture': (e) ->
     fixture = @

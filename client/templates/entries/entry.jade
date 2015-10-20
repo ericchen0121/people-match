@@ -31,16 +31,20 @@ template(name='entryView')
           span
             a(class='btn btn-default' href="{{ pathFor 'upcomingContestListLayout' }}") View Entries
 
+
 template(name='entryViewMini')
   div(class='row player-row')
     each roster
       +AnimateWithVelocity
-        span(class='col-md-2' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
+        span(class='col-md-2 entry-view-mini' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
           if espn_id
-            img(class='entry-view-mini' src="{{playerImageESPN espn_id=espn_id espn_size='micro' sport=sport }}")
+            img(class='player-photo' src="{{playerImageESPN espn_id=espn_id espn_size='micro' sport=sport }}")
           else if team_id
-            img(class='entry-view-mini' src="{{teamLogoESPN espn_id=team_id espn_size='small' sport=sport }}")
+            img(class='team-logo' src="{{teamLogoESPN espn_id=team_id espn_size='small' sport=sport }}")
           else
             img(class='entry-view-mini' src="{{playerImageESPN espn_id=espn_id espn_size='micro' sport='NFL' }}")
-          div #{ last_name }, #{ first_name }
+          if espn_id
+            div(class='name') #{ last_name }, #{ first_name }
+          else if team_id
+            div(class='name') #{ full_name }
           div #{ score }

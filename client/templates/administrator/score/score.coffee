@@ -11,7 +11,8 @@ Template.score.helpers
     # Events.find({ status: {$in: ['inprogress', 'created', 'complete']} }) # is better to not have all closed ones and cluttter
     # Events.find({ status: {$in: ['inprogress', 'created', 'complete', 'closed']} })
     # Events.find({ status: {$in: ['scheduled']} })
-    Events.find { startsAt: mq.lastFewDays }
+    Events.find { startsAt: mq.past }
+
 
 Template.score.events
   # TODO: un-hardcode this.
@@ -74,7 +75,8 @@ Template.score.events
 
     switch sport
       when 'NFL'
-        Meteor.call 'batchAthleteEventScoringNFL', event.api.SDGameId
+        Meteor.call '
+        ', event.api.SDGameId
         Meteor.call 'addScoreByGame', 'NFL', event.api.SDGameId
       when 'NBA'
         # Previous method already added to AthleteEventScores

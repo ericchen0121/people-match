@@ -30,44 +30,51 @@ Meteor.methods
 
     # STEP 3: Parse over the EventStat to get to the data
     # parse each of the two teams in the array
-    for team in eventStat.team
-      newStat.teamId = team.id
+    for teamType in ['home', 'away']
+      newStat.teamId = teamType # e.g. 'BAL'
 
       # Create a new AthleteEventStat doc for each player in the EventStat for each 
-      # statistical category of relevance
+      # statistical category of relevance for storing in db
       statTypes = ['rushing', 'passing', 'receiving', 'touchdowns', 'two_point_conversion', 'extra_point', 'fumbles', 'field_goal']
+      # NOTE: There are also team stats that may be interesting to parse here. All stat types: some have "team" (object) and "players" (array)
+      # two_point_conversion, touchdowns, third_down_efficiency, rushing, redzone_efficiency, receiving, punting, punt_return, 
+      # penalty, passing, kickoffs, kick_return, goal_efficiency, fumbles, fourth_down_efficiency, first_downs, field_goal,
+      # extra_point, defensive_conversion, defense
 
       # STEP 3A: Parse over each stat type to get to the data
       for statType in statTypes
-        if team[statType] # if it exists... in the middle of a game it may not exist
-          
-          playerStats = team[statType]['player']
-          # ensure it's an array before iterating over it
-          if !Array.isArray(playerStats)
-            playerStats = [playerStats]
+          if eventStat[teamType]['statistics'][statType] # if it exists... in the middle of a game it may not exist 
+            statistics = eventStat[teamType]['statistics'][statType]
+          console.log 'it exists!', statistics
+          if statistics # if it exists... in the middle of a game it may not exist
+            
+            playerStats = statistics['players']
+            # ensure it's an array before iterating over it
+            if !Array.isArray(playerStats)
+              playerStats = [playerStats]
 
-          # STEP 4: Parse over each player data to get to individual player stat
-          # iterate over the array.
-          # TODO: Fix the "api.SDGameId" key that is created.
-          for stat in playerStats
-            if stat # in case stat is 'undefined'
-              newStat.statType = statType 
-              newStat.api.SDPlayerId = stat.id
-              newStat.full_name = stat.name
-              newStat.position = stat.position
-              newStat.stats = _.omit(stat, ['id', 'name', 'jersey', 'position']) # remove redundant ID, remove all strings
+            # STEP 4: Parse over each player data to get to individual player stat
+            # iterate over the array.
+            # TODO: Fix the "api.SDGameId" key that is created.
+            for playerStat in playerStats
+              if playerStat # in case stat is 'undefined'
+                newStat.statType = statType 
+                newStat.api.SDPlayerId = playerStat.id
+                newStat.full_name = playerStat.name
+                newStat.position = playerStat.position
+                newStat.stats = _.omit(playerStat, ['id', 'name', 'jersey', 'position']) # remove redundant ID, remove all strings
 
-            # STEP 4A: Clean XML Data (to deprecate!)
-            # convert xml strings to integers.
-            for k,v of newStat.stats
-              newStat.stats[k] = parseInt(v)
+              # STEP 4A: Clean XML Data (to deprecate!)
+              # convert xml strings to integers.
+              for k,v of newStat.stats
+                newStat.stats[k] = parseInt(v) # NOT SURE I NEED TO DO THIS
 
-            # STEP 5: Upsert each into the collection
-            newStat.api.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' + statType # unique id
-            AthleteEventStats.upsert(
-              { "api.compoundId": newStat.api.compoundId }, 
-              newStat
-            )
+              # STEP 5: Upsert each into the collection
+              newStat.api.compoundId = newStat.api.SDGameId + '--' + newStat.api.SDPlayerId + '-' + statType # unique id
+              AthleteEventStats.upsert(
+                { "api.compoundId": newStat.api.compoundId }, 
+                newStat
+              )
 
     # DEFENSE is easier to deal with separately.
     # defense ONLY STORES team defense stats at this time
@@ -146,5 +153,5 @@ Meteor.methods
   # 
   # teamAbbreviationNBA: (market) ->
 
-
-
+# For Testing
+# Meteor.call 'convertToAthleteEventStatsNFL', "c7c45e93-5d60-4389-84e1-971c8ce8807e"
