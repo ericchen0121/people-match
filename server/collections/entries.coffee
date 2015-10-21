@@ -54,19 +54,16 @@ Meteor.methods
     # match players and games from the entry's array
     # Use `_id: null` to get accumulated values in the $group stage
     # 
-    console.log 'ADDTOTALSCOREENTRY', entry
     result = AthleteEventScores.aggregate([
       { $match: {'api.SDPlayerId': { $in: entry.api.SDPlayerIds }, 'api.SDGameId': { $in: entry.api.SDGameIds}}},
-      { $group: { _id: null, totalScore: { $sum: '$score' } }}
-      # { $group: { _id: null, totalScore: { $sum: '$score' }, status: {$first: '$status' } }}
+      { $group: { _id: null, totalScore: { $sum: '$score' }, status: {$first: '$status' } }}
     ])
 
     resultDoc = result[0]
-    console.log 'addTotalScoreEntry', resultDoc
+    # console.log 'addTotalScoreEntry', resultDoc
 
-    if resultDoc && resultDoc.totalScore
     # if resultDoc && resultDoc.totalScore
-      console.log 'ADDTOTALSCOREENTRY', resultDoc
+    if resultDoc && resultDoc.totalScore && resultDoc.status
       Entries.update(
         { _id: entry._id }
         { $set: 
