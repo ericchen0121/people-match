@@ -6,8 +6,8 @@ Template.fixtureCreate.helpers
   weeklyNFLSelection: -> 
     Events.find({ week: Session.getJSON 'fixtureNFLWeekSelection' })
 
-  fixtures: ->
-    Fixtures.find({ startsAt: mq.past })
+  weeklyNFLFixtures: ->
+    Fixtures.find({ week: Session.getJSON 'fixtureNFLWeekSelection' })
 
   # @param-data [obj] a Fixture 
   # 
@@ -55,13 +55,18 @@ Template.fixtureCreate.events
 
   'click .create-fixture': (e) ->
     fixture = Session.getJSON 'currentFixture'
-    Meteor.call 'createFixture', { events: fixture }, (error, result) ->
-      if error
-        return console.log error.reason
-      else
-        # reset fixture to empty
-        Session.setJSON 'currentFixture', []
+    sport = $('select#event-sport-select').val()
+    switch sport
+      when 'NFL'
+        week = $('select#fixture-schedule-select').val()
+        Meteor.call 'createFixture', { events: fixture, sport: 'NFL', week: week }, (error, result) ->
+          if error
+            return console.log error.reason
+          else
+            # reset fixture to empty
+            Session.setJSON 'currentFixture', []
 
 Template.fixtureCreate.rendered = ->
   # Reset to empty
   Session.setJSON 'currentFixture', []
+  Session.setJSON 'fixtureNFLWeekSelection', '1' # set default for rendering the proper fixtures upon load

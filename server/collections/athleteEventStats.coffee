@@ -16,22 +16,24 @@ Meteor.methods
   # @param SDGameId [string] the SportsData API's game id
   # 
   convertToAthleteEventStatsNFL: (SDGameId) ->
+    console.log 'cTAESNFL: in teamtype', SDGameId
     # STEP 1: Find existing Event Stat
     eventStat = EventStats.findOne({api: { SDGameId: SDGameId }})
 
-    # STEP 2: Begin creating the new AthleteEventStat
+    # # STEP 2: Begin creating the new AthleteEventStat
     newStat = {}
 
     newStat.api = eventStat.api # API id for event
     newStat.status = eventStat.status
-    newStat.sport = 'NFL'
+    newStat.sport = eventStat.sport
     newStat.stats = {}
     # TODO: add `game id: '2014_PST_1_BAL_PIT'` in a standard query format for 'easy intuitive querying'
 
     # STEP 3: Parse over the EventStat to get to the data
     # parse each of the two teams in the array
     for teamType in ['home', 'away']
-      newStat.teamId = teamType # e.g. 'BAL'
+      console.log 'cTAESNFL: in teamtype'
+      newStat.teamId = eventStat[teamType].id # e.g. 'BAL'
 
       # Create a new AthleteEventStat doc for each player in the EventStat for each 
       # statistical category of relevance for storing in db
@@ -43,11 +45,12 @@ Meteor.methods
 
       # STEP 3A: Parse over each stat type to get to the data
       for statType in statTypes
-          if eventStat[teamType]['statistics'][statType] # if it exists... in the middle of a game it may not exist 
-            statistics = eventStat[teamType]['statistics'][statType]
-          console.log 'it exists!', statistics
-          if statistics # if it exists... in the middle of a game it may not exist
-            
+           
+        if eventStat[teamType]['statistics'][statType] # if it exists... in the middle of a game it may not exist 
+          statistics = eventStat[teamType]['statistics'][statType] 
+          console.log 'statistics'
+
+          if statistics
             playerStats = statistics['players']
             # ensure it's an array before iterating over it
             if !Array.isArray(playerStats)
@@ -71,34 +74,35 @@ Meteor.methods
 
               # STEP 5: Upsert each into the collection
               newStat.api.compoundId = newStat.api.SDGameId + '--' + newStat.api.SDPlayerId + '-' + statType # unique id
+              console.log 'This is the playerStat to be inserted', newStat
               AthleteEventStats.upsert(
                 { "api.compoundId": newStat.api.compoundId }, 
                 newStat
               )
 
+    # STEP 4: Parse Defense separately
     # DEFENSE is easier to deal with separately.
     # defense ONLY STORES team defense stats at this time
-    for team in eventStat.team
-      newStat = {}
-      newStat.statType = 'defense'
-      newStat.api = eventStat.api # API id for event
-      newStat.api.SDPlayerId = team.id
-      newStat.teamId = team.id
-      newStat.status = eventStat.status
-      newStat.sport = 'NFL'
-      newStat.stats = {}
-      newStat.stats = _.omit(team.defense, 'player') # remove entire player array, only keeping team stats
+    for teamType in ['home', 'away']
+      defStat = {}
+      defStat.api = eventStat.api # API id for event
+      defStat.status = eventStat.status
+      defStat.sport = 'NFL'
+      defStat.stats = {}
+      defStat.teamId = eventStat[teamType].id
+      defStat.statType = 'defense'
+      defStat.api.SDPlayerId = eventStat[teamType].id
+      defStat.full_name = eventStat[teamType].market + ' ' + eventStat[teamType].name
+      defStat.position = 'DEF'
+      defStat.stats = eventStat[teamType]['statistics']['defense']['team']
 
-      # STEP 4A: Clean XML Data (to deprecate!)
-      # convert xml strings to integers bam
-      for k,v of newStat.stats
-        newStat.stats[k] = parseInt(v)
+      console.log 'defSTATBEFOREUPLOAD', defStat, '----------------------------------------------------'
 
       # STEP 5: Upsert each into the collection
-      newStat.api.compoundId = newStat.api.SDGameId + '-' + newStat.api.SDPlayerId + '-' +  newStat.statType
+      defStat.api.compoundId = defStat.api.SDGameId + '-' + defStat.api.SDPlayerId + '-' +  defStat.statType
       AthleteEventStats.upsert(
-        { "api.compoundId": newStat.api.compoundId }, 
-        newStat
+        { "api.compoundId": defStat.api.compoundId }, 
+        defStat
       )
 
   convertToAthleteEventStatsNBA: (SDGameId) ->

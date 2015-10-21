@@ -5,7 +5,7 @@ Entries.before.insert (userId, doc) ->
   doc.updatedAt = new Date().toISOString()
   doc.userId = userId
   doc.api ?= {} # don't overwrite existing api obj if it already exists
-
+  
   # Store SDGameIds on Entry
   contest = Contests.findOne({ _id: doc.contestId })
   eventIds = []
@@ -13,9 +13,11 @@ Entries.before.insert (userId, doc) ->
     eventIds.push event.api.SDGameId
 
   doc.api.SDGameIds = eventIds
+  doc.week = contest.week
 
   # initialize score
   doc.totalScore = 0
+
 
 # https://github.com/matb33/meteor-collection-hooks#beforeupdateuserid-doc-fieldnames-modifier-options
 Entries.before.update (userId, doc, fieldNames, modifier, options) ->
@@ -25,7 +27,13 @@ Entries.before.update (userId, doc, fieldNames, modifier, options) ->
 Meteor.methods
   entryCreate: (entry) ->
     # update the contest with the number of entries
-    Contests.update(entry.contestId, { $inc: { entryCount: 1 } } ) # TODO: this is not reactive
+    Contests.update(entry.contestId, { $inc: { entryCount: 1 } } ) # TODO: make this reactive... since this is statically counted
+    
+    # add values
+    # status
+    if !entry.status
+      entry.status = 'unsure'
+
     Entries.insert(entry)
 
   # iterate over all entries with a given contest (identifed by a sdGameId)
@@ -36,6 +44,7 @@ Meteor.methods
     # 'api.SDGameIds' is an array, in which one value is sdGameId
     # 
     Entries.find({'api.SDGameIds': sdGameId }).forEach (entry) ->
+      console.log 'addTotalScoreAllEntries', entry
       Meteor.call 'addTotalScoreEntry', entry
 
   # input: takes an entry document
@@ -45,14 +54,19 @@ Meteor.methods
     # match players and games from the entry's array
     # Use `_id: null` to get accumulated values in the $group stage
     # 
+    console.log 'ADDTOTALSCOREENTRY', entry
     result = AthleteEventScores.aggregate([
       { $match: {'api.SDPlayerId': { $in: entry.api.SDPlayerIds }, 'api.SDGameId': { $in: entry.api.SDGameIds}}},
-      { $group: { _id: null, totalScore: { $sum: '$score' }, status: {$first: '$status' } }}
+      { $group: { _id: null, totalScore: { $sum: '$score' } }}
+      # { $group: { _id: null, totalScore: { $sum: '$score' }, status: {$first: '$status' } }}
     ])
 
     resultDoc = result[0]
+    console.log 'addTotalScoreEntry', resultDoc
 
-    if resultDoc && resultDoc.totalScore && resultDoc.status
+    if resultDoc && resultDoc.totalScore
+    # if resultDoc && resultDoc.totalScore
+      console.log 'ADDTOTALSCOREENTRY', resultDoc
       Entries.update(
         { _id: entry._id }
         { $set: 
@@ -60,7 +74,7 @@ Meteor.methods
             totalScore: resultDoc.totalScore, 
             status: resultDoc.status
           }
-        } 
+        }
       )
 
   # Input: contestId, as all Entries are related to one Contest

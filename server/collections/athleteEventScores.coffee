@@ -54,7 +54,7 @@ Meteor.methods
     # then may need to copy this and do a check if they field exitsts....
     stats =  AthleteEventStats.aggregate([ 
       { $match: { "api.SDPlayerId": sdPlayerId, "api.SDGameId": sdGameId } },
-      { $project: { _id: 0, "api.SDPlayerId": "$api.SDPlayerId", "api.SDGameId": "$api.SDGameId", "api.compoundId": {$concat: ["$api.SDPlayerId", "-", "$api.SDGameId"]}, status: 1, sport: 1, teamId: 1, "stats.statType": "$statType", "stats.stats": "$stats", full_name: 1, position: 1, score: 1 }}, 
+      { $project: { _id: 0, "api.SDPlayerId": "$api.SDPlayerId", "api.SDGameId": "$api.SDGameId", "api.compoundId": {$concat: [ "$api.SDGameId", "--", "$api.SDPlayerId"]}, status: 1, sport: 1, teamId: 1, "stats.statType": "$statType", "stats.stats": "$stats", full_name: 1, position: 1, score: 1 }}, 
       { $group: { _id: null, allStats: {$addToSet: "$stats"}, api: {$first: "$api"}, status: {$first: "$status"}, sport: {$first: "$sport"}, teamId: {$first: "$teamId"}, full_name: {$first: "$full_name"}, position: {$first: "$position"}, score: {$first: "$score"} } }
     ])
 
@@ -78,43 +78,42 @@ Meteor.methods
       for stat in doc.allStats
         switch stat.statType
           when 'rushing'
-            score += stat.stats.yds * 10
+            score += stat.stats.yds * 10 if stat.stats.yds
           when 'passing'
-            score += stat.stats.yds * 4
-            score += stat.stats.td * 400
-            score += stat.stats.int * -100
+            score += stat.stats.yds * 4 if stat.stats.yds
+            score += stat.stats.td * 400 if stat.stats.td
+            score += stat.stats.int * -100 if stat.stats.int
           when 'receiving'
-            score += stat.stats.yds * 10
-            score += stat.stats.rec * 50
+            score += stat.stats.yds * 10 if stat.stats.yds
+            score += stat.stats.rec * 50 if stat.stats.rec
           when 'touchdowns'
-            score += stat.stats.pass * 600
-            score += stat.stats.rush * 600
-            score += stat.stats.int * 600 
-            score += stat.stats.fum_ret * 600
-            score += stat.stats.punt_ret * 600
-            score += stat.stats.kick_ret * 600
-            score += stat.stats.fg_ret * 600
-            score += stat.stats.other * 600
-          # TODO: Add when you know XXX
-          # when 'two_point_conversion'
-            # score += stat.stats.XXX
+            score += stat.stats.pass * 600 if stat.stats.pass
+            score += stat.stats.rush * 600 if stat.stats.rush
+            score += stat.stats.int * 600 if stat.stats.int 
+            score += stat.stats.fum_ret * 600 if stat.stats.fum_ret
+            score += stat.stats.punt_ret * 600 if stat.stats.punt_ret
+            score += stat.stats.kick_ret * 600 if stat.stats.kick_ret
+            score += stat.stats.fg_ret * 600 if stat.stats.fg_ret
+            score += stat.stats.other * 600 if stat.stats.other
+          when 'two_point_conversion'
+            score += stat.stats.fd * 200 if stat.stats.fd # NOTE: Check that this is correct
           when 'fumbles'
-            score += stat.stats.lost * -200
-            score += stat.stats.own_rec_td * 600
+            score += stat.stats.lost * -200 if stat.stats.lost
+            score += stat.stats.own_rec_td * 600 if stat.stats.own_rec_td
           when 'field_goal'
-            score += stat.stats.made_19 * 300
-            score += stat.stats.made_29 * 300
-            score += stat.stats.made_39 * 300
-            score += stat.stats.made_49 * 400
-            score += stat.stats.made_50 * 500
+            score += stat.stats.made_19 * 300 if stat.stats.made_19
+            score += stat.stats.made_29 * 300 if stat.stats.made_29
+            score += stat.stats.made_39 * 300 if stat.stats.made_39
+            score += stat.stats.made_49 * 400 if stat.stats.made_49
+            score += stat.stats.made_50 * 500 if stat.stats.made_50
           when 'extra_point'
-            score += stat.stats.made * 100
+            score += stat.stats.made * 100 if stat.stats.made
           when 'defense' # DOUBLE CHECK THESE CATEGORIES ARE ALL COVERED
-            score += stat.stats.sack * 100
-            score += stat.stats.fum_rec * 200
-            score += stat.stats.int * 200
-            score += stat.stats.int_td * 600
-            score += stat.stats.fum_td * 600
+            score += stat.stats.sack * 100 if stat.stats.sack
+            score += stat.stats.fum_rec * 200 if stat.stats.fum_rec
+            score += stat.stats.int * 200 if stat.stats.int
+            score += stat.stats.int_td * 600 if stat.stats.int_td
+            score += stat.stats.fum_td * 600 if stat.stats.fum_td
 
       AthleteEventScores.update(
         { _id: doc._id } # update itself
@@ -153,6 +152,3 @@ Meteor.methods
         { _id: doc._id } # update itself
         { $set: { score: score }}
       )
-
-Meteor.call 'batchAthleteEventScoringNFL', "c7c45e93-5d60-4389-84e1-971c8ce8807e"
-Meteor.call 'addScoreByGameNFL', "c7c45e93-5d60-4389-84e1-971c8ce8807e"

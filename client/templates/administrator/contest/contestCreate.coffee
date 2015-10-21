@@ -55,9 +55,10 @@ Template.contestCreate.events
     # TODO: server-side: prize payouts
     # Standardize naming
     #TODO: should this be using [name=xx] as BP?
+    prizePayoutPercentage = .90 # TODO: can do this on server-side
     size = +$('select#contest-size-select').val()
     entryFee = +$('select#entry-fee-select').val()
-    prizes = (size * entryFee) * .9 # TODO: can do this on server-side
+    prizes = (size * entryFee) * prizePayoutPercentage 
 
     contest = {
       sport: $('input:radio[name=sport-select]:checked').val()

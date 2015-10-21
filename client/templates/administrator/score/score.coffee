@@ -13,10 +13,65 @@ Template.score.helpers
     # Events.find({ status: {$in: ['scheduled']} })
     Events.find { startsAt: mq.past }
 
-
 Template.score.events
   # TODO: un-hardcode this.
   # NOTE: NBA events are all created at the beginning of the year
+  'click .score-week-all': (e) ->
+    week = $('select#score-schedule-select').val()
+    
+    weeklyEvents = Events.find({ week: week }).fetch()
+    waitFactor = weeklyEvents.length
+    waitFactorAPI = 0
+    # console.log waitFactorAPI, waitfactor, weeklyEvents
+
+    # Coffeescript closures
+    # http://firstdoit.com/closures/
+    # 
+    # weeklyEvents.forEach (event, i) ->
+    #   console.log '----------------', event
+    #   Meteor.setTimeout( ->
+    #     Meteor.call 'getEventStatsNFL', 'NFL', parseInt(event.week), event.away, event.home
+    #   , waitFactorAPI * i)
+
+    Meteor.setTimeout( ->
+      weeklyEvents.forEach (event, i) ->
+        Meteor.setTimeout( ->
+          Meteor.call 'convertToAthleteEventStatsNFL', event.api.SDGameId
+        , 1000 * i)
+    , waitFactorAPI * waitFactor)
+
+    Meteor.setTimeout( ->
+      weeklyEvents.forEach (event, i) ->
+        Meteor.setTimeout( ->
+          console.log 'batchAthleteEventScoringNFL------', i
+          Meteor.call 'batchAthleteEventScoringNFL', event.api.SDGameId
+        , 1000 * i)
+    , waitFactorAPI * waitFactor + 1000 * waitFactor)
+
+    Meteor.setTimeout( ->
+      weeklyEvents.forEach (event, i) ->
+        Meteor.setTimeout( ->
+          console.log 'addScoreByGame-----------------', i
+          Meteor.call 'addScoreByGame', 'NFL', event.api.SDGameId
+        , 3000 * i)
+    , waitFactorAPI * waitFactor + 2000 * waitFactor)
+
+    Meteor.setTimeout( ->
+      weeklyEvents.forEach (event, i) ->
+        Meteor.setTimeout( ->
+          console.log 'addTotalScoreAllEntries---------------', i
+          Meteor.call 'addTotalScoreAllEntries', event.api.SDGameId
+        , 3000 * i)
+    , waitFactorAPI * waitFactor + 5000 * waitFactor)
+    # , waitFactorAPI * waitFactor)
+
+    Meteor.setTimeout( ->
+      weeklyEvents.forEach (event, i) ->
+        Meteor.setTimeout( ->
+          console.log 'rankContestsForEvent---------------', i
+          Meteor.call 'rankContestsForEvent', event.api.SDGameId
+        , 1000 * i)
+    , waitFactorAPI * waitFactor + 8000 * waitFactor)
 
   'click .score-it-all': (e) ->
     event = @
@@ -26,17 +81,13 @@ Template.score.events
     switch sport
       when 'NFL'
         Meteor.call 'getEventStatsNFL', 'NFL', 4, event.away, event.home
-        
         Meteor.call 'convertToAthleteEventStatsNFL', event.api.SDGameId
-
         Meteor.call 'batchAthleteEventScoringNFL', event.api.SDGameId
         Meteor.call 'addScoreByGame', 'NFL', event.api.SDGameId
 
       when 'NBA'
         Meteor.call 'getEventStatNBA', event.api.SDGameId 
-
         Meteor.call 'convertToAthleteEventStatsNBA', event.api.SDGameId
-
         Meteor.call 'addScoreByGame', 'NBA', event.api.SDGameId
 
     Meteor.call 'addTotalScoreAllEntries', event.api.SDGameId
@@ -75,17 +126,22 @@ Template.score.events
 
     switch sport
       when 'NFL'
-        Meteor.call '
-        ', event.api.SDGameId
         Meteor.call 'addScoreByGame', 'NFL', event.api.SDGameId
       when 'NBA'
         # Previous method already added to AthleteEventScores
         Meteor.call 'addScoreByGame', 'NBA', event.api.SDGameId
 
-  'click .score-entries': (e) ->
-    event = @
-    Meteor.call 'addTotalScoreAllEntries', event.api.SDGameId
+  'click .total-score-to-entries-week-all': (e) ->
+    week = $('select#total-score-schedule-select').val()
+    weeklyEvents = Events.find({ week: week }).fetch()
+    for event in weeklyEvents
+      Meteor.call 'addTotalScoreAllEntries', event.api.SDGameId
 
-  'click .rank-entries': (e) ->
-    event = @
-    Meteor.call 'rankContestsForEvent', event.api.SDGameId
+  'click .rank-entries-week-all': (e) ->
+    week = $('select#rank-entries-schedule-select').val()
+    weeklyEvents = Events.find({ week: week }).fetch()
+    for event in weeklyEvents
+      Meteor.call 'rankContestsForEvent', event.api.SDGameId
+
+Template.score.rendered = ->
+  Session.setJSON 'fixtureNFLWeekSelection', '1'

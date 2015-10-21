@@ -7,10 +7,11 @@ Contests.before.insert (userId, doc) ->
 
   # TODO: Consider embedding the entire fixture into the Contest Obj
   # copy over the startsAt time from the fixture to the contest
-  doc.startsAt = Fixtures.findOne({ _id: doc.fixture._id }).startsAt
+  fixture = Fixtures.findOne({ _id: doc.fixture._id })
+  doc.startsAt = fixture.startsAt
   # Embed the fixture events into the doc
-  doc.fixture.events = Fixtures.findOne({ _id: doc.fixture._id }).events
-
+  doc.fixture.events = fixture.events
+  doc.week = fixture.week
 
 Meteor.methods
   contestInsert: (contest) ->

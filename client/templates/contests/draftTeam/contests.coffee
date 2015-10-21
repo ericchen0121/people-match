@@ -340,9 +340,13 @@ Template.contestLineupContainer.events
         contestType: contest.contestType
         contestSize: contest.entrySize
         entryFee: contest.entryFee
-        # status: contest.status # TODO: Update this value when contest is live
+        status: contest.status # TODO: Update this value when contest is live
         roster: roster
       }
+
+      # Add week to contest if NFL
+      if contest.sport == 'NFL'
+        entry.week = contest.week
 
       Meteor.call 'entryCreate', entry, (error, result) ->
         return console.log error.reason if error

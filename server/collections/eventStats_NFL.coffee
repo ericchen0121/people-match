@@ -13,10 +13,10 @@ Meteor.methods
     console.log 'UPDATING EVENT STATS', sport, week, awayTeam, homeTeam
     switch sport
       when 'NFL'
-        eventStats = JSON.parse(@sd.NFLApi.getGameStats week, awayTeam, homeTeam)
-        console.log '-----------------------------', eventStats
         sport = 'NFL'
-
+        eventStats = JSON.parse(@sd.NFLApi.getGameStats week, awayTeam, homeTeam)
+        console.log eventStats
+        
     if eventStats
       EventStats.update({ 
           api: { SDGameId: eventStats.id }
@@ -565,6 +565,8 @@ nfl_2015_REG_schedule = [[1,"PIT","NE"]
 # nfl_2014_PST_schedule = [[2, 'IND', 'DEN'], [2, 'CAR', 'SEA'], [2, 'BAL', 'NE'], [2, 'DAL', 'GB']]
 nfl_2014_PST_schedule = [[3, 'IND', 'NE']]
 # PST
+
+
 # how Meteor.setInterval works, the code is cracked!
 # http://stackoverflow.com/questions/15229141/simple-timer-in-meteor-js
 # 

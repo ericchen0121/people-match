@@ -11,13 +11,13 @@ template(name='historyContestListContainer')
         h3(class='col-md-6') Entry
       +each historyContests
         div(class='row')
-          div(class='col-md-2') 
+          div(class='col-md-1') 
             a(href="{{pathFor 'entryLayout'}}") 
               i(class="fa fa-money pointer") 
               span $#{entryFee}
-          div(class='col-md-2') 
+          div(class='col-md-1') id: 
             a(href="{{ pathFor 'entryLayout' }}") {{ truncate _id 'last' 4 }}
-          div(class='col-md-6 title') 
+          div(class='col-md-2 title') 
             a(href="{{pathFor 'entryLayout'}}") #{contestName}
-          div(class='col-md-16 size-9')
+          div(class='col-md-12 size-9')
             +entryViewMini

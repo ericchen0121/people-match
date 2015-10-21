@@ -47,4 +47,5 @@ template(name='entryViewMini')
             div(class='name') #{ last_name }, #{ first_name }
           else if team_id
             div(class='name') #{ full_name }
-          div #{ score }
+          if score
+            div #{ score }
