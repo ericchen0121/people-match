@@ -3,6 +3,9 @@ Template.fixtureCreate.helpers
   allFutureEvents: ->
     Events.find({ startsAt: mq.past })
 
+  weeklyNFLSelection: -> 
+    Events.find({ week: Session.getJSON 'fixtureNFLWeekSelection' })
+
   fixtures: ->
     Fixtures.find({ startsAt: mq.past })
 
@@ -26,7 +29,16 @@ Template.fixtureCreate.events
   'click .update-events': (e) ->
     sport = $('select#event-sport-select').val()
     schedule = $('select#event-schedule-select').val()
-    Meteor.call 'getEventsNFL', sport, schedule 
+    switch sport
+      when 'NFL'
+        Meteor.call 'getEventsNFL', schedule
+      else
+        console.log 'select sport for updating events'
+
+  'change #fixture-schedule-select': (e) ->
+    sport = $('select#event-sport-select').val()
+    week = $('select#fixture-schedule-select').val()
+    Session.setJSON 'fixtureNFLWeekSelection', week
 
   'click .remove-fixture': (e) ->
     fixture = @
