@@ -58,3 +58,27 @@ Template.contestItems.rendered = ->
     theme: 'minimal-dark'
     autoHideScrollbar: true
     scrollInertia: 300
+
+  # This resets the contest entry to be empty upon loading the view page, fixing the problem
+  # of an old entry being shown then removed
+  # NOTE: There could be a problem where the entry may show NFL positions if its an NBA team then 
+  # switch. If so, you be smarter in the logi (can you set it upon hitting the route? or figure out which 
+    # sport the user is looking at)
+  #
+  roster = {
+    'QB': 'open'
+    'RB1': 'open'
+    'RB2': 'open'
+    'WR1': 'open'
+    'WR2': 'open'
+    # 'WR3': 'open' 
+    'FLEX1': 'open'
+    # 'FLEX2': 'open' 
+    'TE': 'open'
+    'K': 'open'
+    'DEF': 'open'
+  }
+  
+  # Set Session Variables
+  # 
+  Session.setJSON('currentLineup.roster', roster)
