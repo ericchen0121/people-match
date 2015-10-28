@@ -1,7 +1,10 @@
-# ----------------------------------Debugging Collection.Find ----------------------------------
+# THIS FILE IS STARTUP FILE FOR THE METEOR SERVER
+
+# -----------------------------Database Optimizing and Debugging Collection.Find ----------------------------------
+# This will console.log all finds on the collection, use this to see whether there are too many calls to the db
 # https://groups.google.com/forum/#!msg/meteor-talk/dnnEseBCCiE/l_LHsw-XAWsJ
 # 
-console.log('[startup] wrapping Collection.find')
+# console.log('[startup] wrapping Collection.find')
 
 wrappedFind = Meteor.Collection.prototype.find
 Meteor.Collection.prototype.find = -> 
@@ -103,3 +106,17 @@ if @NflTeams.find().count() == 0 # import only when NflTeams data is empty
 # Houston.hide_collection(AthleteEventScores)
 # Houston.hide_collection(AthleteEventData)
 # Houston.hide_collection(AthleteEventStatsAggregate)
+
+# ---------------------------------------- Venmo Integration ---------------------------------------- 
+# docs: https://atmospherejs.com/pcooney10/accounts-venmo
+# 
+ServiceConfiguration.configurations.remove({
+  service: "venmo"
+})
+
+ServiceConfiguration.configurations.insert({
+  service: "venmo",
+  clientId: "3052",
+  scope: "make_payments+access_friends+access_email",
+  secret: "KuwzCeRH3gZzXUcgpVKcG5sD5wYxzpT2"
+});
