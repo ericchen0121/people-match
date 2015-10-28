@@ -1,5 +1,5 @@
 template(name='contestCreate')
-  div(class='col-md-24')
+  div(class='col-md-24 contest-create')
     div(class='row')
       div(class='col-md-24') Sport
         div(class='form-section footspace-25')
@@ -20,20 +20,22 @@ template(name='contestCreate')
               input(type='radio' value='NHL' name='sport-select')
               span NHL
     div(class='row')
-      div(class='col-md-24') Date
+      div(class='col-md-24') Slate of Games
         div(class='form-section footspace-25')
           div(class='row')
-            div(class='col-md-24')
+            div(class='col-md-24') Date
               select(id='contest-fixture-select')
                 +each availableFixtures
-                  option(value='#{_id}') {{momentify startsAt "longDateTime"}}
+                  option(value='#{_id}') Week #{ week }: {{momentify startsAt "longDateTime"}}
               +each availableFixtures
                 div(class='contest-fixtures expandable #{fixtureSelected}')
-                  h3
-                    a Includes #{ fixtureEventCount } #{ sport } Games
-                  ul(class='row')
+                  h4
+                    a Week #{ week }: #{ fixtureEventCount } #{ sport } Games
+                  div(class='row')
                     +each fixtureEvents
-                      li(class='col-md-6') #{away} @ #{home} {{momentify startsAt}}
+                      div(class='col-md-4') 
+                        img(class='team-logo team-logo-away' src="{{teamLogoESPN espn_id=away espn_size='medium' sport=sport }}")
+                        img(class='team-logo team-logo-home' src="{{teamLogoESPN espn_id=home espn_size='medium' sport=sport }}")  
     div(class='row')
       div(class='col-md-12') Contest Type
         div(class='form-section footspace-25')

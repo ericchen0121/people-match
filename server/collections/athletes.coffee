@@ -416,7 +416,7 @@ Meteor.methods
             { $set: { 
                 "api.SDPlayerId": player.id  # add the api id key to the player
                 #
-                # in case these changed
+                # in case these changed, especially status... update them
                 #
                 position: player.position 
                 jersey_number: player.jersey_number
@@ -478,6 +478,8 @@ Meteor.methods
       )
     return false
 
+  # Adds ESPN ID to player object, this powers the player image url
+  #
   addESPNPlayerId: -> 
     # data via https://www.kimonolabs.com/apis/6dmp1l9s#data
     data = JSON.parse(Assets.getText("assets/nfl_player_data_espn_2015.json"))
@@ -485,6 +487,9 @@ Meteor.methods
     for player in players
       Meteor.call 'addESPNId', player
 
+  # One time seeding database action to Add all NFL Defenses to the NflPlayers collection
+  # This is necessary since Defenses aren't scraped like players from the ESPN API
+  #
   addNFLDefenses: ->
     for teamId in nflTeams
       teamDict = Meteor.call 'getNFLTeamMarketDictionary', teamId
@@ -519,56 +524,65 @@ Meteor.methods
 
     return null
 
+
+# UPDATE ROSTERS, GET ESPN IDS, AND ADD DEFENSEE
 # Meteor.call 'updateAllTeamRostersNFL'
 # Meteor.call 'addESPNPlayerId'
-Meteor.call 'addNFLDefenses'
 
+# One time database seeding all the NFL defenses - this should only happen once!
+#
+# Meteor.call 'addNFLDefenses'
+
+# One off call for debugging
 # Meteor.call 'getAthletesByTeamNFL', 'BAL'
-  #
-  #
-  # NBA METHODS
-  #
-  # 
-  # # @param alias [string] team abbreviation, ie. BOS
-  # # @return [string] team SD Id
-  # getTeamIdNBA: (alias) ->
-  #   for team in nbaTeams
-  #     if alias.toLowerCase() == team.alias.toLowerCase()
-  #       return team.id
 
-  # # Adds SDPlayerId to Athlete
-  # # 
-  # getAthletesByTeamNBA: (alias) ->
-  #   id = Meteor.call 'getTeamIdNBA', alias
-  #   roster = JSON.parse sd.NBAApi.getTeamProfile(id)
-  #   players = roster.players
 
-  #   for player in players
-  #     # IF PLAYER IS IN DB (TO ENRICH DATA WITH API.SDAPI)
-  #     # NOTE: search for combination of full_name, position and jersey_number?
-  #     existingPlayer = Athletes.findOne({ sport: 'NBA', full_name: player.full_name, jersey_number: parseInt(player.jersey_number) })
-  #     if existingPlayer # if existing, add the id to the player
-  #       if !existingPlayer.api || !existingPlayer.api.SDPlayerId
-  #         Athletes.update(
-  #           { _id: existingPlayer._id },
-  #           { $set: { 
-  #               "api.SDPlayerId": player.id 
-  #             }
-  #           }
-  #         )
 
-  # updateAllTeamRostersNBA: ->
-  #   i = 0
-  #   len = nbaTeams.length
+#
+#
+# NBA METHODS
+#
+# 
+# # @param alias [string] team abbreviation, ie. BOS
+# # @return [string] team SD Id
+# getTeamIdNBA: (alias) ->
+#   for team in nbaTeams
+#     if alias.toLowerCase() == team.alias.toLowerCase()
+#       return team.id
 
-  #   timer = Meteor.setInterval( ->
-  #     if i is len
-  #       Meteor.clearInterval timer
-  #     else
-  #       Meteor.call 'getAthletesByTeamNBA', nbaTeams[i].alias
-  #       i++
-  #   , 2500)
-  # return null
-        
+# # Adds SDPlayerId to Athlete
+# # 
+# getAthletesByTeamNBA: (alias) ->
+#   id = Meteor.call 'getTeamIdNBA', alias
+#   roster = JSON.parse sd.NBAApi.getTeamProfile(id)
+#   players = roster.players
+
+#   for player in players
+#     # IF PLAYER IS IN DB (TO ENRICH DATA WITH API.SDAPI)
+#     # NOTE: search for combination of full_name, position and jersey_number?
+#     existingPlayer = Athletes.findOne({ sport: 'NBA', full_name: player.full_name, jersey_number: parseInt(player.jersey_number) })
+#     if existingPlayer # if existing, add the id to the player
+#       if !existingPlayer.api || !existingPlayer.api.SDPlayerId
+#         Athletes.update(
+#           { _id: existingPlayer._id },
+#           { $set: { 
+#               "api.SDPlayerId": player.id 
+#             }
+#           }
+#         )
+
+# updateAllTeamRostersNBA: ->
+#   i = 0
+#   len = nbaTeams.length
+
+#   timer = Meteor.setInterval( ->
+#     if i is len
+#       Meteor.clearInterval timer
+#     else
+#       Meteor.call 'getAthletesByTeamNBA', nbaTeams[i].alias
+#       i++
+#   , 2500)
+# return null
+      
 # Meteor.call 'getAthletesByTeamNBA', 'BOS'
 # Meteor.call 'updateAllTeamRostersNBA'

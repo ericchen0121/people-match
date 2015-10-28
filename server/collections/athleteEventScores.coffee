@@ -82,10 +82,10 @@ Meteor.methods
           when 'passing'
             score += stat.stats.yds * 4 if stat.stats.yds
             score += stat.stats.td * 400 if stat.stats.td
-            score += stat.stats.int * -100 if stat.stats.int
+            score += stat.stats.int * -200 if stat.stats.int
           when 'receiving'
             score += stat.stats.yds * 10 if stat.stats.yds
-            score += stat.stats.rec * 50 if stat.stats.rec
+            # score += stat.stats.rec * 50 if stat.stats.rec # uncomment for 0.5pt PPR
           when 'touchdowns'
             score += stat.stats.pass * 600 if stat.stats.pass
             score += stat.stats.rush * 600 if stat.stats.rush

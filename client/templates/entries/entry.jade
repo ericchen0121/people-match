@@ -15,21 +15,31 @@ template(name='entryView')
         +AnimateWithVelocity
           div(class='col-md-2' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
             if espn_id
-              img(src="{{playerImageESPN espn_id=espn_id espn_size='micro' sport=sport }}")
+              img(class="player-photo" src="{{playerImageESPN espn_id=espn_id espn_size='medium' sport=sport }}")
               div #{ last_name }, #{ first_name }
             else if team_id
               img(class='team-logo' src="{{teamLogoESPN espn_id=team_id espn_size='small' sport=sport }}")
               div #{ full_name }
             div(class='font-jersey size-22') #{ score }
             each relevantStats
-              div #{ value } #{ type }
+              div(class='relevant-stats')
+                if fgMade
+                  span(class='stat width-30') #{ value } /
+                else if fgAtt
+                  span(class='stat width-70') #{ value } FG
+                else if recRec
+                  span(class='stat width-30') #{ value } /
+                else if recTar
+                  span(class='stat width-70') #{ value } Rec
+                else
+                  span #{ value } #{ type }
     div(class='row')
       +AnimateWithVelocity
         div(class='col-md-10 col-md-offset-9' data-animate data-property="opacity" data-duration="3500" data-from-value="0" data-to-value="1")
           span
             a(class='btn btn-default' href="{{ pathFor 'contestLayout' }}") Enter Again
           span
-            a(class='btn btn-default' href="{{ pathFor 'upcomingContestListLayout' }}") View Entries
+            a(class='btn btn-default'  href="{{ pathFor 'upcomingContestListLayout' }}") View Entries
 
 
 template(name='entryViewMini')
@@ -38,14 +48,14 @@ template(name='entryViewMini')
       +AnimateWithVelocity
         span(class='col-md-2 entry-view-mini' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
           if espn_id
-            img(class='player-photo' src="{{playerImageESPN espn_id=espn_id espn_size='micro' sport=sport }}")
+            img(class='player-photo' src="{{playerImageESPN espn_id=espn_id espn_size='small' sport=sport }}")
           else if team_id
             img(class='team-logo' src="{{teamLogoESPN espn_id=team_id espn_size='small' sport=sport }}")
           else
-            img(class='entry-view-mini' src="{{playerImageESPN espn_id=espn_id espn_size='micro' sport='NFL' }}")
+            img(class='entry-view-mini' src="{{playerImageESPN espn_id=espn_id espn_size='small' sport='NFL' }}")
           if espn_id
-            div(class='name') #{ last_name }, #{ first_name }
+            div(class='player-name') #{ last_name }, #{ first_name }
           else if team_id
-            div(class='name') #{ full_name }
+            div(class='player-name') #{ full_name }
           if score
             div #{ score }

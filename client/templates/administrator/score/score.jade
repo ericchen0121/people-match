@@ -2,7 +2,10 @@ template(name='score')
   div(class='col-md-24')
     div(class='row')
       div(class='col-md-3')
-        h4 Step 00: All In One (TESTING)
+        h4 Step 00: Update Rosters
+        div(class='btn btn-sm btn-default update-team-rosters') Update Rosters
+      div(class='col-md-3')
+        h4 Step 1: All In One (TESTING)
         select(id='score-sport-select')
           option(value='NFL') NFL Week
         select(id='score-schedule-select')
@@ -24,32 +27,8 @@ template(name='score')
           option(value='16') 16
           option(value='17') 17
         div(class='btn btn-sm btn-default score-week-all') Score Week
-
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
-          div(class='btn btn-sm btn-default score-it-all') Soup to Nuts
       div(class='col-md-3')
-        h4 Step 1: Update Events
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
-          div(class='btn btn-sm btn-default update-events-status') Update Events
-      div(class='col-md-4')
-        h4 Step 2: Create Event Stats
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
-          div(class='btn btn-sm btn-default update-event-stats') Update EventStats
-      div(class='col-md-6')
-        h4 Step 3: Convert to Athlete Event Stats
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
-          div(class='btn btn-sm btn-default create-athlete-event-stats') Convert
-      div(class='col-md-2')
-        h4 Step 4. Score
-        +each liveEvents
-          div(class='event-options cursor')  #{sport}: #{away} @ #{home} {{momentify startsAt}} 
-          div(class='btn btn-sm btn-default score-stats') Score Em! 
-      div(class='col-md-3')
-        h4 Step 5. Add Total Score to Entries
+        h4 Step 2. Add Total Score to Entries (optional)
         select(id='total-score-sport-select')
           option(value='NFL') NFL Week
         select(id='total-score-schedule-select')
@@ -70,9 +49,9 @@ template(name='score')
           option(value='15') 15
           option(value='16') 16
           option(value='17') 17
-        div(class='btn btn-sm btn-default total-score-to-entries-week-all') Score Week
+        div(class='btn btn-sm btn-default total-score-to-entries-week-all') Go
       div(class='col-md-3')
-        h4 Step 6. Rank Entries
+        h4 Step 3. Rank Entries (optional)
         select(id='rank-entries-sport-select')
           option(value='NFL') NFL Week
         select(id='rank-entries-schedule-select')
@@ -93,4 +72,4 @@ template(name='score')
           option(value='15') 15
           option(value='16') 16
           option(value='17') 17
-        div(class='btn btn-sm btn-default rank-entries-week-all') Score Week
+        div(class='btn btn-sm btn-default rank-entries-week-all') Go

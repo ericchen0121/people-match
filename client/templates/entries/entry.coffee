@@ -42,39 +42,37 @@ Template.entryView.helpers
 			for stat in scoreDoc.allStats
 				switch stat.statType
 					when 'passing'
-						relevantStats.push({ type: 'yds', value: stat.stats.yds })
-						relevantStats.push({ type: 'TDs', value: stat.stats.td }) 
-						relevantStats.push({ type: 'INTs', value: stat.stats.int }) 
+						relevantStats.push({ statType: 'passing', type: 'yds', value: stat.stats.yds })
+						relevantStats.push({ statType: 'passing', type: 'TDs', value: stat.stats.td }) 
+						relevantStats.push({ statType: 'passing', type: 'INTs', value: stat.stats.int }) 
 					when 'rushing'
-						relevantStats.push({ type: 'ruYds', value: stat.stats.yds })
-						relevantStats.push({ type: 'ruTDs', value: stat.stats.td })
+						relevantStats.push({ statType: 'rushing', type: 'ruYds', value: stat.stats.yds })
+						relevantStats.push({ statType: 'rushing', type: 'ruTDs', value: stat.stats.td })
 					when 'receiving'
-						relevantStats.push({ type: 'rec', value: stat.stats.rec })
-						relevantStats.push({ type: 'tar', value: stat.stats.tar })
-						relevantStats.push({ type: 'recYds', value: stat.stats.yds })
-						relevantStats.push({ type: 'recTDs', value: stat.stats.td })
+						relevantStats.push({ statType: 'receiving', type: 'rec', recRec: 'true', value: stat.stats.rec })
+						relevantStats.push({ statType: 'receiving', type: 'rec', recTar: 'true', value: stat.stats.tar })
+						relevantStats.push({ statType: 'receiving', type: 'recYds', value: stat.stats.yds })
+						relevantStats.push({ statType: 'receiving', type: 'recTDs', value: stat.stats.td })
 					when 'touchdowns'
-						if stat.stats.int != 0 then relevantStats.push({ type: 'intTD', value: stat.stats.int })
-						if stat.stats.fum_ret != 0 then relevantStats.push({ type: 'fumRetTD', value: stat.stats.fum_ret })
-						if stat.stats.punt_ret != 0 then relevantStats.push({ type: 'puntRetTD', value: stat.stats.punt_ret })
-						if stat.stats.kick_ret != 0 then relevantStats.push({ type: 'kickRetTD', value: stat.stats.kick_ret })
-						if stat.stats.fg_ret != 0 then relevantStats.push({ type: 'fgRetTD', value: stat.stats.fg_ret })
+						if stat.stats.int != 0 then relevantStats.push({ statType: 'touchdowns', type: 'intTD', value: stat.stats.int })
+						if stat.stats.fum_ret != 0 then relevantStats.push({ statType: 'touchdowns', type: 'fumRetTD', value: stat.stats.fum_ret })
+						if stat.stats.punt_ret != 0 then relevantStats.push({ statType: 'touchdowns', type: 'puntRetTD', value: stat.stats.punt_ret })
+						if stat.stats.kick_ret != 0 then relevantStats.push({ statType: 'touchdowns', type: 'kickRetTD', value: stat.stats.kick_ret })
+						if stat.stats.fg_ret != 0 then relevantStats.push({ statType: 'touchdowns', type: 'fgRetTD', value: stat.stats.fg_ret })
 					when 'fumbles'
-						if stat.stats.lost != 0 then relevantStats.push({ type: 'fumbles', value: stat.stats.lost })
+						if stat.stats.lost != 0 then relevantStats.push({ statType: 'fumbles', type: 'fumbles', value: stat.stats.lost })
 					when 'field_goal'
-						relevantStats.push({ type: 'fg', value: stat.stats.made })
-						relevantStats.push({ type: 'att', value: stat.stats.att })
-						relevantStats.push({ type: '40+ yds', value: stat.stats.made_49 })
-						relevantStats.push({ type: '50+ yds', value: stat.stats.made_50 })
+						relevantStats.push({ statType: 'field_goal', type: 'fg', fgMade: 'true', value: stat.stats.made })
+						relevantStats.push({ statType: 'field_goal', type: 'att', fgAtt: 'true', value: stat.stats.att })
+						relevantStats.push({ statType: 'field_goal', type: '40+ yds', value: stat.stats.made_49 })
+						relevantStats.push({ statType: 'field_goal', type: '50+ yds', value: stat.stats.made_50 })
 					when 'extra_point'
-						relevantStats.push({ type: 'extra pts', value: stat.stats.made })
+						relevantStats.push({ statType: 'extra_point', type: 'extra pts', value: stat.stats.made })
 					when 'defense'
-						relevantStats.push({ type: 'sack', value: stat.stats.sack })
-						relevantStats.push({ type: 'fumble rec', value: stat.stats.fum_rec })
-						relevantStats.push({ type: 'int', value: stat.stats.int })
-						relevantStats.push({ type: 'int TD', value: stat.stats.int_td })
-						relevantStats.push({ type: 'fumble TD', value: stat.stats.fum_td })
-
-		console.log relevantStats
+						relevantStats.push({ statType: 'defense', type: 'sack', value: stat.stats.sack })
+						relevantStats.push({ statType: 'defense', type: 'fumble rec', value: stat.stats.fum_rec })
+						relevantStats.push({ statType: 'defense', type: 'int', value: stat.stats.int })
+						relevantStats.push({ statType: 'defense', type: 'int TD', value: stat.stats.int_td })
+						relevantStats.push({ statType: 'defense', type: 'fumble TD', value: stat.stats.fum_td })
 
 		return relevantStats

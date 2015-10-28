@@ -14,64 +14,91 @@ Template.score.helpers
     Events.find { startsAt: mq.past }
 
 Template.score.events
-  # TODO: un-hardcode this.
-  # NOTE: NBA events are all created at the beginning of the year
+  'click .update-team-rosters': (e) ->
+    Meteor.call 'updateAllTeamRostersNFL'
+    
   'click .score-week-all': (e) ->
     week = $('select#score-schedule-select').val()
     
     weeklyEvents = Events.find({ week: week }).fetch()
     waitFactor = weeklyEvents.length
-    waitFactorAPI = 0
-    # console.log waitFactorAPI, waitfactor, weeklyEvents
-
+    waitAPI = 3000 # generally found 3 seconds is a good time for all API calls and processing for all teams
+    waitStandard = 1000
+    waitA = waitAPI * waitFactor
+    waitB = waitStandard * waitFactor
+    
     # Coffeescript closures
     # http://firstdoit.com/closures/
-    # 
-    # weeklyEvents.forEach (event, i) ->
-    #   console.log '----------------', event
-    #   Meteor.setTimeout( ->
-    #     Meteor.call 'getEventStatsNFL', 'NFL', parseInt(event.week), event.away, event.home
-    #   , waitFactorAPI * i)
+    
+    # ARCHITECTURE
+    # Updating scores works like this
+    # STEP 1: Sports DataAPI -> 
+    # STEP 2: EventStats collection -> 
+    # STEP 3: AthleteEventStats collection ->
+    # STEP 4: AthleteEventScores collection ->
+    # STEP 5: Entries collection
+    # STEP 6: Ranking Entries in the Contest by Top Score
+    #
 
+    # Have these call methods in order, setting longer and longer timeouts, so they are queued up
+    #
+    # STEP 1: 
+    #
+    weeklyEvents.forEach (event, i) ->
+      console.log '----------------', event
+      Meteor.setTimeout( ->
+        Meteor.call 'getEventStatsNFL', 'NFL', parseInt(event.week), event.away, event.home
+      , waitAPI * i) # set progressively longer and longer timeouts so Meteor calls are called in order
+
+    # STEP 2: 
+    #    
     Meteor.setTimeout( ->
       weeklyEvents.forEach (event, i) ->
         Meteor.setTimeout( ->
           Meteor.call 'convertToAthleteEventStatsNFL', event.api.SDGameId
-        , 1000 * i)
-    , waitFactorAPI * waitFactor)
+        , waitStandard * i)
+    , waitA)
 
+    # STEP 3: 
+    #
     Meteor.setTimeout( ->
       weeklyEvents.forEach (event, i) ->
         Meteor.setTimeout( ->
           console.log 'batchAthleteEventScoringNFL------', i
           Meteor.call 'batchAthleteEventScoringNFL', event.api.SDGameId
-        , 1000 * i)
-    , waitFactorAPI * waitFactor + 1000 * waitFactor)
+        , waitStandard * i)
+    , waitA + waitB)
 
+    # STEP 4: 
+    #
     Meteor.setTimeout( ->
       weeklyEvents.forEach (event, i) ->
         Meteor.setTimeout( ->
           console.log 'addScoreByGame-----------------', i
           Meteor.call 'addScoreByGame', 'NFL', event.api.SDGameId
-        , 3000 * i)
-    , waitFactorAPI * waitFactor + 2000 * waitFactor)
+        , waitAPI * i)
+    , waitA + waitB + waitA)
 
+    # STEP 5: 
+    #
     Meteor.setTimeout( ->
       weeklyEvents.forEach (event, i) ->
         Meteor.setTimeout( ->
           console.log 'addTotalScoreAllEntries---------------', i
           Meteor.call 'addTotalScoreAllEntries', event.api.SDGameId
-        , 3000 * i)
-    , waitFactorAPI * waitFactor + 5000 * waitFactor)
-    # , waitFactorAPI * waitFactor)
+        , waitAPI * i)
+    , waitA + waitB + waitA + waitA)
 
+    # STEP 6: Ranking Entries in the Contest by Top Score
+    #
     Meteor.setTimeout( ->
       weeklyEvents.forEach (event, i) ->
         Meteor.setTimeout( ->
           console.log 'rankContestsForEvent---------------', i
           Meteor.call 'rankContestsForEvent', event.api.SDGameId
-        , 1000 * i)
-    , waitFactorAPI * waitFactor + 8000 * waitFactor)
+        , waitStandard * i)
+    , waitA + waitB + waitA + waitA + waitA)
+
 
   'click .score-it-all': (e) ->
     event = @
@@ -92,44 +119,6 @@ Template.score.events
 
     Meteor.call 'addTotalScoreAllEntries', event.api.SDGameId
     Meteor.call 'rankContestsForEvent', event.api.SDGameId
-
-  'click .update-events-status': (e) ->
-    event = @
-    Meteor.call 'updateEventStatus', @
-
-  # TODO: un-hardcode this.
-  # Base this on a call to WEEKLY or DAILY Schedule thru API. 
-  'click .update-event-stats': (e) ->
-    event = @
-    sport = event.sport
-
-    switch sport
-      when 'NFL' #change all event Sport attrs to "NFL"
-        Meteor.call 'getEventStatsNFL', 'NFL', 4, event.away, event.home # TODO: change this to be extensible, no hardcoded Week 4!, which means, probably must store 4 on the event itself
-      when 'NBA'
-        Meteor.call 'getEventStatNBA', event.api.SDGameId 
-
-  'click .create-athlete-event-stats': (e) ->
-    event = @
-    sport = event.sport
-
-    switch sport
-      when 'NFL'
-        Meteor.call 'convertToAthleteEventStatsNFL', event.api.SDGameId
-      when 'NBA'
-        Meteor.call 'convertToAthleteEventStatsNBA', event.api.SDGameId
-        # This also adds to AthleteEventScores
-
-  'click .score-stats': (e) ->
-    event = @
-    sport = event.sport
-
-    switch sport
-      when 'NFL'
-        Meteor.call 'addScoreByGame', 'NFL', event.api.SDGameId
-      when 'NBA'
-        # Previous method already added to AthleteEventScores
-        Meteor.call 'addScoreByGame', 'NBA', event.api.SDGameId
 
   'click .total-score-to-entries-week-all': (e) ->
     week = $('select#total-score-schedule-select').val()

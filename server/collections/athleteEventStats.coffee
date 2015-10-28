@@ -96,8 +96,6 @@ Meteor.methods
       defStat.position = 'DEF'
       defStat.stats = eventStat[teamType]['statistics']['defense']['team']
 
-      console.log 'defSTATBEFOREUPLOAD', defStat, '----------------------------------------------------'
-
       # STEP 5: Upsert each into the collection
       defStat.api.compoundId = defStat.api.SDGameId + '-' + defStat.api.SDPlayerId + '-' +  defStat.statType
       AthleteEventStats.upsert(
