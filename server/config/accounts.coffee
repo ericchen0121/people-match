@@ -19,5 +19,7 @@ Accounts.onCreateUser( (options, user) ->
 ericAdminUserId = "ujo7jBtPJg7d9WzXW"
 ericAdminUserIdProduction = "J2fzCvK8hepQcngRm"
 
-Roles.addUsersToRoles(ericAdminUserId, ['admin'])
-Roles.addUsersToRoles(ericAdminUserIdProduction, ['admin'])
+if @inDevelopment
+	Roles.addUsersToRoles(ericAdminUserId, ['admin'])
+if @inProduction
+	Roles.addUsersToRoles(ericAdminUserIdProduction, ['admin'])
