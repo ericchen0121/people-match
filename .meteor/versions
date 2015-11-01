@@ -67,6 +67,7 @@ less@2.5.1
 livedata@1.0.15
 localstorage@1.0.5
 logging@1.0.8
+lookback:emails@0.6.2
 maazalik:malihu-jquery-custom-scrollbar@3.0.6
 matb33:collection-hooks@0.8.1
 matteodem:easy-search@1.6.4
@@ -83,6 +84,7 @@ meteorhacks:kadira@2.24.1
 meteorhacks:meteorx@1.4.1
 meteorhacks:npm@1.5.0
 meteorhacks:picker@1.0.3
+meteorhacks:ssr@2.1.2
 meteorhacks:subs-manager@1.6.2
 minifiers@1.1.7
 minimongo@1.0.10
@@ -121,6 +123,7 @@ retry@1.0.4
 reywood:iron-router-ga@0.7.1
 reywood:publish-composite@1.4.2
 routepolicy@1.0.6
+sacha:juice@0.1.4
 service-configuration@1.0.5
 session@1.1.1
 sewdn:velocityjs@0.8.0
