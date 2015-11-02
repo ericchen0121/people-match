@@ -7,16 +7,20 @@ template(name='contestTitle')
       h4(id='contest-information' class='col-md-24 size-12') Entries: #{entryCount} / #{entrySize}   Entry Fee: $#{entryFee}   Prize: $#{prizes} #{prizeFormat}
 
 template(name='contestFixtureContainer')
-  div(class='col-md-24' id='event-filters-container')
+  div(class='contestFixtureContainer col-md-24' id='event-filters-container')
     div(class='row event-filters size-13 pointer')
       div(class='col-md-2 event-filter-tab')
         div(class='event-filter') 
           div(class='vAlign') All
       each fixture.events
         div(class='col-md-2 event-filter-tab')
-          div(class='event-filter') 
-            div #{away} 
-            div @ #{home} 
+          div(class='event-filter padding-0')
+            div(class='row fixtureLogos')
+              div(class='fixture-team-logo padding-0 vAlign translateY30')
+                div(class='diagonal-mask border-right-gold')
+                  img(class='undiagonal-mask side-by-side team-logo team-logo-left' src= "{{ teamLogoESPN espn_id=away espn_size='medium' sport=sport }}")
+              div(class='padding-0 vAlign')
+                img(class='side-by-side team-logo team-logo-right side-right' src= "{{ teamLogoESPN espn_id=home espn_size='medium' sport=sport }}")
             div(class='size-10') {{momentify startsAt 'shortTime'}}
 
 template(name='contestLineupContainer')
@@ -79,9 +83,8 @@ template(name='contestLineupContainer')
                     div(class='col-md-4 lineup-player-image vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
                       img(class='player-photo' src= "{{ playerImageESPN espn_id = espn_id espn_size = 'small' sport=sport }}")
                     div(class='col-md-2 lineup-team-logo vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
-                      div(class='diagonal-mask')
+                      div(class='diagonal-mask border-left-gold')
                         img(class='player-team-logo' src= "{{ teamLogoESPN espn_id=team_id espn_size='medium' sport=sport }}")
-                      
                     div(class='col-md-1 lineup-player-position vAlign') #{position}
                     div(class='col-md-6 lineup-player-name vAlign') #{full_name}
                     div(class='col-md-2 lineup-player-salary vAlign') ${{addCommas salary}}
@@ -93,7 +96,7 @@ template(name='contestLineupContainer')
                     div(class='col-md-4 lineup-player-image vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
                       img(class='team-logo' src= "{{ teamLogoESPN espn_id=team_id espn_size='small' sport=sport }}")
                     div(class='col-md-2 lineup-team-logo vAlign' data-animate data-property="opacity" data-duration="1000" data-from-value="0" data-to-value="1")
-                      div(class='diagonal-mask')
+                      div(class='diagonal-mask border-left-gold')
                         img(class='player-team-logo' src= "{{ teamLogoESPN espn_id=team_id espn_size='medium' sport=sport }}")
                     div(class='col-md-1 lineup-player-position vAlign') #{position}
                     div(class='col-md-6 lineup-player-name vAlign') #{full_name}

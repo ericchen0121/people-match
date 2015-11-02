@@ -431,6 +431,21 @@ Meteor.methods
             }
           )
           console.log 'API ID ADDED for' + player.name_full + ' ' + roster.market +  ' ' + player.position
+        else
+           NflPlayers.update(
+            {"api.SDPlayerId": player.id}, 
+            { $set: {
+                position: player.position
+                jersey_number: player.jersey_number
+                team: roster.market + ' ' + roster.name
+                team_id: roster.id
+                status: player.status
+                salary: player.salary
+                experience: player.experience
+              }
+            }, 
+            { multi: true }
+          )
       else # if athlete doesn't exist, insert him
         NflPlayers.insert({
           full_name: player.name_full

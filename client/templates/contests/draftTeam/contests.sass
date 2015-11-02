@@ -6,6 +6,12 @@ $lightestGrey: #fafafa
 $mediumGrey: #9b9c9d
 $lightBlue: #3f96cb
 
+.border-left-gold
+  border-left: 1px solid gold
+
+.border-right-gold
+  border-right: 1px solid gold
+
 .contestLineupContainer
   .player-list-item
     height: 45px
@@ -24,6 +30,50 @@ $lightBlue: #3f96cb
     height: 100%
     color: $lightBlue
     border-right: 2px white solid
+
+.contestFixtureContainer
+
+  .team-logo
+    height: 42px 
+    width: 42px
+
+  .fixtureLogos
+    margin: auto
+    width: 84px
+    display: inline-block
+
+    .side-by-side
+      float: left
+
+    .translateY30
+      transform: translateY(-30%)
+
+    .team-logo-right
+      margin-top: -4px
+      margin-left: -10px
+      z-index: 1
+
+  .fixture-team-logo
+    overflow: hidden
+    padding: 0
+    height: 45px
+    width: 42px
+    float: left
+
+    .diagonal-mask
+      overflow: hidden
+      transform: skew(-25deg, 0)
+      height: 45px
+      width: 42px
+      position: absolute
+      z-index: 5
+
+      .undiagonal-mask
+        transform: skew(25deg, 0)
+
+      .team-logo-left
+        margin-top: 6px
+        margin-left: 3px
 
 #event-filters-container
   // width: 900px
@@ -131,6 +181,9 @@ $lightBlue: #3f96cb
     height: 60px
     width: 70px
 
+    .border-left-gold
+      border-left: 1px solid gold
+      
     .diagonal-mask
       overflow: hidden
       transform: skew(-25deg, 0)

@@ -123,6 +123,7 @@ ServiceConfiguration.configurations.insert({
 
 
 #--------------------------------PRODUCTION / DEVELOPMENT VARIABLES----------------------------------------
+console.log process.env.NODE_ENV
 @inDevelopment = ->
   return process.env.NODE_ENV == "development"
 
