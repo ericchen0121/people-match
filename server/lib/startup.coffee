@@ -120,12 +120,3 @@ ServiceConfiguration.configurations.insert({
   scope: "make_payments+access_friends+access_email",
   secret: "KuwzCeRH3gZzXUcgpVKcG5sD5wYxzpT2"
 });
-
-
-#--------------------------------PRODUCTION / DEVELOPMENT VARIABLES----------------------------------------
-console.log process.env.NODE_ENV
-@inDevelopment = ->
-  return process.env.NODE_ENV == "development"
-
-@inProduction =->
-  return process.env.NODE_ENV == "production"

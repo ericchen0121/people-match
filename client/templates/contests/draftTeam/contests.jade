@@ -17,11 +17,14 @@ template(name='contestFixtureContainer')
           div(class='event-filter padding-0')
             div(class='row fixtureLogos')
               div(class='fixture-team-logo padding-0 vAlign translateY30')
-                div(class='diagonal-mask border-right-gold')
+                div(class='diagonal-mask')
                   img(class='undiagonal-mask side-by-side team-logo team-logo-left' src= "{{ teamLogoESPN espn_id=away espn_size='medium' sport=sport }}")
-              div(class='padding-0 vAlign')
-                img(class='side-by-side team-logo team-logo-right side-right' src= "{{ teamLogoESPN espn_id=home espn_size='medium' sport=sport }}")
-            div(class='size-10') {{momentify startsAt 'shortTime'}}
+              div(class='diagonal-border padding-0 vAlign')
+                div(class='diagonal-mask border-right-gold')
+              div(class='fixture-team-logo team-logo-extra-right padding-0 vAlign')
+                div(class='diagonal-mask')
+                  img(class='undiagonal-mask side-by-side team-logo team-logo-right side-right' src= "{{ teamLogoESPN espn_id=home espn_size='medium' sport=sport }}")
+            div(class='event-time size-10') {{momentify startsAt 'shortTime'}}
 
 template(name='contestLineupContainer')
   div(class='contestLineupContainer col-md-24')

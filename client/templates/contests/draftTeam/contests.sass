@@ -7,10 +7,23 @@ $mediumGrey: #9b9c9d
 $lightBlue: #3f96cb
 
 .border-left-gold
-  border-left: 1px solid gold
+  border-left: 3px solid gold
 
 .border-right-gold
-  border-right: 1px solid gold
+  height: 45px
+  width: 9px
+  margin-left: 42px
+  border-right: 3px solid gold
+  transform: skew(-25deg, 0)
+
+.diagonal-border
+  width: 5px
+  margin-top: 15px
+  float: left
+
+  .diagonal-mask
+    height: 45px
+    margin-left: -28px
 
 .contestLineupContainer
   .player-list-item
@@ -37,46 +50,59 @@ $lightBlue: #3f96cb
     height: 42px 
     width: 42px
 
+  .event-time
+    margin-top: -36px
+
   .fixtureLogos
     margin: auto
-    width: 84px
+    width: 132px
     display: inline-block
+    margin-top: 10px
 
     .side-by-side
       float: left
 
-    .translateY30
-      transform: translateY(-30%)
-
-    .team-logo-right
-      margin-top: -4px
-      margin-left: -10px
-      z-index: 1
-
-  .fixture-team-logo
-    overflow: hidden
-    padding: 0
-    height: 45px
-    width: 42px
-    float: left
-
-    .diagonal-mask
+    .fixture-team-logo
       overflow: hidden
-      transform: skew(-25deg, 0)
+      padding: 0
       height: 45px
-      width: 42px
-      position: absolute
-      z-index: 5
+      width: 60px
+      float: left
+      margin-left: -10px
 
-      .undiagonal-mask
-        transform: skew(25deg, 0)
+      .diagonal-mask
+        overflow: hidden
+        transform: skew(-25deg, 0)
+        height: 60px
+        width: 42px
+        position: absolute
+        z-index: 5
 
-      .team-logo-left
-        margin-top: 6px
-        margin-left: 3px
+        .undiagonal-mask
+          transform: skew(25deg, 0)
+
+        .team-logo-left
+          position: relative
+          margin-top: 6px
+          margin-left: 3px
+          opacity: .99
+          z-index: 5
+
+        .team-logo-right
+          position: relative
+          margin-top: 32px
+          margin-left: -10px
+          z-index: 1
+
+    .team-logo-extra-right
+      height: 72px
+      overflow: visible
+      margin-left: -18px
+
+      .diagonal-mask
+        height: 75px
 
 #event-filters-container
-  // width: 900px
 
   .event-filter-tab
     height: 100%
@@ -183,7 +209,7 @@ $lightBlue: #3f96cb
 
     .border-left-gold
       border-left: 1px solid gold
-      
+
     .diagonal-mask
       overflow: hidden
       transform: skew(-25deg, 0)

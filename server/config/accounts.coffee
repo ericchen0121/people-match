@@ -1,3 +1,12 @@
+#--------------------------------PRODUCTION / DEVELOPMENT VARIABLES----------------------------------------
+console.log '---------------PRODUCTION / DEVELOPMENT VARIABLES----------', process.env.NODE_ENV
+
+@inDevelopment = ->
+  return process.env.NODE_ENV == "development"
+
+@inProduction =->
+  return process.env.NODE_ENV == "production"
+
 # --------------------- ENRICH DATA OF PROFILES ---------------------
 # Adds Profile Picture link to users
 # http://stackoverflow.com/questions/15018552/how-to-query-a-facebook-user-picture-via-meteors-accounts-facebook
@@ -19,7 +28,7 @@ Accounts.onCreateUser( (options, user) ->
 ericAdminUserId = "ujo7jBtPJg7d9WzXW"
 ericAdminUserIdProduction = "J2fzCvK8hepQcngRm"
 
-if @inDevelopment
+if @inDevelopment == true
 	Roles.addUsersToRoles(ericAdminUserId, ['admin'])
-if @inProduction
+if @inProduction == true
 	Roles.addUsersToRoles(ericAdminUserIdProduction, ['admin'])
