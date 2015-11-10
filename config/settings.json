@@ -1,7 +1,19 @@
 {
-    "public": {
-        "ga": {
-            "id": "UA-59163893-1"
-        }
+  "public": {
+    "ga": {
+        "id": "UA-59163893-1"
     }
+  },
+  "sdapi": {
+  	"nfl": "u5jw8rhnqtqvr5k8zwgnjm3k", 
+    "nba": "zy2799hzfk77uhcwjax5c58n"
+  },
+  "kadira": {
+    "username": "FWn5BDtWNmhMtkaYt",
+    "password": "89bc8a12-7158-4880-ba45-6841105c5178"
+  }, 
+  "admin": {
+    "eric": "ujo7jBtPJg7d9WzXW", 
+    "ericProduction": "J2fzCvK8hepQcngRm"
+  }
 }

@@ -2,8 +2,8 @@
 # 'node-sportsdata' npm, or 'sportsdata-mongo'
 # Server-side Globals
 #
-SD_API_KEY_NFL = 'u5jw8rhnqtqvr5k8zwgnjm3k'
-SD_API_KEY_NBA = 'zy2799hzfk77uhcwjax5c58n'
+SD_API_KEY_NFL = Meteor.settings.sdapi.nfl
+SD_API_KEY_NBA = Meteor.settings.sdapi.nba
 @sd = Meteor.npmRequire('sportsdata-mongo')
 
 # ------------------------- NFL ------------------------- 

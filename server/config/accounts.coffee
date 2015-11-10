@@ -25,8 +25,8 @@ Accounts.onCreateUser( (options, user) ->
 
 # --------------------- ROLES --------------------- 
 # uses `alanning:roles` package
-ericAdminUserId = "ujo7jBtPJg7d9WzXW"
-ericAdminUserIdProduction = "J2fzCvK8hepQcngRm"
+ericAdminUserId = Meteor.settings.admin.eric
+ericAdminUserIdProduction = Meteor.settings.admin.ericProduction
 
 if @inDevelopment == true
 	Roles.addUsersToRoles(ericAdminUserId, ['admin'])
